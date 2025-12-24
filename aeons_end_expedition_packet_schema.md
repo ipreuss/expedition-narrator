@@ -1,6 +1,6 @@
 # Aeon’s End — Expedition Packet Schema (Selector Output)
 
-This describes the JSON returned by `select_expedition()` in `aeons_end_expedition_selector_v3.py`.
+This describes the JSON returned by `select_expedition()` in `aeons_end_expedition_selector.py`.
 
 The selector outputs *verbatim YAML fields* for the selected entities so the narrator can read them directly.
 Do not add source markers or provenance metadata fields (such as `sources`) to the datasets or packet output.

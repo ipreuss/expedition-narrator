@@ -9,7 +9,7 @@ Authoritative files (use as the source of truth):
 - Background & Selection Rules (how to interpret YAML fields; how to use story-notes sparingly; paraphrase setting text)
 - Operational Instructions (process, pacing, win/lose loop, reward timing, Handoff contract)
 - Expedition Packet Schema (shape of selector output)
-- Expedition Selector Script (Python): aeons_end_expedition_selector_v3.py
+- Expedition Selector Script (Python): aeons_end_expedition_selector.py
 
 Hard requirements
 - Start chapter 1 immediately in Story Mode (no preface, no planning talk, no “let’s set this in motion”).

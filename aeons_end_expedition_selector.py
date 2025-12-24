@@ -22,8 +22,8 @@ Determinism
 - Internally it may reroll candidate sets until constraints are met, but this process is deterministic per seed.
 
 CLI example
-  python aeons_end_expedition_selector_v3.py \\
-    --mages-yaml aeons_end_mages_final_clean4.yaml \\
+  python aeons_end_expedition_selector.py \\
+    --mages-yaml aeons_end_mages.yaml \\
     --settings-yaml wave_settings.yaml \\
     --waves-yaml aeons_end_waves.yaml \\
     --nemeses-yaml aeons_end_nemeses.yaml \\
