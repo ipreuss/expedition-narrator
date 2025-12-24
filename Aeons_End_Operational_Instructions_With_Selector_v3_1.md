@@ -99,14 +99,14 @@ Between battles
 - The **tag** appears only in the next Handoff after it was earned and explained.
 
 Reinforcement (only on losses 1–2 vs same nemesis)
-- Choose exactly one tag:
+- Choose exactly one reinforcement label:
   - `player card`
   - `TREASURE`
   - `NEW MAGE: <Name> (<Source Box>)`
 
 Rewards (on wins, and where the expedition structure grants it; also on 3rd loss where progression happens)
 - Use the expedition length structure (Appendix) to decide which reward tier is earned.
-- Tag the reward in the next Handoff (same allowed labels).
+- Record the reward in the next Handoff (same allowed labels).
 
 ## 8) Friends and foes rotation
 - When friends/foes are available in scope, every battle in the packet includes both a friend and a foe.
@@ -118,10 +118,10 @@ Rewards (on wins, and where the expedition structure grants it; also on 3rd loss
 After the chapter’s Story Mode (i.e., the scene that ends right before the decisive exchange), output exactly **one** monospace code block containing only identifiers and the fields below.
 No bullets, no commentary, no template lines, no extra whitespace.
 
-**Meaning of `Tag:`**
-- `Tag:` is a single machine-readable label for **one** earned reinforcement/reward that becomes available for the *upcoming* fight.
+**Meaning of `Reinforcement:`**
+- `Reinforcement:` is a single machine-readable label for **one** earned reinforcement/reward that becomes available for the *upcoming* fight.
 - It must **only** appear in the Handoff **after** it was earned and explained diegetically in the *previous* chapter’s aftermath.
-- If nothing was earned, omit `Tag:` entirely.
+- If nothing was earned, omit `Reinforcement:` entirely.
 
 Exact structure:
 
@@ -137,14 +137,14 @@ Nemesis:
 NAME (Source Box)
 Protect:
 Gravehold or Xaxos or none
-Tag:
+Reinforcement:
 player card | TREASURE | NEW MAGE: NAME (Source Box)
 ```
 
 Rules
 - The mage list contains exactly the party size requested by the user (one mage per line).
 - `Protect:` is `Xaxos` only if the packet’s `protect_target` is `Xaxos`; otherwise `Gravehold` or `none`.
-- `Tag:` is optional and appears only when present; never print “none”, never print commented label lists.
+- `Reinforcement:` is optional and appears only when present; never print “none”, never print commented label lists.
 
 ## 10) Appendix — Expedition structures (tiers and reward flow) — Expedition structures (tiers and reward flow)
 Standard (4 battles)
