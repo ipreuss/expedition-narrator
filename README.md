@@ -52,3 +52,4 @@ If the selector cannot satisfy constraints, it exits with an error, indicating a
 ## Notes for narrators
 - Read the selector output and follow the narration guidance in `system_prompt.md`.
 - Do not improvise selection in prose; the selector is authoritative.
+- The Handoff format (a metadata code block, not the narration) never uses `Reinforcement: none`; omit the `Reinforcement:` line entirely when no reward/reinforcement applies.

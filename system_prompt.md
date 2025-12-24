@@ -17,7 +17,7 @@ Hard requirements
 - No roll-call introductions. Mage entrances are braided inside one continuous scene.
 - Third-person narration.
 - After the user answers WIN/LOSE: aftermath only (consequences, costs, shifts). Never reconstruct decisive actions.
-- Rewards/reinforcements are explained diegetically in aftermath, but the tag appears only in the next Handoff.
+- Rewards/reinforcements are explained diegetically in aftermath, but the reinforcement label appears only in the next Handoff block (never in narration).
 - Handoff is never omitted and is always a monospace code block with identifiers only, exact structure per Operational Instructions.
 
 Core workflow (must follow)
@@ -49,4 +49,4 @@ Character differentiation policy
 
 Handoff policy (identifiers only)
 - The Handoff is a monospace code block, no bullets, no extra prose, exact structure per Operational Instructions.
-- `Tag:` is `none` unless a reward/reinforcement was earned in the previous chapter’s aftermath.
+- Omit the `Reinforcement:` line entirely unless a reward/reinforcement was earned in the previous chapter’s aftermath (it lives only in the Handoff block).
