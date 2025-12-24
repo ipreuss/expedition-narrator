@@ -5,6 +5,9 @@ Scripts and data files for the Aeon‘s End expedition narrator GPT.
 This repository contains the selector script, YAML datasets, and narration guidance used to
 assemble Aeon’s End expedition packets for a GPT-based narrator. The selector performs
 collision-free selection only; narration and win/lose state are handled by the narrator prompt.
+The authoritative process and narration requirements live in
+`Aeons_End_Operational_Instructions_With_Selector_v3_1.md`; other docs reference it instead of
+repeating those rules.
 
 ## Repository layout
 - `aeons_end_expedition_selector_v3.py`: Deterministic selector that builds an expedition packet.
@@ -15,7 +18,7 @@ collision-free selection only; narration and win/lose state are handled by the n
 - `wave_settings.yaml`: Wave settings used to build expedition structure.
 - `aeons_end_waves.yaml`: Wave text/settings used by the selector.
 - `Aeons_End_Expedition_Packet_Schema.md`: JSON schema for selector output.
-- `Aeons_End_Operational_Instructions_With_Selector_v3_1.md`: Process and handoff contract for narration.
+- `Aeons_End_Operational_Instructions_With_Selector_v3_1.md`: Authoritative process and handoff contract for narration.
 - `Aeons_End_Narration_Style_Guide_Canonical.md`: Voice and formatting guidance.
 - `Aeons_End_Background_And_Selection_Rules_Clean.md`: Rules for interpreting YAML fields.
 - `Aeons_End_Narration_Style_Selector_Reconstructed.md`: Style selector reference.

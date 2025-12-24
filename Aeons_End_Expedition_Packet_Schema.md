@@ -1,16 +1,8 @@
 # Aeon’s End — Expedition Packet Schema (Selector Output)
 
 This describes the JSON returned by `select_expedition()` in `aeons_end_expedition_selector_v3.py`.
-
-The selector outputs *verbatim YAML fields* for the selected entities so the narrator can read them directly.
-The selector performs **selection only** (no win/lose state, rematches, reinforcements, or reward timing).
-
-Guarantee (given your datasets): the selector returns **collision-free** selections:
-- No repeated nemesis across the planned battle sequence.
-- No repeated friend or foe across the planned battle sequence.
-- No name overlap between mages and any selected friend/foe/nemesis.
-
-If constraints cannot be satisfied, the selector fails with an error (indicating a dataset/scope issue).
+Authoritative selection guarantees, workflow rules, and narration requirements are defined in
+`Aeons_End_Operational_Instructions_With_Selector_v3_1.md`.
 
 ---
 
