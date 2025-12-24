@@ -1,0 +1,122 @@
+# List of friends (support characters)
+friends:
+- name: Adelheim, the Blacksmith
+  box: The Descent
+  background: 'A seasoned weaponsmith, Adelheim continues to repair and forge weapons
+    for his clan even after the world has fallen.  He notes that the clan’s armaments
+    are old and rusted, yet someone must keep them in working order【397665375822878†L213-L216】.  As
+    a friend he joins expeditions to offer support by reclaiming useful scrap for
+    the mages.
+
+    '
+  appearance: An older blacksmith with soot‑stained hands and a determined gaze.
+  strengths: 'Adelheim has four charge spaces.  When fully charged his ability Gather Scrap
+    lets each player return up to three 0‑cost cards from their discard pile to their
+    hand, effectively recycling Crystals and Sparks.  This accelerates early‑game
+    economy and gives mages extra resources to spend or cast.
+
+    '
+  weaknesses: 'His power only retrieves 0‑cost cards, so its impact diminishes once
+    players upgrade their decks.  He provides no direct damage or healing.
+
+    '
+- name: Fawn, the Alchemist
+  box: The Descent
+  background: 'Fawn always dreamed of being a witch.  She practised the sister‑words
+    for years but nothing worked, and she resigned herself to tending vats of caustic
+    brew.  When new magic finally came easily—even at her older age—she couldn’t wait
+    to unleash it【334692395748374†L220-L223】.  She now uses her concoctions to support
+    the breach mages.
+
+    '
+  appearance: A cheerful woman with alchemical flasks and singed hair, clad in a stained
+    apron.
+  strengths: 'Fawn’s ability Caustic Brew costs six charges and deals damage equal
+    to the total cost of spells in her Cauldron.  After dealing damage she must destroy
+    one of those spells.  Used wisely, she can convert high‑cost spells into a big
+    burst of damage against the nemesis.
+
+    '
+  weaknesses: 'Requires a large investment of charges and spell cards to maximise
+    her attack.  Destroying spells reduces her long‑term firepower, so timing is critical.
+
+    '
+- name: Myrna, the Scholar
+  box: The Descent
+  background: 'Myrna comes from a long line of women who rebelled against authority
+    and hid knowledge in plain sight.  She now serves as the family’s eyes and ears,
+    memorising everything so future generations can learn from the past【154712644170753†L199-L203】.  She
+    aids the mages by sharing ancient wisdom gathered over centuries.
+
+    '
+  appearance: A quiet scholar carrying stacks of notes and scrolls.
+  strengths: 'With four charge spaces, her ability Study the Ancients grants four
+    knowledge tokens when fully charged.  Knowledge tokens can be spent by any player
+    on their turn for various effects, providing flexibility and support to the team.
+
+    '
+  weaknesses: 'She contributes no direct damage or healing on her own; her value depends
+    on players making good use of her knowledge tokens.
+
+    '
+- name: Dalana, the Healer
+  box: The Descent
+  background: 'Dalana grew up alongside Brama but was never blessed with the sister‑words.  She
+    feared her friendship would end when Brama became an initiate, yet she refused
+    to abandon those she cared about【846904123673411†L182-L185】.  Instead she trained
+    in the healing arts and now travels with expeditions to mend wounds and tend to
+    the injured.
+
+    '
+  appearance: A kindly woman in simple clothes carrying bandages and salves.
+  strengths: 'Dalana’s ability Bandage requires five charges and allows any player
+    or Gravehold to gain four life.  This potent heal can save mages from defeat and
+    shore up Gravehold’s defences during long battles.
+
+    '
+  weaknesses: 'She offers no offensive capabilities.  If the team does not need healing
+    her charges may sit unused.
+
+    '
+- name: Joanna, the Merchant
+  box: The Caverns
+  background: 'Joanna is a shrewd merchant who respects breach mages but believes
+    artisans and craftspeople should profit from their work.  She remarks that mages
+    could accomplish little without the people who craft their gear and insists those
+    workers deserve a fair share【966594067266167†L202-L206】.  Joanna accompanies expeditions
+    to broker deals and trade up valuable supplies.
+
+    '
+  appearance: A well‑dressed woman with a ledger in hand and a glint of cunning in
+    her eye.
+  strengths: 'Her Barter ability allows her to destroy any number of cards from the
+    market; then a player gains a card costing up to three times the number of destroyed
+    cards.  With careful timing she can remove unwanted low‑cost cards and grant powerful
+    relics or spells to the team.
+
+    '
+  weaknesses: 'Destroying market cards permanently reduces the supply pool.  If misused
+    it can deprive the team of critical cards later in the game.
+
+    '
+- name: Xaxos, the Arcane Researcher
+  box: The Abyss
+  background: 'A young scholar longs to become a mage like her mother but struggles
+    to master the sister‑words.  She pours through books about the Void and corruption,
+    dreaming of fighting alongside the breach mages【197222158612516†L235-L239】.  As
+    the Arcane Researcher she experiments with new spells and shares her findings
+    with allies.
+
+    '
+  appearance: A studious girl clutching a stack of books and a mysterious amulet,
+    surrounded by glowing charts.
+  strengths: 'Xaxos has four charge spaces and a boon deck.  When fully charged she
+    uses Experimental Success to draw two cards from her boon deck, providing unique
+    boons that can grant additional actions, aether or damage.  Shield tokens she
+    provides can absorb damage on behalf of players.
+
+    '
+  weaknesses: 'Her boons are random and may not align with immediate needs.  She lacks
+    direct ways to damage the nemesis or heal allies.
+
+    '
