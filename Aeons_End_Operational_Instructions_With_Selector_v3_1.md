@@ -61,6 +61,7 @@ Before writing any narrative for a chapter:
 - Read the chosen mage entries (including story notes and chosen variants/boxes).
 - Read the nemesis entry for the current battle.
 - If present, read the current battle’s friend and foe entries.
+Never add source markers or provenance metadata fields (such as `sources`) to any datasets or packet output.
 Goal: ground tone, relationships, and motivations in the provided material.
 
 ### 4.3 Internal ideation (never shown)

@@ -3,6 +3,7 @@
 This describes the JSON returned by `select_expedition()` in `aeons_end_expedition_selector_v3.py`.
 
 The selector outputs *verbatim YAML fields* for the selected entities so the narrator can read them directly.
+Do not add source markers or provenance metadata fields (such as `sources`) to the datasets or packet output.
 The selector performs **selection only** (no win/lose state, rematches, reinforcements, or reward timing).
 
 Guarantee (given your datasets): the selector returns **collision-free** selections:

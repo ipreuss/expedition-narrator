@@ -4,7 +4,7 @@ foes:
   box: The Descent
   background: 'In an abandoned city Adelheim spots another human across the firelight
     and wonders why they must fight fellow survivors.  The man’s mind has been warped
-    by the Void—he mumbles to himself and tends a flickering ritual【334078665378768†L209-L213】.  This
+    by the Void—he mumbles to himself and tends a flickering ritual.  This
     cultist now serves the Nameless and fuels dark rites to summon greater horrors.
 
     '
@@ -24,7 +24,7 @@ foes:
   box: The Descent
   background: 'Leisan warns that the Void is full of tiny creatures that burrow into
     the ground.  If ignored a single larva becomes a swarm; she has seen them devour
-    entire camps before anyone knew what was happening【794655397010196†L207-L210】.  This
+    entire camps before anyone knew what was happening.  This
     foe commands a hive of Broodlings and overwhelms mages with numbers.
 
     '
@@ -44,7 +44,7 @@ foes:
   box: The Descent
   background: 'Raven encounters a monstrous creature that knows only hunger and thirst.  It
     scrapes through tunnels trying to regain warmth and devours everything in its
-    path【680015390521694†L203-L206】.  Though she feels a flicker of pity for its desperation,
+    path.  Though she feels a flicker of pity for its desperation,
     she knows it will reduce Gravehold to dust if unchecked.
 
     '
@@ -63,7 +63,7 @@ foes:
 - name: The Scavenger
   box: The Descent
   background: 'Mazahaedron notes that not all Void creatures become Nameless.  Some
-    lurk in shadows, creeping up on half‑dead victims to finish them off【498285638565859†L188-L193】.  The
+    lurk in shadows, creeping up on half‑dead victims to finish them off.  The
     Scavenger prowls behind the main battle, waiting for wounded mages to falter so
     it can strike.
 
@@ -85,7 +85,7 @@ foes:
   box: The Caverns
   background: 'Fawn recalls battling in a thunderstorm where the ground turned to
     mud and lightning struck randomly.  She groans that her hair was a mess and that
-    the combat was miserable【878452736761382†L205-L209】.  The Storm embodies this
+    the combat was miserable.  The Storm embodies this
     chaotic weather, lashing out at the mages with blasts of electricity.
 
     '
@@ -105,7 +105,7 @@ foes:
   box: The Abyss
   background: 'The Traitor believes his allies are small‑minded fools who fail to
     grasp the power within reach.  He claims he will become the strongest mage so
-    that he can protect everyone—even if he must betray them now【56020180417181†L202-L205】.  His
+    that he can protect everyone—even if he must betray them now.  His
     selfish determination drives him to harness dark forces at any cost.
 
     '
