@@ -1,0 +1,893 @@
+nemeses:
+- name: Rageborne
+  box: Aeon's End (Core Set)
+  battle: 1
+  background: |
+    Rageborne is one of the earliest Nameless encountered by Gravehold.  The long
+    war has hardened children into warriors and stripped joy from daily life, and
+    Rageborne embodies that relentless brutality.  It is described as the executioner
+    champion of the Nameless, a hulking beast with blades and horns that
+    demonstrates pure force rather than cunning.  Survivors speak of its roar
+    echoing across chasms and of battles where its body vanished into darkness
+    without a sound, leaving them uncertain if it was truly gone.
+  appearance: A hulking, horned monstrosity wielding massive blades (in art).
+  strengths: Focuses on direct damage
+  weaknesses: Relatively straightforward; lacks complex mechanics and can be defeated
+    quickly
+- name: Carapace Queen
+  box: Aeon's End (Core Set)
+  battle: 1
+  background: |
+    Also called the Mother‑of‑Husks or Swarm Daughter, the Carapace Queen has
+    brought more ruin upon Gravehold than any other single Nameless.  Legends
+    describe her armies as endless, with husks spilling like molten metal from
+    cracks in the earth.  Her forces are described as more machine than beast, and
+    survivors tell tales of collapsing tunnels to escape her throngs.  Even when
+    one husk is destroyed, many more seem to crawl from beneath her carapace.
+  appearance: Depicted as a massive insectoid queen covered in chitinous armor.
+  strengths: Summons hordes of husk minions, overwhelming the players with numbers
+  weaknesses: Vulnerable if players manage the husks and focus damage on the Queen
+    herself
+- name: Crooked Mask
+  box: Aeon's End (Core Set)
+  battle: 2
+  background: |
+    Elders whisper that Crooked Mask is a god of corruption whose weapon is
+    temptation.  This Nameless feeds on desire, offering survivors what they
+    most crave in exchange for their souls.  People murmur that behind its grin
+    lies a desolate laugh and that a terrible sound lurks beneath its chiming
+    bells.  Those who confront Crooked Mask report vivid dreams and intrusive
+    thoughts that test their loyalty to one another.  Only strong bonds of trust
+    and self‑control can resist its lure.
+  appearance: Often shown as a tall figure wearing a smiling mask.
+  strengths: Uses corruption and temptation mechanics to manipulate players and punish
+    greed
+  weaknesses: Can be beaten by careful resource management and resisting temptation
+- name: Prince of Gluttons
+  box: Aeon's End (Core Set)
+  battle: 1
+  background: |
+    Long ago, when the world was swallowed by darkness, survivors huddled in
+    Gravehold to preserve what little remained of their history.  The Prince of
+    Gluttons was among the Nameless that besieged them.  At first it seemed
+    harmless, but after its passing people realised they could not recall where
+    they had come from.  This creature devours memories, history and even the
+    words of ancestors, leaving its victims adrift in the present with no
+    connection to their past.  It slithers silently through tunnels, erasing
+    inscriptions and names wherever it goes.
+  appearance: A many‑mouthed beast that devours cards and memories.
+  strengths: Devours cards from supply piles, starving players of resources and accelerating
+    destruction
+  weaknesses: Can be starved of resources if players end the game quickly with high
+    damage
+- name: Gate Witch
+  box: War Eternal
+  battle: 4
+  background: |
+    The Gate Witch is a time‑twisting entity that emerges from breaches and monoliths to warp
+    reality.  She manipulates the sequence of events, reversing or accelerating moments at will,
+    and hides within ragged robes and clawed hands.  Entire battles can feel like they are
+    unfolding twice as fast or barely moving at all under her influence.  Some of her invocations
+    linger, cycling back again and again, making it impossible to outlast her by simple attrition.
+  appearance: A sinister mage‑like figure with long claws and a ragged cloak.
+  strengths: She twists time to her advantage, creating sudden flurries of action and then
+    dragging seconds into minutes to unsettle her foes.
+  weaknesses: Her temporal weaving grows slowly; swift and decisive actions can disrupt her and
+    prevent her from gaining momentum.
+  special_rules: When Gate Witch accelerates time, she loses five nemesis tokens instead
+    of four.
+- name: Umbra Titan
+  box: War Eternal
+  battle: 1
+  background: |
+    A colossal leviathan from the Void, the Umbra Titan surged up from the remains of a fallen
+    prophet and threatened to drag the city into darkness.  Its presence warps time and gravity;
+    one moment it moves with unnatural speed, the next it lumbers as if the air were thick jelly.
+    Each howl resonates through stone and bone, shaking foundations and calling lesser beasts to its aid.
+    Those who face it must act quickly, for with every heartbeat the city’s strength erodes.
+  appearance: A colossal worm‑like creature shrouded in darkness, towering above the
+    city.
+  strengths: The Titan’s onslaught destabilises the city and summons swarms of void creatures.
+  weaknesses: Its momentum can be stalled if defenders endure its assault and use the brief
+    pauses in its movement to regroup.
+- name: Hollow Crown
+  box: War Eternal
+  battle: 3
+  background: |
+    Survivors whisper of dark machinations within Gravehold.  Indira, a breach apprentice, writes that their numbers wane despite the arrival of Yan Magda and her companions.  Faith has kept them alive, yet it is precisely faith that the Hollow Crown craves.  Its acolytes were once mages performing forbidden blood rituals in the rubble of the Craghollows; through their devotion the Crown draws strength and becomes unstoppable.  Unlike other Nameless it does not inspire terror but reverence.  It regards the people of Gravehold not as victims but as would‑be worshippers, and it sees the city itself as a cage for its subject—thus it has little reason to destroy its captives.
+  appearance: |
+    A tall, sinewy creature with exposed red musculature and bone‑white armour plating.  It wears a hollow, crown‑shaped helm that encases its head and shoulders.  In one hand it carries a staff or sceptre, and in the other it gestures as if offering something unseen.  Veins glow faintly beneath its skin, hinting at the blood magic it employs.
+  strengths: |
+    The Hollow Crown compels reverence in those who behold it.  Its masked acolytes, former mages turned blood‑magic cultists, willingly sacrifice their own vitality to feed its power.  The Crown siphons life from their devotions, growing stronger as their faith intensifies and using forbidden rituals to sap strength from its enemies.
+  weaknesses: |
+    Its influence depends on the unwavering devotion of its followers.  By breaking the thrall of its acolytes, exposing its true intentions or disrupting its blood‑magic rites, defenders can sever the Crown’s source of power.  The Nameless itself cannot be harmed directly until its congregation is freed or destroyed.
+  story_notes: |
+    Indira warns that conspiracies within Gravehold are eroding the survivors’ faith.  She observes that the Crown’s followers are driven not by fear but by awe and a promise of power.  Their blood rituals repulse her, yet she notes that the Crown regards them as potential worshippers, not prey.  Indira reflects that Gravehold has become a cage for those under the Crown’s sway; unless they confront the cult’s allure, there may be fates worse than death.  Ohat suggests that death is the worst fate, but she disagrees.
+- name: Magus of Cloaks
+  box: War Eternal
+  battle: 3
+  background: |
+    The Magus of Cloaks is a faceless terror wrapped in innumerable layers of black fabric.
+    Each cloak is woven with void threads that absorb light and even memories.  As he glides
+    through the air he leaves trails of shadow that crawl like worms, and his followers echo
+    his movements in ragged unison.  Only by peeling away his veils one by one and enduring
+    the darkness beneath can the mages hope to glimpse the form hidden at the centre.
+  appearance: A shadowy figure wrapped in cloaks, with only glowing eyes visible.
+  strengths: Layers of darkness and resilient minions shield him from harm; he absorbs
+    assaults and darkens the battlefield with worm‑like tendrils.
+  weaknesses: Persistence and steady strikes can peel away his cloaks, eventually exposing his core.
+- name: Arachnos
+  box: The New Age
+  battle: 2
+  background: |
+    Arachnos began as a human mage and devoted follower of Xaxos.  Convinced that harnessing Void power was the only way to save his people, he fused his body with a giant spider and experimented on animals and mages alike.  Walking on segmented limbs with a warped human torso, he now commands swarms of insectoid creatures and weaves living webs to trap foes.  Unlike most Nameless he speaks, bragging that the Nameless bow to him and that breach magic is merely a tool to hasten humanity’s evolution.  He begs the mages to let him finish his “experiment,” claiming he can save Gravehold if given time, and he mocks those who fear Xaxos’s teachings.  Arachnos’s ambition and twisted logic mirror Xaxos’s own fall from grace and serve as a warning of how easily good intentions can become monstrous.
+  appearance: A warped human torso fused with a mass of arachnid legs, void energy pulsing under his skin.
+  strengths: Arachnos controls swarms of spider‑like minions and can weave living webs to trap foes.  He channels breach energy directly into his body, making him unnaturally strong and allowing him to commune with portals.
+  weaknesses: His overconfidence and need to maintain control over his experiments leave openings for focused resistance.  The human remnants within him may still hesitate, and his transformations strain his body, causing instability.
+    on the track
+- name: Horde‑Crone
+  box: The Depths
+  battle: 3
+  background: 'Horde‑Crone awoke deep beneath Gravehold and summoned hordes of ancient
+    troggs to attack the city.  It relies on a secondary trogg deck; whenever the
+    nemesis unleashes a trogg enters play and the number of troggs of that type in
+    play determines how severe their effect is. '
+  appearance: A decrepit crone surrounded by trogg minions emerging from tunnels.
+  strengths: Overwhelms players with large numbers of minions
+  weaknesses: Has limited ways to damage players directly; if the troggs are kept
+    under control, the nemesis can be defeated
+- name: Blight Lord
+  box: The Nameless
+  battle: 3
+  background: 'The Blight Lord was the first Nameless to arrive in The World That
+    Was and immediately began destroying cities.  Everything it touches turns to glass—cities,
+    people and even the ground itself.  In the game it uses a secondary deck of Tainted Jade
+    gems that are forced into players’ decks.  Players must spend aether to remove
+    these tainted gems; if the Tainted Track advances too far or the supply empties,
+    devastating effects trigger. '
+  appearance: A towering Nameless covered in crystalline growths, its touch leaving
+    glassy ruin.
+  strengths: Fills players’ decks with Tainted Jade, clogging their hands and forcing
+    them to divert resources
+  weaknesses: If players manage their tainted gems and prevent the track from advancing,
+    the Blight Lord has no other strong attacks and can be defeated
+- name: Wayward One
+  box: The Nameless
+  battle: 3
+  background: 'The Wayward One is a creature trapped between worlds.  It flickers
+    and phases in and out of existence through the breaches, never truly in one place.  Fighting
+    such an ethereal entity requires careful timing.  Its mechanics revolve around
+    shifting its position on a chart; spells must be aligned to deal full damage,
+    while misaligned spells deal half damage. '
+  appearance: An ethereal, translucent figure with limbs stretched between portals.
+  strengths: The Wayward One’s shifting positions cause misaligned spells to deal
+    reduced damage, significantly weakening the players
+  weaknesses: With careful management of spell positions and timing, players can keep
+    their spells aligned and mitigate the nemesis’s effects
+- name: Knight of Shackles
+  box: The Void
+  battle: 1
+  background: 'Many believe the Knight of Shackles is the risen form of Thraxir, the
+    bravest warrior of Gravehold who was slain by Rageborne. Now a skeletal commander
+    of undead, the Knight commands an army from Gravehold’s burial sites and uses
+    breach magic against the mages. It employs its own breach mat with four breaches;
+    as these breaches open the nemesis grows stronger, and when the final breach opens
+    Gravehold is overrun. '
+  appearance: An armored skeleton wielding shackles and controlling undead minions.
+  strengths: 'Uses a separate breach mat: each time the Knight focuses or opens a
+    breach, various effects occur—including damaging players, reviving minions and
+    dealing massive damage when later breaches open'
+  weaknesses: Players can spend aether to rotate the Knight’s breaches back, delaying
+    their opening
+  story_notes: |
+    In the narrative of The Void this skeletal commander arises from Gravehold’s burial sites, wielding shackles and commanding undead minions.  Many believe he is the risen form of Thraxir, a legendary warrior slain during the fight against Rageborne.  In a later expedition (Outcasts) the knight returns as a corrupted hero who rides a skeletal steed amid blank‑faced infantry.  When the mages break through his thralls they recognise glimmers of humanity and learn from him of a fountain that collects the aether of fallen mages.  He warns them to destroy it, revealing both his lingering loyalty to humanity and the danger of tampering with the Void【980884546724550†screenshot】.
+- name: Maiden of Thorns
+  box: The Void
+  battle: 3
+  background: 'The Maiden of Thorns is a bladed horror that revels in extracting pain
+    from the inhabitants of Gravehold.  At the start of the game she places a double‑sided
+    Thorn token on the cheapest supply pile; the damage she deals to a player or Gravehold
+    depends on the number of cards beneath this token and the side that is face up.
+    As the game progresses she moves the token to different piles and upgrades it,
+    increasing the damage inflicted.  The Maiden feeds on suffering and, according
+    to Indira, even consumes the memories of fallen mages. '
+  appearance: A monstrous creature with razor‑sharp blades protruding from its body,
+    dripping blood.
+  strengths: Uses a Thorn token to mark a supply pile; deals damage equal to the number
+    of cards beneath it and additional damage based on the nemesis tier when she has
+    two or more nemesis tokens
+  weaknesses: Players can control which supply pile the token is on by emptying piles
+    and plan around the damage
+- name: Bladius
+  box: Aeon's End Legacy
+  battle: 1
+  background: 'Bladius is a blade‑covered servant bred by Maelstrom as a lieutenant.  It
+    excels at melee combat and prowls the tunnels near New Gravehold.  Scouts report
+    that Bladius is searching for something unknown. '
+  appearance: A hulking Nameless covered in spinning blades.
+  strengths: Deals heavy direct damage and pressures players early
+  weaknesses: Lacks complex mechanics; can be defeated with focused damage and healing
+  story_notes: |
+    In the chaos after Maelstrom’s collapse, scouts leading survivors through
+    collapsed tunnels are ambushed by Bladius.  The hulking lieutenant emerges
+    from the darkness covered in blades, its thick armour scattering sparks
+    against tunnel walls.  It commands minions left behind by Maelstrom and
+    lunges at groups of evacuees, forcing breach mages to interpose
+    themselves.  Defeating Bladius signals that remnants of the Nameless army
+    still lurk in the caverns and must be hunted down before the refugees can
+    rebuild safely.
+- name: Deathmind
+  box: Aeon's End Legacy
+  battle: 4
+  background: 'When scouts confronted the entity they called Deathmind, they returned
+    with most of their memories wiped, describing only a chill that crept into their
+    minds.  Brama warns that facing Deathmind is a desperate measure. '
+  appearance: A floating mass of brains and tendrils radiating psychic energy.
+  strengths: Uses a neural bridge to connect supply piles
+  weaknesses: Vulnerable if players manage the neural bridge; once its connections
+    are broken its attacks falter
+  story_notes: |
+    In the aftermath of the Haze Fiend assault the survivors learn that Maelstrom has awakened and that a rare ore on the surface could be used to forge weapons against it.  Scouts report that the ore is guarded by Deathmind, a Nameless whose psychic tendrils erase memories.  Led by Brama and fortified by her insights from the Fungal Mesh, the mages confront Deathmind in its lair.  Brama anchors their mental pathways and restores thoughts as the creature attempts to devour them.  They feel memories slipping away—faces of parents and voices of friends—but press on.  With Brama’s aid they overwhelm Deathmind from within, destroy its mind and collect the ore for Malastar.  Though some memories are lost forever, Brama and Mist close the breach and secure the ore, leaving the party wary of how easily a Nameless can erode identity.
+- name: Fungal Mesh
+  box: Aeon's End Legacy
+  battle: 2
+  background: 'The Fungal Mesh is a hive‑mind fungus that overtook the minds of the
+    first scouts to encounter it, turning them against one another and coating the cavern floor in blood.  The survivors quickly realised that this pulsating organism could seize control of anyone who inhaled its spores, forcing comrades to fight and fall.  From that day scouts kept their distance, watching the Mesh from afar and reporting its growth.  Brama at first underestimated its power, but after she herself was ensnared she vowed that the beast must be stopped if the refugees are to build a new life on the surface. '
+  appearance: A carpet of luminescent fungal tendrils spreading across the cave floor.
+  strengths: The Fungal Mesh spreads clinging spores that invade minds and twist perception.  Possessed scouts strike at their companions, and as the fungus feeds on aether its hive‑mind influence deepens, using enthralled victims to defend itself and lure others into its grasp.
+  weaknesses: Fire and concentrated bursts of magic can scorch its tendrils and burn away spores; those who resist its whisperings can break the spell over allies, and severing growth clusters weakens the collective.
+  story_notes: |
+    During the third wave of the Legacy expedition Brama and Mist leave New Gravehold to search for other survivors but are ambushed by the mind‑controlling Fungal Mesh.  The Nameless’s spores encase Brama and seize control of her mind, forcing Mist to flee back to camp wounded and beg the other mages to rescue their general.  The party ventures into the fungus‑choked tunnels, battling hallucinations and mental attacks while fighting to avoid possession.  When the Fungal Mesh is defeated Brama is freed from its control and the breach to its realm is closed.  The mages carry her back to camp, and she collapses from exhaustion yet expresses relief that Mist is safe.  The encounter underscores the danger of Nameless that can corrupt minds and galvanises the survivors to seek out and support other groups before they fall prey to similar threats.
+- name: Haze Fiend
+  box: Aeon's End Legacy
+  battle: 3
+  background: 'The Haze Fiend cloaks itself in a deadly fog that drifts through camps,
+    leaving only corpses behind.  If it is not stopped the fog will move from camp
+    to camp, suffocating New Gravehold. '
+  appearance: An amorphous mass of fog with glowing eyes floating within.
+  strengths: Uses nemesis tokens and fog cards to damage players and obscure the battlefield,
+    hindering planning
+  weaknesses: When its fog is dispersed it has little defence
+  story_notes: |
+    After rescuing Brama from the Fungal Mesh the mages enjoy only a brief respite before another menace appears.  A breach opens at the edge of their camp and a dark fog seeps out under cover of night, unnoticed until it enshrouds New Gravehold.  The poisonous haze cracks the crystals that channel aether and leaves defenders gasping for breath as a faint figure moves through the gloom, draining life from those it touches.  Survivors realise they are being hunted by the Haze Fiend and scramble to disperse the fog and protect the wounded before it can suffocate the camp or spread to other settlements.  Mist and Brama confer urgently and send scouts to investigate the disturbance as the party prepares to confront this new threat.
+
+    The battle is chaotic and claustrophobic as the fog thickens and hides the creature’s true form.  A desperate final blow eventually fells the fiend, its scream tearing through the haze moments before the fog lifts and torches flicker back to life.  Survivors move among the fallen to search for loved ones and salvage what remains.  The mages barely prevent the fog from devouring the entire camp, and although a lone mage from the past helps turn the tide before disappearing again, debate rages afterward over whether it is ever acceptable to harness enemy breaches to protect their people.
+- name: Maelstrom
+  box: Aeon's End Legacy
+  battle: 4
+  background: 'Maelstrom is the enormous Nameless drawn to the world by Xaxos’s ill‑fated
+    experiment.  Its body bristles with spinning blades heavy enough to crush buildings;
+    if it reaches Gravehold the last refuge will be doomed. '
+  appearance: A massive centipede‑like creature with whirling limbs of blades.
+  strengths: Deals enormous damage and advances relentlessly toward Gravehold
+  weaknesses: Slow to ramp up; if players manage early minions and focus damage they
+    can defeat it before it gains momentum
+  story_notes: |
+    Maelstrom manifests as a colossal orb of whirling blades ejected from the
+    largest breach ever seen.  Its arrival sets the sky ablaze and hurls waves
+    of minions into burning streets.  Breach mages realise they cannot slay it
+    through force alone; instead they form a defensive line, cutting down
+    servants while the elders channel their power against the core.  As
+    Dezmodia unleashes a brilliant eruption the cavern collapses, burying
+    Maelstrom under rubble and destroying Gravehold.  Though entombed, its
+    presence lingers like a nightmare, reminding survivors of the cost of
+    ambition.
+
+    When it rises again years later the mages confront it on the surface, separated by swarms of minions and beacon‑like constructs that threaten to open yet more breaches.  The sky above New Gravehold darkens as Maelstrom’s massive body spins and its blades slice toward the ground.  Through sheer perseverance and teamwork they finally bring the creature down.  Its shell cracks open, streaming bright light from countless fractures and revealing a twisted void at its core.  As the husk splits apart its blades plunge into the earth like monuments and its body crashes to the ground, shaking the battlefield and filling the air with debris.  When the dust clears Maelstrom is no more, but the victory is short‑lived as a former ally steps forward to seize the breach’s power for himself.
+- name: Maelstrom: Risen
+  box: Aeon's End Legacy
+  battle: 4
+  background: 'The mages thought Maelstrom defeated, but it had been siphoning energy
+    and returns in a vengeance as Maelstrom: Risen.  Dezmodia’s sacrifice in the past
+    saved them, but this time the mages must be stronger than ever. '
+  appearance: A resurrected version of Maelstrom glowing with renewed power.
+  strengths: Maelstrom: Risen uses a beacon deck and a special Assault turn order
+    card
+  weaknesses: Although Maelstrom: Risen hits harder and adds beacons each turn, it
+    is still slow to ramp up
+  special_rules: 'During setup, include two fewer upgraded basic nemesis cards in
+    each tier. '
+- name: Spawning Horror
+  box: Aeon's End Legacy
+  battle: 1
+  background: 'An ancient Nameless that spawns monstrous pods from its own body.  These
+    pods fall from a breach in the sky, feeding it and increasing its strength. '
+  appearance: A towering creature with pulsating sacks that burst into smaller minions.
+  strengths: Summons pods that hatch into additional minions, overwhelming the players
+  weaknesses: If players kill the pods quickly the Spawning Horror remains weak
+- name: Xaxos: Ascended
+  box: Aeon's End Legacy
+  battle: 4
+  background: 'Xaxos’s lust for power overcame him, and he turned his back on New Gravehold.  Amplified
+    by years in the Void, his breach magic now threatens to obliterate his former
+    allies. '
+  appearance: Xaxos wreathed in darkness, levitating with multiple breaches swirling
+    around him.
+  strengths: Can use breaches like no other, casting multiple spells per turn and
+    manipulating the turn order
+  weaknesses: His arrogance may be exploited; players can disrupt his breach management
+    to slow him down
+  special_rules: 'During setup, include three fewer upgraded basic nemesis cards in
+    each tier. Use this variant to fight Xaxos: Ascended as the final nemesis of Aeon’s
+    End: Legacy.'
+  story_notes: |
+    After Maelstrom is brought down and the survivors move to seal the last breach, Xaxos returns transformed by years in the Void.  Wreathed in darkness with multiple breaches swirling around him, he reveals that he lured the giant Nameless to New Gravehold to siphon its power.  He boasts of drinking from the same well that feeds the Nameless and swears that he will die before he lets the breach be closed.  Xaxos hurls bolts of shadow that dissolve everything they touch and opens swirling portals to summon hordes of minions.  His mind, once inquisitive and compassionate, is now consumed by ambition and void energy.  Reasoning and pleas fail; the mages must decide whether to destroy the man they once called friend or risk losing their home and humanity to his insatiable lust for forbidden power.
+
+    In the climactic confrontation the mages bring him to his knees, but he refuses to yield.  As they channel their magic to close the breach he staggers forward, scorched and crackling with electricity, and attempts to draw power from the swirling void.  Brama’s voice rings out, begging him to renounce the Void and return to them, while Malastar lunges to stop him.  Xaxos snarls that he will not be helpless ever again.  A bolt of energy strikes him and a long, black tendril emerges from the breach, wrapping around his mouth and lifting him into the air.  His eyes widen with terror as the tendril drags him into the darkness and the breach seals behind him.  Sunlight shines where the abyss once hung, but the survivors are left with questions: what happened to Xaxos in the Void, and will his ambition one day bring him back?  The answers remain unknown, lingering over New Gravehold like a whisper of returning storm.
+- name: Ageless Walker
+  box: The New Age
+  battle: 3
+  background: |
+    Once a mage and follower of a wayward leader, this man sought to harness Void power and transcend mortality.  The ritual he performed aged him to brittle bones and left his soul tethered to a decaying corpse.  Now a skeletal creature dripping with void essence wanders the wilderness, where every step withers grass and ages leaves to dust.  He carries the cloak of his former faction and the symbol of his misguided loyalty.  He is more Nameless than human, striking down both foe and former ally with equal disregard.
+  appearance: A skeletal figure wrapped in tattered cloaks, void essence oozing from cracks in its bones and fingers elongated into talons.
+  strengths: Drains life and ages everything around it, causing vegetation and flesh to wither.  Its touch can kill followers and enemies alike, and its presence brings decay and despair.
+  weaknesses: The ritual that sustains it leaves it brittle; severing its connection to the Void or confronting it with memories of its past life may weaken its resolve and slow its relentless decay.
+- name: Fenrix
+  box: The New Age
+  battle: 4
+  background: |
+    Fenrix was born of a twisted experiment to infuse a wolf with void energy.  The creature that emerged was no longer a mere animal: six glowing eyes peer through swirling snow and its mind‑shattering howl freezes the blood of any who hear it.  It prowls the wilds like a force of nature, conjuring blizzards where no snow should fall and leaving paw prints as wide as a mage’s arm embedded in the soil.  Survivors speak of a gentle snowflake landing on a cheek, a sudden gale turning sunlit woods into a whiteout and a shadow with six eyes emerging from the storm to claim its prey.  Fenrix embodies the land’s volatility and the Void’s ability to twist weather itself into a weapon.
+  appearance: A massive, six‑eyed wolf with fur matted by void spores, breath frosting in the air and claws that leave trails of ice across the ground.
+  strengths: Conjures unexpected blizzards and uses keen senses to stalk prey in whiteout conditions.  Its frozen howl paralyses and disorients those who hear it, and it moves through the storm with predatory grace.
+  weaknesses: The unnatural cold it conjures is unstable; luring Fenrix away from its storm or disrupting its concentration can weaken it and expose its vulnerable form.
+- name: Maggoth
+  box: The New Age
+  battle: 1
+  background: |
+    Maggoth is a massive insectoid horror birthed from the last broodwomb of the Carapace Queen.  After the broodwomb resurfaced, a renegade mage nurtured it with breach energy until it emerged as a colossal creature.  Maggoth lurks in swamps and marshlands near New Gravehold, bursting from undergrowth with a carapace streaked in void sludge.  Its segmented body and chittering mandibles are accompanied by a swarm of smaller broodlings it controls with unnerving coordination.  Witnesses note that the creature seems almost guided by a human intellect as it flanks, divides and overwhelms its foes.  These swarms spread through the wetlands like a plague, threatening to overrun settlements if left unchecked.
+  appearance: A towering beetle‑like monstrosity with glistening husks, dripping void slime and ovipositor segments that spawn waves of smaller insects.
+  strengths: Commands swarms of insectoid minions and spreads brood pods throughout the swamp, using terrain and numbers to overwhelm settlements.  Its hive mind allows unexpected coordination among its creatures.
+  weaknesses: Its brood pods and egg sacs are vulnerable before they hatch; destroying them early can halt the swarm’s growth and weaken Maggoth’s influence.
+- name: The Wailing
+  box: Shattered Dreams
+  battle: 3
+  background: 'In a forest where jade statues memorialize battles against the Blight Lord,
+    scouts have recently found trees encased in blue onyx.  Those who hear the Wailing’s
+    scream are infected by onyx that bursts through their skin and freezes them into
+    statues.  The onyx infection is spreading toward New Gravehold. '
+  appearance: A ghostly figure surrounded by shards of blue onyx, its mouth open in
+    an eternal scream.
+  strengths: Inflicts Cracked Onyx cards on players; these clog their decks and cause
+    them to gradually petrify
+  weaknesses: If the onyx cards are managed and removed, the Wailing’s effect dwindles
+- name: The Wanderer
+  box: The Ancients
+  battle: 3
+  background: 'According to Brama, history repeats itself: the new home may fall just
+    as the old did.  Ancient records link the Wanderer to the Wayward One; it flickers
+    between forms and may be the same creature. '
+  appearance: A shimmering figure that shifts between shapes, sometimes human, sometimes
+    monstrous.
+  strengths: Reduces all damage from player abilities and cards to 1; players must
+    spend aether to deal additional damage
+  weaknesses: Spending aether can overcome its dampening pylons
+- name: Necroswarm
+  box: Into the Wild
+  battle: 4
+  background: |
+    Necroswarm was once a peaceful creature that roamed far from human settlements, a living amalgam of vines and roots that nurtured the forest and even raised one young mage as its own.  Its corruption began when a traitorous breach mage used glowing glyphs to siphon its energy and drive it north.  Twisted by unstable Void pus and compelled by runes, Necroswarm’s family of brambles turned into an invading army.  To Inco it still feels like home; to New Gravehold it is a symbol of betrayal, showing how easily compassion can be weaponised.
+  appearance: |
+    A colossal bull shaped from vines and thorny branches, covered in brambles that ooze sickly green pus.  Six luminous eyes stare out from a face woven of leaves and bark.  Around its hooves swarm living bramble minions—twisted shrubs infused with void energy—that detonate in explosions of green mist and decay.  Its hide rustles with insects and the scent of sap and rot.
+  strengths: |
+    Necroswarm commands an ever‑growing army of bramble creatures.  It marches toward settlements leaving scars of rot, and its bramble minions explode when struck, showering the battlefield with corrosive spores.  Glyph beacons allow it to siphon breach energy and regenerate its forces, and its massive size lets it trample defences while calling vines to bind its foes.
+  weaknesses: |
+    The creature’s actions are controlled by glyphs and a traitor’s influence; destroying or cleansing these runes can weaken the bramble army and free Necroswarm from its compulsion.  It responds to Inco’s pleas, hinting at a memory of its peaceful life.  Bramble minions are vulnerable to fire and can be cleared before they reach vital structures, and the unstable green pus that infuses them can backfire when ignited.
+- name: Burrower
+  box: Return to Gravehold
+  battle: 4
+  background: 'The Burrower is a massive Nameless that swims through solid rock beneath
+    the ruins of Gravehold.  Cairna hears rumbling vibrations echoing through the
+    tunnels and glimpses the creature gliding through stone like water.  It devours
+    supply piles by destroying the top card, threatening to starve mages of their
+    resources. '
+  appearance: A gigantic centipede‑like creature with stone and crystal plates along
+    its body.
+  strengths: Destroys the top card of a supply pile whenever it unleashes, removing
+    valuable cards from the game
+  weaknesses: Has no minions and can be focused down by coordinated attacks
+- name: Fortress
+  box: Return to Gravehold
+  battle: 3
+  background: 'Fortress lurks beneath the flooded ruins of Old Gravehold.  Explorer Gygar descended into the chasm hoping to recover relics and artefacts from the sunken city but instead discovered a gigantic aquatic Nameless that had made the wreckage its home.  From above it looked like a pile of fallen buildings, but as the party approached the rubble rose and revealed itself to be a living creature.  Fortress has adapted to the ruins, using stones from the collapsed city to construct a nearly impenetrable shell like a mobile citadel.  Defeating it may provide insight into how Nameless integrate themselves into the environments of our world. '
+  appearance: A colossal crustacean‑like Nameless with a body obscured beneath a mountain of fused stones and shattered buildings, resembling a fortress that drags itself along the sea‑floor.  Its claws are like battering rams and its shell resembles the ruined skyline of Old Gravehold.
+  strengths: Fortress drags rubble across the battlefield, continually adding debris to its shell to thicken its armour.  Its massive claw strikes and shifting bulk can crush foes and deflect spells; as it advances its defences become almost unbreakable.
+  weaknesses: Once it is forced out of the ruined zone or its shell is dismantled, the rubble falls away to expose its softer body.  Stripping away its defences with persistent attacks and preventing it from gathering more stones are key to defeating it.
+- name: The Burning Kor
+  box: Southern Village
+  battle: 4
+  background: 'New Gravehold’s surface activity has pushed Portalborn further south,
+    forcing the Kor, a creature of living flame, toward Azer.  Kel warns that this
+    flaming creature ignites the surrounding forest and must be stopped before it
+    consumes Azer. '
+  appearance: A towering inferno with a skeletal visage, constantly shedding embers.
+  strengths: Places ember tokens on a movement mat; embers advance toward a village
+    space and explode when they arrive, dealing heavy damage to Gravehold and mages
+  weaknesses: Embers can be removed before they reach the end of the mat
+- name: Experiment 153
+  box: Outcasts
+  battle: 1
+  background: 'Experiment 153 began as a rabbit left in the Void by Arachnos.  The
+    Void warped the creature beyond recognition; its very cells no longer match any
+    known life and it hungers for Aether.  Taqren warns that perhaps the Void cannot
+    be used for good; it only corrupts. '
+  appearance: A grotesque mutated beast with gaping maws and tentacles sprouting from
+    its body.
+  strengths: Uses maw tokens that represent its insatiable hunger
+  weaknesses: Maw tokens can be managed early to prevent exponential growth
+- name: Fountain of Souls
+  box: Outcasts
+  battle: 4
+  background: 'Deep in the Void, Xaxos (Outcasts) discovered what he thought was a
+    bubbling fountain of Aether.  The shimmering column turned out to be a living
+    creature that absorbs Aether, hoarding the souls of those it drains.  Survivors
+    are drawn to its glow, mistaking it for salvation. '
+  appearance: A shifting, translucent column of Aether with faces trapped within the
+    flowing energy.
+  strengths: Uses a souls track; as the track fills, it unleashes powerful attacks
+    and drains Aether from players
+  weaknesses: Players can remove souls from the track through card effects
+- name: Risen Thrall
+  box: Outcasts
+  battle: 3
+  background: 'While battling the Knight of Shackles, Z’hana (Outcasts) fought alongside
+    thralls.  Now she encounters a follower of the Knight leading its own army of
+    thralls.  Z’hana fears that even if a Nemesis is defeated its servants may return
+    and wonders whether thralls can become Nameless themselves. '
+  appearance: A skeletal soldier wearing tattered armor, surrounded by thrall minions.
+  strengths: Summons numerous thrall minions and gains bonuses when minions die
+  weaknesses: Minions have low health and can be cleared before they overwhelm the
+    players
+- name: Thief of Dreams
+  box: Outcasts
+  battle: 2
+  background: 'Deep in the Void, Ilya and Kel sensed a hole in reality that exudes
+    mist and distorts their perception.  The Thief of Dreams feels like a void itself;
+    its mist makes focusing on spells difficult and even clouds may be corrupted. '
+  appearance: A shadowy being shrouded in swirling mist, with eyes like endless voids.
+  strengths: Uses a dream deck that fills players’ hands with strange dreams and misfires
+    spells
+  weaknesses: Proper management of the dream cards can limit its impact
+- name: Bishop of Scrolls
+  box: Legacy of Gravehold
+  battle: 1
+  background: |
+    The Bishop of Scrolls recounts a cautionary legend about the origins of New Gravehold.
+    Long ago, settlers built a city underground to escape the monsters that prowled
+    the surface, trusting in stone walls and patrols of scouts and mages to keep
+    them safe.  They even sent mages into the Void to push the Nameless away so
+    that all could live in peace.  Over time complacency took root.  Restless minds
+    experimented with void‑magic and some longed to return to the surface.  In their
+    hubris they summoned a colossal Nameless into Gravehold itself.  The walls
+    tumbled and the caves crumbled; for the first time in generations the people
+    confronted true fear.  The Bishop tells this story to remind others that forgetting
+    the proper fear of monsters and meddling with forbidden power invites disaster.
+    He now acts as a nemesis who punishes those who ignore the lessons of history.
+  appearance: A robed and armoured figure with a featureless hood and a gleaming
+    breastplate, holding an ancient tome alight with shifting script as scrolls and
+    pages swirl in the air around him.
+  strengths: Wields cursed knowledge; he overwhelms mages with arcane lore and punishes
+    those who delve too deeply into his scrolls
+  weaknesses: If his scrolls and pages are torn away his influence wanes and his
+    grip on the battle loosens
+- name: Brama (Legacy of Gravehold)
+  box: Legacy of Gravehold
+  battle: 2
+  background: 'Brama insists she has guided the city longer than any other.  She taught
+    the sister‑words, built the walls and shelters, and reminds young mages that their
+    magic arose from desperation not pleasure.  Refusing to let her work crumble or
+    lose more family, she now stands as a nemesis to protect the old ways at any cost. '
+  appearance: An elderly woman wielding binding runes, her eyes aflame with righteous
+    fury.
+  strengths: Prevents players from gaining charges or healing; uses mentor tokens
+    that punish mages for using advanced spells
+  weaknesses: Has low life compared to other Legacy nemeses
+
+# Gate Witch (Legacy of Gravehold)
+- name: Gate Witch
+  box: Legacy of Gravehold
+  battle: 4
+  background: |
+    Yan Magda, Brama and Phaedraxa speak of a ragged visage glimpsed in the depths of the
+    Void that they call the Gate Witch.  It is said that the infinite is this witch’s
+    dominion—she bends and breaks time itself.  To Brama, time flows like water, and
+    human lives are drops of blood in a vast confluence; to Phaedraxa, the end is written
+    in the ashes of the beginning.  Indira, a breach apprentice, has seen the malice of
+    time first‑hand and warns that future and past are smeared together across the Gate
+    Witch’s maw.  As the bells of New Gravehold toll and burnt breach air scorches
+    her face, she fears that each encounter with this entity may herald the last battle.
+    The Gate Witch embodies the relentless advance of time and the inevitability of
+    decay; it manipulates the flow of events, accelerating the arrival of doom and
+    blurring the distinction between beginnings and endings.
+  appearance: A hulking void creature with slick green skin and elongated limbs, emerging
+    through a swirling yellow gate.  Its face is twisted with gaping jaws and
+    multiple eyes, and its clawed hands reach out as if to tear the fabric of time.
+  strengths: Manipulates the passage of time, accelerating the appearance of threats
+    and turning the battlefield into a whirl of simultaneous events.  Its presence
+    warps breaches and seems to summon horrors faster than mages can prepare.
+  weaknesses: If mages can stabilise the flow of time and disrupt its acceleration,
+    the Gate Witch’s control wanes and its assaults become predictable.
+- name: Fate Shepherd
+  box: Legacy of Gravehold
+  battle: 1
+  background: |
+    The Bishop of Scrolls encountered this unusual Nameless on one of his journeys through the Void.  
+    He notes in his journal that the creature displays an inquisitive personality unlike any other he has seen.  
+    While most Nameless do not comprehend the purpose of magical relics or gems, Fate Shepherd appears to sense a connection between human aether and the Void and can manipulate those objects to its own advantage.  
+    It is able to turn weapons and spells back on the mages who wield them, making it a terrifying adversary and a potential asset.  
+    Fascinated by its cunning, the Bishop vows to recruit the Fate Shepherd into his army rather than destroy it.
+  appearance: |
+    A towering, bird‑like figure cloaked in dark feathers.  
+    Its elongated beak and many‑jointed wings are adorned with glinting gems and metallic bands.  
+    Crimson eyes burn with intelligence as crackling energy dances along its feathers and talons.
+  strengths: |
+    Fate Shepherd’s greatest weapon is its understanding of relics and aether.  
+    It can seize control of magical objects and spells, redirecting the power back toward the mages who cast them.  
+    By exploiting the link between Void magic and human magic it manipulates opponents’ tools against them and grows stronger from the chaos it creates.
+  weaknesses: |
+    The creature’s power depends on the presence of relics and spells to twist; if mages deprive it of enchanted equipment or focus on simple attacks that cannot be reversed, its influence wanes.  
+    Disrupting its control over aether and severing the bond between its mind and stolen magic prevents it from weaponising their own arsenal.
+- name: Stonemonger
+  box: Past and Future
+  battle: 2
+  background: 'Brama recounts a great invisible eruption that corrupted everything
+    it touched, causing people to mutate into monstrous forms.  Those who survived
+    became mindless enemies to their friends.  The Stonemonger is one such beast born
+    from that wave of corruption. '
+  appearance: A grotesque mass of stone and flesh, its limbs fused with cavern walls.
+  strengths: Generates corruption tokens that spread across supply piles, making cards
+    more expensive and painful to acquire
+  weaknesses: Players can cleanse corruption by destroying certain cards
+- name: Herald of the End
+  box: Past and Future
+  battle: 2
+  background: |
+    In Xaxos’s exile journal, he describes the Herald of the End as composed of five
+    dragon‑like creatures, each similar in size and appearance, fused together so
+    closely that it is difficult to see where one razor‑sharp tail ends and the next
+    spiked muzzle begins.  He questions how Brama once drew distinctions between
+    Nameless leaders and followers and wonders whether these heads might be brothers.
+    His reflections lead him to consider whether Nameless have families and how they
+    propagate so rapidly.  The creature’s form and his guilt over what he has done
+    blur his notions of hero and monster.
+  appearance: A swirling mass of five intertwined serpentine bodies, each ending in a
+    dragon head with spiked muzzles and different colours.
+  strengths: Coordinates multiple heads for devastating attacks; when one head is
+    harmed, the remaining heads grow more ferocious
+  weaknesses: Isolating and eliminating individual heads disrupts its coordination
+    and reduces its overall threat
+  story_notes: |
+    In his journal Xaxos notes that the Herald of the End defies simple categories of
+    Nameless.  It is composed of five dragon‑like entities bonded so closely that
+    leader and follower become indistinguishable.  He wonders if these heads are
+    brothers and if Nameless have families or feel grief.  He ponders how such
+    creatures can propagate so quickly that they constantly besiege New Gravehold.
+    Xaxos admits that after the fall of Gravehold he has little desire to draw
+    distinctions between monsters and mages; he wonders whether he or the creature
+    is the true monster, reflecting that he has not yet wept for Dezmodia.
+- name: Erythiza, Consumed
+  box: Past and Future
+  battle: 4
+  background: 'The ancient city of Erythiza vanished when a catastrophe struck.  In
+    the lore, a narrator pleads that those heroes who saved the world by stopping
+    the calamity must know their sacrifice mattered.  Erythiza returned as a Nameless,
+    consumed by corruption and seeking to finish what the disaster started. '
+  appearance: A floating ruin covered in glowing red runes, with tendrils of smoke
+    emerging from crumbling towers.
+  strengths: Uses corruption tokens and twisting tendrils that drain life and infect
+    players with decay
+  weaknesses: Destroying tendrils reduces its power
+- name: The Endless Decay
+  box: Origins
+  battle: 3
+  background: 'Kiri observes that animals in her homeland become corrupted; phoenixes
+    prevent them from turning into Nameless, but sometimes a corrupted creature grows
+    too large and becomes a Nameless.  The Endless Decay is such a horror—a beast
+    that rots everything it touches. '
+  appearance: A hulking, rotting creature leaving trails of decay wherever it moves.
+  strengths: Inflicts decay counters on players’ decks, turning cards into useless
+    husks
+  weaknesses: Players can purge decay by destroying decayed cards or using phoenix‑related
+    relics
+- name: Clouded Mesmer
+  box: Evolution
+  battle: 4
+  background: 'Dorian warns that the Clouded Mesmer is a smoke‑like creature that
+    invades minds.  It compels victims to crave things they never wanted, making them
+    puppets to its will. '
+  appearance: A shapeless cloud of dark smoke with hypnotic eyes drifting within.
+  strengths: Places mesmerised tokens on players; mesmerised players must follow its
+    commands, forcing them to play or discard cards in harmful ways
+  weaknesses: Removing mesmerised tokens and resisting its commands diminish its power
+- name: The Coven
+  box: The Descent
+  battle: 2
+  background: 'Brama recalls visiting a remote settlement and encountering elders
+    who mocked New Gravehold’s attempts to build a permanent community.  The settlers
+    sneered at the idea that mages could keep the Nameless at bay.  The Coven formed
+    in those desolate caves, seeking to harness the Nameless rather than fight them. '
+  appearance: A trio of witches chanting over a bubbling cauldron, their eyes glowing
+    with void power.
+  strengths: Uses hex tokens to curse players’ decks and supply piles
+  weaknesses: Destroying hex tokens and familiars weakens their spells
+- name: The Infecter
+  box: The Descent
+  battle: 1
+  background: 'The Infecter is less a creature than a corrupted landscape.  Leisan
+    describes how the ground around it softens into mud and swamp, trees turn gray
+    and skeletal, and miles of mire hide swollen figures with melting skin.  Realising
+    too late that you stand within its body, you must find and destroy its hidden
+    core before the miasma consumes you. '
+  appearance: A festering bog whose tendrils creep through the earth; infected husks
+    wade through the mire.
+  strengths: The Infecter spreads infections among players
+  weaknesses: The Infecter lacks strong direct attacks; its power depends on keeping
+    infections in play
+- name: Absorbing Wraith
+  box: The Caverns
+  battle: 4
+  background: 'Quilius leads a group into freezing caverns beneath New Gravehold and
+    senses an icy presence watching them.  Her narrative describes tracking an icy
+    wraith that froze the air itself.  The Absorbing Wraith consumes heat and traps
+    its victims in stasis. '
+  appearance: A phantom of frost and darkness, trailing icy chains and leaving frozen
+    crystals in its wake.
+  strengths: Places stasis tokens on supply piles; frozen piles cannot be purchased
+    until freed
+  weaknesses: Removing stasis tokens and using fire‑based relics thaws the piles
+- name: The Reliquary
+  box: The Abyss
+  battle: 3
+  background: 'In the Void, Xaxos watches his daughter age while he remains the same.  He
+    describes fighting a human‑shaped Nameless and fears that he is repeating his
+    old mistakes.  The Reliquary, filled with obsessions and cataclysm cards, tempts
+    him to sacrifice his future for power. '
+  appearance: A humanoid entity clad in a patchwork of reliquaries and cages, its
+    heart replaced by a glowing gem.
+  strengths: Uses obsession cards that lure players into gaining powerful but costly
+    relics
+  weaknesses: Players can avoid taking obsessions and focus on direct damage
+- name: Rust Superion
+  box: Legacy of Gravehold
+  battle: 2
+  background: 'Ilya (Force of Aether) confesses that mixing aether with the Void created
+    a mechanical horror: Rust Superion.  She regrets the catastrophic experiment and
+    warns that combining aether and Void led to devastation. '
+  appearance: A hulking construct of jagged metal and glowing aether, surrounded by
+    swirling syphon energy.
+  strengths: Draws syphon cards from its syphon deck and places them on breaches,
+    making the nemesis board fill with powerful minions
+  weaknesses: Limited by the number of syphon cards
+- name: Mother of Rust
+  box: Legacy of Gravehold
+  battle: 2
+  background: 'The Bishop of Scrolls explains that the Mother of Rust is made of countless
+    tiny rust creatures that share a single consciousness and gather to form a woman.  Talix
+    recalls that letting one small piece of rust survive allowed a giant monster to
+    form, with metal buggers that attach to skin. '
+  appearance: An enormous humanoid figure composed of rusted metal shards and writhing
+    fragments.
+  strengths: Summons rustborn minions that attach to players and drain their life
+  weaknesses: Has no life of its own—players defeat it by clearing its minions
+- name: Thrice-Dead Prophet
+  box: The Outer Dark
+  battle: 2
+  background: 'This enigmatic nemesis from The Outer Dark returns each time it is
+    defeated.  Little lore exists in official sources; the Thrice‑Dead Prophet is
+    known to come back stronger after every death and thrives on being killed multiple
+    times. '
+  appearance: A skeletal figure shrouded in rags, with glowing runes etched into its
+    bones.
+  strengths: Gains life whenever it unleashes and can ascend to immortality, causing
+    the players to lose if it accumulates too much power
+  weaknesses: Lacks aggressive offense; players can focus on burst damage to prevent
+    it from reaching higher life thresholds and end the fight quickly
+- name: 'Bishop: Returned'
+  box: Legacy of Gravehold
+  battle: 3
+  background: 'Once a trusted leader, the bishop meddled with Void magic and was warped
+    into a monstrous villain.  The mages of New Gravehold turned on their former friend,
+    defeating him and building a new city on the ruins.  Yet discontent grew in the
+    new city, and the war returned, signalling an inevitable new fall. '
+  appearance: A towering, twisted figure reminiscent of the Bishop of Scrolls, with
+    cracked armour and a stolen reliquary mask.
+  strengths: Gains nemesis tokens and summons reinforcements
+  weaknesses: Relies on reinforcements and tokens; focused attacks on minions and
+    careful management of tokens can limit his power
+- name: The Blight
+  box: The Descent
+  battle: 3
+  background: 'According to lore, the Blight Lord was the first Nameless to touch
+    the world and turned the great city of Karek into a mountain of green glass, entombing
+    thousands.  Raven recounts seeing her family petrified in emerald glass and realising
+    that the Blight is a force of nature that continues to spread like a plague.  The
+    Blight is a shard of that primordial horror and carries its crystalline corruption
+    with it. '
+  appearance: A towering tree‑like monstrosity with branches of glowing emerald glass
+    and vines strangling the landscape.
+  strengths: Uses blight crystals and green glass to shield itself; summons crystal
+    shards that infect players and can turn their cards into useless glass
+  weaknesses: Removing blight crystals weakens its defences
+- name: Infested Mutation
+  box: Past and Future
+  battle: 3
+  background: 'Brama tells that memories of the great calamity are cracked and faded,
+    but elders describe an invisible eruption that brought corruption in its wake,
+    rapidly twisting everything it touched into monstrous forms.  Those who remained
+    human found themselves surrounded by friends turned mindless enemies.  The Infested Mutation
+    is such a mass of corrupted life born from that explosion, driven by hunger and
+    rage. '
+  appearance: A roiling mass of limbs, eyes and sinewy tentacles constantly sprouting
+    new growths.
+  strengths: Spawns oozes and mutated minions from its ooze deck
+  weaknesses: Destroying ooze minions and purging mutation cards reduces its power
+- name: Paradox of Myth and Bone
+  box: Legacy of Gravehold
+  battle: 3
+  background: 'The Bishop of Scrolls recounts discovering an enchanted mask radiating
+    magical power and a huge beast called Bone drawn to the mask.  Together they form
+    a deadly pair: the beast provides raw strength while the mask controls and drains
+    its magic.  Joined by parasitic chains, they become an even greater threat than
+    they were apart. '
+  appearance: A hulking skeletal beast bound by glowing chains to a floating ornate
+    mask that hovers above its head.
+  strengths: Uses two separate nemesis decks (Myth and Bone) that must both be depleted
+    to win
+  weaknesses: Splitting focus can prolong the fight; players can choose to defeat
+    one deck quickly to limit the pair’s options
+- name: Rust Amalgam
+  box: Legacy of Gravehold
+  battle: 3
+  background: 'Talix laments that meddling with the Nameless by allowing a tiny rust
+    creature to survive resulted in a giant monster; it now detaches metal buggers
+    that latch onto skin.  The Rust Amalgam is a fusion of twisted metal and void
+    energy, created when aether experiments went awry. '
+  appearance: An enormous amalgamation of corroded metal plates, sinew and glowing
+    veins, with smaller parasites crawling over its body.
+  strengths: Uses a parasite deck
+  weaknesses: Parasite cards can be destroyed or purged to thin the parasite deck
+- name: The Changeling Nest
+  box: Past and Future
+  battle: 3
+  background: 'The Past and Future expansion lists The Changeling Nest as one of its
+    nemeses.  This nest is a living hive of cocoons that hatch into unpredictable
+    creatures, each changing form to adapt to the mages’ strategies. '
+  appearance: A sprawling nest covered in pulsing cocoons and writhing vines, with
+    strange creatures emerging from within.
+  strengths: Starts with multiple cocoons in play; its unleash triggers cause damage
+    based on the number of cocoons and hatch new minions
+  weaknesses: Destroying cocoons reduces the nest’s damage and prevents new minions
+    from spawning
+- name: Corruption's Core
+  box: Past and Future
+  battle: 4
+  background: 'Xaxos’s journal describes how void essence is the opposite of aether:
+    it breaks things down rather than building them.  In one entry he writes that
+    the void has gnawed at his body, turning it scaly, and speculates that a piece
+    of their world may have been consumed and twisted into the Corruption’s Core.  This
+    corrupted heart of the void hungers to reduce all life to dust. '
+  appearance: A pulsing core of black and violet energy surrounded by tendrils of
+    crackling void.
+  strengths: Uses void tokens placed on breaches
+  weaknesses: Players can remove void tokens or avoid casting from void‑infested breaches
+    to slow its advance
+- name: Griefweaver
+  box: Legacy of Gravehold
+  battle: 4
+  background: |
+    The Bishop of Scrolls describes an encounter in the wasteland of the Void where he at
+    first mistook the silhouette of Griefweaver’s fingers on the horizon for another
+    traveller.  As the creature approached he realised that only its arms and torso
+    resembled a person.  The towering beast rose taller than the walls of New Gravehold,
+    its lust for magic and gems visible in the way it clutched shining trinkets.  The
+    Bishop notes that the aether of fallen mages can reform itself into Nameless through
+    the Fountain of Souls and speculates that Griefweaver may be an old comrade reborn as a
+    mindless husk, drawn only to the magical accoutrements it once carried into battle.
+    Despite this, the Bishop recruits the creature into his crusade, finding poignancy in
+    the idea that a former friend now fights again at his side for the salvation of their
+    people.
+  appearance: A colossal, many‑armed void creature with a vaguely humanoid torso; its long
+    arms and countless hands reach over horizons, grasping gleaming gems and tokens of
+    magic.  It stands taller than New Gravehold’s walls and its heart burns with a greedy
+    glow.
+  strengths: Griefweaver binds supply piles with fetters, depriving mages of resources and
+    drawing strength from the number of covered piles.
+  weaknesses: Mages can pry off fetters by striking at them or spending aether to free the
+    bound piles, slowing the creature’s advance.
+- name: Mist Revealed
+  box: Legacy of Gravehold
+  battle: 4
+  background: 'In a haunting monologue, Mist warns that she will be remembered as
+    the mage who unleashed the ultimate threat, hoping her name will unite people
+    to fight a common enemy.  Mist Revealed is not a creature but a looming threat
+    brought forth by Mist’s actions. '
+  appearance: A swirling mass of ghostly fragments and arcane sigils, with Mist’s
+    silhouette barely visible within.
+  strengths: Uses a fragment deck
+  weaknesses: Players must manage the fragment deck by discarding or silencing fragments
+    before the board fills
+- name: Paradox of Myth
+  box: Legacy of Gravehold
+  battle: 4
+  background: 'Little lore exists about the Paradox of Myth outside of its campaign
+    appearance.  This nemesis embodies the living memories of villagers and turns
+    their will against the mages. '
+  appearance: A shifting rift filled with ghostly villagers clutching relics and scrolls.
+  strengths: Uses a villager deck
+  weaknesses: Players must manage the villager deck by defeating villagers and spending
+    aether to remove power tokens
+- name: Paradox of Bone
+  box: Legacy of Gravehold
+  battle: 4
+  background: 'The Paradox of Bone has no widely published lore; its origins and motives
+    remain shrouded in mystery.  In the campaign it emerges from the Void, bound to
+    the remnants of a massive skeletal beast. '
+  appearance: A giant ossified creature bound with chains, its ribs glowing with dark
+    energy.
+  strengths: Uses the Bone deck
+  weaknesses: Defeating Bone minions and emptying the Bone deck exposes the Paradox,
+    allowing players to deal damage
+- name: Wraithmonger
+  box: Past and Future
+  battle: 4
+  background: 'No narrative details were available for Wraithmonger at the time of
+    research.  It appears to haunt mages’ dreams and feed on their hope. '
+  appearance: A hulking, amorphous mass of shadow with tendrils that seem to pass
+    through solid matter.
+  strengths: Uses wraith tokens to track fear
+  weaknesses: Wraith tokens can be removed through card effects or by avoiding certain
+    nemesis cards
+- name: The Wrath
+  box: The Descent
+  battle: 4
+  background: 'This nemesis from The Descent has little publicly available lore.  It
+    is a monstrous avatar of rage unleashed by the Void, bent on consuming New Gravehold. '
+  appearance: A towering infernal beast with claws dripping molten lava and eyes blazing
+    with fury.
+  strengths: Uses a Rage track that advances whenever it unleashes
+  weaknesses: Players can reset the Rage track with certain card effects or by destroying
+    its minions
+
+- name: Experiment 153
+  box: Outcasts
+  battle: 1
+  background: |
+    The identity and origin of Experiment 153 remain unclear.  In the Outcasts narrative it is described as an unnatural beast that attacked a remote surface settlement.  Its scarred hide and mismatched limbs suggest that it was created through forbidden experiments rather than born in the wild.  It is the first of many threats that the roaming mages encounter as they venture beyond New Gravehold.
+  appearance: A massive, misshapen creature with multiple limbs and gaping jaws, its flesh marked by scars and grafts.
+  strengths: Charges into combat with brutal strength and unpredictable lunges
+  weaknesses: Vulnerable to coordinated attacks and protected spells that keep it at bay
+  story_notes: |
+    As the Outcasts expedition begins, a monstrous creature erupts from the waters near a quiet village, scattering civilians and closing off escape【980884546724550†screenshot】.  Only a handful of mages are present when Experiment 153 strikes.  They fight desperately to hold it back until an old companion arrives from the Void and helps drive the beast into the ground.  The encounter serves as a grim reminder that strange experiments still roam the surface and that the mages cannot let their guard down.
+
+- name: Thief of Dreams
+  box: Outcasts
+  battle: 2
+  background: |
+    The Thief of Dreams drifts through the Void as a sentient cloud of nightmares.  It feeds on memories and hope, slowly enveloping travellers who dare to cross between worlds.  Those who have survived encounters with it describe shapes forming within its depths—faces, hands and whispering mouths—only to fade away when one tries to focus on them.
+  appearance: A shifting, smoke‑like mass whose tendrils flicker like torchlight in dense fog.
+  strengths: Saps memory and power, causing mages to forget spells and lose focus
+  weaknesses: Loses cohesion when struck by concentrated bursts of aether
+  story_notes: |
+    Travelling through the toxic Void requires mages to maintain a shield of aether around themselves.  In the second battle of the Outcasts expedition, an amorphous cloud emerges above the travellers and coalesces into the Thief of Dreams.  It drifts overhead, reaching down to siphon thoughts and energy from those below while conjuring hallucinations that tempt them to pause.  By standing together and sharing their strength the mages dispel the cloud, but the encounter leaves them exhausted and wary of the dangers lurking in the Void.
+
+- name: Risen Thrall
+  box: Outcasts
+  battle: 3
+  background: |
+    The Risen Thrall is one of many skeletal warriors raised by a dark champion in the Outcasts story.  It appears as a single undead soldier but can split its form into multiple duplicates to overwhelm opponents.  These thralls are said to be animated by fragments of void energy and serve as vanguard forces for more powerful commanders.
+  appearance: An armoured skeleton that can suddenly multiply into a circle of identical figures.
+  strengths: Overwhelms foes by conjuring illusory duplicates and swarming them
+  weaknesses: The original thrall is less resilient; identifying and focusing on it dispels its copies
+  story_notes: |
+    When the Outcasts expedition crosses a wasteland, a skeletal army rises from the ground to bar their way.  Among them stalks the Risen Thrall, an undead soldier that splits into identical copies, making it difficult to determine which body to strike.  The mages must cut through waves of these thralls before they can confront the leader who commands them and uncover the identity of the fallen hero behind the skeletal host.
+
+
+- name: Fountain of Souls
+  box: Outcasts
+  battle: 4
+  background: |
+    At the end of the Outcasts expedition the mages discover an underground cavern containing the Fountain of Souls—a pool of purple water said to collect the aether of fallen mages.  Legends claim it can restore the dead, but others insist it warps and enslaves those who drink from it.  The fountain is an anomaly: neither wholly Nameless nor of the Void, it seems to draw power from both.
+  appearance: A shimmering pool of violet liquid that pulses with trapped energy; when threatened it rises from the surface as a monstrous form.
+  strengths: Drains aether from anyone near it and manifests tentacles of water to grasp intruders
+  weaknesses: Once its source is disrupted or destroyed, it collapses and releases its held souls
+  story_notes: |
+    Hoping to save fallen companions, some mages seek the Fountain of Souls.  When they find it deep within a luminous cavern, its surface ripples and a creature of solidified water rises up to attack.  The battle is fierce; one misstep causes the fountain to seize a mage and begin the process of turning them into a Nameless.  In the end the mages destroy the fountain, flooding the cavern with water and freeing a hand‑sized figure trapped inside.  From within the drained pool crawls a half‑human survivor, proving that the fountain ensnares and twists those who enter.  The destruction of the fountain marks a turning point in the expedition and signals a rejection of temptation in favour of forging a new path.
