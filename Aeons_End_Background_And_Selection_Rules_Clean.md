@@ -83,7 +83,7 @@ If duplicates are selected:
 ### Rotation Rule
 - Each battle uses a different Friend and Foe.
 - No repetition until all available options are exhausted.
-- Reuse requires narrative justification.
+- The rotation is set exclusively by the Selector and must not be overridden in the narrative.
 
 ---
 
