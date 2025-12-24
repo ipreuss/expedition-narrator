@@ -29,6 +29,7 @@ Optional
 Defaults
 - Content scope: all available content.
 - Friends/Foes: included iff available in scope (in your datasets: if one is available, the other is too; some scopes have neither).
+- Seed: if the user does not specify a seed, do not pass `--seed` (let the script generate a random one for a different story each time).
 
 If the user’s constraints are inconsistent with the datasets (rare in your setup), fail fast: ask for a single clarification, then proceed.
 
@@ -45,26 +46,26 @@ What the selector guarantees (given your datasets)
 If an expedition packet violates these guarantees, treat it as invalid and rerun selection with a new seed.
 
 ## 4) Selection Workflow (deterministic)
-### 4.1 Generate an expedition packet
-Run the selector with:
-- YAML paths (mages/settings/waves/nemeses/friends/foes)
-- `--mage-count` from user
-- `--length` (or default)
-- optional `--content-waves` / `--content-boxes`
-- optional `--seed` (recommended; if absent, accept non-reproducible randomness)
-
-The selector output is a JSON expedition packet (see schema file).
-
-### 4.2 Read before you write (required)
-Before writing any narrative for a chapter:
+Do these steps in order, every time:
+1. Run the selector script to generate the expedition packet (JSON).
+   - Required: YAML paths (mages/settings/waves/nemeses/friends/foes)
+   - Required: `--mage-count` from user
+   - Required: `--length` (or default)
+   - Optional: `--content-waves` / `--content-boxes`
+   - Optional: `--seed` (for reproducible runs; omit to allow random selection)
+2. Validate the packet schema (see schema file).
+3. Check collisions (no repeats/overlaps as guaranteed by the selector).
+4. Read before you write: before writing any narrative for a chapter:
 - Read the packet’s selected setting fields (conceptual inspiration only; do not copy phrasing).
 - Read the chosen mage entries (including story notes and chosen variants/boxes).
 - Read the nemesis entry for the current battle.
 - If present, read the current battle’s friend and foe entries.
-Never add source markers or provenance metadata fields (such as `sources`) to any datasets or packet output.
-Goal: ground tone, relationships, and motivations in the provided material.
+   - Never add source markers or provenance metadata fields (such as `sources`) to any datasets or packet output.
+   - Goal: ground tone, relationships, and motivations in the provided material.
+5. Write chapter 1.
+6. Print the Handoff block.
 
-### 4.3 Internal ideation (never shown)
+### 4.1 Internal ideation (never shown)
 Use the packet’s: setting + mages + final nemesis to generate **ten** diverse expedition concepts.
 Each concept must include:
 - Group goal: what the mage group is trying to achieve overall.
@@ -79,6 +80,7 @@ Only after selecting the concept, expand it into concrete scene material (specif
 
 ## 5) Expedition pacing and chapter boundaries
 - Start chapter 1 with **Story Mode immediately** (no meta preface).
+- Do not begin narration until an expedition packet exists and has been read.
 - The introduction must clearly establish: time/place (from setting), what they are setting out to do (group goal), and why (motivation).
 - End each chapter at the edge of the decisive exchange (no resolution). Ask: “Did you win or lose?” and stop.
 - After the user answers win/lose: write aftermath only (consequences, costs, shifts). Do not reconstruct decisive actions.
@@ -123,7 +125,7 @@ No bullets, no commentary, no template lines, no extra whitespace.
 - It must **only** appear in the Handoff **after** it was earned and explained diegetically in the *previous* chapter’s aftermath.
 - If nothing was earned, omit `Reinforcement:` entirely.
 
-Exact structure:
+Exact structure (copy/paste this; replace placeholders with identifiers only, delete the Reinforcement block if not earned):
 
 ```
 Mages:
