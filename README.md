@@ -7,26 +7,26 @@ assemble Aeon’s End expedition packets for a GPT-based narrator. The selector 
 collision-free selection only; narration and win/lose state are handled by the narrator prompt.
 
 ## Repository layout
-- `aeons_end_expedition_selector_v3.py`: Deterministic selector that builds an expedition packet.
-- `aeons_end_mages_final_clean4.yaml`: Mage dataset (including variants and story notes).
+- `aeons_end_expedition_selector.py`: Deterministic selector that builds an expedition packet.
+- `aeons_end_mages.yaml`: Mage dataset (including variants and story notes).
 - `aeons_end_nemeses.yaml`: Nemesis dataset.
 - `aeons_end_friends.yaml`: Friend dataset.
 - `aeons_end_foes.yaml`: Foe dataset.
 - `wave_settings.yaml`: Wave settings used to build expedition structure.
 - `aeons_end_waves.yaml`: Wave text/settings used by the selector.
-- `Aeons_End_Expedition_Packet_Schema.md`: JSON schema for selector output.
-- `Aeons_End_Operational_Instructions_With_Selector_v3_1.md`: Process and handoff contract for narration.
-- `Aeons_End_Narration_Style_Guide_Canonical.md`: Voice and formatting guidance.
-- `Aeons_End_Background_And_Selection_Rules_Clean.md`: Rules for interpreting YAML fields.
-- `Aeons_End_Narration_Style_Selector_Reconstructed.md`: Style selector reference.
+- `aeons_end_expedition_packet_schema.md`: JSON schema for selector output.
+- `aeons_end_operational_instructions.md`: Process and handoff contract for narration.
+- `aeons_end_narration_style_guide.md`: Voice and formatting guidance.
+- `aeons_end_background_selection_rules.md`: Rules for interpreting YAML fields.
+- `aeons_end_narration_style_selector.md`: Style selector reference.
 - `system_prompt.md`: End-to-end narrator system prompt.
 
 ## Quick start
 Run the selector directly with Python 3:
 
 ```bash
-python aeons_end_expedition_selector_v3.py \
-  --mages-yaml aeons_end_mages_final_clean4.yaml \
+python aeons_end_expedition_selector.py \
+  --mages-yaml aeons_end_mages.yaml \
   --settings-yaml wave_settings.yaml \
   --waves-yaml aeons_end_waves.yaml \
   --nemeses-yaml aeons_end_nemeses.yaml \
@@ -39,7 +39,7 @@ python aeons_end_expedition_selector_v3.py \
 ```
 
 The selector prints a JSON expedition packet that conforms to
-`Aeons_End_Expedition_Packet_Schema.md`.
+`aeons_end_expedition_packet_schema.md`.
 
 ## Selector guarantees
 Given valid datasets and scope, the selector ensures:

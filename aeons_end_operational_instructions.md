@@ -34,7 +34,7 @@ If the user’s constraints are inconsistent with the datasets (rare in your set
 
 ## 3) The Selector Script (mandatory)
 Script
-- `aeons_end_expedition_selector_v3.py`
+- `aeons_end_expedition_selector.py`
 
 What the selector guarantees (given your datasets)
 - No repeated **nemesis** in the planned battle sequence.
