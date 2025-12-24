@@ -54,9 +54,7 @@ Background knowledge informs:
 - Some characters may exist as mage, friend, foe, or nemesis.
 - Only one form may appear in a single expedition.
 
-If duplicates are selected:
-- Re-roll selection,
-- or justify coexistence explicitly within the story.
+Any collision (duplicate across forms) makes the expedition packet invalid; do not use it. The selector already retries internally and is designed to prevent these collisions.
 
 ### Mage Structure
 - Each mage is always associated with at least one source box.
