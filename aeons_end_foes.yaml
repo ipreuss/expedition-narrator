@@ -1,0 +1,125 @@
+# List of foes (minor nemeses)
+foes:
+- name: The Cultist
+  box: The Descent
+  background: 'In an abandoned city Adelheim spots another human across the firelight
+    and wonders why they must fight fellow survivors.  The man’s mind has been warped
+    by the Void—he mumbles to himself and tends a flickering ritual【334078665378768†L209-L213】.  This
+    cultist now serves the Nameless and fuels dark rites to summon greater horrors.
+
+    '
+  appearance: A ragged figure clutching a burning brazier, eyes glazed with madness.
+  strengths: 'During the nemesis main phase the Cultist’s Feed the Ritual ability
+    causes his Volatile Pylon to gain life and removes power tokens from the Ritual of Flame.  If
+    unchecked the ritual completes, triggering powerful effects.  He can also place
+    gnaw tokens on players’ cards or supply piles, hindering card acquisition.
+
+    '
+  weaknesses: 'The Cultist has low life and relies on his Pylon and Ritual tokens
+    to do harm.  Removing those tokens and focusing on his supports neutralises his
+    threat quickly.
+
+    '
+- name: The Swarm
+  box: The Descent
+  background: 'Leisan warns that the Void is full of tiny creatures that burrow into
+    the ground.  If ignored a single larva becomes a swarm; she has seen them devour
+    entire camps before anyone knew what was happening【794655397010196†L207-L210】.  This
+    foe commands a hive of Broodlings and overwhelms mages with numbers.
+
+    '
+  appearance: A seething mass of insectoid minions pouring out of tunnels and cracks.
+  strengths: 'Its Call the Hive ability retrieves minions from the nemesis discard
+    pile or, if none are present, places two Broodlings into play.  Over time the
+    board fills with Broodlings that chip away at life and cause additional effects
+    when destroyed.  The sheer number of minions can overwhelm players.
+
+    '
+  weaknesses: 'Broodlings have low life and can be eliminated quickly with area attacks.  By
+    clearing the board regularly and preventing minions from accumulating, the Swarm’s
+    engine stalls.
+
+    '
+- name: The Corrosion
+  box: The Descent
+  background: 'Raven encounters a monstrous creature that knows only hunger and thirst.  It
+    scrapes through tunnels trying to regain warmth and devours everything in its
+    path【680015390521694†L203-L206】.  Though she feels a flicker of pity for its desperation,
+    she knows it will reduce Gravehold to dust if unchecked.
+
+    '
+  appearance: A formless mass of rust and acid slithering along the cavern walls,
+    dissolving all it touches.
+  strengths: 'The Corrosion’s Return to Dust ability removes two power tokens from
+    each power in play and deals 5 damage to Gravehold.  It steadily erodes the players’
+    resources and punishes them for leaving powers on the table.  Its effects ignore
+    player life totals and strike directly at the city.
+
+    '
+  weaknesses: 'It cannot attack players directly.  By minimising the number of active
+    powers and focusing on direct damage, the mages can outpace its corrosive onslaught.
+
+    '
+- name: The Scavenger
+  box: The Descent
+  background: 'Mazahaedron notes that not all Void creatures become Nameless.  Some
+    lurk in shadows, creeping up on half‑dead victims to finish them off【498285638565859†L188-L193】.  The
+    Scavenger prowls behind the main battle, waiting for wounded mages to falter so
+    it can strike.
+
+    '
+  appearance: A gaunt, shadowy beast with elongated claws and a gaping maw, stalking
+    the weak.
+  strengths: 'Once it reaches five charges the Scavenger’s Cull the Stragglers ability
+    deals four damage to the player with the lowest life.  This foe targets weak links,
+    forcing the team to keep everyone’s health high.  Its presence pressures players
+    to heal and defend vulnerable allies.
+
+    '
+  weaknesses: 'It requires time to build up charges and does nothing until then.  By
+    keeping everyone’s life high and racing to defeat the main nemesis, players can
+    render the Scavenger’s effect moot.
+
+    '
+- name: The Storm
+  box: The Caverns
+  background: 'Fawn recalls battling in a thunderstorm where the ground turned to
+    mud and lightning struck randomly.  She groans that her hair was a mess and that
+    the combat was miserable【878452736761382†L205-L209】.  The Storm embodies this
+    chaotic weather, lashing out at the mages with blasts of electricity.
+
+    '
+  appearance: A roiling cloud of purple lightning hovering over the battlefield, crackling
+    with energy.
+  strengths: 'Its Bloody Conduit ability targets the player with the most prepped
+    spells: that player gains a Shock card and suffers damage equal to their number
+    of prepped spells.  Shock cards clutter players’ hands and deal damage when destroyed,
+    punishing teams that build up spells.
+
+    '
+  weaknesses: 'Players can mitigate its effect by limiting the number of prepped spells.  Without
+    many targets its ability is less threatening.
+
+    '
+- name: The Traitor
+  box: The Abyss
+  background: 'The Traitor believes his allies are small‑minded fools who fail to
+    grasp the power within reach.  He claims he will become the strongest mage so
+    that he can protect everyone—even if he must betray them now【56020180417181†L202-L205】.  His
+    selfish determination drives him to harness dark forces at any cost.
+
+    '
+  appearance: A once‑heroic mage whose eyes blaze with Void energy; his skin is cracked
+    like obsidian.
+  strengths: 'The Traitor’s Bloody Conduit ability costs five charges.  If the nemesis’s
+    turn order card is in the discard pile he shuffles it back into the deck; otherwise
+    he unleashes three times, triggering the nemesis’s unleash effect repeatedly.  He
+    also has a rule that if the nemesis would draw a card and cannot, the players
+    immediately lose the game.
+
+    '
+  weaknesses: 'Highly telegraphed: players can see when he will act based on his charge
+    level and plan accordingly.  Focusing on removing his charges or manipulating
+    the turn order can blunt his impact.'
+
+  meta: 'This foe is actually another manifestation of Xaxos who has betrayed his comrades.'
