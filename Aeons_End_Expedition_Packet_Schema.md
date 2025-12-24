@@ -1,0 +1,116 @@
+# Aeon’s End — Expedition Packet Schema (Selector Output)
+
+This describes the JSON returned by `select_expedition()` in `aeons_end_expedition_selector_v3.py`.
+
+The selector outputs *verbatim YAML fields* for the selected entities so the narrator can read them directly.
+The selector performs **selection only** (no win/lose state, rematches, reinforcements, or reward timing).
+
+Guarantee (given your datasets): the selector returns **collision-free** selections:
+- No repeated nemesis across the planned battle sequence.
+- No repeated friend or foe across the planned battle sequence.
+- No name overlap between mages and any selected friend/foe/nemesis.
+
+If constraints cannot be satisfied, the selector fails with an error (indicating a dataset/scope issue).
+
+---
+
+## Top-level shape
+
+```json
+{
+  "meta": { ... },
+  "setting": { ... },
+  "protect_target": "Gravehold" | "Xaxos" | null,
+  "mages": [ ... ],
+  "final_nemesis": { ... },
+  "battle_plan": [ ... ],
+  "availability": { ... }
+}
+```
+
+---
+
+## meta
+
+```json
+{
+  "generated_at_utc": "ISO-8601 string",
+  "seed": 12345,
+  "attempt": 1,
+  "attempt_seed": 987654321,
+  "inputs": {
+    "mage_count": 4,
+    "length": "short|standard|long",
+    "content_waves": ["..."],
+    "content_boxes": ["..."]
+  }
+}
+```
+
+`attempt_seed` is the deterministic sub-seed used for the successful collision-free draw.
+
+---
+
+## setting
+
+Selected by wave name from `wave_settings.yaml` (`wave_settings: { "<Wave>": {...} }`).
+
+Returned as:
+
+```json
+{
+  "wave_name": "2nd Wave",
+  "...": "verbatim setting fields"
+}
+```
+
+Narrator note:
+- Use setting fields as **conceptual inspiration**, do not copy phrases verbatim.
+
+---
+
+## protect_target
+
+- `null` unless `setting.wave_name` is `5th Wave` (Outcasts rule).
+- If set, the narrator includes `Protect:` in the Handoff and treats Xaxos as an in-world presence if chosen.
+
+---
+
+## mages
+
+Each mage is a full mage entry plus `chosen_variant` (verbatim variant dict).
+
+The narrator uses:
+- Display name: `name`
+- Handoff box: `chosen_variant.box`
+
+---
+
+## final_nemesis
+
+Full verbatim nemesis mapping. Tier is stored as `battle: 1..4`.
+
+---
+
+## battle_plan
+
+Battle order list. Each element includes:
+- `battle_index` (1-based)
+- `tier` (int; expedition structure tier)
+- `nemesis` (verbatim mapping)
+- `friend` (verbatim mapping or null)
+- `foe` (verbatim mapping or null)
+
+---
+
+## availability
+
+```json
+{
+  "friends_available": true,
+  "foes_available": true,
+  "include_friend_foe_pair": true
+}
+```
+
+---
