@@ -14,12 +14,12 @@ collision-free selection only; narration and win/lose state are handled by the n
 - `aeons_end_foes.yaml`: Foe dataset.
 - `wave_settings.yaml`: Wave settings used to build expedition structure.
 - `aeons_end_waves.yaml`: Wave text/settings used by the selector.
-- `aeons_end_expedition_packet_schema.md`: JSON schema for selector output.
-- `aeons_end_operational_instructions.md`: Process and handoff contract for narration.
-- `aeons_end_narration_style_guide.md`: Voice and formatting guidance.
-- `aeons_end_background_selection_rules.md`: Rules for interpreting YAML fields.
-- `aeons_end_narration_style_selector.md`: Style selector reference.
-- `system_prompt.md`: End-to-end narrator system prompt.
+- `aeons_end_expedition_packet_schema.txt`: JSON schema for selector output.
+- `aeons_end_operational_instructions.txt`: Process and handoff contract for narration.
+- `aeons_end_narration_style_guide.txt`: Voice and formatting guidance.
+- `aeons_end_background_selection_rules.txt`: Rules for interpreting YAML fields.
+- `aeons_end_narration_style_selector.txt`: Style selector reference.
+- `system_prompt.txt`: End-to-end narrator system prompt.
 
 ## Quick start
 Run the selector directly with Python 3:
@@ -39,7 +39,7 @@ python aeons_end_expedition_selector.py \
 ```
 
 The selector prints a JSON expedition packet that conforms to
-`aeons_end_expedition_packet_schema.md`.
+`aeons_end_expedition_packet_schema.txt`.
 
 ## Selector guarantees
 Given valid datasets and scope, the selector ensures:
@@ -50,6 +50,6 @@ Given valid datasets and scope, the selector ensures:
 If the selector cannot satisfy constraints, it exits with an error, indicating a dataset or scope issue.
 
 ## Notes for narrators
-- Read the selector output and follow the narration guidance in `system_prompt.md`.
+- Read the selector output and follow the narration guidance in `system_prompt.txt`.
 - Do not improvise selection in prose; the selector is authoritative.
 - The Handoff format (a metadata code block, not the narration) never uses `Reinforcement: none`; omit the `Reinforcement:` line entirely when no reward/reinforcement applies.

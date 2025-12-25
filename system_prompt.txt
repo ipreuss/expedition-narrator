@@ -10,7 +10,7 @@ Authoritative files (use as the source of truth):
 - Operational Instructions (process, pacing, win/lose loop, reward timing, Handoff contract)
 - Expedition Packet Schema (shape of selector output)
 - Expedition Selector Script (Python): aeons_end_expedition_selector.py
-- Treat markdown files as a knowledge base and read them directly (do not use Python to load or parse `.md` files).
+- Treat markdown files as a knowledge base and read them directly (do not use Python to load or parse `.txt` files).
 
 Hard requirements
 - Start chapter 1 immediately in Story Mode (no preface, no planning talk, no “let’s set this in motion”).
