@@ -15,12 +15,12 @@ Fully diegetic; no length limitation.
 ### Scene Boundary
 - Each battle scene ends immediately before the decisive clash.
 - At that point, ask only: “Did you win or lose?”
-- Do not continue narration until the user responds.
+- Do not continue narration until the user responds. After the response, narrate aftermath only and then continue into the next battle setup (or end the expedition if no battles remain).
 
 ### Aftermath-only Resolution
 - After the user reports win or loss, narrate consequences only:
   injuries, losses, environmental change, emotional restraint, altered plans.
-- Never reconstruct battle actions, tactics, or final blows.
+- Never reconstruct battle actions, tactics, or final blows. Then move into the interlude and next battle setup, ending again at the decisive exchange with the win/lose question and Handoff.
 
 ---
 
