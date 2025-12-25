@@ -73,6 +73,27 @@ Inspiration: Ursula K. Le Guin (late style).
 - dialogue sparse, weighted, and concrete
 - atmosphere understated; stakes remain legible
 
+### 3.6 Pragmatic Resilience
+Inspiration: Octavia E. Butler (tone only).
+- clear, grounded language with steady moral pressure
+- practical focus on survival, consequence, and adaptation
+- community-first framing; individual choices ripple outward
+- tension through constraint and resource scarcity, not melodrama
+
+### 3.7 Spare Momentum
+Inspiration: Ernest Hemingway (tone only).
+- short declarative sentences with forward motion
+- description is concrete and physical, never decorative
+- dialogue brief, direct, and action-bound
+- emotional weight implied by action and restraint
+
+### 3.8 Quiet Unsettling
+Inspiration: Shirley Jackson (tone only).
+- calm surface with subtle unease beneath
+- small details carry the dread; avoid theatrics
+- social friction and understatement heighten tension
+- maintain clarity; ambiguity only in motive, not in events
+
 ---
 
 ## 4. Consistency Rules
@@ -88,6 +109,9 @@ Use this only to speed selection; it is not a hard rule set.
 - **Rescue/community repair** → Clear-Eyed Humanism or Canonical Neutral
 - **Pursuit/chaos-with-levity** → Dry Wit Under Pressure (only if stakes remain clear)
 - **Mythic or fated undertones** → Mythic Plainness
+- **Resource-scarce endurance** → Pragmatic Resilience or Stark Procedural
+- **Fast-moving pursuit or flight** → Spare Momentum
+- **Paranoia or social fracture** → Quiet Unsettling
 
 ---
 
