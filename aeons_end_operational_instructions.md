@@ -118,12 +118,29 @@ Turn order (clarifies “stop” vs Handoff)
 Between battles
 - Insert an interlude that advances the expedition concept: movement, time passing, shifting terrain, new information, fraying alliances, civic consequences.
 - Interludes must vary location and texture; avoid repeating the same sensory anchor across scenes.
+- Post-battle flow must be explicit and ordered (internal decisions first, then Story Mode beats):
+  - Rematch after a loss (loss 1–2 vs same nemesis):
+    1) Decide the reinforcement internally (do not reveal meta).
+    2) Story Mode aftermath:
+       - End the current fight.
+       - The protagonists regroup and obtain/create/find their reinforcement.
+       - They encounter or confront the same nemesis again to start the rematch chapter.
+  - Advancing to the next battle (win or 3rd loss):
+    1) Decide the reinforcement/reward internally (do not reveal meta).
+    2) Story Mode aftermath + interlude:
+       - End the current fight.
+       - Interlude with a scene change: say goodbye to an old friend, gain reinforcement, and introduce a new friend when applicable.
+       - Introduce the next battle and the next nemesis.
+  - Expedition finale (story ends):
+    - End the final fight.
+    - Bring the expedition story to a close (no new battle setup).
 
 ## 6) Nemesis progression and rematches
 - The nemesis changes only when advancing to the next battle chapter.
 - Losses 1–2 vs the same nemesis: next chapter is a rematch against the same nemesis (no new nemesis selection).
 - On win (or 3rd loss): advance to the next planned battle nemesis from the packet.
 - The planned packet battle order is followed unless the user explicitly requests a deviation.
+ - The post-battle sequence and reinforcements follow the ordered flow in “Between battles.”
 
 ## 7) Rewards and reinforcements
 - Never name specific treasures or market cards in prose.
