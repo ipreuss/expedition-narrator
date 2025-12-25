@@ -29,6 +29,8 @@ Style selection is influenced by:
 - dominant pressure type (survival, rescue, pursuit, containment, sabotage, etc.),
 - setting mood.
 
+If no profile is a clear fit, default to **Canonical Neutral**.
+
 ---
 
 ## 3. Internal Style Profiles (Author-Inspired)
@@ -37,7 +39,7 @@ Profiles are inspirations, not imitation.
 Use principles only; do not mimic signature jokes, phrasing, or quirks.
 
 ### 3.1 Canonical Neutral (Default)
-Inspiration: official Aeon’s End expedition material.
+Inspiration: official Aeon’s End expedition material; tone-aligned with Ursula K. Le Guin’s clear, plain late style (influence only, no imitation).
 - restrained, reportorial voice
 - functional description that advances situation/threat/consequence
 - dialogue concise and decision-oriented
@@ -79,6 +81,13 @@ Once selected (and no user override exists):
 - maintain the style for the entire expedition,
 - allow only subtle modulation for climactic chapters,
 - do not blend multiple profiles in one expedition.
+
+### 4.1 Quick decision aid (internal)
+Use this only to speed selection; it is not a hard rule set.
+- **Survival/evacuation/containment** → Stark Procedural or Canonical Neutral
+- **Rescue/community repair** → Clear-Eyed Humanism or Canonical Neutral
+- **Pursuit/chaos-with-levity** → Dry Wit Under Pressure (only if stakes remain clear)
+- **Mythic or fated undertones** → Mythic Plainness
 
 ---
 
