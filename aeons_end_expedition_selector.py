@@ -74,6 +74,9 @@ def _choose(rng: random.Random, items: Sequence[Any]) -> Any:
         raise ValueError("No candidates available for selection.")
     return items[rng.randrange(len(items))]
 
+def _resolve_effective_seed(seed: Optional[int], attempt_seed: int) -> int:
+    return seed if seed is not None else attempt_seed
+
 def _shuffle_copy(rng: random.Random, items: Sequence[Any]) -> List[Any]:
     out = list(items)
     rng.shuffle(out)
@@ -451,6 +454,7 @@ def select_expedition(
                     "seed": seed,
                     "attempt": attempt,
                     "attempt_seed": attempt_seed,
+                    "effective_seed": _resolve_effective_seed(seed, attempt_seed),
                     "inputs": {
                         "mage_count": mage_count,
                         "length": _norm_space(length),
