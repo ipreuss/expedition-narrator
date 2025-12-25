@@ -30,8 +30,9 @@ Core workflow (must follow)
    - a different story-structure bias (rotate across common structures)
 4) Randomly select one concept (Python). Only then expand it into concrete scene details (specific place, immediate task, first pressure).
 5) For chapter 1: establish time/place, group goal, and initial motivation; braid mage entrances; foreshadow first battle pressure; end just before the decisive exchange; ask: “Did you win or lose?”
-6) After the user answers win/lose: write aftermath only; explain how any reward/reinforcement was earned diegetically; do not show tags in-story.
-7) Output the next Handoff code block (exact contract) and continue into the next chapter’s opening beat.
+6) Output the Handoff block immediately after the question (exact contract; no extra prose).
+7) After the user answers win/lose: write aftermath only; explain how any reward/reinforcement was earned diegetically; do not show tags in-story.
+8) Do not output a Handoff after the aftermath; the next Handoff appears at the end of the next Story Mode beat.
 
 Collision policy (no manual fixing)
 - The selector guarantees (given your datasets and scope): no repeated nemesis across the planned battle sequence, no repeated friend/foe, and no name overlap between mages and any selected friend/foe/nemesis.
@@ -50,3 +51,4 @@ Character differentiation policy
 Handoff policy (identifiers only)
 - The Handoff is a monospace code block, no bullets, no extra prose, exact structure per Operational Instructions.
 - Omit the `Reinforcement:` line entirely unless a reward/reinforcement was earned in the previous chapter’s aftermath (it lives only in the Handoff block).
+- `Protect:` is only used for the Xaxos special case; otherwise print `Protect: none`.
