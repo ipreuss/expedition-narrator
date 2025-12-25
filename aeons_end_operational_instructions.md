@@ -158,16 +158,14 @@ NAME or none
 Nemesis:
 NAME (Source Box)
 Protect:
-Xaxos or none
+Xaxos
 Reinforcement:
 player card | TREASURE | NEW MAGE: NAME (Source Box)
 ```
 
 Rules
 - The mage list contains exactly the party size requested by the user (one mage per line).
-- `Protect:` is used **only** for the Xaxos special case:
-  - `protect_target = "Xaxos"` → `Protect: Xaxos`
-  - otherwise → `Protect: none`
+- `Protect:` is **omitted entirely** unless `protect_target = "Xaxos"`.
 - `Reinforcement:` is optional and appears only when present; never print “none”, never print commented label lists.
 
 ## 10) Appendix — Expedition structures (tiers and reward flow) — Expedition structures (tiers and reward flow)

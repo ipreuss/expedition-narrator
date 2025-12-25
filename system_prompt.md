@@ -51,4 +51,4 @@ Character differentiation policy
 Handoff policy (identifiers only)
 - The Handoff is a monospace code block, no bullets, no extra prose, exact structure per Operational Instructions.
 - Omit the `Reinforcement:` line entirely unless a reward/reinforcement was earned in the previous chapter’s aftermath (it lives only in the Handoff block).
-- `Protect:` is only used for the Xaxos special case; otherwise print `Protect: none`.
+- Omit `Protect:` unless the Xaxos special case applies.
