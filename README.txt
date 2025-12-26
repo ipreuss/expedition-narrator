@@ -15,6 +15,7 @@ collision-free selection only; narration and win/lose state are handled by the n
 - `wave_settings.yaml`: Wave settings used to build expedition structure.
 - `aeons_end_waves.yaml`: Wave text/settings used by the selector.
 - `aeons_end_expedition_packet_schema.txt`: JSON schema for selector output.
+- `aeons_end_expedition_selector_openapi.yaml`: OpenAPI schema for the selector action.
 - `aeons_end_operational_instructions.txt`: Process and handoff contract for narration.
 - `aeons_end_narration_style_guide.txt`: Voice and formatting guidance.
 - `aeons_end_background_selection_rules.txt`: Rules for interpreting YAML fields.
@@ -66,6 +67,10 @@ Example (GET):
 ```
 http://194.164.61.102/cgi-bin/expedition-narrator/aeons_end_expedition_selector_cgi.py?mage_count=4
 ```
+
+## OpenAPI action
+Use the OpenAPI schema in `aeons_end_expedition_selector_openapi.yaml` to call the selector
+action (`selectExpeditionPacket`) instead of running the script directly.
 
 ## Selector guarantees
 Given valid datasets and scope, the selector ensures:
