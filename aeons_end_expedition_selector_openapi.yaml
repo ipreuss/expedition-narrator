@@ -7,7 +7,7 @@ info:
     aeons_end_expedition_selector.py. Use this action to generate expedition
     packets instead of running the script directly.
 servers:
-  - url: http://194.164.61.102/cgi-bin/expedition-narrator
+  - url: https://194.164.61.102/cgi-bin/expedition-narrator
 paths:
   /aeons_end_expedition_selector_cgi.py:
     post:
