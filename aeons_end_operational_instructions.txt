@@ -11,7 +11,7 @@ All authoritative files live in the repo root. Use these exact filenames:
 - Narration style guide: `aeons_end_narration_style_guide.txt`
 - Style selector: `aeons_end_narration_style_selector.txt`
 - Wave settings: `wave_settings.yaml`
-- Wave/box map: `aeons_end_waves.txt` (**YAML content despite .txt extension**)
+- Wave/box map: `aeons_end_waves.yaml`
 - Datasets: `aeons_end_mages.yaml`, `aeons_end_nemeses.yaml`, `aeons_end_friends.yaml`, `aeons_end_foes.yaml`
 
 If you cannot find a file, list the repo root and use the exact names above before searching elsewhere.
