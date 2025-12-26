@@ -41,6 +41,32 @@ python aeons_end_expedition_selector.py \
 The selector prints a JSON expedition packet that conforms to
 `aeons_end_expedition_packet_schema.txt`.
 
+## CGI endpoint
+The selector is also exposed as a CGI script at:
+
+```
+http://194.164.61.102/cgi-bin/expedition-narrator/aeons_end_expedition_selector_cgi.py
+```
+
+Provide request data either as GET query parameters or a POST body
+(`application/json` or `application/x-www-form-urlencoded`).
+
+Required:
+- `mage_count` (integer)
+
+Optional:
+- `length`: `short` | `standard` | `long` (default: `standard`)
+- `content_waves`: comma-separated string or JSON list
+- `content_boxes`: comma-separated string or JSON list
+- `seed`: integer
+- `max_attempts`: integer
+
+Example (GET):
+
+```
+http://194.164.61.102/cgi-bin/expedition-narrator/aeons_end_expedition_selector_cgi.py?mage_count=4
+```
+
 ## Selector guarantees
 Given valid datasets and scope, the selector ensures:
 - No repeated nemesis across the planned battle sequence.
