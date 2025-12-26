@@ -1,23 +1,15 @@
 mages:
 - id: adelheim
   name: Adelheim
-  background: Adelheim is a weaponsmith who continues to work in the forge of Gravehold
-    even after the world has fallen.  In his story he reflects on the folly of forging
-    tools of war for a conflict that never seems to end, yet he refuses to stop because
-    the city still needs weapons.  Adelheim has become a breach mage, using his craft
-    to defend the last refuge of humanity.
+  background: Adelheim is a Gravehold weaponsmith turned breach mage.  Practical and
+    protective, he treats his forge as a duty and prefers preparation over heroics.
+    He believes survival depends on discipline and dependable defense.
   appearance: No official description of his physical appearance was found.
   strengths: As a support/utility mage Adelheim excels at protecting his companions
   weaknesses: Adelheim’s reliance on exhausting attacks means his power is reactive
     rather than offensive
-  story_notes: 'Adelheim is practical and protective.  When unusual tracks appear,
-    he advises the
-
-    group on animal behavior, corrects misclassifications and stays behind to
-
-    strengthen the city’s defences.  His concern for Gravehold’s safety defines his
-
-    role and he often takes on background tasks to ensure others can venture forth.'
+  story_notes: Adelheim advised an expedition on unusual tracks and stayed behind to
+    reinforce Gravehold’s defenses.
   variants:
   - variant_id: aeon_s_end_core_set
     variant_name: Aeon's End (Core Set)
@@ -26,104 +18,17 @@ mages:
     box: Aeon's End (Core Set)
 - id: brama
   name: Brama
-  background: Brama is the elder of Gravehold.  When the world collapsed she ordered
-    the cave mouth to be sealed and helped the survivors learn the sister‑words—the
-    arcane language of breach magic.  In her recollection she promises that glory
-    will return if her people remain faithful.
+  background: Brama is the elder of Gravehold, a calm, authoritative mentor with a
+    nurturing core.  She believes discipline, unity, and memory keep the community
+    alive and warns against attachment to power or breaches.
   appearance: An older woman and mentor figure; no specific details were provided.
   strengths: Brama is a healing mage
   weaknesses: Low direct harm output; she is primarily a support character
-  story_notes: 'Brama is the elder stateswoman of Gravehold.  She authorises expeditions
-    and
-
-    offers wisdom and comfort upon the mages’ return.  Her calm authority is
-
-    matched by a nurturing spirit—she brews drakma tea, offers counsel and
-
-    emphasises rest and healing.  Brama respects the sanctity of memory and
-
-    admonishes the mages to record their experiences before they fade.
-
-
-    During the fall of Gravehold she rushes into burning streets alongside Mist to
-
-    drag a wounded Xaxos to safety, then leaves him in anger to defend the city.
-
-    She scolds him for seeking forbidden power and later orders novices to link
-
-    arms and hold off swarms of lesser foes so the elder mages can confront the
-
-    towering Nameless.  When the cavern collapses she leads survivors into the
-
-    tunnels and declares that only through training and discipline will they serve
-
-    the remnants of Gravehold.  Brama teaches that forgetting and letting go of
-
-    attachments is as important as learning to wield aether, and she cautions
-
-    mages not to become attached to breaches or the power they provide.  In the
-
-    tunnels she trains young mages personally, reminding them that each is a link
-
-    in a chain and that their unity protects the community.  Her leadership
-
-    carries both stern rebuke for reckless acts and deep compassion for those who
-
-    suffer.
-
-
-    After the confrontation with Bladius she regrets sending the expedition out alone
-    and insists on greater training for all mages.  Brama works alongside Mist to
-    mentor the camp’s defenders, emphasising discipline and unity.  When Xaxos reappears
-    claiming he can draw strength from the Nameless, she snaps at him and forbids
-    such practices, reminding everyone to focus their own breaches and reject forbidden
-    power.  She also encourages the party to venture to the surface when Mist reports
-    that lesser foes have fled above, urging them to witness the unexpected greenery
-    and prepare for whatever lies beyond the caves.
-
-
-    Brama accompanies Mist on a scouting mission in search of other breach mages but
-    is ambushed by the Fungal Mesh.  Its spores encase her and rob her of her mind,
-    forcing Mist to flee for help.  After the party defeats the creature and frees
-    her, Brama collapses from exhaustion and grief but expresses relief when she learns
-    that Mist is safe.  Grateful for her rescue, she resumes training the camp, invites
-    the protagonist to her tent each evening to pass on arcane knowledge, and encourages
-    the mages to reach out to other survivor groups.  She listens to the ringing of
-    Malastar’s forge and whispers with Mist about a strange fog, sending scouts to
-    investigate new threats while promising to continue their training when her strength
-    returns.
-
-
-    Using the insights gained while under the control of the mind‑controlling fungus
-    she devises a plan for battling a memory‑eating creature.  Brama travels with
-    the protagonist to act as an anchor, fortifying their mental pathways and restoring
-    memories the enemy tries to devour.  In their mind’s eye she glows with a soft
-    yellow light that fills them with hope.  Together they destroy the creature’s
-    mind from within and close its breach; however, the strain takes its toll.  When
-    the fight is over she collapses with relief and later admits that some memories
-    will never be fully restored.  Despite this loss she continues to mentor the mages,
-    gathering them around her tent each night to teach arcane knowledge and preparing
-    them for the looming return of the giant Nameless that once shattered their home.
-
-
-    After the final battle against the whirling juggernaut she embraces each mage
-    as the dust settles, tears in her eyes.  Brama expresses profound pride and gratitude,
-    telling them that without their courage humanity would not have survived.  She
-    acknowledges that everyone owes them a debt and encourages them to savour this
-    fleeting moment of relief before turning their attention back to protecting New Gravehold.
-
-
-    During the closing moments of the war she tries once more to reach the corrupted
-    ally who stands between them and the last breach.  A bolt of energy strikes him
-    and she cries out for him to renounce his power and return to them, but he screams
-    that he will never be helpless again and refuses to listen.  As he lurches toward
-    the breach she lunges to stop him alongside Malastar, only to watch in horror
-    as a black tendril wraps around him and drags him into the Void.  That evening
-    Brama lies awake pondering questions with no easy answers: where did the giant
-    Nameless come from, what became of their companion in the darkness and will he
-    ever return?  For now she lets herself rest in the rare warmth of the sun, determined
-    to continue training the mages while accepting that some mysteries may never be
-    solved.  She tells her students that time is like water—it flows through and around them and their lives are but drops of blood in a vast confluence—and she warns that the Gate Witch bends and breaks this flow.'
+  story_notes: Brama led survivors into the tunnels after the fall of Gravehold, training
+    new mages and rejecting forbidden power.  She was briefly captured by the Fungal Mesh,
+    rescued by the expedition, and later helped defeat a memory‑eating Nameless.  She
+    fought through the final campaigns, mourning the corrupted ally lost to the Void
+    while committing to rebuild and train New Gravehold’s defenders.
   variants:
   - variant_id: aeon_s_end_core_set
     variant_name: Aeon's End (Core Set)
@@ -147,62 +52,39 @@ mages:
     box: Aeon's End (Core Set)
 - id: kadir
   name: Kadir
-  background: Kadir hungers to explore the depths beneath Gravehold.  In her narrative
-    she speaks of journeying far down into the caverns in search of peace and wisdom
-    and believes salvation lies below the city, where the Nameless will never find
-    them.
+  background: Kadir is a seasoned cavern scout who trusts careful observation and
+    hard‑won experience.  She is measured, analytical, and stubbornly determined to
+    find safe paths for her people, believing answers lie in the depths.
   appearance: Not specified; described through her actions rather than appearance.
   strengths: Provides aether and accelerates game setup (details not provided)
   weaknesses: Her obsession with the depths may cloud her judgement
-  story_notes: 'Kadir is a seasoned scout of the caverns beneath Gravehold.  She leads
-    expeditions
-
-    with measured confidence, relying on an encyclopaedic knowledge of
-
-    underworld creatures and plant life.  Kadir often acts as the voice of
-
-    reason, correcting misclassifications and mapping passages in her mind.
-
-    She carries rope and climbing gear, is quick to trace unknown tracks and
-
-    stubbornly presses onward even when she is uncertain, driven by a belief that
-
-    salvation may lie in the world above.'
+  story_notes: Kadir led multiple expeditions beneath Gravehold, mapping passages and
+    identifying underworld creatures.  She later advocated broader exploration when
+    new paths beyond the caves emerged.
   variants:
   - variant_id: legacy_of_gravehold
     variant_name: Legacy of Gravehold
     wave_id: legacy_of_gravehold
     wave_name: Legacy of Gravehold
     box: Legacy of Gravehold
-    background: Kadir in Legacy of Gravehold upholds the old traditions of the sister‑words.  She
-      recounts how Brama brought the sacred words to the people and led students deep
-      into the caves to teach them.  She believes walls were built for a reason and
-      warns that hunger for knowledge, like Z’hana’s, can bring destruction.  Kadir
-      now has a daughter and fears for her safety as Gravehold’s society fractures.
+    background: Kadir upholds the old traditions of the sister‑words and distrusts
+      reckless experimentation.  A protective mother, she believes discipline and
+      boundaries keep Gravehold alive.
     appearance: Described in terms of her steadfast demeanor rather than physical
       traits.
     strengths: A defensive mage who values structure and protection
     weaknesses: Her adherence to tradition can make her inflexible
 - id: lash
   name: Lash
-  background: Despite the constant dread of living under siege, Lash chooses to smile
-    and laugh.  His story describes how he visits the city’s market and draws strength
-    from the resilience and beauty of the people around him.  Lash fights not because
-    he believes survival is likely but because hope is worth defending.
+  background: Lash is an upbeat, fearless optimist who refuses to let the siege crush
+    his spirit.  He draws strength from ordinary people and fights to keep hope alive,
+    using humor and bravado to steady the group.
   appearance: Not specified.  His upbeat personality is his most notable trait.
   strengths: Lash can prep and fire spells quickly and has access to cards that reward
     optimism
   weaknesses: Limited defensive abilities; relies on momentum to stay ahead
-  story_notes: 'Lash brings humour and bravado to the group.  Impulsive and sturdy,
-    he charges
-
-    ahead across treacherous paths and cracks jokes to cut through tension.  He
-
-    revels in naming things—often giving affectionate nicknames to creatures
-
-    encountered underground—and expresses wonder at sights such as shafts of
-
-    sunlight.  Lash’s optimism helps his companions endure the oppressive dark.'
+  story_notes: During early expeditions, Lash kept morale high by charging ahead,
+    joking, and naming strange creatures while the group pushed through the dark.
   variants:
   - variant_id: aeon_s_end_core_set
     variant_name: Aeon's End (Core Set)
@@ -211,104 +93,17 @@ mages:
     box: Aeon's End (Core Set)
 - id: mist
   name: Mist
-  background: Mist admits that people think she is brave, like the legendary Thraxir,
-    but she confesses she is terrified.  She fights not just for Gravehold but for
-    a chance to live again.  Mist was made a Dagger Captain and taught the sister‑words;
-    she would sacrifice everything for even a single moment of true life.
+  background: Mist is a vigilant scout and Dagger Captain who masks fear with discipline.
+    She trusts her instincts, values self‑control, and rejects forbidden power, fighting
+    for the chance to live freely again.
   appearance: No physical description; portrayed as a courageous yet frightened woman.
   strengths: Mist is a support mage
   weaknesses: Low innate harm and reliance on allies for full effectiveness
-  story_notes: 'Mist is intuitive and vigilant.  She senses traps and unseen threats
-    before
-
-    others and gathers physical clues—blood, tracks, strange fluids—to guide
-
-    decisions.  Mist moves quietly, trusts her instincts and seldom laughs; her
-
-    experiences in the depths leave her with haunting dreams and a cautious
-
-    disposition.  When light fails she relies on touch and memory to navigate.
-
-
-    During the fall of Gravehold she confronts Xaxos for seeking more power and
-
-    warns that his actions have doomed them.  She rushes into battle alongside
-
-    Brama, deflects falling stones with a telekinetic field and shepherds
-
-    survivors into the tunnels.  In the chaos she recognises the largest breach
-
-    any mage has seen and names the approaching threat.  Later, while tending
-
-    wounded companions in the tunnels, she scolds Xaxos for his folly and
-
-    screams at him when he refuses to close the dark breach behind him.  Mist
-
-    trains novices to work together, emphasising teamwork and self‑control, and
-
-    warns them that attachments to breaches and power can corrupt.  Her stern
-
-    presence is tempered by moments of empathy when she comforts those overcome
-
-    by guilt.
-
-
-    In the aftermath of the lieutenant Bladius’s attack she trains the survivors to
-    defend the camp and helps them channel their burgeoning abilities.  Mist tracks
-    the trails of fleeing lesser foes through the caves and leads the party to the
-    surface, revealing a living world of trees, streams and birds that no mage had
-    seen since the fall.  When Xaxos returns through a strange breach and boasts that
-    he can harness Nameless breaches, Mist strikes him, calling him a coward and reminding
-    him of his prior betrayal.  Later, she arrives with a band of survivors to finish
-    the battle against a spawning horror and helps harvest the strange pods that will
-    be forged into new tools.
-
-
-    Mist returns from the surface carrying a smooth pale sphere.  She explains that
-    the gem can silence lesser foes, freezing them momentarily, and she shares it
-    with the camp’s defenders.  Later, she and Brama leave New Gravehold on a scouting
-    mission to search for other survivors, leaving the protagonist in charge.  When
-    Mist staggers back into camp covered in blood, she begs the mages not to blame
-    Brama—she tells them that a mind‑controlling fungus ambushed them and encased
-    Brama in spores.  She implores the party to free their general before she is lost
-    forever.  After the mages defeat the Fungal Mesh and rescue Brama, Mist determines
-    the locations of other survivor groups and establishes supply lines with them,
-    trading resources and intelligence.  She and Brama continue to train the mages
-    and instruct them in the use of new equipment crafted from harvested pods and
-    encourage them to investigate strange fogs and new breaches.
-
-    During the battle against a fog‑shrouded Nameless her voice is drowned by choking
-    haze.  The survivors watch her silhouette vanish in the gloom, but she returns
-    with soot‑blackened hands to help coordinate the evacuation and search for missing
-    loved ones.  After the fog clears she continues to support Malastar’s instruction,
-    shares warnings about the dangers of Nameless fogs and vapours, and implores the
-    mages to trust in their own strength rather than drawing on enemy power.  Later,
-    when a memory‑eating creature threatens to erase minds, Mist helps rescue those
-    overwhelmed and joins Brama in finishing off the foe after the protagonist collapses,
-    ensuring the ore it guarded is retrieved for Malastar’s craft.
-
-
-    After the hulking enemy collapses she approaches the protagonist, noting the sadness
-    in their eyes as they look upon the devastated battlefield and think of all that
-    has been lost.  Mist praises the mages for taking on the responsibility of protecting
-    their people and offers one final instruction: listen to the power growing inside
-    and embrace it to become stronger.  She teaches that by focusing internal aether
-    they can reduce the requires of their abilities or enhance the harm of their spells,
-    marking this as the last lesson before they face their final trial.
-
-
-    In the aftermath of the final battle she sees the fallen form of the corrupted
-    ally lying smouldering on the ground.  Overcome with grief and rage, Mist incinerates
-    a nearby boulder and storms across the battlefield, demanding to know what has
-    become of him.  When he rises again, burned and scarred, she dodges bolts of shadow
-    and hurls flames, calling out “What happened to you?” even as he lashes out and
-    disintegrates the earth beneath her feet.  After a dark tendril snakes from the
-    breach and pulls him into the Void she helps channel magic to close it, but her
-    mind is still racing.  As sunlight warms her face for the first time in months
-    she sits quietly, feeling both relief and unease.  Questions linger: where did
-    the giant Nameless come from and what fate awaits their former friend in the darkness?  She
-    vows to remain vigilant even as she allows herself to enjoy the breeze and the
-    warmth of the sun.'
+  story_notes: Mist fought through the fall of Gravehold, confronting Xaxos and helping
+    shepherd survivors into the tunnels.  She later led surface scouting, helped rescue
+    Brama from the Fungal Mesh, and coordinated defenses against fog‑shrouded and
+    memory‑eating Nameless.  She witnessed the corrupted ally’s final fall into the
+    Void during the war’s end.
   variants:
   - variant_id: aeon_s_end_core_set
     variant_name: Aeon's End (Core Set)
@@ -317,16 +112,16 @@ mages:
     box: Aeon's End (Core Set)
 - id: phaedraxa
   name: Phaedraxa
-  background: Phaedraxa experiences time as a web woven by howling spinners in the
-    depths.  She says she spoke the sister‑words before she could walk and hears no
-    ghosts—only the web of all things.  In her vision Gravehold is both past and future,
-    and she is born and dies over and over while the Nameless remain the same.
+  background: Phaedraxa is a mystic who experiences time as a woven web.  She speaks
+    in cycles and symbols, believing beginnings and endings are inseparable and that
+    the Nameless outlast all eras.  Her calm, fatalistic counsel warns against the
+    Gate Witch’s influence over time.
   appearance: Often depicted wearing robes and carrying runes; specific details were
     not available.
   strengths: A defensive mage
   weaknesses: Limited offensive options; starting with fewer breaches reduces flexibility
-  story_notes: |
-    Phaedraxa contemplates the nature of time and sees it as a cycle woven by unseen spinners.  She believes that the end is written in the ash of its beginning and that beginnings and endings are inseparable.  Her sermons remind other mages that every victory contains the seed of its own demise, and she warns that the Gate Witch bends time to its will.
+  story_notes: Phaedraxa’s sermons during the war emphasized cyclical time and warned
+    that the Gate Witch bends that flow.
   variants:
   - variant_id: aeon_s_end_core_set
     variant_name: Aeon's End (Core Set)
@@ -335,93 +130,19 @@ mages:
     box: Aeon's End (Core Set)
 - id: xaxos
   name: Xaxos
-  background: Xaxos believes there is knowledge to gain from the Nameless.  He discerns
-    a road to salvation others fail to see and plans to study the Nameless closely,
-    even using their dark powers if necessary, to lift them from torment.
+  background: Xaxos is a contemplative scholar who sees beauty in the darkness and
+    believes understanding the Nameless can save Gravehold.  He is philosophical,
+    curious, and willing to take dangerous risks that others refuse.
   appearance: Typically shown as a hooded scholar; no textual description was found.
   strengths: Xaxos is a support mage who helps others charge their abilities and manipulate
     the sequence of actions
   weaknesses: He inflicts little harm himself and depends on allies to make use of
     extra opportunities
-  story_notes: 'Xaxos is thoughtful and inquisitive.  He sees beauty in the darkness
-    and
-
-    wonders aloud about the builders of the tunnels and the nature of the
-
-    creatures they encounter.  Xaxos carries gemlight and often illuminates
-
-    philosophical questions while others focus on survival.  His dreams reveal
-
-    anxieties about becoming a nameless worker, hinting at deeper fears beneath
-
-    his calm exterior.
-
-
-    When a towering Nameless appears above Gravehold, Xaxos is injured and
-
-    dragged back to the barracks by Brama and Mist.  He confesses that he
-
-    attempted to harness more aether to protect the city but did not understand
-
-    the consequences.  As the breach he opened spirals out of control and blades
-
-    rain down, Xaxos realises his mistake and is wracked with guilt.  He hears
-
-    Mist and Brama blame him for the catastrophe and begs forgiveness, but as
-
-    the cavern collapses a dark breach opens behind him.  Ordered to close it,
-
-    he hesitates and is pulled into the void, vanishing with an apology.  His
-
-    actions haunt the survivors, serving as a cautionary tale about ambition and
-
-    the corruption of power.  In later tales his symbols appear carved in the
-
-    wilderness as cultists invoke his legacy, complicating his place in memory.
-
-
-    Years later Xaxos emerges from a strange breach, healed and stronger.  He boasts
-    that he can tap the Nameless’s breaches to save Gravehold, but Mist strikes him
-    and Brama rebukes him, calling him a coward and reminding him of his past betrayal.  Xaxos
-    pleads for another chance and insists that drawing on forbidden power is necessary
-    to win the war, yet no one supports him and he sulks away, disappearing once more
-    into the void.  His brief return further divides his former companions and foreshadows
-    the threat he will become.
-
-
-    When a twisted breach opens near the camp he rushes out of the void in a panic,
-    warning of a nameless fog that consumes the unprepared.  He laments that the mages
-    should have studied the enemy’s breaches and taken their power, but his words
-    are cut off as the choking haze surrounds them.  In the chaos he strikes down
-    the shadowy figure at the fog’s heart, saving the protagonist as tendrils close
-    around them.  Even as the survivors close the breach he begs their leader to channel
-    a Nameless breach and seize its energy, arguing that they will need such power
-    when the giant Nameless returns.  She refuses, chastising him for repeating his
-    mistakes.  A burst of raw energy knocks everyone to the ground and when they rise
-    Xaxos has vanished again, leaving behind a lingering sense that he has tapped
-    into something dangerous and will not give up his quest.
-
-    At the end of the war he returns one last time, emerging from the darkness as
-    the mages prepare to close the final breach.  Wild‑eyed and wreathed in tendrils
-    of shadow, he accuses them of meddling and proclaims that he brought the giant
-    Nameless to steal its power.  He confesses to drinking from the same well as the
-    Nameless and declares that he will die before he lets them close the breach.  Hurling
-    bolts of shadow and opening swirling breaches around him, he summons waves of
-    lesser foes and forces his former companions to fight him.  Reasoning fails; consumed
-    by the Void, he becomes the ultimate nemesis they must overcome to safeguard New Gravehold.
-
-
-    Though the mages defeat his onslaught and leave him burned and broken, Xaxos does
-    not yield.  As they move to seal the breach he pushes himself to his feet, cracks
-    of electricity dancing across his scarred body.  Brama begs him to renounce his
-    power and return, but he screams that he will never be helpless again.  He reaches
-    toward the swirling void and is struck by a bolt of energy.  A long black tendril
-    emerges from the breach, wraps around his mouth and lifts him into the air.  The
-    last glimpse his former friends have of him is the terror on his face as the tendril
-    pulls him into the darkness.  Sunlight streams through the closing breach, warming
-    their faces, but questions haunt them: what happened to Xaxos in the Void, and
-    will he one day return?  His fate remains unanswered, leaving only legends and
-    uneasy dreams.'
+  story_notes: Xaxos opened a catastrophic breach during the fall of Gravehold and
+    vanished into the Void.  He later returned multiple times urging the use of
+    Nameless power, clashing with other elders, and ultimately became a corrupted
+    foe in the final war.  After his defeat, a tendril dragged him back into the
+    Void, leaving his fate uncertain.
   variants:
   - variant_id: the_void
     variant_name: The Void
@@ -435,130 +156,35 @@ mages:
     strengths: Xaxos (The Void) requires sacrifice from his allies to unlock his power
     weaknesses: Xaxos’s power hinges on forcing allies to set aside cards—either chosen
       by the ally for Pyre or at random for his ability
-    story_notes: 'In exile Xaxos wanders through the Void and keeps a journal of his
-      encounters.
-
-      He writes that the longer he spends away from New Gravehold the stranger his
-
-      definitions of the Nameless become.  He questions how Brama differentiated
-
-      between leader and follower among the monsters and wonders if the distinctions
-
-      mattered after the Fall.  During his travels he sees the Herald of the End,
-      a
-
-      creature composed of five dragon‑like entities so tightly bound together that
-
-      one cannot tell where one head ends and the next begins.  The sight leads him
-
-      to muse about whether Nameless creatures have families, whether they might
-
-      grieve when one is slain, and how they propagate so quickly that they seem
-
-      endless.  He considers his own culpability in the destruction of Gravehold and
-
-      admits that he has not yet wept for Dezmodia.  In these reflections he
-
-      contemplates whether he or the monsters he studies is the real monster.  This
-
-      introspective journey reveals a man caught between guilt and curiosity, whose
-
-      exile has only deepened his obsession with understanding the Nameless.'
+    story_notes: In exile Xaxos journals his travels through the Void, questioning
+      the nature of the Nameless after encountering the Herald of the End.  His notes
+      dwell on guilt, grief, and whether his obsession makes him the monster he fears.
   - variant_id: the_abyss
     variant_name: The Abyss
     wave_id: the_abyss
     wave_name: The Abyss
     box: The Abyss
-    background: In this timeline Xaxos reflects on a story his mother told him about
-      the brass city of Karek, where knowledge was stored for millions of years.  After
-      the city fell and his people were frozen in green crystal, his mother salvaged
-      what knowledge she could and protected him. Xaxos refuses to hide underground;
-      he plans to use the knowledge his mother saved to fight back. He laments that
-      knowledge unused is meaningless and declares he will take his inheritance into
-      his own hands.
+    background: In this timeline, Xaxos is a determined scholar shaped by his
+      mother’s rescued knowledge.  He refuses to hide and believes knowledge has
+      value only when used to fight back.
     appearance: A young trans man clutching ancient books, with fierce determination
       in his eyes.
     strengths: Xaxos is a risk‑reward mage
     weaknesses: His strategy can give the nemesis additional turns if misused
 - id: malastar
   name: Malastar
-  background: As the breach‑mage mentor of Gravehold, Malastar trains the children
-    who will become mages.  In his story he explains that he can always tell which
-    younglings carry the spark—usually girls but sometimes boys—and laments that teaching
-    them is his sad calling because many perish.  Apprentices first learn the sister‑words
-    and then fashion their own gem.  Kadir leads them deep into the caves where they
-    must find their way back, and finally they must slay a hungry creature from the
-    void to earn their place.
+  background: Malastar is Gravehold’s patient mentor and forgemaster.  He trains
+    young mages with strict discipline, teaching that breaches are tools to be respected,
+    not indulged, and carries the quiet burden of sending students into danger.
   appearance: An older mentor with a patient demeanor; no specific physical details
     provided.
   strengths: Malastar is both supportive and offensive
   weaknesses: Limited breach slots restrict his early-game flexibility
-  story_notes: 'Malastar is the patient mentor of Gravehold who guides young apprentices
-    in the
-
-    sister‑words and the forging of gems.  When old Gravehold is attacked he
-
-    stands beside Dezmodia on the front line, holding off waves of lesser foes while
-
-    novices escort civilians through the burning streets and collapsing halls.
-
-    In the aftermath he tends to the wounded alongside Mist and helps Brama
-
-    organise the evacuation into the tunnels.  There he resumes his role as
-
-    teacher, instructing survivors and new mages in controlled spellcasting even
-
-    amid grief.  Malastar reminds his students that breaches are tools to be
-
-    respected, not indulged, and stresses that forgetting the intoxicating rush
-
-    of power is key to preserving their humanity.
-
-
-    During the rebuilding he assigns each mage a task and instructs the protagonist
-    to defend the camp, resuming his lectures until Xaxos’s dramatic return interrupts
-    him.  Malastar dismisses Xaxos’s tirades and focuses on equipping the mages: he
-    directs them to a breeding ground where pulsating pods can be harvested and forged
-    into powerful equipment and reaffirms that there is still a war to win.  After
-    the breach is closed he oversees the collection of pods and promises to craft
-    them into tools for the community.
-
-
-    After the pods are harvested Malastar spends days in his forge crafting them into
-    equipment tailored to each mage’s needs.  He personally instructs the party in
-    the use of these tools and then returns to his work.  When Mist and Brama depart
-    on a scouting mission he continues training the novices until news arrives of
-    their ambush by a mind‑controlling Nameless.  During the battle against Fungal Mesh
-    he closes the breach after the creature is defeated, standing over the fallen
-    Nameless with his hands outstretched as energy from the other side calls to the
-    mages.  Later he helps carry Mist back to her cabin and watches over her while
-    the party rescues Brama.  In the aftermath Malastar guides the mages in choosing
-    specializations, instructing them to focus their spells or increase their aether
-    capacity, and he forges new configurations for their breaches and starting hands.
-
-
-    When a choking fog descends on the camp he remains practical, covering his mouth
-    and urging the mages to focus on evacuating civilians and coordinating the defence.  He
-    continues teaching even as Brama and a reckless mage argue over whether to harness
-    enemy breaches, reminding his students that channeling nameless power is forbidden.  Once
-    the fog dissipates he returns to his forge, ready to craft equipment from the
-    newly recovered pods and a strange ore discovered on the surface.  When scouts
-    report that a memory‑devouring creature guards this ore, he supports Brama’s plan
-    to anchor the mages’ minds and waits at the forge, prepared to imbue his tools
-    with its raw power once the ore is secured.  Throughout these crises he never
-    ceases to instruct, forging and innovating to ensure the community is prepared
-    for the looming return of the colossal Nameless.
-
-
-    In the final confrontation he rushes forward as the corrupted ally attempts to
-    draw from the breach, lunging to stop him from seizing its power.  His effort
-    comes too late; tendrils of darkness wrap around the traitor and drag him into
-    the Void.  The mentor watches as questions take root in his students’ faces: where
-    did the giant Nameless come from, and what destiny awaits their lost friend?  Malastar
-    returns to his forge with these doubts in mind.  In quiet moments he contemplates
-    unanswered mysteries but reminds the mages that vigilance, knowledge and preparation
-    are their greatest weapons.  Some answers may remain beyond reach, yet they must
-    continue to hone their abilities to safeguard what remains of their world.'
+  story_notes: Malastar defended old Gravehold during the fall and helped evacuate
+    survivors into the tunnels.  He later forged equipment from Nameless pods, supported
+    the rescue of Brama, and guided specialization training through fog‑shrouded and
+    memory‑eating threats.  In the final battle he tried to stop the corrupted ally
+    from seizing breach power before the Void claimed him.
   variants:
   - variant_id: the_nameless
     variant_name: The Nameless
@@ -567,13 +193,9 @@ mages:
     box: The Nameless
 - id: nym
   name: Nym
-  background: Nym is a unique breach‑mage from The Depths expansion.  Unlike most
-    mages he does not inflicts harm directly; instead he tries to end the fight by
-    emptying the nemesis deck.  The wiki notes that Nym pushes the game toward the
-    secondary win condition by using his ability Terminus Barrier to set aside the
-    top card of the nemesis deck—exhausting an extra card if the first is an attack.  This
-    strategy forces players to pay attention to how many nemesis cards remain so they
-    can decide whether to go for the kill or mill the nemesis deck.
+  background: Nym is a methodical breach mage from the Depths who focuses on ending
+    fights by exhausting the enemy’s momentum rather than direct assault.  He is
+    patient, analytical, and prefers careful attrition over spectacle.
   appearance: Not described; he is depicted as a young man holding a glowing disc.
   strengths: Nym excels at thinning the nemesis deck
   weaknesses: Nym inflicts no direct harm and relies entirely on his ability to mill
@@ -586,10 +208,9 @@ mages:
     box: The Depths
 - id: reeve
   name: Reeve
-  background: Reeve is an elite breach‑mage who specializes in dispatching lesser
-    foes.  No story section was provided on the wiki, but her overview emphasises
-    that she is an offensive mage dedicated to killing nemesis lesser foes quickly.  She
-    carries a formidable sword and uses it with ruthless efficiency.
+  background: Reeve is an elite breach mage and swordfighter who specializes in
+    dispatching lesser foes with ruthless efficiency.  She is blunt, focused, and
+    treats every skirmish as a test of discipline.
   appearance: Depicted as a warrior with short hair and a large sword.
   strengths: Reeve’s ability Quelling Blade requires four charges and inflicts five
     harm to one lesser foes and three harm to a different lesser foes
@@ -603,13 +224,9 @@ mages:
     box: The Depths
 - id: z-hana
   name: Z'hana
-  background: Z’hana is a renegade healer from The Depths expansion.  Her overview
-    describes her as a defensive mage who can restore Gravehold’s life by tapping
-    into sanctified glyphs.  Her unique spell Eternal Ember lets her double‑cast a
-    prepared spell—once from the Ember and once normally—giving her offensive reach
-    in addition to healing.  She starts with no open breaches but has the economy
-    to focus them quickly and can have her level 4 breach open by the end of her first
-    turn.
+  background: Z’hana is a renegade healer who draws on sanctified glyphs to restore
+    Gravehold and shield her allies.  She is resolute, maternal, and willing to
+    challenge tradition when it costs lives.
   appearance: Shown wearing desert robes and carrying an ornate staff.
   strengths: Z’hana’s Sanctum Glyph ability requires five charges and heals Gravehold
     for seven life—one of the largest single sources of healing in the game
@@ -621,9 +238,9 @@ mages:
     wave_id: outcasts
     wave_name: Outcasts
     box: Outcasts
-    background: In Outcasts Z’hana has abandoned New Gravehold and found a new way
-      of life far to the south, though detailed narratives are not available.  She
-      uses Glyph Carver tokens to heal Gravehold and empower supply cards.
+    background: In Outcasts, Z’hana is a hardened healer in exile who leads a southern
+      community and pushes for reform.  She is resolute, stubborn, and guided by a
+      fierce desire to protect her people.
     appearance: A weathered woman in crimson and brown robes, her hands and forearms
       marked with glyph tattoos; she carries a carved staff and exudes a commanding
       presence.
@@ -631,70 +248,24 @@ mages:
       and empower supply cards, combining maternal instincts with tactical acumen.
     weaknesses: Her drive to atone makes her stubborn; she sometimes overextends her
       resources in an effort to protect everyone.
-    story_notes: 'Z’hana abandoned New Gravehold after the council ignored her pleas
-      for change and fled south to forge her own community.  As she built a rebellion
-      she lamented the old traditions that sacrificed new ideas for safety.  When
-      a monstrous Portalborn threatened the village of Azer she put aside her resentment
-      and fought alongside her son and two Azerian Tethers.  During the battle she
-      was reunited with Xaxos, who claimed he had learned from his mistakes and begged
-      to help.  Despite her deep distrust, she reluctantly accepted his guidance after
-      he saved her son’s life, determined not to ignore any chance to atone for her
-      past.  Z’hana followed Xaxos through a breach into the Void, where poisonous
-      air and haunting landscapes tested her resolve.  She fought through skeletal
-      armies and confronted a legendary Knight of Shackles before reaching a pool
-      of pure aether known as the fountain of souls.  Hoping to reclaim those she
-      had lost in the Fall, Z’hana was devastated to discover that the fountain transformed
-      souls into Nameless rather than restoring them.  She helped destroy the fountain
-      and returned with a grim understanding: reconciliation with New Gravehold required
-      bridging the Void and their world rather than clinging to either.  Her journey
-      tempered her rebellion into a call for reform and healing.'
+    story_notes: Z’hana left New Gravehold, built a southern community, and later
+      fought to defend Azer alongside her son and the Azerian Tethers.  She entered
+      the Void with Xaxos, discovered the fountain of souls corrupted the dead, and
+      helped destroy it before returning with a call for reform.
 - id: dezmodia
   name: Dezmodia
-  background: Dezmodia is a voidborn prodigy whose magic allows her to reshape other
-    mages’ breaches.  There is little narrative text about her origins, but the overview
-    calls her a supportive mage who can upgrade allies’ low‑level breaches into powerful
-    sigil breaches.  Her unique card Oblivion Shard helps her gain higher‑valued gems
-    or charge her ability quickly.
+  background: Dezmodia is a voidborn prodigy who reshapes allies’ breaches.  She is
+    daring, generous, and fiercely protective of the outcast, often throwing herself
+    into danger to shield others.
   appearance: Depicted as a young woman with bright white hair and void‑touched eyes.
   strengths: Dezmodia’s Tempest Sigil ability (six charges) destroys any player’s
     opened level I or II breach and replaces it with a sigil breach that adds +2 harm
     when casting spells
   weaknesses: She requires a large amount of aether to open her own breaches, and
     her ability has a high charge requires, making her slow to start
-  story_notes: 'Dezmodia is thoughtlessly kind and fiercely protective of those who
-    are shunned.
-
-    She often leaps into danger to defend people who once spurned her, revealing a
-
-    generosity that borders on self‑sacrifice.  Among her companions she is the youngest
-
-    and most daring, unafraid to ask hard questions or challenge elders.  She delights
-    in
-
-    small moments of humour and connection, even when the world twists around her.
-
-    Her boldness and empathy make her a catalyst for action and a moral compass when
-
-    difficult choices arise, and her loyalty to her found family keeps her moving
-    through
-
-    the endless dark.
-
-    During the fall of Gravehold Dezmodia faces down a monstrous Nameless that
-
-    eclipses the sky.  While others evacuate civilians she stands as a single
-
-    point of light against swirling darkness, holding back the foe’s lesser foes and
-
-    buying precious time.  When the cavern shakes and towers collapse she
-
-    unleashes her power in a final explosion, burying both herself and the
-
-    Nameless beneath rubble.  Her sacrifice allows many to escape, and her
-
-    absence haunts the survivors.  Tales of her courage remind mages that
-
-    compassion and bravery often demand the ultimate price.'
+  story_notes: During the fall of Gravehold, Dezmodia held back a massive Nameless
+    while civilians escaped, then buried it and herself in a final blast.  Her sacrifice
+    became a defining legend for the survivors.
   variants:
   - variant_id: outcasts
     variant_name: Outcasts
@@ -712,36 +283,17 @@ mages:
       swirling magic can exhaust her and sow confusion among her allies.
 - id: garu
   name: Garu
-  background: Garu is the oathsworn protector of Yan Magda.  He is a hulking brute
-    with crystalline protrusions jutting from his shoulders and elbows, and his memory
-    prior to meeting Yan is lost.  Though not a natural mage, Yan trained him and
-    he now uses breach magic to defend Gravehold.
+  background: Garu is Yan Magda’s oathsworn protector, a hulking warrior with crystal
+    protrusions and a missing past.  He is loyal to a fault, blunt and decisive, and
+    uses brute strength and breach magic to shield his companions.
   appearance: A massive warrior with crystal spikes on his body; he carries the relic
     Torch.
   strengths: Garu’s unique relic Torch allows him to focus any player’s breaches easily,
     accelerating the group’s setup
   weaknesses: Garu’s harm spike requires exhausting his prepared spells, which slows
     future turns
-  story_notes: 'Garu is a mountain of muscle and loyalty.  His first instinct is to
-    protect—
-
-    whether catching a falling apple frozen in time or throwing himself at a shadow
-    in
-
-    the dark, he tries to shield his companions from harm.  He is quick to anger when
-    he
-
-    feels betrayed and just as quick to forgive, speaking plainly and acting decisively.
-
-    His strength allows him to endure physical punishments others cannot, and his
-    humour
-
-    occasionally cracks through his stern exterior.  In the surreal reaches of the
-    Void
-
-    he remains grounded, using his body to anchor the group when time stretches and
-
-    compassion to remind them why they fight.'
+  story_notes: Garu traveled with Yan Magda’s outcasts through the Void, acting as the
+    group’s shield in its warped landscapes.
   variants:
   - variant_id: war_eternal
     variant_name: War Eternal
@@ -765,33 +317,15 @@ mages:
     box: War Eternal
 - id: mazahaedron
   name: Mazahaedron
-  background: Mazahaedron is the last of the henge mystics—brother counterparts to
-    the Conclave’s sister mages.  In The World That Was, henge mystics served as shamans,
-    prophets and augurs.  Mazahaedron believes the world is a massive living organism
-    and that the survivors dwell within its sacred heart.  Out of reverence he levitates
-    continuously and refuses to let his feet touch the ground.
+  background: Mazahaedron is the last henge mystic, a shaman who believes the world
+    is a living organism and their refuge its sacred heart.  Reverent and calm, he
+    levitates out of respect for the earth and speaks in ancient, visionary language.
   appearance: A levitating mystic clothed in prayer robes, always hovering above the
     earth.
   strengths: Mazahaedron is a supportive mage
   weaknesses: Focuses on support and economy rather than harm
-  story_notes: 'Mazahaedron serves as the group’s spiritual anchor.  He senses the
-    agony of
-
-    stone and soil when the world is wrenched out of place and hears the pleas of
-
-    the earth.  Fluent in the ancient Carved Tongue of the henge mystics, he speaks
-
-    to living rock and interprets visions of past cataclysms.  His levitation and
-
-    calm presence lend comfort to his companions.  Within the warped landscapes of
-
-    the Void he listens to the murmur of a monolithic stone and deciphers that even
-
-    a fragment of a world carries memories.  He is willing to risk himself to commune
-
-    with forces far older than Gravehold, reminding the others that the world is
-
-    alive even when it seems broken.'
+  story_notes: Mazahaedron traveled through the warped Void, communing with living
+    stone and interpreting visions of past cataclysms for his allies.
   variants:
   - variant_id: war_eternal
     variant_name: War Eternal
@@ -800,26 +334,16 @@ mages:
     box: War Eternal
 - id: quilius
   name: Quilius
-  background: Quilius is an assassin‑like breach mage who grows more powerful as she
-    collects trophies.  She starts with two open breaches and four spells in her deck,
-    making her a strong offensive threat from the outset.
+  background: Quilius is a young, assassin‑like breach mage who craves recognition.
+    Competitive and brash, she measures herself by trophies but still seeks belonging
+    among her elders.
   appearance: Illustrated as a lithe assassin in dark clothing wielding a dagger.
   strengths: Quilius’s unique card Extinguish allows her to deliver the killing blow
     to lesser foes; each time she slays a lesser foes with it she gains a trophy token
   weaknesses: Quilius must time her kills to maximize trophies; if other mages defeat
     lesser foes first she loses momentum
-  story_notes: 'Quilius is the youngest of the War Eternal band, sharp‑witted and
-    ambitious.
-
-    Her trophies mirror her hunger for recognition and proof of her skill, but beneath
-
-    that drive lies a yearning to belong.  She can be brash and competitive, yet she
-
-    respects the wisdom of her elders and looks up to Yan.  Her determination to
-
-    bring back lost comrades pushes her to take risks, and she delights in clever
-
-    kills and quiet jokes that lighten the darkness.'
+  story_notes: Quilius fought with the War Eternal band, collecting trophies from
+    lesser foes as proof of her worth.
   variants:
   - variant_id: war_eternal
     variant_name: War Eternal
@@ -846,26 +370,17 @@ mages:
     box: War Eternal
 - id: yan-magda
   name: Yan Magda
-  background: Yan Magda was an enlightened exile in The World That Was, punished for
-    questionable practices.  Now she is an extremely powerful mage both alone and
-    with others.  Her ability Imperium Ritual allows her to gain any card from the
-    supply regardless of requires.  If she has four opened breaches, an ally may also
-    gain any card. She starts with three breaches in the furthest closed position
-    and must invest heavily to open them.  Her unique spell Illuminate inflicts harm
-    over time as she focuses breaches.
+  background: Yan Magda is an enlightened exile turned leader.  She is calm under
+    pressure, morally exacting, and willing to carry blame when plans fail.  Her
+    sense of duty binds her band of outcasts together as they search for the lost.
   appearance: Depicted as a regal woman with intricate tattoos and a flowing gown.
   strengths: Imperium Ritual (five charges) lets her acquire the most expensive cards
     immediately
   weaknesses: Yan Magda’s breaches start in the most closed orientation, slowing her
     early game
-  story_notes: |
-    Once an exile and now a leader, Yan Magda carries the weight of past decisions and unfulfilled promises.
-    She guides a band of outcasts into unknown places, driven by the voices of those she fears she has lost.
-    Yan is calm in crisis and unwavering in her moral code.  She demands honesty and accepts blame when things go wrong,
-    trusting her companions to confront her mistakes.  Her quiet determination, sense of duty and capacity for forgiveness
-    bind the group together, even when time stretches and guilt gnaws at them.
-    In landscapes where memory and reality blur, Yan keeps them focused on their shared purpose—to bring the lost home and protect their people.
-    On her journeys through the Void she glimpses the Gate Witch, describing it as the ragged face of the infinite and warning that time itself bends to the Witch’s will.
+  story_notes: Yan Magda led a band of outcasts through unknown reaches of the Void,
+    searching for lost comrades.  She glimpsed the Gate Witch and warned that time
+    bends to its will.
   variants:
   - variant_id: war_eternal
     variant_name: War Eternal
@@ -923,8 +438,9 @@ mages:
     for extra harm and charge'
   weaknesses: Requires careful management of surge tokens; if he expends them too
     early he loses his burst potential
-  story_notes: |
-    Gygar is fascinated by the relics and ruins beneath Old Gravehold.  He proposed an expedition into the sunken city expecting to uncover magical artefacts or even treasure.  Instead he encountered Fortress, a giant aquatic Nameless that had built an almost impenetrable shell from the stones of their collapsed homes.  From above it appeared as nothing more than wreckage; only when the party approached did the rubble rise and reveal the creature beneath.  Gygar recognised that understanding how such beings adapt to and incorporate human environments could yield invaluable insights.  He vowed to study the Fortress after it was defeated to learn how the Nameless integrate themselves into the world.
+  story_notes: Gygar led an expedition into the sunken ruins of Old Gravehold and
+    encountered the aquatic Nameless Fortress.  After its defeat he vowed to study
+    how Nameless adapt to human environments.
   variants:
   - variant_id: the_new_age
     variant_name: The New Age
@@ -933,24 +449,10 @@ mages:
     box: The New Age
 - id: lost
   name: Lost
-  background: 'Lost is an enigmatic forgemaster discovered sealed within a massive
-    suit of
-
-    armour in an underground bunker.  He recalls little of his past beyond a
-
-    far‑away “coffin home” and speaks in broken sentences, as if his mind has
-
-    been damaged by decades of isolation.  Despite his imposing form and the
-
-    flames that spill from the joints of his armour, Lost is gentle and
-
-    welcoming.  He introduces the party to his squirrel‑like companion Meek and
-
-    helps them gather the powerful artefacts scattered around his forge.  His
-
-    existence proves that some mages can survive long periods cut off from
-
-    Gravehold, though the requires may be their memories.'
+  background: Lost is an enigmatic forgemaster sealed in a massive suit of armor.
+    Gentle and welcoming despite his imposing form, he speaks in halting fragments
+    and relies on his small companion Meek.  Isolation fractured his memory, but
+    not his kindness.
   appearance: A towering suit of scorched metal armour with tongues of flame escaping
     its seams; his eyes glow softly through the visor and a small furry creature perches
     on his shoulder.
@@ -959,19 +461,8 @@ mages:
     and resilience.
   weaknesses: Lost’s memory and identity are fractured; he struggles to recall who
     he was and may grow confused without gentle guidance.
-  story_notes: 'Lost is not a conventional battle mage.  He is a survivor whose long
-
-    isolation within a hidden forge has left him fractured but kind.  When
-
-    confronted, he responds with warmth and curiosity rather than hostility.  He
-
-    speaks slowly and sometimes repeats himself, suggesting difficulty
-
-    organising his thoughts.  His bond with the small animal Meek hints at the
-
-    importance of companionship in the face of solitude.  Lost exemplifies
-
-    themes of memory loss, resilience and the rediscovery of forgotten allies.'
+  story_notes: Lost was discovered sealed in a hidden forge and aided the New Age
+    expedition by sharing its artifacts before returning to isolation.
   variants:
   - variant_id: the_new_age
     variant_name: The New Age
@@ -980,23 +471,16 @@ mages:
     box: The New Age
 - id: rhia
   name: Rhia
-  background: Rhia grew up sickly, but as a child she accidentally infused a relic
-    with breach magic, curing herself and infusing her hair with living crystal.  She
-    joined the expedition to find more relics and protect New Gravehold.
+  background: Rhia is a direct, pragmatic relic expert whose crystal‑touched hair
+    marks her early brush with breach magic.  She values clear orders, loyalty, and
+    careful stewardship of dangerous artifacts.
   appearance: A woman with crystalline hair and a calm demeanor.
   strengths: Rhia’s Sublimate ability allows her to return a card she purchased to
     the supply and gain a relic that requires one more
   weaknesses: Requires a supply rich in relics; she may struggle if few relics are
     available
-  story_notes: Rhia is direct and pragmatic.  As the team’s relic expert she shoulders
-    responsibility for preserving and distributing powerful artefacts.  She incinerates
-    Nameless remains to prevent corruption of the land and scowls at those who underestimate
-    the danger, though she can be persuaded to stay her torch long enough to examine
-    a fallen foe’s cloak or symbol.  Rhia speaks plainly, often referring to creatures
-    as “buggers” and admonishing her companions when their orders become confused.  Her
-    loyalty to fellow mages and dedication to recovering lost colleagues and treasures
-    define her role in expeditions, and she is quick to confront cultists and traitors
-    who threaten her people.
+  story_notes: Rhia joined the New Age expedition to recover relics, burn Nameless
+    remains, and confront cultists threatening New Gravehold.
   variants:
   - variant_id: the_new_age
     variant_name: The New Age
@@ -1020,27 +504,18 @@ mages:
     box: The New Age
 - id: soskel
   name: Soskel
-  background: Once an expedition leader, Soskel was captured by Arachnos and tortured
-    with void energy.  Though scarred, he survived and now channels that energy through
-    Energize tokens to protect others.
+  background: Soskel is a hardened expedition commander marked by captivity and void
+    torture.  Steadfast and duty‑bound, he channels that scarred power to protect
+    others and refuses to abandon the fallen.
   appearance: Depicted with jagged scars and glowing void energy emanating from his
     hands.
   strengths: His Energize tokens can be placed on any player’s breaches and later
     used to grant preparation or heal life
   weaknesses: He needs to generate Energize tokens before he can support others, leading
     to a slow start
-  story_notes: Soskel is a decorated expedition commander entrusted with the defence
-    of New Gravehold.  He leads missions into the wilderness to recover missing colleagues
-    and rare relics, mourning every fallen comrade along the way.  In the field he
-    pauses to perform improvised rites for the dead, pressing his forehead to cold
-    stone or grasping a fallen weapon as tears and curses spill from his mouth.  When
-    a dark artefact pulses with Nameless energy he does not flinch, choosing to wield
-    it as a tool to honour his promises rather than a temptation to corrupt.  Soskel
-    remains haunted by the memory of Dezmodia’s sacrifice and the betrayal of would‑be
-    saviours; he worries that his own desperate choices might turn him into a monster.  Even
-    so, he vows to bring every lost mage home to their family.  He volunteers to guide
-    survivors like Lost back to the city and to report to the elders, knowing that
-    the duty of a breach mage never ends and that rest is brief at best.
+  story_notes: Soskel led wilderness expeditions to recover missing mages and relics,
+    honoring fallen allies and carrying scars from Arachnos’s captivity.  He guided
+    survivors back to New Gravehold and continued to lead the city’s defenses.
   variants:
   - variant_id: the_new_age
     variant_name: The New Age
@@ -1049,22 +524,16 @@ mages:
     box: The New Age
 - id: talix
   name: Talix
-  background: Talix grew up isolated at Southpost.  In the ruins he found a plant‑like
-    creature, Inco, whom he took in and protected.  Talix now fights to safeguard
-    both Inco and the inhabitants of New Gravehold.
+  background: Talix is an exuberant scout who protects Inco and the people of New Gravehold
+    with irreverent courage.  He is resourceful, affectionate, and uses humor to defy
+    despair, though time‑warped threats left him wary.
   appearance: A weary scout with a fiery gem embedded in his gauntlet.
   strengths: His Soaring Ash ability lets him destroy Sparks from his hand or set
     aside to shuffle his initiative card into the sequence of actions, giving him
     extra opportunities, or to heal Gravehold for five life
   weaknesses: Destroying Sparks can weaken his deck if overused
-  story_notes: 'Talix is irrepressible and exuberant even in dire circumstances.  Upon
-    reuniting with his comrades he celebrates with dramatic embraces and irreverent
-    salutes, preferring to call Commander Soskel by an affectionate nickname.  Talix
-    remains resourceful: faced with disaster he gathered treasures from fallen companions
-    and buried them for safekeeping, later leading the party to recover them.  His
-    youthful energy and chatter lighten the mood, yet his experience of premature
-    aging at the hands of a Void‑tainted nemesis leaves him wary of time‑bending threats
-    and grateful for the moments he has.'
+  story_notes: Talix reunited with his comrades, recovered buried treasures from fallen
+    allies, and later suffered premature aging from a Void‑tainted nemesis.
   variants:
   - variant_id: the_new_age
     variant_name: The New Age
@@ -1086,12 +555,9 @@ mages:
     wave_id: outcasts
     wave_name: Outcasts
     box: Outcasts
-    background: Taqren is the son of Z’hana and grew up under the watch of New Gravehold’s
-      council.  During the Fall he watched his father die beneath collapsing tunnels,
-      a trauma that cemented his vow to protect others at all requires.  After his
-      mother vanished to the south and was branded a traitor, Taqren did not believe
-      she was evil; he chose to follow her and convince her to atone for her mistakes
-      while continuing to shield their people.
+    background: Taqren is Z’hana’s son, marked by his father’s death in the Fall.
+      He believes in protection above all else and followed his mother south to
+      bring her back and keep others safe.
     appearance: A young man in a long cloak emblazoned with his family crest; he carries
       a broad shield and a set of clawed gauntlets, his eyes marked by exhaustion
       and determination.
@@ -1100,20 +566,9 @@ mages:
     weaknesses: Taqren’s focus on healing and protection means he inflicts little
       direct harm; he struggles to balance loyalty to his family with duty to the
       wider community.
-    story_notes: Taqren left the safety of New Gravehold to search for his mother
-      and to end the suffering caused by her rebellion.  A calm and steadfast mage,
-      he uses shimmering shields and clawed gloves both to protect civilians and to
-      fight.  In the remote village of Azer he helped repel an enormous Nameless with
-      long tendrils, standing shoulder to shoulder with unfamiliar Azerian mages.  When
-      Xaxos appeared, scarred and repentant, Taqren argued for mercy even as he blamed
-      the man for his father’s death.  He travelled through the Void with Z’hana,
-      Kel, Ilya and Xaxos, learning to breathe the tainted air and focusing on his
-      task despite nausea and headaches.  Throughout the expedition he reminded his
-      mother of their duty to the living, even when hope of restoring the dead tempted
-      her.  At the fountain of souls he lashed out at Xaxos when he learned the truth
-      but ultimately helped channel aether to destroy the pool.  The journey hardened
-      Taqren’s resolve; he now believes true healing comes from facing painful truths
-      rather than clinging to impossible dreams.
+    story_notes: Taqren left New Gravehold to find Z’hana, helped defend Azer from a
+      massive Nameless, and traveled through the Void with the Outcasts.  At the
+      fountain of souls he helped destroy the pool after learning its true nature.
 - id: nook
   name: Nook
   background: Nook was once a normal breach mage, but his obsession with tapping the
@@ -1149,11 +604,9 @@ mages:
     wave_id: legacy_of_gravehold
     wave_name: Legacy of Gravehold
     box: Legacy of Gravehold
-    background: The scholar Mazra realises that despite her years of study it is her
-      chaotic sister Razra who is first to work with the council.  She is shocked
-      by a traitor mage who used aether drawn from living beings and begins to question
-      her once‑naïve view of the council. Brama assigns her to assist Soskel at the
-      Northern Outpost, forcing her to confront the harsh realities of leadership.
+    background: In Legacy of Gravehold, Mazra is a brilliant scholar forced to face
+      messy politics and betrayal.  Assigned to the Northern Outpost, she begins
+      questioning the council and learns hard lessons about leadership.
     appearance: No detailed physical description; often depicted studying ancient
       tomes.
     strengths: Mazra excels at research and planning
@@ -1174,39 +627,23 @@ mages:
     wave_id: outcasts
     wave_name: Outcasts
     box: Outcasts
-    background: After living in New Gravehold for a time, Qu returns to the Void.  She
-      confesses that comfort made her uneasy—she felt most alive in battle.  She follows
-      her father Xaxos’s call back to the endless dark, hoping that when she returns
-      her city will be ready to accept her.
+    background: After time in New Gravehold, Qu returns to the Void, uneasy with
+      comfort and drawn to the fight.  She follows Xaxos’s call, hoping to earn
+      acceptance for her divided nature.
     appearance: Wears dark robes embroidered with Void motifs, her eyes reflecting
       both determination and sadness.
     strengths: Her Combust Aether ability allows her to draw three cards at the end
       of her draw phase, accelerating her deck
     weaknesses: Drawing three extra cards can lead to a larger deck with less control
-    story_notes: After finding a measure of peace in New Gravehold, Qu felt the Void
-      tug on her heart.  Hearing that her father planned to venture into that darkness
-      again, she could not let him go alone.  Qu rejoined Xaxos in the Void just as
-      a group of mages battled their way through, surprising her companions with her
-      void‑scarred form and quick laughter.  She admonished them not to waste energy
-      on illusory skeletons and used her unique knowledge of the Void to navigate
-      its dangers.  Though still torn between the light of the surface and the shadows
-      below, Qu recognised the pain behind her father’s ambition and challenged him
-      when he strayed too close to forbidden power.  At the fountain of souls she
-      watched the hope of resurrecting their fallen crumble into horror, yet she helped
-      her friends destroy the source of temptation.  Qu remains a bridge between worlds,
-      refusing to surrender either her human compassion or her void‑born resilience.
+    story_notes: Qu rejoined Xaxos in the Void, guiding a group of mages through its
+      hazards.  At the fountain of souls she helped destroy the source once its
+      corruption was revealed.
 - id: inco
   name: Inco
-  background: Inco is a young breach mage with an innate affinity for the natural
-    world.  Raised by the spirits of the wilds south of New Gravehold and later adopted
-    by Talix, he was nurtured by vines and creatures and still longs for the touch
-    of the earth.  Inco communicates with plants and senses their distress; he can
-    coax life back into a wilting tree and conjure flowers with a thought.  His path
-    through the forest blooms behind him even when death surrounds him, yet this gift
-    sometimes runs wild when he is frightened or upset—branches thicken, roots twist
-    and saplings burst from the soil in chaotic growth.  Inco remains gentle and earnest,
-    but the decay threatening the land fills him with panic and determination to save
-    every crop.
+  background: Inco is a young breach mage attuned to the natural world, raised by
+    wild spirits and later adopted by Talix.  Gentle and earnest, he can coax life
+    from plants but loses control when fear or anger surges.  He believes the land’s
+    survival is inseparable from his own.
   appearance: Portrayed as a lithe youth entwined with vines and budding flowers,
     his skin mottled with green patterns and his hair crowned with leaves.
   strengths: Inco’s connection to plants allows him to rapidly grow vines and blossoms,
@@ -1215,35 +652,10 @@ mages:
   weaknesses: His control over growth is tied to his emotions—panic or anger may trigger
     uncontrolled bursts that hinder allies.  In barren or corrupted environments his
     power weakens, and his urgency to save plants can lead him into danger.
-  story_notes: 'Inco is earnest and often anxious.  He storms into councils with dirt
-    on his hands and urgency in his voice, stumbling over words as he explains that
-    leaves are wilting and crops are failing.  Though young, he has practised breach
-    magic alongside Razra and shares a friendly rivalry with her.  When he calls “Move
-    your roots,” he means it literally: vines lift paths, branches part and roots
-    coil to guide or hinder.  Inco’s compassion extends to animals—he embraces the
-    metallic beast Rip as if it were family—and he blames himself when plants suffer.  His
-    uncontrolled growth in tense moments highlights the tension between a mage’s power
-    and the chaos of nature.
-
-    Even when reverent toward all plants, Inco will tear at vines with bare hands
-    to free a friend trapped within a living prison.  When brute force fails he draws
-    thorny tendrils from the earth, sacrificing growth to cut away shackles.  Discovering
-    carved glyphs and familiar insignias etched into the ground shakes his trust;
-    he mutters “It can’t be” and turns inward, his usual chatter replaced by stony
-    silence.  After freeing Razra from an organic wall he steps aside to let her pick
-    up a glowing artefact, reluctant to touch the object himself.  Inco’s path alternates
-    between blooming flowers that reassure and chaotic roots that threaten to topple
-    trees, reflecting his struggle to balance life and destruction.
-
-    Later, Inco reveals he was raised by one of the plant‑based Nameless the party
-    battles.  His grief at the creature’s death mingles with fury at the traitor who
-    turned his family against him.  On the journey back to New Gravehold he kicks
-    at the ground, hands shaking, unable to meet his friends’ eyes.  At the council
-    chambers he accuses elders of hiding the betrayal and of letting their home become
-    “carrion.”  Despite his despair he vows to heal the land and expose those who
-    would manipulate his kin.  Inco’s ability to sense paths through rot and his willingness
-    to lift allies on great leaves or slam the ground to leap over walls of flame
-    underscore his intimate connection to the earth.'
+  story_notes: During the Into the Wild expedition, Inco helped free Razra from a
+    living vine prison and uncovered signs of betrayal in the grove.  He later revealed
+    he was raised by a plant‑based Nameless and vowed to expose those who turned his
+    kin against him while healing the land.
   variants:
   - variant_id: into_the_wild
     variant_name: Into the Wild
@@ -1252,13 +664,9 @@ mages:
     box: Into the Wild
 - id: razra
   name: Razra
-  background: Razra is Mazra’s younger sister and one of the most headstrong mages
-    of her generation.  She struggled to master breach magic until she forged an unbreakable
-    bond with a metallic creature named Rip, whose speed and loyalty complement her
-    fierce determination.  Eager to prove herself, Razra often rushes ahead of her
-    companions and takes on tasks before anyone else arrives—whether mending blighted
-    crops or confronting roving Nameless alone.  Her independent spirit can get her
-    into trouble, but she never hesitates to defend those she loves.
+  background: Razra is Mazra’s younger sister, fiercely independent and bonded to
+    the metallic beast Rip.  Impulsive and brave, she rushes to act first and trusts
+    her instincts even when it puts her at risk.
   appearance: Razra rides a sleek, armored beast whose luminous eyes mirror her own
     defiance.  Her braided hair and scarred forearms speak of battles fought, while
     her cloak is pinned with symbols of her family and of Rip.
@@ -1270,54 +678,19 @@ mages:
     orders or failing to coordinate with allies.  She depends on Rip for balance and
     may falter if they are separated.  Razra’s need to prove herself can blind her
     to risks and drag her companions into unnecessary danger.
-  story_notes: 'Razra is both a source of frustration and inspiration for her friends.  She
-    leaves cheeky notes (“catch up if you can”) and dashes off into the wilderness
-    to “fix the crops” before anyone else arrives.  Her stubbornness drives Inco mad
-    even as he admires her will.  When she sends Rip to guide the party, she trusts
-    them to follow her lead.  Razra carries the grief of losing comrades but refuses
-    to let it slow her; she digs up relics for safekeeping, fights alongside mutated
-    Nameless and burns remains to purify the land.  Her relationship with Inco is
-    affectionate and teasing, and she often calls on him to hurry with phrases like
-    “move your roots” or “stop dragging your vines.”  Razra embodies youthful audacity
-    and the wild hope that the world can still be saved, even if she must run ahead
-    to prove it.
-
-    In Into the Wild she rushes north to combat a blight and ends up trapped in a
-    vine prison where tendrils of breach energy drain her strength.  Though she jokes
-    that she “basically made it” and scolds Inco for arriving late, her hands tremble
-    and she confesses she now knows how breaches feel—she has been sucked dry.  Razra
-    is blunt about unfair tactics, complaining when explosive flora pursue her like
-    living bombs.  She is baffled and outraged when she suspects a woman controlling
-    plants alongside a Nameless, remarking that Nameless never help humans—“not usually,
-    at least.”  Even so she remains practical: after being freed she grabs a brilliant
-    artefact and continues on, helping Rip to dig up treasures and then teasingly
-    reprimanding him when he showers her with dirt.  Razra’s bravado masks vulnerability;
-    she is quick to embrace friends in relief yet just as quick to charge into the
-    next challenge.
-
-    As the expedition continues, Razra’s suspicion of betrayal hardens.  When buried
-    objects uncovered in the grove turn out to be powerful relics stolen from New Gravehold,
-    she realises someone within their ranks has been smuggling treasures out.  Later
-    she sees a cloaked woman throw a scythe of lightning and recognises the veteran
-    tattoo on her ankle—proof that a seasoned mage is working against them.  Razra
-    and Rip chase the saboteur through walls of flame and across unstable foliage,
-    leaping through a hole Rip bites through the blaze.  Though she and Inco cannot
-    catch the traitor, Razra returns home seething, her resolve unshaken.  She scratches
-    Rip’s head to calm him and tells the council that they must hunt the traitor before
-    she devastates their crops and community.  Her mix of fury, loyalty and humour
-    continues to galvanise those around her.'
+  story_notes: In Into the Wild, Razra rushed north to fight a blight, was trapped
+    in a vine prison, and recovered a powerful artifact after her rescue.  She later
+    uncovered evidence of a traitor smuggling relics and chased the saboteur with Rip
+    before reporting the betrayal to the council.
   variants:
   - variant_id: legacy_of_gravehold
     variant_name: Legacy of Gravehold
     wave_id: legacy_of_gravehold
     wave_name: Legacy of Gravehold
     box: Legacy of Gravehold
-    background: Razra recounts being bound to a life‑draining machine and fighting
-      Necroswarm before journeying through the southern wilds.  She meets villagers
-      with surface magic and learns that New Gravehold’s presence attracts Nameless.  She
-      forgives Z’hana for betraying her but vows to punch her after the crisis ends.  Razra
-      embraces adventure, forging new friendships with Reth and others in the wild
-      lands.
+    background: In Legacy of Gravehold, Razra embraces adventure and rough‑and‑ready
+      alliances in the southern wilds.  She is blunt, forgiving but not forgetful,
+      and driven to protect new friends.
     appearance: Often shown with a confident posture and her beast companion Rip at
       her side.
     strengths: Razra is reckless but resourceful
@@ -1395,23 +768,17 @@ mages:
     box: Southern Village
 - id: ilya
   name: Ilya
-  background: 'Ilya is a breach mage from Azer deeply connected to the flow of aether.  Her
-    Tether, Kel, describes her as hope itself: she sees the invisible currents linking
-    all things and believes those connections make the world worth saving.  She bears
-    tattoos that match Kel’s, symbolizing their lifelong bond.'
+  background: 'Ilya is a breach mage from Azer who reads the flow of aether like a
+    map.  She is contemplative, steady, and believes connection is the source of
+    hope, sharing matching tattoos with her Tether, Kel.'
   appearance: Depicted with vibrant tattoos, swirling aether around her hands.
   strengths: Ilya’s Life Embrace ability lets any ally cast all of their prepared
     spells without exhausting them, allowing a huge burst of harm or support
   weaknesses: Her ability provides no direct harm and depends entirely on allies having
     strong prepared spells
-  story_notes: Ilya is the more contemplative of the two Azerian Tethers.  She sees
-    the flow of aether and uses this insight to guide her partner and allies, carefully
-    timing her support so that others can strike hard.  In the Outcasts expedition
-    she maintains the aether bubble that allows the group to breathe in the Void,
-    warns them of an approaching dream‑eater, and helps them prepare for battle when
-    skeletal armies appear.  Her steady presence and calm voice ground Kel and the
-    others as they make difficult decisions about trust, redemption and the use of
-    forbidden power.
+  story_notes: During the Outcasts expedition, Ilya maintained the aether bubble
+    that allowed the group to breathe in the Void and warned of a dream‑eater before
+    skeletal armies attacked.
   variants:
   - variant_id: outcasts
     variant_name: Outcasts
@@ -1420,24 +787,18 @@ mages:
     box: Outcasts
 - id: kel
   name: Kel
-  background: Kel comes from Azer and shares an inseparable bond with her Tether,
-    Ilya.  Ilya notes that Kel acts tough but has a soft, loving core; their matching
-    tattoos serve as a promise to protect one another.  Kel fights fiercely to defend
-    her homeland and her partner.
+  background: Kel is an Azerian Tether who masks a tender core with a tough exterior.
+    Fiercely loyal to Ilya, she believes bonds are sacred and fights to protect their
+    homeland at any cost.
   appearance: A tall woman with intricate tattoos on her arms and shoulders, carrying
     a staff adorned with gems.
   strengths: Focused on gems and relics, Kel’s Trulite of Energy ability returns up
     to two gems or relics she played this turn to her hand
   weaknesses: Kel requires a high‑value market of gems and relics to maximize her
     ability
-  story_notes: Kel and her partner Ilya act as inseparable Tethers from the village
-    of Azer.  When a monstrous experiment attacks their home they carve glyphs into
-    the ground and channel aether through their matching tattoos to protect villagers.  They
-    then join a group of travellers on an expedition through the Void, taking turns
-    feeding energy into a shared portal to maintain breathable air.  Kel’s resilience
-    and fierce loyalty carry her through battles against dream clouds and skeletal
-    armies.  Throughout the journey she reminds her companions to trust in each other’s
-    strengths and to honour the bonds that give them power.
+  story_notes: Kel defended Azer from a monstrous experiment and later traveled
+    through the Void with Ilya, sustaining the shared portal that kept the group
+    alive.
   variants:
   - variant_id: outcasts
     variant_name: Outcasts
@@ -1446,28 +807,19 @@ mages:
     box: Outcasts
 - id: thraxir
   name: Thraxir
-  background: Thraxir was once a human but was transformed into a mindless monster
-    by the Void.  After regaining his senses, he struggles to remember his old life.  Xaxos
-    empathizes with his plight, noting that both of them feel estranged from New Gravehold
-    and hope to rediscover their humanity together.
+  background: Thraxir is a former human twisted by the Void who fights to reclaim
+    his lost humanity.  Quiet and haunted, he views himself as a warning and seeks
+    redemption alongside those who still trust him.
   appearance: A towering warrior wrapped in chains, his eyes glowing with remnants
     of Void power.
   strengths: Thraxir’s Nameless Siphon ability allows him to cast up to three spells
     (or four if he has all breaches open)
   weaknesses: He relies on having many open breaches to maximize harm; early in the
     game he is slower
-  story_notes: Thraxir was once a legendary breach mage of old Gravehold whose exploits
-    became myth.  He vanished into the Void and returned centuries later as the fearsome
-    Knight of Shackles, clad in corroded armour and commanding armies of skeletal
-    lesser foes.  For years he was thought lost to madness, but during the Outcasts
-    expedition he regained enough clarity to speak.  He encountered a band of mages
-    seeking the fountain of souls and, though his voice cracked from disuse, confirmed
-    that the pool existed and that he had survived its horrors.  His admission galvanised
-    Z’hana and her companions to continue their quest.  Thraxir himself still bears
-    the weight of Nameless power; he warns others to destroy the fountain rather than
-    embrace it, hinting that his own transformation was the price of drinking from
-    its depths.  Though he fights alongside the mages against common threats, he is
-    resigned to remain between worlds, neither fully human nor wholly Nameless.
+  story_notes: A legendary mage of old Gravehold, Thraxir vanished into the Void
+    and returned centuries later as the Knight of Shackles.  During the Outcasts
+    expedition he confirmed the fountain of souls existed and urged the mages to
+    destroy it rather than repeat his fate.
   variants:
   - variant_id: outcasts
     variant_name: Outcasts
@@ -1491,18 +843,10 @@ mages:
     weaknesses: After his fusion with a spider Nameless, he is physically fragile
       and suffers pain when drawing on the Void; if he pushes too far his body threatens
       to unravel.
-    story_notes: Arachnos was once a devout student of Xaxos who viewed the Void as
-      the key to defeating the Nameless.  Banished from New Gravehold for forbidden
-      experiments, he attempted to fuse himself with a giant spider Nameless deep
-      in the Void.  When the fountain of souls exploded, a human‑sized hand rose from
-      the drained pool and Arachnos crawled out, half‑transformed and covered in webbing.  He
-      teetered between human and monster, his eyes clouded with pain and memory.  Thraxir
-      and the mages helped him to his feet, and he whispered of being caught somewhere
-      between man and monster.  Arachnos regrets his hubris but still believes there
-      is power to be harnessed in the Void; he now counsels caution and urges others
-      to find balance instead of courting destruction.  His partial transformation
-      serves as a living warning of what happens when one reaches too deeply into
-      forbidden pools.  In his journals from exile he recounts adjusting runes to stabilise a breach after a previous experiment sealed a rabbit inside the Void; he then used a captured wolf as his next subject, convinced that a stronger animal would survive the Void essence and adapt to contain it.  He wrote excitedly that success would usher in the future of their race and allow him to begin human trials.  This entry foreshadows the creation of the Nameless Fenrix and underscores how his pursuit of power endangered both himself and others.
+    story_notes: Arachnos, a former student of Xaxos, was exiled for forbidden experiments
+      and attempted to fuse himself with a spider Nameless.  He emerged from the
+      shattered fountain of souls half‑transformed and now warns others against
+      the same hubris, as revealed in his exile journals.
 - id: indira
   name: Indira
   variants:
@@ -1523,16 +867,9 @@ mages:
       and manipulate breach effects
     weaknesses: Her magic is erratic and difficult to control, sometimes causing unintended
       effects
-    story_notes: Indira senses dark forces at work within Gravehold.  In her letters
-      she describes dwindling numbers despite the arrival of Yan Magda and her companions,
-      noting that faith has sustained the survivors but is also coveted by a cult
-      known as the Hollow Crown.  She explains that its acolytes are former mages
-      practising forbidden blood rituals in the rubble of the Craghollows, and that
-      through their devotion the Crown draws unstoppable power.  Unlike other Nameless,
-      the Crown inspires reverence rather than fear and sees citizens as potential
-      worshippers.  Indira warns that Gravehold has become a cage for those under
-      the Crown’s sway; unless faith is reclaimed and the cult exposed, there may
-      be fates worse than death.  As she stares into the dim light of the city she contemplates the words of Yan Magda, Brama and Phaedraxa—time is like water, our lives are drops of blood and the end is written in the ash of its beginning.  Hearing the bells toll and smelling the burnt air of a breach she braces for another battle that may be her last.
+    story_notes: In her letters, Indira warns that the Hollow Crown cult is drawing
+      power from forbidden blood rituals in the Craghollows.  She fears Gravehold
+      is becoming a cage unless the cult is exposed.
 - id: auren
   name: Auren
   background: Auren bears scales as a visible sign of corruption yet retains her humanity.  In
