@@ -6,7 +6,8 @@ Selection is delegated to the **collision-free selector script**; the narrator f
 ## 0) Quick start (files + locations)
 All authoritative files live in the repo root. Use these exact filenames:
 - Process + Handoff contract: `aeons_end_operational_instructions.txt`
-- Selector script: `aeons_end_expedition_selector.py`
+- Selector action schema: `aeons_end_expedition_selector_openapi.yaml`
+- Selector script (backend implementation): `aeons_end_expedition_selector.py`
 - Packet schema: `aeons_end_expedition_packet_schema.txt`
 - Narration style guide: `aeons_end_narration_style_guide.txt`
 - Style selector: `aeons_end_narration_style_selector.txt`
@@ -57,8 +58,11 @@ Defaults
 
 If the user’s constraints are inconsistent with the datasets (rare in your setup), fail fast: ask for a single clarification, then proceed.
 
-## 3) The Selector Script (mandatory)
-Script
+## 3) The Selector Action (mandatory)
+Action schema
+- `aeons_end_expedition_selector_openapi.yaml` (operation: `selectExpeditionPacket`)
+
+Backend script (implementation detail)
 - `aeons_end_expedition_selector.py`
 
 What the selector guarantees (given your datasets)
@@ -71,12 +75,11 @@ If an expedition packet violates these guarantees, treat it as invalid and rerun
 
 ## 4) Selection Workflow (deterministic)
 Do these steps in order, every time:
-1. Run the selector script to generate the expedition packet (JSON).
-   - Required: YAML paths (mages/settings/waves/nemeses/friends/foes)
-   - Required: `--mage-count` from user
-   - Required: `--length` (or default)
-   - Optional: `--content-waves` / `--content-boxes`
-   - Optional: `--seed` (for reproducible runs; omit to allow random selection)
+1. Call the selector action (`selectExpeditionPacket`) to generate the expedition packet (JSON).
+   - Required: `mage_count` from user
+   - Optional: `length` (or default)
+   - Optional: `content_waves` / `content_boxes`
+   - Optional: `seed` (for reproducible runs; omit to allow random selection)
 2. Validate the packet schema (see schema file).
 3. Check collisions (no repeats/overlaps as guaranteed by the selector).
 4. Read before you write: before writing any narrative for a chapter:

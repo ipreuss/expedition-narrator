@@ -1,0 +1,271 @@
+openapi: 3.1.0
+info:
+  title: Aeon's End Expedition Selector
+  version: 1.0.0
+  description: |-
+    OpenAPI schema for invoking the expedition selector CGI endpoint that wraps
+    aeons_end_expedition_selector.py. Use this action to generate expedition
+    packets instead of running the script directly.
+servers:
+  - url: http://194.164.61.102/cgi-bin/expedition-narrator
+paths:
+  /aeons_end_expedition_selector_cgi.py:
+    post:
+      operationId: selectExpeditionPacket
+      summary: Generate an expedition packet.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SelectorRequest"
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: "#/components/schemas/SelectorRequest"
+      responses:
+        "200":
+          description: Expedition packet
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ExpeditionPacket"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    get:
+      operationId: selectExpeditionPacketGet
+      summary: Generate an expedition packet (query parameters).
+      parameters:
+        - name: mage_count
+          in: query
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+        - name: length
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [short, standard, long]
+        - name: content_waves
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Comma-separated wave names or a JSON list encoded as a string.
+        - name: content_boxes
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Comma-separated box names or a JSON list encoded as a string.
+        - name: seed
+          in: query
+          required: false
+          schema:
+            type: integer
+        - name: max_attempts
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+      responses:
+        "200":
+          description: Expedition packet
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ExpeditionPacket"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+components:
+  schemas:
+    SelectorRequest:
+      type: object
+      additionalProperties: false
+      required:
+        - mage_count
+      properties:
+        mage_count:
+          type: integer
+          minimum: 1
+        length:
+          type: string
+          enum: [short, standard, long]
+          default: standard
+        content_waves:
+          oneOf:
+            - type: array
+              items:
+                type: string
+            - type: string
+          description: Wave names as a list or comma-separated string.
+        content_boxes:
+          oneOf:
+            - type: array
+              items:
+                type: string
+            - type: string
+          description: Box names as a list or comma-separated string.
+        seed:
+          type: integer
+        max_attempts:
+          type: integer
+          minimum: 1
+    ExpeditionPacket:
+      type: object
+      additionalProperties: false
+      required:
+        - meta
+        - setting
+        - protect_target
+        - mages
+        - final_nemesis
+        - battle_plan
+        - availability
+      properties:
+        meta:
+          $ref: "#/components/schemas/Meta"
+        setting:
+          $ref: "#/components/schemas/Setting"
+        protect_target:
+          type: [string, "null"]
+          enum: [Gravehold, Xaxos, null]
+        mages:
+          type: array
+          items:
+            $ref: "#/components/schemas/Mage"
+        final_nemesis:
+          $ref: "#/components/schemas/Nemesis"
+        battle_plan:
+          type: array
+          items:
+            $ref: "#/components/schemas/BattlePlanEntry"
+        availability:
+          $ref: "#/components/schemas/Availability"
+    Meta:
+      type: object
+      additionalProperties: false
+      required:
+        - generated_at_utc
+        - seed
+        - attempt
+        - attempt_seed
+        - inputs
+      properties:
+        generated_at_utc:
+          type: string
+          format: date-time
+        seed:
+          type: integer
+        attempt:
+          type: integer
+        attempt_seed:
+          type: integer
+        inputs:
+          type: object
+          additionalProperties: false
+          required:
+            - mage_count
+            - length
+            - content_waves
+            - content_boxes
+          properties:
+            mage_count:
+              type: integer
+            length:
+              type: string
+              enum: [short, standard, long]
+            content_waves:
+              type: array
+              items:
+                type: string
+            content_boxes:
+              type: array
+              items:
+                type: string
+    Setting:
+      type: object
+      required:
+        - wave_name
+      properties:
+        wave_name:
+          type: string
+      additionalProperties: true
+    Mage:
+      type: object
+      required:
+        - name
+        - chosen_variant
+      properties:
+        name:
+          type: string
+        chosen_variant:
+          type: object
+          required:
+            - box
+          properties:
+            box:
+              type: string
+          additionalProperties: true
+      additionalProperties: true
+    Nemesis:
+      type: object
+      required:
+        - name
+      properties:
+        name:
+          type: string
+      additionalProperties: true
+    FriendFoe:
+      type: [object, "null"]
+      additionalProperties: true
+    BattlePlanEntry:
+      type: object
+      additionalProperties: false
+      required:
+        - battle_index
+        - tier
+        - nemesis
+        - friend
+        - foe
+      properties:
+        battle_index:
+          type: integer
+        tier:
+          type: integer
+        nemesis:
+          $ref: "#/components/schemas/Nemesis"
+        friend:
+          $ref: "#/components/schemas/FriendFoe"
+        foe:
+          $ref: "#/components/schemas/FriendFoe"
+    Availability:
+      type: object
+      additionalProperties: false
+      required:
+        - friends_available
+        - foes_available
+        - include_friend_foe_pair
+      properties:
+        friends_available:
+          type: boolean
+        foes_available:
+          type: boolean
+        include_friend_foe_pair:
+          type: boolean
+    ErrorResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        error:
+          type: string
