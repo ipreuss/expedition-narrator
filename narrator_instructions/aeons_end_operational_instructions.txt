@@ -57,8 +57,8 @@ Defaults
 - Seed: if the user does not specify a seed, do not pass `--seed` (let the script generate a random one for a different story each time).
 
 Content scope notes
-- Passing `all` in `content_waves` or `content_boxes` disables filtering (equivalent to omitting scope inputs).
-- Mixed inputs that include `all` ignore any other wave/box values.
+- To request **all** content, pass an empty array (`[]`) for `content_waves` and/or `content_boxes` (or omit the fields entirely).
+- The `all` token is not supported for `content_waves` or `content_boxes`; do not use it.
 
 If the user’s constraints are inconsistent with the datasets (rare in your setup), fail fast: ask for a single clarification, then proceed.
 
