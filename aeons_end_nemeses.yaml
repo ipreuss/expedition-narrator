@@ -218,7 +218,7 @@ nemeses:
   special_rules: |
     Starts with 4 Nemesis tokens.  Tokens reduce damage received by their number.
     After damage calculation, the Magus loses 1 token.  Minimum: 2 tokens,
-    Maximum: 8 tokens.  Unleash: Either the Magus gains 2 tokens OR Gravehold
+    'Maximum: 8 tokens.  Unleash: Either the Magus gains 2 tokens OR Gravehold'
     suffers 2 damage.  At increased difficulty: Minimum 3, Maximum 9 tokens.
 - name: Arachnos
   box: The New Age
@@ -453,10 +453,10 @@ nemeses:
     and returns in a vengeance as Maelstrom: Risen.  Dezmodia’s sacrifice in the past
     saved them, but this time the mages must be stronger than ever. '
   appearance: A resurrected version of Maelstrom glowing with renewed power.
-  strengths: Maelstrom: Risen uses a beacon deck and a special Assault turn order
-    card
-  weaknesses: Although Maelstrom: Risen hits harder and adds beacons each turn, it
-    is still slow to ramp up
+  strengths: 'Maelstrom: Risen uses a beacon deck and a special Assault turn order
+    card'
+  weaknesses: 'Although Maelstrom: Risen hits harder and adds beacons each turn, it
+    is still slow to ramp up'
   special_rules: 'During setup, include two fewer upgraded basic nemesis cards in
     each tier. '
 - name: Spawning Horror
