@@ -82,6 +82,12 @@ def _shuffle_copy(rng: random.Random, items: Sequence[Any]) -> List[Any]:
     rng.shuffle(out)
     return out
 
+def _normalize_scope_list(values: Sequence[str]) -> List[str]:
+    cleaned = [_norm_space(str(value)) for value in values if str(value).strip()]
+    if any(name_key(value) == "all" for value in cleaned):
+        return []
+    return cleaned
+
 def name_key(name: str) -> str:
     return _norm_key(name)
 
@@ -360,8 +366,10 @@ def select_expedition(
     base_rng = random.Random(seed)
 
     box_to_wave = load_box_to_wave(waves_yaml_path)
-    allowed_waves = resolve_allowed_waves(content_waves, content_boxes, box_to_wave)
-    allowed_boxes = [_norm_space(b) for b in content_boxes]
+    normalized_waves = _normalize_scope_list(content_waves)
+    normalized_boxes = _normalize_scope_list(content_boxes)
+    allowed_waves = resolve_allowed_waves(normalized_waves, normalized_boxes, box_to_wave)
+    allowed_boxes = [_norm_space(b) for b in normalized_boxes]
 
     settings_by_wave = load_settings_by_wave(settings_yaml_path)
     if not settings_by_wave:
@@ -456,12 +464,12 @@ def select_expedition(
                     "attempt_seed": attempt_seed,
                     "effective_seed": _resolve_effective_seed(seed, attempt_seed),
                     "inputs": {
-                        "mage_count": mage_count,
-                        "length": _norm_space(length),
-                        "content_waves": list(content_waves),
-                        "content_boxes": list(content_boxes),
-                    },
+                    "mage_count": mage_count,
+                    "length": _norm_space(length),
+                    "content_waves": list(normalized_waves),
+                    "content_boxes": list(normalized_boxes),
                 },
+            },
                 "setting": chosen_setting,
                 "protect_target": protect_target,
                 "mages": chosen_mages,
