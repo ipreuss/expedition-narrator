@@ -4,13 +4,13 @@ This document defines the deterministic process for generating and narrating exp
 Selection is delegated to the **collision-free selector script**; the narrator focuses on reading the packet and writing diegetic prose.
 
 ## 0) Quick start (files + locations)
-Narrator instruction files live in `narrator_instructions/`. Use these exact paths:
-- Process + Handoff contract: `narrator_instructions/aeons_end_operational_instructions.txt`
+All authoritative files live in the repo root. Use these exact filenames:
+- Process + Handoff contract: `aeons_end_operational_instructions.txt`
 - Selector action schema: `aeons_end_expedition_selector_openapi.yaml`
 - Selector script (backend implementation): `aeons_end_expedition_selector.py`
 - Packet schema: `aeons_end_expedition_packet_schema.txt`
-- Narration style guide: `narrator_instructions/aeons_end_narration_style_guide.txt`
-- Style selector: `narrator_instructions/aeons_end_narration_style_selector.txt`
+- Narration style guide: `aeons_end_narration_style_guide.txt`
+- Style selector: `aeons_end_narration_style_selector.txt`
 - Wave settings: `wave_settings.yaml`
 - Wave/box map: `aeons_end_waves.yaml`
 - Datasets: `aeons_end_mages.yaml`, `aeons_end_nemeses.yaml`, `aeons_end_friends.yaml`, `aeons_end_foes.yaml`
