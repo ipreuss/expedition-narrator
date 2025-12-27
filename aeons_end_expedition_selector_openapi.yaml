@@ -56,13 +56,13 @@ paths:
           required: false
           schema:
             type: string
-          description: Comma-separated wave names or a JSON list encoded as a string.
+          description: Comma-separated wave names or a JSON list encoded as a string. Use `all` to disable filtering.
         - name: content_boxes
           in: query
           required: false
           schema:
             type: string
-          description: Comma-separated box names or a JSON list encoded as a string.
+          description: Comma-separated box names or a JSON list encoded as a string. Use `all` to disable filtering.
         - name: seed
           in: query
           required: false
@@ -108,14 +108,14 @@ components:
               items:
                 type: string
             - type: string
-          description: Wave names as a list or comma-separated string.
+          description: Wave names as a list or comma-separated string. Use `all` to disable filtering.
         content_boxes:
           oneOf:
             - type: array
               items:
                 type: string
             - type: string
-          description: Box names as a list or comma-separated string.
+          description: Box names as a list or comma-separated string. Use `all` to disable filtering.
         seed:
           type: integer
         max_attempts:
