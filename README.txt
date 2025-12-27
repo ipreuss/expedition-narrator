@@ -16,11 +16,11 @@ collision-free selection only; narration and win/lose state are handled by the n
 - `aeons_end_waves.yaml`: Wave text/settings used by the selector.
 - `aeons_end_expedition_packet_schema.txt`: JSON schema for selector output.
 - `aeons_end_expedition_selector_openapi.yaml`: OpenAPI schema for the selector action.
-- `aeons_end_operational_instructions.txt`: Process and handoff contract for narration.
-- `aeons_end_narration_style_guide.txt`: Voice and formatting guidance.
-- `aeons_end_background_selection_rules.txt`: Rules for interpreting YAML fields.
-- `aeons_end_narration_style_selector.txt`: Style selector reference.
-- `system_prompt.txt`: End-to-end narrator system prompt.
+- `narrator_instructions/aeons_end_operational_instructions.txt`: Process and handoff contract for narration.
+- `narrator_instructions/aeons_end_narration_style_guide.txt`: Voice and formatting guidance.
+- `narrator_instructions/aeons_end_background_selection_rules.txt`: Rules for interpreting YAML fields.
+- `narrator_instructions/aeons_end_narration_style_selector.txt`: Style selector reference.
+- `narrator_instructions/system_prompt.txt`: End-to-end narrator system prompt.
 
 ## Quick start
 Run the selector directly with Python 3:
@@ -81,6 +81,6 @@ Given valid datasets and scope, the selector ensures:
 If the selector cannot satisfy constraints, it exits with an error, indicating a dataset or scope issue.
 
 ## Notes for narrators
-- Read the selector output and follow the narration guidance in `system_prompt.txt`.
+- Read the selector output and follow the narration guidance in `narrator_instructions/system_prompt.txt`.
 - Do not improvise selection in prose; the selector is authoritative.
 - The Handoff format (a metadata code block, not the narration) never uses `Reinforcement: none`; omit the `Reinforcement:` line entirely when no reward/reinforcement applies.
