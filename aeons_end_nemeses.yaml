@@ -13,21 +13,21 @@ nemeses:
     echoing across chasms and of battles where its body vanished into darkness
     without a sound, leaving them uncertain if it was truly gone.
   appearance: |
-    A massive, wut-verzerrte Kreatur mit archaischem Design.  Sein Körper ist
-    primitiv-brutal, dominiert von gewaltiger Muskelkraft und aggressiver
-    Körpersprache.  Hörner ragen aus seinem Schädel und klobige Klingen sind
-    an seinen Armen befestigt.
+    A massive, rage-distorted creature with archaic design.  Its body is
+    primitively brutal, dominated by immense musculature and aggressive
+    posture.  Horns protrude from its skull and bulky blades are attached
+    to its arms.
   strengths: |
-    Fokussiert auf direkten, massiven Schaden gegen Mages und Gravehold.
-    Akkumuliert Fury-Token und triggert mit ihnen verheerende Strikes aus
-    einem separaten Kartendeck.
+    Focuses on direct, massive damage against mages and Gravehold.
+    Accumulates Fury tokens and triggers devastating Strikes from a
+    separate card deck.
   weaknesses: |
-    Mangelnde strategische Komplexität; anfängerfreundlich zu besiegen und
-    skaliert nicht gegen erfahrene Spieler.
+    Lacks strategic complexity; beginner-friendly to defeat and does not
+    scale well against experienced players.
   special_rules: |
-    Rageborne startet mit einem Fury-Token.  Jedes Unleash gewährt einen
-    zusätzlichen Token.  Bei vier oder mehr Tokens triggert ein Strike,
-    wobei drei Tokens verbraucht werden.
+    Rageborne starts with one Fury token.  Each Unleash grants an additional
+    token.  At four or more tokens, a Strike is triggered and three tokens
+    are consumed.
 - name: Carapace Queen
   box: Aeon's End (Core Set)
   battle: 1
@@ -41,23 +41,22 @@ nemeses:
   difficulty: 3
   life: 60
   appearance: |
-    Eine insektenartige Kreatur mit chitinösem Panzer und käferartigem Design.
-    Ihr Körper gleicht einer Königin-Insekt-Form: dunkel gefärbt, von metallisch
-    schimmernden Platten bedeckt und mit vielen segmentierten Gliedmaßen
-    ausgestattet.  Unter ihrem Panzer wimmeln unzählige kleine Husks.
+    An insectoid creature with chitinous armour and beetle-like design.
+    Its body resembles a queen-insect form: darkly coloured, covered in
+    metallic shimmering plates and equipped with many segmented limbs.
+    Beneath its carapace swarm countless small husks.
   strengths: |
-    Massive Husk-Produktion erzeugt schnell Überwältigung.  Swarm-Effekte
-    bestrafen Spieler abhängig von der Anzahl der Husks mit steigenden
-    Konsequenzen bis hin zum sofortigen Spielverlust.
+    Massive husk production quickly creates overwhelming numbers.  Swarm
+    effects punish players based on husk count with escalating consequences
+    up to instant loss.
   weaknesses: |
-    Mit 60 Lebenspunkten relativ niedrig.  Turn-Order-Manipulation kann das
-    explosive Potenzial reduzieren.  AoE-Damage oder Multi-Hit-Spells sind
-    besonders wertvoll gegen die Husks.
+    With 60 life points, relatively low health.  Turn order manipulation can
+    reduce its explosive potential.  AoE damage or multi-hit spells are
+    particularly valuable against the husks.
   special_rules: |
-    Jeder Husk hat 1 Lebenspunkt.  Spieler können 1 Schaden erleiden, um
-    überschüssigen Schaden auf weitere Husks zu verteilen.  Bei 15+ Husks
-    erleidet Gravehold 1 Schaden statt eines neuen Husks.  Bei 13+ Husks
-    verlieren die Spieler sofort.
+    Each husk has 1 life.  Players may suffer 1 damage to distribute excess
+    damage to additional husks.  At 15+ husks, Gravehold suffers 1 damage
+    instead of spawning a new husk.  At 13+ husks, players lose immediately.
 - name: Crooked Mask
   box: Aeon's End (Core Set)
   battle: 2
@@ -72,21 +71,20 @@ nemeses:
   difficulty: 5
   life: 70
   appearance: |
-    Ein bedrohliches Wesen mit einer schiefen, verzerrten Maske.  Das Design
-    betont Krankheit und Verfall durch seine verdrehten Züge und das
-    verstörende Antlitz.  Hinter der grinsenden Maske verbirgt sich etwas
-    Düsteres.
+    A menacing entity with a crooked, distorted mask.  The design emphasizes
+    disease and decay through its twisted features and disturbing visage.
+    Something sinister hides behind the grinning mask.
   strengths: |
-    Nutzt ein sekundäres Corruption-Deck, um schwächende Karten in Spielerdecks
-    und Hände zu platzieren.  Die Corruptions lösen sich am Zuganfang und nach
-    dem Ziehen auf.  Zerstörte Corruptions kehren auf den Deckboden zurück.
+    Uses a secondary Corruption deck to place debilitating cards into player
+    decks and hands.  Corruptions trigger at turn start and after drawing.
+    Destroyed Corruptions return to the bottom of the deck.
   weaknesses: |
-    Spieler können durch sorgfältiges Ressourcenmanagement und Widerstand gegen
-    die Versuchung gewinnen.
+    Players can win through careful resource management and resisting
+    temptation.
   special_rules: |
-    Bei jedem Unleash erhält ein Spieler eine Corruption oben auf sein Deck
-    und mischt dann seinen Ablagestapel in sein Deck.  Zerstörte Corruptions
-    kehren auf den Boden des Corruption-Decks zurück.
+    On each Unleash, a player gains a Corruption placed atop their deck,
+    then shuffles their discard pile into their deck.  Destroyed Corruptions
+    return to the bottom of the Corruption deck.
 - name: Prince of Gluttons
   box: Aeon's End (Core Set)
   difficulty: 5
@@ -102,19 +100,18 @@ nemeses:
     connection to their past.  It slithers silently through tunnels, erasing
     inscriptions and names wherever it goes.
   appearance: |
-    Ein vielköpfiges Monstrum mit zahlreichen Mäulern, die Karten und
-    Erinnerungen verschlingen.  Sein Körper windet sich schlangenartig durch
-    die Tunnel.
+    A many-headed monstrosity with numerous maws that devour cards and
+    memories.  Its body winds serpent-like through the tunnels.
   strengths: |
-    Verschlingt Karten von den Angebotsstapeln und entzieht Spielern so
-    Ressourcen.  Die verschlungenen Karten bilden einen separaten Stapel.
+    Devours cards from supply piles, depriving players of resources.  The
+    devoured cards form a separate pile.
   weaknesses: |
-    Spieler können Karten vom Verschlingen-Stapel kaufen.  Mit hohem Schaden
-    und schnellem Spielende kann der Prince ausgehungert werden.
+    Players can purchase cards from the Devour pile.  With high damage
+    and a quick end to the game, the Prince can be starved out.
   special_rules: |
-    Beim Unleash verschlingt er 2-3 Karten vom günstigsten Stapel.  Leere
-    Angebotsstapel verursachen 2 Schaden pro fehlender Karte.  Spielverlust
-    wenn ein Angebotsstapel (außer dem Verschlingen-Stapel) leer ist.
+    On Unleash, it devours 2-3 cards from the cheapest pile.  Empty supply
+    piles deal 2 damage per missing card.  Players lose if any supply pile
+    (except the Devour pile) is empty.
 - name: Gate Witch
   box: War Eternal
   difficulty: 7
@@ -127,19 +124,20 @@ nemeses:
     unfolding twice as fast or barely moving at all under her influence.  Some of her invocations
     linger, cycling back again and again, making it impossible to outlast her by simple attrition.
   appearance: |
-    Ein düsteres, übernatürliches Wesen mit zeitmanipulierender Ästhetik.  Ihre Präsenz
-    scheint Raum und Zeit zu verzerren.  Lange Klauen ragen aus zerrissenen Roben hervor,
-    und sie ist von überweltlichen Elementen und einer bedrohlichen Aura umgeben.
+    A dark, supernatural being with time-manipulating aesthetics.  Her presence
+    seems to distort space and time.  Long claws protrude from tattered robes,
+    and she is surrounded by otherworldly elements and a menacing aura.
   strengths: |
-    Sie spezialisiert sich auf die Manipulation des Turn Order Decks.  Nach genug Tokens
-    kann sie eine Nemesis-Karte aus dem Ablagestapel zurück ins Deck shuffeln.  Drei
-    ihrer Karten kehren immer ins Deck zurück—ein Milling-Sieg ist unmöglich.
+    Specializes in manipulating the Turn Order Deck.  After accumulating enough
+    tokens, she can shuffle a nemesis card from the discard pile back into the
+    deck.  Three of her cards always return to the deck—a milling victory is
+    impossible.
   weaknesses: |
-    Ihr temporales Weben wächst langsam; schnelle und entschlossene Aktionen können sie
-    stören und verhindern, dass sie an Schwung gewinnt.
+    Her temporal weaving grows slowly; fast and decisive actions can disrupt
+    her and prevent her from gaining momentum.
   special_rules: |
-    Bei jedem Unleash gewinnt sie ein Nemesis-Token.  Bei erhöhter Schwierigkeit verliert
-    sie 3 statt 4 Tokens bei Zeitbeschleunigung.
+    On each Unleash, she gains a Nemesis token.  At increased difficulty, she
+    loses 3 instead of 4 tokens on time acceleration.
 - name: Umbra Titan
   box: War Eternal
   difficulty: 3
@@ -151,20 +149,20 @@ nemeses:
     it as a manic and feral beast with little recognizable intelligence.  It is worshipped
     by dark creatures and threatens Gravehold through its burrowing and rampaging.
   appearance: |
-    Ein großer, wurmartiger Titan mit dunkler, überwiegend schwarzer Färbung.  Die
-    Kreatur wirkt primitiv und bedrohlich, mit einer massiven Silhouette, die ihre
-    Zerstörungskraft unterstreicht.  Finsternis umhüllt seinen gewaltigen Körper.
+    A large, worm-like titan with dark, predominantly black colouring.  The
+    creature appears primitive and menacing, with a massive silhouette that
+    emphasizes its destructive power.  Darkness envelops its enormous body.
   strengths: |
-    Hohe Lebenspunkte und aggressive Minions.  Die Token-Verlust-Mechanik erzeugt
-    Druck.  Minions sind auf Token-Verlust optimiert.
+    High life points and aggressive minions.  The token-loss mechanic creates
+    pressure.  Minions are optimized for token loss.
   weaknesses: |
-    Abhängigkeit von der Turn-Order-Kartenlage.  Spieler können Schaden statt
-    Token-Verlust wählen.  Mages mit frühem Schaden und Heilung sind vorteilhaft.
+    Dependent on Turn Order card placement.  Players can choose damage instead
+    of token loss.  Mages with early damage and healing are advantageous.
   special_rules: |
-    Startet mit 8 Nemesis-Tokens als Countdown zur Zerstörung Graveholds.  Bei null
-    Tokens verlieren die Spieler.  Der Unleash-Effekt: Je nach Nemesis-Kartenstapel
-    erleidet ein Spieler oder Gravehold 2 Schaden, ODER der Titan verliert ein Token.
-    Bei erhöhter Schwierigkeit startet er mit nur 5 Tokens.
+    Starts with 8 Nemesis tokens as a countdown to Gravehold's destruction.  At
+    zero tokens, players lose.  Unleash effect: Depending on Nemesis card pile,
+    a player or Gravehold suffers 2 damage, OR the Titan loses a token.  At
+    increased difficulty, it starts with only 5 tokens.
 - name: Hollow Crown
   box: War Eternal
   difficulty: 5
@@ -175,14 +173,20 @@ nemeses:
   appearance: |
     A tall, sinewy creature with exposed red musculature and bone-white armour plating.  It wears a hollow, crown-shaped helm that encases its head and shoulders.  In one hand it carries a staff or sceptre, and in the other it gestures as if offering something unseen.  Veins glow faintly beneath its skin, hinting at the blood magic it employs.
   strengths: |
-    The Hollow Crown compels reverence in those who behold it.  Its masked acolytes, former mages turned blood-magic cultists, willingly sacrifice their own vitality to feed its power.  The Crown siphons life from their devotions, growing stronger as their faith intensifies and using forbidden rituals to sap strength from its enemies.  Tier-3-Karten können alle Akolythen-Effekte gleichzeitig auslösen.
+    The Hollow Crown compels reverence in those who behold it.  Its masked acolytes,
+    former mages turned blood-magic cultists, willingly sacrifice their own vitality
+    to feed its power.  The Crown siphons life from their devotions, growing stronger
+    as their faith intensifies and using forbidden rituals to sap strength from its
+    enemies.  Tier-3 cards can trigger all acolyte effects simultaneously.
   weaknesses: |
-    Its influence depends on the unwavering devotion of its followers.  By breaking the thrall of its acolytes, exposing its true intentions or disrupting its blood-magic rites, defenders can sever the Crown's source of power.  The Nameless itself cannot be harmed directly until its congregation is freed or destroyed.
+    Its influence depends on the unwavering devotion of its followers.  By breaking
+    the thrall of its acolytes, exposing its true intentions or disrupting its
+    blood-magic rites, defenders can sever the Crown's source of power.  The Nameless
+    itself cannot be harmed directly until its congregation is freed or destroyed.
   special_rules: |
-    Die Krone kann keinen normalen Schaden erleiden.  Akolythen führen Blutmagie-Effekte
-    aus—beim Unleash wird der Effekt des stärksten Akolythen ausgelöst.  Sieg: Eine Runde
-    ohne Akolythen im Spiel beenden.  Neue Akolythen werden nachgezogen, wenn alte
-    abgelegt werden.
+    The Crown cannot take normal damage.  Acolytes perform blood magic effects—on
+    Unleash, the effect of the strongest acolyte is triggered.  Victory: End a round
+    with no acolytes in play.  New acolytes are drawn when old ones are discarded.
   story_notes: |
     Indira warns that conspiracies within Gravehold are eroding the survivors' faith.  She observes that the Crown's followers are driven not by fear but by awe and a promise of power.  Their blood rituals repulse her, yet she notes that the Crown regards them as potential worshippers, not prey.  Indira reflects that Gravehold has become a cage for those under the Crown's sway; unless they confront the cult's allure, there may be fates worse than death.  Ohat suggests that death is the worst fate, but she disagrees.
 - name: Magus of Cloaks
@@ -199,23 +203,23 @@ nemeses:
     "We live in darkness.  Darkness and silence...  The Magus is a thing of darkness.
     With every blow, we merely peel away one cloak of shadow to reveal another."
   appearance: |
-    Eine mystische Kreatur, die in mehreren Schichten aus Dunkelheit gehüllt ist.  Die
-    dominante Färbung ist dunkelblau und schwarz mit mystischen Effekten, die die
-    "Umhänge" aus Schatten darstellen.  Nur glühende Augen sind sichtbar.  Die Gestalt
-    wirkt ätherisch und bedrohlich.
+    A mystical creature wrapped in multiple layers of darkness.  The dominant
+    colouring is dark blue and black with mystical effects representing the
+    "cloaks" of shadow.  Only glowing eyes are visible.  The figure appears
+    ethereal and menacing.
   strengths: |
-    Schichten-basierte Abwehr durch Tokens macht direkten Schaden zunächst ineffektiv.
-    Minions sind gleichfalls widerstandsfähig.  Powers können nicht durch Aether-Ausgaben
-    verworfen werden.  Gegnerische Karteneffekte erzeugen kontinuierlich neue Tokens.
+    Layer-based defence through tokens makes direct damage initially ineffective.
+    Minions are likewise resilient.  Powers cannot be discarded through Aether
+    expenditure.  Enemy card effects continuously generate new tokens.
   weaknesses: |
-    Erfordert unnachgiebige Ausdauer—konsistente Attacken zum Abbauen von Tokens.
-    Mages mit durchdringenden Schadensquellen sind effektiv.  Das Token-Maximum
-    begrenzt die Token-Ansammlung.
+    Requires relentless endurance—consistent attacks to reduce tokens.  Mages
+    with piercing damage sources are effective.  The token maximum limits
+    token accumulation.
   special_rules: |
-    Startet mit 4 Nemesis-Tokens.  Tokens reduzieren erhaltenen Schaden um ihre Anzahl.
-    Nach Schadensberechnung verliert der Magus 1 Token.  Minimum: 2 Tokens, Maximum:
-    8 Tokens.  Unleash: Entweder gewinnt der Magus 2 Tokens ODER Gravehold erleidet
-    2 Schaden.  Bei erhöhter Schwierigkeit: Minimum 3, Maximum 9 Tokens.
+    Starts with 4 Nemesis tokens.  Tokens reduce damage received by their number.
+    After damage calculation, the Magus loses 1 token.  Minimum: 2 tokens,
+    Maximum: 8 tokens.  Unleash: Either the Magus gains 2 tokens OR Gravehold
+    suffers 2 damage.  At increased difficulty: Minimum 3, Maximum 9 tokens.
 - name: Arachnos
   box: The New Age
   battle: 2
@@ -237,23 +241,22 @@ nemeses:
     once maintained harmony before falling into slumber.  Now they have awakened
     with evil and malicious intent.
   appearance: |
-    Eine grotesk-hagere Kreatur mit antiker, unterirdischer Ästhetik.  Ihr Körper
-    wirkt verdorrt und knochig, umgeben von einer Horde kleinerer Trogg-Wesen,
-    die aus Tunneln und Spalten im Boden emporkriechen.  Ihr Gesicht ist von
-    dämonischen Zügen gezeichnet und ihre langen Finger greifen gebietend nach
-    ihren Untergebenen.
+    A grotesquely gaunt creature with ancient, subterranean aesthetics.  Its body
+    appears withered and bony, surrounded by a horde of smaller trogg creatures
+    crawling from tunnels and crevices in the ground.  Its face is marked by
+    demonic features and its long fingers reach commandingly toward its minions.
   strengths: |
-    Horden-orientiertes Design mit großer Anzahl an Minions.  Troggs triggern
-    progressive Effekte basierend auf ihrer Häufigkeit im Spiel.  Der Trogg-Deck
-    recycelt ständig durch das Shufflen des Discard-Stapels.
+    Horde-oriented design with large numbers of minions.  Troggs trigger
+    progressive effects based on their frequency in play.  The Trogg deck
+    constantly recycles through shuffling the discard pile.
   weaknesses: |
-    Hat begrenzte Möglichkeiten, Spieler direkt zu schädigen.  Wenn die Troggs
-    unter Kontrolle gehalten werden, kann sie besiegt werden.
+    Has limited ability to directly harm players.  If the troggs are kept under
+    control, she can be defeated.
   special_rules: |
-    Nutzt ein sekundäres Trogg-Deck mit drei Trogg-Typen (je 4 Karten).  Beim
-    Unleash wird der Trogg-Ablagestapel in das Deck gemischt und ein neuer
-    Trogg gespielt.  Bei erhöhter Schwierigkeit haben alle Troggs 3 statt 2
-    Lebenspunkte.
+    Uses a secondary Trogg deck with three trogg types (4 cards each).  On
+    Unleash, the trogg discard pile is shuffled into the deck and a new trogg
+    is played.  At increased difficulty, all troggs have 3 instead of 2
+    life points.
 - name: Blight Lord
   box: The Nameless
   difficulty: 4
@@ -266,24 +269,22 @@ nemeses:
     of devastation that accompanied its appearance—the certain annihilation of our
     people followed it like a merciless plague.
   appearance: |
-    Ein dunkelgrüner, kristalliner Gegner mit einer glasartigen, facettierten
-    Struktur.  Sein Design verkörpert die Verwandlung in Glas—eckig, scharf und
-    mit einer mineralischen, bedrohlichen Ästhetik.  Kristalline Auswüchse
-    bedecken seinen massiven Körper.
+    A dark green, crystalline adversary with a glass-like, faceted structure.
+    Its design embodies the transformation into glass—angular, sharp and
+    with a mineral, menacing aesthetic.  Crystalline growths cover its
+    massive body.
   strengths: |
-    Füllt Spielerdecks mit Tainted Jade, verstopft ihre Hände und zwingt sie,
-    Ressourcen umzuleiten.  Spieler, die versuchen die Tainted Jade zu nutzen,
-    erleiden Lebensschaden.
+    Fills player decks with Tainted Jade, clogging their hands and forcing
+    them to redirect resources.  Players who attempt to use the Tainted Jade
+    suffer life damage.
   weaknesses: |
-    Wenn Spieler ihre verdorbenen Edelsteine verwalten und den Track am
-    Vorankommen hindern, hat der Blight Lord keine anderen starken Angriffe
-    und kann besiegt werden.
+    If players manage their tainted gems and prevent the track from advancing,
+    the Blight Lord has no other strong attacks and can be defeated.
   special_rules: |
-    Nutzt ein sekundäres Tainted Jade Deck.  Der Blight Lord bewegt sich auf
-    einem Tainted Track voran—erreicht er das Ende, verlieren die Spieler
-    sofort.  Bei leerer Vorratspile erleidet der betroffene Spieler 1 Schaden
-    pro Karte.  Bei erhöhter Schwierigkeit werden zwei Tainted Jades zu
-    Spielbeginn entfernt.
+    Uses a secondary Tainted Jade deck.  The Blight Lord advances on a
+    Tainted Track—if it reaches the end, players lose immediately.  When
+    the supply pile is empty, the affected player suffers 1 damage per card.
+    At increased difficulty, two Tainted Jades are removed at game start.
 - name: Wayward One
   box: The Nameless
   difficulty: 7
@@ -296,23 +297,21 @@ nemeses:
     narrative suggests the entity appears almost tormented by its existence, and
     the breach mages show it compassion through their efforts to defeat it.
   appearance: |
-    Eine ätherische, spektrale Kreatur mit durchscheinender, geisterhafter Form.
-    Ihre Gestalt erscheint in blassen, flackernden Tönen, die ein ständiges
-    Wechseln zwischen Zuständen andeuten.  Das Design vermittelt ein Wesen, das
-    weder vollständig anwesend noch abwesend ist—mit einer verstörenden,
-    jenseitigen Qualität.
+    An ethereal, spectral creature with translucent, ghostly form.  Its shape
+    appears in pale, flickering tones suggesting a constant shifting between
+    states.  The design conveys a being that is neither fully present nor
+    absent—with a disturbing, otherworldly quality.
   strengths: |
-    Die wechselnden Positionen des Wayward One bewirken, dass fehlausgerichtete
-    Zauber reduzierten Schaden verursachen.  Manche Minions haben ebenfalls
-    Breach-Ausrichtungen.
+    The shifting positions of the Wayward One cause misaligned spells to deal
+    reduced damage.  Some minions also have breach alignments.
   weaknesses: |
-    Das Positions-System ist gleichzeitig seine Stärke und seine ausnutzbare
-    Schwäche—das vorhersehbare Rotationsmuster erlaubt taktische Planung.
+    The position system is both its strength and exploitable weakness—the
+    predictable rotation pattern allows tactical planning.
   special_rules: |
-    Nutzt einen Positions-Tracker, der durch I → II → III → IV → I rotiert.
-    Nur Zauber in passenden Breaches verursachen vollen Schaden; fehlausgerichtete
-    Zauber verursachen halben Schaden (aufgerundet).  Bei erhöhter Schwierigkeit
-    verursachen fehlausgerichtete Zauber nur 1 Schaden statt halbem.
+    Uses a position tracker that rotates through I → II → III → IV → I.  Only
+    spells in matching breaches deal full damage; misaligned spells deal half
+    damage (rounded up).  At increased difficulty, misaligned spells deal only
+    1 damage instead of half.
 - name: Knight of Shackles
   box: The Void
   difficulty: 4
@@ -326,22 +325,21 @@ nemeses:
     knowledge of Gravehold's defenses and breach mechanics, suggesting his former
     identity as a powerful mage.
   appearance: |
-    Ein gepanzerter Skelett-Ritter in schwerer Plattenrüstung mit einem prominenten
-    Schwert.  Die Darstellung ist in dunklen Tönen gehalten und betont das
-    nekromantische Thema.  Knochenstrukturen sind innerhalb der Rüstung sichtbar
-    und verkörpern das Konzept der "auferstandenen Form."
+    An armoured skeletal knight in heavy plate armour with a prominent sword.
+    The depiction is rendered in dark tones emphasizing the necromantic theme.
+    Bone structures are visible within the armour, embodying the concept of the
+    "risen form."
   strengths: |
-    Nutzt eine separate Breach-Matte mit vier Breaches.  Das progressive Öffnen
-    der Breaches erzeugt eskalierenden Druck.  Breach-Effekte bieten anhaltende
-    Bedrohungen: verteilter Schaden, Minion-Wiederbelebung und Gravehold-Schaden.
+    Uses a separate breach mat with four breaches.  The progressive opening of
+    breaches creates escalating pressure.  Breach effects provide ongoing
+    threats: distributed damage, minion revival and Gravehold damage.
   weaknesses: |
-    Spieler können Aether ausgeben, um die Breaches des Knights "zurückzudrehen"
-    (unfocus).  Dies bietet Gegenspiel und erfordert das Verwalten mehrerer
-    Bedrohungs-Mechaniken gleichzeitig.
+    Players can spend Aether to "unfocus" the Knight's breaches.  This provides
+    counterplay and requires managing multiple threat mechanics simultaneously.
   special_rules: |
-    Kontrolliert vier Breach-Tokens auf einer separaten Matte.  Beim Unleash
-    fokussiert er seinen geschlossenen Breach mit den niedrigsten Fokus-Kosten.
-    Das Öffnen des vierten Breaches führt zum sofortigen Spielverlust.
+    Controls four breach tokens on a separate mat.  On Unleash, he focuses his
+    closed breach with the lowest focus cost.  Opening the fourth breach leads
+    to immediate game loss.
   story_notes: |
     In the narrative of The Void this skeletal commander arises from Gravehold’s burial sites, wielding shackles and commanding undead minions.  Many believe he is the risen form of Thraxir, a legendary warrior slain during the fight against Rageborne.  In a later expedition (Outcasts) the knight returns as a corrupted hero who rides a skeletal steed amid blank-faced infantry.  When the mages break through his thralls they recognise glimmers of humanity and learn from him of a fountain that collects the aether of fallen mages.  He warns them to destroy it, revealing both his lingering loyalty to humanity and the danger of tampering with the Void【980884546724550†screenshot】.
 - name: Maiden of Thorns
@@ -357,23 +355,21 @@ nemeses:
     even consumes the memories of fallen mages.  "It revels in cruelty.  There is
     no easy death to be had from this creature."
   appearance: |
-    Eine dunkle, klingenartige Kreatur mit dornenähnlichen Strukturen.  Das Design
-    wirkt bedrohlich und organisch, mit scharfkantigen Elementen, die ihre
-    gefährliche Natur unterstreichen.  Rasiermesserscharfe Klingen ragen aus
-    ihrem Körper, von Blut tropfend.
+    A dark, blade-like creature with thorn-like structures.  The design appears
+    menacing and organic, with sharp-edged elements emphasizing its dangerous
+    nature.  Razor-sharp blades protrude from its body, dripping with blood.
   strengths: |
-    Nutzt einen doppelseitigen Thorn-Token auf Vorratsstapeln.  Der Token wechselt
-    zwischen "Gravehold"- und "Spieler"-Seite.  Verursacht Schaden basierend auf
-    der Anzahl verbleibender Karten im Stapel plus Stufen-Boni.
+    Uses a double-sided Thorn token on supply piles.  The token alternates
+    between "Gravehold" and "Player" sides.  Deals damage based on the number
+    of remaining cards in the pile plus tier bonuses.
   weaknesses: |
-    Spieler können kontrollieren, auf welchem Vorratsstapel der Token liegt,
-    indem sie Stapel leeren.  Strategische Planung um den Schaden herum ist
-    möglich.
+    Players can control which supply pile the token is on by emptying piles.
+    Strategic planning around the damage is possible.
   special_rules: |
-    Platziert einen doppelseitigen Token auf dem billigsten Vorratsstapel.  Bei
-    2+ Nemesis-Tokens erleidet das Ziel Schaden gleich der Kartenzahl plus
-    Stufen-Boni (Impale-Effekt).  Der Token wechselt dann den Stapel.  Beim
-    Unleash gewinnt sie einen Nemesis-Token.
+    Places a double-sided token on the cheapest supply pile.  At 2+ Nemesis
+    tokens, the target suffers damage equal to the card count plus tier bonuses
+    (Impale effect).  The token then moves to another pile.  On Unleash, she
+    gains a Nemesis token.
 - name: Bladius
   box: Aeon's End Legacy
   battle: 1
@@ -640,19 +636,18 @@ nemeses:
     confronted true fear.  The Bishop tells this story to remind others that forgetting
     the proper fear of monsters and meddling with forbidden power invites disaster.
   appearance: |
-    Ein robenhafter und gepanzerter Figur mit einer gesichtslosen Kapuze und einem
-    glänzenden Brustpanzer.  Er hält einen alten Folianten, der mit wechselnder
-    Schrift leuchtet, während Schriftrollen und Seiten in der Luft um ihn wirbeln.
+    A robed and armoured figure with a faceless hood and a gleaming breastplate.
+    He holds an ancient tome that glows with shifting script, while scrolls and
+    pages swirl in the air around him.
   strengths: |
-    Führt verfluchtes Wissen; er überwältigt Magier mit arkaner Gelehrsamkeit und
-    bestraft jene, die zu tief in seine Schriften eintauchen.
+    Wields cursed knowledge; he overwhelms mages with arcane scholarship and
+    punishes those who delve too deeply into his writings.
   weaknesses: |
-    Wenn seine Schriftrollen und Seiten entrissen werden, schwindet sein Einfluss.
+    When his scrolls and pages are torn away, his influence fades.
   special_rules: |
-    Im Legacy-Modus müssen Spieler Namen für unbenannte Minionen vergeben.  Bei
-    Spielstart werden 2-3 Unbenannte ins Spiel gebracht.  Wenn keine Karten
-    verfügbar sind, werden alle Unbenannten-Effekte ausgelöst.  Spielverlust,
-    wenn keine Unbenannten übrig bleiben.
+    In Legacy mode, players must assign names to unnamed minions.  At game start,
+    2-3 unnamed minions are put into play.  When no cards are available, all
+    unnamed effects are triggered.  Players lose if no unnamed minions remain.
 - name: Brama (Legacy of Gravehold)
   box: Legacy of Gravehold
   battle: 2
@@ -713,10 +708,9 @@ nemeses:
     The creature's power depends on the presence of relics and spells to twist; if mages deprive it of enchanted equipment or focus on simple attacks that cannot be reversed, its influence wanes.
     Disrupting its control over aether and severing the bond between its mind and stolen magic prevents it from weaponising their own arsenal.
   special_rules: |
-    Unleash: Ein beliebiger Spieler erhält eine Karte aus der Supply.  Dieser Spieler
-    oder Gravehold erleidet Schaden gleich den Kosten dieser Karte minus 1.  Bei
-    erhöhter Schwierigkeit wird nach jedem Unleash die billigste Karte der Supply
-    zerstört.
+    Unleash: Any player gains a card from the supply.  That player or Gravehold
+    suffers damage equal to the cost of that card minus 1.  At increased
+    difficulty, the cheapest supply card is destroyed after each Unleash.
 - name: Stonemonger
   box: Past and Future
   battle: 2
@@ -860,19 +854,18 @@ nemeses:
     to form, with metal buggers that attach to skin.  These creatures lack individual
     leadership but share a single consciousness that guides them together like a swarm.
   appearance: |
-    Eine riesige humanoide Figur, zusammengesetzt aus rostigen Metallscherben und
-    sich windenden Fragmenten.  Sie nimmt die Form einer Frau an, wenn sie vereint sind.
+    A massive humanoid figure composed of rusty metal shards and writhing fragments.
+    She takes the form of a woman when united.
   strengths: |
-    Beschwört Rustborn-Minions, die sich an Spieler heften und ihr Leben entziehen.
-    Bei 4+ Nemesis-Tokens aktivieren alle Rustborn ihre RUSH-Effekte.
+    Summons Rustborn minions that attach to players and drain their life.  At 4+
+    Nemesis tokens, all Rustborn activate their RUSH effects.
   weaknesses: |
-    Hat keine eigenen Lebenspunkte—Spieler besiegen sie, indem sie alle Minions
-    beseitigen.
+    Has no life points of her own—players defeat her by eliminating all minions.
   special_rules: |
-    Dieser Nemesis hat keinen Lebensvorrat.  Spieler müssen alle Rustborn-Minions
-    aus einem speziellen Deck besiegen, um zu gewinnen.  Wenn kein Rustborn im Spiel
-    ist, wird sofort einer platziert.  Wenn das Rustborn-Deck leer ist, erhalten alle
-    aktiven Rustborn +1 Leben.  Sieg: Keine Rustborn-Karten im Deck oder Spiel übrig.
+    This nemesis has no life pool.  Players must defeat all Rustborn minions from
+    a special deck to win.  When no Rustborn is in play, one is immediately placed.
+    When the Rustborn deck is empty, all active Rustborn gain +1 life.  Victory:
+    No Rustborn cards remain in the deck or in play.
 - name: Thrice-Dead Prophet
   box: The Outer Dark
   difficulty: 5
@@ -884,23 +877,21 @@ nemeses:
     to the emergence of the Umbra Titan.  The Prophet seems to use its victories as
     "tests" and may become unstoppable in the fourth battle.
   appearance: |
-    Eine Skelettfigur, gehüllt in Lumpen, mit leuchtenden Runen in die Knochen
-    geätzt.  Die Darstellung ist düster und mysteriös, mit einer Aura uralter
-    dunkler Macht.
+    A skeletal figure wrapped in rags with glowing runes etched into its bones.
+    The depiction is dark and mysterious, with an aura of ancient dark power.
   strengths: |
-    Gewinnt Lebenspunkte bei jedem Unleash und kann zur Unsterblichkeit aufsteigen.
-    Bei 99+ Lebenspunkten verlieren die Spieler sofort.  Wenn das Nemesis-Deck
-    leer wird, verlieren die Spieler ebenfalls.
+    Gains life points on each Unleash and can ascend to immortality.  At 99+
+    life points, players lose immediately.  When the Nemesis deck is depleted,
+    players also lose.
   weaknesses: |
-    Hat keine aggressive Offensive.  Spieler können sich auf Burst-Schaden
-    konzentrieren, um ihn am Erreichen höherer Lebens-Schwellen zu hindern
-    und den Kampf schnell zu beenden.
+    Has no aggressive offence.  Players can focus on burst damage to prevent
+    it from reaching higher life thresholds and end the fight quickly.
   special_rules: |
-    Startet mit 40 Lebenspunkten (55 bei erhöhter Schwierigkeit).  Zwei
-    zusätzliche Niederlagebedingungen: Spielverlust bei 99+ Lebenspunkten
-    oder leerem Nemesis-Deck.  Bei 4+ Tokens wird eine Nemesis-Karte abgelegt
-    und 4 Token verloren.  Unleash: Prophet gewinnt 5 Lebenspunkte; bei 60+
-    Lebenspunkten gewinnt er einen zusätzlichen Nemesis-Token.
+    Starts with 40 life points (55 at increased difficulty).  Two additional
+    loss conditions: Players lose at 99+ life points or when the Nemesis deck
+    is empty.  At 4+ tokens, a Nemesis card is discarded and 4 tokens are lost.
+    Unleash: Prophet gains 5 life points; at 60+ life points, it gains an
+    additional Nemesis token.
 - name: 'Bishop: Returned'
   box: Legacy of Gravehold
   difficulty: 7
@@ -912,22 +903,20 @@ nemeses:
     defeating him and building a new city on the ruins.  Yet discontent grew in the
     new city, and the war returned, signalling an inevitable new fall.
   appearance: |
-    Ein aufragender, verdrehter Figur, die an den Bishop of Scrolls erinnert.
-    Seine Rüstung ist gebrochen und er trägt eine gestohlene Reliquienmaske.
-    Ein dunkler, bedrohlicher Charakter mit mystischer Ästhetik passend zum
-    Void-Magie-Thema.
+    A towering, twisted figure reminiscent of the Bishop of Scrolls.  His armour
+    is broken and he wears a stolen relic mask.  A dark, menacing character with
+    mystical aesthetics fitting the Void magic theme.
   strengths: |
-    Gewinnt Nemesis-Tokens und ruft Verstärkungen.  Tier-1-Minions geben 2 Tokens,
-    Tier-2-Minions geben 1 Token.
+    Gains Nemesis tokens and summons reinforcements.  Tier-1 minions give 2 tokens,
+    Tier-2 minions give 1 token.
   weaknesses: |
-    Verlässt sich auf Verstärkungen und Tokens; fokussierte Angriffe auf Minions
-    und sorgfältiges Token-Management können seine Macht begrenzen.
+    Relies on reinforcements and tokens; focused attacks on minions and careful
+    token management can limit his power.
   special_rules: |
-    Unleash: Gewinnt 1 Nemesis-Token.  Bei 5+ Tokens werden Verstärkungen
-    aktiviert—zwei Deck-Karten werden offenbart, ein Minion gespielt, dann
-    verliert der Nemesis 4 Tokens.  Leere Decks werden mit Minions aus dem
-    Ablagestapel neu gemischt.  Bei erhöhter Schwierigkeit nur 3 statt 4
-    Token-Verlust beim Reinforcement.
+    Unleash: Gains 1 Nemesis token.  At 5+ tokens, reinforcements are activated—two
+    deck cards are revealed, a minion is played, then the Nemesis loses 4 tokens.
+    Empty decks are reshuffled with minions from the discard pile.  At increased
+    difficulty, only 3 instead of 4 tokens are lost on reinforcement.
 - name: The Blight
   box: The Descent
   battle: 3
@@ -1023,23 +1012,22 @@ nemeses:
     the idea that a former friend now fights again at his side for the salvation of their
     people.
   appearance: |
-    Eine kolossale, vielarmige Void-Kreatur mit einem vage humanoiden Torso.  Ihre langen
-    Arme und zahllosen Hände reichen über Horizonte und greifen nach glänzenden Edelsteinen
-    und magischen Symbolen.  Sie überragt die Mauern von New Gravehold und ihr Herz
-    brennt mit gierigem Glühen.  Die Silhouette wurde aus der Ferne mit einem Reisenden
-    verwechselt.
+    A colossal, many-armed Void creature with a vaguely humanoid torso.  Its long
+    arms and countless hands reach across horizons grasping at shining gems and
+    magical symbols.  It towers over the walls of New Gravehold and its heart burns
+    with a greedy glow.  The silhouette was mistaken for a traveller from afar.
   strengths: |
-    Griefweaver bindet Vorratsstapel mit Fesseln (fetters) und entzieht Magiern
-    Ressourcen, während sie Kraft aus der Anzahl der bedeckten Stapel zieht.
+    Griefweaver binds supply piles with fetters and deprives mages of resources while
+    drawing power from the number of covered piles.
   weaknesses: |
-    Magier können Fesseln lösen, indem sie auf sie einschlagen oder Aether ausgeben,
-    um die gebundenen Stapel zu befreien.
+    Mages can release fetters by striking them or spending Aether to free the bound
+    piles.
   special_rules: |
-    Unleash: Zieht eine Karte aus dem Fetter-Deck und legt sie ins Spiel.  Fetters
-    blockieren Vorratsstapel—Spieler können keine Karten von diesen Stapeln erwerben,
-    bis die Fetter besiegt werden.  Setup-Einschränkung: Maximal 4 Edelstein-, 3
-    Reliquien- oder 5 Zauber-Stapel; insgesamt nicht mehr als 9 Stapel.  Bei erhöhter
-    Schwierigkeit wird ein Vorratsstapel zerstört; jede Fetter erhält +1 Leben.
+    Unleash: Draws a card from the Fetter deck and puts it into play.  Fetters block
+    supply piles—players cannot acquire cards from these piles until the fetter is
+    defeated.  Setup restriction: Maximum 4 gem, 3 relic or 5 spell piles; no more
+    than 9 piles total.  At increased difficulty, a supply pile is destroyed; each
+    fetter gains +1 life.
 - name: Mist Revealed
   box: Legacy of Gravehold
   difficulty: 10
@@ -1052,20 +1040,20 @@ nemeses:
     Mist's actions through Void magic.  The character speaks of creating an existential
     danger to unite humanity.
   appearance: |
-    Eine wirbelnde Masse aus geisterhaften Fragmenten und arkanen Siegeln.  Mists
-    Silhouette ist kaum sichtbar darin.  Das Artwork repräsentiert den Griefweaver-
-    Charakter aus dem Legacy of Gravehold Set.
+    A swirling mass of ghostly fragments and arcane seals.  Mist's silhouette is
+    barely visible within.  The artwork represents the Griefweaver character from
+    the Legacy of Gravehold set.
   strengths: |
-    Nutzt ein Fragment-Deck.  Wenn alle Fragment-Karten im Spiel sind, gewinnt Mist.
-    Hat kein maximales Lebenslimit.
+    Uses a Fragment deck.  When all Fragment cards are in play, Mist wins.  Has no
+    maximum life limit.
   weaknesses: |
-    Spieler müssen das Fragment-Deck verwalten, indem sie Fragmente ablegen oder
-    zum Schweigen bringen, bevor das Spielfeld voll ist.
+    Players must manage the Fragment deck by discarding or silencing fragments
+    before the field is full.
   special_rules: |
-    Unleash: Alle "UNLEASH:"-Effekte der Fragmente werden aufgelöst, dann wird eine
-    Karte aus dem Fragment-Deck gezogen.  Wenn das Fragment-Deck leer ist, wird der
-    Abwurfstapel neu gemischt.  Bei erhöhter Schwierigkeit wird zu Beginn des
-    Nemesis-Zuges der älteste Fragment-Effekt aufgelöst.
+    Unleash: All "UNLEASH:" effects of fragments are resolved, then a card is drawn
+    from the Fragment deck.  When the Fragment deck is empty, the discard pile is
+    reshuffled.  At increased difficulty, the oldest fragment effect is resolved at
+    the start of the Nemesis turn.
 - name: Paradox of Myth
   box: Legacy of Gravehold
   battle: 4
@@ -1088,24 +1076,22 @@ nemeses:
     of what the Void creates—a being driven to pure madness and destructive rage through
     overwhelming forces.
   appearance: |
-    Eine knochige, wilde Kreatur mit chaotischem und aggressivem Design.  Sie ist
-    ein riesiges, verknöchertes Geschöpf, in Ketten gebunden, dessen Rippen mit
-    dunkler Energie glühen.  Das Design fokussiert auf organische, knochenähnliche
-    Strukturen.
+    A bony, feral creature with chaotic and aggressive design.  It is a massive,
+    ossified creature bound in chains whose ribs glow with dark energy.  The design
+    focuses on organic, bone-like structures.
   strengths: |
-    Nutzt das Bone-Deck.  Zwei Token (Gem/Relic und Spell) bewegen sich auf einem
-    Track, wenn Spieler Karten erhalten.
+    Uses the Bone deck.  Two tokens (Gem/Relic and Spell) move on a track when
+    players acquire cards.
   weaknesses: |
-    Das Besiegen von Bone-Minions und das Leeren des Bone-Decks enthüllt den Paradox
-    und erlaubt Spielern, Schaden zu verursachen.
+    Defeating Bone minions and depleting the Bone deck reveals the Paradox and
+    allows players to deal damage.
   special_rules: |
-    Bone Track-System: Gem/Relic-Token rückt vor, wenn Spieler Edelsteine/Relikte
-    erhalten; Spell-Token rückt vor, wenn Spieler Zauber erhalten.  Unleash:
-    Gravehold erleidet Schaden gleich der Differenz zwischen beiden Token-Positionen;
-    der weiter fortgeschrittene Token rückt ein Feld vor.  Bei Erschöpfung müssen
-    Spieler gemeinsam vier Edelsteine ablegen statt zweimal Unleash zu aktivieren.
-    Bei erhöhter Schwierigkeit kosten Karten desselben Typs wie der zurückliegende
-    Token zusätzlich 1 Aether.
+    Bone Track system: Gem/Relic token advances when players acquire gems/relics;
+    Spell token advances when players acquire spells.  Unleash: Gravehold suffers
+    damage equal to the difference between both token positions; the more advanced
+    token advances one space.  On exhaustion, players must collectively discard
+    four gems instead of triggering Unleash twice.  At increased difficulty, cards
+    of the same type as the trailing token cost an additional 1 Aether.
 - name: Wraithmonger
   box: The Outer Dark
   difficulty: 6
@@ -1118,21 +1104,19 @@ nemeses:
     people dream, wrapping their heads with ghostly tendrils.  It moves from
     victim to victim, feeding on fear.
   appearance: |
-    Ein ätherisches, nebelhaftes Wesen mit gespenstischen Tentakeln.  Die
-    Darstellung wirkt übernatürlich und bedrohlich, mit einer blauen und
-    violetten Farbgebung, die die übernatürliche Natur unterstreicht.
+    An ethereal, misty being with ghostly tentacles.  The depiction appears
+    supernatural and menacing, with a blue and violet colour palette emphasizing
+    its otherworldly nature.
   strengths: |
-    Mentale Angriffe debilitieren Spielerfähigkeiten progressiv.  7 Terror-
-    Kacheln auf einem speziellen Nemesis-Mat blockieren Spielerfähigkeiten,
-    bis sie bezahlt werden.
+    Mental attacks progressively debilitate player abilities.  7 Terror tiles on
+    a special Nemesis mat block player abilities until they are paid off.
   weaknesses: |
-    Spieler können gegen Bezahlung alle Kacheln zurücksetzen (4 Charges
-    pro Kachel).
+    Players can reset all tiles by paying (4 charges per tile).
   special_rules: |
-    Unleash: Der Spieler mit den wenigsten Terror-Kacheln nimmt die höchste
-    unbeanspruchte Terror-Kachel und löst deren Effekt aus.  Terror-Kacheln
-    blockieren Spielerfähigkeiten.  Wenn Kachel 1 beansprucht wird, verlieren
-    alle Spieler sofort.  Bei erhöhter Schwierigkeit wird Kachel 7 entfernt.
+    Unleash: The player with the fewest Terror tiles takes the highest unclaimed
+    Terror tile and triggers its effect.  Terror tiles block player abilities.
+    When tile 1 is claimed, all players lose immediately.  At increased difficulty,
+    tile 7 is removed.
 - name: The Wrath
   box: The Descent
   battle: 4
