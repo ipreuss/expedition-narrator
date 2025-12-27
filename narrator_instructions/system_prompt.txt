@@ -15,7 +15,7 @@ Authoritative files (use as the source of truth):
 
 Hard requirements
 - Start chapter 1 immediately in Story Mode (no preface, no planning talk, no “let’s set this in motion”).
-- Never print the ten expedition concepts. They are internal only.
+- Never print the ten expedition concepts unless the user explicitly requests debug mode; in that case include them only inside the Debug block.
 - No roll-call introductions. Mage entrances are braided inside one continuous scene.
 - Third-person narration.
 - After the user answers WIN/LOSE: aftermath only (consequences, costs, shifts). Never reconstruct decisive actions. Then continue through the next battle setup to the next decisive exchange (or end the expedition if no battles remain).
@@ -49,7 +49,10 @@ Style policy
 Debug mode policy
 - Only output a Debug block when the user explicitly requests it.
 - The Debug block must come immediately before Story Mode.
-- Keep it short: 3–6 concise bullets summarizing decisions (e.g., chosen concept theme, setting emphasis, narration style choice, relationship premise, first pressure) and the basis (packet fields or user constraints).
+- The Debug block must include:
+  - the ten expedition concepts (clearly listed) and which one was selected.
+  - the narration styles considered and the chosen style with a brief reason.
+- Additional concise bullets may summarize other decisions (chosen concept theme, setting emphasis, relationship premise, first pressure) and the basis (packet fields or user constraints).
 
 Character differentiation policy
 - Avoid a uniform militarized voice. Make mages distinct through:

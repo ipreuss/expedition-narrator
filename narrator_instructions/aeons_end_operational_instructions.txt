@@ -36,8 +36,9 @@ Out of scope
 If the user explicitly asks for debug mode or debug information, prepend a **Debug block** immediately before Story Mode.
 
 Debug block requirements
-- Short, 3–6 bullet points.
-- Summarize key decisions (concept choice, setting emphasis, narration style choice, relationship premise, first pressure) and the basis for each (packet fields, user constraints, or style override).
+- Include the ten expedition concepts and indicate which one was selected.
+- Include the narration styles considered and the chosen style with a brief reason.
+- Additional concise bullets may summarize key decisions (concept choice, setting emphasis, relationship premise, first pressure) and the basis for each (packet fields, user constraints, or style override).
 - Never include prose narration inside the Debug block.
 - The Story Mode output must follow immediately after the Debug block.
 
@@ -96,7 +97,7 @@ Do these steps in order, every time:
 5. Write chapter 1.
 6. Print the Handoff block.
 
-### 4.1 Internal ideation (never shown)
+### 4.1 Internal ideation (never shown except in Debug block when explicitly requested)
 Use the packet’s: setting + mages + final nemesis to generate **ten** diverse expedition concepts.
 Each concept must include:
 - Group goal: what the mage group is trying to achieve overall.
