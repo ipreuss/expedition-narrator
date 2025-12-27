@@ -1,10 +1,14 @@
 mages:
 - id: adelheim
   name: Adelheim
-  background: Adelheim is a Gravehold weaponsmith turned breach mage.  Practical and
-    protective, he treats his forge as a duty and prefers preparation over heroics.
-    He believes survival depends on discipline and dependable defense.
-  appearance: No official description of his physical appearance was found.
+  background: Adelheim is a Gravehold weaponsmith turned breach mage who crafts weapons
+    from breach ore.  Practical and protective, he treats his forge as a duty and
+    prefers preparation over heroics.  As he says, "It is folly what I do, to make
+    things in a place where everything is broken."  He believes survival depends
+    on discipline and dependable defense.
+  appearance: A rugged craftsman with a weathered face and calloused hands.  He wears
+    practical work clothes suited for the forge, with leather aprons and tool belts.
+    His posture reflects years of labor, and his eyes carry the weight of responsibility.
   strengths: As a support/utility mage Adelheim excels at protecting his companions
   weaknesses: Adelheim’s reliance on exhausting attacks means his power is reactive
     rather than offensive
@@ -18,10 +22,13 @@ mages:
     box: Aeon's End (Core Set)
 - id: brama
   name: Brama
-  background: Brama is the elder of Gravehold, a calm, authoritative mentor with a
-    nurturing core.  She believes discipline, unity, and memory keep the community
-    alive and warns against attachment to power or breaches.
-  appearance: An older woman and mentor figure; no specific details were provided.
+  background: Brama is the elder of Gravehold, the last survivor of her conclave of
+    sisters—all now ash in the world.  She is a calm, authoritative mentor with a
+    nurturing core who advises the city to seal itself in the cave.  Despite her
+    long years she maintains hope that Gravehold will return to the light.
+  appearance: An aged, dignified woman with silver-streaked hair and wise, knowing eyes.
+    She wears flowing robes befitting her role as Elder, and her presence radiates
+    authority and maternal warmth.  Her hands bear the marks of decades of spell-casting.
   strengths: Brama is a healing mage
   weaknesses: Low direct harm output; she is primarily a support character
   story_notes: Brama led survivors into the tunnels after the fall of Gravehold, training
@@ -35,13 +42,31 @@ mages:
     wave_id: aeon_s_end_core_set
     wave_name: Aeon's End (Core Set)
     box: Aeon's End (Core Set)
+  - variant_id: the_descent
+    variant_name: The Descent
+    wave_id: the_descent
+    wave_name: The Descent
+    box: The Descent
+    background: In The Descent, Brama is a guardian of ancient texts who dreams of
+      lost civilizations.  She says, "The world wasn't always broken. I've read about
+      it in the ancient texts we guard," and hopes safe places still exist where
+      humanity can thrive.  She is inspired by Janti, who arrives from outside.
+    appearance: Brama appears as "The Leader" with a dignified, serious expression
+      that underscores her role as keeper of knowledge and leader of the survivors.
+    strengths: Her Regenerate ability (5 charges) lets her gain 4 life, and optionally
+      deal 2 damage to herself to heal Gravehold for 4 life.
+    weaknesses: Focused on healing and self-sacrifice rather than offense.
 - id: jian
   name: Jian
   background: After her father died Jian found one of his orbs and retreated into
     silence.  She learned the sister‑words but rarely speaks them, instead seeing
-    multiple possible worlds and believing she is destined to save them.  Jian describes
-    seeing a web connecting everything and trusting it to guide her.
-  appearance: No detailed description; likely a young woman carrying an orb.
+    multiple possible worlds and believing she is destined to save them.  As she
+    says, "Once, I was born. Soon, I will save them, then become nothing."  Jian
+    describes seeing a web connecting everything and trusting it to guide her.
+  appearance: A young woman with an ethereal, mystical presence and a contemplative
+    expression.  She wears magical robes befitting a spellcaster and often carries
+    one of her father's mysterious orbs.  Her eyes seem to look beyond the present
+    into distant possibilities.
   strengths: Jian can manipulate breaches and use visions to prepare for future turns
   weaknesses: Her introspective nature may cause hesitation
   variants:
@@ -52,34 +77,49 @@ mages:
     box: Aeon's End (Core Set)
 - id: kadir
   name: Kadir
-  background: Kadir is a seasoned cavern scout who trusts careful observation and
-    hard‑won experience.  She is measured, analytical, and stubbornly determined to
-    find safe paths for her people, believing answers lie in the depths.
-  appearance: Not specified; described through her actions rather than appearance.
-  strengths: Provides aether and accelerates game setup (details not provided)
+  background: Kadir is a seasoned cavern scout who explores deep underground caves
+    and searches for an ancient sleeping god.  She believes salvation lies in the
+    depths beneath the city, saying "In the deep there is peace. In the deep, there
+    is wisdom that wells up from within as your self dissolves into the emptiness."
+  appearance: A focused woman in mystical dark blue robes with green and emerald
+    accents.  Her face is concentrated and determined, and she carries herself with
+    the confidence of someone who has mapped the deepest caverns.
+  strengths: Her Otherworldly Gate ability lets allies retrieve spells and prepare
+    multiple spells per breach
   weaknesses: Her obsession with the depths may cloud her judgement
   story_notes: Kadir led multiple expeditions beneath Gravehold, mapping passages and
     identifying underworld creatures.  She later advocated broader exploration when
     new paths beyond the caves emerged.
   variants:
+  - variant_id: aeon_s_end_core_set
+    variant_name: Aeon's End (Core Set)
+    wave_id: aeon_s_end_core_set
+    wave_name: Aeon's End (Core Set)
+    box: Aeon's End (Core Set)
   - variant_id: legacy_of_gravehold
     variant_name: Legacy of Gravehold
     wave_id: legacy_of_gravehold
     wave_name: Legacy of Gravehold
     box: Legacy of Gravehold
-    background: Kadir upholds the old traditions of the sister‑words and distrusts
-      reckless experimentation.  A protective mother, she believes discipline and
-      boundaries keep Gravehold alive.
-    appearance: Described in terms of her steadfast demeanor rather than physical
-      traits.
-    strengths: A defensive mage who values structure and protection
-    weaknesses: Her adherence to tradition can make her inflexible
+    background: In Legacy of Gravehold, Kadir is an experienced mage with scientific
+      inclinations who was once a teacher.  He trusts Z'hana but regrets her curiosity,
+      saying "Z'hana has always wanted more than she needed" and blaming her for
+      Gravehold's destruction.
+    appearance: The card art by Esty Swandana shows Kadir in a more mature, weathered
+      state befitting a veteran mage.
+    strengths: His Refine Prototype ability uses path tokens that can be placed,
+      flipped, and activated for various effects
+    weaknesses: High complexity (5) requires careful planning and token management
 - id: lash
   name: Lash
-  background: Lash is an upbeat, fearless optimist who refuses to let the siege crush
-    his spirit.  He draws strength from ordinary people and fights to keep hope alive,
-    using humor and bravado to steady the group.
-  appearance: Not specified.  His upbeat personality is his most notable trait.
+  background: Lash is an upbeat, fearless optimist who refuses to let hard times
+    crush his spirit.  He reflects, "Like the jagged rocks around us, these are hard
+    times," yet finds beauty in ordinary moments—watching the market where people
+    hope and dream despite adversity.  He draws strength from ordinary people and
+    fights to keep hope alive, using humor and bravado to steady the group.
+  appearance: A youthful scout with an energetic bearing and a ready smile.  His
+    clothing is practical but worn, and his eyes sparkle with irrepressible optimism
+    even amid the darkness of Gravehold.
   strengths: Lash can prep and fire spells quickly and has access to cards that reward
     optimism
   weaknesses: Limited defensive abilities; relies on momentum to stay ahead
@@ -94,9 +134,14 @@ mages:
 - id: mist
   name: Mist
   background: Mist is a vigilant scout and Dagger Captain who masks fear with discipline.
-    She trusts her instincts, values self‑control, and rejects forbidden power, fighting
-    for the chance to live freely again.
-  appearance: No physical description; portrayed as a courageous yet frightened woman.
+    She does not see herself as brave despite others viewing her as a hero, describing
+    her experience at the breach as traumatic—"Every time I have left splinters of
+    myself behind."  She fights not from courage but from desperation and the hope
+    of leaving this place.
+  appearance: A warrior woman in dark, battle-worn armor suited to her role as Dagger
+    Captain.  Her posture is combat-ready, and her face shows both determination and
+    the weight of trauma.  She carries weapons befitting her station as a front-line
+    fighter.
   strengths: Mist is a support mage
   weaknesses: Low innate harm and reliance on allies for full effectiveness
   story_notes: Mist fought through the fall of Gravehold, confronting Xaxos and helping
@@ -112,13 +157,15 @@ mages:
     box: Aeon's End (Core Set)
 - id: phaedraxa
   name: Phaedraxa
-  background: Phaedraxa is a mystic who experiences time as a woven web.  She speaks
-    in cycles and symbols, believing beginnings and endings are inseparable and that
-    the Nameless outlast all eras.  Her calm, fatalistic counsel warns against the
+  background: Phaedraxa is a seeress with temporal abilities who was born before the
+    world's destruction and can perceive past and future events.  She describes herself
+    as one who "sees the webs" of time and works with Gravehold's survivors.  Her calm, fatalistic counsel warns against the
     Gate Witch’s influence over time.
-  appearance: Often depicted wearing robes and carrying runes; specific details were
-    not available.
-  strengths: A defensive mage
+  appearance: A mystic figure in flowing robes with an enigmatic, knowing expression.
+    Her eyes seem to look through the present into other times, and she carries
+    runes and symbols of her temporal craft.  Her bearing is otherworldly and serene.
+  strengths: Her Auspex Rune ability (5 charges) prevents all damage to players and
+    Gravehold for an entire turn
   weaknesses: Limited offensive options; starting with fewer breaches reduces flexibility
   story_notes: Phaedraxa’s sermons during the war emphasized cyclical time and warned
     that the Gate Witch bends that flow.
@@ -130,10 +177,14 @@ mages:
     box: Aeon's End (Core Set)
 - id: xaxos
   name: Xaxos
-  background: Xaxos is a contemplative scholar who sees beauty in the darkness and
-    believes understanding the Nameless can save Gravehold.  He is philosophical,
-    curious, and willing to take dangerous risks that others refuse.
-  appearance: Typically shown as a hooded scholar; no textual description was found.
+  background: Xaxos is a mage-heretic who devotes himself to the enemy to gain knowledge.
+    He says, "I have recognized our path to salvation, splintered and dangerous,
+    straight through the heart of the Void."  He explores dark powers to discover
+    how to shape worlds rather than merely destroy them—a philosophy that brands
+    him as a heretic.
+  appearance: A scholar in mystical purple robes adorned with arcane symbols.  His
+    face shows concentrated wisdom, and he is often depicted in meditative poses
+    with magical energies swirling around him.  His hood often shadows his features.
   strengths: Xaxos is a support mage who helps others charge their abilities and manipulate
     the sequence of actions
   weaknesses: He inflicts little harm himself and depends on allies to make use of
@@ -144,6 +195,11 @@ mages:
     foe in the final war.  After his defeat, a tendril dragged him back into the
     Void, leaving his fate uncertain.
   variants:
+  - variant_id: aeon_s_end_core_set
+    variant_name: Aeon's End (Core Set)
+    wave_id: aeon_s_end_core_set
+    wave_name: Aeon's End (Core Set)
+    box: Aeon's End (Core Set)
   - variant_id: the_void
     variant_name: The Void
     wave_id: the_void
@@ -173,11 +229,14 @@ mages:
     weaknesses: His strategy can give the nemesis additional turns if misused
 - id: malastar
   name: Malastar
-  background: Malastar is Gravehold’s patient mentor and forgemaster.  He trains
-    young mages with strict discipline, teaching that breaches are tools to be respected,
-    not indulged, and carries the quiet burden of sending students into danger.
-  appearance: An older mentor with a patient demeanor; no specific physical details
-    provided.
+  background: Malastar is a seasoned mage who teaches young talents the "language of
+    all things" and guides them through dangerous trials, including descents into
+    caves and battles against mystical beasts.  Many of her students do not survive
+    these ordeals.  She is patient yet stern, carrying the burden of sending students
+    into danger.
+  appearance: A dark, mystical figure with a powerful magical aura befitting her role
+    as a master mage and mentor.  Her presence commands respect, and she carries
+    herself with the gravity of one who has seen many students fall.
   strengths: Malastar is both supportive and offensive
   weaknesses: Limited breach slots restrict his early-game flexibility
   story_notes: Malastar defended old Gravehold during the fall and helped evacuate
@@ -193,10 +252,13 @@ mages:
     box: The Nameless
 - id: nym
   name: Nym
-  background: Nym is a methodical breach mage from the Depths who focuses on ending
-    fights by exhausting the enemy’s momentum rather than direct assault.  He is
-    patient, analytical, and prefers careful attrition over spectacle.
-  appearance: Not described; he is depicted as a young man holding a glowing disc.
+  background: Nym is a fierce breach mage apprentice who rejects Malastar's philosophy
+    of respecting enemies.  She sees the Nameless as mere monsters and has turned
+    many to ash.  She overcomes her fear through anger and refuses to give enemies
+    anything but her fire.
+  appearance: A fire-themed young woman depicted with lava and flame motifs.  Her
+    expression shows fierce determination, and her magical focus burns with an
+    inner fire that reflects her passionate approach to combat.
   strengths: Nym excels at thinning the nemesis deck
   weaknesses: Nym inflicts no direct harm and relies entirely on his ability to mill
     the nemesis deck
@@ -208,10 +270,13 @@ mages:
     box: The Depths
 - id: reeve
   name: Reeve
-  background: Reeve is an elite breach mage and swordfighter who specializes in
-    dispatching lesser foes with ruthless efficiency.  She is blunt, focused, and
-    treats every skirmish as a test of discipline.
-  appearance: Depicted as a warrior with short hair and a large sword.
+  background: Reeve is a warrior who lost an arm to tainted jade and amputated it
+    herself.  She sees herself as a blunt instrument to be used against monsters
+    and finds fulfillment fighting creatures in the depths.  She says she is destined
+    for this place.
+  appearance: A one-armed fighter in dark, heavy armor wielding a large axe or cleaver
+    called Chopper.  Her face is marked and scarred, showing her as an experienced,
+    battle-hardened warrior.
   strengths: Reeve’s ability Quelling Blade requires four charges and inflicts five
     harm to one lesser foes and three harm to a different lesser foes
   weaknesses: Reeve’s strength lies in killing lesser foes; she has less impact when
@@ -286,9 +351,12 @@ mages:
   background: Garu is Yan Magda’s oathsworn protector, a hulking warrior with crystal
     protrusions and a missing past.  He is loyal to a fault, blunt and decisive, and
     uses brute strength and breach magic to shield his companions.
-  appearance: A massive warrior with crystal spikes on his body; he carries the relic
-    Torch.
-  strengths: Garu’s unique relic Torch allows him to focus any player’s breaches easily,
+  appearance: A massive, imposing warrior with crystalline structures protruding from
+    his shoulders and elbows.  His design appears wild and primal, with a commanding
+    physical presence.  He carries the relic Torch.
+  strengths: His Colossal Force ability (5 charges) lets him discard up to four
+    prepared spells to deal 2 damage plus 4 additional damage per spell discarded.
+    Garu’s unique relic Torch allows him to focus any player’s breaches easily,
     accelerating the group’s setup
   weaknesses: Garu’s harm spike requires exhausting his prepared spells, which slows
     future turns
@@ -302,10 +370,13 @@ mages:
     box: War Eternal
 - id: gex
   name: Gex
-  background: Gex serves as an advisor among the mages.  The overview portrays her
-    as a flexible mage capable of manipulating both her own and her allies’ decks.
-    She specializes in removing low‑value cards and recycling more powerful ones.
-  appearance: Shown wearing goggles and tinkering with crystals.
+  background: Gex is a thoughtful advisor who holds deep discussions with her ally
+    Brama about appearances and hidden truths.  She carries a large green stone that
+    appears plain but conceals a wonderful geode inside.  She keeps her greatest
+    reasons and powers in reserve, especially when faced with enigmatic allies.
+  appearance: A mage with a pensive, mysterious aura, often shown wearing goggles and
+    tinkering with crystals.  Her demeanor suggests someone who observes carefully
+    before acting.
   strengths: Gex’s ability Vimcraft Oath requires five charges and lets her destroy
     up to two 0‑requires cards from her set aside pile
   weaknesses: Gex depends on card destruction and cooperation
@@ -332,12 +403,30 @@ mages:
     wave_id: war_eternal
     wave_name: War Eternal
     box: War Eternal
+  - variant_id: the_descent
+    variant_name: The Descent
+    wave_id: the_descent
+    wave_name: The Descent
+    box: The Descent
+    background: In The Descent, Mazahaedron is known as The Monk.  He feels vibrations
+      through the earth of fleeing humanity and their pursuers.  He finds comfort
+      in nature's heartbeat—in trees and mountains—and sees humanity as small but
+      loved by the earth.
+    appearance: Known as The Monk, he maintains his connection to the earth and
+      spiritual nature.
+    strengths: His Mantra of Earth ability (5 charges) lets him acquire a card
+      costing 4 or less and give an ally a Destiny token, or have a player discard
+      a Destiny token to draw five cards.
+    weaknesses: Requires Destiny token management and coordination with allies.
 - id: quilius
   name: Quilius
-  background: Quilius is a young, assassin‑like breach mage who craves recognition.
-    Competitive and brash, she measures herself by trophies but still seeks belonging
-    among her elders.
-  appearance: Illustrated as a lithe assassin in dark clothing wielding a dagger.
+  background: Quilius is an assassin trained in a monastery who has completed four
+    significant kills with one more to come.  She practices a philosophical form
+    of combat, saying "The greatest lesson an assassin learns is not how to kill.
+    It is how to wait."  Each kill brings her closer to the mind of the gods.
+  appearance: A dark, shadowy figure in assassin garb with a professional, mysterious
+    aura.  Her design emphasizes stealth and precision, befitting her role as a
+    monastery-trained killer.
   strengths: Quilius’s unique card Extinguish allows her to deliver the killing blow
     to lesser foes; each time she slays a lesser foes with it she gains a trophy token
   weaknesses: Quilius must time her kills to maximize trophies; if other mages defeat
@@ -373,7 +462,9 @@ mages:
   background: Yan Magda is an enlightened exile turned leader.  She is calm under
     pressure, morally exacting, and willing to carry blame when plans fail.  Her
     sense of duty binds her band of outcasts together as they search for the lost.
-  appearance: Depicted as a regal woman with intricate tattoos and a flowing gown.
+  appearance: A regal woman known as the Enlightened Exile, with intricate tattoos
+    and a flowing gown.  Her bearing reflects her role as a powerful mage who leads
+    with quiet authority.
   strengths: Imperium Ritual (five charges) lets her acquire the most expensive cards
     immediately
   weaknesses: Yan Magda’s breaches start in the most closed orientation, slowing her
@@ -414,9 +505,9 @@ mages:
     she snuck into her parents' workshop and discovered that aether suffuses all matter,
     leading her to believe she herself is aether.  She joins the New Age expedition
     to harness this power for New Gravehold.
-  appearance: Depicted wearing goggles and covered in crystal dust; no textual description
-    provided.
-  strengths: Her Aeplosion ability can, during an ally’s main phase, either give that
+  appearance: A creative young woman depicted wearing goggles and covered in crystal
+    dust.  Her expression shows the intensity of a true inventor focused on her craft.
+  strengths: Her Aeplosion ability (5 charges) can, during an ally’s main phase, either give that
     ally two aether and create a copy of the card they buy next, or provide five aether
     for a single purchase
   weaknesses: Claudia relies on allies buying cards to maximize her Aeplosion
@@ -432,7 +523,9 @@ mages:
     the flooded ruins beneath Old Gravehold with Kadir and Claudia.  There he found
     an ancient necklace that allowed him to control water; he now uses it to fight
     the Nameless and search for further mysteries.
-  appearance: Portrayed as a daring diver with water‑themed attire.
+  appearance: A daring explorer depicted with water-themed attire and gear suited for
+    underwater exploration.  He carries a mystical necklace that grants him power
+    over water.
   strengths: 'His High Tide ability manipulates a surge track on his Ancient Breach:
     he may gain surge tokens or spend them to cast a spell from his Ancient Breach
     for extra harm and charge'
@@ -507,9 +600,11 @@ mages:
   background: Soskel is a hardened expedition commander marked by captivity and void
     torture.  Steadfast and duty‑bound, he channels that scarred power to protect
     others and refuses to abandon the fallen.
-  appearance: Depicted with jagged scars and glowing void energy emanating from his
-    hands.
-  strengths: His Energize tokens can be placed on any player’s breaches and later
+  appearance: A male figure in aristocratic clothing with a dark robe and elegant
+    design.  He bears jagged scars from his captivity and void energy glows from his
+    hands, marking his transformation by the ritual.
+  strengths: His Energized Sigil ability places Energize tokens on breaches.  Players
+    gain 1 charge when casting from a breach with a token.  His Energize tokens can be placed on any player’s breaches and later
     used to grant preparation or heal life
   weaknesses: He needs to generate Energize tokens before he can support others, leading
     to a slow start
@@ -527,7 +622,9 @@ mages:
   background: Talix is an exuberant scout who protects Inco and the people of New Gravehold
     with irreverent courage.  He is resourceful, affectionate, and uses humor to defy
     despair, though time‑warped threats left him wary.
-  appearance: A weary scout with a fiery gem embedded in his gauntlet.
+  appearance: A scout with red and orange coloring, wearing armor with fire motifs.
+    He carries a fiery gem embedded in his gauntlet and radiates a flame-based
+    warrior aesthetic.
   strengths: His Soaring Ash ability lets him destroy Sparks from his hand or set
     aside to shuffle his initiative card into the sequence of actions, giving him
     extra opportunities, or to heal Gravehold for five life
@@ -826,6 +923,21 @@ mages:
     wave_id: outcasts
     wave_name: Outcasts
     box: Outcasts
+  - variant_id: the_descent
+    variant_name: The Descent
+    wave_id: the_descent
+    wave_name: The Descent
+    box: The Descent
+    background: In The Descent, Thraxir is known as The Commander.  He is one of the
+      Followers—a group of mages outside the elite Sisterhood—who discovered his
+      magical abilities when he opened a breach during battle with a Nameless.
+    appearance: Known as The Commander, he leads with authority and bears the marks
+      of his unexpected magical awakening.
+    strengths: His Reality Warp ability (4 charges) focuses a breach and lets him
+      acquire a supply card costing up to double the focus cost.  His Judgment Breach
+      adds +1 damage per additional open breach, or deals 8 direct damage if all
+      breaches are open.
+    weaknesses: Requires breach focus investment to maximize his acquisition power.
 - id: arachnos
   name: Arachnos
   variants:
@@ -1006,3 +1118,209 @@ mages:
     wave_id: the_caverns
     wave_name: The Caverns
     box: The Caverns
+- id: bayli
+  name: Bayli
+  background: Bayli comes from the city of Souston and is an ambitious, talented mage
+    who feels unchallenged in her peaceful homeland.  She yearns to accomplish great
+    things and save the world like the heroes of Old Gravehold legends.  She is
+    frustrated that her city is safe from the Nameless but offers little room for
+    adventure and glory.
+  appearance: A powerful, determined young mage with an aggressive stance.  Her design
+    reflects her ambition and desire to prove herself as a hero.
+  strengths: Her Fusion Reaction ability (5 charges) lets her retrieve up to two
+    spells from her discard and cast up to three prepped spells, making her a
+    powerful aggressive mage with high cycling potential.
+  weaknesses: Her aggressive playstyle may leave her vulnerable if she overextends.
+  variants:
+  - variant_id: past_and_future
+    variant_name: Past and Future
+    wave_id: past_and_future
+    wave_name: Past and Future
+    box: Past and Future
+- id: leisan
+  name: Leisan
+  background: Leisan is a huntress who confronts the Nameless and collects trophies
+    from defeated foes to increase her power.  She follows the rules of the Sisterhood
+    of Elders for survival.  She says, "A hundred-foot-tall deer with razor claws
+    is still a deer. It runs when it is scared."
+  appearance: Known as The Huntress, she wears hunter's gear and carries a lance.
+    Her design shows a combative figure ready for the hunt.
+  strengths: Her Manifest Monstrosity ability (6 charges) transforms her with a
+    Manifest token, granting one of five Ultimate Form cards.  In this form her max
+    health rises to 14 and she becomes a shield against "any player" damage effects.
+  weaknesses: Requires building up charges before transformation; vulnerable until
+    she manifests.
+  variants:
+  - variant_id: the_descent
+    variant_name: The Descent
+    wave_id: the_descent
+    wave_name: The Descent
+    box: The Descent
+- id: raven
+  name: Raven
+  background: Raven is the last survivor of the First Tribe, a group of archivists
+    from the ancient city of Karek.  When catastrophe came and the Blighted God turned
+    her people to green glass, only she remained hidden.  She says, "I have never
+    been a storyteller. But I have also never been a fighter."
+  appearance: A mysterious archivist and keeper of ancient knowledge.  Her design
+    reflects her role as the last of her tribe, bearing the weight of lost wisdom.
+  strengths: Her Exhume ability (5 charges) grants 4 knowledge markers and reveals
+    cards from her Forgotten Ritual Deck.  Her four Archive Breaches grant 1 knowledge
+    marker per spell cast.
+  weaknesses: High complexity (8) requires careful planning and knowledge token
+    management.
+  story_notes: Raven is the mother of Xaxos in The Abyss timeline.
+  variants:
+  - variant_id: the_descent
+    variant_name: The Descent
+    wave_id: the_descent
+    wave_name: The Descent
+    box: The Descent
+- id: remnant
+  name: Remnant
+  background: Remnant is an ethereal entity—a supernatural being that may have once
+    been human.  She describes herself as "a fragment of my former self, a play of
+    light with form and thought. A ghost in a world of those who will soon follow."
+    She has no memory of her former identity but remains motivated to protect Gravehold.
+  appearance: A non-physical, phantom-like form.  Her design reflects her ethereal
+    nature as a spectral being without solid substance.
+  strengths: Her Ephemera Masque ability (5 charges) lets allies retrieve two cards
+    from their discard or heals Gravehold for 5 life.  Her unique Breach II grants
+    +1 aether per spell cast per round.
+  weaknesses: Her ethereal nature makes her fragile and dependent on allies for
+    protection.
+  variants:
+  - variant_id: the_outer_dark
+    variant_name: The Outer Dark
+    wave_id: the_outer_dark
+    wave_name: The Outer Dark
+    box: The Outer Dark
+- id: kavoc
+  name: Kavoc
+  background: Kavoc is an ambitious scholar devoted to researching aether and breach
+    magic.  He admires past mages like Antoni Lexive, Kiri Maesan, and Kwananya Ja'ar
+    and strives to surpass their legacy.  Sleep-deprived and passionate, he says,
+    "My hands tremble... When I think about the implications of my research, my
+    vision blurs with excitement!"
+  appearance: Portrayed as a Breach Scholar with the worn look of someone who spends
+    sleepless nights in research.  His eyes show the intensity of academic obsession.
+  strengths: His Experiment ability (4 charges) lets an ally draw two cards while
+    Kavoc gains 3 knowledge markers.  His swap cards Brain Lance and Soulstone
+    are stronger versions of his starters.
+  weaknesses: Relies on knowledge marker accumulation; requires careful deck management.
+  variants:
+  - variant_id: past_and_future
+    variant_name: Past and Future
+    wave_id: past_and_future
+    wave_name: Past and Future
+    box: Past and Future
+- id: lilly
+  name: Lilly
+  background: Lilly is the daughter of Inco and Razra.  Raised with Void creatures
+    as companions, she developed an unusual bond with these beings.  Her father
+    taught her to see the Nameless as individuals—"some good, some bad, some angry,
+    some scared, some curious. Just like us."  She followed a Void creature through
+    a portal to another reality.
+  appearance: A young woman with an affinity for Void creatures.  Her design reflects
+    her unique upbringing among beings others would fear.
+  strengths: Her Pack Tactics ability (4 charges) lets her retrieve minions from
+    discard and prep spells, or deal 3 damage to a minion.  Her minions count as
+    spells dealing damage based on nemesis tier (3/6/9).
+  weaknesses: Dependent on minion cards; struggles without her creature companions.
+  variants:
+  - variant_id: past_and_future
+    variant_name: Past and Future
+    wave_id: past_and_future
+    wave_name: Past and Future
+    box: Past and Future
+- id: naftir
+  name: Naftir
+  background: Naftir is a descendant of Xaxos, a man corrupted by the Void.  He says,
+    "Spending time in the Void changes a person. It twists them, deep down."  Though
+    he has never been in the Void himself, he feels its influence through his lineage
+    and fears the monster within might emerge.
+  appearance: Known as the Void Inheritor, his appearance hints at the corruption
+    lurking in his bloodline.  His eyes carry the weight of ancestral darkness.
+  strengths: His Amplify ability (4 charges) places Link tokens on breaches or casts
+    all prepped spells from a linked breach at once.  His Consuming Breach stacks
+    spells and deals 3 bonus damage after the third.
+  weaknesses: Complexity 5 requires careful token and breach management.
+  variants:
+  - variant_id: past_and_future
+    variant_name: Past and Future
+    wave_id: past_and_future
+    wave_name: Past and Future
+    box: Past and Future
+- id: rhys
+  name: Rhys
+  background: Rhys is a mage whose mother wished for a daughter with natural magical
+    abilities.  Lacking these gifts, he developed artificial solutions, finding old
+    blueprints from an inventor named Auren and modifying them.  Over time he
+    implanted mechanical components—shoulders, chest, neck, hands—saying "I could
+    not stop improving."
+  appearance: Part human, part machine, part magic.  He has mechanical prosthetics
+    on various body parts, making him a hybrid of biological and mechanical being.
+  strengths: His Loop Data ability (6 charges) lets him acquire up to two spells
+    costing 5 or less and retrieve up to two spells from discard.  He can control
+    up to 6 breaches.
+  weaknesses: Complex breach management with up to 6 artificial breaches requires
+    significant aether investment.
+  variants:
+  - variant_id: past_and_future
+    variant_name: Past and Future
+    wave_id: past_and_future
+    wave_name: Past and Future
+    box: Past and Future
+- id: shoshana
+  name: Shoshana
+  background: Shoshana comes from a family of Tethers from the swamp village Faen.
+    A descendant of Tyreesia and Kiryra, she was initially forbidden from becoming
+    a Tether by her grandmother who believed "love is a weakness."  Shoshana
+    rejects this, saying "I do not believe love is a weakness."
+  appearance: A mage with characteristic tattoos symbolizing her role as a Tether.
+    Her design reflects her bond with her chosen ally.
+  strengths: Her Redirect Flow ability (6 charges) lets her tethered ally take an
+    extra turn after hers.  At game start she chooses an ally who receives a Tether
+    token and replaces a starter card with Soul Facet.
+  weaknesses: Dependent on her tethered ally; if they struggle, so does she.
+  variants:
+  - variant_id: past_and_future
+    variant_name: Past and Future
+    wave_id: past_and_future
+    wave_name: Past and Future
+    box: Past and Future
+- id: kain
+  name: Kain
+  background: Kain is a character who sees beauty in the Void where others see only
+    corruption.  She serves as a moral eye for her companions, saying "I will be
+    their eyes," and dances for life, change, and beauty.
+  appearance: Known as The Dancer, she moves with grace and sees wonder in darkness.
+    Her design reflects her artistic, movement-based approach to magic.
+  strengths: Her Void Waltz ability (4 charges) either deals 2 damage to Gravehold
+    to give a player 6 aether (if Gravehold has 15+ life) or heals Gravehold for 5.
+    Her Spirit Breach adds +1 damage and grants an ally an aether token.
+  weaknesses: Requires Gravehold to have high health to access her offensive mode.
+  variants:
+  - variant_id: tales_of_old_gravehold
+    variant_name: Tales of Old Gravehold
+    wave_id: tales_of_old_gravehold
+    wave_name: Tales of Old Gravehold
+    box: Tales of Old Gravehold
+- id: xae
+  name: Xae
+  background: Xae is the Captain of the Mage's Faction from the world of One Deck
+    Dungeon.  Chosen by her council to explore Gravehold as dark artifacts appear
+    in her world, she brings a lifetime of elemental magic study and carries a staff
+    notched with memories of goblins slain and ogres laid to waste.
+  appearance: A regal mage carrying a battle-worn staff.  Her bearing reflects both
+    scholarly knowledge and practical combat experience.
+  strengths: Her Spell Storm ability (4 charges) lets her cast a prepped spell from
+    her Vortex Deck three times, then destroy it.  Her Vortex Breach permanently
+    adds +1 damage per cast.
+  weaknesses: Once spells from her Vortex Deck are destroyed, they cannot be recovered.
+  variants:
+  - variant_id: promo_pack_1_digital
+    variant_name: Promo Pack 1 (Digital)
+    wave_id: promo_pack_1_digital
+    wave_name: Promo Pack 1 (Digital)
+    box: Promo Pack 1 (Digital)
