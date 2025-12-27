@@ -446,7 +446,7 @@ nemeses:
     ambition.
 
     When it rises again years later the mages confront it on the surface, separated by swarms of minions and beacon-like constructs that threaten to open yet more breaches.  The sky above New Gravehold darkens as Maelstrom’s massive body spins and its blades slice toward the ground.  Through sheer perseverance and teamwork they finally bring the creature down.  Its shell cracks open, streaming bright light from countless fractures and revealing a twisted void at its core.  As the husk splits apart its blades plunge into the earth like monuments and its body crashes to the ground, shaking the battlefield and filling the air with debris.  When the dust clears Maelstrom is no more, but the victory is short-lived as a former ally steps forward to seize the breach’s power for himself.
-- name: Maelstrom: Risen
+- name: 'Maelstrom: Risen'
   box: Aeon's End Legacy
   battle: 4
   background: 'The mages thought Maelstrom defeated, but it had been siphoning energy
@@ -467,7 +467,7 @@ nemeses:
   appearance: A towering creature with pulsating sacks that burst into smaller minions.
   strengths: Summons pods that hatch into additional minions, overwhelming the players
   weaknesses: If players kill the pods quickly the Spawning Horror remains weak
-- name: Xaxos: Ascended
+- name: 'Xaxos: Ascended'
   box: Aeon's End Legacy
   battle: 4
   background: 'Xaxos’s lust for power overcame him, and he turned his back on New Gravehold.  Amplified

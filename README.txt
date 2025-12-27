@@ -84,3 +84,8 @@ If the selector cannot satisfy constraints, it exits with an error, indicating a
 - Read the selector output and follow the narration guidance in `system_prompt.txt`.
 - Do not improvise selection in prose; the selector is authoritative.
 - The Handoff format (a metadata code block, not the narration) never uses `Reinforcement: none`; omit the `Reinforcement:` line entirely when no reward/reinforcement applies.
+
+## Testing requirement
+After any change to the data files (`*.yaml`, `*.txt`, or `wave_settings.yaml`), run the
+automated test suite before committing or deploying. This ensures the selector still
+parses the datasets correctly.
