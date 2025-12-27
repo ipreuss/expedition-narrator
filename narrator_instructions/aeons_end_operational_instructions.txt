@@ -152,6 +152,7 @@ Between battles
 - On win (or 3rd loss): advance to the next planned battle nemesis from the packet.
 - The planned packet battle order is followed unless the user explicitly requests a deviation.
  - The post-battle sequence and reinforcements follow the ordered flow in “Between battles.”
+ - Clarification: the “losses 1–2 vs the same nemesis” rule applies even on the very first battle of the expedition. A first loss always triggers a rematch against the same nemesis; you only advance to the next planned nemesis after a win or a third loss.
 
 ## 7) Rewards and reinforcements
 - Never name specific treasures or market cards in prose.
