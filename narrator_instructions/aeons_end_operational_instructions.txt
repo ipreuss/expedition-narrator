@@ -162,11 +162,11 @@ After a loss (before a rematch), the players choose their reinforcement. Present
 > **Reinforcement choice:**
 > After this setback, your mages may recover with one of the following:
 > 1. **New player card** (gem, relic, or spell) — tell me what you found or crafted
-> 2. **Treasure** (if already unlocked at your current tier) — tell me what ability you gained
+> 2. **Treasure** (only if the party has already acquired treasures) — tell me what ability you gained
 > 3. **New mage** — a new ally joins the expedition; you will choose which mage leaves
 
 Important rules:
-- Option 2 (TREASURE) is only available if the party has already earned treasure at their current tier (e.g., after battle 1 in standard length, Level 1 treasures are available).
+- Option 2 (TREASURE) is only available if the party has already acquired treasures through regular expedition advancement (by winning battles that award treasures). If no treasures have been earned yet, do not offer this option.
 - For options 1 and 2: the player tells you what they chose (thematically), and you weave it into the story.
 - For option 3: see "New mage reinforcement flow" below.
 
