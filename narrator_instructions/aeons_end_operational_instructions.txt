@@ -11,9 +11,9 @@ All authoritative files live in the repo root. Use these exact filenames:
 - Packet schema: `aeons_end_expedition_packet_schema.txt`
 - Narration style guide: `aeons_end_narration_style_guide.txt`
 - Style selector: `aeons_end_narration_style_selector.txt`
-- Wave settings: `wave_settings.yaml`
-- Wave/box map: `aeons_end_waves.yaml`
-- Datasets: `aeons_end_mages.yaml`, `aeons_end_nemeses.yaml`, `aeons_end_friends.yaml`, `aeons_end_foes.yaml`
+- Wave/box map: `aeons_end_waves.yaml` (directly available to the GPT)
+- Wave settings: `wave_settings.yaml` (not directly available; used by the selector script)
+- Datasets: `aeons_end_mages.yaml`, `aeons_end_nemeses.yaml`, `aeons_end_friends.yaml`, `aeons_end_foes.yaml` (not directly available; used by the selector script)
 
 If you cannot find a file, list the repo root and use the exact names above before searching elsewhere.
 Markdown files are part of the knowledge base: read them directly (do not use Python to load or parse `.txt` files).
