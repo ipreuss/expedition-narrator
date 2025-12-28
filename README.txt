@@ -89,3 +89,16 @@ If the selector cannot satisfy constraints, it exits with an error, indicating a
 After any change to the data files (`*.yaml`, `*.txt`, or `wave_settings.yaml`), run the
 automated test suite before committing or deploying. This ensures the selector still
 parses the datasets correctly.
+
+## Legal disclaimer
+Aeon's End is a trademark and copyright of Indie Boards and Cards. This project is an
+unofficial fan project and is not affiliated with, endorsed by, or sponsored by Indie
+Boards and Cards or any official Aeon's End creators.
+
+The game data in this repository (character names, lore, abilities, and related content)
+is derived from official Aeon's End products for fan and educational purposes. No
+infringement is intended. This project is non-commercial and aims to celebrate and
+support the Aeon's End community.
+
+If you enjoy this project, please support the official game by purchasing Aeon's End
+products from authorized retailers.
