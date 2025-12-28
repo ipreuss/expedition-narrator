@@ -426,6 +426,7 @@ components:
         - nemesis
         - friend
         - foe
+        - recruit
       properties:
         battle_index:
           type: integer
@@ -437,6 +438,11 @@ components:
           $ref: "#/components/schemas/FriendFoe"
         foe:
           $ref: "#/components/schemas/FriendFoe"
+        recruit:
+          oneOf:
+            - $ref: "#/components/schemas/Mage"
+            - type: "null"
+          description: Pre-planned mage recruit for this battle (null if no recruitment).
     Availability:
       type: object
       additionalProperties: false

@@ -474,6 +474,41 @@ def select_expedition(
                     step["friend"] = None
                     step["foe"] = None
 
+            # Pre-plan mage recruitment for non-final battles
+            # Track all mage names that could be in party (original + any prior recruits)
+            all_party_names = set(mage_names)
+            eligible_for_recruit = eligible_mages_with_variants(
+                mages_all, explicit_waves, allowed_boxes, box_to_wave
+            )
+
+            for i, step in enumerate(battle_plan):
+                is_final_battle = (i == len(battle_plan) - 1)
+                if is_final_battle:
+                    # No recruitment after final battle
+                    step["recruit"] = None
+                elif mage_recruitment_chance <= 0:
+                    # Recruitment disabled
+                    step["recruit"] = None
+                elif rng.randint(1, 100) > mage_recruitment_chance:
+                    # Roll failed - no recruitment
+                    step["recruit"] = None
+                else:
+                    # Roll succeeded - select a recruit
+                    available_recruits = [
+                        (m, variants) for m, variants in eligible_for_recruit
+                        if name_key(str(m.get("name") or "")) not in all_party_names
+                    ]
+                    if available_recruits:
+                        chosen_mage_tuple = _choose(rng, available_recruits)
+                        recruit_entry = copy.deepcopy(chosen_mage_tuple[0])
+                        recruit_entry["chosen_variant"] = copy.deepcopy(_choose(rng, chosen_mage_tuple[1]))
+                        step["recruit"] = recruit_entry
+                        # Add to party names so future recruits won't collide
+                        all_party_names.add(name_key(str(recruit_entry.get("name") or "")))
+                    else:
+                        # No eligible recruits available
+                        step["recruit"] = None
+
 
             packet: Dict[str, Any] = {
                 "meta": {
