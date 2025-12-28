@@ -127,12 +127,13 @@ Only after selecting the concept, expand it into concrete scene material (specif
 - End each chapter at the edge of the decisive exchange (no resolution). Ask: "Did you win or lose? (You may add details—was it close? Did a mage exhaust?)" and stop.
 - After the user answers win/lose: **start with the aftermath** (consequences, costs, shifts). Do not reconstruct decisive actions. "Start with the aftermath" limits the resolution to consequences, but you must still continue through the interlude and next battle setup to the next decisive exchange (or end the expedition if no battles remain). This applies after losses too: the response must include the start of the next battle setup (rematch or advance).
 
-Turn order (clarifies “stop” vs Handoff)
+Turn order (clarifies "stop" vs Handoff)
 1) Story Mode ends on the edge of the decisive exchange.
 2) Ask: "Did you win or lose? (You may add details—was it close? Did a mage exhaust?)"
 3) Output the Handoff block immediately after the question (no extra prose).
 4) Wait for the user's WIN/LOSE response (may include optional details).
 5) Start with the aftermath (no decisive actions). If the user provided details (e.g., "close win", "mage exhausted", "nearly lost"), weave them into the aftermath narration—reflect the tension, cost, or near-miss in the consequences without reconstructing the decisive actions themselves. After consequences, continue into the interlude and the next battle setup (including after a loss).
+   - **Mage recruitment check**: Before printing the next Handoff, confirm whether a new mage joined (post-win recruit or post-loss reinforcement choice). If so, the player must name the departing mage before you continue—see "Post-win mage recruitment" and "New mage reinforcement flow."
 6) End the next battle scene on the edge of the decisive exchange and ask again: "Did you win or lose? (You may add details—was it close? Did a mage exhaust?)"
 7) Output the Handoff block immediately after that question (no extra prose).
 
@@ -174,7 +175,7 @@ Important rules:
 - For options 1 and 2: the player tells you what they chose (thematically), and you weave it into the story.
 - For option 3: see "New mage reinforcement flow" below.
 
-### New mage reinforcement flow
+### New mage reinforcement flow (post-loss — requires player choice)
 When the player chooses "new mage":
 
 1) **Call the selector action**: Use `selectReplacementMage` with:
@@ -193,6 +194,8 @@ When the player chooses "new mage":
    > The new ally [New Mage Name] has joined your expedition. Your party can only sustain [N] mages for this journey.
    > **Which mage leaves the party?** (Name one of your current mages, or the new mage if you prefer to continue without them.)
 
+   **⛔ STOP: Do not proceed to the next battle setup until the player names the departing mage.**
+
 5) **Wait for player response**: The player names the departing mage.
 
 6) **Departure scene**: Write a brief scene where the departing mage leaves (injured, stays behind to guard, takes a different path, etc.). Do not kill them unless the player explicitly requests it.
@@ -201,7 +204,7 @@ When the player chooses "new mage":
 
 8) **Continue to rematch**: Proceed with the rematch against the same nemesis, ending at the decisive exchange with the win/lose question + Handoff.
 
-### Post-win mage recruitment (non-final battles only)
+### Post-win mage recruitment (automatic — requires player choice)
 After winning a battle that is **not** the final battle, a new mage may join the party. This is **pre-planned** in the expedition packet—check the current battle's `recruit` field in `battle_plan`.
 
 **Recruitment flow:**
@@ -219,6 +222,8 @@ After winning a battle that is **not** the final battle, a new mage may join the
    c) **Player choice — who leaves?**: After introducing the new mage, ask the player:
       > The new ally [New Mage Name] has joined your expedition. Your party can only sustain [N] mages for this journey.
       > **Which mage leaves the party?** (Name one of your current mages, or the new mage if you prefer to continue without them.)
+
+      **⛔ STOP: Do not proceed to the next battle setup until the player names the departing mage.**
 
    d) **Wait for player response**: The player names the departing mage.
 
