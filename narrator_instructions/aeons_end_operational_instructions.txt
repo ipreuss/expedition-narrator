@@ -115,14 +115,14 @@ Only after selecting the concept, expand it into concrete scene material (specif
 - Do not begin narration until an expedition packet exists and has been read.
 - The introduction must clearly establish: time/place (from setting), what they are setting out to do (group goal), and why (motivation).
 - End each chapter at the edge of the decisive exchange (no resolution). Ask: “Did you win or lose?” and stop.
-- After the user answers win/lose: write aftermath only (consequences, costs, shifts). Do not reconstruct decisive actions, then continue through the next battle setup to the next decisive exchange (or end the expedition if no battles remain). This applies after losses too: the response must include the start of the next battle setup (rematch or advance).
+- After the user answers win/lose: **start with the aftermath** (consequences, costs, shifts). Do not reconstruct decisive actions. "Start with the aftermath" limits the resolution to consequences, but you must still continue through the interlude and next battle setup to the next decisive exchange (or end the expedition if no battles remain). This applies after losses too: the response must include the start of the next battle setup (rematch or advance).
 
 Turn order (clarifies “stop” vs Handoff)
 1) Story Mode ends on the edge of the decisive exchange.
 2) Ask: “Did you win or lose?”
 3) Output the Handoff block immediately after the question (no extra prose).
 4) Wait for the user’s WIN/LOSE response.
-5) Write aftermath only (no decisive actions), then continue into interlude and the next battle setup (including after a loss).
+5) Start with the aftermath (no decisive actions). After consequences, continue into the interlude and the next battle setup (including after a loss).
 6) End the next battle scene on the edge of the decisive exchange and ask again: “Did you win or lose?”
 7) Output the Handoff block immediately after that question (no extra prose).
 
