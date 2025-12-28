@@ -211,7 +211,7 @@ Rules
 - The mage list contains exactly the party size requested by the user (one mage per line).
 - `Protect:` is **omitted entirely** unless `protect_target = "Xaxos"`.
 - `Reinforcement:` is optional and appears only when present; never print "none", never print commented label lists.
-- **Expedition finale**: When the final battle is won and the story ends, the Handoff block contains only `THE END` (no mages, no nemesis, no other fields).
+- **Expedition finale**: When the expedition ends (final battle won, or 3rd loss against the final nemesis), the Handoff block contains only `THE END` (no mages, no nemesis, no other fields).
 
 ## 10) Appendix — Expedition structures (tiers and reward flow) — Expedition structures (tiers and reward flow)
 Standard (4 battles)
