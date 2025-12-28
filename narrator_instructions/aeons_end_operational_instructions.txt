@@ -6,14 +6,15 @@ Selection is delegated to the **collision-free selector script**; the narrator f
 ## 0) Quick start (files + locations)
 All authoritative files live in the repo root. Use these exact filenames:
 - Process + Handoff contract: `aeons_end_operational_instructions.txt`
-- Selector action schema: `aeons_end_expedition_selector_openapi.yaml`
-- Selector script (backend implementation): `aeons_end_expedition_selector.py`
+- Selector action: `selectExpeditionPacket` (available to the GPT as an action)
+- Selector action schema: `aeons_end_expedition_selector_openapi.yaml` (not directly available; defines the action)
+- Selector script: `aeons_end_expedition_selector.py` (not directly available; backend implementation)
 - Packet schema: `aeons_end_expedition_packet_schema.txt`
 - Narration style guide: `aeons_end_narration_style_guide.txt`
 - Style selector: `aeons_end_narration_style_selector.txt`
-- Wave settings: `wave_settings.yaml`
-- Wave/box map: `aeons_end_waves.yaml`
-- Datasets: `aeons_end_mages.yaml`, `aeons_end_nemeses.yaml`, `aeons_end_friends.yaml`, `aeons_end_foes.yaml`
+- Wave/box map: `aeons_end_waves.yaml` (directly available to the GPT)
+- Wave settings: `wave_settings.yaml` (not directly available; used by the selector script)
+- Datasets: `aeons_end_mages.yaml`, `aeons_end_nemeses.yaml`, `aeons_end_friends.yaml`, `aeons_end_foes.yaml` (not directly available; used by the selector script)
 
 If you cannot find a file, list the repo root and use the exact names above before searching elsewhere.
 Markdown files are part of the knowledge base: read them directly (do not use Python to load or parse `.txt` files).
@@ -88,17 +89,15 @@ Do these steps in order, every time:
    - Optional: `length` (or default)
    - Optional: `content_waves` / `content_boxes`
    - Optional: `seed` (for reproducible runs; omit to allow random selection)
-2. Validate the packet schema (see schema file).
-3. Check collisions (no repeats/overlaps as guaranteed by the selector).
-4. Read before you write: before writing any narrative for a chapter:
-- Read the packet’s selected setting fields (conceptual inspiration only; do not copy phrasing).
+2. Read before you write: before writing any narrative for a chapter:
+- Read the packet's selected setting fields (conceptual inspiration only; do not copy phrasing).
 - Read the chosen mage entries (including story notes and chosen variants/boxes).
 - Read the nemesis entry for the current battle.
-- If present, read the current battle’s friend and foe entries.
+- If present, read the current battle's friend and foe entries.
    - Never add source markers or provenance metadata fields (such as `sources`) to any datasets or packet output.
    - Goal: ground tone, relationships, and motivations in the provided material.
-5. Write chapter 1.
-6. Print the Handoff block.
+3. Write chapter 1.
+4. Print the Handoff block.
 
 ### 4.1 Internal ideation (never shown except in Debug block when explicitly requested)
 Use the packet’s: setting + mages + final nemesis to generate **ten** diverse expedition concepts.
