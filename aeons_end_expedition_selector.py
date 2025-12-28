@@ -137,6 +137,15 @@ def resolve_allowed_waves(
             wave_set.add(_norm_space(box_to_wave[bn]))
     return sorted(wave_set)
 
+def infer_boxes_from_waves(
+    allowed_wave_inputs: Sequence[str],
+    box_to_wave: Dict[str, str],
+) -> List[str]:
+    wave_keys = {name_key(_norm_space(w)) for w in allowed_wave_inputs if w.strip()}
+    if not wave_keys:
+        return []
+    return sorted([box for box, wave in box_to_wave.items() if name_key(wave) in wave_keys])
+
 def in_scope_by_box_or_wave(
     *,
     entity_box: Optional[str],
@@ -163,7 +172,6 @@ def in_scope_by_box_or_wave(
         return True
 
     return False
-
 
 def eligible_mages_with_variants(
     mages: List[Dict[str, Any]],
@@ -368,8 +376,11 @@ def select_expedition(
     box_to_wave = load_box_to_wave(waves_yaml_path)
     normalized_waves = _normalize_scope_list(content_waves)
     normalized_boxes = _normalize_scope_list(content_boxes)
-    allowed_waves = resolve_allowed_waves(normalized_waves, normalized_boxes, box_to_wave)
-    allowed_boxes = [_norm_space(b) for b in normalized_boxes]
+    explicit_waves = normalized_waves
+    allowed_boxes = sorted(set(_norm_space(b) for b in normalized_boxes))
+    allowed_boxes.extend(infer_boxes_from_waves(explicit_waves, box_to_wave))
+    allowed_boxes = sorted(set(allowed_boxes))
+    allowed_waves_for_settings = resolve_allowed_waves(explicit_waves, normalized_boxes, box_to_wave)
 
     settings_by_wave = load_settings_by_wave(settings_yaml_path)
     if not settings_by_wave:
@@ -382,22 +393,22 @@ def select_expedition(
 
 
     wave_candidates = list(settings_by_wave.keys())
-    if allowed_waves:
-        allowed_set = {name_key(x) for x in allowed_waves}
+    if allowed_waves_for_settings:
+        allowed_set = {name_key(x) for x in allowed_waves_for_settings}
         wave_candidates = [w for w in wave_candidates if name_key(w) in allowed_set]
     if not wave_candidates:
         raise ValueError("No settings available in scope")
 
 
-    nemeses_in_scope = filter_by_scope_list(nemeses_all, allowed_waves, allowed_boxes, box_to_wave)
+    nemeses_in_scope = filter_by_scope_list(nemeses_all, explicit_waves, allowed_boxes, box_to_wave)
     by_tier = group_nemeses_by_tier(nemeses_in_scope)
     available_tiers = [t for t, lst in by_tier.items() if lst]
     if not available_tiers:
         raise ValueError("No nemeses available in scope")
 
 
-    friends_in_scope = filter_by_scope_list(friends_all, allowed_waves, allowed_boxes, box_to_wave)
-    foes_in_scope = filter_by_scope_list(foes_all, allowed_waves, allowed_boxes, box_to_wave)
+    friends_in_scope = filter_by_scope_list(friends_all, explicit_waves, allowed_boxes, box_to_wave)
+    foes_in_scope = filter_by_scope_list(foes_all, explicit_waves, allowed_boxes, box_to_wave)
 
 
     friends_available = bool(friends_in_scope)
@@ -423,7 +434,14 @@ def select_expedition(
                 protect_target = rng.choice(["Gravehold", "Xaxos"])
 
 
-            chosen_mages = choose_mages_no_repeat(rng, mages_all, mage_count, allowed_waves, allowed_boxes, box_to_wave)
+            chosen_mages = choose_mages_no_repeat(
+                rng,
+                mages_all,
+                mage_count,
+                explicit_waves,
+                allowed_boxes,
+                box_to_wave,
+            )
             mage_names = {name_key(str(m.get("name") or "")) for m in chosen_mages}
 
 
