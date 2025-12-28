@@ -11,7 +11,6 @@ All authoritative files live in the repo root. Use these exact filenames:
   - `selectReplacementMage` — selects a single replacement mage (used after loss when player chooses "new mage")
 - Selector action schema: `aeons_end_expedition_selector_openapi.yaml` (not directly available; defines the actions)
 - Selector script: `aeons_end_expedition_selector.py` (not directly available; backend implementation)
-- Packet schema: `aeons_end_expedition_packet_schema.txt`
 - Narration style guide: `aeons_end_narration_style_guide.txt`
 - Style selector: `aeons_end_narration_style_selector.txt`
 - Wave/box map: `aeons_end_waves.yaml` (directly available to the GPT)
