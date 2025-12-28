@@ -132,6 +132,7 @@ Turn order (clarifies “stop” vs Handoff)
 Between battles
 - Insert an interlude that advances the expedition concept: movement, time passing, shifting terrain, new information, fraying alliances, civic consequences.
 - Interludes must vary location and texture; avoid repeating the same sensory anchor across scenes.
+- **Balanced flow**: The aftermath, interlude, and next battle setup must be proportionally balanced—each section should carry roughly equal narrative weight. If the aftermath spans several paragraphs, the interlude and the next battle setup should each be comparably developed. A short or missing interlude, or a rushed next battle setup, breaks pacing; rewrite until all three sections feel complete.
 - Post-battle flow must be explicit and ordered (internal decisions first, then Story Mode beats):
   - Rematch after a loss (loss 1–2 vs same nemesis):
     1) Decide the reinforcement internally (do not reveal meta).
