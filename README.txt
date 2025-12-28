@@ -14,7 +14,6 @@ collision-free selection only; narration and win/lose state are handled by the n
 - `aeons_end_foes.yaml`: Foe dataset.
 - `wave_settings.yaml`: Wave settings used to build expedition structure.
 - `aeons_end_waves.yaml`: Wave text/settings used by the selector.
-- `aeons_end_expedition_packet_schema.txt`: JSON schema for selector output.
 - `aeons_end_expedition_selector_openapi.yaml`: OpenAPI schema for the selector action.
 - `aeons_end_operational_instructions.txt`: Process and handoff contract for narration.
 - `aeons_end_narration_style_guide.txt`: Voice and formatting guidance.
@@ -39,8 +38,7 @@ python aeons_end_expedition_selector.py \
   --seed 12345
 ```
 
-The selector prints a JSON expedition packet that conforms to
-`aeons_end_expedition_packet_schema.txt`.
+The selector prints a JSON expedition packet.
 
 ## CGI endpoint
 The selector is also exposed as a CGI script at:

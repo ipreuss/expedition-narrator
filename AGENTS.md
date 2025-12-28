@@ -49,7 +49,6 @@ This project is an **Expedition Narrator** for Aeon's End, consisting of:
 | `aeons_end_expedition_selector_openapi.yaml` | OpenAPI 3.1.0 schema for GPT Action integration |
 | `expedition_packet_tools.py` | Utilities: seed resolution, packet validation, story data extraction |
 | `narrator_instructions/aeons_end_operational_instructions.txt` | Narrator workflow and handoff contract |
-| `aeons_end_expedition_packet_schema.txt` | Packet structure documentation |
 
 ### Data Files (YAML)
 
