@@ -6,8 +6,9 @@ Selection is delegated to the **collision-free selector script**; the narrator f
 ## 0) Quick start (files + locations)
 All authoritative files live in the repo root. Use these exact filenames:
 - Process + Handoff contract: `aeons_end_operational_instructions.txt`
-- Selector action schema: `aeons_end_expedition_selector_openapi.yaml`
-- Selector script (backend implementation): `aeons_end_expedition_selector.py`
+- Selector action: `selectExpeditionPacket` (available to the GPT as an action)
+- Selector action schema: `aeons_end_expedition_selector_openapi.yaml` (not directly available; defines the action)
+- Selector script: `aeons_end_expedition_selector.py` (not directly available; backend implementation)
 - Packet schema: `aeons_end_expedition_packet_schema.txt`
 - Narration style guide: `aeons_end_narration_style_guide.txt`
 - Style selector: `aeons_end_narration_style_selector.txt`
