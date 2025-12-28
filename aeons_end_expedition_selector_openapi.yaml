@@ -75,6 +75,15 @@ paths:
           schema:
             type: integer
             minimum: 1
+        - name: mage_recruitment_chance
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 0
+            maximum: 100
+            default: 100
+          description: Probability (0-100) that a new mage joins after winning a non-final battle.
       responses:
         "200":
           description: Expedition packet
@@ -288,6 +297,12 @@ components:
         max_attempts:
           type: integer
           minimum: 1
+        mage_recruitment_chance:
+          type: integer
+          minimum: 0
+          maximum: 100
+          default: 100
+          description: Probability (0-100) that a new mage joins after winning a non-final battle.
     ExpeditionPacket:
       type: object
       additionalProperties: false
@@ -346,6 +361,7 @@ components:
             - length
             - content_waves
             - content_boxes
+            - mage_recruitment_chance
           properties:
             mage_count:
               type: integer
@@ -360,6 +376,11 @@ components:
               type: array
               items:
                 type: string
+            mage_recruitment_chance:
+              type: integer
+              minimum: 0
+              maximum: 100
+              description: Probability (0-100) that a new mage joins after winning a non-final battle.
     Setting:
       type: object
       required:

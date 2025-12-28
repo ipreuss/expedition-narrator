@@ -54,6 +54,7 @@ Optional
 - Expedition length: short | standard | long (default: standard).
 - Style override (may fully replace the default style selector).
 - Theme (optional; if absent, let the concept + setting + finale imply it).
+- Mage recruitment chance: 0–100 (default: 100). Probability that a new mage joins after winning a non-final battle.
 
 Defaults
 - Content scope: all available content.
@@ -95,6 +96,7 @@ Do these steps in order, every time:
    - Optional: `length` (or default)
    - Optional: `content_waves` / `content_boxes`
    - Optional: `seed` (for reproducible runs; omit to allow random selection)
+   - Optional: `mage_recruitment_chance` (0–100, default 100; probability of new mage joining after winning a non-final battle)
 2. Read before you write: before writing any narrative for a chapter:
 - Read the packet's selected setting fields (conceptual inspiration only; do not copy phrasing).
 - Read the chosen mage entries (including story notes and chosen variants/boxes).
@@ -148,8 +150,10 @@ Between battles
     6) They encounter or confront the same nemesis again to start the rematch chapter, and end at the decisive exchange with the win/lose question + Handoff.
   - Advancing to the next battle (win or 3rd loss):
     1) Decide the reward internally (do not reveal meta).
-    2) Story Mode aftermath + interlude:
+    2) **On win (not 3rd loss) and not final battle**: Check for post-win mage recruitment (see "Post-win mage recruitment" below).
+    3) Story Mode aftermath + interlude:
        - End the current fight.
+       - If mage recruitment triggers, run the mage-choice flow before continuing.
        - Interlude with a scene change: say goodbye to an old friend, gain reward, and introduce a new friend when applicable.
        - Introduce the next battle and the next nemesis, and end at the decisive exchange with the win/lose question + Handoff.
   - Expedition finale (story ends):
@@ -196,6 +200,43 @@ When the player chooses "new mage":
 7) **Update the party**: The Handoff block now lists the new party composition.
 
 8) **Continue to rematch**: Proceed with the rematch against the same nemesis, ending at the decisive exchange with the win/lose question + Handoff.
+
+### Post-win mage recruitment (non-final battles only)
+After winning a battle that is **not** the final battle, there is a chance that a new mage joins the party. The probability is determined by `mage_recruitment_chance` from the packet's `meta.inputs` (default: 100%).
+
+**Recruitment check flow:**
+1) After the victory aftermath, roll a random number 1–100. If the result is ≤ `mage_recruitment_chance`, a new mage joins.
+2) If recruitment does **not** trigger (roll > `mage_recruitment_chance`): continue normally with the interlude and next battle setup.
+3) If recruitment triggers:
+
+   a) **Call the selector action**: Use `selectReplacementMage` with:
+      - `operation`: `"selectReplacementMage"`
+      - `existing_mage_names`: list of current mage names in the party
+      - `content_waves` / `content_boxes`: same scope as the original expedition (from the packet's `meta.inputs`)
+
+   b) **Read the new mage**: The response contains a single `mage` entry with background, appearance, story_notes, and chosen_variant.
+
+   c) **Interlude — meeting the new mage**: Write an interlude scene where the party encounters this new mage. Establish:
+      - How they meet (rescue, crossroads, summoned, etc.)
+      - The new mage's motivation for joining
+      - Initial group dynamics
+
+   d) **Player choice — who leaves?**: After introducing the new mage, ask the player:
+      > The new ally [New Mage Name] has joined your expedition. Your party can only sustain [N] mages for this journey.
+      > **Which mage leaves the party?** (Name one of your current mages, or the new mage if you prefer to continue without them.)
+
+   e) **Wait for player response**: The player names the departing mage.
+
+   f) **Departure scene**: Write a brief scene where the departing mage leaves (injured, stays behind to guard, takes a different path, etc.). Do not kill them unless the player explicitly requests it.
+
+   g) **Update the party**: The Handoff block now lists the new party composition with `NEW MAGE: <Name> (<Source Box>)` in the Reinforcement field.
+
+   h) **Continue to next battle**: Proceed with the next battle setup (introducing the new nemesis), ending at the decisive exchange with the win/lose question + Handoff.
+
+**Important notes:**
+- This recruitment check happens **only** after wins, **never** after losses or the final battle.
+- The flow is identical to the post-loss "new mage" reinforcement option, but it is triggered automatically by the recruitment chance rather than player choice.
+- If `mage_recruitment_chance` is 0, skip the roll entirely and never trigger recruitment after wins.
 
 ## 6) Nemesis progression and rematches
 - The nemesis changes only when advancing to the next battle chapter.

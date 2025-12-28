@@ -370,6 +370,7 @@ def select_expedition(
     friends_yaml_path: str,
     foes_yaml_path: str,
     max_attempts: int = 200,
+    mage_recruitment_chance: int = 100,
 ) -> Dict[str, Any]:
     base_rng = random.Random(seed)
 
@@ -486,6 +487,7 @@ def select_expedition(
                     "length": _norm_space(length),
                     "content_waves": list(normalized_waves),
                     "content_boxes": list(normalized_boxes),
+                    "mage_recruitment_chance": mage_recruitment_chance,
                 },
             },
                 "setting": chosen_setting,
@@ -526,6 +528,8 @@ def _build_arg_parser() -> argparse.ArgumentParser:
     p.add_argument("--content-boxes", default="", help="Comma-separated box names.")
     p.add_argument("--seed", type=int, default=None)
     p.add_argument("--max-attempts", type=int, default=200)
+    p.add_argument("--mage-recruitment-chance", type=int, default=100,
+                   help="Probability (0-100) that a new mage joins after winning a non-final battle.")
     return p
 
 
@@ -626,6 +630,7 @@ def main() -> None:
         friends_yaml_path=args.friends_yaml,
         foes_yaml_path=args.foes_yaml,
         max_attempts=args.max_attempts,
+        mage_recruitment_chance=args.mage_recruitment_chance,
     )
     print(json.dumps(packet, ensure_ascii=False, indent=2))
 

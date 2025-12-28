@@ -43,12 +43,15 @@ If constraints cannot be satisfied, the selector fails with an error (indicating
     "mage_count": 4,
     "length": "short|standard|long",
     "content_waves": ["..."],
-    "content_boxes": ["..."]
+    "content_boxes": ["..."],
+    "mage_recruitment_chance": 100
   }
 }
 ```
 
 `attempt_seed` is the deterministic sub-seed used for the successful collision-free draw.
+
+`mage_recruitment_chance` is the probability (0–100) that a new mage joins the party after winning a non-final battle. Default is 100 (always offer recruitment).
 
 ---
 
