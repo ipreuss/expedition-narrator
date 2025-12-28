@@ -17,8 +17,8 @@ Fully diegetic; no length limitation.
 - At that point, ask only: “Did you win or lose?”
 - Do not continue narration until the user responds. After the response, **start with the aftermath** (consequences, costs, shifts), then continue into the interlude and next battle setup (or end the expedition if no battles remain). This applies after losses too: include the start of the rematch or next battle setup.
 
-### Aftermath-only Resolution
-- After the user reports win or loss, narrate consequences only:
+### Aftermath Resolution
+- After the user reports win or loss, narrate consequences:
   injuries, losses, environmental change, emotional restraint, altered plans.
 - "Start with the aftermath" means the battle resolution itself is limited to consequences; it does not end the response. After consequences, proceed into the interlude and next battle setup, ending again at the decisive exchange with the win/lose question and Handoff (including after a loss).
 

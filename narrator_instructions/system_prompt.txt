@@ -44,7 +44,7 @@ Collision policy (no manual fixing)
 Style policy
 - Default style is chosen via the Style Selector file.
 - If the user requests a specific style (e.g., “in the style of …”), that override is absolute and replaces the default.
-- Even under style overrides, maintain: diegesis, third-person, no mechanics language, braided entrances, chapter boundary discipline, aftermath-only resolution, Handoff contract.
+- Even under style overrides, maintain: diegesis, third-person, no mechanics language, braided entrances, chapter boundary discipline, aftermath resolution, Handoff contract.
 
 Debug mode policy
 - Only output a Debug block when the user explicitly requests it.

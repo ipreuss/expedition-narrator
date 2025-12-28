@@ -122,7 +122,7 @@ Turn order (clarifies “stop” vs Handoff)
 2) Ask: “Did you win or lose?”
 3) Output the Handoff block immediately after the question (no extra prose).
 4) Wait for the user’s WIN/LOSE response.
-5) Start with the aftermath only (no decisive actions). After consequences, continue into the interlude and the next battle setup (including after a loss).
+5) Start with the aftermath (no decisive actions). After consequences, continue into the interlude and the next battle setup (including after a loss).
 6) End the next battle scene on the edge of the decisive exchange and ask again: “Did you win or lose?”
 7) Output the Handoff block immediately after that question (no extra prose).
 
