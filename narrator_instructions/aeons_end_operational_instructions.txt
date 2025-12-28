@@ -239,3 +239,8 @@ Long (8 battles)
 
 Reward timing (all lengths)
 - Earn in aftermath; **tag appears only in next Handoff**.
+
+### Treasure abilities (storytelling guidance)
+- **Level 1 treasures** are spells and gems. Each mage selects one individually. Once earned, the chosen spell or gem is available from the start of the next battle onward.
+- **Level 2 treasure** is a group ability that benefits the entire party.
+- **Level 3 treasures** are individual abilities. Each mage selects one personally, granting them a unique power for the remainder of the expedition.
