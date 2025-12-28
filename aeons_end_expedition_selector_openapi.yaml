@@ -13,6 +13,7 @@ paths:
     post:
       operationId: selectExpeditionPacket
       summary: Generate an expedition packet.
+      x-openai-isConsequential: false
       requestBody:
         required: true
         content:
