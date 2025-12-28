@@ -30,7 +30,7 @@ import sys
 from typing import Any, Dict, List, Optional
 from urllib.parse import parse_qs
 
-from aeons_end_expedition_selector import select_expedition
+from aeons_end_expedition_selector import select_expedition, select_replacement_mage
 
 
 REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -121,25 +121,60 @@ def _read_request() -> Dict[str, Any]:
     return data
 
 
+def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
+    """Handle selectExpeditionPacket operation."""
+    mage_count = _parse_int(data.get("mage_count"), "mage_count", required=True)
+    length = data.get("length") or "standard"
+    content_waves = _parse_list(data.get("content_waves"))
+    content_boxes = _parse_list(data.get("content_boxes"))
+    seed = _parse_int(data.get("seed"), "seed")
+    max_attempts = _parse_int(data.get("max_attempts"), "max_attempts") or 200
+
+    return select_expedition(
+        seed=seed,
+        mage_count=mage_count,
+        length=length,
+        content_waves=content_waves,
+        content_boxes=content_boxes,
+        max_attempts=max_attempts,
+        **DEFAULT_PATHS,
+    )
+
+
+def _handle_select_replacement_mage(data: Dict[str, Any]) -> Dict[str, Any]:
+    """Handle selectReplacementMage operation."""
+    existing_mage_names = _parse_list(data.get("existing_mage_names"))
+    if not existing_mage_names:
+        raise ValueError("Missing required field: existing_mage_names (list of current mage names)")
+    content_waves = _parse_list(data.get("content_waves"))
+    content_boxes = _parse_list(data.get("content_boxes"))
+    seed = _parse_int(data.get("seed"), "seed")
+    max_attempts = _parse_int(data.get("max_attempts"), "max_attempts") or 200
+
+    return select_replacement_mage(
+        seed=seed,
+        existing_mage_names=existing_mage_names,
+        content_waves=content_waves,
+        content_boxes=content_boxes,
+        max_attempts=max_attempts,
+        mages_yaml_path=DEFAULT_PATHS["mages_yaml_path"],
+        waves_yaml_path=DEFAULT_PATHS["waves_yaml_path"],
+    )
+
+
 def main() -> None:
     try:
         data = _read_request()
-        mage_count = _parse_int(data.get("mage_count"), "mage_count", required=True)
-        length = data.get("length") or "standard"
-        content_waves = _parse_list(data.get("content_waves"))
-        content_boxes = _parse_list(data.get("content_boxes"))
-        seed = _parse_int(data.get("seed"), "seed")
-        max_attempts = _parse_int(data.get("max_attempts"), "max_attempts") or 200
 
-        packet = select_expedition(
-            seed=seed,
-            mage_count=mage_count,
-            length=length,
-            content_waves=content_waves,
-            content_boxes=content_boxes,
-            max_attempts=max_attempts,
-            **DEFAULT_PATHS,
-        )
+        # Determine operation from 'operation' field or default to expedition selection
+        operation = data.get("operation", "selectExpeditionPacket")
+
+        if operation == "selectReplacementMage":
+            packet = _handle_select_replacement_mage(data)
+        else:
+            # Default: selectExpeditionPacket
+            packet = _handle_select_expedition(data)
+
         _send_json(packet)
     except ValueError as exc:
         _send_json({"error": str(exc)}, status="400 Bad Request")

@@ -529,6 +529,88 @@ def _build_arg_parser() -> argparse.ArgumentParser:
     return p
 
 
+def select_replacement_mage(
+    *,
+    seed: Optional[int],
+    existing_mage_names: Sequence[str],
+    content_waves: Sequence[str],
+    content_boxes: Sequence[str],
+    mages_yaml_path: str,
+    waves_yaml_path: str,
+    max_attempts: int = 200,
+) -> Dict[str, Any]:
+    """
+    Select a single replacement mage that does not collide with existing mages.
+
+    Parameters:
+    - existing_mage_names: Names of mages currently in the party (to avoid duplicates).
+    - content_waves / content_boxes: Scope filters (same as expedition selection).
+
+    Returns a packet with a single mage entry in 'mage' field.
+    """
+    base_rng = random.Random(seed)
+
+    box_to_wave = load_box_to_wave(waves_yaml_path)
+    normalized_waves = _normalize_scope_list(content_waves)
+    normalized_boxes = _normalize_scope_list(content_boxes)
+    explicit_waves = normalized_waves
+    allowed_boxes = sorted(set(_norm_space(b) for b in normalized_boxes))
+    allowed_boxes.extend(infer_boxes_from_waves(explicit_waves, box_to_wave))
+    allowed_boxes = sorted(set(allowed_boxes))
+
+    mages_all = load_mages(mages_yaml_path)
+
+    # Build set of forbidden names (existing mages)
+    forbidden_names = {name_key(_norm_space(n)) for n in existing_mage_names if n.strip()}
+
+    last_err: Optional[Exception] = None
+    for attempt in range(1, max_attempts + 1):
+        attempt_seed = base_rng.randrange(0, 2**63)
+        rng = random.Random(attempt_seed)
+        try:
+            # Get eligible mages with variants in scope
+            eligible = eligible_mages_with_variants(
+                mages_all, explicit_waves, allowed_boxes, box_to_wave
+            )
+
+            # Filter out mages whose names collide with existing party
+            available = [
+                (m, variants) for m, variants in eligible
+                if name_key(str(m.get("name") or "")) not in forbidden_names
+            ]
+
+            if not available:
+                raise SelectionError("No eligible replacement mages available (all collide with existing party)")
+
+            # Choose one mage randomly
+            chosen_mage, chosen_variants = _choose(rng, available)
+            entry = copy.deepcopy(chosen_mage)
+            entry["chosen_variant"] = copy.deepcopy(_choose(rng, chosen_variants))
+
+            packet: Dict[str, Any] = {
+                "meta": {
+                    "generated_at_utc": _now_iso(),
+                    "seed": seed,
+                    "attempt": attempt,
+                    "attempt_seed": attempt_seed,
+                    "effective_seed": _resolve_effective_seed(seed, attempt_seed),
+                    "inputs": {
+                        "existing_mage_names": list(existing_mage_names),
+                        "content_waves": list(normalized_waves),
+                        "content_boxes": list(normalized_boxes),
+                    },
+                },
+                "mage": entry,
+            }
+            return packet
+
+        except Exception as e:
+            last_err = e
+            continue
+
+    raise RuntimeError(f"Unable to find a replacement mage after {max_attempts} attempts. Last error: {last_err}")
+
+
 def main() -> None:
     args = _build_arg_parser().parse_args()
     packet = select_expedition(

@@ -88,8 +88,174 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ErrorResponse"
+  /aeons_end_expedition_selector_cgi.py?operation=selectReplacementMage:
+    post:
+      operationId: selectReplacementMage
+      summary: Select a single replacement mage for the party.
+      description: |-
+        Use this action when players choose a new mage as reinforcement after a loss.
+        The selector returns one mage that does not collide with the existing party.
+      x-openai-isConsequential: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ReplacementMageRequest"
+      responses:
+        "200":
+          description: Replacement mage packet
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReplacementMagePacket"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    get:
+      operationId: selectReplacementMageGet
+      summary: Select a single replacement mage (query parameters).
+      parameters:
+        - name: operation
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [selectReplacementMage]
+        - name: existing_mage_names
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Comma-separated names of mages currently in the party.
+        - name: content_waves
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Comma-separated wave names or a JSON list encoded as a string.
+        - name: content_boxes
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Comma-separated box names or a JSON list encoded as a string.
+        - name: seed
+          in: query
+          required: false
+          schema:
+            type: integer
+        - name: max_attempts
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+      responses:
+        "200":
+          description: Replacement mage packet
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReplacementMagePacket"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
 components:
   schemas:
+    ReplacementMageRequest:
+      type: object
+      additionalProperties: false
+      required:
+        - operation
+        - existing_mage_names
+      properties:
+        operation:
+          type: string
+          enum: [selectReplacementMage]
+          description: Must be "selectReplacementMage" to invoke this operation.
+        existing_mage_names:
+          oneOf:
+            - type: array
+              items:
+                type: string
+            - type: string
+          description: Names of mages currently in the party (to avoid duplicates). List or comma-separated string.
+        content_waves:
+          oneOf:
+            - type: array
+              items:
+                type: string
+            - type: string
+          description: Wave names as a list or comma-separated string. Use an empty list (`[]`) or omit to disable filtering.
+        content_boxes:
+          oneOf:
+            - type: array
+              items:
+                type: string
+            - type: string
+          description: Box names as a list or comma-separated string. Use an empty list (`[]`) or omit to disable filtering.
+        seed:
+          type: integer
+        max_attempts:
+          type: integer
+          minimum: 1
+    ReplacementMagePacket:
+      type: object
+      additionalProperties: false
+      required:
+        - meta
+        - mage
+      properties:
+        meta:
+          $ref: "#/components/schemas/ReplacementMageMeta"
+        mage:
+          $ref: "#/components/schemas/Mage"
+    ReplacementMageMeta:
+      type: object
+      additionalProperties: false
+      required:
+        - generated_at_utc
+        - seed
+        - attempt
+        - attempt_seed
+        - inputs
+      properties:
+        generated_at_utc:
+          type: string
+          format: date-time
+        seed:
+          type: integer
+        attempt:
+          type: integer
+        attempt_seed:
+          type: integer
+        inputs:
+          type: object
+          additionalProperties: false
+          required:
+            - existing_mage_names
+            - content_waves
+            - content_boxes
+          properties:
+            existing_mage_names:
+              type: array
+              items:
+                type: string
+            content_waves:
+              type: array
+              items:
+                type: string
+            content_boxes:
+              type: array
+              items:
+                type: string
     SelectorRequest:
       type: object
       additionalProperties: false
