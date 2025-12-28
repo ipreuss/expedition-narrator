@@ -136,10 +136,40 @@ Turn order (clarifies "stop" vs Handoff)
 6) End the next battle scene on the edge of the decisive exchange and ask again: "Did you win or lose? (You may add details—was it close? Did a mage exhaust?)"
 7) Output the Handoff block immediately after that question (no extra prose).
 
+**⛔ Pause points that interrupt the turn order:**
+When a mage recruitment occurs (post-win or post-loss), the normal turn order is interrupted:
+- Your response ends after asking "Which mage leaves?" (no Handoff block)
+- Wait for the player's response naming the departing mage
+- Only then continue with the departure scene, next battle setup, and Handoff
+- Failure to pause at this point is a violation of the operational contract
+
 Between battles
-- Insert an interlude that advances the expedition concept: movement, time passing, shifting terrain, new information, fraying alliances, civic consequences.
-- Interludes must vary location and texture; avoid repeating the same sensory anchor across scenes.
-- **Balanced flow**: The aftermath, interlude, and next battle setup must be proportionally balanced—each section should carry roughly equal narrative weight. If the aftermath spans several paragraphs, the interlude and the next battle setup should each be comparably developed. A short or missing interlude, or a rushed next battle setup, breaks pacing; rewrite until all three sections feel complete.
+The post-battle response has **three mandatory sections**, each with roughly equal narrative weight:
+
+**Section 1: Aftermath** (consequences only)
+- Injuries, losses, environmental change, emotional restraint, altered plans
+- If this battle awards treasures (per expedition structure in Appendix): include a diegetic scene of discovery or claiming (e.g., each mage finds a relic, recovers a spell focus, claims breach ore)
+- Do not name specific treasures—describe them as discoveries, aid, or hard-won leverage
+- Must have substantial prose—multiple paragraphs, not a quick summary
+
+**Section 2: Interlude** (transition and advancement)
+- Movement, time passing, shifting terrain, new information
+- Recovery, reflection, regrouping, or preparation
+- Fraying alliances, civic consequences, changed relationships
+- Must exist as a distinct scene, not merely a sentence of movement
+- If a recruit is present (see "Post-win mage recruitment"), the encounter happens here
+
+**Section 3: Next battle setup** (establishing the new threat)
+- Introduce the next nemesis and environment
+- Establish immediate tension and pressure
+- Must have comparable length to the aftermath—not just one or two paragraphs
+- End at the decisive exchange with the win/lose question
+
+**Balance check (before outputting):**
+- Count paragraphs in each section—they should be roughly equal
+- If aftermath is 4 paragraphs, interlude and next battle setup should each be 3-5 paragraphs
+- A short or missing interlude, or a rushed next battle setup, breaks pacing; rewrite until all three sections feel complete
+- Exception: If the mage departure ⛔ pause point applies, your response ends after asking "which mage leaves?" and the next battle setup comes in a later response
 - Post-battle flow must be explicit and ordered (internal decisions first, then Story Mode beats):
   - Rematch after a loss (loss 1–2 vs same nemesis):
     1) End the current fight in Story Mode (aftermath).
@@ -184,24 +214,29 @@ When the player chooses "new mage":
 
 2) **Read the new mage**: The response contains a single `mage` entry with background, appearance, story_notes, and chosen_variant.
 
-3) **Interlude — meeting the new mage**: Write an interlude scene where the party encounters this new mage. Establish:
+3) **Interlude — meeting the new mage**: Write a full interlude scene where the party encounters this new mage. This must include:
+   - A transition scene (recovery, regrouping, travel) before the encounter
    - How they meet (rescue, crossroads, summoned, etc.)
    - The new mage's motivation for joining
    - Initial group dynamics
+   - Substantial narrative weight—not just a few sentences
 
 4) **Player choice — who leaves?**: After introducing the new mage, ask the player:
    > The new ally [New Mage Name] has joined your expedition. Your party can only sustain [N] mages for this journey.
    > **Which mage leaves the party?** (Name one of your current mages, or the new mage if you prefer to continue without them.)
 
-   **⛔ STOP: Do not proceed to the next battle setup until the player names the departing mage.**
+   **⛔ MANDATORY PAUSE POINT: Your response ENDS here. Do not write the departure scene. Do not write the rematch setup. Do not output a Handoff block. Wait for the player to name the departing mage before continuing.**
 
 5) **Wait for player response**: The player names the departing mage.
 
 6) **Departure scene**: Write a brief scene where the departing mage leaves (injured, stays behind to guard, takes a different path, etc.). Do not kill them unless the player explicitly requests it.
 
-7) **Update the party**: The Handoff block now lists the new party composition.
+7) **Rematch setup**: Write a full rematch scene introduction:
+   - Establish the changed environment or tactical shift
+   - Show the party's renewed approach to the same nemesis
+   - End at the decisive exchange with the win/lose question
 
-8) **Continue to rematch**: Proceed with the rematch against the same nemesis, ending at the decisive exchange with the win/lose question + Handoff.
+8) **Update the party**: The Handoff block now lists the new party composition.
 
 ### Post-win mage recruitment (automatic — requires player choice)
 After winning a battle that is **not** the final battle, a new mage may join the party. This is **pre-planned** in the expedition packet—check the current battle's `recruit` field in `battle_plan`.
@@ -211,31 +246,51 @@ After winning a battle that is **not** the final battle, a new mage may join the
 2) If `recruit` is `null`: no recruitment—continue normally with the interlude and next battle setup.
 3) If `recruit` contains a mage entry:
 
-   a) **Read the recruit mage**: The `recruit` field contains a full mage entry with background, appearance, story_notes, and chosen_variant.
+   a) **Complete the aftermath first**: Write the full aftermath section including:
+      - Consequences, costs, and shifts from the battle
+      - If this battle awards treasures (per expedition structure), include a diegetic scene of the party discovering or claiming them (e.g., reforging breach ore, recovering runes, each mage claiming a relic). Do not name specific treasures—describe them as discoveries, aid, or hard-won leverage.
+      - The aftermath must have substantial narrative weight before any recruit appears.
 
-   b) **Interlude — meeting the new mage**: Write an interlude scene where the party encounters this new mage. Establish:
+   b) **Read the recruit mage**: The `recruit` field contains a full mage entry with background, appearance, story_notes, and chosen_variant.
+
+   c) **Interlude — travel and transition**: Write a distinct interlude section with:
+      - Movement, time passing, shifting terrain
+      - Recovery, reflection, or preparation
+      - This is a separate scene from the aftermath, not just a sentence of transition.
+
+   d) **Recruit encounter scene**: Within or after the interlude, write a scene where the party encounters the new mage. Establish:
       - How they meet (rescue, crossroads, summoned, etc.)
       - The new mage's motivation for joining
       - Initial group dynamics
 
-   c) **Player choice — who leaves?**: After introducing the new mage, ask the player:
+   e) **Player choice — who leaves?**: After introducing the new mage, ask the player:
       > The new ally [New Mage Name] has joined your expedition. Your party can only sustain [N] mages for this journey.
       > **Which mage leaves the party?** (Name one of your current mages, or the new mage if you prefer to continue without them.)
 
-      **⛔ STOP: Do not proceed to the next battle setup until the player names the departing mage.**
+      **⛔ MANDATORY PAUSE POINT: Your response ENDS here. Do not write the departure scene. Do not write the next battle setup. Do not output a Handoff block. Wait for the player to name the departing mage before continuing.**
 
-   d) **Wait for player response**: The player names the departing mage.
+   f) **Wait for player response**: The player names the departing mage.
 
-   e) **Departure scene**: Write a brief scene where the departing mage leaves (injured, stays behind to guard, takes a different path, etc.). Do not kill them unless the player explicitly requests it.
+   g) **Departure scene**: Write a brief scene where the departing mage leaves (injured, stays behind to guard, takes a different path, etc.). Do not kill them unless the player explicitly requests it.
 
-   f) **Update the party**: The Handoff block now lists the new party composition with `NEW MAGE: <Name> (<Source Box>)` in the Reinforcement field.
+   h) **Next battle setup**: Now write the full next battle introduction:
+      - Establish the new environment and threat
+      - Introduce the next nemesis with the same narrative weight as the aftermath
+      - End at the decisive exchange with the win/lose question
 
-   g) **Continue to next battle**: Proceed with the next battle setup (introducing the new nemesis), ending at the decisive exchange with the win/lose question + Handoff.
+   i) **Update the party**: The Handoff block now lists the new party composition with `NEW MAGE: <Name> (<Source Box>)` in the Reinforcement field.
 
-**Important notes:**
+**Critical requirements:**
+- The ⛔ pause point in step (e) is absolute. Continuing past it in the same response violates the operational contract.
 - Recruitment is pre-determined at expedition creation based on `mage_recruitment_chance`.
 - The `recruit` field is always `null` for the final battle.
 - This flow is identical to the post-loss "new mage" reinforcement option, but triggered automatically by the pre-planned recruit rather than player choice.
+
+**Balance check:** Before outputting, verify that:
+- Aftermath has substantial prose (not just one paragraph)
+- Interlude exists as a distinct transition scene
+- If you are NOT at the pause point, the next battle setup has comparable length to the aftermath
+- Treasures (if awarded this battle) are diegetically explained in the aftermath
 
 ## 6) Nemesis progression and rematches
 - The nemesis changes only when advancing to the next battle chapter.
