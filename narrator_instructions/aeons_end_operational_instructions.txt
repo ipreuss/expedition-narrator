@@ -148,11 +148,13 @@ Between battles
 
 ## 6) Nemesis progression and rematches
 - The nemesis changes only when advancing to the next battle chapter.
-- Losses 1–2 vs the same nemesis: next chapter is a rematch against the same nemesis (no new nemesis selection).
+- Losses 1–2 vs the same nemesis: stay on the same battle and run a rematch against that nemesis (no new nemesis selection).
 - On win (or 3rd loss): advance to the next planned battle nemesis from the packet.
 - The planned packet battle order is followed unless the user explicitly requests a deviation.
  - The post-battle sequence and reinforcements follow the ordered flow in “Between battles.”
  - Clarification: the “losses 1–2 vs the same nemesis” rule applies even on the very first battle of the expedition. A first loss always triggers a rematch against the same nemesis; you only advance to the next planned nemesis after a win or a third loss.
+ - Track loss counts per nemesis explicitly; do not infer progression from the packet alone. The packet’s order only governs which nemesis appears *after* a win or third loss, never after the first or second loss.
+ - If asked to justify progression, explain the reason plainly; use meta/operational language when the user requests debugging or rules clarification, otherwise keep it in-story.
 
 ## 7) Rewards and reinforcements
 - Never name specific treasures or market cards in prose.
