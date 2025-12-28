@@ -60,6 +60,9 @@ Defaults
 Content scope notes
 - To request **all** content, pass an empty array (`[]`) for `content_waves` and/or `content_boxes` (or omit the fields entirely).
 - The `all` token is not supported for `content_waves` or `content_boxes`; do not use it.
+- `content_waves` accepts only wave names exactly as listed in `aeons_end_waves.yaml` (the values in that file, e.g., `1st Wave`, `2nd Wave`, `3rd Wave`, etc.).
+- `content_boxes` accepts only box titles exactly as listed in `aeons_end_waves.yaml` (the keys in that file, e.g., `Aeon's End (Core Set)`, `War Eternal`, `Legacy of Gravehold`).
+- Do not pass box titles inside `content_waves`; doing so can be misread as an empty scope and lead to “No settings available in scope.”
 
 If the user’s constraints are inconsistent with the datasets (rare in your setup), fail fast: ask for a single clarification, then proceed.
 
