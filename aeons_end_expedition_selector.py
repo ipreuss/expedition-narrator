@@ -370,6 +370,7 @@ def select_expedition(
     friends_yaml_path: str,
     foes_yaml_path: str,
     max_attempts: int = 200,
+    mage_recruitment_chance: int = 100,
 ) -> Dict[str, Any]:
     base_rng = random.Random(seed)
 
@@ -473,6 +474,41 @@ def select_expedition(
                     step["friend"] = None
                     step["foe"] = None
 
+            # Pre-plan mage recruitment for non-final battles
+            # Track all mage names that could be in party (original + any prior recruits)
+            all_party_names = set(mage_names)
+            eligible_for_recruit = eligible_mages_with_variants(
+                mages_all, explicit_waves, allowed_boxes, box_to_wave
+            )
+
+            for i, step in enumerate(battle_plan):
+                is_final_battle = (i == len(battle_plan) - 1)
+                if is_final_battle:
+                    # No recruitment after final battle
+                    step["recruit"] = None
+                elif mage_recruitment_chance <= 0:
+                    # Recruitment disabled
+                    step["recruit"] = None
+                elif rng.randint(1, 100) > mage_recruitment_chance:
+                    # Roll failed - no recruitment
+                    step["recruit"] = None
+                else:
+                    # Roll succeeded - select a recruit
+                    available_recruits = [
+                        (m, variants) for m, variants in eligible_for_recruit
+                        if name_key(str(m.get("name") or "")) not in all_party_names
+                    ]
+                    if available_recruits:
+                        chosen_mage_tuple = _choose(rng, available_recruits)
+                        recruit_entry = copy.deepcopy(chosen_mage_tuple[0])
+                        recruit_entry["chosen_variant"] = copy.deepcopy(_choose(rng, chosen_mage_tuple[1]))
+                        step["recruit"] = recruit_entry
+                        # Add to party names so future recruits won't collide
+                        all_party_names.add(name_key(str(recruit_entry.get("name") or "")))
+                    else:
+                        # No eligible recruits available
+                        step["recruit"] = None
+
 
             packet: Dict[str, Any] = {
                 "meta": {
@@ -486,6 +522,7 @@ def select_expedition(
                     "length": _norm_space(length),
                     "content_waves": list(normalized_waves),
                     "content_boxes": list(normalized_boxes),
+                    "mage_recruitment_chance": mage_recruitment_chance,
                 },
             },
                 "setting": chosen_setting,
@@ -526,6 +563,8 @@ def _build_arg_parser() -> argparse.ArgumentParser:
     p.add_argument("--content-boxes", default="", help="Comma-separated box names.")
     p.add_argument("--seed", type=int, default=None)
     p.add_argument("--max-attempts", type=int, default=200)
+    p.add_argument("--mage-recruitment-chance", type=int, default=100,
+                   help="Probability (0-100) that a new mage joins after winning a non-final battle.")
     return p
 
 
@@ -626,6 +665,7 @@ def main() -> None:
         friends_yaml_path=args.friends_yaml,
         foes_yaml_path=args.foes_yaml,
         max_attempts=args.max_attempts,
+        mage_recruitment_chance=args.mage_recruitment_chance,
     )
     print(json.dumps(packet, ensure_ascii=False, indent=2))
 

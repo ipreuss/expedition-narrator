@@ -43,12 +43,15 @@ If constraints cannot be satisfied, the selector fails with an error (indicating
     "mage_count": 4,
     "length": "short|standard|long",
     "content_waves": ["..."],
-    "content_boxes": ["..."]
+    "content_boxes": ["..."],
+    "mage_recruitment_chance": 100
   }
 }
 ```
 
 `attempt_seed` is the deterministic sub-seed used for the successful collision-free draw.
+
+`mage_recruitment_chance` is the probability (0–100) that a new mage joins the party after winning a non-final battle. Default is 100 (always offer recruitment).
 
 ---
 
@@ -101,6 +104,16 @@ Battle order list. Each element includes:
 - `nemesis` (verbatim mapping)
 - `friend` (verbatim mapping or null)
 - `foe` (verbatim mapping or null)
+- `recruit` (verbatim mage mapping or null)
+
+### recruit field
+
+Pre-planned mage recruitment for each battle. If non-null, a new mage joins the party after winning this battle.
+
+- For non-final battles: determined by rolling against `mage_recruitment_chance` at packet generation time.
+- For the final battle: always `null` (no recruitment after the finale).
+- Contains the same structure as mages: `name`, `chosen_variant`, background, appearance, etc.
+- Recruits are collision-free: no recruit shares a name with any starting mage or prior recruit.
 
 ---
 

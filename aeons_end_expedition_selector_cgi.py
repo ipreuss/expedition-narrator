@@ -129,6 +129,9 @@ def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
     content_boxes = _parse_list(data.get("content_boxes"))
     seed = _parse_int(data.get("seed"), "seed")
     max_attempts = _parse_int(data.get("max_attempts"), "max_attempts") or 200
+    mage_recruitment_chance = _parse_int(data.get("mage_recruitment_chance"), "mage_recruitment_chance")
+    if mage_recruitment_chance is None:
+        mage_recruitment_chance = 100
 
     return select_expedition(
         seed=seed,
@@ -137,6 +140,7 @@ def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
         content_waves=content_waves,
         content_boxes=content_boxes,
         max_attempts=max_attempts,
+        mage_recruitment_chance=mage_recruitment_chance,
         **DEFAULT_PATHS,
     )
 
