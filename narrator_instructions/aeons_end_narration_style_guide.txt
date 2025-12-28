@@ -22,6 +22,12 @@ Fully diegetic; no length limitation.
   injuries, losses, environmental change, emotional restraint, altered plans.
 - "Start with the aftermath" means the battle resolution itself is limited to consequences; it does not end the response. After consequences, proceed into the interlude and next battle setup, ending again at the decisive exchange with the win/lose question and Handoff (including after a loss).
 
+### Balanced Interlude Flow
+- The post-battle response has three distinct parts: **aftermath**, **interlude**, and **next battle setup**.
+- Each part must receive roughly equal narrative weight. None may be skipped or compressed.
+- The interlude is the transition: travel, preparation, reflection, discovery, or encounter that bridges the ended fight to the next. It must exist as a distinct section, not merely a sentence of movement.
+- The next battle setup must fully establish the new threat, environment, and tension—not merely announce the nemesis in a paragraph or two.
+
 ---
 
 ## 2. Voice & Perspective
