@@ -43,7 +43,14 @@ import datetime as _dt
 import json
 import random
 import re
-from typing import Any, Dict, List, Optional, Sequence, Set, Tuple
+from typing import Any, Dict, List, Literal, Optional, Sequence, Set, Tuple
+
+# Strictness levels for expedition creation
+# - "thematic": Setting, mages, nemeses, friends, and foes all from the same wave
+# - "mixed": Setting and mages from the same wave; nemeses, friends, foes from any allowed content
+# - "open": All entities from any allowed content (maximum variety)
+Strictness = Literal["thematic", "mixed", "open"]
+VALID_STRICTNESS = ("thematic", "mixed", "open")
 
 import yaml
 
@@ -283,6 +290,12 @@ def detect_outcasts_from_wave_name(wave_name: Optional[str]) -> bool:
     return bool(wave_name) and name_key(wave_name) == name_key("5th Wave")
 
 
+def get_boxes_for_wave(wave_name: str, box_to_wave: Dict[str, str]) -> List[str]:
+    """Return all boxes that belong to the specified wave."""
+    wave_k = name_key(wave_name)
+    return sorted([box for box, wave in box_to_wave.items() if name_key(wave) == wave_k])
+
+
 class SelectionError(RuntimeError):
     pass
 
@@ -371,7 +384,12 @@ def select_expedition(
     foes_yaml_path: str,
     max_attempts: int = 200,
     mage_recruitment_chance: int = 100,
+    strictness: Strictness = "open",
 ) -> Dict[str, Any]:
+    # Validate strictness parameter
+    if strictness not in VALID_STRICTNESS:
+        raise ValueError(f"strictness must be one of: {', '.join(VALID_STRICTNESS)}")
+
     base_rng = random.Random(seed)
 
     box_to_wave = load_box_to_wave(waves_yaml_path)
@@ -400,25 +418,25 @@ def select_expedition(
     if not wave_candidates:
         raise ValueError("No settings available in scope")
 
+    # For "open" strictness, pre-filter entities by full scope (original behavior)
+    # For "mixed" and "thematic", we'll filter inside the attempt loop after choosing a wave
+    nemeses_in_scope_full = filter_by_scope_list(nemeses_all, explicit_waves, allowed_boxes, box_to_wave)
+    friends_in_scope_full = filter_by_scope_list(friends_all, explicit_waves, allowed_boxes, box_to_wave)
+    foes_in_scope_full = filter_by_scope_list(foes_all, explicit_waves, allowed_boxes, box_to_wave)
 
-    nemeses_in_scope = filter_by_scope_list(nemeses_all, explicit_waves, allowed_boxes, box_to_wave)
-    by_tier = group_nemeses_by_tier(nemeses_in_scope)
-    available_tiers = [t for t, lst in by_tier.items() if lst]
-    if not available_tiers:
+    # Pre-check for "open" mode (used for early validation and tier detection)
+    by_tier_full = group_nemeses_by_tier(nemeses_in_scope_full)
+    available_tiers_full = [t for t, lst in by_tier_full.items() if lst]
+    if not available_tiers_full:
         raise ValueError("No nemeses available in scope")
 
-
-    friends_in_scope = filter_by_scope_list(friends_all, explicit_waves, allowed_boxes, box_to_wave)
-    foes_in_scope = filter_by_scope_list(foes_all, explicit_waves, allowed_boxes, box_to_wave)
-
-
-    friends_available = bool(friends_in_scope)
-    foes_available = bool(foes_in_scope)
-    if friends_available != foes_available:
-        raise ValueError("Friend/Foe availability mismatch in scope (unexpected for your datasets)")
-
-
-    include_friend_foe_pair = friends_available and foes_available
+    # For "open" mode, check friend/foe availability upfront
+    if strictness == "open":
+        friends_available = bool(friends_in_scope_full)
+        foes_available = bool(foes_in_scope_full)
+        if friends_available != foes_available:
+            raise ValueError("Friend/Foe availability mismatch in scope (unexpected for your datasets)")
+        include_friend_foe_pair = friends_available and foes_available
 
     last_err: Optional[Exception] = None
     for attempt in range(1, max_attempts + 1):
@@ -429,6 +447,44 @@ def select_expedition(
             setting_payload = copy.deepcopy(settings_by_wave[chosen_wave])
             chosen_setting = {"wave_name": chosen_wave, **setting_payload}
 
+            # Apply strictness-based filtering
+            # Get boxes for the chosen wave (used for thematic/mixed modes)
+            wave_boxes = get_boxes_for_wave(chosen_wave, box_to_wave)
+
+            if strictness == "thematic":
+                # All entities must come from the chosen wave's boxes
+                mage_waves = [chosen_wave]
+                mage_boxes = wave_boxes
+                nemeses_in_scope = filter_by_scope_list(nemeses_all, [chosen_wave], wave_boxes, box_to_wave)
+                friends_in_scope = filter_by_scope_list(friends_all, [chosen_wave], wave_boxes, box_to_wave)
+                foes_in_scope = filter_by_scope_list(foes_all, [chosen_wave], wave_boxes, box_to_wave)
+            elif strictness == "mixed":
+                # Mages must come from the chosen wave; others use full scope
+                mage_waves = [chosen_wave]
+                mage_boxes = wave_boxes
+                nemeses_in_scope = nemeses_in_scope_full
+                friends_in_scope = friends_in_scope_full
+                foes_in_scope = foes_in_scope_full
+            else:  # "open"
+                # All entities use full scope (original behavior)
+                mage_waves = explicit_waves
+                mage_boxes = allowed_boxes
+                nemeses_in_scope = nemeses_in_scope_full
+                friends_in_scope = friends_in_scope_full
+                foes_in_scope = foes_in_scope_full
+
+            # Compute available tiers and friend/foe availability for this attempt
+            by_tier = group_nemeses_by_tier(nemeses_in_scope)
+            available_tiers = [t for t, lst in by_tier.items() if lst]
+            if not available_tiers:
+                raise SelectionError(f"No nemeses available for wave {chosen_wave} with strictness={strictness}")
+
+            friends_available = bool(friends_in_scope)
+            foes_available = bool(foes_in_scope)
+            # For thematic/mixed modes, it's acceptable if neither friends nor foes are available
+            if friends_available != foes_available:
+                raise SelectionError(f"Friend/Foe availability mismatch for wave {chosen_wave}")
+            include_friend_foe_pair = friends_available and foes_available
 
             protect_target: Optional[str] = None
             if detect_outcasts_from_wave_name(chosen_wave):
@@ -439,8 +495,8 @@ def select_expedition(
                 rng,
                 mages_all,
                 mage_count,
-                explicit_waves,
-                allowed_boxes,
+                mage_waves,
+                mage_boxes,
                 box_to_wave,
             )
             mage_names = {name_key(str(m.get("name") or "")) for m in chosen_mages}
@@ -476,9 +532,10 @@ def select_expedition(
 
             # Pre-plan mage recruitment for non-final battles
             # Track all mage names that could be in party (original + any prior recruits)
+            # Recruitment uses the same strictness rules as initial mage selection
             all_party_names = set(mage_names)
             eligible_for_recruit = eligible_mages_with_variants(
-                mages_all, explicit_waves, allowed_boxes, box_to_wave
+                mages_all, mage_waves, mage_boxes, box_to_wave
             )
 
             for i, step in enumerate(battle_plan):
@@ -518,13 +575,14 @@ def select_expedition(
                     "attempt_seed": attempt_seed,
                     "effective_seed": _resolve_effective_seed(seed, attempt_seed),
                     "inputs": {
-                    "mage_count": mage_count,
-                    "length": _norm_space(length),
-                    "content_waves": list(normalized_waves),
-                    "content_boxes": list(normalized_boxes),
-                    "mage_recruitment_chance": mage_recruitment_chance,
+                        "mage_count": mage_count,
+                        "length": _norm_space(length),
+                        "content_waves": list(normalized_waves),
+                        "content_boxes": list(normalized_boxes),
+                        "mage_recruitment_chance": mage_recruitment_chance,
+                        "strictness": strictness,
+                    },
                 },
-            },
                 "setting": chosen_setting,
                 "protect_target": protect_target,
                 "mages": chosen_mages,
@@ -565,6 +623,8 @@ def _build_arg_parser() -> argparse.ArgumentParser:
     p.add_argument("--max-attempts", type=int, default=200)
     p.add_argument("--mage-recruitment-chance", type=int, default=100,
                    help="Probability (0-100) that a new mage joins after winning a non-final battle.")
+    p.add_argument("--strictness", choices=["thematic", "mixed", "open"], default="open",
+                   help="Strictness level: 'thematic' (all from same wave), 'mixed' (mages from wave), 'open' (any).")
     return p
 
 
@@ -666,6 +726,7 @@ def main() -> None:
         foes_yaml_path=args.foes_yaml,
         max_attempts=args.max_attempts,
         mage_recruitment_chance=args.mage_recruitment_chance,
+        strictness=args.strictness,
     )
     print(json.dumps(packet, ensure_ascii=False, indent=2))
 

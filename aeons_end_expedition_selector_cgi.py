@@ -121,6 +121,16 @@ def _read_request() -> Dict[str, Any]:
     return data
 
 
+def _parse_strictness(value: Any) -> str:
+    """Parse and validate strictness parameter."""
+    if value is None or value == "":
+        return "open"
+    val = str(value).strip().lower()
+    if val not in ("thematic", "mixed", "open"):
+        raise ValueError("strictness must be one of: thematic, mixed, open")
+    return val
+
+
 def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
     """Handle selectExpeditionPacket operation."""
     mage_count = _parse_int(data.get("mage_count"), "mage_count", required=True)
@@ -132,6 +142,7 @@ def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
     mage_recruitment_chance = _parse_int(data.get("mage_recruitment_chance"), "mage_recruitment_chance")
     if mage_recruitment_chance is None:
         mage_recruitment_chance = 100
+    strictness = _parse_strictness(data.get("strictness"))
 
     return select_expedition(
         seed=seed,
@@ -141,6 +152,7 @@ def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
         content_boxes=content_boxes,
         max_attempts=max_attempts,
         mage_recruitment_chance=mage_recruitment_chance,
+        strictness=strictness,
         **DEFAULT_PATHS,
     )
 

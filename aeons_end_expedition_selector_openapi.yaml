@@ -84,6 +84,18 @@ paths:
             maximum: 100
             default: 100
           description: Probability (0-100) that a new mage joins after winning a non-final battle.
+        - name: strictness
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [thematic, mixed, open]
+            default: open
+          description: >-
+            Content strictness level.
+            'thematic': All entities (mages, nemeses, friends, foes) from the same wave as the setting.
+            'mixed': Mages from the same wave as the setting; nemeses, friends, foes from any allowed content.
+            'open': All entities from any allowed content (maximum variety).
       responses:
         "200":
           description: Expedition packet
@@ -303,6 +315,15 @@ components:
           maximum: 100
           default: 100
           description: Probability (0-100) that a new mage joins after winning a non-final battle.
+        strictness:
+          type: string
+          enum: [thematic, mixed, open]
+          default: open
+          description: >-
+            Content strictness level.
+            'thematic': All entities (mages, nemeses, friends, foes) from the same wave as the setting.
+            'mixed': Mages from the same wave as the setting; nemeses, friends, foes from any allowed content.
+            'open': All entities from any allowed content (maximum variety).
     ExpeditionPacket:
       type: object
       additionalProperties: false
@@ -362,6 +383,7 @@ components:
             - content_waves
             - content_boxes
             - mage_recruitment_chance
+            - strictness
           properties:
             mage_count:
               type: integer
@@ -381,6 +403,10 @@ components:
               minimum: 0
               maximum: 100
               description: Probability (0-100) that a new mage joins after winning a non-final battle.
+            strictness:
+              type: string
+              enum: [thematic, mixed, open]
+              description: Content strictness level used for this expedition.
     Setting:
       type: object
       required:
