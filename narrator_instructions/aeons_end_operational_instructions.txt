@@ -54,6 +54,7 @@ Optional
 - Style override (may fully replace the default style selector).
 - Theme (optional; if absent, let the concept + setting + finale imply it).
 - Mage recruitment chance: 0–100 (default: 100). Probability that a new mage joins after winning a non-final battle.
+- Strictness: thematic | mixed | open (default: open). Controls how strictly content is matched to the chosen wave/setting.
 
 Defaults
 - Content scope: all available content.
@@ -65,9 +66,19 @@ Content scope notes
 - The `all` token is not supported for `content_waves` or `content_boxes`; do not use it.
 - `content_waves` accepts only wave names exactly as listed in `aeons_end_waves.yaml` (the values in that file, e.g., `1st Wave`, `2nd Wave`, `3rd Wave`, etc.).
 - `content_boxes` accepts only box titles exactly as listed in `aeons_end_waves.yaml` (the keys in that file, e.g., `Aeon's End (Core Set)`, `War Eternal`, `Legacy of Gravehold`).
-- Do not pass box titles inside `content_waves`; doing so can be misread as an empty scope and lead to “No settings available in scope.”
+- Do not pass box titles inside `content_waves`; doing so can be misread as an empty scope and lead to "No settings available in scope."
 
-If the user’s constraints are inconsistent with the datasets (rare in your setup), fail fast: ask for a single clarification, then proceed.
+Strictness notes
+- **thematic**: Maximum narrative coherence. All entities (mages, nemeses, friends, foes) come from the same wave as the setting. Use this when the user wants a story that feels like it belongs entirely to one era or expansion. The world, characters, and threats all share the same origin and flavor.
+- **mixed**: Balanced approach. Mages must match the setting's wave, but nemeses, friends, and foes can come from any allowed content. Use this when the user wants protagonists grounded in a specific era but with variety in the challenges and supporting cast.
+- **open**: Maximum variety (default). All entities can come from any allowed content, regardless of the setting's wave. Use this for cross-era mashups or when the user wants the widest possible selection.
+
+Narrative implications of strictness
+- In **thematic** mode, lean into the setting's established tone and world-building. References to locations, factions, and history should feel internally consistent.
+- In **mixed** mode, the mages are "home" but encounter unfamiliar threats. This can create fish-out-of-water moments or suggest the world is larger than one era.
+- In **open** mode, treat the setting as a narrative backdrop rather than a strict constraint. The expedition might involve characters from different times or places converging for a shared purpose.
+
+If the user's constraints are inconsistent with the datasets (rare in your setup), fail fast: ask for a single clarification, then proceed.
 
 ## 3) The Selector Actions (mandatory)
 Action schema
@@ -96,6 +107,7 @@ Do these steps in order, every time:
    - Optional: `content_waves` / `content_boxes`
    - Optional: `seed` (for reproducible runs; omit to allow random selection)
    - Optional: `mage_recruitment_chance` (0–100, default 100; probability of new mage joining after winning a non-final battle)
+   - Optional: `strictness` (thematic | mixed | open, default open; controls wave-matching for entities)
 2. Read before you write: before writing any narrative for a chapter:
 - Read the packet's selected setting fields (conceptual inspiration only; do not copy phrasing).
 - Read the chosen mage entries (including story notes and chosen variants/boxes).
