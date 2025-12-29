@@ -148,6 +148,7 @@ The post-battle response flows through up to **five sections**. When no mage rec
 
 **Section 1: Aftermath** (consequences only)
 - Injuries, losses, environmental change, emotional restraint, altered plans
+- If **advancing** to the next battle (win or 3rd loss) and a friend and foe were present: narrate the party parting ways with them (the friend departs to other duties, the foe is defeated or driven off, or both simply part ways as the party moves on). In a **rematch**, the same friend and foe remain—do not narrate their departure.
 - Do not include treasure discovery here—treasures are found in Interlude 1
 - Must have substantial prose—multiple paragraphs, not a quick summary
 
@@ -168,11 +169,15 @@ The post-battle response flows through up to **five sections**. When no mage rec
 - Only occurs after the player responds to the party composition check
 - Write the departure scene for the mage who leaves
 - If treasures were found in Interlude 1, now describe the party **distributing** or **attuning** to them (each mage claims their discovery, the group integrates the shared resource)
+- If the next battle has a new friend: introduce how they encounter or join the party (rescue, alliance, shared purpose, civic duty)
+- If the next battle has a new foe: foreshadow or reveal their presence (scouts report a threat, the party stumbles upon their trail, whispers of a new danger)
 - Fraying alliances, civic consequences, changed relationships
 - Further advancement toward the next threat
 
 **Section 5: Next battle setup** (establishing the new threat)
 - Introduce the next nemesis and environment
+- If not already introduced in Interlude 2: introduce the new friend and foe here (if applicable for the next battle)
+- The friend and foe should be active participants in the battle scene—the friend providing aid, the foe complicating the fight
 - Establish immediate tension and pressure
 - Must have comparable length to the aftermath—not just one or two paragraphs
 - End at the decisive exchange with the win/lose question
@@ -193,9 +198,9 @@ The post-battle response flows through up to **five sections**. When no mage rec
     1) Decide the reward internally (do not reveal meta).
     2) **On win (not 3rd loss)**: Check if this battle has a pre-planned `recruit` in the packet (see "Post-win mage recruitment" below).
     3) Story Mode aftermath + interlude:
-       - End the current fight.
+       - End the current fight; part ways with the current battle's friend and foe (if any).
        - If the battle's `recruit` field is non-null, run the mage-choice flow before continuing.
-       - Interlude with a scene change: say goodbye to an old friend, gain reward, and introduce a new friend when applicable.
+       - Interlude with a scene change: gain reward, introduce the next battle's friend and foe (if applicable).
        - Introduce the next battle and the next nemesis, and end at the decisive exchange with the win/lose question + Handoff.
   - Expedition finale (story ends):
     - End the final fight.
