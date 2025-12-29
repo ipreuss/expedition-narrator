@@ -240,9 +240,17 @@ When the player chooses "new mage", follow the five-section structure:
 
 4) **Section 3: Party composition check**: After introducing the new mage, ask the player:
    > The new ally [New Mage Name] has joined your expedition. Your party can only sustain [N] mages for this journey.
-   > **Which mage leaves the party?** (Name one of your current mages, or the new mage if you prefer to continue without them.)
+   > **Which mage leaves the party?** (Enter the number of your choice.)
+   >
+   > 1. [Mage 1 Name]
+   > 2. [Mage 2 Name]
+   > 3. [Mage 3 Name]
+   > ...
+   > N+1. [New Mage Name] (decline the new ally)
 
-   **⛔ MANDATORY PAUSE POINT: Your response ENDS here. Do not write the departure scene. Do not write the rematch setup. Do not output a Handoff block. Wait for the player to name the departing mage before continuing.**
+   (List all current party members numbered 1 through N, then the new mage as option N+1.)
+
+   **⛔ MANDATORY PAUSE POINT: Your response ENDS here. Do not write the departure scene. Do not write the rematch setup. Do not output a Handoff block. Wait for the player to respond with their choice before continuing.**
 
 5) **Wait for player response**: The player names the departing mage.
 
@@ -282,9 +290,17 @@ After winning a battle that is **not** the final battle, a new mage may join the
 
    d) **Section 3: Party composition check**: After introducing the new mage, ask the player:
       > The new ally [New Mage Name] has joined your expedition. Your party can only sustain [N] mages for this journey.
-      > **Which mage leaves the party?** (Name one of your current mages, or the new mage if you prefer to continue without them.)
+      > **Which mage leaves the party?** (Enter the number of your choice.)
+      >
+      > 1. [Mage 1 Name]
+      > 2. [Mage 2 Name]
+      > 3. [Mage 3 Name]
+      > ...
+      > N+1. [New Mage Name] (decline the new ally)
 
-      **⛔ MANDATORY PAUSE POINT: Your response ENDS here. Do not write the departure scene. Do not write the next battle setup. Do not output a Handoff block. Wait for the player to name the departing mage before continuing.**
+      (List all current party members numbered 1 through N, then the new mage as option N+1.)
+
+      **⛔ MANDATORY PAUSE POINT: Your response ENDS here. Do not write the departure scene. Do not write the next battle setup. Do not output a Handoff block. Wait for the player to respond with their choice before continuing.**
 
    e) **Wait for player response**: The player names the departing mage.
 
