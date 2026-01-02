@@ -2,10 +2,11 @@
 foes:
 - name: The Cultist
   box: The Descent
-  background: 'In an abandoned city Adelheim spots another human across the firelight
-    and wonders why they must fight fellow survivors.  The man’s mind has been warped
-    by the Void—he mumbles to himself and tends a flickering ritual.  This
-    cultist now serves the Nameless and fuels dark rites to summon greater horrors.
+  background: 'A human whose mind has been warped by the Void. He mumbles incoherently
+    to himself while tending a flickering ritual brazier, his eyes glazed with fanatical
+    devotion. Now a servant of the Nameless, this cultist fuels dark rites designed
+    to summon greater horrors into the world. He moves with jerky, unnatural motions
+    and shows no recognition of his former humanity.
 
     '
   appearance: A ragged figure clutching a burning brazier, eyes glazed with madness.
@@ -22,10 +23,12 @@ foes:
     '
 - name: The Swarm
   box: The Descent
-  background: 'Leisan warns that the Void is full of tiny creatures that burrow into
-    the ground.  If ignored a single larva becomes a swarm; she has seen them devour
-    entire camps before anyone knew what was happening.  This
-    foe commands a hive of Broodlings and overwhelms mages with numbers.
+  background: 'A hive-mind of tiny Void creatures that burrow through the ground and
+    multiply with terrifying speed. What begins as a single larva quickly becomes a
+    seething mass of insectoid horrors capable of devouring entire camps before anyone
+    realizes the danger. The Swarm commands legions of Broodlings that pour from tunnels
+    and cracks, overwhelming defenders through sheer numbers rather than individual
+    strength.
 
     '
   appearance: A seething mass of insectoid minions pouring out of tunnels and cracks.
@@ -42,10 +45,12 @@ foes:
     '
 - name: The Corrosion
   box: The Descent
-  background: 'Raven encounters a monstrous creature that knows only hunger and thirst.  It
-    scrapes through tunnels trying to regain warmth and devours everything in its
-    path.  Though she feels a flicker of pity for its desperation,
-    she knows it will reduce Gravehold to dust if unchecked.
+  background: 'A formless abomination driven by endless hunger and desperate need for
+    warmth. It scrapes through tunnels, dissolving stone and metal alike as it searches
+    for sustenance. The Corrosion knows nothing but consumption—it devours everything
+    in its path with mindless determination. Though pitiable in its desperation, this
+    creature will reduce cities to dust if left unchecked, leaving only rust and ruin
+    in its wake.
 
     '
   appearance: A formless mass of rust and acid slithering along the cavern walls,
@@ -62,10 +67,11 @@ foes:
     '
 - name: The Scavenger
   box: The Descent
-  background: 'Mazahaedron notes that not all Void creatures become Nameless.  Some
-    lurk in shadows, creeping up on half‑dead victims to finish them off.  The
-    Scavenger prowls behind the main battle, waiting for wounded mages to falter so
-    it can strike.
+  background: 'Not all Void creatures become Nameless—some lurk in shadows, patient
+    and opportunistic. The Scavenger is such a beast, creeping along the edges of
+    battle to finish off the wounded and weakened. It prowls behind the main conflict,
+    watching with predatory cunning for any defender to falter. When it senses weakness,
+    it strikes with terrifying speed, dragging its prey into the darkness.
 
     '
   appearance: A gaunt, shadowy beast with elongated claws and a gaping maw, stalking
@@ -83,10 +89,12 @@ foes:
     '
 - name: The Storm
   box: The Caverns
-  background: 'Fawn recalls battling in a thunderstorm where the ground turned to
-    mud and lightning struck randomly.  She groans that her hair was a mess and that
-    the combat was miserable.  The Storm embodies this
-    chaotic weather, lashing out at the mages with blasts of electricity.
+  background: 'A living tempest of Void energy that crackles with purple lightning and
+    rolls across the battlefield like a sentient thundercloud. The Storm embodies chaos
+    itself, lashing out with unpredictable bolts of electricity that seek out concentrations
+    of magical power. It turns the ground to mud, fills the air with ozone, and makes
+    every step treacherous. Those who gather too much arcane energy become lightning
+    rods for its wrath.
 
     '
   appearance: A roiling cloud of purple lightning hovering over the battlefield, crackling
@@ -103,10 +111,12 @@ foes:
     '
 - name: The Traitor
   box: The Abyss
-  background: 'The Traitor believes his allies are small‑minded fools who fail to
-    grasp the power within reach.  He claims he will become the strongest mage so
-    that he can protect everyone—even if he must betray them now.  His
-    selfish determination drives him to harness dark forces at any cost.
+  background: 'A mage who has turned against their own kind, corrupted by the seductive
+    promise of Void power. The Traitor views former allies as small-minded fools who
+    fail to grasp the power within reach. With skin cracked like obsidian and eyes
+    blazing with dark energy, they wield familiar magic twisted to terrible purpose.
+    Convinced that only through embracing the Void can they become strong enough to
+    protect what remains, the Traitor fights with the desperate fury of the self-righteous.
 
     '
   appearance: A once‑heroic mage whose eyes blaze with Void energy; his skin is cracked
