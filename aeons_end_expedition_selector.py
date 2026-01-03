@@ -445,7 +445,20 @@ def select_expedition(
         try:
             chosen_wave = _choose(rng, wave_candidates)
             setting_payload = copy.deepcopy(settings_by_wave[chosen_wave])
+
+            # Handle setting_variants: if present, randomly select one variant
+            chosen_variant_name: Optional[str] = None
+            if "setting_variants" in setting_payload:
+                variants = setting_payload.pop("setting_variants")
+                variant_names = list(variants.keys())
+                chosen_variant_name = _choose(rng, variant_names)
+                variant_data = variants[chosen_variant_name]
+                # Merge variant-specific fields into the base payload
+                setting_payload.update(variant_data)
+
             chosen_setting = {"wave_name": chosen_wave, **setting_payload}
+            if chosen_variant_name:
+                chosen_setting["setting_variant"] = chosen_variant_name
 
             # Apply strictness-based filtering
             # Get boxes for the chosen wave (used for thematic/mixed modes)

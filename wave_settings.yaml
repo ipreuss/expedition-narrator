@@ -62,3 +62,23 @@ wave_settings:
       Trust and betrayal within leadership; generational conflict over how to confront the Void; exile and belonging; the tension between protecting the familiar and risking progress; whether to fight the Void or learn to coexist with it; accountability for past failures; the cost of rigid ideology when survival demands adaptation; and the rivalry between New Gravehold and Azer over humanity's future.
     possible_expeditions: |
       Investigate rumours of a traitor among the Council of Elders; escort exiled mages safely beyond New Gravehold's borders; journey into the Void alongside Xaxos to witness what he has discovered; defend New Gravehold against those who would exploit its internal divisions; mediate between factions before open conflict tears the city apart; travel to Azer to negotiate or confront its leaders; uncover the connections between the rival settlement and those who were banished from New Gravehold.
+  7th Wave:
+    setting_variants:
+      past:
+        setting: |
+          Port Hanon is a small coastal city compared to Erythiza or the great coastal cities of M'harlk, but it radiates with energy.  Trains propelled by breach magic screech to a halt at the station, breach-powered locks lift ships from river to dock, and merchants hawk aether-filled gems, clockwork toys, and books to journey-wearied mages.  Port Hanon is a place for stopping briefly on your way somewhere else—not a place for staying.  Two hours by train along the river lies Erythiza, a city of glittering glass windows and buildings soaring above the trees, filled with sparks of magic and innovation from its renowned university.  Lifts carry people up floors without draw strings, sound amplifiers let officials be heard blocks away, and permanent breaches let the less magically adept siphon energy they cannot create themselves.  Scholars there research breach magic, extra-dimensional space, and the origins of corruption—but rumors swirl of experiments gone terribly wrong, and corruption now spreads faster than anyone thought possible.
+        mood: |
+          Bustling transit chaos gives way to quiet tension on the night shift.  Corruption is subtle here—nine out of ten reported "Nameless" turn out to be ordinary people minding their own business, and even guards have been falsely accused.  Yet something has changed: corruption now takes hold in seconds rather than years, transforming innocents into monsters before anyone can react.  Unlikely alliances form in moments of crisis as first-time fighters stand alongside veterans, and travelers who met by chance become companions racing toward a desperate gamble to save the world.  Grief mingles with determination as beloved places and people are lost, and the only path forward may demand sacrificing an entire city to lock the corruption away forever.
+        themes: |
+          The blurred line between human and Nameless; corruption that defies natural progression; unlikely alliances among strangers; science and magic intertwined; the consequences of research pushed too far; protecting travelers and citizens; transit and transience—people passing through on their way elsewhere, drawn into events beyond their control; sacrifice and the impossible choices required to save the world; hope for a future free of corruption.
+        possible_expeditions: |
+          Defend Port Hanon's market from sudden Nameless outbreaks; board the breach-powered train to Erythiza to investigate the source of the corruption; protect passengers as gigantic Nameless attack transit routes; navigate the tension between following orders and doing what must be done; confront the consumed city of Erythiza and open a massive breach to push the corruption into extra-dimensional space, sacrificing the city to save the world.
+      future:
+        setting: |
+          [Future setting to be added]
+        mood: |
+          [Future mood to be added]
+        themes: |
+          [Future themes to be added]
+        possible_expeditions: |
+          [Future expeditions to be added]

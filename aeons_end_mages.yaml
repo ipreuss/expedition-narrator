@@ -984,14 +984,18 @@ mages:
       is becoming a cage unless the cult is exposed.
 - id: auren
   name: Auren
-  background: Auren bears scales as a visible sign of corruption yet retains her humanity.  In
-    her introspective lore she speaks of crafting devices and inventions so that future
-    generations will remember her when she has succumbed to the corruption. Auren
-    knows her mortality lies not in her flesh but in her creations.
-  appearance: A woman with patches of scales on her skin, carrying mechanical implements.
-  strengths: Her ability allows her to cast spells prepped to relic breaches without
+  background: Auren bears scales as a visible sign of corruption yet retains their humanity.  In
+    their introspective lore they speak of crafting devices and inventions so that future
+    generations will remember them when they have succumbed to the corruption.  Auren
+    knows their mortality lies not in their flesh but in their creations.  When an idea
+    takes hold, they become absorbed in tinkering with metallic bits and machinery parts,
+    hard to pull away until the device is complete.  They collaborate with the scholar
+    Kavoc, building machines that attach to breach aether and detect energy readings.
+  appearance: A person with patches of scales on their skin, carrying mechanical implements
+    and trinkets.
+  strengths: Their ability allows them to cast spells prepped to relic breaches without
     exhausting them, enabling repeated spell use
-  weaknesses: Auren’s strategy requires building relics and may be slow to start
+  weaknesses: Auren's strategy requires building relics and may be slow to start
   variants:
   - variant_id: past_and_future
     variant_name: Past and Future
@@ -1003,8 +1007,10 @@ mages:
   background: Willow loves the thrill of using magic, even though the elders warn
     that each spell cuts years off her life.  She rebels against caution, proclaiming
     that she would rather enjoy her freedom and joy than live fearfully.  She accepts
-    that her magic may shorten her lifespan but sees beauty in the risk.
-  appearance: A carefree young mage with a mischievous grin.
+    that her magic may shorten her lifespan but sees beauty in the risk.  She was
+    traveling to Erythiza to apply to the university when she found herself caught
+    up in events far beyond her expectations.
+  appearance: A carefree young mage with dyed purple hair and a mischievous grin.
   strengths: Her ability generates Knowledge tokens and lets her place acquired cards
     on top of her deck or heal Gravehold
   weaknesses: Willow’s high‑risk spells consume her life; her deck can be fragile
@@ -1021,9 +1027,13 @@ mages:
     morning she measures the tendrils that extend from her back, accepting that she
     will soon descend into Gravehold as a Nameless.  She worries that her son Solein
     focuses too much on curing her corruption rather than spending time with her,
-    and she hopes he will understand that her time is short.
-  appearance: A middle‑aged woman with tendrils emerging from her back, concealed
-    under sleeves.
+    and she hopes he will understand that her time is short.  Solein knows more about
+    corruption than almost anyone—he was researching it in Erythiza when the city was
+    consumed.  Ona helped sacrifice the city to save the world, knowing her son was
+    among those lost.  Through her tears she whispered, "Now Solein...all those poor
+    souls can rest in peace."
+  appearance: A middle‑aged woman with pink tendrils emerging from her back, concealed
+    under sleeves.  She leans on a cane that radiates energy from its end.
   strengths: Ona builds Knowledge by swapping her unique starter cards into an ability
     zone
   weaknesses: She requires careful management of her swap zone and ability zone
@@ -1035,13 +1045,15 @@ mages:
     box: Past and Future
 - id: nadea
   name: Nadea
-  background: Serving as a town guard in Port Hanon, Nadea believes it is inevitable
-    that humans become Nameless.  She criticises those who cling to their names and
+  background: Serving as a town guard in Port Hanon under Captain Talie, Nadea believes it is
+    inevitable that humans become Nameless.  She criticises those who cling to their names and
     refuse to accept the natural progression of corruption.  Nadea vows to give up
     her name and descend voluntarily when her time comes, preserving her dignity and
-    protecting her community.
-  appearance: A stern guard wearing practical armor and carrying inscriptions and
-    tourmaline stones.
+    protecting her community.  She has worked the night shift at the city gate for decades,
+    preferring her own company after her superiors decided her demeanor "left something to
+    be desired."
+  appearance: A stern guard wearing practical armor with flowing ribbons on her uniform,
+    carrying a spear along with inscriptions and tourmaline stones.
   strengths: Her ability, Wall Off, heals a player and, if she has five or more non‑starter
     cards in her set aside pile, grants an ally a spell into their hand
   weaknesses: Focuses on defensive play; her offensive potential is limited
@@ -1199,11 +1211,17 @@ mages:
   name: Kavoc
   background: Kavoc is an ambitious scholar devoted to researching aether and breach
     magic.  He admires past mages like Antoni Lexive, Kiri Maesan, and Kwananya Ja'ar
-    and strives to surpass their legacy.  Sleep-deprived and passionate, he says,
-    "My hands tremble... When I think about the implications of my research, my
-    vision blurs with excitement!"
-  appearance: Portrayed as a Breach Scholar with the worn look of someone who spends
-    sleepless nights in research.  His eyes show the intensity of academic obsession.
+    and strives to surpass their legacy.  At the University of Erythiza he was part of
+    a group making fundamental breakthroughs in breach magic and extra-dimensional space,
+    cross-referencing findings with scientists studying corruption origins.  He discovered
+    that corruption particles, smaller than the eye can see, concentrate in corrupted areas.
+    He suspects a professor conducted inadvisable experiments with these particles that
+    went terribly wrong.  Sleep-deprived and passionate, he says, "My hands tremble...
+    When I think about the implications of my research, my vision blurs with excitement!"
+    He collaborates with Auren on machines that detect breach energy readings.
+  appearance: A young man with curly hair, a wild expression, and sharp blue eyes.  He
+    has the worn look of someone who spends sleepless nights in research, his eyes showing
+    the intensity of academic obsession.
   strengths: His Experiment ability (4 charges) lets an ally draw two cards while
     Kavoc gains 3 knowledge markers.  His swap cards Brain Lance and Soulstone
     are stronger versions of his starters.

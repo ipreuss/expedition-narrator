@@ -714,11 +714,16 @@ nemeses:
 - name: Stonemonger
   box: Past and Future
   battle: 2
-  background: 'Brama recounts a great invisible eruption that corrupted everything
-    it touched, causing people to mutate into monstrous forms.  Those who survived
-    became mindless enemies to their friends.  The Stonemonger is one such beast born
-    from that wave of corruption. '
-  appearance: A grotesque mass of stone and flesh, its limbs fused with cavern walls.
+  background: 'The Stonemonger emerges when corruption takes hold in mere seconds,
+    transforming an ordinary person into something monstrous.  In Port Hanon a merchant
+    was overtaken mid-transaction, his body twisting as he grabbed fistfuls of aether-filled
+    gems from his stall.  As each gem scattered across the ground, corruption spiraled
+    out in purple waves, twisting fleeing customers beyond recognition in a single second.
+    Brama recounts similar eruptions that corrupted everything they touched, turning
+    survivors into mindless enemies of their former friends.'
+  appearance: A grotesque mass of stone and flesh with limbs that stretch unnaturally
+    and skin that tears open in places.  It grasps greedily at gems and aether, spreading
+    corruption with every touch.
   strengths: Generates corruption tokens that spread across supply piles, making cards
     more expensive and painful to acquire
   weaknesses: Players can cleanse corruption by destroying certain cards
@@ -752,15 +757,22 @@ nemeses:
 - name: Erythiza, Consumed
   box: Past and Future
   battle: 4
-  background: 'The ancient city of Erythiza vanished when a catastrophe struck.  In
-    the lore, a narrator pleads that those heroes who saved the world by stopping
-    the calamity must know their sacrifice mattered.  Erythiza returned as a Nameless,
-    consumed by corruption and seeking to finish what the disaster started. '
-  appearance: A floating ruin covered in glowing red runes, with tendrils of smoke
-    emerging from crumbling towers.
+  background: 'When the mages reached Erythiza, the city of glittering glass and soaring
+    innovation had been consumed by a black, swirling storm.  The tall buildings were
+    wrapped in tendrils of mist, refugees fled in all directions, and those still trapped
+    inside had nothing human left of them.  Kavoc realized this was the center of the
+    spreading corruption—an impossibly dense concentration of corruption particles.
+    Willow proposed opening a gigantic breach to push the entire city and its corruption
+    into extra-dimensional space.  Five mages working together opened the breach, and
+    Erythiza vanished, leaving only an empty field.  Most corruption was locked away
+    forever, though some escaped to create new Nameless elsewhere.'
+  appearance: A black, swirling storm that has consumed an entire city.  Buildings
+    wrapped in tendrils of mist, the storm mutating everything it touches—birds grow
+    ten times their size, trees bend and twist, vines whip forward like grasping fingers.
   strengths: Uses corruption tokens and twisting tendrils that drain life and infect
-    players with decay
-  weaknesses: Destroying tendrils reduces its power
+    players with decay; the storm expands relentlessly
+  weaknesses: Destroying tendrils reduces its power; vulnerable to being pushed through
+    a massive breach into extra-dimensional space
 - name: The Endless Decay
   box: Origins
   battle: 3
@@ -934,14 +946,16 @@ nemeses:
 - name: Infested Mutation
   box: Past and Future
   battle: 3
-  background: 'Brama tells that memories of the great calamity are cracked and faded,
-    but elders describe an invisible eruption that brought corruption in its wake,
-    rapidly twisting everything it touched into monstrous forms.  Those who remained
-    human found themselves surrounded by friends turned mindless enemies.  The Infested Mutation
-    is such a mass of corrupted life born from that explosion, driven by hunger and
-    rage. '
-  appearance: A roiling mass of limbs, eyes and sinewy tentacles constantly sprouting
-    new growths.
+  background: 'The Infested Mutation is gigantic—far larger than any normal Nameless.
+    On the train from Port Hanon to Erythiza, one such creature attached itself to the
+    breach engine, subsuming it entirely into its mass.  It inched along the train like
+    a caterpillar, leaving a black trail of toxic sludge in its wake.  Passengers from
+    the first car stumbled out already infected, their bodies melting into goo.  Kavoc,
+    witnessing the horror, could barely believe it: "That can''t be a Nameless.  That''s
+    gigantic.  They don''t get that big, do they?"'
+  appearance: A gigantic, sickly blistered mass with a semi-transparent goo stomach
+    through which swallowed objects float visibly.  It moves like a caterpillar, leaving
+    a black trail of toxic sludge, and constantly sprouts new growths of limbs and tentacles.
   strengths: Spawns oozes and mutated minions from its ooze deck
   weaknesses: Destroying ooze minions and purging mutation cards reduces its power
 - name: Paradox of Myth and Bone
