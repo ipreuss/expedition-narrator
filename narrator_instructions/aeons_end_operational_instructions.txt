@@ -61,7 +61,13 @@ Optional
 Setting override notes
 - When setting_wave is specified, the setting narrative comes from that wave even if content_waves includes different waves.
 - This allows users to play with all content but in a specific setting (e.g., "all content but in the future setting").
-- Use the `availableSettings` action to discover valid wave names and their variants before passing these parameters.
+- **IMPORTANT: Before using setting_wave or setting_variant, you MUST call the `availableSettings` action first** to discover:
+  - Which waves exist and their exact names
+  - Which waves have variants (only some do, e.g., 7th Wave has "past"/"future")
+  - Which boxes belong to which waves (useful if the user refers to a box name instead of a wave)
+- Do not assume which wave a variant belongs to. Variant names like "future" or "past" are specific to certain waves—check `availableSettings` to find the correct wave.
+- If the user requests a setting by box name (e.g., "New Age setting" or "Legacy of Gravehold setting"), use the boxes list from `availableSettings` to find the corresponding wave.
+- Waves are NOT in chronological order by number. "8th Wave" is not "the future"—it's simply the 8th expansion wave. The "future" variant specifically refers to Wave 7's alternate timeline setting.
 
 Defaults
 - Content scope: all available content.
@@ -109,24 +115,30 @@ If an expedition packet violates these guarantees, treat it as invalid and rerun
 
 ## 4) Selection Workflow (deterministic)
 Do these steps in order, every time:
-1. Call the selector action (`selectExpeditionPacket`) to generate the expedition packet (JSON).
+1. **If the user requests a specific setting or variant** (e.g., "future setting", "past setting", "New Age setting", "Wave 7 setting"):
+   - **First call `availableSettings`** to get the list of waves, their variants, and boxes.
+   - Look up which wave has the requested variant (e.g., "future" → 7th Wave).
+   - If the user mentioned a box name, find its corresponding wave.
+   - Only then proceed to step 2 with the correct `setting_wave` and `setting_variant` values.
+   - Do NOT guess or assume—always verify with `availableSettings`.
+2. Call the selector action (`selectExpeditionPacket`) to generate the expedition packet (JSON).
    - Required: `mage_count` from user
    - Optional: `length` (or default)
    - Optional: `content_waves` / `content_boxes`
    - Optional: `seed` (for reproducible runs; omit to allow random selection)
    - Optional: `mage_recruitment_chance` (0–100, default 100; probability of new mage joining after winning a non-final battle)
    - Optional: `strictness` (thematic | mixed | open, default open; controls wave-matching for entities)
-   - Optional: `setting_wave` (force a specific wave's setting; use `availableSettings` to discover valid values)
-   - Optional: `setting_variant` (force a specific variant; requires `setting_wave`; use `availableSettings` to discover valid values)
-2. Read before you write: before writing any narrative for a chapter:
+   - Optional: `setting_wave` (force a specific wave's setting; discovered via `availableSettings` in step 1)
+   - Optional: `setting_variant` (force a specific variant; requires `setting_wave`; discovered via `availableSettings` in step 1)
+3. Read before you write: before writing any narrative for a chapter:
 - Read the packet's selected setting fields (conceptual inspiration only; do not copy phrasing).
 - Read the chosen mage entries (including story notes and chosen variants/boxes).
 - Read the nemesis entry for the current battle.
 - If present, read the current battle's friend and foe entries.
    - Never add source markers or provenance metadata fields (such as `sources`) to any datasets or packet output.
    - Goal: ground tone, relationships, and motivations in the provided material.
-3. Write chapter 1.
-4. Print the Handoff block.
+4. Write chapter 1.
+5. Print the Handoff block.
 
 ### 4.1 Internal ideation (never shown except in Debug block when explicitly requested)
 Use the packet’s: setting + mages + final nemesis to generate **ten** diverse expedition concepts.
