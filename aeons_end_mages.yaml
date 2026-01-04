@@ -1136,9 +1136,12 @@ mages:
     who feels unchallenged in her peaceful homeland.  She yearns to accomplish great
     things and save the world like the heroes of Old Gravehold legends.  She is
     frustrated that her city is safe from the Nameless but offers little room for
-    adventure and glory.
-  appearance: A powerful, determined young mage with an aggressive stance.  Her design
-    reflects her ambition and desire to prove herself as a hero.
+    adventure and glory.  Quick-witted and optimistic, she counters her companions'
+    grumpiness with jokes and sees dangerous places as opportunities worth exploring.
+    "Maybe into a dangerous place if I have to spend a little extra time getting them
+    out.  They're worth it."
+  appearance: A powerful, determined young mage with an aggressive stance and a ready
+    smile.  Her design reflects her ambition and desire to prove herself as a hero.
   strengths: Her Fusion Reaction ability (5 charges) lets her retrieve up to two
     spells from her discard and cast up to three prepped spells, making her a
     powerful aggressive mage with high cycling potential.
@@ -1238,9 +1241,14 @@ mages:
     as companions, she developed an unusual bond with these beings.  Her father
     taught her to see the Nameless as individuals—"some good, some bad, some angry,
     some scared, some curious. Just like us."  She followed a Void creature through
-    a portal to another reality.
-  appearance: A young woman with an affinity for Void creatures.  Her design reflects
-    her unique upbringing among beings others would fear.
+    a portal to another reality.  In the Future expedition, she is found living alone
+    in the wasteland near the Changeling Nest—one of the children "collected" by the
+    Changeling who somehow escaped.  Despite her unsettling origins, she remains
+    relentlessly cheerful, bouncing when she walks and calling Shoshana "big ears lady."
+    She knows the True Void intimately and guides her companions through its darkness.
+  appearance: A young woman with an affinity for Void creatures, her black hair pushed
+    into a rough bun.  Her smile shows more teeth than it should, hinting at her
+    transformation.  She moves with unnatural energy and cheer.
   strengths: Her Pack Tactics ability (4 charges) lets her retrieve minions from
     discard and prep spells, or deal 3 damage to a minion.  Her minions count as
     spells dealing damage based on nemesis tier (3/6/9).
@@ -1254,11 +1262,17 @@ mages:
 - id: naftir
   name: Naftir
   background: Naftir is a descendant of Xaxos, a man corrupted by the Void.  He says,
-    "Spending time in the Void changes a person. It twists them, deep down."  Though
-    he has never been in the Void himself, he feels its influence through his lineage
-    and fears the monster within might emerge.
+    "Spending time in the Void changes a person. It twists them, deep down."  His
+    great-grandmother grew up in the Void, and Naftir is "still paying the price even
+    after all these years."  Though he has never entered the Void himself, he knows
+    its dangers intimately through family stories and lore.  Pragmatic and cautious,
+    he urges companions to think before rushing into the Void, even when someone they
+    love has been taken.  In the Duskling Tower, he confronts Corruption's Core—a creature
+    that bears his features, a dark reflection of his bloodline.  When they meet, Naftir's
+    eyes glow blue as the corruption recognizes something of itself in him.
   appearance: Known as the Void Inheritor, his appearance hints at the corruption
-    lurking in his bloodline.  His eyes carry the weight of ancestral darkness.
+    lurking in his bloodline.  His eyes carry the weight of ancestral darkness, and
+    in moments of confrontation with void creatures, they glow an eerie blue.
   strengths: His Amplify ability (4 charges) places Link tokens on breaches or casts
     all prepped spells from a linked breach at once.  His Consuming Breach stacks
     spells and deals 3 bonus damage after the third.
@@ -1275,9 +1289,15 @@ mages:
     abilities.  Lacking these gifts, he developed artificial solutions, finding old
     blueprints from an inventor named Auren and modifying them.  Over time he
     implanted mechanical components—shoulders, chest, neck, hands—saying "I could
-    not stop improving."
+    not stop improving."  Grumpy and antisocial, he prefers fishing alone in the river
+    to dealing with people.  "I hate people," he mutters, though he fights alongside
+    his companions when danger strikes, even when it costs him injuries like the cut
+    on his wrist from battle.  Beneath his gruff exterior lies unexpected philosophy:
+    "We all have our own dark side," he observes, accepting moral complexity in others
+    where some see only threat.
   appearance: Part human, part machine, part magic.  He has mechanical prosthetics
     on various body parts, making him a hybrid of biological and mechanical being.
+    Often found knee-deep in the river with a fishing rod.
   strengths: His Loop Data ability (6 charges) lets him acquire up to two spells
     costing 5 or less and retrieve up to two spells from discard.  He can control
     up to 6 breaches.
@@ -1294,9 +1314,16 @@ mages:
   background: Shoshana comes from a family of Tethers from the swamp village Faen.
     A descendant of Tyreesia and Kiryra, she was initially forbidden from becoming
     a Tether by her grandmother who believed "love is a weakness."  Shoshana
-    rejects this, saying "I do not believe love is a weakness."
-  appearance: A mage with characteristic tattoos symbolizing her role as a Tether.
-    Her design reflects her bond with her chosen ally.
+    rejects this, saying "I do not believe love is a weakness."  She has enhanced
+    senses—advanced auditory implants that let her detect approaching people from
+    great distances.  Patient and observant, she often lies in the grass, sensing the
+    world around her before springing into action.  Her tether bond to Harmony runs
+    deep—when Harmony was pulled into the Void, Shoshana's guilt erupted into boiling
+    rage.  "We can't just abandon her!" she snarled, her patience giving way to fierce
+    protectiveness.
+  appearance: A mage with characteristic tattoos symbolizing her role as a Tether,
+    and subtle mechanical enhancements to her hearing.  Her design reflects her bond
+    with her chosen ally and her heightened awareness.
   strengths: Her Redirect Flow ability (6 charges) lets her tethered ally take an
     extra turn after hers.  At game start she chooses an ally who receives a Tether
     token and replaces a starter card with Soul Facet.

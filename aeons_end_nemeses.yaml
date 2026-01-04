@@ -986,28 +986,37 @@ nemeses:
 - name: The Changeling Nest
   box: Past and Future
   battle: 3
-  background: 'The Past and Future expansion lists The Changeling Nest as one of its
-    nemeses.  This nest is a living hive of cocoons that hatch into unpredictable
-    creatures, each changing form to adapt to the mages’ strategies. '
+  background: 'The Changeling Nest is a living hive that collects children from the
+    surrounding lands.  Villagers speak of it in terrified whispers—those taken by the
+    Changeling "warp up to become" something else entirely.  Lily, a strange girl with
+    too many teeth in her smile, was one such collected child who somehow escaped or
+    was released.  The nest hatches unpredictable creatures from its cocoons, each
+    changing form to adapt to the mages'' strategies.'
   appearance: A sprawling nest covered in pulsing cocoons and writhing vines, with
-    strange creatures emerging from within.
+    strange creatures emerging from within.  Children''s belongings lie scattered at
+    its base.
   strengths: Starts with multiple cocoons in play; its unleash triggers cause damage
     based on the number of cocoons and hatch new minions
-  weaknesses: Destroying cocoons reduces the nest’s damage and prevents new minions
+  weaknesses: Destroying cocoons reduces the nest's damage and prevents new minions
     from spawning
 - name: Corruption's Core
   box: Past and Future
   battle: 4
-  background: 'Xaxos’s journal describes how void essence is the opposite of aether:
-    it breaks things down rather than building them.  In one entry he writes that
-    the void has gnawed at his body, turning it scaly, and speculates that a piece
-    of their world may have been consumed and twisted into the Corruption’s Core.  This
-    corrupted heart of the void hungers to reduce all life to dust. '
-  appearance: A pulsing core of black and violet energy surrounded by tendrils of
-    crackling void.
-  strengths: Uses void tokens placed on breaches
+  background: 'In the Future expedition, Corruption''s Core dwells at the heart of Duskling
+    Tower—a structure taller than any castle, taller even than the legends of Old Gravehold,
+    rising in the center of a city that wanders through the True Void.  "You should not
+    have come here," it hisses.  "I have trapped it here."  The creature bears an unsettling
+    resemblance to Naftir; when the mages confront it, Naftir''s own eyes begin to glow
+    blue as the corruption recognizes something of itself in him.  This corrupted keeper
+    of the void hungers to reduce all life to dust, its glass bones and writhing form
+    a testament to what the void makes of those it claims.'
+  appearance: A corrupted creature with features resembling Naftir, surrounded by
+    pulsing black and violet energy.  Its glass bones show through corrupted flesh,
+    and tendrils of crackling void extend from its form.
+  strengths: Uses void tokens placed on breaches; its connection to Naftir's bloodline
+    gives it insight into the mages' weaknesses
   weaknesses: Players can remove void tokens or avoid casting from void-infested breaches
-    to slow its advance
+    to slow its advance; defeating it severs its hold on the Duskling Tower
 - name: Griefweaver
   box: Legacy of Gravehold
   difficulty: 8
