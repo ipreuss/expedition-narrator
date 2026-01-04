@@ -35,7 +35,22 @@ mages:
     new mages and rejecting forbidden power.  She was briefly captured by the Fungal Mesh,
     rescued by the expedition, and later helped defeat a memory‑eating Nameless.  She
     fought through the final campaigns, mourning the corrupted ally lost to the Void
-    while committing to rebuild and train New Gravehold’s defenders.
+    while committing to rebuild and train New Gravehold's defenders.  In The Descent,
+    Brama joins the Followers and leads an expedition to find Karek, the fabled city
+    with the brass dome—a legend she has dreamed of her whole life.  When the walls
+    finally loom on the horizon, her legs shake with the joy of seeing that the city
+    is real and solid.  But inside she finds only horror—a miles-wide mausoleum of
+    green glass, families frozen mid-flight, children reaching for parents who could
+    not save them.  She rescues Raven, last survivor of the First Tribe, and learns
+    that Karek was the original Gravehold.  When monsters close in, she watches
+    Thraxir—her friend, her Commander—die holding the line so she can blast open the
+    city gates with her sister-words.  She memorizes the empty gray of his eyes,
+    bites her lip until it bleeds, and keeps moving.  In the final battle against
+    The Wrath, she loses Janti too—her lover, found dying in the darkness hours after
+    victory.  Brama kisses her as she dies, takes Janti's Sister necklace and staff,
+    and vows to protect Gravehold and be the leader Janti believed she could be.
+    The campaign ends with Brama holding Janti's staff, watching the signal fire
+    burn above reclaimed Karek, knowing there is much work to be done.
   variants:
   - variant_id: aeon_s_end_core_set
     variant_name: Aeon's End (Core Set)
@@ -411,7 +426,9 @@ mages:
     background: In The Descent, Mazahaedron is known as The Monk.  He feels vibrations
       through the earth of fleeing humanity and their pursuers.  He finds comfort
       in nature's heartbeat—in trees and mountains—and sees humanity as small but
-      loved by the earth.
+      loved by the earth.  Though he has not left his cave in many decades, he guides
+      Brama's expedition to Karek, moving confidently down old roads and paths long
+      obscured by undergrowth as if he walked them only yesterday.
     appearance: Known as The Monk, he maintains his connection to the earth and
       spiritual nature.
     strengths: His Mantra of Earth ability (5 charges) lets him acquire a card
@@ -916,7 +933,12 @@ mages:
   story_notes: A legendary mage of old Gravehold, Thraxir vanished into the Void
     and returned centuries later as the Knight of Shackles.  During the Outcasts
     expedition he confirmed the fountain of souls existed and urged the mages to
-    destroy it rather than repeat his fate.
+    destroy it rather than repeat his fate.  In The Descent timeline, he dies a
+    hero's death outside the gates of Karek—holding off a massive clawed monster
+    so Brama and the others can escape into the city.  His last words to Brama are
+    "I'll be right behind you, Sister. I'm just keeping this big lout occupied."
+    The monster's claws slice through him, cutting him in two as easily as ripping
+    paper.  Brama memorizes the empty gray of his eyes before turning away.
   variants:
   - variant_id: outcasts
     variant_name: Outcasts
@@ -1099,11 +1121,24 @@ mages:
     box: Evolution
 - id: janti
   name: Janti
-  background: Janti defied the elders by learning the sister‑words despite being born
-    a follower.  She recounts that she heard the sister‑words within herself, bridging
+  background: Janti defied the elders by learning the sister-words despite being born
+    a follower.  She recounts that she heard the sister-words within herself, bridging
     the void in her chest, and worked twice as hard to prove she deserved recognition
-    as the woman she always knew she was. Janti now welcomes challenges after accomplishing
-    the impossible and earning her place among the sisterhood.
+    as the woman she always knew she was.  Janti now welcomes challenges after accomplishing
+    the impossible and earning her place among the sisterhood.  She and Brama are
+    lovers, though they show it through quiet moments—a squeezed hand when Karek
+    comes into view, dark humor when plans go wrong.  After Thraxir falls, Janti
+    steps forward with pragmatic counsel, suggesting they rest and train more mages
+    to use alternative magic from Fawn's books.
+  story_notes: In The Descent, Janti dies in the final battle for Karek.  Mortally
+    wounded while fighting The Wrath, she is found by Brama hours later, stretched
+    out in the darkness with her hands pressed into her stomach trying to hold back
+    the blood.  "Looks like we won," she says with a weak grin.  When Brama sobs
+    that she is not a leader, that she failed Thraxir and makes all the wrong decisions,
+    Janti cups her face and says, "You are a leader. You made a plan. You kept
+    Gravehold safe."  Her last words are "I'll always be with you. Always."  Brama
+    kisses her as she dies, then takes Janti's Sister necklace and staff, whispering
+    prayers over each bead before slipping the necklace over her own head.
   appearance: A determined mage with long hair and a deck of infusion relics.
   strengths: Her ability, Interlace, lets her gain a random Infusion relic or destroy
     one in play to inflicts harm
@@ -1157,7 +1192,13 @@ mages:
   background: Leisan is a huntress who confronts the Nameless and collects trophies
     from defeated foes to increase her power.  She follows the rules of the Sisterhood
     of Elders for survival.  She says, "A hundred-foot-tall deer with razor claws
-    is still a deer. It runs when it is scared."
+    is still a deer. It runs when it is scared."  Thraxir is her cousin.  On the
+    expedition to Karek, she shades her eyes and peers at the distant city, noting
+    that the brass dome looks more green than copper.  When Thraxir dies holding
+    the line outside the gates, Leisan demands to know where he is—"Where's my
+    cousin?"—and later growls, "Let's show what happens when you take one of our
+    own," before charging into the final battle.  She cheers "For Thraxir!" when
+    The Wrath is driven off.
   appearance: Known as The Huntress, she wears hunter's gear and carries a lance.
     Her design shows a combative figure ready for the hunt.
   strengths: Her Manifest Monstrosity ability (6 charges) transforms her with a
@@ -1174,17 +1215,33 @@ mages:
 - id: raven
   name: Raven
   background: Raven is the last survivor of the First Tribe, a group of archivists
-    from the ancient city of Karek.  When catastrophe came and the Blighted God turned
-    her people to green glass, only she remained hidden.  She says, "I have never
-    been a storyteller. But I have also never been a fighter."
-  appearance: A mysterious archivist and keeper of ancient knowledge.  Her design
-    reflects her role as the last of her tribe, bearing the weight of lost wisdom.
+    from the ancient city of Karek—which her people called Gravehold, the original
+    Gravehold from which all others took their name.  When The Blight came and turned
+    her people to green glass, only she remained hidden, surviving alone for untold
+    years among the crystallized corpses of everyone she ever knew.  She says, "I
+    have never been a storyteller. But I have also never been a fighter."  When
+    Brama's expedition finds her, she is crouched defensively in the shadow of a
+    crumbled guard tower, long black hair carefully braided, clutching a bundle to
+    her chest, her bag filled with ripped scrolls and edible roots.  She knows the
+    maps to the archives and the path through the Caverns—knowledge that makes her
+    invaluable to those seeking to understand what destroyed her world.
+  appearance: A mysterious archivist with long black hair in careful braids, wearing
+    travel-worn clothes and carrying a bag of salvaged scrolls.  Her eyes hold the
+    haunted look of someone who has lived too long among the dead.  She clutches
+    precious bundles close, ready to bolt at any moment.
   strengths: Her Exhume ability (5 charges) grants 4 knowledge markers and reveals
     cards from her Forgotten Ritual Deck.  Her four Archive Breaches grant 1 knowledge
     marker per spell cast.
   weaknesses: High complexity (8) requires careful planning and knowledge token
     management.
-  story_notes: Raven is the mother of Xaxos in The Abyss timeline.
+  story_notes: Raven is the mother of Xaxos in The Abyss timeline.  In The Descent,
+    she joins Brama's expedition after being rescued from the ruins of Karek, becoming
+    their guide through the Caverns beneath the city.  Her knowledge of the First
+    Tribe's archives proves essential, and she finally has companions after years
+    of solitude among green-glass statues of her frozen kin.  The bundle she clutches
+    so protectively is her daughter—when battle comes, Raven hands the child to Myrna
+    for safekeeping before joining the fight.  In the final speech about who they
+    are fighting for, Brama names "Raven's baby girl" among those who matter most.
   variants:
   - variant_id: the_descent
     variant_name: The Descent

@@ -932,14 +932,20 @@ nemeses:
 - name: The Blight
   box: The Descent
   battle: 3
-  background: 'According to lore, the Blight Lord was the first Nameless to touch
-    the world and turned the great city of Karek into a mountain of green glass, entombing
-    thousands.  Raven recounts seeing her family petrified in emerald glass and realising
-    that the Blight is a force of nature that continues to spread like a plague.  The
-    Blight is a shard of that primordial horror and carries its crystalline corruption
-    with it. '
+  background: 'The Blight Lord was the first Nameless to touch the world, and it
+    turned the great city of Karek—the original Gravehold—into a miles-wide mausoleum
+    of green glass, entombing thousands in gruesome perfection.  Pillars of emerald
+    crystal encase terrified faces of people frozen as they tried to flee; children
+    reach for parents who could not save them.  Raven, last of the First Tribe,
+    survived by hiding while her family crystallized before her eyes.  The Blight
+    that Brama''s expedition confronts is a shard of that primordial horror, still
+    carrying its crystalline corruption and spreading like a plague through the
+    ruins.  When mages walk through Karek, they see their own revulsion mirrored
+    in the faces of their companions—and know that the force which did this still
+    lurks in the depths below.'
   appearance: A towering tree-like monstrosity with branches of glowing emerald glass
-    and vines strangling the landscape.
+    and vines strangling the landscape.  Green-leafed bushes sprout crystalline growths,
+    and the air shimmers with particles that threaten to petrify all they touch.
   strengths: Uses blight crystals and green glass to shield itself; summons crystal
     shards that infect players and can turn their cards into useless glass
   weaknesses: Removing blight crystals weakens its defences
@@ -1143,13 +1149,24 @@ nemeses:
 - name: The Wrath
   box: The Descent
   battle: 4
-  background: 'This nemesis from The Descent has little publicly available lore.  It
-    is a monstrous avatar of rage unleashed by the Void, bent on consuming New Gravehold. '
-  appearance: A towering infernal beast with claws dripping molten lava and eyes blazing
-    with fury.
-  strengths: Uses a Rage track that advances whenever it unleashes
+  background: 'The Wrath is a towering monster that besieges Karek after Brama''s
+    expedition enters the city.  Humanoid but too tall, too thin, wearing a disfigured
+    mask, it moves faster than anyone can react and smells of singed flesh—not alive,
+    but something worse.  The creature slams into the gates hard enough to shower
+    stone dust on those inside.  Brama''s strategy is to surround it and keep
+    alternating who strikes to keep it off-balance, since a single blow from it is
+    devastating.  The battle costs Janti her life—she is mortally wounded in the
+    fighting and dies hours later in Brama''s arms.  When finally driven off, The
+    Wrath flees into the darkness, and Brama knows it will return someday—but the
+    people of Gravehold will be ready.'
+  appearance: A towering figure, humanoid but wrong—too tall, too thin, wearing a
+    disfigured mask.  It moves with unnatural speed and smells of singed flesh.
+    A signal fire on a tower drew it to the city.
+  strengths: Uses a Rage track that advances whenever it unleashes; single blows
+    are devastating enough to kill veteran fighters
   weaknesses: Players can reset the Rage track with certain card effects or by destroying
-    its minions
+    its minions; it does not seem very smart and can be kept off-balance by multiple
+    attackers alternating strikes
 
 - name: Experiment 153
   box: Outcasts
