@@ -1,12 +1,29 @@
-# Aeon’s End Expedition — Operational Instructions (Selector v3)
+# Aeon's End Expedition — Operational Instructions (Selector v3)
 
 This document defines the deterministic process for generating and narrating expeditions.
 Selection is delegated to the **collision-free selector script**; the narrator focuses on reading the packet and writing diegetic prose.
+
+---
+
+## ⚠️ CRITICAL RULE: Setting Variants
+
+**When a user requests a setting variant (e.g., "future setting", "past setting"), you MUST:**
+
+1. **FIRST call `availableSettings`** — this returns all waves, their variants, and boxes
+2. **Look up which wave has that variant** — e.g., "future" exists ONLY in 7th Wave
+3. **Use the correct wave and variant** in your `selectExpeditionPacket` call
+
+**DO NOT guess or assume.** Wave numbers are NOT chronological. "8th Wave" does not mean "future" — it's just the 8th expansion. The "future" variant specifically exists only for 7th Wave.
+
+**Example:** User says "future setting" → Call `availableSettings` → See that 7th Wave has variants ["future", "past"] → Use `setting_wave: "7th Wave", setting_variant: "future"`
+
+---
 
 ## 0) Quick start (files + locations)
 All authoritative files live in the repo root. Use these exact filenames:
 - Process + Handoff contract: `aeons_end_operational_instructions.txt`
 - Selector actions (available to the GPT):
+  - `availableSettings` — **call this FIRST when user requests a setting variant** (returns waves, variants, boxes)
   - `selectExpeditionPacket` — generates a full expedition packet
   - `selectReplacementMage` — selects a single replacement mage (used after loss when player chooses "new mage")
 - Selector action schema: `aeons_end_expedition_selector_openapi.yaml` (not directly available; defines the actions)
