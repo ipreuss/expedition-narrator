@@ -96,6 +96,22 @@ paths:
             'thematic': All entities (mages, nemeses, friends, foes) from the same wave as the setting.
             'mixed': Mages from the same wave as the setting; nemeses, friends, foes from any allowed content.
             'open': All entities from any allowed content (maximum variety).
+        - name: setting_wave
+          in: query
+          required: false
+          schema:
+            type: string
+          description: >-
+            Force a specific wave's setting (e.g., '7th Wave').
+            Use availableSettings to discover valid values.
+        - name: setting_variant
+          in: query
+          required: false
+          schema:
+            type: string
+          description: >-
+            Force a specific setting variant (e.g., 'future').
+            Requires setting_wave to be specified.
       responses:
         "200":
           description: Expedition packet
@@ -103,6 +119,34 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ExpeditionPacket"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+  /aeons_end_expedition_selector_cgi.py?operation=availableSettings:
+    get:
+      operationId: availableSettings
+      summary: Get available waves and their setting variants.
+      description: |-
+        Returns a list of all waves and their available setting variants.
+        Use this to discover valid values for setting_wave and setting_variant parameters.
+      x-openai-isConsequential: false
+      parameters:
+        - name: operation
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [availableSettings]
+      responses:
+        "200":
+          description: Available settings
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AvailableSettingsResponse"
         "400":
           description: Invalid request
           content:
@@ -324,6 +368,19 @@ components:
             'thematic': All entities (mages, nemeses, friends, foes) from the same wave as the setting.
             'mixed': Mages from the same wave as the setting; nemeses, friends, foes from any allowed content.
             'open': All entities from any allowed content (maximum variety).
+        setting_wave:
+          type: string
+          description: >-
+            Force a specific wave's setting (e.g., '7th Wave', '8th Wave').
+            Use availableSettings to discover valid values.
+            When specified, the setting is taken from this wave regardless of content_waves.
+        setting_variant:
+          type: string
+          description: >-
+            Force a specific setting variant (e.g., 'past', 'future').
+            Only valid for waves that have setting_variants.
+            Requires setting_wave to be specified.
+            Use availableSettings to discover which waves have variants.
     ExpeditionPacket:
       type: object
       additionalProperties: false
@@ -489,3 +546,30 @@ components:
       properties:
         error:
           type: string
+    AvailableSettingsResponse:
+      type: object
+      additionalProperties: false
+      required:
+        - waves
+      properties:
+        waves:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            required:
+              - name
+              - variants
+            properties:
+              name:
+                type: string
+                description: The wave name (e.g., '1st Wave', '7th Wave').
+              variants:
+                oneOf:
+                  - type: array
+                    items:
+                      type: string
+                  - type: "null"
+                description: >-
+                  List of variant names if the wave has setting_variants (e.g., ['past', 'future']),
+                  or null if the wave has no variants.

@@ -515,3 +515,119 @@ def test_production_yaml_files_are_valid():
         if filepath.exists():
             with open(filepath, encoding="utf-8") as fp:
                 yaml.safe_load(fp)  # raises if invalid YAML
+
+
+def test_get_available_settings():
+    """Test that get_available_settings returns correct structure."""
+    from aeons_end_expedition_selector import get_available_settings
+
+    result = get_available_settings(settings_yaml_path=str(ROOT / "wave_settings.yaml"))
+
+    assert "waves" in result
+    assert isinstance(result["waves"], list)
+    assert len(result["waves"]) > 0
+
+    # Check structure of each wave entry
+    for wave in result["waves"]:
+        assert "name" in wave
+        assert "variants" in wave
+        assert isinstance(wave["name"], str)
+        assert wave["variants"] is None or isinstance(wave["variants"], list)
+
+    # Check that Wave 7 has variants (past/future)
+    wave_7 = next((w for w in result["waves"] if "7th" in w["name"]), None)
+    assert wave_7 is not None
+    assert wave_7["variants"] is not None
+    assert "past" in wave_7["variants"]
+    assert "future" in wave_7["variants"]
+
+    # Check that Wave 8 has no variants
+    wave_8 = next((w for w in result["waves"] if "8th" in w["name"]), None)
+    assert wave_8 is not None
+    assert wave_8["variants"] is None
+
+
+def test_setting_wave_override(tmp_path):
+    """Test that setting_wave forces a specific wave's setting."""
+    paths, _ = build_multi_wave_data(tmp_path)
+
+    result = selector.select_expedition(
+        seed=1,
+        mage_count=2,
+        length="standard",
+        content_waves=["1st Wave", "2nd Wave"],
+        content_boxes=[],
+        mages_yaml_path=str(paths["mages"]),
+        settings_yaml_path=str(paths["settings"]),
+        waves_yaml_path=str(paths["waves"]),
+        nemeses_yaml_path=str(paths["nemeses"]),
+        friends_yaml_path=str(paths["friends"]),
+        foes_yaml_path=str(paths["foes"]),
+        setting_wave="2nd Wave",  # Force 2nd Wave setting
+    )
+
+    assert result["setting"]["wave_name"] == "2nd Wave"
+
+
+def test_setting_variant_requires_setting_wave(tmp_path):
+    """Test that setting_variant without setting_wave raises an error."""
+    paths = build_base_data(tmp_path)
+
+    with pytest.raises(ValueError, match="setting_variant requires setting_wave"):
+        selector.select_expedition(
+            seed=1,
+            mage_count=2,
+            length="standard",
+            content_waves=["1st Wave"],
+            content_boxes=[],
+            mages_yaml_path=str(paths["mages"]),
+            settings_yaml_path=str(paths["settings"]),
+            waves_yaml_path=str(paths["waves"]),
+            nemeses_yaml_path=str(paths["nemeses"]),
+            friends_yaml_path=str(paths["friends"]),
+            foes_yaml_path=str(paths["foes"]),
+            setting_variant="future",  # variant without wave
+        )
+
+
+def test_setting_wave_invalid_raises(tmp_path):
+    """Test that an invalid setting_wave raises an error."""
+    paths = build_base_data(tmp_path)
+
+    with pytest.raises(ValueError, match="setting_wave.*not found"):
+        selector.select_expedition(
+            seed=1,
+            mage_count=2,
+            length="standard",
+            content_waves=["1st Wave"],
+            content_boxes=[],
+            mages_yaml_path=str(paths["mages"]),
+            settings_yaml_path=str(paths["settings"]),
+            waves_yaml_path=str(paths["waves"]),
+            nemeses_yaml_path=str(paths["nemeses"]),
+            friends_yaml_path=str(paths["friends"]),
+            foes_yaml_path=str(paths["foes"]),
+            setting_wave="99th Wave",  # invalid wave
+        )
+
+
+def test_setting_variant_invalid_for_wave_without_variants(tmp_path):
+    """Test that setting_variant for a wave without variants raises an error."""
+    paths = build_base_data(tmp_path)  # Base data has no variants
+
+    with pytest.raises(ValueError, match="has no variants"):
+        selector.select_expedition(
+            seed=1,
+            mage_count=2,
+            length="standard",
+            content_waves=["1st Wave"],
+            content_boxes=[],
+            mages_yaml_path=str(paths["mages"]),
+            settings_yaml_path=str(paths["settings"]),
+            waves_yaml_path=str(paths["waves"]),
+            nemeses_yaml_path=str(paths["nemeses"]),
+            friends_yaml_path=str(paths["friends"]),
+            foes_yaml_path=str(paths["foes"]),
+            setting_wave="1st Wave",
+            setting_variant="future",  # 1st Wave has no variants
+        )

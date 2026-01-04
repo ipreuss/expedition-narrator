@@ -30,7 +30,7 @@ import sys
 from typing import Any, Dict, List, Optional
 from urllib.parse import parse_qs
 
-from aeons_end_expedition_selector import select_expedition, select_replacement_mage
+from aeons_end_expedition_selector import select_expedition, select_replacement_mage, get_available_settings
 
 
 REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -131,6 +131,13 @@ def _parse_strictness(value: Any) -> str:
     return val
 
 
+def _parse_optional_string(value: Any) -> Optional[str]:
+    """Parse an optional string parameter."""
+    if value is None or value == "":
+        return None
+    return str(value).strip()
+
+
 def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
     """Handle selectExpeditionPacket operation."""
     mage_count = _parse_int(data.get("mage_count"), "mage_count", required=True)
@@ -143,6 +150,8 @@ def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
     if mage_recruitment_chance is None:
         mage_recruitment_chance = 100
     strictness = _parse_strictness(data.get("strictness"))
+    setting_wave = _parse_optional_string(data.get("setting_wave"))
+    setting_variant = _parse_optional_string(data.get("setting_variant"))
 
     return select_expedition(
         seed=seed,
@@ -153,6 +162,8 @@ def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
         max_attempts=max_attempts,
         mage_recruitment_chance=mage_recruitment_chance,
         strictness=strictness,
+        setting_wave=setting_wave,
+        setting_variant=setting_variant,
         **DEFAULT_PATHS,
     )
 
@@ -178,6 +189,11 @@ def _handle_select_replacement_mage(data: Dict[str, Any]) -> Dict[str, Any]:
     )
 
 
+def _handle_available_settings() -> Dict[str, Any]:
+    """Handle availableSettings operation."""
+    return get_available_settings(settings_yaml_path=DEFAULT_PATHS["settings_yaml_path"])
+
+
 def main() -> None:
     try:
         data = _read_request()
@@ -185,7 +201,9 @@ def main() -> None:
         # Determine operation from 'operation' field or default to expedition selection
         operation = data.get("operation", "selectExpeditionPacket")
 
-        if operation == "selectReplacementMage":
+        if operation == "availableSettings":
+            packet = _handle_available_settings()
+        elif operation == "selectReplacementMage":
             packet = _handle_select_replacement_mage(data)
         else:
             # Default: selectExpeditionPacket

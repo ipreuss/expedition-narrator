@@ -119,6 +119,35 @@ def load_settings_by_wave(path: str) -> Dict[str, Dict[str, Any]]:
             out[_norm_space(str(wave_name))] = copy.deepcopy(payload)
     return out
 
+
+def get_available_settings(settings_yaml_path: Optional[str] = None) -> Dict[str, Any]:
+    """
+    Return all available waves and their setting variants for discovery.
+
+    Returns a dict with structure:
+    {
+        "waves": [
+            {"name": "1st Wave", "variants": null},
+            {"name": "7th Wave", "variants": ["past", "future"]},
+            ...
+        ]
+    }
+    """
+    import os
+    if settings_yaml_path is None:
+        settings_yaml_path = os.path.join(os.path.dirname(__file__), "wave_settings.yaml")
+
+    settings_by_wave = load_settings_by_wave(settings_yaml_path)
+    waves = []
+    for wave_name, payload in settings_by_wave.items():
+        variants = None
+        if "setting_variants" in payload and isinstance(payload["setting_variants"], dict):
+            variants = sorted(payload["setting_variants"].keys())
+        waves.append({"name": wave_name, "variants": variants})
+    # Sort by wave name for consistent ordering
+    waves.sort(key=lambda w: w["name"])
+    return {"waves": waves}
+
 def load_mages(path: str) -> List[Dict[str, Any]]:
     data = load_yaml(path)
     if not isinstance(data, dict) or "mages" not in data or not isinstance(data["mages"], list):
@@ -385,10 +414,16 @@ def select_expedition(
     max_attempts: int = 200,
     mage_recruitment_chance: int = 100,
     strictness: Strictness = "open",
+    setting_wave: Optional[str] = None,
+    setting_variant: Optional[str] = None,
 ) -> Dict[str, Any]:
     # Validate strictness parameter
     if strictness not in VALID_STRICTNESS:
         raise ValueError(f"strictness must be one of: {', '.join(VALID_STRICTNESS)}")
+
+    # Validate setting_wave and setting_variant parameters
+    if setting_variant is not None and setting_wave is None:
+        raise ValueError("setting_variant requires setting_wave to be specified")
 
     base_rng = random.Random(seed)
 
@@ -418,6 +453,24 @@ def select_expedition(
     if not wave_candidates:
         raise ValueError("No settings available in scope")
 
+    # Validate setting_wave if provided
+    if setting_wave is not None:
+        setting_wave_normalized = _norm_space(setting_wave)
+        # Check if the wave exists in settings
+        matching_waves = [w for w in settings_by_wave.keys() if name_key(w) == name_key(setting_wave_normalized)]
+        if not matching_waves:
+            available_waves = sorted(settings_by_wave.keys())
+            raise ValueError(f"setting_wave '{setting_wave}' not found. Available waves: {', '.join(available_waves)}")
+        forced_wave = matching_waves[0]
+        # Validate setting_variant if provided
+        if setting_variant is not None:
+            wave_payload = settings_by_wave[forced_wave]
+            if "setting_variants" not in wave_payload:
+                raise ValueError(f"setting_variant specified but wave '{forced_wave}' has no variants")
+            available_variants = list(wave_payload["setting_variants"].keys())
+            if setting_variant not in available_variants:
+                raise ValueError(f"setting_variant '{setting_variant}' not found for wave '{forced_wave}'. Available variants: {', '.join(available_variants)}")
+
     # For "open" strictness, pre-filter entities by full scope (original behavior)
     # For "mixed" and "thematic", we'll filter inside the attempt loop after choosing a wave
     nemeses_in_scope_full = filter_by_scope_list(nemeses_all, explicit_waves, allowed_boxes, box_to_wave)
@@ -443,15 +496,22 @@ def select_expedition(
         attempt_seed = base_rng.randrange(0, 2**63)
         rng = random.Random(attempt_seed)
         try:
-            chosen_wave = _choose(rng, wave_candidates)
+            # Use forced wave if setting_wave is provided, otherwise random
+            if setting_wave is not None:
+                chosen_wave = forced_wave
+            else:
+                chosen_wave = _choose(rng, wave_candidates)
             setting_payload = copy.deepcopy(settings_by_wave[chosen_wave])
 
-            # Handle setting_variants: if present, randomly select one variant
+            # Handle setting_variants: use forced variant or randomly select one
             chosen_variant_name: Optional[str] = None
             if "setting_variants" in setting_payload:
                 variants = setting_payload.pop("setting_variants")
                 variant_names = list(variants.keys())
-                chosen_variant_name = _choose(rng, variant_names)
+                if setting_variant is not None:
+                    chosen_variant_name = setting_variant
+                else:
+                    chosen_variant_name = _choose(rng, variant_names)
                 variant_data = variants[chosen_variant_name]
                 # Merge variant-specific fields into the base payload
                 setting_payload.update(variant_data)
@@ -638,6 +698,10 @@ def _build_arg_parser() -> argparse.ArgumentParser:
                    help="Probability (0-100) that a new mage joins after winning a non-final battle.")
     p.add_argument("--strictness", choices=["thematic", "mixed", "open"], default="open",
                    help="Strictness level: 'thematic' (all from same wave), 'mixed' (mages from wave), 'open' (any).")
+    p.add_argument("--setting-wave", default=None,
+                   help="Force a specific wave's setting (e.g., '7th Wave'). Overrides random selection.")
+    p.add_argument("--setting-variant", default=None,
+                   help="Force a specific setting variant (e.g., 'future'). Only for waves with variants.")
     return p
 
 
@@ -740,6 +804,8 @@ def main() -> None:
         max_attempts=args.max_attempts,
         mage_recruitment_chance=args.mage_recruitment_chance,
         strictness=args.strictness,
+        setting_wave=args.setting_wave,
+        setting_variant=args.setting_variant,
     )
     print(json.dumps(packet, ensure_ascii=False, indent=2))
 

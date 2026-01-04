@@ -55,6 +55,13 @@ Optional
 - Theme (optional; if absent, let the concept + setting + finale imply it).
 - Mage recruitment chance: 0–100 (default: 100). Probability that a new mage joins after winning a non-final battle.
 - Strictness: thematic | mixed | open (default: open). Controls how strictly content is matched to the chosen wave/setting.
+- Setting wave: force a specific wave's setting (e.g., "7th Wave", "8th Wave") regardless of content scope.
+- Setting variant: force a specific variant within the wave (e.g., "past", "future"). Only valid for waves with setting_variants. Requires setting_wave.
+
+Setting override notes
+- When setting_wave is specified, the setting narrative comes from that wave even if content_waves includes different waves.
+- This allows users to play with all content but in a specific setting (e.g., "all content but in the future setting").
+- Use the `availableSettings` action to discover valid wave names and their variants before passing these parameters.
 
 Defaults
 - Content scope: all available content.
@@ -86,6 +93,7 @@ Action schema
 - Operations:
   - `selectExpeditionPacket` — generates a full expedition at the start
   - `selectReplacementMage` — selects a single mage to replace/join the party (used when player chooses "new mage" after a loss)
+  - `availableSettings` — returns all waves and their setting variants (use to discover valid setting_wave/setting_variant values)
 
 Backend script (implementation detail)
 - `aeons_end_expedition_selector.py`
@@ -108,6 +116,8 @@ Do these steps in order, every time:
    - Optional: `seed` (for reproducible runs; omit to allow random selection)
    - Optional: `mage_recruitment_chance` (0–100, default 100; probability of new mage joining after winning a non-final battle)
    - Optional: `strictness` (thematic | mixed | open, default open; controls wave-matching for entities)
+   - Optional: `setting_wave` (force a specific wave's setting; use `availableSettings` to discover valid values)
+   - Optional: `setting_variant` (force a specific variant; requires `setting_wave`; use `availableSettings` to discover valid values)
 2. Read before you write: before writing any narrative for a chapter:
 - Read the packet's selected setting fields (conceptual inspiration only; do not copy phrasing).
 - Read the chosen mage entries (including story notes and chosen variants/boxes).
