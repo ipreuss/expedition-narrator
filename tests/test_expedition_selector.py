@@ -495,3 +495,23 @@ def test_strictness_invalid_value_raises(tmp_path):
             foes_yaml_path=str(paths["foes"]),
             strictness="invalid",
         )
+
+
+def test_production_yaml_files_are_valid():
+    """Ensure all production YAML files can be parsed without errors."""
+    import yaml
+
+    production_files = [
+        "aeons_end_mages.yaml",
+        "aeons_end_nemeses.yaml",
+        "aeons_end_waves.yaml",
+        "wave_settings.yaml",
+        "aeons_end_friends.yaml",
+        "aeons_end_foes.yaml",
+    ]
+
+    for filename in production_files:
+        filepath = ROOT / filename
+        if filepath.exists():
+            with open(filepath, encoding="utf-8") as fp:
+                yaml.safe_load(fp)  # raises if invalid YAML
