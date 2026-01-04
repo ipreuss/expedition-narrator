@@ -551,6 +551,7 @@ components:
       additionalProperties: false
       required:
         - waves
+        - boxes
       properties:
         waves:
           type: array
@@ -573,3 +574,18 @@ components:
                 description: >-
                   List of variant names if the wave has setting_variants (e.g., ['past', 'future']),
                   or null if the wave has no variants.
+        boxes:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            required:
+              - name
+              - wave
+            properties:
+              name:
+                type: string
+                description: The box name (e.g., 'Aeon's End (Core Set)', 'Past and Future').
+              wave:
+                type: string
+                description: The wave this box belongs to (e.g., '1st Wave', '7th Wave').

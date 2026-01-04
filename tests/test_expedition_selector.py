@@ -521,7 +521,10 @@ def test_get_available_settings():
     """Test that get_available_settings returns correct structure."""
     from aeons_end_expedition_selector import get_available_settings
 
-    result = get_available_settings(settings_yaml_path=str(ROOT / "wave_settings.yaml"))
+    result = get_available_settings(
+        settings_yaml_path=str(ROOT / "wave_settings.yaml"),
+        waves_yaml_path=str(ROOT / "aeons_end_waves.yaml"),
+    )
 
     assert "waves" in result
     assert isinstance(result["waves"], list)
@@ -545,6 +548,23 @@ def test_get_available_settings():
     wave_8 = next((w for w in result["waves"] if "8th" in w["name"]), None)
     assert wave_8 is not None
     assert wave_8["variants"] is None
+
+    # Check boxes are returned
+    assert "boxes" in result
+    assert isinstance(result["boxes"], list)
+    assert len(result["boxes"]) > 0
+
+    # Check structure of each box entry
+    for box in result["boxes"]:
+        assert "name" in box
+        assert "wave" in box
+        assert isinstance(box["name"], str)
+        assert isinstance(box["wave"], str)
+
+    # Check a specific box
+    past_and_future = next((b for b in result["boxes"] if b["name"] == "Past and Future"), None)
+    assert past_and_future is not None
+    assert past_and_future["wave"] == "7th Wave"
 
 
 def test_setting_wave_override(tmp_path):

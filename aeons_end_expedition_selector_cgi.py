@@ -191,7 +191,10 @@ def _handle_select_replacement_mage(data: Dict[str, Any]) -> Dict[str, Any]:
 
 def _handle_available_settings() -> Dict[str, Any]:
     """Handle availableSettings operation."""
-    return get_available_settings(settings_yaml_path=DEFAULT_PATHS["settings_yaml_path"])
+    return get_available_settings(
+        settings_yaml_path=DEFAULT_PATHS["settings_yaml_path"],
+        waves_yaml_path=DEFAULT_PATHS["waves_yaml_path"],
+    )
 
 
 def main() -> None:

@@ -120,9 +120,12 @@ def load_settings_by_wave(path: str) -> Dict[str, Dict[str, Any]]:
     return out
 
 
-def get_available_settings(settings_yaml_path: Optional[str] = None) -> Dict[str, Any]:
+def get_available_settings(
+    settings_yaml_path: Optional[str] = None,
+    waves_yaml_path: Optional[str] = None,
+) -> Dict[str, Any]:
     """
-    Return all available waves and their setting variants for discovery.
+    Return all available waves, their setting variants, and boxes for discovery.
 
     Returns a dict with structure:
     {
@@ -130,12 +133,19 @@ def get_available_settings(settings_yaml_path: Optional[str] = None) -> Dict[str
             {"name": "1st Wave", "variants": null},
             {"name": "7th Wave", "variants": ["past", "future"]},
             ...
+        ],
+        "boxes": [
+            {"name": "Aeon's End (Core Set)", "wave": "1st Wave"},
+            {"name": "Past and Future", "wave": "7th Wave"},
+            ...
         ]
     }
     """
     import os
     if settings_yaml_path is None:
         settings_yaml_path = os.path.join(os.path.dirname(__file__), "wave_settings.yaml")
+    if waves_yaml_path is None:
+        waves_yaml_path = os.path.join(os.path.dirname(__file__), "aeons_end_waves.yaml")
 
     settings_by_wave = load_settings_by_wave(settings_yaml_path)
     waves = []
@@ -146,7 +156,14 @@ def get_available_settings(settings_yaml_path: Optional[str] = None) -> Dict[str
         waves.append({"name": wave_name, "variants": variants})
     # Sort by wave name for consistent ordering
     waves.sort(key=lambda w: w["name"])
-    return {"waves": waves}
+
+    # Load boxes
+    waves_data = load_yaml(waves_yaml_path)
+    box_mapping = waves_data.get("boxes", {})
+    boxes = [{"name": box_name, "wave": wave_name} for box_name, wave_name in box_mapping.items()]
+    boxes.sort(key=lambda b: (b["wave"], b["name"]))
+
+    return {"waves": waves, "boxes": boxes}
 
 def load_mages(path: str) -> List[Dict[str, Any]]:
     data = load_yaml(path)
