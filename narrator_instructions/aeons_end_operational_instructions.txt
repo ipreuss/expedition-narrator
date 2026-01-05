@@ -328,9 +328,9 @@ After winning a battle that is **not** the final battle, a new mage may join the
 - After winning Battle N-1, check Battle N's `recruit` field
 
 **Recruitment flow:**
-1) After the victory aftermath, check the **next battle's** `recruit` field in the packet.
+1) **BEFORE writing any interlude content**, check the **next battle's** `recruit` field in the packet. This check IS your trigger—there is no separate "flag" or "marker". You must actively inspect the packet data.
 2) If `recruit` is `null`: no recruitment—continue normally through a single Interlude and next battle setup.
-3) If `recruit` contains a mage entry, follow the five-section structure:
+3) If `recruit` is **non-null** (contains a mage entry): you MUST follow the five-section structure below, which includes the mandatory pause at Section 3. Do not skip ahead.
 
    a) **Section 1: Aftermath**: Write the full aftermath section:
       - Consequences, costs, and shifts from the battle
