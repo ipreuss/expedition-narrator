@@ -525,7 +525,10 @@ components:
           oneOf:
             - $ref: "#/components/schemas/Mage"
             - type: "null"
-          description: Pre-planned mage recruit for this battle (null if no recruitment).
+          description: >-
+            Mage that joins the party FOR this battle (in the interlude before it).
+            Battle 1 always has null (no interlude before first battle).
+            Check the NEXT battle's recruit field after winning to see who joins.
     Availability:
       type: object
       additionalProperties: false

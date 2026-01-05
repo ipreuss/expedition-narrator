@@ -623,22 +623,27 @@ def select_expedition(
             # Pre-plan mage recruitment for non-final battles
             # Track all mage names that could be in party (original + any prior recruits)
             # Recruitment uses the same strictness rules as initial mage selection
+            #
+            # Semantics: battle[i].recruit = mage that joins FOR battle i (in the interlude before it)
+            # - Battle 1: recruit = null (no interlude before first battle)
+            # - Battle 2: recruit = whoever joins after winning Battle 1
+            # - Battle N: recruit = whoever joins after winning Battle N-1
+            # - Final battle can have a recruit (who joined after winning the second-to-last battle)
             all_party_names = set(mage_names)
             eligible_for_recruit = eligible_mages_with_variants(
                 mages_all, mage_waves, mage_boxes, box_to_wave
             )
 
-            for i, step in enumerate(battle_plan):
-                is_final_battle = (i == len(battle_plan) - 1)
-                if is_final_battle:
-                    # No recruitment after final battle
-                    step["recruit"] = None
-                elif mage_recruitment_chance <= 0:
+            # First, determine recruits for each transition (after battle i, before battle i+1)
+            # We have len(battle_plan) - 1 transitions
+            transition_recruits: List[Optional[Dict[str, Any]]] = []
+            for i in range(len(battle_plan) - 1):
+                if mage_recruitment_chance <= 0:
                     # Recruitment disabled
-                    step["recruit"] = None
+                    transition_recruits.append(None)
                 elif rng.randint(1, 100) > mage_recruitment_chance:
                     # Roll failed - no recruitment
-                    step["recruit"] = None
+                    transition_recruits.append(None)
                 else:
                     # Roll succeeded - select a recruit
                     available_recruits = [
@@ -649,12 +654,24 @@ def select_expedition(
                         chosen_mage_tuple = _choose(rng, available_recruits)
                         recruit_entry = copy.deepcopy(chosen_mage_tuple[0])
                         recruit_entry["chosen_variant"] = copy.deepcopy(_choose(rng, chosen_mage_tuple[1]))
-                        step["recruit"] = recruit_entry
+                        transition_recruits.append(recruit_entry)
                         # Add to party names so future recruits won't collide
                         all_party_names.add(name_key(str(recruit_entry.get("name") or "")))
                     else:
                         # No eligible recruits available
-                        step["recruit"] = None
+                        transition_recruits.append(None)
+
+            # Now assign recruits to battles: battle[i].recruit = who joins FOR battle i
+            # Battle 1 (index 0): no recruit (no interlude before it)
+            # Battle 2 (index 1): gets transition_recruits[0] (who joins after winning battle 1)
+            # Battle N (index N-1): gets transition_recruits[N-2]
+            for i, step in enumerate(battle_plan):
+                if i == 0:
+                    # First battle - no one joins before it
+                    step["recruit"] = None
+                else:
+                    # Battle i gets the recruit from transition i-1 (after battle i-1)
+                    step["recruit"] = transition_recruits[i - 1]
 
 
             packet: Dict[str, Any] = {

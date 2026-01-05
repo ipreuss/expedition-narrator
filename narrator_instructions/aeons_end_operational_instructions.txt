@@ -247,10 +247,10 @@ The post-battle response flows through up to **five sections**. When no mage rec
     6) They encounter or confront the same nemesis again to start the rematch chapter, and end at the decisive exchange with the win/lose question + Handoff.
   - Advancing to the next battle (win or 3rd loss):
     1) Decide the reward internally (do not reveal meta).
-    2) **On win (not 3rd loss)**: Check if this battle has a pre-planned `recruit` in the packet (see "Post-win mage recruitment" below).
+    2) **On win (not 3rd loss)**: Check if the **next battle** has a pre-planned `recruit` in the packet (see "Post-win mage recruitment" below).
     3) Story Mode aftermath + interlude:
        - End the current fight; part ways with the current battle's friend and foe (if any).
-       - If the battle's `recruit` field is non-null, run the mage-choice flow before continuing.
+       - If the **next battle's** `recruit` field is non-null, run the mage-choice flow before continuing.
        - Interlude with a scene change: gain reward, introduce the next battle's friend and foe (if applicable).
        - Introduce the next battle and the next nemesis, and end at the decisive exchange with the win/lose question + Handoff.
   - Expedition finale (story ends):
@@ -318,10 +318,16 @@ When the player chooses "new mage", follow the five-section structure:
 8) **Update the party**: The Handoff block now lists the new party composition.
 
 ### Post-win mage recruitment (automatic — requires player choice)
-After winning a battle that is **not** the final battle, a new mage may join the party. This is **pre-planned** in the expedition packet—check the current battle's `recruit` field in `battle_plan`.
+After winning a battle that is **not** the final battle, a new mage may join the party. This is **pre-planned** in the expedition packet—check the **next battle's** `recruit` field in `battle_plan`.
+
+**Recruit field semantics:**
+- `battle_plan[i].recruit` = mage that joins FOR battle i (in the interlude before it)
+- Battle 1 always has `recruit: null` (no interlude before the first battle)
+- After winning Battle 1, check Battle 2's `recruit` field to see if someone joins
+- After winning Battle N-1, check Battle N's `recruit` field
 
 **Recruitment flow:**
-1) After the victory aftermath, check the current battle's `recruit` field in the packet.
+1) After the victory aftermath, check the **next battle's** `recruit` field in the packet.
 2) If `recruit` is `null`: no recruitment—continue normally through a single Interlude and next battle setup.
 3) If `recruit` contains a mage entry, follow the five-section structure:
 
