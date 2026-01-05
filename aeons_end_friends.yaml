@@ -101,6 +101,7 @@ friends:
     '
 - name: Xaxos, the Arcane Researcher
   box: The Abyss
+  character_id: xaxos
   background: 'A young scholar longs to become a mage like her mother but struggles
     to master the sister‑words.  She pours through books about the Void and corruption,
     dreaming of fighting alongside the breach mages.  As

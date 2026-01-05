@@ -99,6 +99,32 @@ def name_key(name: str) -> str:
     return _norm_key(name)
 
 
+def get_identity_keys(entity: Optional[Dict[str, Any]]) -> Set[str]:
+    """
+    Get all identity keys for an entity (for collision detection).
+    Returns a set containing the name_key and character_id (if present).
+    Entities with matching character_id are considered the same character
+    (e.g., Xaxos mage, Xaxos friend, The Traitor foe are all 'xaxos').
+    """
+    if entity is None:
+        return set()
+    keys = set()
+    name = entity.get("name")
+    if name:
+        keys.add(name_key(str(name)))
+    char_id = entity.get("character_id")
+    if char_id:
+        keys.add(name_key(str(char_id)))
+    return keys
+
+
+def entities_collide(a: Optional[Dict[str, Any]], b: Optional[Dict[str, Any]]) -> bool:
+    """Check if two entities represent the same character (by name or character_id)."""
+    if a is None or b is None:
+        return False
+    return bool(get_identity_keys(a) & get_identity_keys(b))
+
+
 def load_yaml(path: str) -> Any:
     with open(path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
@@ -357,13 +383,18 @@ def _require_unique_names(items: Sequence[Optional[Dict[str, Any]]], label: str)
         seen.add(nk)
 
 def _require_no_overlap(a: Sequence[Dict[str, Any]], b: Sequence[Optional[Dict[str, Any]]], label_a: str, label_b: str) -> None:
-    a_names = {name_key(str(_safe_get(x, "name") or "")) for x in a}
+    # Collect all identity keys from group a (names + character_ids)
+    a_keys: Set[str] = set()
+    for x in a:
+        a_keys.update(get_identity_keys(x))
+    # Check if any entity in b shares an identity key with a
     for it in b:
         if not it:
             continue
-        nm = name_key(str(_safe_get(it, "name") or ""))
-        if nm in a_names:
-            raise SelectionError(f"Name overlap between {label_a} and {label_b}: {_safe_get(it,'name')}")
+        it_keys = get_identity_keys(it)
+        overlap = a_keys & it_keys
+        if overlap:
+            raise SelectionError(f"Character overlap between {label_a} and {label_b}: {_safe_get(it,'name')} (shared identity: {overlap})")
 
 def _pick_unique_from_pool(
     rng: random.Random,
@@ -600,16 +631,52 @@ def select_expedition(
 
 
             if include_friend_foe_pair:
-                forbidden_ff = set(mage_names) | set(nemesis_names)
-                chosen_friends = _pick_unique_from_pool(rng, friends_in_scope, len(battle_plan), forbidden_ff, "friend")
-                forbidden_foe = forbidden_ff | {name_key(str(_safe_get(f, "name") or "")) for f in chosen_friends}
-                chosen_foes = _pick_unique_from_pool(rng, foes_in_scope, len(battle_plan), forbidden_foe, "foe")
+                # Build forbidden set from mages (including character_ids)
+                mage_identity_keys: Set[str] = set()
+                for m in chosen_mages:
+                    mage_identity_keys.update(get_identity_keys(m))
 
+                # Also include nemesis identity keys
+                nemesis_identity_keys: Set[str] = set()
+                for step in battle_plan:
+                    nemesis_identity_keys.update(get_identity_keys(step["nemesis"]))
+
+                forbidden_ff = mage_identity_keys | nemesis_identity_keys
+
+                # Pick friends/foes per battle to ensure no character collision within same battle
+                # (e.g., Xaxos friend and The Traitor foe should not be in same battle)
+                available_friends = [f for f in friends_in_scope if not (get_identity_keys(f) & forbidden_ff)]
+                available_foes = [f for f in foes_in_scope if not (get_identity_keys(f) & forbidden_ff)]
+
+                chosen_friends: List[Dict[str, Any]] = []
+                chosen_foes: List[Dict[str, Any]] = []
+                used_friend_keys: Set[str] = set()
+                used_foe_keys: Set[str] = set()
+
+                for i in range(len(battle_plan)):
+                    # Pick a friend that hasn't been used
+                    friend_candidates = [f for f in available_friends if not (get_identity_keys(f) & used_friend_keys)]
+                    if not friend_candidates:
+                        raise SelectionError(f"Not enough unique friends for {len(battle_plan)} battles")
+                    friend = _choose(rng, friend_candidates)
+                    friend_keys = get_identity_keys(friend)
+
+                    # Pick a foe that hasn't been used AND doesn't share character_id with this battle's friend
+                    foe_candidates = [f for f in available_foes
+                                      if not (get_identity_keys(f) & used_foe_keys)
+                                      and not (get_identity_keys(f) & friend_keys)]
+                    if not foe_candidates:
+                        raise SelectionError(f"Not enough unique foes for {len(battle_plan)} battles (avoiding character collisions)")
+                    foe = _choose(rng, foe_candidates)
+
+                    chosen_friends.append(friend)
+                    chosen_foes.append(foe)
+                    used_friend_keys.update(friend_keys)
+                    used_foe_keys.update(get_identity_keys(foe))
 
                 for i, step in enumerate(battle_plan):
                     step["friend"] = chosen_friends[i]
                     step["foe"] = chosen_foes[i]
-
 
                 _require_no_overlap(chosen_mages, chosen_friends, "mages", "friends")
                 _require_no_overlap(chosen_mages, chosen_foes, "mages", "foes")

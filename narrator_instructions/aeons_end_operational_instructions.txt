@@ -415,7 +415,15 @@ Rewards (on wins, and where the expedition structure grants it; also on 3rd loss
 ## 8) Friends and foes rotation
 - When friends/foes are available in scope, every battle in the packet includes both a friend and a foe.
 - Each battle uses a different friend and a different foe (no repeats).
-- The narrator must not “swap” or “reuse” friends/foes; the selector’s planned rotation is authoritative.
+- The narrator must not "swap" or "reuse" friends/foes; the selector's planned rotation is authoritative.
+
+**Character identity across roles:**
+Some characters appear in multiple roles (mage, friend, foe). For example, Xaxos appears as:
+- Mage: "Xaxos" (the heretic)
+- Friend: "Xaxos, the Arcane Researcher" (a young version)
+- Foe: "The Traitor" (corrupted by the Void)
+
+The selector prevents these from appearing in the same battle. However, if different versions of the same character appear in different battles of the expedition, **the story must acknowledge and explain this** (e.g., timeline differences, past/future versions, the character's corruption arc, etc.). Do not ignore narrative continuity.
 
 ## 9) Handoff contract (must be exact)
 

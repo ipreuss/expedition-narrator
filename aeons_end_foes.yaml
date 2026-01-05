@@ -111,6 +111,7 @@ foes:
     '
 - name: The Traitor
   box: The Abyss
+  character_id: xaxos
   background: 'A mage who has turned against their own kind, corrupted by the seductive
     promise of Void power. The Traitor views former allies as small-minded fools who
     fail to grasp the power within reach. With skin cracked like obsidian and eyes

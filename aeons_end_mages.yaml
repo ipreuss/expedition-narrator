@@ -192,6 +192,7 @@ mages:
     box: Aeon's End (Core Set)
 - id: xaxos
   name: Xaxos
+  character_id: xaxos
   background: Xaxos is a mage-heretic who devotes himself to the enemy to gain knowledge.
     He says, "I have recognized our path to salvation, splintered and dangerous,
     straight through the heart of the Void."  He explores dark powers to discover
