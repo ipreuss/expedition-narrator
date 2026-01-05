@@ -429,6 +429,8 @@ No bullets, no commentary, no template lines, no extra whitespace.
 
 Exact structure (copy/paste this; replace placeholders with identifiers only, delete the Reinforcement block if not earned):
 
+**⚠️ IMPORTANT: The Mages section is REQUIRED in every Handoff.** List all current party members every time, not just at the start. This is not optional.
+
 ```
 Mages:
 NAME (Source Box)
@@ -446,6 +448,7 @@ player card | TREASURE | NEW MAGE: NAME (Source Box)
 ```
 
 Rules
+- **Mages are REQUIRED in every Handoff** — list all current party members with their source boxes every time. Do not omit mages claiming they are "already established context."
 - The mage list contains exactly the party size requested by the user (one mage per line).
 - `Protect:` is **omitted entirely** unless `protect_target = "Xaxos"`.
 - `Reinforcement:` is optional and appears only when present; never print "none", never print commented label lists.
