@@ -213,7 +213,8 @@ The post-battle response flows through up to **five sections**. When no mage rec
 
 **Section 3: Party composition check** (if mage recruitment applies)
 - Ask the player which mage leaves the party
-- **⛔ MANDATORY PAUSE POINT**: Your response ends here when recruitment occurs. Do not output a Handoff block. Wait for the player's response.
+- **⛔ MANDATORY PAUSE POINT**: Your response ends here when recruitment occurs. Do not output a Handoff block. Do not write the next battle setup. Wait for the player's response.
+- ❌ **COMMON MISTAKE**: Continuing to write the next battle setup or Handoff after introducing the recruit. STOP after asking who leaves.
 - If no recruitment, skip this section entirely and merge Interludes 1 and 2
 
 **Section 4: Interlude 2** (departure, distribution, further advancement)
@@ -358,6 +359,8 @@ After winning a battle that is **not** the final battle, a new mage may join the
       (List all current party members numbered 1 through N, then the new mage as option N+1.)
 
       **⛔ MANDATORY PAUSE POINT: Your response ENDS here. Do not write the departure scene. Do not write the next battle setup. Do not output a Handoff block. Wait for the player to respond with their choice before continuing.**
+
+      ❌ **COMMON MISTAKE**: Writing the next battle setup and/or Handoff in the same response as the recruitment. If you wrote "Next battle setup" or output a Handoff block after introducing the recruit, you violated this rule. The response MUST end with the party composition question above.
 
    e) **Wait for player response**: The player names the departing mage.
 
