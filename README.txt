@@ -44,7 +44,7 @@ The selector prints a JSON expedition packet.
 The selector is also exposed as a CGI script at:
 
 ```
-https://skriptguruai.site/cgi-bin/expedition-narrator/aeons_end_expedition_selector_cgi
+https://skriptguruai.site/cgi-bin/expedition-narrator/aeons_end_expedition_selector_cgi.py
 ```
 
 Provide request data either as GET query parameters or a POST body
@@ -63,7 +63,7 @@ Optional:
 Example (GET):
 
 ```
-https://skriptguruai.site/cgi-bin/expedition-narrator/aeons_end_expedition_selector_cgi?mage_count=4
+https://skriptguruai.site/cgi-bin/expedition-narrator/aeons_end_expedition_selector_cgi.py?mage_count=4
 ```
 
 ## OpenAPI action
