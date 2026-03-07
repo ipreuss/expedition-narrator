@@ -1,102 +1,54 @@
 # expedition-narrator
-Scripts and data files for the Aeon‘s End expedition narrator GPT.
+Shared selector engine and game profiles for expedition narrator GPTs.
 
-## Overview
-This repository contains the selector script, YAML datasets, and narration guidance used to
-assemble Aeon’s End expedition packets for a GPT-based narrator. The selector performs
-collision-free selection only; narration and win/lose state are handled by the narrator prompt.
+## Strategy
+- Single repository
+- Single Custom GPT (multi-game)
+- Game-specific profiles under `games/<game>/`
+- Shared selection engine under `core/`
 
 ## Repository layout
-- `aeons_end_expedition_selector.py`: Deterministic selector that builds an expedition packet.
-- `aeons_end_mages.yaml`: Mage dataset (including variants and story notes).
-- `aeons_end_nemeses.yaml`: Nemesis dataset.
-- `aeons_end_friends.yaml`: Friend dataset.
-- `aeons_end_foes.yaml`: Foe dataset.
-- `wave_settings.yaml`: Wave settings used to build expedition structure.
-- `aeons_end_waves.yaml`: Wave text/settings used by the selector.
-- `aeons_end_expedition_selector_openapi.yaml`: OpenAPI schema for the selector action.
-- `aeons_end_operational_instructions.txt`: Process and handoff contract for narration.
-- `aeons_end_narration_style_guide.txt`: Voice and formatting guidance.
-- `aeons_end_background_selection_rules.txt`: Rules for interpreting YAML fields.
-- `aeons_end_narration_style_selector.txt`: Style selector reference.
-- `system_prompt.txt`: End-to-end narrator system prompt.
+- `core/aeons_end_expedition_selector.py`: selector implementation currently used by Aeon's End.
+- `core/game_profiles.py`: profile registry (`aeons_end`, `astro_knights`, `invincible`) with implementation status.
+- `games/aeons_end/`: implemented profile (data, prompts, API schema, CGI wrapper).
+- `games/astro_knights/`: scaffold profile.
+- `games/invincible/`: scaffold profile.
+- `multi_game_expedition_selector_cgi.py`: unified action endpoint with required `game` parameter.
+- `multi_game_expedition_selector_openapi.yaml`: unified GPT Action schema.
+- `docs/custom_gpt_multigame_setup.md`: concrete setup steps for one multi-game GPT.
 
-## Quick start
-Run the selector directly with Python 3:
-
+## Quick start (Aeon's End selector directly)
 ```bash
-python aeons_end_expedition_selector.py \
-  --mages-yaml aeons_end_mages.yaml \
-  --settings-yaml wave_settings.yaml \
-  --waves-yaml aeons_end_waves.yaml \
-  --nemeses-yaml aeons_end_nemeses.yaml \
-  --friends-yaml aeons_end_friends.yaml \
-  --foes-yaml aeons_end_foes.yaml \
+python core/aeons_end_expedition_selector.py \
+  --mages-yaml games/aeons_end/data/aeons_end_mages.yaml \
+  --settings-yaml games/aeons_end/data/wave_settings.yaml \
+  --waves-yaml games/aeons_end/data/aeons_end_waves.yaml \
+  --nemeses-yaml games/aeons_end/data/aeons_end_nemeses.yaml \
+  --friends-yaml games/aeons_end/data/aeons_end_friends.yaml \
+  --foes-yaml games/aeons_end/data/aeons_end_foes.yaml \
   --mage-count 4 \
   --length standard \
-  --content-waves "1st Wave" \
   --seed 12345
 ```
 
-The selector prints a JSON expedition packet.
+## Multi-game action calls
+- `operation=availableGames` (discover games + implementation status)
+- `operation=availableSettings&game=<game>`
+- `selectExpeditionPacket` with required `game`
+- `operation=selectReplacementMage` with required `game`
 
-## CGI endpoint
-The selector is also exposed as a CGI script at:
+## Suggested release flow
+1. Tag stable single-game baseline: `v1-aeons-end-stable`
+2. Continue all work on `main`
+3. Tag multi-game milestones (example: `v2-multigame-foundation`)
 
+## Testing
+Run when dependencies are available:
+```bash
+pytest tests/
 ```
-https://skriptguruai.site/cgi-bin/expedition-narrator/aeons_end_expedition_selector_cgi.py
-```
-
-Provide request data either as GET query parameters or a POST body
-(`application/json` or `application/x-www-form-urlencoded`).
-
-Required:
-- `mage_count` (integer)
-
-Optional:
-- `length`: `short` | `standard` | `long` (default: `standard`)
-- `content_waves`: comma-separated string or JSON list
-- `content_boxes`: comma-separated string or JSON list
-- `seed`: integer
-- `max_attempts`: integer
-
-Example (GET):
-
-```
-https://skriptguruai.site/cgi-bin/expedition-narrator/aeons_end_expedition_selector_cgi.py?mage_count=4
-```
-
-## OpenAPI action
-Use the OpenAPI schema in `aeons_end_expedition_selector_openapi.yaml` to call the selector
-action (`selectExpeditionPacket`) instead of running the script directly.
-
-## Selector guarantees
-Given valid datasets and scope, the selector ensures:
-- No repeated nemesis across the planned battle sequence.
-- No repeated friend or foe across the planned battle sequence.
-- No name overlap between selected mages and any selected friend/foe/nemesis.
-
-If the selector cannot satisfy constraints, it exits with an error, indicating a dataset or scope issue.
-
-## Notes for narrators
-- Read the selector output and follow the narration guidance in `system_prompt.txt`.
-- Do not improvise selection in prose; the selector is authoritative.
-- The Handoff format (a metadata code block, not the narration) never uses `Reinforcement: none`; omit the `Reinforcement:` line entirely when no reward/reinforcement applies.
-
-## Testing requirement
-After any change to the data files (`*.yaml`, `*.txt`, or `wave_settings.yaml`), run the
-automated test suite before committing or deploying. This ensures the selector still
-parses the datasets correctly.
 
 ## Legal disclaimer
 Aeon's End is a trademark and copyright of Indie Boards and Cards. This project is an
 unofficial fan project and is not affiliated with, endorsed by, or sponsored by Indie
 Boards and Cards or any official Aeon's End creators.
-
-The game data in this repository (character names, lore, abilities, and related content)
-is derived from official Aeon's End products for fan and educational purposes. No
-infringement is intended. This project is non-commercial and aims to celebrate and
-support the Aeon's End community.
-
-If you enjoy this project, please support the official game by purchasing Aeon's End
-products from authorized retailers.

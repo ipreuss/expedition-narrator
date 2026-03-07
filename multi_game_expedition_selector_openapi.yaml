@@ -1,0 +1,297 @@
+openapi: 3.1.0
+info:
+  title: Multi-Game Expedition Selector
+  version: 1.0.0
+  description: |-
+    Unified GPT Action schema for multiple games.
+    Use `operation=availableGames` to discover currently implemented games.
+servers:
+  - url: https://skriptguruai.site/cgi-bin/expedition-narrator
+paths:
+  /multi_game_expedition_selector_cgi.py:
+    post:
+      operationId: selectExpeditionPacket
+      summary: Generate an expedition packet for a selected game.
+      x-openai-isConsequential: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SelectorRequest'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/SelectorRequest'
+      responses:
+        '200':
+          description: Expedition packet
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    get:
+      operationId: selectExpeditionPacketGet
+      summary: Generate an expedition packet (query parameters).
+      parameters:
+        - name: game
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [aeons_end, astro_knights, invincible]
+        - name: mage_count
+          in: query
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+        - name: length
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [short, standard, long]
+        - name: content_waves
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: content_boxes
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: seed
+          in: query
+          required: false
+          schema:
+            type: integer
+        - name: max_attempts
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: mage_recruitment_chance
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 0
+            maximum: 100
+            default: 100
+        - name: strictness
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [thematic, mixed, open]
+            default: open
+        - name: setting_wave
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: setting_variant
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Expedition packet
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /multi_game_expedition_selector_cgi.py?operation=availableGames:
+    get:
+      operationId: availableGames
+      summary: List supported games and implementation status.
+      x-openai-isConsequential: false
+      parameters:
+        - name: operation
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [availableGames]
+      responses:
+        '200':
+          description: Available games
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: false
+                properties:
+                  games:
+                    type: array
+                    items:
+                      type: object
+                      additionalProperties: false
+                      properties:
+                        key:
+                          type: string
+                        display_name:
+                          type: string
+                        implemented:
+                          type: boolean
+                      required: [key, display_name, implemented]
+                required: [games]
+  /multi_game_expedition_selector_cgi.py?operation=availableSettings:
+    get:
+      operationId: availableSettings
+      summary: Get available settings for one game.
+      x-openai-isConsequential: false
+      parameters:
+        - name: operation
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [availableSettings]
+        - name: game
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [aeons_end, astro_knights, invincible]
+      responses:
+        '200':
+          description: Available settings
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /multi_game_expedition_selector_cgi.py?operation=selectReplacementMage:
+    post:
+      operationId: selectReplacementMage
+      summary: Select a replacement mage for a selected game.
+      x-openai-isConsequential: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReplacementMageRequest'
+      responses:
+        '200':
+          description: Replacement mage packet
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    SelectorRequest:
+      type: object
+      additionalProperties: false
+      required: [game, mage_count]
+      properties:
+        game:
+          type: string
+          enum: [aeons_end, astro_knights, invincible]
+        mage_count:
+          type: integer
+          minimum: 1
+        length:
+          type: string
+          enum: [short, standard, long]
+        content_waves:
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: string
+        content_boxes:
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: string
+        seed:
+          type: integer
+        max_attempts:
+          type: integer
+          minimum: 1
+        mage_recruitment_chance:
+          type: integer
+          minimum: 0
+          maximum: 100
+        strictness:
+          type: string
+          enum: [thematic, mixed, open]
+        setting_wave:
+          type: string
+        setting_variant:
+          type: string
+    ReplacementMageRequest:
+      type: object
+      additionalProperties: false
+      required: [operation, game, existing_mage_names]
+      properties:
+        operation:
+          type: string
+          enum: [selectReplacementMage]
+        game:
+          type: string
+          enum: [aeons_end, astro_knights, invincible]
+        existing_mage_names:
+          type: array
+          items:
+            type: string
+        content_waves:
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: string
+        content_boxes:
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: string
+        seed:
+          type: integer
+        max_attempts:
+          type: integer
+          minimum: 1
+    ErrorResponse:
+      type: object
+      additionalProperties: false
+      properties:
+        error:
+          type: string
+        detail:
+          type: string
+      required: [error]

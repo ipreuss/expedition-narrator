@@ -15,7 +15,7 @@ except ModuleNotFoundError:  # pragma: no cover - fallback for environments with
     yaml = SimpleNamespace(safe_load=lambda stream: json.load(stream))  # type: ignore
     sys.modules["yaml"] = yaml  # type: ignore
 
-import aeons_end_expedition_selector as selector
+from core import aeons_end_expedition_selector as selector
 
 
 def write_yaml(path: Path, data) -> None:
@@ -502,12 +502,12 @@ def test_production_yaml_files_are_valid():
     import yaml
 
     production_files = [
-        "aeons_end_mages.yaml",
-        "aeons_end_nemeses.yaml",
-        "aeons_end_waves.yaml",
-        "wave_settings.yaml",
-        "aeons_end_friends.yaml",
-        "aeons_end_foes.yaml",
+        "games/aeons_end/data/aeons_end_mages.yaml",
+        "games/aeons_end/data/aeons_end_nemeses.yaml",
+        "games/aeons_end/data/aeons_end_waves.yaml",
+        "games/aeons_end/data/wave_settings.yaml",
+        "games/aeons_end/data/aeons_end_friends.yaml",
+        "games/aeons_end/data/aeons_end_foes.yaml",
     ]
 
     for filename in production_files:
@@ -519,11 +519,11 @@ def test_production_yaml_files_are_valid():
 
 def test_get_available_settings():
     """Test that get_available_settings returns correct structure."""
-    from aeons_end_expedition_selector import get_available_settings
+    from core.aeons_end_expedition_selector import get_available_settings
 
     result = get_available_settings(
-        settings_yaml_path=str(ROOT / "wave_settings.yaml"),
-        waves_yaml_path=str(ROOT / "aeons_end_waves.yaml"),
+        settings_yaml_path=str(ROOT / "games/aeons_end/data/wave_settings.yaml"),
+        waves_yaml_path=str(ROOT / "games/aeons_end/data/aeons_end_waves.yaml"),
     )
 
     assert "waves" in result

@@ -11,7 +11,7 @@ try:
 except ModuleNotFoundError:  # pragma: no cover - fallback for environments without PyYAML
     yaml = SimpleNamespace(safe_load=lambda stream: json.load(stream))  # type: ignore
 
-import aeons_end_expedition_selector as selector
+from core import aeons_end_expedition_selector as selector
 import expedition_packet_tools as tools
 
 

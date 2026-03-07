@@ -23,12 +23,12 @@ Determinism
 
 CLI example
   python aeons_end_expedition_selector.py \\
-    --mages-yaml aeons_end_mages.yaml \\
-    --settings-yaml wave_settings.yaml \\
-    --waves-yaml aeons_end_waves.yaml \\
-    --nemeses-yaml aeons_end_nemeses.yaml \\
-    --friends-yaml aeons_end_friends.yaml \\
-    --foes-yaml aeons_end_foes.yaml \\
+    --mages-yaml games/aeons_end/data/aeons_end_mages.yaml \\
+    --settings-yaml games/aeons_end/data/wave_settings.yaml \\
+    --waves-yaml games/aeons_end/data/aeons_end_waves.yaml \\
+    --nemeses-yaml games/aeons_end/data/aeons_end_nemeses.yaml \\
+    --friends-yaml games/aeons_end/data/aeons_end_friends.yaml \\
+    --foes-yaml games/aeons_end/data/aeons_end_foes.yaml \\
     --mage-count 4 \\
     --length standard \\
     --content-waves \"1st Wave\" \\
@@ -168,10 +168,11 @@ def get_available_settings(
     }
     """
     import os
+    repo_root = os.path.dirname(os.path.dirname(__file__))
     if settings_yaml_path is None:
-        settings_yaml_path = os.path.join(os.path.dirname(__file__), "wave_settings.yaml")
+        settings_yaml_path = os.path.join(repo_root, "games", "aeons_end", "data", "wave_settings.yaml")
     if waves_yaml_path is None:
-        waves_yaml_path = os.path.join(os.path.dirname(__file__), "aeons_end_waves.yaml")
+        waves_yaml_path = os.path.join(repo_root, "games", "aeons_end", "data", "aeons_end_waves.yaml")
 
     settings_by_wave = load_settings_by_wave(settings_yaml_path)
     waves = []

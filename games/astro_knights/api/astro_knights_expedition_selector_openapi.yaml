@@ -1,0 +1,6 @@
+openapi: 3.1.0
+info:
+  title: Astro Knights Expedition Selector (Scaffold)
+  version: 0.1.0
+  description: Not implemented yet. Use the root multi-game schema for the canonical action surface.
+paths: {}
