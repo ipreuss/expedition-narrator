@@ -15,6 +15,7 @@ Shared selector engine and game profiles for expedition narrator GPTs.
 - `games/invincible/`: scaffold profile.
 - `multi_game_expedition_selector_cgi.py`: unified action endpoint with required `game` parameter.
 - `multi_game_expedition_selector_openapi.yaml`: unified GPT Action schema.
+- `system_prompt.txt`: central system prompt for the single multi-game Custom GPT.
 - `docs/custom_gpt_multigame_setup.md`: concrete setup steps for one multi-game GPT.
 
 ## Quick start (Aeon's End selector directly)

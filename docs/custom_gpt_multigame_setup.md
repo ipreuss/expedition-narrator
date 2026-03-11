@@ -7,6 +7,7 @@ One Custom GPT that can narrate multiple games with strict game isolation.
 Use:
 - Schema: `multi_game_expedition_selector_openapi.yaml`
 - Endpoint script: `multi_game_expedition_selector_cgi.py`
+- System prompt: `system_prompt.txt` (repo root)
 
 ## Required first turn behavior
 1. If the user did not specify a game, ask: `Which game do you want to play? (Aeon's End, Astro Knights, Invincible)`.
