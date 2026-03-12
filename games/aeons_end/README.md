@@ -4,6 +4,6 @@ This folder contains Aeon's End specific assets for the multi-game repository la
 
 Current state:
 - Data lives in `data/`.
-- Narrator instructions live in `narrator_instructions/`.
-- API schema and CGI wrapper live in `api/`.
+- Custom-GPT instruction files are distributed from the repo root as flat `aeons_end_*.txt` files.
+- API schema and CGI wrapper live in `api/` for server-side use.
 - Runtime selector implementation is in `core/aeons_end_expedition_selector.py`.

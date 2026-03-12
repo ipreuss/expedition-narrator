@@ -4,28 +4,28 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the **Expedition Narrator** for Aeon's End, a board game companion that generates narrative expeditions. The system has three components:
+This repository contains the **Expedition Narrator** codebase, now organized as one multi-game Custom GPT plus game-specific server-side assets. The system has three components:
 
-1. **Deterministic Selector** (`aeons_end_expedition_selector.py`) - Generates collision-free expedition packets containing mages, nemeses, friends, foes, and wave settings
-2. **CGI Wrapper** (`aeons_end_expedition_selector_cgi.py`) - HTTP API exposing the selector (deployed at `skriptguruai.site`)
-3. **ChatGPT Custom GPT** - Consumes the API and narrates the expedition using guidance in `narrator_instructions/`
+1. **Deterministic Selector** (`core/aeons_end_expedition_selector.py`) - Generates collision-free expedition packets containing mages, nemeses, friends, foes, and wave settings
+2. **CGI Wrapper** (`multi_game_expedition_selector_cgi.py`) - HTTP API exposing the selector (deployed at `skriptguruai.site`)
+3. **ChatGPT Custom GPT** - Consumes the API and narrates the expedition using the flat root prompt/instruction files (`system_prompt.txt` and `aeons_end_*.txt`)
 
 ## Commands
 
 ### Run Tests
 ```bash
-pytest tests/
+.venv/bin/pytest tests/
 ```
 
 ### Run Selector CLI
 ```bash
-python aeons_end_expedition_selector.py \
-  --mages-yaml aeons_end_mages.yaml \
-  --settings-yaml wave_settings.yaml \
-  --waves-yaml aeons_end_waves.yaml \
-  --nemeses-yaml aeons_end_nemeses.yaml \
-  --friends-yaml aeons_end_friends.yaml \
-  --foes-yaml aeons_end_foes.yaml \
+python core/aeons_end_expedition_selector.py \
+  --mages-yaml games/aeons_end/data/aeons_end_mages.yaml \
+  --settings-yaml games/aeons_end/data/wave_settings.yaml \
+  --waves-yaml games/aeons_end/data/aeons_end_waves.yaml \
+  --nemeses-yaml games/aeons_end/data/aeons_end_nemeses.yaml \
+  --friends-yaml games/aeons_end/data/aeons_end_friends.yaml \
+  --foes-yaml games/aeons_end/data/aeons_end_foes.yaml \
   --mage-count 4 \
   --length standard \
   --content-waves "1st Wave" \
@@ -50,12 +50,12 @@ The `strictness` parameter controls entity scoping:
 ### Data Files (YAML)
 | File | Content |
 |------|---------|
-| `aeons_end_mages.yaml` | Mage definitions with variants and story notes |
-| `aeons_end_nemeses.yaml` | Nemesis definitions by tier (1-4) |
-| `aeons_end_friends.yaml` | Friend (ally) definitions |
-| `aeons_end_foes.yaml` | Foe definitions |
-| `aeons_end_waves.yaml` | Box-to-wave mapping |
-| `wave_settings.yaml` | Setting metadata per wave |
+| `games/aeons_end/data/aeons_end_mages.yaml` | Mage definitions with variants and story notes |
+| `games/aeons_end/data/aeons_end_nemeses.yaml` | Nemesis definitions by tier (1-4) |
+| `games/aeons_end/data/aeons_end_friends.yaml` | Friend (ally) definitions |
+| `games/aeons_end/data/aeons_end_foes.yaml` | Foe definitions |
+| `games/aeons_end/data/aeons_end_waves.yaml` | Box-to-wave mapping |
+| `games/aeons_end/data/wave_settings.yaml` | Setting metadata per wave |
 
 ### Utility Module
 `expedition_packet_tools.py` provides:

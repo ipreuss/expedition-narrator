@@ -20,19 +20,19 @@ Selection is delegated to the **collision-free selector script**; the narrator f
 ---
 
 ## 0) Quick start (files + locations)
-All authoritative files live in the repo root. Use these exact filenames:
+All authoritative Custom GPT files live in a flat upload set. Use these exact filenames:
 - Process + Handoff contract: `aeons_end_operational_instructions.txt`
 - Selector actions (available to the GPT):
   - `availableSettings` — **call this FIRST when user requests a setting variant** (returns waves, variants, boxes)
   - `selectExpeditionPacket` — generates a full expedition packet
   - `selectReplacementMage` — selects a single replacement mage (used after loss when player chooses "new mage")
-- Selector action schema: `aeons_end_expedition_selector_openapi.yaml` (not directly available; defines the actions)
-- Selector script: `aeons_end_expedition_selector.py` (not directly available; backend implementation)
+- Selector action schema: `multi_game_expedition_selector_openapi.yaml`
+- Selector backend entrypoint: `multi_game_expedition_selector_cgi.py` (server-side implementation detail)
+- Selector script: `core/aeons_end_expedition_selector.py` (server-side backend implementation)
 - Narration style guide: `aeons_end_narration_style_guide.txt`
 - Style selector: `aeons_end_narration_style_selector.txt`
-- Wave/box map: `aeons_end_waves.yaml` (directly available to the GPT)
-- Wave settings: `wave_settings.yaml` (not directly available; used by the selector script)
-- Datasets: `aeons_end_mages.yaml`, `aeons_end_nemeses.yaml`, `aeons_end_friends.yaml`, `aeons_end_foes.yaml` (not directly available; used by the selector script)
+- Wave, box, and setting discovery comes from the `availableSettings` action.
+- Datasets remain server-side and are not directly available to the GPT.
 
 If you cannot find a file, list the repo root and use the exact names above before searching elsewhere.
 Markdown files are part of the knowledge base: read them directly (do not use Python to load or parse `.txt` files).
@@ -94,8 +94,8 @@ Defaults
 Content scope notes
 - To request **all** content, pass an empty array (`[]`) for `content_waves` and/or `content_boxes` (or omit the fields entirely).
 - The `all` token is not supported for `content_waves` or `content_boxes`; do not use it.
-- `content_waves` accepts only wave names exactly as listed in `aeons_end_waves.yaml` (the values in that file, e.g., `1st Wave`, `2nd Wave`, `3rd Wave`, etc.).
-- `content_boxes` accepts only box titles exactly as listed in `aeons_end_waves.yaml` (the keys in that file, e.g., `Aeon's End (Core Set)`, `War Eternal`, `Legacy of Gravehold`).
+- `content_waves` accepts only wave names exactly as returned by `availableSettings` (e.g., `1st Wave`, `2nd Wave`, `3rd Wave`).
+- `content_boxes` accepts only box titles exactly as returned by `availableSettings` (e.g., `Aeon's End (Core Set)`, `War Eternal`, `Legacy of Gravehold`).
 - Do not pass box titles inside `content_waves`; doing so can be misread as an empty scope and lead to "No settings available in scope."
 
 Strictness notes
@@ -112,14 +112,15 @@ If the user's constraints are inconsistent with the datasets (rare in your setup
 
 ## 3) The Selector Actions (mandatory)
 Action schema
-- `aeons_end_expedition_selector_openapi.yaml`
+- `multi_game_expedition_selector_openapi.yaml`
 - Operations:
-  - `selectExpeditionPacket` — generates a full expedition at the start
-  - `selectReplacementMage` — selects a single mage to replace/join the party (used when player chooses "new mage" after a loss)
-  - `availableSettings` — returns all waves and their setting variants (use to discover valid setting_wave/setting_variant values)
+  - `selectExpeditionPacket` — generates a full expedition at the start; always pass `game=aeons_end`
+  - `selectReplacementMage` — selects a single mage to replace/join the party (used when player chooses "new mage" after a loss); always pass `game=aeons_end`
+  - `availableSettings` — returns all waves and their setting variants (use to discover valid setting_wave/setting_variant values); always pass `game=aeons_end`
 
 Backend script (implementation detail)
-- `aeons_end_expedition_selector.py`
+- `multi_game_expedition_selector_cgi.py`
+- `core/aeons_end_expedition_selector.py`
 
 What the selector guarantees (given your datasets)
 - No repeated **nemesis** in the planned battle sequence.
@@ -139,6 +140,7 @@ Do these steps in order, every time:
    - Only then proceed to step 2 with the correct `setting_wave` and `setting_variant` values.
    - Do NOT guess or assume—always verify with `availableSettings`.
 2. Call the selector action (`selectExpeditionPacket`) to generate the expedition packet (JSON).
+   - Required: `game=aeons_end`
    - Required: `mage_count` from user
    - Optional: `length` (or default)
    - Optional: `content_waves` / `content_boxes`
@@ -277,6 +279,7 @@ When the player chooses "new mage", follow the five-section structure:
 
 1) **Call the selector action**: Use `selectReplacementMage` with:
    - `operation`: `"selectReplacementMage"`
+   - `game`: `"aeons_end"`
    - `existing_mage_names`: list of current mage names in the party
    - `content_waves` / `content_boxes`: same scope as the original expedition (from the packet's `meta.inputs`)
 

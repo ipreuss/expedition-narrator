@@ -8,6 +8,7 @@ Use:
 - Schema: `multi_game_expedition_selector_openapi.yaml`
 - Endpoint script: `multi_game_expedition_selector_cgi.py`
 - System prompt: `system_prompt.txt` (repo root)
+- Detail instructions: the flat `aeons_end_*.txt` files in the repo root
 
 ## Required first turn behavior
 1. If the user did not specify a game, ask: `Which game do you want to play? (Aeon's End, Astro Knights, Invincible)`.
@@ -17,7 +18,7 @@ Use:
 
 ## Hard guardrails
 - Treat selected game profile as authoritative context boundary.
-- Read only `games/<selected_game>/narrator_instructions/*` for style/operations.
+- Read only the flat uploaded instruction files for the selected game.
 - Use only content returned by selector action for that game.
 - If a requested operation is not implemented for the selected game, say so plainly and offer to switch games.
 

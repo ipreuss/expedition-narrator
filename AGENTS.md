@@ -35,7 +35,7 @@ When adding or modifying OpenAPI schemas for GPT Actions in this repository:
 
 ## Project Architecture
 
-This project is an **Expedition Narrator** for Aeon's End, consisting of:
+This project is an **Expedition Narrator** codebase with one multi-game Custom GPT and game-specific server assets, consisting of:
 1. A **deterministic selector** that generates expedition packets
 2. A **CGI wrapper** exposing the selector as an HTTP API
 3. A **ChatGPT Custom GPT** that uses the API as a GPT Action and narrates the expedition
@@ -44,22 +44,23 @@ This project is an **Expedition Narrator** for Aeon's End, consisting of:
 
 | File | Purpose |
 |------|---------|
-| `aeons_end_expedition_selector.py` | Core selector logic (collision-free selection of mages, nemeses, friends, foes) |
-| `aeons_end_expedition_selector_cgi.py` | CGI wrapper for HTTP access (GET + POST) |
-| `aeons_end_expedition_selector_openapi.yaml` | OpenAPI 3.1.0 schema for GPT Action integration |
+| `core/aeons_end_expedition_selector.py` | Core selector logic (collision-free selection of mages, nemeses, friends, foes) |
+| `multi_game_expedition_selector_cgi.py` | Unified CGI wrapper for HTTP access (GET + POST) |
+| `multi_game_expedition_selector_openapi.yaml` | Unified OpenAPI 3.1.0 schema for GPT Action integration |
 | `expedition_packet_tools.py` | Utilities: seed resolution, packet validation, story data extraction |
-| `narrator_instructions/aeons_end_operational_instructions.txt` | Narrator workflow and handoff contract |
+| `system_prompt.txt` | Central system prompt for the multi-game Custom GPT |
+| `aeons_end_operational_instructions.txt` | Aeon's End narrator workflow and handoff contract |
 
 ### Data Files (YAML)
 
 | File | Content |
 |------|---------|
-| `aeons_end_mages.yaml` | Mage definitions with variants and story notes |
-| `aeons_end_nemeses.yaml` | Nemesis definitions by tier (1-4) |
-| `aeons_end_friends.yaml` | Friend (ally) definitions |
-| `aeons_end_foes.yaml` | Foe definitions |
-| `aeons_end_waves.yaml` | Wave-to-box mapping |
-| `wave_settings.yaml` | Setting metadata per wave |
+| `games/aeons_end/data/aeons_end_mages.yaml` | Mage definitions with variants and story notes |
+| `games/aeons_end/data/aeons_end_nemeses.yaml` | Nemesis definitions by tier (1-4) |
+| `games/aeons_end/data/aeons_end_friends.yaml` | Friend (ally) definitions |
+| `games/aeons_end/data/aeons_end_foes.yaml` | Foe definitions |
+| `games/aeons_end/data/aeons_end_waves.yaml` | Wave-to-box mapping |
+| `games/aeons_end/data/wave_settings.yaml` | Setting metadata per wave |
 
 ### Selector Guarantees
 
@@ -71,14 +72,14 @@ The selector ensures (via retry mechanism):
 
 ### API Endpoint
 
-- **URL**: `https://skriptguruai.site/cgi-bin/expedition-narrator/aeons_end_expedition_selector_cgi.py`
+- **URL**: `https://skriptguruai.site/cgi-bin/expedition-narrator/multi_game_expedition_selector_cgi.py`
 - **Methods**: GET (query params) and POST (JSON body)
-- **Required param**: `mage_count` (integer)
+- **Required params**: `game` (string), `mage_count` (integer)
 - **Optional params**: `length`, `content_waves`, `content_boxes`, `seed`, `max_attempts`
 
 ### Testing
 
 Tests are in `tests/test_expedition_selector.py`. Run with:
 ```bash
-pytest tests/
+.venv/bin/pytest tests/
 ```

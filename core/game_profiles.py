@@ -9,7 +9,7 @@ class GameProfile:
     key: str
     display_name: str
     implemented: bool
-    instructions_dir: str
+    instruction_location: str
     data_dir: str
     openapi_schema: str
     selector_cgi: str
@@ -20,7 +20,7 @@ GAME_PROFILES: Dict[str, GameProfile] = {
         key="aeons_end",
         display_name="Aeon's End",
         implemented=True,
-        instructions_dir="games/aeons_end/narrator_instructions",
+        instruction_location="repo root flat files: aeons_end_*.txt plus system_prompt.txt",
         data_dir="games/aeons_end/data",
         openapi_schema="games/aeons_end/api/aeons_end_expedition_selector_openapi.yaml",
         selector_cgi="games/aeons_end/api/aeons_end_expedition_selector_cgi.py",
@@ -29,7 +29,7 @@ GAME_PROFILES: Dict[str, GameProfile] = {
         key="astro_knights",
         display_name="Astro Knights",
         implemented=False,
-        instructions_dir="games/astro_knights/narrator_instructions",
+        instruction_location="repo root flat files: astro_knights_*.txt plus system_prompt.txt",
         data_dir="games/astro_knights/data",
         openapi_schema="games/astro_knights/api/astro_knights_expedition_selector_openapi.yaml",
         selector_cgi="games/astro_knights/api/astro_knights_expedition_selector_cgi.py",
@@ -38,7 +38,7 @@ GAME_PROFILES: Dict[str, GameProfile] = {
         key="invincible",
         display_name="Invincible",
         implemented=False,
-        instructions_dir="games/invincible/narrator_instructions",
+        instruction_location="repo root flat files: invincible_*.txt plus system_prompt.txt",
         data_dir="games/invincible/data",
         openapi_schema="games/invincible/api/invincible_expedition_selector_openapi.yaml",
         selector_cgi="games/invincible/api/invincible_expedition_selector_cgi.py",
