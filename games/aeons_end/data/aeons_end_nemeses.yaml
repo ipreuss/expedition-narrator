@@ -1008,19 +1008,32 @@ nemeses:
 - name: The Changeling Nest
   box: Past and Future
   battle: 3
-  background: 'The Changeling Nest is a living hive that collects children from the
-    surrounding lands.  Villagers speak of it in terrified whispers—those taken by the
-    Changeling "warp up to become" something else entirely.  Lily, a strange girl with
-    too many teeth in her smile, was one such collected child who somehow escaped or
-    was released.  The nest hatches unpredictable creatures from its cocoons, each
-    changing form to adapt to the mages'' strategies.'
-  appearance: A sprawling nest covered in pulsing cocoons and writhing vines, with
-    strange creatures emerging from within.  Children''s belongings lie scattered at
-    its base.
+  background: 'The Changeling Nest is not merely a place but a sentient hive hidden
+    in choking green swamps of the Void, where distended cocoons glow with an eerie
+    warmth.  Explorers who approach too closely report seeing human silhouettes moving
+    inside the silk, and many who try to cut the cocoons open never return.  Villagers
+    whisper that children taken by the Nest "warp up to become" something else
+    entirely.  Lily, a strange girl with too many teeth in her smile, was one such
+    collected child who somehow escaped—or was deliberately released.'
+  appearance: A sprawling nest of living vines and pulsing cocoons, with branch-like
+    antlers and newly opened eyes emerging from the swamp canopy as the hive awakens.
+    Children''s belongings lie scattered at its base.
   strengths: Starts with multiple cocoons in play; its unleash triggers cause damage
     based on the number of cocoons and hatch new minions
   weaknesses: Destroying cocoons reduces the nest's damage and prevents new minions
     from spawning
+  story_notes: |
+    In Xaxos's exile journal, he recalls stumbling upon the Changeling Nest and
+    mistaking it for an ordinary swamp hollow.  The cocoons seemed almost natural in
+    the warped landscape until he laid a hand on the silk and felt unmistakable warmth
+    in the Void.  Drawn by a human shape inside one cocoon, he tore it open and found
+    a silent girl who appeared changed yet recognizably human.
+
+    As he cradled the child, the swamp stirred to life.  Branches twisted into antlers,
+    new eyes opened in the foliage, and the entire marsh revealed itself as one
+    coordinated organism.  Xaxos fled with the girl before the nest could fully close
+    around them, and his account became one of the first warnings that the Changeling
+    Nest hunts by curiosity as much as by force.
 - name: Corruption's Core
   box: Past and Future
   battle: 4
