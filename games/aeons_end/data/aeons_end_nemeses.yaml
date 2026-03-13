@@ -33,11 +33,11 @@ nemeses:
   battle: 1
   background: |
     Also called the Mother-of-Husks or Swarm Daughter, the Carapace Queen has
-    brought more ruin upon Gravehold than any other single Nameless.  Legends
-    describe her armies as endless, with husks spilling like molten metal from
-    cracks in the earth.  Her forces are described as more machine than beast, and
-    survivors tell tales of collapsing tunnels to escape her throngs.  Even when
-    one husk is destroyed, many more seem to crawl from beneath her carapace.
+    brought more ruin upon Gravehold than any other single Nameless.  Chroniclers
+    describe her armies as endless, with husks spilling like metallic swarms from
+    cracks in the earth.  Her forces seem more clockwork than beast, and survivors
+    tell of weeks spent shoveling twitching husk remains after each siege.  Even
+    when one husk is destroyed, many more crawl from beneath her carapace.
   difficulty: 3
   life: 60
   appearance: |
@@ -53,6 +53,18 @@ nemeses:
     With 60 life points, relatively low health.  Turn order manipulation can
     reduce its explosive potential.  AoE damage or multi-hit spells are
     particularly valuable against the husks.
+  story_notes: |
+    Gravehold veterans recite a bitter proverb before every assault: "To kill one
+    is to breed six."  The saying comes from hard experience with Carapace Queen
+    broods that multiply faster than defenders can burn them down.  Each skirmish
+    leaves corridors carpeted in metallic fragments and pale ichor, and cleanup
+    crews report that many husk bodies keep twitching long after the battle ends.
+
+    When the Queen withdraws through the void, her swarm finally slows and the
+    surviving husks collapse where they stand.  Breach mages use that narrow window
+    to regroup, triage the wounded, and destroy dormant brood-clusters before they
+    reactivate.  Any delay risks another wave spilling from deep caverns and
+    overrunning the city walls.
   special_rules: |
     Each husk has 1 life.  Players may suffer 1 damage to distribute excess
     damage to additional husks.  At 15+ husks, Gravehold suffers 1 damage
@@ -409,7 +421,11 @@ nemeses:
   strengths: The Fungal Mesh spreads clinging spores that invade minds and twist perception.  Possessed scouts strike at their companions, and as the fungus feeds on aether its hive-mind influence deepens, using enthralled victims to defend itself and lure others into its grasp.
   weaknesses: Fire and concentrated bursts of magic can scorch its tendrils and burn away spores; those who resist its whisperings can break the spell over allies, and severing growth clusters weakens the collective.
   story_notes: |
-    During the third wave of the Legacy expedition Brama and Mist leave New Gravehold to search for other survivors but are ambushed by the mind-controlling Fungal Mesh.  The Nameless’s spores encase Brama and seize control of her mind, forcing Mist to flee back to camp wounded and beg the other mages to rescue their general.  The party ventures into the fungus-choked tunnels, battling hallucinations and mental attacks while fighting to avoid possession.  When the Fungal Mesh is defeated Brama is freed from its control and the breach to its realm is closed.  The mages carry her back to camp, and she collapses from exhaustion yet expresses relief that Mist is safe.  The encounter underscores the danger of Nameless that can corrupt minds and galvanises the survivors to seek out and support other groups before they fall prey to similar threats.
+    During the third wave of the Legacy expedition scouts first encounter the Fungal Mesh and are wholly unprepared for what it can do.  The aftermath is gruesome: several scouts are mentally overrun and driven to attack one another, leaving the cavern floor slick with blood.  In response, the survivors impose strict distance protocols and monitor the creature from afar, treating every spore cloud as a potential loss of control.
+
+    Brama and Mist later leave New Gravehold to search for other survivors but are ambushed by the same mind-controlling Nameless.  The Mesh’s spores encase Brama and pull her into the hive consciousness, forcing Mist to retreat to camp wounded and plead for a rescue mission.  The party advances through fungus-choked tunnels, enduring hallucinations, psychic pressure, and sudden betrayal risks while trying to avoid possession.
+
+    When the Fungal Mesh is finally defeated Brama is freed from its control and the breach to its realm collapses.  The mages carry her back to camp, where she recovers enough to warn that if this kind of Nameless is left unchecked no settlement on the surface will remain safe for long.  The chapter marks a turning point for the expedition: they can no longer treat mind-affecting threats as rare anomalies, and begin planning future operations around psychological resilience as much as raw combat strength.
 - name: Haze Fiend
   box: Aeon's End Legacy
   battle: 3
@@ -547,16 +563,31 @@ nemeses:
 - name: Burrower
   box: Return to Gravehold
   battle: 4
-  background: 'The Burrower is a massive Nameless that swims through solid rock beneath
-    the ruins of Gravehold.  Cairna hears rumbling vibrations echoing through the
-    tunnels and glimpses the creature gliding through stone like water.  It devours
-    supply piles by destroying the top card, threatening to starve mages of their
-    resources. '
-  appearance: A gigantic centipede-like creature with stone and crystal plates along
-    its body.
-  strengths: Destroys the top card of a supply pile whenever it unleashes, removing
-    valuable cards from the game
-  weaknesses: Has no minions and can be focused down by coordinated attacks
+  background: 'Cairna says she felt the Burrower long before she saw it: a deep vibration
+    moving through tunnel stone and a sense that the ground itself was becoming
+    unstable underfoot.  The Burrower is a massive Nameless that swims through solid
+    rock like water, collapsing seemingly safe passages into sudden pits and quicksand.
+    When it rises, clawed tendrils taller than a person tear through stone and scatter
+    defenders before diving below again.  It devours supply piles by destroying top
+    cards, threatening to starve mages of the tools they need to fight back.'
+  appearance: A gigantic worm-like Nameless plated with stone and crystal growths,
+    crowned by a maw of clawed tendrils that can rip through bedrock.
+  strengths: Destroys the top card of supply piles and seeds hidden trap pressure in
+    the market, turning routine purchases into sudden hazards while battlefield footing
+    keeps collapsing around the mages
+  weaknesses: Has no persistent minion screen; coordinated damage and careful trap
+    management can blunt its attrition plan and force it into a direct confrontation
+  story_notes: |
+    Cairna warns that facing Burrower is as much a navigation battle as a combat one.
+    In her account, whole corridors that seemed solid one breath earlier sank away in
+    the next, and she caught only brief glimpses of a huge body gliding under stone.
+    By the time mages identify where it will surface, new pits have already cut off
+    retreat routes and split the line.
+
+    The creature's ambush rhythm is relentless: collapse the terrain, shred supplies,
+    then vanish before a full counterattack lands.  Survivors learned to move in tight
+    coordination, probe every approach, and keep fallback routes open at all times.
+    Against Burrower, overextension is punished immediately and often fatally.
 - name: Fortress
   box: Return to Gravehold
   battle: 3
@@ -992,19 +1023,32 @@ nemeses:
 - name: The Changeling Nest
   box: Past and Future
   battle: 3
-  background: 'The Changeling Nest is a living hive that collects children from the
-    surrounding lands.  Villagers speak of it in terrified whispers—those taken by the
-    Changeling "warp up to become" something else entirely.  Lily, a strange girl with
-    too many teeth in her smile, was one such collected child who somehow escaped or
-    was released.  The nest hatches unpredictable creatures from its cocoons, each
-    changing form to adapt to the mages'' strategies.'
-  appearance: A sprawling nest covered in pulsing cocoons and writhing vines, with
-    strange creatures emerging from within.  Children''s belongings lie scattered at
-    its base.
+  background: 'The Changeling Nest is not merely a place but a sentient hive hidden
+    in choking green swamps of the Void, where distended cocoons glow with an eerie
+    warmth.  Explorers who approach too closely report seeing human silhouettes moving
+    inside the silk, and many who try to cut the cocoons open never return.  Villagers
+    whisper that children taken by the Nest "warp up to become" something else
+    entirely.  Lily, a strange girl with too many teeth in her smile, was one such
+    collected child who somehow escaped—or was deliberately released.'
+  appearance: A sprawling nest of living vines and pulsing cocoons, with branch-like
+    antlers and newly opened eyes emerging from the swamp canopy as the hive awakens.
+    Children''s belongings lie scattered at its base.
   strengths: Starts with multiple cocoons in play; its unleash triggers cause damage
     based on the number of cocoons and hatch new minions
   weaknesses: Destroying cocoons reduces the nest's damage and prevents new minions
     from spawning
+  story_notes: |
+    In Xaxos's exile journal, he recalls stumbling upon the Changeling Nest and
+    mistaking it for an ordinary swamp hollow.  The cocoons seemed almost natural in
+    the warped landscape until he laid a hand on the silk and felt unmistakable warmth
+    in the Void.  Drawn by a human shape inside one cocoon, he tore it open and found
+    a silent girl who appeared changed yet recognizably human.
+
+    As he cradled the child, the swamp stirred to life.  Branches twisted into antlers,
+    new eyes opened in the foliage, and the entire marsh revealed itself as one
+    coordinated organism.  Xaxos fled with the girl before the nest could fully close
+    around them, and his account became one of the first warnings that the Changeling
+    Nest hunts by curiosity as much as by force.
 - name: Corruption's Core
   box: Past and Future
   battle: 4
