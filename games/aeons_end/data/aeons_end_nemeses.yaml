@@ -33,11 +33,11 @@ nemeses:
   battle: 1
   background: |
     Also called the Mother-of-Husks or Swarm Daughter, the Carapace Queen has
-    brought more ruin upon Gravehold than any other single Nameless.  Legends
-    describe her armies as endless, with husks spilling like molten metal from
-    cracks in the earth.  Her forces are described as more machine than beast, and
-    survivors tell tales of collapsing tunnels to escape her throngs.  Even when
-    one husk is destroyed, many more seem to crawl from beneath her carapace.
+    brought more ruin upon Gravehold than any other single Nameless.  Chroniclers
+    describe her armies as endless, with husks spilling like metallic swarms from
+    cracks in the earth.  Her forces seem more clockwork than beast, and survivors
+    tell of weeks spent shoveling twitching husk remains after each siege.  Even
+    when one husk is destroyed, many more crawl from beneath her carapace.
   difficulty: 3
   life: 60
   appearance: |
@@ -53,6 +53,18 @@ nemeses:
     With 60 life points, relatively low health.  Turn order manipulation can
     reduce its explosive potential.  AoE damage or multi-hit spells are
     particularly valuable against the husks.
+  story_notes: |
+    Gravehold veterans recite a bitter proverb before every assault: "To kill one
+    is to breed six."  The saying comes from hard experience with Carapace Queen
+    broods that multiply faster than defenders can burn them down.  Each skirmish
+    leaves corridors carpeted in metallic fragments and pale ichor, and cleanup
+    crews report that many husk bodies keep twitching long after the battle ends.
+
+    When the Queen withdraws through the void, her swarm finally slows and the
+    surviving husks collapse where they stand.  Breach mages use that narrow window
+    to regroup, triage the wounded, and destroy dormant brood-clusters before they
+    reactivate.  Any delay risks another wave spilling from deep caverns and
+    overrunning the city walls.
   special_rules: |
     Each husk has 1 life.  Players may suffer 1 damage to distribute excess
     damage to additional husks.  At 15+ husks, Gravehold suffers 1 damage
