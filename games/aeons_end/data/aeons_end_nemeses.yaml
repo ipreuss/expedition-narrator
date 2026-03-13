@@ -563,16 +563,31 @@ nemeses:
 - name: Burrower
   box: Return to Gravehold
   battle: 4
-  background: 'The Burrower is a massive Nameless that swims through solid rock beneath
-    the ruins of Gravehold.  Cairna hears rumbling vibrations echoing through the
-    tunnels and glimpses the creature gliding through stone like water.  It devours
-    supply piles by destroying the top card, threatening to starve mages of their
-    resources. '
-  appearance: A gigantic centipede-like creature with stone and crystal plates along
-    its body.
-  strengths: Destroys the top card of a supply pile whenever it unleashes, removing
-    valuable cards from the game
-  weaknesses: Has no minions and can be focused down by coordinated attacks
+  background: 'Cairna says she felt the Burrower long before she saw it: a deep vibration
+    moving through tunnel stone and a sense that the ground itself was becoming
+    unstable underfoot.  The Burrower is a massive Nameless that swims through solid
+    rock like water, collapsing seemingly safe passages into sudden pits and quicksand.
+    When it rises, clawed tendrils taller than a person tear through stone and scatter
+    defenders before diving below again.  It devours supply piles by destroying top
+    cards, threatening to starve mages of the tools they need to fight back.'
+  appearance: A gigantic worm-like Nameless plated with stone and crystal growths,
+    crowned by a maw of clawed tendrils that can rip through bedrock.
+  strengths: Destroys the top card of supply piles and seeds hidden trap pressure in
+    the market, turning routine purchases into sudden hazards while battlefield footing
+    keeps collapsing around the mages
+  weaknesses: Has no persistent minion screen; coordinated damage and careful trap
+    management can blunt its attrition plan and force it into a direct confrontation
+  story_notes: |
+    Cairna warns that facing Burrower is as much a navigation battle as a combat one.
+    In her account, whole corridors that seemed solid one breath earlier sank away in
+    the next, and she caught only brief glimpses of a huge body gliding under stone.
+    By the time mages identify where it will surface, new pits have already cut off
+    retreat routes and split the line.
+
+    The creature's ambush rhythm is relentless: collapse the terrain, shred supplies,
+    then vanish before a full counterattack lands.  Survivors learned to move in tight
+    coordination, probe every approach, and keep fallback routes open at all times.
+    Against Burrower, overextension is punished immediately and often fatally.
 - name: Fortress
   box: Return to Gravehold
   battle: 3
