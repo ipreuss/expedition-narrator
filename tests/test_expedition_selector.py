@@ -1,5 +1,6 @@
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -515,6 +516,47 @@ def test_production_yaml_files_are_valid():
         if filepath.exists():
             with open(filepath, encoding="utf-8") as fp:
                 yaml.safe_load(fp)  # raises if invalid YAML
+
+
+def test_production_nemeses_have_no_duplicate_name_per_box():
+    """Nemesis entries must be unique per (name, box)."""
+    import yaml
+
+    filepath = ROOT / "games/aeons_end/data/aeons_end_nemeses.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        nemeses = yaml.safe_load(fp)["nemeses"]
+
+    counts = Counter((selector.name_key(entry["name"]), entry.get("box")) for entry in nemeses)
+    duplicates = [
+        (name, box, count)
+        for (name, box), count in sorted(counts.items())
+        if count > 1
+    ]
+
+    assert not duplicates, f"Duplicate nemesis entries per box found: {duplicates}"
+
+
+def test_production_mage_variants_have_no_duplicate_mage_per_box():
+    """A mage can have variants across waves, but should be unique within a box."""
+    import yaml
+
+    filepath = ROOT / "games/aeons_end/data/aeons_end_mages.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        mages = yaml.safe_load(fp)["mages"]
+
+    counts = Counter()
+    for mage in mages:
+        mage_name = selector.name_key(mage["name"])
+        for variant in mage.get("variants", []):
+            counts[(mage_name, variant.get("box"))] += 1
+
+    duplicates = [
+        (name, box, count)
+        for (name, box), count in sorted(counts.items())
+        if count > 1
+    ]
+
+    assert not duplicates, f"Duplicate mage variants per box found: {duplicates}"
 
 
 def test_get_available_settings():

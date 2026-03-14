@@ -595,10 +595,16 @@ nemeses:
   box: The New Age
   battle: 3
   background: |
-    Once a mage and follower of a wayward leader, this man sought to harness Void power and transcend mortality.  The ritual he performed aged him to brittle bones and left his soul tethered to a decaying corpse.  Now a skeletal creature dripping with void essence wanders the wilderness, where every step withers grass and ages leaves to dust.  He carries the cloak of his former faction and the symbol of his misguided loyalty.  He is more Nameless than human, striking down both foe and former ally with equal disregard.
+    The Ageless Walker was once Karak, a devoted follower of Xaxos and close companion to Arachnos.  Hungry for power, he volunteered for a Void ritual meant to infuse him with Nameless strength.  Instead, the ritual consumed his life in moments.  Karak aged rapidly until only bones remained, but the flow of Void energy did not stop at death.  It twisted what remained of him into an unnatural thing that decays and grows at the same time.
+
+    Now this skeletal horror drifts through the wilds in the torn cloak of his former faction, strings of void residue hanging from bone and talon.  Every step leaves withered plants and dead soil behind.  The Ageless Walker no longer distinguishes friend from enemy; it slaughters indiscriminately, as though the last trace of Karak’s humanity was stripped away when the ritual failed.
   appearance: A skeletal figure wrapped in tattered cloaks, void essence oozing from cracks in its bones and fingers elongated into talons.
   strengths: Drains life and ages everything around it, causing vegetation and flesh to wither.  Its touch can kill followers and enemies alike, and its presence brings decay and despair.
   weaknesses: The ritual that sustains it leaves it brittle; severing its connection to the Void or confronting it with memories of its past life may weaken its resolve and slow its relentless decay.
+  story_notes: |
+    Humans were never meant to wield the raw magic of the Void.  Karak believed otherwise, trusting Xaxos’s followers and Arachnos’s calculations when they promised transcendence through ritual.  As Void energy poured into him, his body failed catastrophically: flesh withered, years passed in breaths, and bones cracked under impossible age.  Arachnos heard the screaming but refused to intervene, convinced the process was still under control.
+
+    The result was not ascension but metamorphosis.  Karak’s death became a threshold, not an ending.  By the time the ritual collapsed, a new creature stood in his place—something neither human nor fully Nameless.  The Ageless Walker now roams without memory or mercy, bringing death, rot, and accelerated decay wherever it wanders.
 - name: Fenrix
   box: The New Age
   battle: 4
@@ -680,10 +686,26 @@ nemeses:
 - name: Fortress
   box: Return to Gravehold
   battle: 3
-  background: 'Fortress lurks beneath the flooded ruins of Old Gravehold.  Explorer Gygar descended into the chasm hoping to recover relics and artefacts from the sunken city but instead discovered a gigantic aquatic Nameless that had made the wreckage its home.  From above it looked like a pile of fallen buildings, but as the party approached the rubble rose and revealed itself to be a living creature.  Fortress has adapted to the ruins, using stones from the collapsed city to construct a nearly impenetrable shell like a mobile citadel.  Defeating it may provide insight into how Nameless integrate themselves into the environments of our world. '
-  appearance: A colossal crustacean-like Nameless with a body obscured beneath a mountain of fused stones and shattered buildings, resembling a fortress that drags itself along the sea-floor.  Its claws are like battering rams and its shell resembles the ruined skyline of Old Gravehold.
-  strengths: Fortress drags rubble across the battlefield, continually adding debris to its shell to thicken its armour.  Its massive claw strikes and shifting bulk can crush foes and deflect spells; as it advances its defences become almost unbreakable.
-  weaknesses: Once it is forced out of the ruined zone or its shell is dismantled, the rubble falls away to expose its softer body.  Stripping away its defences with persistent attacks and preventing it from gathering more stones are key to defeating it.
+  background: |
+    Fortress lurks beneath the flooded ruins of Old Gravehold.  Gygar first approached the site expecting relics and sunken treasure, only to discover that the "wreckage" was alive: a gigantic aquatic Nameless wearing the city itself as armour.  From above, its shell appears to be nothing more than collapsed districts piled in the chasm.  At close range the rubble rises, shifts, and towers over intruders as the creature drags whole slabs of broken Gravehold across the waterlogged ground.
+
+    More than brute force, Fortress is a study in adaptation.  It integrates stone, brick, and fractured infrastructure into a mobile citadel, turning New Gravehold's past into a weapon against its defenders.  Bringing it down is not only a tactical necessity but also a chance to understand how Nameless anchor themselves to hostile environments and convert terrain into living fortification.
+  appearance: |
+    A colossal crustacean-like Nameless whose true body is mostly hidden beneath fused city debris.  Its shell resembles a moving district of shattered towers and broken walls, while two massive claws jut out like siege rams from under the rubble mantle.
+
+    In battle, the creature reads less like an animal and more like a crawling ruin: masonry grinding, water surging around its frame, and old Gravehold stone locking into place as if the city is rebuilding itself around a monster.
+  strengths: |
+    Fortress constantly reinforces itself by advancing on a dedicated Fortress Track and accumulating rubble tokens, making it progressively harder to break through.  If left unchecked, its armour scaling outpaces normal damage plans and forces mages into a long attrition fight.
+
+    Its claw strikes and shifting bulk punish hesitation, but its most dangerous trait is tempo pressure: every step forward not only threatens direct harm, it also thickens the shell and narrows the window for an efficient kill.
+  weaknesses: |
+    Fortress depends on its rubble engine.  Teams that repeatedly strip rubble, interrupt its forward momentum, and time concentrated bursts of damage can prevent the shell from reaching unmanageable levels.
+
+    Once the outer fortification is peeled back, the Nemesis is far less secure than it appears.  Coordinated pressure that targets both defence scaling and core health can collapse the entire "living citadel" before it overwhelms the line.
+  story_notes: |
+    Narratively, Fortress should feel like fighting the ruins of Old Gravehold itself.  Gygar's account sets the tone: awe at the discovery, immediate terror when the rubble stands up, and grim fascination that a Nameless could repurpose a dead city so completely.
+
+    Emphasize the dread of seeing familiar stonework used as enemy armour.  The mages are not only defending the present settlement, they are confronting the remains of what was lost—and trying to reclaim those ruins from a creature that has made them part of its body.
 - name: The Burning Kor
   box: Southern Village
   battle: 4
@@ -739,18 +761,26 @@ nemeses:
     its body.
   strengths: Uses maw tokens that represent its insatiable hunger
   weaknesses: Maw tokens can be managed early to prevent exponential growth
+  story_notes: |
+    As the Outcasts expedition begins, Experiment 153 erupts near a vulnerable settlement and forces a rushed defence with too few mages in position.  Its attack sets the tone for the journey: old experiments and Void-tainted creations are no longer distant rumors but immediate threats.
+
+    Survivors describe the encounter as chaotic and close-range, with the creature's unpredictable lunges breaking formation and forcing the group to improvise.  Defeating it becomes less a clean victory than a warning of what waits farther from New Gravehold.
 - name: Fountain of Souls
   box: Outcasts
   battle: 4
-  background: 'Deep in the Void, Xaxos (Outcasts) discovered what he thought was a
-    bubbling fountain of Aether.  The shimmering column turned out to be a living
-    creature that absorbs Aether, hoarding the souls of those it drains.  Survivors
-    are drawn to its glow, mistaking it for salvation. '
+  background: |
+    While mapping paths through the Void, Xaxos discovered what looked like a vast reservoir of pure aether: a radiant fountain shimmering like salvation in a dead world.  Curiosity drew him close, and only later did he realize the "fountain" was alive.  It was not collecting energy passively—it was feeding.
+
+    The Fountain of Souls absorbs aether from breaches and mages alike, trapping fragments of consciousness inside floating bubbles of light.  From a distance it appears beautiful and almost holy; up close, the suspended forms within reveal its true nature.  It tempts the desperate with the promise of restoration, then drains and binds whatever comes near.
   appearance: A shifting, translucent column of Aether with faces trapped within the
     flowing energy.
   strengths: Uses a souls track; as the track fills, it unleashes powerful attacks
     and drains Aether from players
   weaknesses: Players can remove souls from the track through card effects
+  story_notes: |
+    Xaxos describes the moment of recognition as horror layered over wonder: what first seemed like a miracle in the Void was a predatory entity wearing the shape of hope.  He observed it from afar, testing how it reacted to breach surges, until a fresh wave of aether was swallowed and the trapped "bubbles" became unmistakable—souls suspended inside the creature.
+
+    In narration, the encounter should feel like a moral trap as much as a battle.  The Fountain offers exactly what grieving survivors want to believe: that the dead can be reached and returned.  The mages must resist that pull, disrupt the soul cycle, and destroy the source before New Gravehold loses more lives to a beautiful lie.
 - name: Risen Thrall
   box: Outcasts
   battle: 3
@@ -762,6 +792,10 @@ nemeses:
   strengths: Summons numerous thrall minions and gains bonuses when minions die
   weaknesses: Minions have low health and can be cleared before they overwhelm the
     players
+  story_notes: |
+    The Risen Thrall embodies a grim Outcasts lesson: defeating a master does not end the danger when devoted servants remain.  As the expedition advances, undead ranks rise to block every route and buy time for greater horrors.
+
+    In the encounter, the Thrall's pressure comes from numbers and persistence.  The mages must carve through repeated waves without losing tempo, knowing that delay lets the wider host consolidate around them.
 - name: Thief of Dreams
   box: Outcasts
   battle: 2
@@ -772,6 +806,10 @@ nemeses:
   strengths: Uses a dream deck that fills players’ hands with strange dreams and misfires
     spells
   weaknesses: Proper management of the dream cards can limit its impact
+  story_notes: |
+    Crossing the Void requires constant concentration, and the Thief of Dreams attacks that discipline directly.  It drifts above the expedition like living fog, drawing out fears and fractured memories until even practiced mages hesitate over simple spellwork.
+
+    Narratively, this fight should feel disorienting rather than explosive: whispered temptations, distorted landmarks, and moments where allies seem to vanish in mist.  The mages survive by anchoring each other and refusing to chase hallucinations.
 - name: Bishop of Scrolls
   box: Legacy of Gravehold
   difficulty: 2
@@ -998,15 +1036,19 @@ nemeses:
 - name: Absorbing Wraith
   box: The Caverns
   battle: 4
-  background: 'Quilius leads a group into freezing caverns beneath New Gravehold and
-    senses an icy presence watching them.  Her narrative describes tracking an icy
-    wraith that froze the air itself.  The Absorbing Wraith consumes heat and traps
-    its victims in stasis. '
+  background: |
+    Quilius leads an expedition into lightless caverns beneath New Gravehold, where every tunnel grows colder than the last and torchlight gives brightness without warmth.  Frost creeps across crystal walls, breath hangs in the air, and silence seems to pull explorers deeper into the dark.  There they encounter the Absorbing Wraith: a Nameless presence that feeds on heat itself.
+
+    The creature does not merely freeze flesh; it steals motion and momentum, locking people and magic alike into stasis.  Supply lines become brittle, relics ice over, and even hardened mages feel their strength draining as the temperature drops.  By the time the Wraith is fully revealed, the expedition is already fighting in a battlefield turned to living winter.
   appearance: A phantom of frost and darkness, trailing icy chains and leaving frozen
     crystals in its wake.
   strengths: Places stasis tokens on supply piles; frozen piles cannot be purchased
     until freed
   weaknesses: Removing stasis tokens and using fire-based relics thaws the piles
+  story_notes: |
+    "Cold, colder, coldest." Quilius records the descent as a march into unnatural winter: skin sticking to glittering stone, hands splitting from frost, and blue lips whispering prayers into the dark.  Alcheia’s ruby light offers a thin thread of life, but no true comfort.  At night the scouts chew snow to wet numb throats while the cavern breathes around them like a patient predator.
+
+    The Absorbing Wraith hunts by extinguishing warmth and hope together.  Trails of ice mark where it passed, and each encounter leaves more cards and tools trapped in stasis.  Quilius senses that the same black silence drawing them forward is also the Wraith’s lure, a call toward a fate buried in the deepest tunnels.  To survive, the mages must keep moving, keep fires burning, and break the frozen holds before Gravehold itself is left in permanent cold.
 - name: The Reliquary
   box: The Abyss
   battle: 3
@@ -1400,48 +1442,3 @@ nemeses:
   weaknesses: Players can reset the Rage track with certain card effects or by destroying
     its minions; it does not seem very smart and can be kept off-balance by multiple
     attackers alternating strikes
-
-- name: Experiment 153
-  box: Outcasts
-  battle: 1
-  background: |
-    The identity and origin of Experiment 153 remain unclear.  In the Outcasts narrative it is described as an unnatural beast that attacked a remote surface settlement.  Its scarred hide and mismatched limbs suggest that it was created through forbidden experiments rather than born in the wild.  It is the first of many threats that the roaming mages encounter as they venture beyond New Gravehold.
-  appearance: A massive, misshapen creature with multiple limbs and gaping jaws, its flesh marked by scars and grafts.
-  strengths: Charges into combat with brutal strength and unpredictable lunges
-  weaknesses: Vulnerable to coordinated attacks and protected spells that keep it at bay
-  story_notes: |
-    As the Outcasts expedition begins, a monstrous creature erupts from the waters near a quiet village, scattering civilians and closing off escape【980884546724550†screenshot】.  Only a handful of mages are present when Experiment 153 strikes.  They fight desperately to hold it back until an old companion arrives from the Void and helps drive the beast into the ground.  The encounter serves as a grim reminder that strange experiments still roam the surface and that the mages cannot let their guard down.
-
-- name: Thief of Dreams
-  box: Outcasts
-  battle: 2
-  background: |
-    The Thief of Dreams drifts through the Void as a sentient cloud of nightmares.  It feeds on memories and hope, slowly enveloping travellers who dare to cross between worlds.  Those who have survived encounters with it describe shapes forming within its depths—faces, hands and whispering mouths—only to fade away when one tries to focus on them.
-  appearance: A shifting, smoke-like mass whose tendrils flicker like torchlight in dense fog.
-  strengths: Saps memory and power, causing mages to forget spells and lose focus
-  weaknesses: Loses cohesion when struck by concentrated bursts of aether
-  story_notes: |
-    Travelling through the toxic Void requires mages to maintain a shield of aether around themselves.  In the second battle of the Outcasts expedition, an amorphous cloud emerges above the travellers and coalesces into the Thief of Dreams.  It drifts overhead, reaching down to siphon thoughts and energy from those below while conjuring hallucinations that tempt them to pause.  By standing together and sharing their strength the mages dispel the cloud, but the encounter leaves them exhausted and wary of the dangers lurking in the Void.
-
-- name: Risen Thrall
-  box: Outcasts
-  battle: 3
-  background: |
-    The Risen Thrall is one of many skeletal warriors raised by a dark champion in the Outcasts story.  It appears as a single undead soldier but can split its form into multiple duplicates to overwhelm opponents.  These thralls are said to be animated by fragments of void energy and serve as vanguard forces for more powerful commanders.
-  appearance: An armoured skeleton that can suddenly multiply into a circle of identical figures.
-  strengths: Overwhelms foes by conjuring illusory duplicates and swarming them
-  weaknesses: The original thrall is less resilient; identifying and focusing on it dispels its copies
-  story_notes: |
-    When the Outcasts expedition crosses a wasteland, a skeletal army rises from the ground to bar their way.  Among them stalks the Risen Thrall, an undead soldier that splits into identical copies, making it difficult to determine which body to strike.  The mages must cut through waves of these thralls before they can confront the leader who commands them and uncover the identity of the fallen hero behind the skeletal host.
-
-
-- name: Fountain of Souls
-  box: Outcasts
-  battle: 4
-  background: |
-    At the end of the Outcasts expedition the mages discover an underground cavern containing the Fountain of Souls—a pool of purple water said to collect the aether of fallen mages.  Legends claim it can restore the dead, but others insist it warps and enslaves those who drink from it.  The fountain is an anomaly: neither wholly Nameless nor of the Void, it seems to draw power from both.
-  appearance: A shimmering pool of violet liquid that pulses with trapped energy; when threatened it rises from the surface as a monstrous form.
-  strengths: Drains aether from anyone near it and manifests tentacles of water to grasp intruders
-  weaknesses: Once its source is disrupted or destroyed, it collapses and releases its held souls
-  story_notes: |
-    Hoping to save fallen companions, some mages seek the Fountain of Souls.  When they find it deep within a luminous cavern, its surface ripples and a creature of solidified water rises up to attack.  The battle is fierce; one misstep causes the fountain to seize a mage and begin the process of turning them into a Nameless.  In the end the mages destroy the fountain, flooding the cavern with water and freeing a hand-sized figure trapped inside.  From within the drained pool crawls a half-human survivor, proving that the fountain ensnares and twists those who enter.  The destruction of the fountain marks a turning point in the expedition and signals a rejection of temptation in favour of forging a new path.
