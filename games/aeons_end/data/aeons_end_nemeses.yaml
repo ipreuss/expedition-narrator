@@ -236,11 +236,53 @@ nemeses:
   box: The New Age
   battle: 2
   background: |
-    Arachnos began as a human mage and devoted follower of Xaxos.  Convinced that harnessing Void power was the only way to save his people, he fused his body with a giant spider and experimented on animals and mages alike.  Walking on segmented limbs with a warped human torso, he now commands swarms of insectoid creatures and weaves living webs to trap foes.  Unlike most Nameless he speaks, bragging that the Nameless bow to him and that breach magic is merely a tool to hasten humanity’s evolution.  He begs the mages to let him finish his “experiment,” claiming he can save Gravehold if given time, and he mocks those who fear Xaxos’s teachings.  Arachnos’s ambition and twisted logic mirror Xaxos’s own fall from grace and serve as a warning of how easily good intentions can become monstrous.
-  appearance: A warped human torso fused with a mass of arachnid legs, void energy pulsing under his skin.
-  strengths: Arachnos controls swarms of spider-like minions and can weave living webs to trap foes.  He channels breach energy directly into his body, making him unnaturally strong and allowing him to commune with portals.
-  weaknesses: His overconfidence and need to maintain control over his experiments leave openings for focused resistance.  The human remnants within him may still hesitate, and his transformations strain his body, causing instability.
-    on the track
+    Arachnos was once a respected breach mage and close adherent of Xaxos's doctrines.
+    Convinced that Void experimentation could be refined into salvation, he continued
+    forbidden research even after censure and exile.  His faction framed itself as
+    pragmatic reformers, but desperation and ambition pushed the work toward increasingly
+    unstable rituals.
+
+    The result was self-transformation.  Arachnos fused human and arachnid forms, then
+    extended the same logic to living test subjects, claiming every violation was a
+    necessary step toward "protecting" humanity.  Brama's account makes the political
+    danger explicit: this is not only a Nameless threat, but proof that human zeal can
+    produce horrors as devastating as the Void itself.
+  appearance: |
+    In the illustration, Arachnos hangs at the center of a towering lattice of bone-like
+    spider limbs, with a humanoid torso suspended amid webbing like a commander riding
+    his own war-engine.  The leg structures are elongated and spear-tipped, forming a
+    moving cage that can stride over roots and stone while enclosing prey.
+
+    Pale web strands connect limb to limb and drape across surrounding trees, turning the
+    entire clearing into a ritual snare.  His upper body retains hints of mage attire,
+    but the silhouette is dominated by predatory spider anatomy and surgical precision.
+  strengths: |
+    Arachnos pressures both tempo and positioning through his Ritual Track system.
+    Unleash advances the track, escalating world-devourer effects unless players spend
+    aether to push the token back.  This creates a constant resource dilemma between
+    immediate survival, market development, and long-term track control.
+
+    He compounds that pressure with web-themed minion support and direct aggression,
+    forcing teams to split attention between board cleanup and preventing ritual
+    thresholds from triggering catastrophic effects.
+  weaknesses: |
+    His power loop is interactive and therefore disruptable.  Teams that coordinate
+    aether spending to manage Ritual Track movement, remove support minions quickly,
+    and time burst turns around lower ritual states can keep Arachnos from snowballing.
+    Once ritual acceleration is contained, his raw durability becomes manageable.
+  special_rules: |
+    Use the Ritual Track and place the Arachnos token on its start space during setup.
+    Unleash: Move the Arachnos token one space forward on the Ritual Track.  Players may
+    spend charges equal to the current space value to move the token one space backward.
+
+    At increased difficulty, Arachnos starts with 2 Nemesis tokens and resolves Unleash
+    twice at setup.
+  story_notes: |
+    Narrate Arachnos as a fallen intellectual, not a mindless beast.  He should sound
+    convinced he is still right—calmly justifying atrocities as necessary iteration.
+
+    The emotional core is betrayal: the party is fighting someone who once shared their
+    language, methods, and hopes, and who weaponized that shared culture into predation.
 - name: Horde-Crone
   box: The Depths
   difficulty: 6
@@ -275,28 +317,51 @@ nemeses:
   life: 70
   battle: 3
   background: |
-    The Blight Lord was the first of the Nameless to touch the world.  It destroyed
-    the great city of Karek and turned it into green glass with its inhabitants still
-    inside.  Then the port cities of M'hlark followed.  Its name comes from the plague
-    of devastation that accompanied its appearance—the certain annihilation of our
-    people followed it like a merciless plague.
+    The Blight Lord is remembered as the first of the Nameless to set foot in
+    the old world, and its arrival marked the beginning of a catastrophe still
+    treated as sacred warning.  Chronicles describe the fall of Karek in a single,
+    deliberate gesture: streets, towers, and fleeing crowds sealed inside a mountain
+    of green glass.  The harbor cities of M'hlark followed soon after, their warm
+    shores transformed into jagged fields of frozen crystal.
+
+    Some among the First Tribe mistook the creature for a divine herald and offered
+    tribute.  None were spared.  That betrayal of hope is why survivors gave it the
+    name "Blight Lord"—not for disease of the body alone, but for the ruin that
+    follows wherever faith, stone, and flesh are vitrified into lifeless glass.
   appearance: |
-    A dark green, crystalline adversary with a glass-like, faceted structure.
-    Its design embodies the transformation into glass—angular, sharp and
-    with a mineral, menacing aesthetic.  Crystalline growths cover its
-    massive body.
+    The Blight Lord resembles a colossal, many-limbed predator crawling low to the
+    ground, its frame wrapped in bladed crystalline protrusions like a living crown
+    of splintered jade.  Its foremost limbs are oversized and asymmetrical, ending in
+    heavy, club-like growths studded with shards that look capable of crushing and
+    petrifying in the same strike.
+
+    In the illustration, the whole body is cast in smoky green-grey light, as if seen
+    through tainted fog.  A faceted, triangular maw hangs beneath its armored chest,
+    while glass spikes fan from its shoulders and back, reinforcing the sense that the
+    creature is less a beast of flesh than an advancing landslide of corrupted crystal.
   strengths: |
-    Fills player decks with Tainted Jade, clogging their hands and forcing
-    them to redirect resources.  Players who attempt to use the Tainted Jade
-    suffer life damage.
+    The Blight Lord weaponizes corruption through Tainted Jade pressure.  It floods
+    player decks with harmful gems that clog draws, distort economy, and punish attempts
+    to convert them into normal tempo.  At the same time, its track advancement creates
+    an escalating doom clock that can end the battle regardless of remaining life.
   weaknesses: |
-    If players manage their tainted gems and prevent the track from advancing,
-    the Blight Lord has no other strong attacks and can be defeated.
+    Its win condition is telegraphed and therefore contestable.  Teams that coordinate
+    Tainted Jade handling, preserve discard control, and repeatedly interrupt track
+    progression can strip away its inevitability.  Once that pressure loop is contained,
+    the Blight Lord can be brought down through disciplined, sustained damage.
   special_rules: |
     Uses a secondary Tainted Jade deck.  The Blight Lord advances on a
     Tainted Track—if it reaches the end, players lose immediately.  When
     the supply pile is empty, the affected player suffers 1 damage per card.
     At increased difficulty, two Tainted Jades are removed at game start.
+  story_notes: |
+    Narratively, Blight Lord should feel like confronting a historical apocalypse
+    made present.  Every tainted gem represents not just inconvenience, but the same
+    creeping corruption that entombed entire cities.
+
+    Emphasize the moral wound in the lore: people once knelt before this force and
+    were annihilated anyway.  The mages are fighting both a Nemesis and the return of
+    a trauma their ancestors never truly survived.
 - name: Wayward One
   box: The Nameless
   difficulty: 7
@@ -385,21 +450,45 @@ nemeses:
 - name: Bladius
   box: Aeon's End Legacy
   battle: 1
-  background: 'Bladius is a blade-covered servant bred by Maelstrom as a lieutenant.  It
-    excels at melee combat and prowls the tunnels near New Gravehold.  Scouts report
-    that Bladius is searching for something unknown. '
-  appearance: A hulking Nameless covered in spinning blades.
-  strengths: Deals heavy direct damage and pressures players early
-  weaknesses: Lacks complex mechanics; can be defeated with focused damage and healing
+  background: |
+    Bladius is recorded as a purpose-bred lieutenant of Maelstrom: a Nameless shaped
+    for close-quarters slaughter, with every adaptation tuned for tunnel warfare.
+    Scouts describe it as a hunter that does not roam aimlessly; it patrols ruined
+    corridors and collapsed excavation routes with deliberate intent, as though it is
+    searching for something hidden beneath New Gravehold.
+
+    That uncertainty makes Bladius especially dangerous.  Survivors cannot tell whether
+    it seeks the last human enclaves to finish Maelstrom's campaign, or whether the
+    deeper ruins contain some relic, breach-site, or passage the Nameless still covet.
+    Every encounter therefore feels like both an ambush and a reconnaissance failure.
+  appearance: |
+    In the illustration, Bladius has the silhouette of a towering armored duelist,
+    forged from slate-blue metal plates and blade-like growths.  Its head is crowned
+    with angular horns, its eyes glow red, and each forearm ends in elongated stabbing
+    edges rather than natural hands.
+
+    Its lower body is asymmetrical and massive, with one leg-like structure extending
+    into a heavy, segmented blade-limb that appears built to brace, sweep, and impale.
+    Floating knife-shaped shards orbit around it in attack formation, reinforcing the
+    impression that even the space near Bladius is weaponized.
+  strengths: |
+    Bladius applies immediate frontline pressure through high direct damage and persistent
+    threat at melee range.  Its kit rewards tempo denial: early hits, punishing attack
+    windows, and constant danger that forces mages to spend resources on stabilization
+    instead of pure setup.
+  weaknesses: |
+    Despite its lethality, Bladius is tactically straightforward.  It lacks elaborate
+    scaling engines, so coordinated focus fire, timely healing, and disciplined turn
+    sequencing can blunt its opening assault and collapse the fight before pressure
+    compounds.
   story_notes: |
-    In the chaos after Maelstrom’s collapse, scouts leading survivors through
-    collapsed tunnels are ambushed by Bladius.  The hulking lieutenant emerges
-    from the darkness covered in blades, its thick armour scattering sparks
-    against tunnel walls.  It commands minions left behind by Maelstrom and
-    lunges at groups of evacuees, forcing breach mages to interpose
-    themselves.  Defeating Bladius signals that remnants of the Nameless army
-    still lurk in the caverns and must be hunted down before the refugees can
-    rebuild safely.
+    When narrating Bladius, emphasize claustrophobia and metallic violence: sparks in
+    narrow tunnels, blade-edges scraping stone, and evacuees trapped between cave-ins
+    and a predator built for corridor kills.
+
+    The emotional beat is uncertainty.  Defeating Bladius is a victory, but also a
+    warning that Maelstrom's remnants are still operating with purpose beneath the
+    ruins, and that the war below is not over.
 - name: Deathmind
   box: Aeon's End Legacy
   battle: 4
@@ -598,14 +687,47 @@ nemeses:
 - name: The Burning Kor
   box: Southern Village
   battle: 4
-  background: 'New Gravehold’s surface activity has pushed Portalborn further south,
-    forcing the Kor, a creature of living flame, toward Azer.  Kel warns that this
-    flaming creature ignites the surrounding forest and must be stopped before it
-    consumes Azer. '
-  appearance: A towering inferno with a skeletal visage, constantly shedding embers.
-  strengths: Places ember tokens on a movement mat; embers advance toward a village
-    space and explode when they arrive, dealing heavy damage to Gravehold and mages
-  weaknesses: Embers can be removed before they reach the end of the mat
+  background: |
+    New Gravehold's expansion on the surface has displaced dangerous Portalborn into
+    territories that once felt comparatively sheltered.  Kel reports that Azer now
+    faces one of the worst outcomes of that pressure: the arrival of the Burning Kor,
+    a roaming inferno that burns forests into corridors of ash simply by passing
+    through.  Villages that rely on woodland cover for food and protection lose both
+    within hours, and panic spreads faster than the flames.
+
+    The Kor is not just destructive; it actively reshapes the battlefield.  Every
+    flare it leaves behind becomes a new hazard that drives defenders out of position
+    and threatens to turn rescue efforts into mass casualties.  If the mages cannot
+    contain its firefront quickly, Azer's surrounding settlements will be consumed.
+  appearance: |
+    The Burning Kor appears as a towering humanoid silhouette made entirely of
+    incandescent fire, as if a giant figure were sculpted from molten sunlight.
+    Its upper body is framed by streaming flame that resembles wind-whipped hair,
+    and its face reads as a pale, skull-like mask suspended inside the blaze.
+
+    In the illustration, bright circular bands of white-gold fire hover around its
+    wrists like ritual sigils, while ember-laden arms reach outward from a core of
+    churning yellow-orange heat.  Wherever those flames touch ground, root-like veins
+    of heat spread and ignite the terrain around it.
+  strengths: |
+    The Burning Kor projects advancing ember pressure through its movement system.
+    Ember tokens accumulate and march toward vulnerable spaces; when they arrive,
+    they detonate in bursts that can heavily damage both Gravehold and the mages.
+    This constant forward pressure punishes slow setups and forces players to split
+    attention between direct attacks and fire containment.
+  weaknesses: |
+    Its ember chain can be disrupted before it reaches catastrophic thresholds.
+    Teams that prioritize ember removal, coordinate movement-mat control, and time
+    their damage bursts can blunt the Kor's momentum and prevent the largest fire
+    eruptions from ever triggering.
+  story_notes: |
+    Kel describes the Burning Kor as a disaster that walks like a person but behaves
+    like a wildfire front.  The terror it creates comes from simultaneity: while
+    mages try to confront the Nemesis itself, the inferno in its wake keeps expanding
+    into homes, farms, and evacuation routes.
+
+    Narratively, the battle should feel like triage under apocalyptic heat.  The
+    mages are not only slaying a monster, they are racing to keep Azer habitable.
 - name: Experiment 153
   box: Outcasts
   battle: 1
@@ -656,29 +778,52 @@ nemeses:
   life: 50
   battle: 1
   background: |
-    The Bishop of Scrolls recounts a cautionary legend about the origins of New Gravehold.
-    Long ago, settlers built a city underground to escape the monsters that prowled
-    the surface, trusting in stone walls and patrols of scouts and mages to keep
-    them safe.  They even sent mages into the Void to push the Nameless away so
-    that all could live in peace.  Over time complacency took root.  Restless minds
-    experimented with void-magic and some longed to return to the surface.  In their
-    hubris they summoned a colossal Nameless into Gravehold itself.  The walls
-    tumbled and the caves crumbled; for the first time in generations the people
-    confronted true fear.  The Bishop tells this story to remind others that forgetting
-    the proper fear of monsters and meddling with forbidden power invites disaster.
+    The Bishop of Scrolls frames himself as historian, judge, and prophet of collapse.
+    His signature tale recounts the first Gravehold: a people who fled underground,
+    grew secure behind stone, and eventually forgot the fear that once kept them alive.
+    In his retelling, complacency and forbidden void experiments invited catastrophe,
+    culminating in the summoning of a colossal Nameless into the heart of the city.
+
+    The Bishop's warning is never neutral.  He weaponizes history to control the present,
+    insisting that safety breeds weakness and that only strict doctrine can prevent a new
+    Fall.  Facing him feels less like battling a brute and more like resisting a regime
+    of stories that punishes dissent as heresy.
   appearance: |
-    A robed and armoured figure with a faceless hood and a gleaming breastplate.
-    He holds an ancient tome that glows with shifting script, while scrolls and
-    pages swirl in the air around him.
+    In the illustration, Bishop of Scrolls appears as a ceremonial figure in layered
+    red-and-gold robes over polished bronze armor, with a geometric, visor-like helm
+    hiding all facial features.  Thick cords and ringed ornaments hang from the mask and
+    shoulders, giving him the silhouette of a ritual magistrate rather than a front-line
+    warlord.
+
+    A floating tome opens beside his hand, its pages lit by pale blue aether and marked
+    with glowing eye sigils.  Curled sheets of luminous script drift through the air like
+    commanded spirits, reinforcing that his power is expressed through written will and
+    imposed meaning.
   strengths: |
-    Wields cursed knowledge; he overwhelms mages with arcane scholarship and
-    punishes those who delve too deeply into his writings.
+    The Bishop generates relentless board pressure through the unnamed deck.  His Unleash
+    cadence can place multiple unnamed minions into play and immediately resolve their
+    effects, creating stacked threat bursts that rapidly destabilize turns and punish slow
+    setups.
   weaknesses: |
-    When his scrolls and pages are torn away, his influence fades.
+    His engine depends on unnamed presence.  Fast minion control, coordinated burst damage,
+    and careful sequencing to prevent immediate-effect chains can contain his momentum.
+    When the unnamed board is cleared decisively, the Bishop's pressure drops sharply.
   special_rules: |
-    In Legacy mode, players must assign names to unnamed minions.  At game start,
-    2-3 unnamed minions are put into play.  When no cards are available, all
-    unnamed effects are triggered.  Players lose if no unnamed minions remain.
+    At setup, place unnamed minions into play according to the encounter setup (Legacy and
+    non-Legacy differ).  Unleash: Draw a card from the unnamed deck, place an unnamed into
+    play, and resolve its "IMMEDIATELY:" effect.  Then place another unnamed into play and
+    resolve its "IMMEDIATELY:" effect.  In a 1/2/3-player game, place and resolve a third
+    unnamed.
+
+    At increased difficulty, each unnamed comes into play with 2 additional life.
+  story_notes: |
+    Narrate Bishop of Scrolls as a charismatic architect of collective memory.  He does not
+    simply attack bodies; he curates fear, selects which histories are repeated, and uses
+    those histories to justify escalating control.
+
+    The emotional throughline should be uneasy familiarity: his robes, proclamations, and
+    book-laden sorcery feel almost civilized—until players realize they are fighting a
+    doctrine that turns people into footnotes.
 - name: Brama (Legacy of Gravehold)
   box: Legacy of Gravehold
   battle: 2
@@ -941,45 +1086,89 @@ nemeses:
   life: 60
   battle: 3
   background: |
-    Once a trusted leader, the bishop meddled with Void magic and was warped
-    into a monstrous villain.  The mages of New Gravehold turned on their former friend,
-    defeating him and building a new city on the ruins.  Yet discontent grew in the
-    new city, and the war returned, signalling an inevitable new fall.
+    Bishop: Returned is the ruin of a once-trusted leader—an old ally reshaped by
+    reckless Void magic into a figure the city can rally against.  Chronicles frame
+    his fall as politically convenient as much as tragic: a single villain to blame
+    for the collapse of old Gravehold and a symbol to unite survivors in New Gravehold.
+
+    But the card chronicle warns that this narrative never resolved the deeper fracture.
+    Even after his defeat, unrest kept growing beyond the new walls, and leadership could
+    not purge dissent as cleanly as it purged memory.  His return is therefore not only a
+    monster encounter; it is evidence that the conflict beneath the city was never ended.
   appearance: |
-    A towering, twisted figure reminiscent of the Bishop of Scrolls.  His armour
-    is broken and he wears a stolen relic mask.  A dark, menacing character with
-    mystical aesthetics fitting the Void magic theme.
+    In the illustration, Bishop: Returned appears as a robed hierophant in layered
+    crimson and gold vestments over green-bronze armor, with a faceted relic-mask helm
+    that obscures all human features.  Pale straps and ringed ornaments hang from the
+    mask and shoulders, giving him the ceremonial silhouette of a corrupted high priest.
+
+    A floating tome with luminous eye sigils hovers beside him, pages flaring with blue
+    arcane mist while script-ribbons and breach-like currents spiral around his outstretched
+    hand.  The visual language suggests command through forbidden knowledge rather than
+    brute force.
   strengths: |
-    Gains Nemesis tokens and summons reinforcements.  Tier-1 minions give 2 tokens,
-    Tier-2 minions give 1 token.
+    Bishop: Returned converts board state into momentum through Nemesis-token acceleration
+    and reinforcement cycles.  Token gain from Unleash and minion tiers creates recurring
+    summoning windows that refill pressure, tax player actions, and make stalled turns
+    increasingly dangerous.
   weaknesses: |
-    Relies on reinforcements and tokens; focused attacks on minions and careful
-    token management can limit his power.
+    His engine is predictable once identified.  If mages aggressively clear minions,
+    deny token spikes before the reinforcement threshold, and sequence burst turns around
+    summon timing, they can keep the loop from stabilizing and strip him of tempo control.
   special_rules: |
     Unleash: Gains 1 Nemesis token.  At 5+ tokens, reinforcements are activated—two
     deck cards are revealed, a minion is played, then the Nemesis loses 4 tokens.
     Empty decks are reshuffled with minions from the discard pile.  At increased
-    difficulty, only 3 instead of 4 tokens are lost on reinforcement.
+    difficulty, when reinforcements are summoned, Bishop: Returned loses 3 tokens
+    instead of 4.
+  story_notes: |
+    Narrate Bishop: Returned with an undertone of revisionist history.  He is terrifying,
+    but he is also the embodiment of old decisions New Gravehold never fully confronted.
+
+    The encounter should feel like a public reckoning in arcane form: pages in the air,
+    accusations made flesh, and a city discovering that burying a friend-turned-nemesis
+    did not bury the conditions that created him.
 - name: The Blight
   box: The Descent
   battle: 3
-  background: 'The Blight Lord was the first Nameless to touch the world, and it
-    turned the great city of Karek—the original Gravehold—into a miles-wide mausoleum
-    of green glass, entombing thousands in gruesome perfection.  Pillars of emerald
-    crystal encase terrified faces of people frozen as they tried to flee; children
-    reach for parents who could not save them.  Raven, last of the First Tribe,
-    survived by hiding while her family crystallized before her eyes.  The Blight
-    that Brama''s expedition confronts is a shard of that primordial horror, still
-    carrying its crystalline corruption and spreading like a plague through the
-    ruins.  When mages walk through Karek, they see their own revulsion mirrored
-    in the faces of their companions—and know that the force which did this still
-    lurks in the depths below.'
-  appearance: A towering tree-like monstrosity with branches of glowing emerald glass
-    and vines strangling the landscape.  Green-leafed bushes sprout crystalline growths,
-    and the air shimmers with particles that threaten to petrify all they touch.
-  strengths: Uses blight crystals and green glass to shield itself; summons crystal
-    shards that infect players and can turn their cards into useless glass
-  weaknesses: Removing blight crystals weakens its defences
+  background: |
+    The Blight is treated in expedition logs as a living continuation of the old
+    catastrophe that annihilated Karek.  Veterans describe it as the same emerald
+    corruption made mobile: a force that does not merely kill, but preserves terror
+    in crystal so that every battlefield becomes a monument to the moment people
+    realized they could not run fast enough.
+
+    Raven's warning defines the tone of this encounter.  Survivors do not speak of
+    "defeating" the Blight so much as surviving passage through its territory long
+    enough to protect those still evacuating.  The Nemesis advances like a natural
+    disaster—slow, immense, and indifferent—while the horizon itself seems to turn
+    green and harden.
+  appearance: |
+    In the illustration, The Blight appears as a colossal, low-slung predator of
+    stone-like flesh and emerald crystal plating.  Jagged green growths crown its
+    shoulders and spine like fractured cliffs, while thick forelimbs drive it forward
+    with the weight of a siege engine.  Its face is narrow and predatory, with glowing
+    yellow eyes set behind crystalline ridges and a maw lined by shard-like teeth.
+
+    A pale green haze surrounds the creature, softening the background while making
+    its crystal protrusions look even sharper.  The overall silhouette feels less like
+    an animal and more like a moving landslide of blighted mineral.
+  strengths: |
+    The Blight converts battlefield pressure into long-term attrition.  It introduces
+    tainted resources and crystal effects that clog player decks, reduce card quality,
+    and punish normal economy lines.  Defensive crystal structures also buy it time,
+    forcing mages to divide attention between breaking protections and maintaining
+    enough tempo to avoid being buried by corruption.
+  weaknesses: |
+    Its momentum depends on maintaining blight infrastructure.  Coordinated teams that
+    remove blight crystals early, deny persistent corruption pieces, and prioritize
+    deck hygiene can prevent the Nemesis from reaching a locked game state.  Once the
+    crystal engine is disrupted, concentrated damage windows become possible.
+  story_notes: |
+    Narrate this battle as a confrontation with inherited trauma.  Every crystal field
+    should evoke the fate of Karek and the fear that history is repeating in real time.
+
+    Keep the stakes human and immediate: protect survivors, preserve memory, and refuse
+    to let the Blight turn one more city into a silent emerald grave.
 - name: Infested Mutation
   box: Past and Future
   battle: 3
