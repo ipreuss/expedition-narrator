@@ -492,10 +492,14 @@ nemeses:
 - name: Deathmind
   box: Aeon's End Legacy
   battle: 4
-  background: 'When scouts confronted the entity they called Deathmind, they returned
-    with most of their memories wiped, describing only a chill that crept into their
-    minds.  Brama warns that facing Deathmind is a desperate measure. '
-  appearance: A floating mass of brains and tendrils radiating psychic energy.
+  background: |
+    Scouts and mages who survive contact with Deathmind return fragmented: names, reflexes, and practiced skills stripped away as if lifted from their thoughts.  Chapter 6 records that some recover after weeks beyond its influence, while others are permanently diminished.  Even those who can still speak struggle to describe more than a numbing psychic cold pressing through the skull.
+
+    Brama therefore classifies any assault on Deathmind as a desperate operation.  Yet desperate operations are exactly what New Gravehold faces when critical routes and resources fall under its mental radius.  The decision to confront it is never framed as triumph, only necessity—an attempt to preserve enough minds and memory for the city to endure.
+  appearance: |
+    A gaunt, hairless humanoid torso curls in fetal posture at the center of a swollen exposed brain mass, suspended inside a translucent blue psychic sphere.
+    Lightning-like neural filaments pulse outward from the membrane in rhythmic bursts, as if each arc is a thought being ripped free.
+    Its fingers are thin and hooked, and the face is skull-like and vacant, giving the impression of an intelligence that no longer needs a body—only access to other minds.
   strengths: Uses a neural bridge to connect supply piles
   weaknesses: Vulnerable if players manage the neural bridge; once its connections
     are broken its attacks falter
@@ -609,10 +613,16 @@ nemeses:
   box: The New Age
   battle: 4
   background: |
-    Fenrix was born of a twisted experiment to infuse a wolf with void energy.  The creature that emerged was no longer a mere animal: six glowing eyes peer through swirling snow and its mind-shattering howl freezes the blood of any who hear it.  It prowls the wilds like a force of nature, conjuring blizzards where no snow should fall and leaving paw prints as wide as a mage’s arm embedded in the soil.  Survivors speak of a gentle snowflake landing on a cheek, a sudden gale turning sunlit woods into a whiteout and a shadow with six eyes emerging from the storm to claim its prey.  Fenrix embodies the land’s volatility and the Void’s ability to twist weather itself into a weapon.
-  appearance: A massive, six-eyed wolf with fur matted by void spores, breath frosting in the air and claws that leave trails of ice across the ground.
+    Fenrix was born of Arachnos’s exile experiments to infuse a living wolf with Void energy.  In his journals he writes that earlier trials collapsed when the breach seal failed mid-ritual, trapping a rabbit in the Void and forcing him to redesign the runes to withstand a greater energetic strain.  Convinced a larger host would adapt better, he fed the captured wolf with Void essence and waited for evolution to take hold.  The creature that emerged was no longer a mere animal: six glowing eyes peer through swirling snow and its mind-shattering howl freezes the blood of any who hear it.
+
+    It prowls the wilds like a force of nature, conjuring blizzards where no snow should fall and leaving paw prints as wide as a mage’s arm embedded in the soil.  Survivors speak of a gentle snowflake landing on a cheek, a sudden gale turning sunlit woods into a whiteout, and a shadow with six eyes emerging from the storm to claim its prey.  Fenrix embodies both the land’s volatility and the catastrophic hubris behind the exile research: proof that the Void can be made to inhabit flesh, but never safely controlled.
+  appearance: A hulking, moonlit wolf with six crimson eyes clustered in its skull, a mane of spine-like quills along its neck and shoulders, and dark horn-like growths curling from its crown.  Its pale fur is streaked with shadow and frost, its jaws drip frozen saliva, and each step drives oversized claws into the snow as if the mountain itself were being carved open.
   strengths: Conjures unexpected blizzards and uses keen senses to stalk prey in whiteout conditions.  Its frozen howl paralyses and disorients those who hear it, and it moves through the storm with predatory grace.
   weaknesses: The unnatural cold it conjures is unstable; luring Fenrix away from its storm or disrupting its concentration can weaken it and expose its vulnerable form.
+  story_notes: |
+    The account attached to Fenrix traces directly to Arachnos’s exile journals (Envelope 4).  He describes testing ritual runes, losing an earlier animal subject when the breach collapsed, then escalating to a live wolf after adjusting the ritual to channel greater Void output.  His tone is clinical and triumphant, culminating in his stated intent to begin human experimentation if the wolf survived.  Fenrix therefore represents more than a beast encounter: it is a surviving artifact of a deliberate, unethical research program.
+
+    In narration, frame Fenrix as the living consequence of curiosity without restraint.  The storm should feel less like weather and more like ritual fallout still radiating from the creature’s body.  Emphasize dread through environmental cues—unnatural cold fronts, sudden silence in woodland terrain, and the sensation that the hunt begins before the beast is visible.  Where useful, connect Fenrix to wider New Age themes: exile science, Void adaptation, and the escalating risk that failed experiments become self-sustaining threats.
 - name: Maggoth
   box: The New Age
   battle: 1
@@ -753,12 +763,14 @@ nemeses:
 - name: Experiment 153
   box: Outcasts
   battle: 1
-  background: 'Experiment 153 began as a rabbit left in the Void by Arachnos.  The
-    Void warped the creature beyond recognition; its very cells no longer match any
-    known life and it hungers for Aether.  Taqren warns that perhaps the Void cannot
-    be used for good; it only corrupts. '
-  appearance: A grotesque mutated beast with gaping maws and tentacles sprouting from
-    its body.
+  background: |
+    Experiment 153 was once a simple rabbit used in Arachnos’s exile research.  According to Tagren’s recovered account, the animal was accidentally abandoned in the Void when an earlier breach experiment failed; months of exposure twisted it into a predatory aberration obsessed with consuming aether.
+
+    The discovery comes after Fenrix and Arachnos are defeated, when fragments of the journals reveal that the same chain of experiments produced multiple living catastrophes.  Tagren frames the creature as tragic evidence of the Void’s corruptive nature: power that promises advancement but repeatedly mutates, blackens, and destroys what it touches.
+  appearance: |
+    A sinewy, rabbit-shaped horror with pallid gray skin stretched tight over elongated limbs, red eyes, and a jaw lined with needle-like teeth.
+    Petal-like void membranes fan from its back like torn wings, while sparse white fur clings in ragged patches along its arms, spine, and haunches.
+    It crouches low before explosive leaps, its foreclaws hooked and overgrown, giving the impression of a frightened prey animal remade into a starving ambush predator.
   strengths: Uses maw tokens that represent its insatiable hunger
   weaknesses: Maw tokens can be managed early to prevent exponential growth
   story_notes: |
@@ -905,15 +917,13 @@ nemeses:
   life: 70
   battle: 1
   background: |
-    The Bishop of Scrolls encountered this unusual Nameless on one of his journeys through the Void.
-    He notes in his journal that the creature displays an inquisitive personality unlike any other he has seen.
-    While most Nameless do not comprehend the purpose of magical relics or gems, Fate Shepherd appears to sense a connection between human aether and the Void and can manipulate those objects to its own advantage.
-    It is able to turn weapons and spells back on the mages who wield them, making it a terrifying adversary and a potential asset.
-    Fascinated by its cunning, the Bishop vows to recruit the Fate Shepherd into his army rather than destroy it.
+    During one of his Void excursions, the Bishop of Scrolls records an encounter with a Nameless unlike the usual ravening horrors.  His Envelope 5 account describes Fate Shepherd as curious and observant, a creature that studies relics rather than merely smashing them.  Where most Nameless seem incapable of understanding crafted magic, this one appears to recognize the relationship between human aether-work and Void resonance.
+
+    The Bishop concludes that Fate Shepherd can interfere directly with those channels, pulling force through gems, weapons, and spells before hurling that power back at its owners.  In his words, if more Nameless learned this behavior, the war would become far more difficult for Gravehold to survive.  Rather than destroy it, he marks Fate Shepherd as a creature to cultivate—an integral instrument for turning the mages’ own tools into liabilities.
   appearance: |
-    A towering, bird-like figure cloaked in dark feathers.
-    Its elongated beak and many-jointed wings are adorned with glinting gems and metallic bands.
-    Crimson eyes burn with intelligence as crackling energy dances along its feathers and talons.
+    A vast, raven-like Nameless spreads broad midnight-blue wings against a pale moonlit sky, each feather edged with cold highlights.
+    Its head narrows into a long hooked beak marked with clusters of small crimson eyes, while black talons curl like ritual knives at the tips of its raised limbs.
+    Gold bands and angular red gemstones are fastened at its throat and joints, and a gem-set harness with trailing crimson cloth hangs across its torso, giving it the silhouette of a predatory war-priest draped in relic armor.
   strengths: |
     Fate Shepherd's greatest weapon is its understanding of relics and aether.
     It can seize control of magical objects and spells, redirecting the power back toward the mages who cast them.
@@ -971,18 +981,14 @@ nemeses:
 - name: Erythiza, Consumed
   box: Past and Future
   battle: 4
-  background: 'When the mages reached Erythiza, the city of glittering glass and soaring
-    innovation had been consumed by a black, swirling storm.  The tall buildings were
-    wrapped in tendrils of mist, refugees fled in all directions, and those still trapped
-    inside had nothing human left of them.  Kavoc realized this was the center of the
-    spreading corruption—an impossibly dense concentration of corruption particles.
-    Willow proposed opening a gigantic breach to push the entire city and its corruption
-    into extra-dimensional space.  Five mages working together opened the breach, and
-    Erythiza vanished, leaving only an empty field.  Most corruption was locked away
-    forever, though some escaped to create new Nameless elsewhere.'
-  appearance: A black, swirling storm that has consumed an entire city.  Buildings
-    wrapped in tendrils of mist, the storm mutating everything it touches—birds grow
-    ten times their size, trees bend and twist, vines whip forward like grasping fingers.
+  background: |
+    Brama’s Past 4 account frames Erythiza as the central mystery of the Calamity: one day a thriving city of scientists and innovators, the next swallowed into the air and overrun by corruption.  Survivors describe citizens transforming from human to Nameless in moments while violet-black growths webbed streets, towers, and breachworks.
+
+    When mages reached the epicenter, they concluded that the concentration was too dense to cleanse conventionally.  A coalition led by Willow and Kavoc opened an immense breach and forced the city-scale corruption mass out of the world entirely.  Erythiza itself disappeared, leaving only an empty field and unanswered questions about what happened within the vanished city and who first contained the spread.
+  appearance: |
+    The ruins manifest as a golden cityscape strangled by dense violet tendrils and smoke-like corruption webs stretched between windows, rooftops, and broken arches.
+    Emaciated, half-transformed Nameless figures stalk the streets—long-limbed, hollow-chested silhouettes that look like people drained to wire and bone.
+    Instead of one singular monster, Erythiza, Consumed appears as an urban infection front: architecture, air, and bodies all fused into a single advancing corruption field.
   strengths: Uses corruption tokens and twisting tendrils that drain life and infect
     players with decay; the storm expands relentlessly
   weaknesses: Destroying tendrils reduces its power; vulnerable to being pushed through
@@ -990,11 +996,14 @@ nemeses:
 - name: The Endless Decay
   box: Origins
   battle: 3
-  background: 'Kiri observes that animals in her homeland become corrupted; phoenixes
-    prevent them from turning into Nameless, but sometimes a corrupted creature grows
-    too large and becomes a Nameless.  The Endless Decay is such a horror—a beast
-    that rots everything it touches. '
-  appearance: A hulking, rotting creature leaving trails of decay wherever it moves.
+  background: |
+    In Kiri Maesan’s field account, corruption among animals is usually contained by a harsh natural cycle: phoenixes and surviving wildlife cull infected creatures before they can mature into true Nameless.  Most outbreaks end quickly, either hunted down as threats or driven off as prey gone wrong.
+
+    The Endless Decay is what happens when one corruption-vector slips through that net long enough to evolve.  It is no longer simply a sick beast but a full Nameless engine of deterioration, spreading entropy through any ecosystem it enters and proving Kiri’s warning that even nature’s balancing systems can fail.
+  appearance: |
+    A giant, spider-like predator with a polished amber-gold carapace and long, needle-jointed legs that move with precise, mechanical rhythm.
+    Its body is segmented into bulbous armored nodes, and each step leaves a sense of structural collapse, as though matter around it is aging and thinning in real time.
+    Behind it, green-black spectral residue coils through the air like evaporating venom, framing the creature as less a scavenger and more a walking vector of environmental ruin.
   strengths: Inflicts decay counters on players’ decks, turning cards into useless
     husks
   weaknesses: Players can purge decay by destroying decayed cards or using phoenix-related
