@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
-"""Unified CGI wrapper for multi-game expedition selection.
-
-Supported today:
-- game=aeons_end
-
-Scaffolded (not implemented yet):
-- game=astro_knights
-- game=invincible
-"""
+"""Unified CGI wrapper for multi-game expedition selection."""
 
 from __future__ import annotations
 
@@ -31,6 +23,22 @@ AEONS_END_PATHS = {
     "nemeses_yaml_path": os.path.join(REPO_ROOT, "games", "aeons_end", "data", "aeons_end_nemeses.yaml"),
     "friends_yaml_path": os.path.join(REPO_ROOT, "games", "aeons_end", "data", "aeons_end_friends.yaml"),
     "foes_yaml_path": os.path.join(REPO_ROOT, "games", "aeons_end", "data", "aeons_end_foes.yaml"),
+}
+
+ASTRO_KNIGHTS_PATHS = {
+    "knights_yaml_path": os.path.join(
+        REPO_ROOT, "games", "astro_knights", "data", "astro_knights_knights.yaml"
+    ),
+    "settings_yaml_path": os.path.join(REPO_ROOT, "games", "astro_knights", "data", "wave_settings.yaml"),
+    "waves_yaml_path": os.path.join(
+        REPO_ROOT, "games", "astro_knights", "data", "astro_knights_waves.yaml"
+    ),
+    "bosses_yaml_path": os.path.join(
+        REPO_ROOT, "games", "astro_knights", "data", "astro_knights_bosses.yaml"
+    ),
+    "homeworlds_yaml_path": os.path.join(
+        REPO_ROOT, "games", "astro_knights", "data", "astro_knights_homeworlds.yaml"
+    ),
 }
 
 
@@ -148,21 +156,32 @@ def _available_games() -> Dict[str, Any]:
 
 def _handle_available_settings(data: Dict[str, Any]) -> Dict[str, Any]:
     game = _require_game(data)
-    if game != "aeons_end":
-        raise ApiError(f"availableSettings is not implemented for '{game}'", status="501 Not Implemented")
-    from core.aeons_end_expedition_selector import get_available_settings
+    if game == "aeons_end":
+        from core.aeons_end_expedition_selector import get_available_settings
 
-    return get_available_settings(
-        settings_yaml_path=AEONS_END_PATHS["settings_yaml_path"],
-        waves_yaml_path=AEONS_END_PATHS["waves_yaml_path"],
-    )
+        return get_available_settings(
+            settings_yaml_path=AEONS_END_PATHS["settings_yaml_path"],
+            waves_yaml_path=AEONS_END_PATHS["waves_yaml_path"],
+        )
+    if game == "astro_knights":
+        from core.astro_knights_expedition_selector import get_available_settings
+
+        return get_available_settings(
+            settings_yaml_path=ASTRO_KNIGHTS_PATHS["settings_yaml_path"],
+            waves_yaml_path=ASTRO_KNIGHTS_PATHS["waves_yaml_path"],
+        )
+    else:
+        raise ApiError(f"availableSettings is not implemented for '{game}'", status="501 Not Implemented")
 
 
 def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
     game = _require_game(data)
-    if game != "aeons_end":
+    if game == "aeons_end":
+        from core.aeons_end_expedition_selector import select_expedition
+    elif game == "astro_knights":
+        from core.astro_knights_expedition_selector import select_expedition
+    else:
         raise ApiError(f"selectExpeditionPacket is not implemented for '{game}'", status="501 Not Implemented")
-    from core.aeons_end_expedition_selector import select_expedition
 
     mage_count = _parse_int(data.get("mage_count"), "mage_count", required=True)
     length = str(data.get("length") or "standard").strip().lower()
@@ -175,29 +194,37 @@ def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
     max_attempts = _parse_int(data.get("max_attempts"), "max_attempts") or 200
     mage_recruitment_chance = _parse_int(data.get("mage_recruitment_chance"), "mage_recruitment_chance") or 100
     strictness = str(data.get("strictness") or "open").strip().lower()
+    expedition_difficulty = str(data.get("expedition_difficulty") or "standard").strip().lower()
     setting_wave = data.get("setting_wave")
     setting_variant = data.get("setting_variant")
 
-    return select_expedition(
-        seed=seed,
-        mage_count=mage_count,
-        length=length,
-        content_waves=content_waves,
-        content_boxes=content_boxes,
-        max_attempts=max_attempts,
-        mage_recruitment_chance=mage_recruitment_chance,
-        strictness=strictness,
-        setting_wave=setting_wave,
-        setting_variant=setting_variant,
-        **AEONS_END_PATHS,
-    )
+    common_kwargs = {
+        "seed": seed,
+        "mage_count": mage_count,
+        "length": length,
+        "content_waves": content_waves,
+        "content_boxes": content_boxes,
+        "max_attempts": max_attempts,
+        "mage_recruitment_chance": mage_recruitment_chance,
+        "strictness": strictness,
+        "expedition_difficulty": expedition_difficulty,
+        "setting_wave": setting_wave,
+        "setting_variant": setting_variant,
+    }
+
+    if game == "aeons_end":
+        return select_expedition(**common_kwargs, **AEONS_END_PATHS)
+    return select_expedition(**common_kwargs, **ASTRO_KNIGHTS_PATHS)
 
 
 def _handle_select_replacement_mage(data: Dict[str, Any]) -> Dict[str, Any]:
     game = _require_game(data)
-    if game != "aeons_end":
+    if game == "aeons_end":
+        from core.aeons_end_expedition_selector import select_replacement_mage
+    elif game == "astro_knights":
+        from core.astro_knights_expedition_selector import select_replacement_mage
+    else:
         raise ApiError(f"selectReplacementMage is not implemented for '{game}'", status="501 Not Implemented")
-    from core.aeons_end_expedition_selector import select_replacement_mage
 
     existing_mage_names = _parse_list(data.get("existing_mage_names"))
     if not existing_mage_names:
@@ -207,14 +234,24 @@ def _handle_select_replacement_mage(data: Dict[str, Any]) -> Dict[str, Any]:
     seed = _parse_int(data.get("seed"), "seed")
     max_attempts = _parse_int(data.get("max_attempts"), "max_attempts") or 200
 
+    if game == "aeons_end":
+        return select_replacement_mage(
+            seed=seed,
+            existing_mage_names=existing_mage_names,
+            content_waves=content_waves,
+            content_boxes=content_boxes,
+            max_attempts=max_attempts,
+            mages_yaml_path=AEONS_END_PATHS["mages_yaml_path"],
+            waves_yaml_path=AEONS_END_PATHS["waves_yaml_path"],
+        )
     return select_replacement_mage(
         seed=seed,
         existing_mage_names=existing_mage_names,
         content_waves=content_waves,
         content_boxes=content_boxes,
         max_attempts=max_attempts,
-        mages_yaml_path=AEONS_END_PATHS["mages_yaml_path"],
-        waves_yaml_path=AEONS_END_PATHS["waves_yaml_path"],
+        knights_yaml_path=ASTRO_KNIGHTS_PATHS["knights_yaml_path"],
+        waves_yaml_path=ASTRO_KNIGHTS_PATHS["waves_yaml_path"],
     )
 
 

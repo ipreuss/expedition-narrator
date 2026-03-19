@@ -1,0 +1,29 @@
+# Astro Knights Expedition Narrator — Style Selector
+
+Read this file together with:
+- `shared_narration_style_selector.txt`
+
+If this file conflicts with the shared style selector, this file wins.
+
+## Astro Knights Tonal Fit
+
+Default to `Canonical Neutral`.
+
+For Astro Knights, style choices should preserve:
+- clear science-fantasy action
+- cooperative defense under pressure
+- cosmic scale without purple prose
+- improvisation, momentum, and team coordination
+
+## Astro Knights Selection Hints
+
+- direct defensive missions -> `Canonical Neutral` or `Stark Procedural`
+- desperate survival with limited options -> `Pragmatic Resilience`
+- fast-moving pursuit, evasive flight, or collapsing fronts -> `Spare Momentum`
+- civilian rescue or damaged-team regrouping -> `Clear-Eyed Humanism`
+- strange cosmic threat with quiet dread -> `Quiet Unsettling`
+- use `Dry Wit Under Pressure` only when it reads as team resilience, not genre parody
+
+## Guardrail
+
+If the style starts sounding medieval, mystical in a fantasy-first way, or too military-formal, reselect.

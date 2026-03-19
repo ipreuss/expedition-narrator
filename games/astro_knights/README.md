@@ -1,12 +1,17 @@
-# Astro Knights Profile Scaffold
+# Astro Knights Profile
 
-Status: scaffolded, not implemented.
+Status: initial implementation.
 
-Planned files:
-- `data/`: Astro Knights datasets
-- `api/astro_knights_expedition_selector_openapi.yaml`: optional game-specific schema
-- `api/astro_knights_expedition_selector_cgi.py`: optional game-specific wrapper
-- `gpt/astro_knights/*.txt`: instruction files for Custom GPT upload once implemented
+Current scope:
+- Wave 2 only
+- `Astro Knights - Eternity`
+- `Mystery of Solarus`
+- Deterministic selection of one homeworld, one knight team, and a 4-battle boss plan
+
+Implemented files:
+- `data/`: Astro Knights Wave-2 datasets
+- `api/astro_knights_expedition_selector_openapi.yaml`: game-specific schema
+- `api/astro_knights_expedition_selector_cgi.py`: game-specific wrapper
 
 Current recommendation:
-Use the unified multi-game action schema and set `game=astro_knights` once implementation is complete.
+Use the unified multi-game action schema and set `game=astro_knights`.

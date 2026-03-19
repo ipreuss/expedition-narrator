@@ -1,0 +1,31 @@
+homeworlds:
+  - id: the_galactic_bazaar
+    name: The Galactic Bazaar
+    wave_name: 2nd Wave
+    box: Astro Knights - Eternity
+    background: A sprawling interstellar trade nexus whose survival matters far beyond a single system.
+    story_notes: Its defense should feel crowded, volatile, and politically delicate.
+  - id: dirath
+    name: Dirath
+    wave_name: 2nd Wave
+    box: Astro Knights - Eternity
+    background: A world marked by the pressure of direct large-scale assault.
+    story_notes: Its stories should emphasize impact, endurance, and visible damage.
+  - id: felis
+    name: Felis
+    wave_name: 2nd Wave
+    box: Astro Knights - Eternity
+    background: A populated world whose defense depends on holding together under fast-moving threats.
+    story_notes: Its stories should emphasize regrouping, timing, and civilian stakes.
+  - id: the_bobcat
+    name: The Bobcat
+    wave_name: 2nd Wave
+    box: Astro Knights - Eternity
+    background: A mobile or semi-mobile refuge whose security depends on keeping fragile systems running.
+    story_notes: Its stories should emphasize improvisation and keeping a vulnerable haven intact.
+  - id: eos
+    name: Eos
+    wave_name: 2nd Wave
+    box: Mystery of Solarus
+    background: A Solarus homeworld under immediate threat from the Shade Sculptor.
+    story_notes: The defense of Eos centers the Mystery of Solarus box.

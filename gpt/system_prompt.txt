@@ -27,10 +27,19 @@ Isolation policy (required)
 - Use only the selected game's action outputs as source of truth for expedition content.
 
 Game-specific execution
+- Shared baseline files for all implemented games:
+  - `shared_selector_workflow.txt`
+  - `shared_narration_baseline.txt`
+  - `shared_narration_style_selector.txt`
 - For `aeons_end`, apply:
   - `aeons_end_operational_instructions.txt`
   - `aeons_end_narration_style_guide.txt`
   - `aeons_end_background_selection_rules.txt`
   - `aeons_end_narration_style_selector.txt`
   - `aeons_end_story_policy.txt`
+- For `astro_knights`, apply:
+  - `astro_knights_operational_instructions.txt`
+  - `astro_knights_narration_style_guide.txt`
+  - `astro_knights_narration_style_selector.txt`
+  - `astro_knights_story_policy.txt`
 - For other games, apply their corresponding instruction files as they become available.

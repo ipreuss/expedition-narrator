@@ -14,7 +14,7 @@ Shared selector engine and game profiles for expedition narrator GPTs.
 - `gpt/aeons_end/`: Aeon's End knowledge files intended for Custom GPT upload.
 - `multi_game_expedition_selector_openapi.yaml`: unified GPT Action schema intended for Custom GPT upload.
 - `games/aeons_end/`: implemented profile for server-side assets and game data.
-- `games/astro_knights/`: scaffold profile.
+- `games/astro_knights/`: initial Wave-2 implementation.
 - `games/invincible/`: scaffold profile.
 - `multi_game_expedition_selector_cgi.py`: unified action endpoint with required `game` parameter.
 - `docs/custom_gpt_multigame_setup.md`: concrete setup steps for one multi-game GPT.

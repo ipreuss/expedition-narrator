@@ -1,0 +1,105 @@
+knights:
+  - id: astro_knight_caleb
+    name: Caleb
+    background: A pilot from Centuron whose childhood dream of reaching the stars became real aboard the Bobcat.
+    story_notes: Built the Bobcat with Reshi out of scavenged parts and refuses to stay behind when lives can still be saved.
+    strengths: Late damage and support.
+    weaknesses: Most effective after the team has time to develop.
+    variants:
+      - variant_id: caleb_eternity
+        variant_name: Eternity
+        wave_name: 2nd Wave
+        box: Astro Knights - Eternity
+        background: A Centuron pilot who escaped junkyards and repair bays by building the Bobcat with Reshi.
+        story_notes: Caleb pushes forward on rescue runs because he would rather burn trying to save people than survive by doing nothing.
+  - id: astro_knight_pan
+    name: Pan
+    background: A scout from Felis who volunteered for a desperate launch no one expected to survive.
+    story_notes: Pan acts when the odds are terrible because standing still while others can be saved feels worse than the risk.
+    strengths: Flexibility and late damage.
+    weaknesses: Shines most once the fight has opened up.
+    variants:
+      - variant_id: pan_eternity
+        variant_name: Eternity
+        wave_name: 2nd Wave
+        box: Astro Knights - Eternity
+        background: A Felis scout who launched toward disaster on a one-way rescue run.
+        story_notes: Pan keeps moving because there is always still a chance to save someone.
+  - id: astro_knight_tsana
+    name: Tsana
+    background: A Tev-Aron weapons officer whose talent for trouble and talent for weapons both shaped her path.
+    story_notes: Tsana was expelled into a harsher future, then found her real crew while running from a fueling-station fire with prototype boots on her feet.
+    strengths: Early damage and late damage.
+    weaknesses: Her first instinct is usually to push the fight harder.
+    variants:
+      - variant_id: tsana_eternity
+        variant_name: Eternity
+        wave_name: 2nd Wave
+        box: Astro Knights - Eternity
+        background: A rebellious Tev-Aron weapons prodigy who turned discipline problems into battlefield expertise.
+        story_notes: Caleb and Reshi pulled Tsana into the Bobcat crew, where her love of new gear finally had somewhere useful to go.
+  - id: astro_knight_reshi
+    name: Reshi
+    background: A mechanic from Centuron who poured heart, labor, and family memory into the Bobcat.
+    story_notes: Reshi carries the grief and grit of an industrial world, and the Bobcat became the first place that truly felt like home.
+    strengths: Energy and support.
+    weaknesses: Carries responsibility for keeping everyone moving.
+    variants:
+      - variant_id: reshi_eternity
+        variant_name: Eternity
+        wave_name: 2nd Wave
+        box: Astro Knights - Eternity
+        background: A Centuron mechanic whose work on the Bobcat turned longing for space into a way of life.
+        story_notes: The touch of cold iron and engine work ties Reshi to family, to Caleb, and to the ship she chose as home.
+  - id: astro_knight_zak
+    name: Z.A.K.
+    background: An old Astro Knight sniper from Caris, recovered from wreckage on Dirath with damaged memory banks and unfinished history.
+    story_notes: Z.A.K. remembers decades of service only in fragments and now needs new allies as much as new Star Cores.
+    strengths: Early damage and late damage.
+    weaknesses: Missing memory leaves gaps in context even when the mission is clear.
+    variants:
+      - variant_id: zak_eternity
+        variant_name: Eternity
+        wave_name: 2nd Wave
+        box: Astro Knights - Eternity
+        background: A veteran Astro Knight machine rebuilt after a long-buried wreck on Dirath.
+        story_notes: Z.A.K. brings old battlefield instincts, but depends on new friends to help define what comes next.
+  - id: astro_knight_rex_and_shield_bo
+    name: Rex and Shield-Bo
+    background: Rex is an inventor from Caris who built Shield-Bo out of an old laboratory and a dangerous amount of ambition.
+    story_notes: Shield-Bo began as SDU-4628, a protective machine with a flexible shield and an overbuilt personality, and the pair now throw themselves toward any problem that needs cover.
+    strengths: Healing and flexibility.
+    weaknesses: Rex's ideas tend to arrive fully committed and already in motion.
+    variants:
+      - variant_id: rex_and_shield_bo_eternity
+        variant_name: Eternity
+        wave_name: 2nd Wave
+        box: Astro Knights - Eternity
+        background: A Caris inventor and his custom shield project who turned robot-hunting obsession into frontline protection.
+        story_notes: Rex and Shield-Bo combine stubborn engineering, defensive tech, and just enough eccentricity to make them unforgettable under fire.
+  - id: astro_knight_naoko
+    name: Naoko
+    background: A samurai from Eos descended from Earthian refugees, driven to recover scattered heritage and ancient relics.
+    story_notes: Naoko's search led her to Sunshine, to a buried outpost, and to the discovery that made both of them Astro Knights.
+    strengths: Early damage and late damage.
+    weaknesses: The mission easily becomes personal when the past is involved.
+    variants:
+      - variant_id: naoko_solarus
+        variant_name: Mystery of Solarus
+        wave_name: 2nd Wave
+        box: Mystery of Solarus
+        background: A disciplined Eos warrior whose relic hunt became a doorway into Solarus's deeper mysteries.
+        story_notes: Sunshine joined her first as a guide and later as protector, companion, and wife.
+  - id: astro_knight_sunshine
+    name: Sunshine
+    background: An archaeologist from Ylong whose long-lived people know the jungle home as deeply as roots and canopy.
+    story_notes: Sunshine met Naoko while recovering from illness, helped uncover the ancient weapon fragments, and immediately understood what was at stake.
+    strengths: Healing and flexibility.
+    weaknesses: Curiosity can pull her deeper into dangerous mysteries.
+    variants:
+      - variant_id: sunshine_solarus
+        variant_name: Mystery of Solarus
+        wave_name: 2nd Wave
+        box: Mystery of Solarus
+        background: A Ylong archaeologist whose knowledge of old ruins and old worlds opened the path into Solarus's buried past.
+        story_notes: Sunshine chose not to let ancient power fall into the wrong hands and stayed beside Naoko from that moment on.

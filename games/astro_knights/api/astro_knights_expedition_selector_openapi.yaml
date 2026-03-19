@@ -1,6 +1,262 @@
 openapi: 3.1.0
 info:
-  title: Astro Knights Expedition Selector (Scaffold)
+  title: Astro Knights Expedition Selector
   version: 0.1.0
-  description: Not implemented yet. Use the root multi-game schema for the canonical action surface.
-paths: {}
+  description: |-
+    OpenAPI schema for the Astro Knights Wave-2 selector.
+    This initial implementation supports `Astro Knights - Eternity` and
+    `Mystery of Solarus`, both in `2nd Wave`.
+    Expeditions currently use a fixed four-battle structure covering Battle 1 through Battle 4.
+servers:
+  - url: https://skriptguruai.site/cgi-bin/expedition-narrator/games/astro_knights/api
+paths:
+  /astro_knights_expedition_selector_cgi.py:
+    post:
+      operationId: selectExpeditionPacket
+      summary: Generate an Astro Knights expedition packet.
+      x-openai-isConsequential: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SelectorRequest"
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: "#/components/schemas/SelectorRequest"
+      responses:
+        "200":
+          description: Expedition packet
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ExpeditionPacket"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    get:
+      operationId: selectExpeditionPacketGet
+      summary: Generate an Astro Knights expedition packet (query parameters).
+      parameters:
+        - name: mage_count
+          in: query
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 4
+        - name: length
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [short, standard, long]
+          description: Astro Knights currently supports only `standard`, which maps to the fixed four-battle expedition structure.
+        - name: content_waves
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: content_boxes
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: seed
+          in: query
+          required: false
+          schema:
+            type: integer
+        - name: max_attempts
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: expedition_difficulty
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [standard, advanced, legendary]
+            default: standard
+        - name: strictness
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [thematic, mixed, open]
+            default: open
+        - name: setting_wave
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Expedition packet
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ExpeditionPacket"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+  /astro_knights_expedition_selector_cgi.py?operation=availableSettings:
+    get:
+      operationId: availableSettings
+      summary: Get available Astro Knights waves and boxes.
+      x-openai-isConsequential: false
+      parameters:
+        - name: operation
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [availableSettings]
+      responses:
+        "200":
+          description: Available settings
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AvailableSettingsResponse"
+  /astro_knights_expedition_selector_cgi.py?operation=selectReplacementMage:
+    post:
+      operationId: selectReplacementMage
+      summary: Select a replacement Astro Knight.
+      x-openai-isConsequential: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ReplacementMageRequest"
+      responses:
+        "200":
+          description: Replacement knight packet
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReplacementMagePacket"
+components:
+  schemas:
+    SelectorRequest:
+      type: object
+      additionalProperties: false
+      required: [mage_count]
+      properties:
+        mage_count:
+          type: integer
+          minimum: 1
+          maximum: 4
+        length:
+          type: string
+          enum: [short, standard, long]
+          description: Astro Knights currently supports only `standard`.
+        content_waves:
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: string
+        content_boxes:
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: string
+        seed:
+          type: integer
+        max_attempts:
+          type: integer
+          minimum: 1
+        expedition_difficulty:
+          type: string
+          enum: [standard, advanced, legendary]
+        strictness:
+          type: string
+          enum: [thematic, mixed, open]
+        setting_wave:
+          type: string
+    ReplacementMageRequest:
+      type: object
+      additionalProperties: false
+      required: [operation, existing_mage_names]
+      properties:
+        operation:
+          type: string
+          enum: [selectReplacementMage]
+        existing_mage_names:
+          type: array
+          items:
+            type: string
+        content_waves:
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: string
+        content_boxes:
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: string
+        seed:
+          type: integer
+        max_attempts:
+          type: integer
+          minimum: 1
+    ErrorResponse:
+      type: object
+      additionalProperties: false
+      properties:
+        error:
+          type: string
+        detail:
+          type: string
+      required: [error]
+    ExpeditionPacket:
+      type: object
+      additionalProperties: true
+    AvailableSettingsResponse:
+      type: object
+      additionalProperties: false
+      properties:
+        waves:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            properties:
+              name:
+                type: string
+              variants:
+                oneOf:
+                  - type: array
+                    items:
+                      type: string
+                  - type: "null"
+            required: [name]
+        boxes:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            properties:
+              name:
+                type: string
+              wave:
+                type: string
+            required: [name, wave]
+      required: [waves, boxes]
+    ReplacementMagePacket:
+      type: object
+      additionalProperties: true

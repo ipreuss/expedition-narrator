@@ -17,6 +17,7 @@ except ModuleNotFoundError:  # pragma: no cover - fallback for environments with
     sys.modules["yaml"] = yaml  # type: ignore
 
 from core import aeons_end_expedition_selector as selector
+from core import astro_knights_expedition_selector as astro_selector
 
 
 def write_yaml(path: Path, data) -> None:
@@ -317,6 +318,116 @@ def build_multi_wave_data(tmp_path: Path):
     return paths, waves
 
 
+def build_astro_knights_data(tmp_path: Path):
+    waves = {
+        "boxes": {
+            "Astro Knights - Eternity": "2nd Wave",
+            "Mystery of Solarus": "2nd Wave",
+        }
+    }
+    settings = {
+        "wave_settings": {
+            "2nd Wave": {
+                "setting": "The Eternity frontier",
+                "mood": "Scrappy cosmic defense",
+            }
+        }
+    }
+    knights = {
+        "knights": [
+            {
+                "name": "Caleb",
+                "variants": [{"name": "Caleb", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"}],
+            },
+            {
+                "name": "Pan",
+                "variants": [{"name": "Pan", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"}],
+            },
+            {
+                "name": "Tsana",
+                "variants": [{"name": "Tsana", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"}],
+            },
+            {
+                "name": "Reshi",
+                "variants": [{"name": "Reshi", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"}],
+            },
+            {
+                "name": "Z.A.K.",
+                "variants": [{"name": "Z.A.K.", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"}],
+            },
+            {
+                "name": "Rex and Shield-Bo",
+                "variants": [{"name": "Rex and Shield-Bo", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"}],
+            },
+            {
+                "name": "Naoko",
+                "variants": [{"name": "Naoko", "box": "Mystery of Solarus", "wave_name": "2nd Wave"}],
+            },
+            {
+                "name": "Sunshine",
+                "variants": [{"name": "Sunshine", "box": "Mystery of Solarus", "wave_name": "2nd Wave"}],
+            },
+        ]
+    }
+    bosses = {
+        "bosses": [
+            {
+                "name": "Dirathian Behemoth",
+                "box": "Astro Knights - Eternity",
+                "wave_name": "2nd Wave",
+                "battle_difficulties": {"1": "normal", "4": "expert"},
+            },
+            {
+                "name": "Shade Sculptor",
+                "box": "Mystery of Solarus",
+                "wave_name": "2nd Wave",
+                "battle_difficulties": {"1": "normal", "4": "expert"},
+            },
+            {
+                "name": "Volt Fusion",
+                "box": "Astro Knights - Eternity",
+                "wave_name": "2nd Wave",
+                "battle_difficulties": {"2": "normal", "4": "expert"},
+            },
+            {
+                "name": "Solar Collision",
+                "box": "Astro Knights - Eternity",
+                "wave_name": "2nd Wave",
+                "battle_difficulties": {"2": "normal", "3": "expert"},
+            },
+            {
+                "name": "Eternity",
+                "box": "Astro Knights - Eternity",
+                "wave_name": "2nd Wave",
+                "battle_difficulties": {"2": "normal", "4": "expert"},
+            },
+        ]
+    }
+    homeworlds = {
+        "homeworlds": [
+            {"name": "The Galactic Bazaar", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+            {"name": "Dirath", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+            {"name": "Felis", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+            {"name": "The Bobcat", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+            {"name": "Eos", "box": "Mystery of Solarus", "wave_name": "2nd Wave"},
+        ]
+    }
+
+    paths = {
+        "waves": tmp_path / "astro_waves.yaml",
+        "settings": tmp_path / "astro_settings.yaml",
+        "knights": tmp_path / "astro_knights.yaml",
+        "bosses": tmp_path / "astro_bosses.yaml",
+        "homeworlds": tmp_path / "astro_homeworlds.yaml",
+    }
+    write_yaml(paths["waves"], waves)
+    write_yaml(paths["settings"], settings)
+    write_yaml(paths["knights"], knights)
+    write_yaml(paths["bosses"], bosses)
+    write_yaml(paths["homeworlds"], homeworlds)
+    return paths
+
+
 def get_entity_boxes(packet, waves_mapping):
     """Extract box info from all entities in a packet."""
     boxes = {"mages": [], "nemeses": [], "friends": [], "foes": []}
@@ -498,6 +609,195 @@ def test_strictness_invalid_value_raises(tmp_path):
         )
 
 
+def test_astro_knights_selection_is_deterministic(tmp_path, monkeypatch):
+    paths = build_astro_knights_data(tmp_path)
+    monkeypatch.setattr(astro_selector, "_now_iso", lambda: "2024-01-01T00:00:00+00:00")
+
+    packet_a = astro_selector.select_expedition(
+        seed=99,
+        mage_count=2,
+        length="standard",
+        content_waves=[],
+        content_boxes=["Astro Knights - Eternity"],
+        knights_yaml_path=str(paths["knights"]),
+        settings_yaml_path=str(paths["settings"]),
+        waves_yaml_path=str(paths["waves"]),
+        bosses_yaml_path=str(paths["bosses"]),
+        homeworlds_yaml_path=str(paths["homeworlds"]),
+        expedition_difficulty="advanced",
+    )
+    packet_b = astro_selector.select_expedition(
+        seed=99,
+        mage_count=2,
+        length="standard",
+        content_waves=[],
+        content_boxes=["Astro Knights - Eternity"],
+        knights_yaml_path=str(paths["knights"]),
+        settings_yaml_path=str(paths["settings"]),
+        waves_yaml_path=str(paths["waves"]),
+        bosses_yaml_path=str(paths["bosses"]),
+        homeworlds_yaml_path=str(paths["homeworlds"]),
+        expedition_difficulty="advanced",
+    )
+
+    assert json.dumps(packet_a, sort_keys=True) == json.dumps(packet_b, sort_keys=True)
+    assert packet_a["setting"]["wave_name"] == "2nd Wave"
+    assert packet_a["availability"]["include_friend_foe_pair"] is False
+    assert len(packet_a["battle_plan"]) == 4
+    assert [step["battle_index"] for step in packet_a["battle_plan"]] == [1, 2, 3, 4]
+    assert packet_a["homeworld"]["box"] == "Astro Knights - Eternity"
+    assert packet_a["protect_target"] == packet_a["homeworld"]["name"]
+    assert packet_a["homeworld"]["name"] in {
+        "The Galactic Bazaar",
+        "Dirath",
+        "Felis",
+        "The Bobcat",
+    }
+    assert packet_a["meta"]["inputs"]["expedition_difficulty"] == "advanced"
+    assert [step["boss_difficulty"] for step in packet_a["battle_plan"]] == ["expert", "expert", "nightmare", "nightmare"]
+    assert packet_a["final_nemesis"]["battle"] == 4
+    assert packet_a["final_nemesis"]["boss_difficulty"] == "nightmare"
+
+    knight_names = extract_names(packet_a["mages"])
+    boss_names = extract_names([step["nemesis"] for step in packet_a["battle_plan"]])
+    assert knight_names.isdisjoint(boss_names)
+    assert len(boss_names) == 4
+
+
+def test_astro_knights_box_scope_limits_selection(tmp_path):
+    paths = build_astro_knights_data(tmp_path)
+
+    packet = astro_selector.select_expedition(
+        seed=7,
+        mage_count=2,
+        length="standard",
+        content_waves=[],
+        content_boxes=["Astro Knights - Eternity"],
+        knights_yaml_path=str(paths["knights"]),
+        settings_yaml_path=str(paths["settings"]),
+        waves_yaml_path=str(paths["waves"]),
+        bosses_yaml_path=str(paths["bosses"]),
+        homeworlds_yaml_path=str(paths["homeworlds"]),
+        expedition_difficulty="legendary",
+    )
+
+    assert packet["homeworld"]["box"] == "Astro Knights - Eternity"
+    assert packet["homeworld"]["name"] in {
+        "The Galactic Bazaar",
+        "Dirath",
+        "Felis",
+        "The Bobcat",
+    }
+    assert [step["battle_index"] for step in packet["battle_plan"]] == [1, 2, 3, 4]
+    assert packet["battle_plan"][0]["nemesis"]["name"] == "Dirathian Behemoth"
+    assert packet["battle_plan"][2]["nemesis"]["name"] == "Solar Collision"
+    assert packet["final_nemesis"]["boss_difficulty"] == "apocalypse"
+    assert {mage["chosen_variant"]["box"] for mage in packet["mages"]} == {"Astro Knights - Eternity"}
+
+
+def test_astro_knights_standard_maps_to_normal_boss_difficulty(tmp_path):
+    paths = build_astro_knights_data(tmp_path)
+
+    packet = astro_selector.select_expedition(
+        seed=5,
+        mage_count=2,
+        length="standard",
+        content_waves=["2nd Wave"],
+        content_boxes=[],
+        knights_yaml_path=str(paths["knights"]),
+        settings_yaml_path=str(paths["settings"]),
+        waves_yaml_path=str(paths["waves"]),
+        bosses_yaml_path=str(paths["bosses"]),
+        homeworlds_yaml_path=str(paths["homeworlds"]),
+        expedition_difficulty="standard",
+    )
+
+    assert [step["boss_difficulty"] for step in packet["battle_plan"]] == ["normal", "normal", "expert", "expert"]
+
+
+def test_astro_knights_solarus_scope_lacks_full_battle_coverage(tmp_path):
+    paths = build_astro_knights_data(tmp_path)
+
+    with pytest.raises(RuntimeError, match="unique Astro Knights boss plan"):
+        astro_selector.select_expedition(
+            seed=7,
+            mage_count=2,
+            length="standard",
+            content_waves=[],
+            content_boxes=["Mystery of Solarus"],
+            knights_yaml_path=str(paths["knights"]),
+            settings_yaml_path=str(paths["settings"]),
+            waves_yaml_path=str(paths["waves"]),
+            bosses_yaml_path=str(paths["bosses"]),
+            homeworlds_yaml_path=str(paths["homeworlds"]),
+            expedition_difficulty="advanced",
+        )
+
+
+def test_astro_knights_requires_full_battle_coverage(tmp_path):
+    paths = build_astro_knights_data(tmp_path)
+
+    with pytest.raises(RuntimeError, match="unique Astro Knights boss plan"):
+        astro_selector.select_expedition(
+            seed=7,
+            mage_count=2,
+            length="standard",
+            content_waves=[],
+            content_boxes=["Mystery of Solarus"],
+            knights_yaml_path=str(paths["knights"]),
+            settings_yaml_path=str(paths["settings"]),
+            waves_yaml_path=str(paths["waves"]),
+            bosses_yaml_path=str(paths["bosses"]),
+            homeworlds_yaml_path=str(paths["homeworlds"]),
+            expedition_difficulty="standard",
+        )
+
+
+def test_astro_knights_battle_specific_difficulty_mapping():
+    boss = {
+        "name": "Continnua",
+        "battle_difficulties": {
+            "1": "normal",
+            "2": "expert",
+        },
+    }
+
+    assert astro_selector.resolve_boss_difficulty(boss, "standard", battle_index=2) == "expert"
+    assert astro_selector.resolve_boss_difficulty(boss, "advanced", battle_index=2) == "nightmare"
+    assert astro_selector.resolve_boss_difficulty(boss, "legendary", battle_index=2) == "apocalypse"
+
+
+def test_astro_knights_boss_supports_specific_battle():
+    boss = {
+        "name": "Continnua",
+        "battle_difficulties": {
+            "1": "normal",
+            "2": "expert",
+        },
+    }
+
+    assert astro_selector.boss_supports_battle(boss, 1) is True
+    assert astro_selector.boss_supports_battle(boss, 2) is True
+    assert astro_selector.boss_supports_battle(boss, 3) is False
+
+
+def test_astro_knights_replacement_respects_existing_party(tmp_path, monkeypatch):
+    paths = build_astro_knights_data(tmp_path)
+    monkeypatch.setattr(astro_selector, "_now_iso", lambda: "2024-01-01T00:00:00+00:00")
+
+    packet = astro_selector.select_replacement_mage(
+        seed=12,
+        existing_mage_names=["Naoko"],
+        content_waves=[],
+        content_boxes=["Mystery of Solarus", "Astro Knights - Eternity"],
+        knights_yaml_path=str(paths["knights"]),
+        waves_yaml_path=str(paths["waves"]),
+    )
+
+    assert packet["mage"]["name"] != "Naoko"
+    assert packet["meta"]["effective_seed"] == 12
+
+
 def test_production_yaml_files_are_valid():
     """Ensure all production YAML files can be parsed without errors."""
     import yaml
@@ -509,6 +809,11 @@ def test_production_yaml_files_are_valid():
         "games/aeons_end/data/wave_settings.yaml",
         "games/aeons_end/data/aeons_end_friends.yaml",
         "games/aeons_end/data/aeons_end_foes.yaml",
+        "games/astro_knights/data/astro_knights_knights.yaml",
+        "games/astro_knights/data/astro_knights_bosses.yaml",
+        "games/astro_knights/data/astro_knights_homeworlds.yaml",
+        "games/astro_knights/data/astro_knights_waves.yaml",
+        "games/astro_knights/data/wave_settings.yaml",
     ]
 
     for filename in production_files:
@@ -557,6 +862,90 @@ def test_production_mage_variants_have_no_duplicate_mage_per_box():
     ]
 
     assert not duplicates, f"Duplicate mage variants per box found: {duplicates}"
+
+
+def test_production_astro_knights_eternity_homeworlds_match_expected_set():
+    import yaml
+
+    filepath = ROOT / "games/astro_knights/data/astro_knights_homeworlds.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        homeworlds = yaml.safe_load(fp)["homeworlds"]
+
+    eternity_homeworlds = {
+        entry["name"]
+        for entry in homeworlds
+        if entry.get("box") == "Astro Knights - Eternity"
+    }
+
+    assert eternity_homeworlds == {
+        "The Galactic Bazaar",
+        "Dirath",
+        "Felis",
+        "The Bobcat",
+    }
+
+
+def test_production_astro_knights_eternity_knights_match_expected_set():
+    import yaml
+
+    filepath = ROOT / "games/astro_knights/data/astro_knights_knights.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        knights = yaml.safe_load(fp)["knights"]
+
+    eternity_knights = {
+        entry["name"]
+        for entry in knights
+        if any(variant.get("box") == "Astro Knights - Eternity" for variant in entry.get("variants", []))
+    }
+
+    assert eternity_knights == {
+        "Caleb",
+        "Pan",
+        "Tsana",
+        "Reshi",
+        "Z.A.K.",
+        "Rex and Shield-Bo",
+    }
+
+
+def test_production_astro_knights_known_eternity_boss_battle_difficulties():
+    import yaml
+
+    filepath = ROOT / "games/astro_knights/data/astro_knights_bosses.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        bosses = yaml.safe_load(fp)["bosses"]
+
+    by_name = {entry["name"]: entry for entry in bosses}
+
+    assert by_name["Shade Sculptor"]["battle_difficulties"] == {1: "normal", 4: "expert"}
+    assert by_name["Dirathian Behemoth"]["battle_difficulties"] == {1: "normal"}
+    assert by_name["Volt Fusion"]["battle_difficulties"] == {2: "normal", 4: "expert"}
+    assert by_name["Solar Collision"]["battle_difficulties"] == {2: "normal", 3: "expert"}
+    assert by_name["Eternity"]["battle_difficulties"] == {2: "normal", 4: "expert"}
+
+
+def test_production_astro_knights_eternity_scope_supports_full_expedition(monkeypatch):
+    monkeypatch.setattr(astro_selector, "_now_iso", lambda: "2024-01-01T00:00:00+00:00")
+
+    packet = astro_selector.select_expedition(
+        seed=123,
+        mage_count=2,
+        length="standard",
+        content_waves=[],
+        content_boxes=["Astro Knights - Eternity"],
+        knights_yaml_path=str(ROOT / "games/astro_knights/data/astro_knights_knights.yaml"),
+        settings_yaml_path=str(ROOT / "games/astro_knights/data/wave_settings.yaml"),
+        waves_yaml_path=str(ROOT / "games/astro_knights/data/astro_knights_waves.yaml"),
+        bosses_yaml_path=str(ROOT / "games/astro_knights/data/astro_knights_bosses.yaml"),
+        homeworlds_yaml_path=str(ROOT / "games/astro_knights/data/astro_knights_homeworlds.yaml"),
+        expedition_difficulty="advanced",
+    )
+
+    assert packet["homeworld"]["box"] == "Astro Knights - Eternity"
+    assert [step["battle_index"] for step in packet["battle_plan"]] == [1, 2, 3, 4]
+    assert {step["nemesis"]["box"] for step in packet["battle_plan"]} == {"Astro Knights - Eternity"}
+    assert len({step["nemesis"]["name"] for step in packet["battle_plan"]}) == 4
+    assert packet["final_nemesis"]["battle"] == 4
 
 
 def test_get_available_settings():

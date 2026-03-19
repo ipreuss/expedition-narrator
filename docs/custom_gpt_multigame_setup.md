@@ -7,10 +7,25 @@ One Custom GPT that can narrate multiple games with strict game isolation.
 Use:
 - Schema: `multi_game_expedition_selector_openapi.yaml`
 - Endpoint script: `multi_game_expedition_selector_cgi.py`
-- System prompt source file: `gpt/system_prompt.txt`
-- Detail instruction source files: `gpt/aeons_end/*.txt`
+- System prompt source text: `gpt/system_prompt.txt` (paste into the GPT system prompt field, do not upload as knowledge)
+- Knowledge upload folder: `gpt/upload_bundle/`
+- Bundle build script: `scripts/build_gpt_upload_bundle.sh`
 
 When you upload these into the Custom GPT, the GPT only sees filenames and file contents, not your local directory structure.
+
+## Bundle workflow
+1. Run `scripts/build_gpt_upload_bundle.sh`
+2. Open `gpt/upload_bundle/`
+3. Upload all `.txt` files from that single folder
+4. Paste `gpt/system_prompt.txt` into the Custom GPT system prompt field
+5. Upload the action schema separately: `multi_game_expedition_selector_openapi.yaml`
+
+The bundle script copies the entire `.txt` contents of:
+- `gpt/common/`
+- `gpt/aeons_end/`
+- `gpt/astro_knights/`
+
+This avoids a brittle hand-maintained file list while still keeping upload convenient.
 
 ## Required first turn behavior
 1. If the user did not specify a game, ask: `Which game do you want to play? (Aeon's End, Astro Knights, Invincible)`.
