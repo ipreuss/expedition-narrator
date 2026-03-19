@@ -28,8 +28,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                additionalProperties: true
+                $ref: '#/components/schemas/ExpeditionPacketResponse'
         '400':
           description: Invalid request
           content:
@@ -110,8 +109,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                additionalProperties: true
+                $ref: '#/components/schemas/ExpeditionPacketResponse'
         '400':
           description: Invalid request
           content:
@@ -177,8 +175,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                additionalProperties: true
+                $ref: '#/components/schemas/AvailableSettingsResponse'
         '400':
           description: Invalid request
           content:
@@ -202,8 +199,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                additionalProperties: true
+                $ref: '#/components/schemas/ReplacementMageResponse'
         '400':
           description: Invalid request
           content:
@@ -295,3 +291,244 @@ components:
         detail:
           type: string
       required: [error]
+    ExpeditionPacketResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        meta:
+          type: object
+          additionalProperties: true
+          properties:
+            generated_at_utc:
+              type: string
+            seed:
+              oneOf:
+                - type: integer
+                - type: 'null'
+            attempt:
+              type: integer
+            attempt_seed:
+              type: integer
+            effective_seed:
+              type: integer
+            inputs:
+              type: object
+              additionalProperties: true
+              properties:
+                mage_count:
+                  type: integer
+                length:
+                  type: string
+                content_waves:
+                  type: array
+                  items:
+                    type: string
+                content_boxes:
+                  type: array
+                  items:
+                    type: string
+                mage_recruitment_chance:
+                  type: integer
+                strictness:
+                  type: string
+        setting:
+          type: object
+          additionalProperties: true
+          properties:
+            wave_name:
+              type: string
+            setting:
+              type: string
+            mood:
+              type: string
+            themes:
+              type: string
+            possible_expeditions:
+              type: string
+            setting_variant:
+              type: string
+        protect_target:
+          oneOf:
+            - type: string
+            - type: 'null'
+        mages:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+            properties:
+              id:
+                type: string
+              name:
+                type: string
+              chosen_variant:
+                type: object
+                additionalProperties: true
+                properties:
+                  variant_id:
+                    type: string
+                  variant_name:
+                    type: string
+                  wave_id:
+                    type: string
+                  wave_name:
+                    type: string
+                  box:
+                    type: string
+        final_nemesis:
+          type: object
+          additionalProperties: true
+          properties:
+            name:
+              type: string
+            box:
+              type: string
+            battle:
+              type: integer
+        battle_plan:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+            properties:
+              battle_index:
+                type: integer
+              tier:
+                type: integer
+              nemesis:
+                type: object
+                additionalProperties: true
+                properties:
+                  name:
+                    type: string
+                  box:
+                    type: string
+              friend:
+                oneOf:
+                  - type: object
+                    additionalProperties: true
+                    properties:
+                      name:
+                        type: string
+                      box:
+                        type: string
+                  - type: 'null'
+              foe:
+                oneOf:
+                  - type: object
+                    additionalProperties: true
+                    properties:
+                      name:
+                        type: string
+                      box:
+                        type: string
+                  - type: 'null'
+              recruit:
+                oneOf:
+                  - type: object
+                    additionalProperties: true
+                    properties:
+                      id:
+                        type: string
+                      name:
+                        type: string
+                  - type: 'null'
+        availability:
+          type: object
+          additionalProperties: false
+          properties:
+            friends_available:
+              type: boolean
+            foes_available:
+              type: boolean
+            include_friend_foe_pair:
+              type: boolean
+    AvailableSettingsResponse:
+      type: object
+      additionalProperties: false
+      properties:
+        waves:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            properties:
+              name:
+                type: string
+              variants:
+                oneOf:
+                  - type: array
+                    items:
+                      type: string
+                  - type: 'null'
+            required: [name]
+        boxes:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            properties:
+              name:
+                type: string
+              wave:
+                type: string
+            required: [name, wave]
+      required: [waves, boxes]
+    ReplacementMageResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        meta:
+          type: object
+          additionalProperties: true
+          properties:
+            generated_at_utc:
+              type: string
+            seed:
+              oneOf:
+                - type: integer
+                - type: 'null'
+            attempt:
+              type: integer
+            attempt_seed:
+              type: integer
+            effective_seed:
+              type: integer
+            inputs:
+              type: object
+              additionalProperties: true
+              properties:
+                existing_mage_names:
+                  type: array
+                  items:
+                    type: string
+                content_waves:
+                  type: array
+                  items:
+                    type: string
+                content_boxes:
+                  type: array
+                  items:
+                    type: string
+        mage:
+          type: object
+          additionalProperties: true
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            chosen_variant:
+              type: object
+              additionalProperties: true
+              properties:
+                variant_id:
+                  type: string
+                variant_name:
+                  type: string
+                wave_id:
+                  type: string
+                wave_name:
+                  type: string
+                box:
+                  type: string
