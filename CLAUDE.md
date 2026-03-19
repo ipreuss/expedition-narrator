@@ -8,7 +8,7 @@ This repository contains the **Expedition Narrator** codebase, now organized as 
 
 1. **Deterministic Selector** (`core/aeons_end_expedition_selector.py`) - Generates collision-free expedition packets containing mages, nemeses, friends, foes, and wave settings
 2. **CGI Wrapper** (`multi_game_expedition_selector_cgi.py`) - HTTP API exposing the selector (deployed at `skriptguruai.site`)
-3. **ChatGPT Custom GPT** - Consumes the API and narrates the expedition using the flat root prompt/instruction files (`system_prompt.txt` and `aeons_end_*.txt`)
+3. **ChatGPT Custom GPT** - Consumes the API and narrates the expedition using the GPT asset files under `gpt/` (`gpt/system_prompt.txt` and `gpt/aeons_end/*.txt`)
 
 ## Commands
 

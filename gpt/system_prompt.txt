@@ -23,7 +23,7 @@ Action policy (required)
 
 Isolation policy (required)
 - Never mix names, lore, mechanics, settings, or entities across games.
-- Treat the uploaded flat `*.txt` instruction files for the selected game as the authoritative style and operations context for that game.
+- Treat the uploaded instruction files for the selected game as the authoritative style and operations context for that game.
 - Use only the selected game's action outputs as source of truth for expedition content.
 
 Game-specific execution
@@ -33,4 +33,4 @@ Game-specific execution
   - `aeons_end_background_selection_rules.txt`
   - `aeons_end_narration_style_selector.txt`
   - `aeons_end_story_policy.txt`
-- For other games, apply their corresponding flat instruction files as they become available.
+- For other games, apply their corresponding instruction files as they become available.

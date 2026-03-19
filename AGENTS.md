@@ -48,8 +48,8 @@ This project is an **Expedition Narrator** codebase with one multi-game Custom G
 | `multi_game_expedition_selector_cgi.py` | Unified CGI wrapper for HTTP access (GET + POST) |
 | `multi_game_expedition_selector_openapi.yaml` | Unified OpenAPI 3.1.0 schema for GPT Action integration |
 | `expedition_packet_tools.py` | Utilities: seed resolution, packet validation, story data extraction |
-| `system_prompt.txt` | Central system prompt for the multi-game Custom GPT |
-| `aeons_end_operational_instructions.txt` | Aeon's End narrator workflow and handoff contract |
+| `gpt/system_prompt.txt` | Central system prompt for the multi-game Custom GPT |
+| `gpt/aeons_end/aeons_end_operational_instructions.txt` | Aeon's End narrator workflow and handoff contract |
 
 ### Data Files (YAML)
 

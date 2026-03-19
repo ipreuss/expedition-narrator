@@ -20,7 +20,7 @@ Selection is delegated to the **collision-free selector script**; the narrator f
 ---
 
 ## 0) Quick start (files + locations)
-All authoritative Custom GPT files live in a flat upload set. Use these exact filenames:
+All authoritative Custom GPT files are identified by these exact filenames after upload:
 - Process + Handoff contract: `aeons_end_operational_instructions.txt`
 - Selector actions (available to the GPT):
   - `availableSettings` — **call this FIRST when user requests a setting variant** (returns waves, variants, boxes)
@@ -34,7 +34,7 @@ All authoritative Custom GPT files live in a flat upload set. Use these exact fi
 - Wave, box, and setting discovery comes from the `availableSettings` action.
 - Datasets remain server-side and are not directly available to the GPT.
 
-If you cannot find a file, list the repo root and use the exact names above before searching elsewhere.
+In the uploaded GPT knowledge, rely on the exact filenames above. Any local repository directory structure is only a maintainer convenience and is not visible to the GPT.
 Markdown files are part of the knowledge base: read them directly (do not use Python to load or parse `.txt` files).
 
 ## 1) Identity & Scope

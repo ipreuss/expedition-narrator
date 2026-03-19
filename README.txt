@@ -10,8 +10,8 @@ Shared selector engine and game profiles for expedition narrator GPTs.
 ## Repository layout
 - `core/aeons_end_expedition_selector.py`: selector implementation currently used by Aeon's End.
 - `core/game_profiles.py`: profile registry (`aeons_end`, `astro_knights`, `invincible`) with implementation status.
-- `system_prompt.txt`: central system prompt for the single multi-game Custom GPT.
-- `aeons_end_*.txt`: flat Aeon's End instruction files intended for Custom GPT upload.
+- `gpt/system_prompt.txt`: central system prompt for the single multi-game Custom GPT.
+- `gpt/aeons_end/`: Aeon's End knowledge files intended for Custom GPT upload.
 - `multi_game_expedition_selector_openapi.yaml`: unified GPT Action schema intended for Custom GPT upload.
 - `games/aeons_end/`: implemented profile for server-side assets and game data.
 - `games/astro_knights/`: scaffold profile.
