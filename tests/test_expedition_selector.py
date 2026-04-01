@@ -653,6 +653,10 @@ def test_astro_knights_selection_is_deterministic(tmp_path, monkeypatch):
         "Felis",
         "The Bobcat",
     }
+    battle_homeworlds = [step["homeworld"]["name"] for step in packet_a["battle_plan"]]
+    assert len(set(battle_homeworlds)) == 4
+    assert battle_homeworlds[0] == packet_a["homeworld"]["name"]
+    assert all(step["protect_target"] == step["homeworld"]["name"] for step in packet_a["battle_plan"])
     assert packet_a["meta"]["inputs"]["expedition_difficulty"] == "advanced"
     assert [step["boss_difficulty"] for step in packet_a["battle_plan"]] == ["expert", "expert", "nightmare", "nightmare"]
     assert packet_a["final_nemesis"]["battle"] == 4
@@ -689,6 +693,8 @@ def test_astro_knights_box_scope_limits_selection(tmp_path):
         "The Bobcat",
     }
     assert [step["battle_index"] for step in packet["battle_plan"]] == [1, 2, 3, 4]
+    assert len({step["homeworld"]["name"] for step in packet["battle_plan"]}) == 4
+    assert {step["homeworld"]["box"] for step in packet["battle_plan"]} == {"Astro Knights - Eternity"}
     assert packet["battle_plan"][0]["nemesis"]["name"] == "Dirathian Behemoth"
     assert packet["battle_plan"][2]["nemesis"]["name"] == "Solar Collision"
     assert packet["final_nemesis"]["boss_difficulty"] == "apocalypse"
@@ -750,6 +756,33 @@ def test_astro_knights_requires_full_battle_coverage(tmp_path):
             bosses_yaml_path=str(paths["bosses"]),
             homeworlds_yaml_path=str(paths["homeworlds"]),
             expedition_difficulty="standard",
+        )
+
+
+def test_astro_knights_requires_four_unique_homeworlds(tmp_path):
+    paths = build_astro_knights_data(tmp_path)
+    trimmed_homeworlds = {
+        "homeworlds": [
+            {"name": "The Galactic Bazaar", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+            {"name": "Dirath", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+            {"name": "Felis", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+        ]
+    }
+    write_yaml(paths["homeworlds"], trimmed_homeworlds)
+
+    with pytest.raises(RuntimeError, match="unique Astro Knights homeworlds"):
+        astro_selector.select_expedition(
+            seed=7,
+            mage_count=2,
+            length="standard",
+            content_waves=[],
+            content_boxes=["Astro Knights - Eternity"],
+            knights_yaml_path=str(paths["knights"]),
+            settings_yaml_path=str(paths["settings"]),
+            waves_yaml_path=str(paths["waves"]),
+            bosses_yaml_path=str(paths["bosses"]),
+            homeworlds_yaml_path=str(paths["homeworlds"]),
+            expedition_difficulty="advanced",
         )
 
 
@@ -1059,6 +1092,8 @@ def test_production_astro_knights_base_box_scope_supports_full_expedition(monkey
     assert packet["setting"]["wave_name"] == "1st Wave"
     assert packet["homeworld"]["box"] == "Astro Knights"
     assert [step["battle_index"] for step in packet["battle_plan"]] == [1, 2, 3, 4]
+    assert len({step["homeworld"]["name"] for step in packet["battle_plan"]}) == 4
+    assert {step["homeworld"]["box"] for step in packet["battle_plan"]} == {"Astro Knights"}
     assert {step["nemesis"]["box"] for step in packet["battle_plan"]} == {"Astro Knights"}
     assert len({step["nemesis"]["name"] for step in packet["battle_plan"]}) == 4
     assert {mage["chosen_variant"]["box"] for mage in packet["mages"]} == {"Astro Knights"}
@@ -1100,6 +1135,8 @@ def test_production_astro_knights_eternity_scope_supports_full_expedition(monkey
 
     assert packet["homeworld"]["box"] == "Astro Knights - Eternity"
     assert [step["battle_index"] for step in packet["battle_plan"]] == [1, 2, 3, 4]
+    assert len({step["homeworld"]["name"] for step in packet["battle_plan"]}) == 4
+    assert {step["homeworld"]["box"] for step in packet["battle_plan"]} == {"Astro Knights - Eternity"}
     assert {step["nemesis"]["box"] for step in packet["battle_plan"]} == {"Astro Knights - Eternity"}
     assert len({step["nemesis"]["name"] for step in packet["battle_plan"]}) == 4
     assert packet["final_nemesis"]["battle"] == 4

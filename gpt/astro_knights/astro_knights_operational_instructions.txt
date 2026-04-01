@@ -24,12 +24,15 @@ Current implementation scope:
   - `Savage Skies`
 
 Current selector shape:
-- one selected homeworld
 - one selected Astro Knight team
+- one unique selected homeworld per battle
+- `homeworld` remains the Battle-1 homeworld for compatibility
 - a 4-battle boss sequence covering Battle 1, Battle 2, Battle 3, and Battle 4
 
 Current battle-plan rules:
 - every expedition contains Battle 1, Battle 2, Battle 3, and Battle 4
+- every battle uses its own `battle_plan` homeworld
+- the selector avoids repeating the same homeworld within one expedition when a unique 4-homeworld plan is available
 - a boss is eligible for battle N only if its data contains a `battle_difficulties` entry for N
 - the current selector avoids repeating the same boss within one expedition when a unique 4-battle plan is available
 
@@ -99,16 +102,18 @@ Before writing, read:
 Interpretation rules:
 - `mages` is only the packet field name; in narration and handoff, call them Astro Knights, never mages
 - the selected Astro Knights are the player-character team
+- `homeworld` is the Battle-1 homeworld only
 - `battle_plan` is the authoritative boss sequence for Battles 1-4
+- for each battle, the current `battle_plan` entry's `homeworld` is the authoritative location to defend
 - `final_nemesis` is the Battle-4 boss
-- `protect_target` is the homeworld to defend
+- top-level `protect_target` mirrors the Battle-1 homeworld for compatibility
 - the current Astro Knights packet has no friend/foe side entities and no planned recruits
 
 Authority rules:
 - Treat selected names, battle order, source boxes, and boss difficulty as hard canon.
 - Treat `background` and `story_notes` as narrative cues, not mandatory line-by-line facts.
 - Preserve a boss's core threat identity and mission pressure, but you may generalize or omit subordinate proper nouns, environmental specifics, or illustrative examples when that improves variety.
-- If a boss note names a location that does not match the packet's selected `homeworld`, keep the selected `homeworld` authoritative and translate the boss note into a more general mission pattern instead of forcing the mismatched location into the story.
+- If a boss note names a location that does not match the current battle's selected `homeworld`, keep the current `battle_plan` homeworld authoritative and translate the boss note into a more general mission pattern instead of forcing the mismatched location into the story.
 
 ## 5. Narrative Structure For Current Scope
 
@@ -154,7 +159,9 @@ BOSS: <Boss Name> (<Source Box>) [<Boss Difficulty>]
 ```
 
 Rules:
-- `HOMEWORLD` comes from the selected packet homeworld.
+- `HOMEWORLD` comes from the current battle's selected homeworld.
+- During Battle 1, that is the top-level packet `homeworld`.
+- During later battles, that is the current `battle_plan` entry's `homeworld`.
 - Print one `KNIGHT:` line per current Astro Knight, in party order.
 - Never compress multiple Astro Knights into one line.
 - Keep Handoff lines short enough to remain readable in a non-wrapping code block.

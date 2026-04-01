@@ -2,10 +2,10 @@
 """
 Astro Knights expedition selector.
 
-Initial implementation scope:
-- Wave 2 content only
-- Boxes: Astro Knights - Eternity, Mystery of Solarus
-- Deterministic selection of one homeworld, one boss encounter, and a knight team
+Current implementation scope:
+- 1st Wave and 2nd Wave content
+- A deterministic 4-battle expedition with one unique homeworld per battle
+- A deterministic boss sequence and Astro Knight team within the requested scope
 
 The packet shape intentionally mirrors the shared expedition schema so the
 multi-game CGI and packet helpers can keep working without game-specific forks.
@@ -326,6 +326,18 @@ def choose_unique_boss_plan(
     return plan
 
 
+def choose_unique_homeworld_plan(
+    rng: random.Random,
+    homeworlds: List[Dict[str, Any]],
+    battle_indices: Sequence[int],
+) -> List[Dict[str, Any]]:
+    if len(homeworlds) < len(battle_indices):
+        raise ValueError(
+            f"Not enough unique Astro Knights homeworlds: need {len(battle_indices)}, have {len(homeworlds)}"
+        )
+    return [copy.deepcopy(homeworld) for homeworld in _shuffle_copy(rng, homeworlds)[: len(battle_indices)]]
+
+
 def resolve_boss_difficulty(
     boss: Dict[str, Any],
     expedition_difficulty: ExpeditionDifficulty,
@@ -455,7 +467,6 @@ def select_expedition(
             if not homeworlds_in_scope:
                 raise ValueError("No homeworlds available in scope")
 
-            chosen_homeworld = _choose(rng, homeworlds_in_scope)
             chosen_knights = choose_knights_no_repeat(
                 rng,
                 knights_all,
@@ -472,9 +483,14 @@ def select_expedition(
                 battle_indices,
                 forbidden_names=list(knight_names),
             )
+            homeworld_sequence = choose_unique_homeworld_plan(
+                rng,
+                homeworlds_in_scope,
+                battle_indices,
+            )
 
             battle_plan: List[Dict[str, Any]] = []
-            for battle_index, boss in zip(battle_indices, boss_sequence):
+            for battle_index, boss, homeworld in zip(battle_indices, boss_sequence, homeworld_sequence):
                 boss["battle"] = battle_index
                 boss["boss_difficulty"] = resolve_boss_difficulty(
                     boss, expedition_difficulty, battle_index=battle_index
@@ -483,6 +499,8 @@ def select_expedition(
                     {
                         "battle_index": battle_index,
                         "tier": battle_index,
+                        "homeworld": copy.deepcopy(homeworld),
+                        "protect_target": homeworld.get("name"),
                         "nemesis": boss,
                         "friend": None,
                         "foe": None,
@@ -491,6 +509,7 @@ def select_expedition(
                     }
                 )
 
+            chosen_homeworld = copy.deepcopy(battle_plan[0]["homeworld"])
             chosen_final = copy.deepcopy(battle_plan[-1]["nemesis"])
 
             chosen_setting = {

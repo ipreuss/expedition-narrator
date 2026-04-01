@@ -124,6 +124,8 @@ def extract_story_inputs(packet: Dict[str, Any]) -> Dict[str, Any]:
         return {
             "battle_index": step.get("battle_index"),
             "tier": step.get("tier"),
+            "homeworld": compact(step.get("homeworld")),
+            "protect_target": step.get("protect_target"),
             "nemesis": compact(step.get("nemesis")),
             "friend": compact(step.get("friend")),
             "foe": compact(step.get("foe")),

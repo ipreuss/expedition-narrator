@@ -42,6 +42,8 @@ def test_multi_game_routes_astro_knights_selection():
         "The Bobcat",
     }
     assert [step["battle_index"] for step in packet["battle_plan"]] == [1, 2, 3, 4]
+    assert len({step["homeworld"]["name"] for step in packet["battle_plan"]}) == 4
+    assert {step["homeworld"]["box"] for step in packet["battle_plan"]} == {"Astro Knights - Eternity"}
     assert packet["battle_plan"][0]["nemesis"]["name"] == "Dirathian Behemoth"
     assert packet["battle_plan"][2]["nemesis"]["name"] == "Solar Collision"
     assert packet["final_nemesis"]["box"] == "Astro Knights - Eternity"
