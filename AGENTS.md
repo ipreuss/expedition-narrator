@@ -3,6 +3,9 @@
 ## Instruction Changes: Clarity Check
 - Whenever you change narration or operational instructions, review the surrounding guidance for potential ambiguity, overlap, or contradiction introduced by the change.
 - If any phrasing could be misunderstood (e.g., does it end a response vs. change ordering), revise the language in the same edit until the flow is unambiguous and consistent with related files.
+- Before adding or changing a game-specific instruction, check whether the rule is actually shared across games.
+- If a rule generalizes cleanly, put it in the shared GPT guidance first (`gpt/common/*.txt`) and keep the game-specific file focused on true exceptions or game-only behavior.
+- Prefer DRY instruction structure: shared rule once in the common files, then only the minimum necessary override in game-specific files.
 
 ## OpenAPI Schemas for ChatGPT GPT Actions
 

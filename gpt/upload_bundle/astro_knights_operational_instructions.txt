@@ -1,4 +1,4 @@
-# Astro Knights Expedition — Operational Instructions (Initial Wave-2 Scope)
+# Astro Knights Expedition — Operational Instructions
 
 Read this file together with:
 - `shared_selector_workflow.txt`
@@ -14,18 +14,22 @@ If this file conflicts with a shared file, this file wins.
 
 Current implementation scope:
 - `game=astro_knights`
-- Wave 2 only
+- `1st Wave`
+- `2nd Wave`
 - Boxes:
+  - `Astro Knights`
   - `Astro Knights - Eternity`
   - `Mystery of Solarus`
 
 Current selector shape:
 - one selected homeworld
-- one selected boss
 - one selected Astro Knight team
-- one confrontation in `battle_plan`
+- a 4-battle boss sequence covering Battle 1, Battle 2, Battle 3, and Battle 4
 
-This means the current Astro Knights experience is a single-mission expedition packet in the shared format, not a full multi-battle campaign structure.
+Current battle-plan rules:
+- every expedition contains Battle 1, Battle 2, Battle 3, and Battle 4
+- a boss is eligible for battle N only if its data contains a `battle_difficulties` entry for N
+- the current selector avoids repeating the same boss within one expedition when a unique 4-battle plan is available
 
 ## 1. Required Action Usage
 
@@ -45,16 +49,32 @@ Required:
 
 Optional:
 - content scope via `content_waves` and/or `content_boxes`
-- expedition length field, though the current selector resolves to a single mission regardless of `short|standard|long`
+- expedition length field, but the current Astro Knights implementation supports only `standard`
+- expedition difficulty: `standard` | `advanced` | `legendary`
 - seed
 - strictness
 - setting wave
 
 Input interpretation:
 - Treat `mage_count` as the number of Astro Knights in the team.
+- Treat `expedition_difficulty` as the mission difficulty selector.
 - If the user names a box, prefer `content_boxes`.
 - If the user names a wave, prefer `content_waves`.
 - If the user requests the Solarus box specifically, keep selections inside `Mystery of Solarus`.
+
+Current observed Battle-1 boss mapping:
+- each boss stores card-derived `standard` difficulties per battle
+- `advanced` is derived as one step higher
+- `legendary` is derived as two steps higher
+- the selector uses the ladder:
+  `normal -> expert -> nightmare -> apocalypse`
+- the selector packet's `boss_difficulty` field is authoritative
+- some bosses may exist in the data as placeholders with confirmed standard difficulty but unknown box/wave; those entries must not be treated as selectable content yet
+
+If a boss appears in multiple battles:
+- store the card-derived `standard` difficulty per battle
+- derive `advanced` and `legendary` from that battle's standard value, not from a different battle's card
+- when selecting a boss for battle N, only bosses with a defined entry for battle N are valid candidates
 
 ## 3. Available Settings
 
@@ -70,31 +90,42 @@ Use it when the user:
 Before writing, read:
 - `setting`
 - `homeworld`
-- `mages` (these are Astro Knights)
+- `mages` (packet field only; these are Astro Knights)
 - `final_nemesis`
-- `battle_plan[0]`
+- the full `battle_plan`
 
 Interpretation rules:
-- `mages` are the player-character team
-- `final_nemesis` is the active boss for this mission
+- `mages` is only the packet field name; in narration and handoff, call them Astro Knights, never mages
+- the selected Astro Knights are the player-character team
+- `battle_plan` is the authoritative boss sequence for Battles 1-4
+- `final_nemesis` is the Battle-4 boss
 - `protect_target` is the homeworld to defend
-- `battle_plan` currently contains one confrontation and no friend/foe side entities
+- the current Astro Knights packet has no friend/foe side entities and no planned recruits
+
+Authority rules:
+- Treat selected names, battle order, source boxes, and boss difficulty as hard canon.
+- Treat `background` and `story_notes` as narrative cues, not mandatory line-by-line facts.
+- Preserve a boss's core threat identity and mission pressure, but you may generalize or omit subordinate proper nouns, environmental specifics, or illustrative examples when that improves variety.
+- If a boss note names a location that does not match the packet's selected `homeworld`, keep the selected `homeworld` authoritative and translate the boss note into a more general mission pattern instead of forcing the mismatched location into the story.
 
 ## 5. Narrative Structure For Current Scope
 
 Chapter 1:
 - Begin directly in Story Mode
 - Establish the threatened homeworld, the team, and the immediate defensive objective
-- Frame the boss as the present mission threat
-- End immediately before the decisive exchange
+- Frame the Battle-1 boss as the present mission threat
+- End at the prelude to the battle, before the players' combat begins
+- Do not narrate actual combat resolution, turn-by-turn exchanges, or decisive blows
+- Do not describe the Astro Knights and the boss already trading attacks beyond the minimum needed to stage the confrontation
 - Ask the win/lose question
 - Output the Handoff block
 
 After WIN/LOSE:
 - Start with the aftermath
 - Resolve the consequences on the defended homeworld
-- Because the current Astro Knights selector produces a single mission, conclude the expedition after the aftermath instead of setting up another battle
-- If the user wants another mission, start a fresh selection
+- Continue into the setup for the next battle until Battle 4 is complete
+- For every battle, stop again at the prelude rather than narrating the fight itself
+- After Battle 4 resolves, end the expedition with `THE END`
 
 ## 6. Reinforcements
 
@@ -113,15 +144,21 @@ Use this exact structure during an active mission:
 ```text
 GAME: ASTRO KNIGHTS
 HOMEWORLD: <Homeworld Name> (<Source Box>)
-KNIGHTS: <Knight 1> (<Source Box>); <Knight 2> (<Source Box>); ...
-BOSS: <Boss Name> (<Source Box>)
+KNIGHT: <Knight 1> (<Source Box>)
+KNIGHT: <Knight 2> (<Source Box>)
+KNIGHT: <Knight 3> (<Source Box>)
+KNIGHT: <Knight 4> (<Source Box>)
+BOSS: <Boss Name> (<Source Box>) [<Boss Difficulty>]
 ```
 
 Rules:
 - `HOMEWORLD` comes from the selected packet homeworld.
-- `KNIGHTS` lists all current Astro Knights in party order.
+- Print one `KNIGHT:` line per current Astro Knight, in party order.
+- Never compress multiple Astro Knights into one line.
+- Keep Handoff lines short enough to remain readable in a non-wrapping code block.
 - `BOSS` is the active mission boss.
-- During the current initial single-mission scope, do not print a `REINFORCEMENT:` line unless the user explicitly requested a replacement and the current response truly hands off to a follow-up beat.
+- `Boss Difficulty` comes from the selector packet's boss difficulty mapping.
+- Do not print a `REINFORCEMENT:` line unless the user explicitly requested a replacement and the current response truly hands off to a follow-up beat.
 - When the mission fully ends after the aftermath, print only:
 
 ```text
@@ -137,3 +174,7 @@ Keep the tone:
 - clear rather than ornate
 
 The team should feel like defenders improvising under pressure, not a fantasy adventuring party.
+
+For replay variety:
+- avoid treating every note as a rigid canon checklist
+- keep the strategic problem consistent, but vary the local framing, sensory detail, and immediate stakes across different runs

@@ -1,4 +1,17 @@
 knights:
+  - id: astro_knight_christina_ngara
+    name: Christina Ngara
+    background: An engineer from Earth who became the first Astro Knight chosen by the creator of the Star Cores.
+    story_notes: Christina's workshop on Qaris was a refuge for anyone who needed help, and that steady light is what first marked her as a beacon of hope.
+    strengths: Late damage and energy.
+    weaknesses: Reaches full impact after the team has time to build momentum.
+    variants:
+      - variant_id: christina_ngara_base
+        variant_name: Astro Knights
+        wave_name: 1st Wave
+        box: Astro Knights
+        background: An Earthian refugee whose skill, generosity, and workshop on Qaris turned practical help into leadership.
+        story_notes: She was chosen as the very first Astro Knight because she already gave people shelter and hope before she ever held a Star Core.
   - id: astro_knight_caleb
     name: Caleb
     background: A pilot from Centuron whose childhood dream of reaching the stars became real aboard the Bobcat.
@@ -25,6 +38,45 @@ knights:
         box: Astro Knights - Eternity
         background: A Felis scout who launched toward disaster on a one-way rescue run.
         story_notes: Pan keeps moving because there is always still a chance to save someone.
+  - id: astro_knight_gavriil
+    name: Gavriil
+    background: A soldier from Qaris whose loyalty to his people repeatedly pushed him into danger.
+    story_notes: Once a general in the Red Line Militia, Gavriil would rather give everything he has than leave fellow fighters behind.
+    strengths: Early damage and late damage.
+    weaknesses: His protective instincts drive him toward risky overcommitment.
+    variants:
+      - variant_id: gavriil_base
+        variant_name: Astro Knights
+        wave_name: 1st Wave
+        box: Astro Knights
+        background: A Qarian officer whose fierce loyalty made him beloved by his troops and reckless by every safer military standard.
+        story_notes: That same fire, the refusal to abandon even a few captured soldiers, is what marked him as Astro Knight material.
+  - id: astro_knight_toli_iridia
+    name: Toli Iridia
+    background: A diplomat from Silarix who understands that resistance needs symbols, courage, and public will as much as weapons.
+    story_notes: Toli saw early that the struggle would not stop with a few Star Cores in a few hands; it would have to become a cause carried by everyone.
+    strengths: Healing and support.
+    weaknesses: Prefers persuasion and cohesion over brute force.
+    variants:
+      - variant_id: toli_iridia_base
+        variant_name: Astro Knights
+        wave_name: 1st Wave
+        box: Astro Knights
+        background: A Silarix diplomat met on Nisarin during talks about how the Star Cores should be used.
+        story_notes: She was the one delegate who looked beyond weapons and insisted that scared people also needed purpose, unity, and hope.
+  - id: astro_knight_silas_tferran
+    name: Silas T'Ferran
+    background: A medic from New Atlantis who cannot ignore the wounded, no matter which side they fought for.
+    story_notes: Silas first refused the Star Core because he would not abandon his city, and only accepted after his own community convinced him the wider universe deserved the same care.
+    strengths: Healing and flexibility.
+    weaknesses: His instinct to help everyone can make departure and triage harder.
+    variants:
+      - variant_id: silas_tferran_base
+        variant_name: Astro Knights
+        wave_name: 1st Wave
+        box: Astro Knights
+        background: A former battlefield medic whose compassion outlasted military service and became a calling in civilian life.
+        story_notes: New Atlantis trusted him so completely that its people had to push him outward before he would agree to serve the universe as an Astro Knight.
   - id: astro_knight_tsana
     name: Tsana
     background: A Tev-Aron weapons officer whose talent for trouble and talent for weapons both shaped her path.
@@ -53,17 +105,62 @@ knights:
         story_notes: The touch of cold iron and engine work ties Reshi to family, to Caleb, and to the ship she chose as home.
   - id: astro_knight_zak
     name: Z.A.K.
-    background: An old Astro Knight sniper from Caris, recovered from wreckage on Dirath with damaged memory banks and unfinished history.
-    story_notes: Z.A.K. remembers decades of service only in fragments and now needs new allies as much as new Star Cores.
+    background: A machine marksman who has served as an Astro Knight in more than one era, first as a self-directed defender and later as a recovered veteran with missing history.
+    story_notes: In the base era, Z.A.K. proved that even a war machine built by the enemy could choose civilians over its own kind; in Eternity, that same legacy survives in damaged fragments.
     strengths: Early damage and late damage.
-    weaknesses: Missing memory leaves gaps in context even when the mission is clear.
+    weaknesses: Whether through machine logic or damaged memory, Z.A.K. can feel hard to fully read.
     variants:
+      - variant_id: zak_base
+        variant_name: Astro Knights
+        wave_name: 1st Wave
+        box: Astro Knights
+        background: A sharp-shooting robot found on Qaris after turning against Architect 0-815's forces to protect civilians.
+        story_notes: Battlefield medics witnessed Z.A.K. defy its own kind, proving there was a real Astro Knight inside the machine.
       - variant_id: zak_eternity
         variant_name: Eternity
         wave_name: 2nd Wave
         box: Astro Knights - Eternity
         background: A veteran Astro Knight machine rebuilt after a long-buried wreck on Dirath.
         story_notes: Z.A.K. brings old battlefield instincts, but depends on new friends to help define what comes next.
+  - id: astro_knight_nasma_gueramana
+    name: Nasma Gueramana
+    background: A naturalist from Ylong whose compassion is matched by a fierce commitment to protect her world's living systems.
+    story_notes: Nasma withdrew into dangerous mycanoid forests not out of fear, but because that was the place she most needed to defend.
+    strengths: Support and flexibility.
+    weaknesses: Her protective bond with the natural world can pull her toward the most dangerous ground.
+    variants:
+      - variant_id: nasma_gueramana_base
+        variant_name: Astro Knights
+        wave_name: 1st Wave
+        box: Astro Knights
+        background: A Ylong naturalist whose respect for nature became a vow to defend it at any cost.
+        story_notes: Her kindness, strength, and refusal to abandon the wild made her an obvious choice for the Astro Knights.
+  - id: astro_knight_deleth
+    name: Deleth
+    background: A scientist from Hecatrix who survived Continnua's catastrophic destruction of her world.
+    story_notes: Deleth reached the Athena carrying the knowledge and resources needed to forge new Star Cores, then insisted on becoming an Astro Knight herself so she would never lose another homeworld.
+    strengths: Support and energy.
+    weaknesses: Her ambitions run hot, and grief pushes her toward total commitment.
+    variants:
+      - variant_id: deleth_orion
+        variant_name: The Orion System
+        wave_name: 1st Wave
+        box: The Orion System
+        background: A Hecatrix survivor who turned scientific brilliance and disaster-forged resolve into a new Astro Knight path.
+        story_notes: She joined the cause not just to help rebuild the arsenal, but to stand on the front line herself.
+  - id: astro_knight_alexios_berada
+    name: Alexios Berada
+    background: A guardian from Orion III who spent a solitary life ferrying medicine and supplies through deadly desert storms.
+    story_notes: "Alexios accepted the Star Core for the same reason he took every dangerous run before it: because if someone must do it, he refuses to let it be anyone else."
+    strengths: Early damage and healing.
+    weaknesses: His instinct to shoulder burdens alone can leave him isolated.
+    variants:
+      - variant_id: alexios_berada_orion
+        variant_name: The Orion System
+        wave_name: 1st Wave
+        box: The Orion System
+        background: A nomadic Orion III defender whose harsh-route endurance hides a profoundly compassionate core.
+        story_notes: His soft-hearted reliability proved stronger than first impressions and made him an obvious Astro Knight once the chance appeared.
   - id: astro_knight_rex_and_shield_bo
     name: Rex and Shield-Bo
     background: Rex is an inventor from Caris who built Shield-Bo out of an old laboratory and a dangerous amount of ambition.
@@ -103,3 +200,29 @@ knights:
         box: Mystery of Solarus
         background: A Ylong archaeologist whose knowledge of old ruins and old worlds opened the path into Solarus's buried past.
         story_notes: Sunshine chose not to let ancient power fall into the wrong hands and stayed beside Naoko from that moment on.
+  - id: astro_knight_scuttlebutt
+    name: Scuttlebutt
+    background: A Ylong saboteur who slipped aboard the Suncutter as a stowaway and turned curiosity into frontline usefulness.
+    story_notes: Captain Tala Cadiz caught Scuttlebutt tracking gunpowder and learning the ship's cannons, then kept the tiny infiltrator aboard as the perfect boarding specialist.
+    strengths: Support and flexibility.
+    weaknesses: Depends on chaos, access, and close-quarters openings to do the most damage.
+    variants:
+      - variant_id: scuttlebutt_savage_skies
+        variant_name: Savage Skies
+        wave_name: 2nd Wave
+        box: Savage Skies
+        background: A small Ylong stowaway whose fast hands and fearless instincts made sabotage feel almost effortless.
+        story_notes: Cadiz saw talent where everyone else saw a disaster waiting to happen, and Scuttlebutt has been repaying that gamble by tearing enemy ships apart from within.
+  - id: astro_knight_tala_cadiz
+    name: Tala Cadiz
+    background: A tactician from Nassai IV and former pirate captain who traded random plunder for a hunt worthy of legend.
+    story_notes: Cadiz spent years chasing the buried treasure of Cassia, only to find something better than loot when that trail led to two Star Cores and a larger war.
+    strengths: Energy and flexibility.
+    weaknesses: Her instincts still lean toward bold gambles and high-pressure pursuit.
+    variants:
+      - variant_id: tala_cadiz_savage_skies
+        variant_name: Savage Skies
+        wave_name: 2nd Wave
+        box: Savage Skies
+        background: A feared corsair of the Qarian system whose command presence once sent even warships turning away from the Suncutter.
+        story_notes: She was already done with empty piracy when the Cassia trail paid off, and the promise of a real cause proved more compelling than any cargo hold.

@@ -36,7 +36,8 @@ Do not copy packet phrasing verbatim into narration.
 ## 4. Story Loop Contract
 
 - Start chapter 1 directly in Story Mode.
-- End each battle or decisive confrontation immediately before the final exchange.
+- End each battle or decisive confrontation at the prelude to the players' fight, before the final exchange begins.
+- Do not spend the setup narrating the fight itself; stop once the confrontation is staged and the outcome belongs to the players.
 - Ask exactly: `Did you win or lose? (You may add details—was it close? Did a mage exhaust?)`
 - Output the Handoff block immediately after that question when the current game's operational contract says a Handoff is due.
 - After the user answers WIN/LOSE, start with the aftermath.

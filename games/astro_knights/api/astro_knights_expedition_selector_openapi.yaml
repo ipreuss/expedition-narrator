@@ -3,9 +3,10 @@ info:
   title: Astro Knights Expedition Selector
   version: 0.1.0
   description: |-
-    OpenAPI schema for the Astro Knights Wave-2 selector.
-    This initial implementation supports `Astro Knights - Eternity` and
-    `Mystery of Solarus`, both in `2nd Wave`.
+    OpenAPI schema for the Astro Knights selector.
+    The current implementation supports the `Astro Knights` base box and
+    `The Orion System` in `1st Wave`, plus `Astro Knights - Eternity`
+    and `Mystery of Solarus` and `Savage Skies` in `2nd Wave`.
     Expeditions currently use a fixed four-battle structure covering Battle 1 through Battle 4.
 servers:
   - url: https://skriptguruai.site/cgi-bin/expedition-narrator/games/astro_knights/api

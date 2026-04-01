@@ -908,6 +908,163 @@ def test_production_astro_knights_eternity_knights_match_expected_set():
     }
 
 
+def test_production_astro_knights_base_box_knights_match_expected_set():
+    import yaml
+
+    filepath = ROOT / "games/astro_knights/data/astro_knights_knights.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        knights = yaml.safe_load(fp)["knights"]
+
+    base_box_knights = {
+        entry["name"]
+        for entry in knights
+        if any(variant.get("box") == "Astro Knights" for variant in entry.get("variants", []))
+    }
+
+    assert base_box_knights == {
+        "Christina Ngara",
+        "Gavriil",
+        "Toli Iridia",
+        "Silas T'Ferran",
+        "Z.A.K.",
+        "Nasma Gueramana",
+    }
+
+
+def test_production_astro_knights_zak_has_base_and_eternity_variants():
+    import yaml
+
+    filepath = ROOT / "games/astro_knights/data/astro_knights_knights.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        knights = yaml.safe_load(fp)["knights"]
+
+    by_name = {entry["name"]: entry for entry in knights}
+    zak_boxes = {variant.get("box") for variant in by_name["Z.A.K."].get("variants", [])}
+
+    assert zak_boxes == {"Astro Knights", "Astro Knights - Eternity"}
+
+
+def test_production_astro_knights_orion_system_knights_match_expected_set():
+    import yaml
+
+    filepath = ROOT / "games/astro_knights/data/astro_knights_knights.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        knights = yaml.safe_load(fp)["knights"]
+
+    orion_knights = {
+        entry["name"]
+        for entry in knights
+        if any(variant.get("box") == "The Orion System" for variant in entry.get("variants", []))
+    }
+
+    assert orion_knights == {
+        "Deleth",
+        "Alexios Berada",
+    }
+
+
+def test_production_astro_knights_savage_skies_knights_match_expected_set():
+    import yaml
+
+    filepath = ROOT / "games/astro_knights/data/astro_knights_knights.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        knights = yaml.safe_load(fp)["knights"]
+
+    savage_skies_knights = {
+        entry["name"]
+        for entry in knights
+        if any(variant.get("box") == "Savage Skies" for variant in entry.get("variants", []))
+    }
+
+    assert savage_skies_knights == {
+        "Scuttlebutt",
+        "Tala Cadiz",
+    }
+
+
+def test_production_astro_knights_orion_system_bosses_match_expected_set():
+    import yaml
+
+    filepath = ROOT / "games/astro_knights/data/astro_knights_bosses.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        bosses = yaml.safe_load(fp)["bosses"]
+
+    orion_bosses = {
+        entry["name"]
+        for entry in bosses
+        if entry.get("box") == "The Orion System"
+    }
+
+    assert orion_bosses == {
+        "Fission Parasite",
+    }
+
+
+def test_production_astro_knights_savage_skies_bosses_match_expected_set():
+    import yaml
+
+    filepath = ROOT / "games/astro_knights/data/astro_knights_bosses.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        bosses = yaml.safe_load(fp)["bosses"]
+
+    savage_skies_bosses = {
+        entry["name"]
+        for entry in bosses
+        if entry.get("box") == "Savage Skies"
+    }
+
+    assert savage_skies_bosses == {
+        "The Blackhole Galleon",
+    }
+
+
+def test_production_astro_knights_base_box_bosses_match_expected_set():
+    import yaml
+
+    filepath = ROOT / "games/astro_knights/data/astro_knights_bosses.yaml"
+    with open(filepath, encoding="utf-8") as fp:
+        bosses = yaml.safe_load(fp)["bosses"]
+
+    base_box_bosses = {
+        entry["name"]
+        for entry in bosses
+        if entry.get("box") == "Astro Knights"
+    }
+
+    assert base_box_bosses == {
+        "Continnua",
+        "Lunaris",
+        "Architect 0-815",
+        "Furion",
+    }
+
+
+def test_production_astro_knights_base_box_scope_supports_full_expedition(monkeypatch):
+    monkeypatch.setattr(astro_selector, "_now_iso", lambda: "2024-01-01T00:00:00+00:00")
+
+    packet = astro_selector.select_expedition(
+        seed=321,
+        mage_count=2,
+        length="standard",
+        content_waves=[],
+        content_boxes=["Astro Knights"],
+        knights_yaml_path=str(ROOT / "games/astro_knights/data/astro_knights_knights.yaml"),
+        settings_yaml_path=str(ROOT / "games/astro_knights/data/wave_settings.yaml"),
+        waves_yaml_path=str(ROOT / "games/astro_knights/data/astro_knights_waves.yaml"),
+        bosses_yaml_path=str(ROOT / "games/astro_knights/data/astro_knights_bosses.yaml"),
+        homeworlds_yaml_path=str(ROOT / "games/astro_knights/data/astro_knights_homeworlds.yaml"),
+        expedition_difficulty="advanced",
+    )
+
+    assert packet["setting"]["wave_name"] == "1st Wave"
+    assert packet["homeworld"]["box"] == "Astro Knights"
+    assert [step["battle_index"] for step in packet["battle_plan"]] == [1, 2, 3, 4]
+    assert {step["nemesis"]["box"] for step in packet["battle_plan"]} == {"Astro Knights"}
+    assert len({step["nemesis"]["name"] for step in packet["battle_plan"]}) == 4
+    assert {mage["chosen_variant"]["box"] for mage in packet["mages"]} == {"Astro Knights"}
+    assert packet["final_nemesis"]["battle"] == 4
+
+
 def test_production_astro_knights_known_eternity_boss_battle_difficulties():
     import yaml
 

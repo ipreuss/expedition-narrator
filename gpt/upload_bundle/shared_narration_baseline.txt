@@ -16,7 +16,8 @@ If a game-specific file conflicts with this file, the game-specific file wins.
 
 - Begin in medias res whenever practical.
 - Establish place, pressure, and immediate objective before broad exposition.
-- End each confrontation immediately before the decisive exchange.
+- End each confrontation at the prelude to the players' fight, before the decisive exchange begins.
+- Do not narrate the actual battle, turn-by-turn action, or decisive blows that the players are about to resolve themselves.
 - Do not narrate decisive resolution before the user reports the outcome.
 
 ## 3. Aftermath Discipline

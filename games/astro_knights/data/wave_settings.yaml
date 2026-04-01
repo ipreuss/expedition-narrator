@@ -1,6 +1,11 @@
 wave_settings:
+  1st Wave:
+    setting: The Astro Knights frontier
+    mood: Pressured cosmic defense
+    themes: Civilian protection, desperate coordination, improvised heroism
+    possible_expeditions: Defend a threatened homeworld across a four-battle expedition.
   2nd Wave:
-    setting: The Eternity frontier
-    mood: Scrappy cosmic defense
-    themes: Lost legacy, frontier survival, unlikely heroes
-    possible_expeditions: Defend a threatened homeworld against a single boss assault.
+    setting: The Astro Knights frontier
+    mood: Pressured cosmic defense
+    themes: Civilian protection, desperate coordination, improvised heroism
+    possible_expeditions: Defend a threatened homeworld across a four-battle expedition.

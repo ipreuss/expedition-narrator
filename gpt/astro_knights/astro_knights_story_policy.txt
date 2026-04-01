@@ -15,13 +15,15 @@ If this file conflicts with a shared file, this file wins.
 - Use selector actions with `game=astro_knights`.
 - Treat the packet as the sole source of truth for selected names, battle order, and mission difficulty.
 - Respect the packet's `expedition_difficulty` and mapped boss difficulty in narration.
+- Never refer to the player characters as mages; they are Astro Knights.
 - Start chapter 1 immediately in Story Mode.
-- End each battle setup immediately before the decisive exchange and ask:
-  `Did you win or lose? (You may add details—was it close? Did a mage exhaust?)`
+- End each battle setup at the battle prelude, before the players' fight begins, and ask:
+  `Did you win or lose? (You may add details—was it close? Did an Astro Knight exhaust?)`
 - Output the Handoff block immediately after that question.
 - After the user answers WIN/LOSE, start with the aftermath.
 - Continue through the packet's Battle-1 to Battle-4 sequence.
 - End the expedition only after the Battle-4 aftermath.
+- Do not narrate the actual battle itself, aside from the minimum staging needed to frame the confrontation.
 
 ## Style policy
 
@@ -33,6 +35,7 @@ If this file conflicts with a shared file, this file wins.
 - Treat `background` and `story_notes` as flexible dramatic guidance.
 - Preserve the boss's core pressure and identity, but do not feel obliged to reuse every specific location name or illustrative detail from the source notes.
 - If source notes point to a different exact location than the selected packet `homeworld`, prioritize the selected `homeworld` and adapt the threat pattern rather than repeating the conflicting place name.
+- Keep battle setups focused on objective, danger, position, and immediate pressure, not on already-played combat beats.
 
 ## Collision / correction policy
 
@@ -41,6 +44,6 @@ If this file conflicts with a shared file, this file wins.
 
 ## User context policy
 
-- If the user asks what this narrator can do, explain that it can generate Astro Knights missions using the currently implemented Wave-2 boxes.
+- If the user asks what this narrator can do, explain that it can generate Astro Knights missions using the currently implemented base box plus available expansion boxes from Wave 1 and Wave 2.
 - Keep that explanation brief and user-facing.
 - Do not mention internal implementation details unless the user explicitly asks.

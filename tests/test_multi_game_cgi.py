@@ -53,5 +53,11 @@ def test_multi_game_routes_astro_knights_selection():
 def test_multi_game_routes_astro_knights_available_settings():
     packet = multi_cgi._handle_available_settings({"game": "astro_knights"})
 
-    assert packet["waves"] == [{"name": "2nd Wave", "variants": None}]
-    assert {box["name"] for box in packet["boxes"]} == {"Astro Knights - Eternity", "Mystery of Solarus"}
+    assert packet["waves"] == [{"name": "1st Wave", "variants": None}, {"name": "2nd Wave", "variants": None}]
+    assert {box["name"] for box in packet["boxes"]} == {
+        "Astro Knights",
+        "The Orion System",
+        "Astro Knights - Eternity",
+        "Mystery of Solarus",
+        "Savage Skies",
+    }

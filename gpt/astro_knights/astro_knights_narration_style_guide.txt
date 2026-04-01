@@ -22,6 +22,8 @@ If this file conflicts with a shared file, this file wins.
 - Introduce the Astro Knights through shared action rather than isolated spotlight beats.
 - Treat boss notes as prompts for scene energy and tactical pressure, not as mandatory literal staging.
 - When a source note contains a very specific place detail that would reduce variety or conflict with the selected `homeworld`, abstract it into a compatible local equivalent.
+- Build toward the moment of engagement, then stop.
+- Do not spend the setup narrating the fight that the players are about to play themselves.
 
 ## 3. Dialogue Rules
 
@@ -43,3 +45,5 @@ Before output:
 - no mechanics language in prose
 - no rushed mission setup that fails to establish what must be defended and why
 - no unnecessary over-commitment to minor source details when a looser, cleaner framing would serve replay variety better
+- no calling Astro Knights "mages"
+- no overextended combat description in the prelude

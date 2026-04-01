@@ -1,15 +1,19 @@
 # Astro Knights Profile
 
-Status: initial implementation.
+Status: active implementation.
 
 Current scope:
-- Wave 2 only
+- `1st Wave`
+- `2nd Wave`
+- `Astro Knights`
+- `The Orion System`
 - `Astro Knights - Eternity`
 - `Mystery of Solarus`
+- `Savage Skies`
 - Deterministic selection of one homeworld, one knight team, and a 4-battle boss plan
 
 Implemented files:
-- `data/`: Astro Knights Wave-2 datasets
+- `data/`: Astro Knights datasets
 - `api/astro_knights_expedition_selector_openapi.yaml`: game-specific schema
 - `api/astro_knights_expedition_selector_cgi.py`: game-specific wrapper
 

@@ -1,4 +1,34 @@
 homeworlds:
+  - id: new_atlantis
+    name: New Atlantis
+    wave_name: 1st Wave
+    box: Astro Knights
+    background: Placeholder homeworld entry pending fuller Astro Knights base-box narrative notes.
+    story_notes: Known Wave-1 base-box homeworld; activate once the broader Wave-1 Astro Knights pool is implemented.
+  - id: nisarin
+    name: Nisarin
+    wave_name: 1st Wave
+    box: Astro Knights
+    background: Placeholder homeworld entry pending fuller Astro Knights base-box narrative notes.
+    story_notes: Known Wave-1 base-box homeworld; activate once the broader Wave-1 Astro Knights pool is implemented.
+  - id: qaris
+    name: Qaris
+    wave_name: 1st Wave
+    box: Astro Knights
+    background: Placeholder homeworld entry pending fuller Astro Knights base-box narrative notes.
+    story_notes: Known Wave-1 base-box homeworld; activate once the broader Wave-1 Astro Knights pool is implemented.
+  - id: ylong
+    name: Ylong
+    wave_name: 1st Wave
+    box: Astro Knights
+    background: Placeholder homeworld entry pending fuller Astro Knights base-box narrative notes.
+    story_notes: Known Wave-1 base-box homeworld; activate once the broader Wave-1 Astro Knights pool is implemented.
+  - id: orion_iii
+    name: Orion III
+    wave_name: 1st Wave
+    box: The Orion System
+    background: Placeholder homeworld entry pending fuller Orion System narrative notes.
+    story_notes: Known Wave-1 Orion System homeworld.
   - id: the_galactic_bazaar
     name: The Galactic Bazaar
     wave_name: 2nd Wave

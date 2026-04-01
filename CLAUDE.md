@@ -69,7 +69,7 @@ The `strictness` parameter controls entity scoping:
 
 ## Agent Instructions
 
-When modifying narration or operational instructions, review surrounding guidance for potential ambiguity, overlap, or contradiction introduced by the change.
+For repository-wide process rules for instruction changes, treat `AGENTS.md` as the canonical source.
 
 ### OpenAPI Schemas for GPT Actions
 - Use `x-openai-isConsequential: false` for POST endpoints that are read-only operations

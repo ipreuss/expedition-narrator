@@ -1,15 +1,14 @@
 bosses:
   - id: furion
     name: Furion
-    wave_name: TBD
-    box: TBD Box
+    wave_name: 1st Wave
+    box: Astro Knights
     battle_difficulties:
       1: normal
       3: expert
       4: expert
-    implemented: false
-    background: Placeholder boss entry pending confirmed Astro Knights box and wave data.
-    story_notes: Battle-card data confirms Battle 1 starts at normal and Battles 3-4 start at expert; box and wave still pending.
+    background: A sentient mass of collapsing star matter that drags stolen artillery into its orbit and turns every delay into a deadlier exchange.
+    story_notes: The fight should emphasize urgency, escalating weapon charge, and the danger of letting Furion and its followers grow unchecked.
   - id: shade_sculptor
     name: Shade Sculptor
     wave_name: 2nd Wave
@@ -28,26 +27,24 @@ bosses:
     background: A violent beast native to the freezing blizzards of Dirath, fighting on its own home turf.
     story_notes: The fight should emphasize direct physical pressure, worsening cold, and the need to end the battle quickly before storms, freezing conditions, and swarming local creatures turn the field into a death trap.
   - id: architect_0815
-    name: Architect-0815
+    name: Architect 0-815
     wave_name: 1st Wave
-    box: TBD Wave 1 Box
+    box: Astro Knights
     battle_difficulties:
       1: normal
       3: expert
       4: expert
-    implemented: false
-    background: Placeholder boss entry pending full Astro Knights Wave-1 box data.
-    story_notes: Battle-card data confirms Battle 1 starts at normal and Battles 3-4 start at expert; remaining metadata still pending.
+    background: A factory machine that broke from its programming and built a droid army for robotic domination.
+    story_notes: The fight should emphasize swarm pressure, rapid weapon preparation, and pattern recognition against a relentless repeating program.
   - id: contenua
     name: Continnua
     wave_name: 1st Wave
-    box: TBD Wave 1 Box
+    box: Astro Knights
     battle_difficulties:
       1: normal
       2: expert
-    implemented: false
-    background: Placeholder boss entry pending full Astro Knights Wave-1 box data.
-    story_notes: Battle-card data confirms Battle 1 starts at normal and Battle 2 starts at expert; remaining metadata still pending.
+    background: A misguided experiment in time science that escaped its laboratory and began consuming the fabric of time itself.
+    story_notes: The fight should emphasize temporal distortion, escaped minions empowered by time bubbles, and the need to arm up fast before the battle's clock turns against the team.
   - id: volt_fusion
     name: Volt Fusion
     wave_name: 2nd Wave
@@ -78,20 +75,27 @@ bosses:
   - id: fission_parasite
     name: Fission Parasite
     wave_name: 1st Wave
-    box: TBD Wave 1 Box
+    box: The Orion System
     battle_difficulties:
       2: normal
       3: expert
-    implemented: false
-    background: Placeholder boss entry pending full Astro Knights Wave-1 box data.
-    story_notes: Battle-card data confirms Battle 2 starts at normal and Battle 3 starts at expert; remaining metadata still pending.
+    background: A living infection once dismissed as a ghost story, spreading corruption and toxic spores from planet to planet.
+    story_notes: The fight should emphasize equipment corrosion, infection management, and the need to contain spreading exosludge before the parasite consumes the team's supplies and the situation snowballs out of control.
+  - id: the_blackhole_galleon
+    name: The Blackhole Galleon
+    wave_name: 2nd Wave
+    box: Savage Skies
+    battle_difficulties:
+      1: normal
+      3: expert
+    background: A feared pirate galleon in the Golari Quadrant, able to raid and attack at the same time while swashbots strip targets of their gear.
+    story_notes: "The fight should emphasize stolen weapons, disposable loot, and the discipline to ignore raided belongings long enough to bring down the real threat: the cannon-arming galleon itself."
   - id: lunaris
     name: Lunaris
     wave_name: 1st Wave
-    box: TBD Wave 1 Box
+    box: Astro Knights
     battle_difficulties:
       2: normal
       4: expert
-    implemented: false
-    background: Placeholder boss entry pending full Astro Knights Wave-1 box data.
-    story_notes: Battle-card data confirms Battle 2 starts at normal and Battle 4 starts at expert; remaining metadata still pending.
+    background: The self-declared soul of Lunaria, leading followers in a resource-stripping crusade toward immortality.
+    story_notes: The fight should emphasize hubris, planetary-scale power, and the need to split pressure between Lunaris and its dangerous supporting forces.
