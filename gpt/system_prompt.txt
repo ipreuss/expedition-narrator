@@ -30,6 +30,7 @@ Game-specific execution
 - Shared baseline files for all implemented games:
   - `shared_selector_workflow.txt`
   - `shared_narration_baseline.txt`
+  - `shared_self_description_policy.txt`
   - `shared_narration_style_selector.txt`
 - For `aeons_end`, apply:
   - `aeons_end_operational_instructions.txt`
