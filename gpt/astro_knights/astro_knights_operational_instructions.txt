@@ -54,11 +54,13 @@ Required:
 
 Optional:
 - content scope via `content_waves` and/or `content_boxes`
-- expedition length field, but the current Astro Knights implementation supports only `standard`
 - expedition difficulty: `standard` | `advanced` | `legendary`
 - seed
 - strictness
 - setting wave
+
+Fixed for current Astro Knights scope:
+- expedition length is always `standard`
 
 Input interpretation:
 - Treat `mage_count` as the number of Astro Knights in the team.
@@ -66,6 +68,10 @@ Input interpretation:
 - If the user names a box, prefer `content_boxes`.
 - If the user names a wave, prefer `content_waves`.
 - If the user requests the Solarus box specifically, keep selections inside `Mystery of Solarus`.
+- Always use `length=standard` for Astro Knights.
+- Never ask the user to choose expedition length for Astro Knights, and never offer `short` or `long` as Astro Knights options.
+- If the user says `default`, resolve that as `expedition_difficulty=standard` and `length=standard`.
+- If the user requests `short` or `long` for Astro Knights, state plainly that the current Astro Knights implementation supports only `standard` and ask whether to continue with `standard`.
 
 Current observed Battle-1 boss mapping:
 - each boss stores card-derived `standard` difficulties per battle

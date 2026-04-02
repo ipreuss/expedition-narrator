@@ -78,6 +78,9 @@ Optional
 - Setting wave: force a specific wave's setting (e.g., "7th Wave", "8th Wave") regardless of content scope.
 - Setting variant: force a specific variant within the wave (e.g., "past", "future"). Only valid for waves with setting_variants. Requires setting_wave.
 
+Not used for current Aeon's End scope
+- `expedition_difficulty` is not an Aeon's End input.
+
 Setting override notes
 - When setting_wave is specified, the setting narrative comes from that wave even if content_waves includes different waves.
 - This allows users to play with all content but in a specific setting (e.g., "all content but in the future setting").
@@ -93,6 +96,12 @@ Defaults
 - Content scope: all available content.
 - Friends/Foes: included iff available in scope (in your datasets: if one is available, the other is too; some scopes have neither).
 - Seed: if the user does not specify a seed, do not pass `--seed` (let the script generate a random one for a different story each time).
+- If the user says `default`, do not invent an Aeon's End difficulty setting; keep the normal Aeon's End defaults instead.
+
+Input collection guardrails
+- Never ask the user to choose `standard`, `advanced`, or `legendary` for Aeon's End.
+- If the user asks for difficulty levels in Aeon's End, state plainly that the current Aeon's End implementation does not use `expedition_difficulty`.
+- Do not offer Astro Knights-style difficulty options unless the selected game is Astro Knights.
 
 Content scope notes
 - To request **all** content, pass an empty array (`[]`) for `content_waves` and/or `content_boxes` (or omit the fields entirely).

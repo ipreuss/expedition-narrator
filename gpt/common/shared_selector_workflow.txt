@@ -22,6 +22,12 @@ The selected game's packet content remains authoritative for names, settings, op
 - Every selector action call must include `game`.
 - If a packet appears invalid for the selected game's guarantees, discard it and rerun selection with a new seed.
 
+## 2.1 Input Collection Discipline
+
+- Ask only for inputs that the selected game's operational instructions mark as required or meaningfully optional.
+- If the selected game's implementation fixes a field to one supported value, do not ask the user to choose that field and do not present unsupported alternatives.
+- When follow-up questions are needed before selection, ask only for the missing game-relevant inputs.
+
 ## 3. Read Before Writing
 
 Before narrating any chapter, read the packet fields that matter for the current beat:

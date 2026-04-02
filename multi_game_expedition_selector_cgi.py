@@ -207,14 +207,21 @@ def _handle_select_expedition(data: Dict[str, Any]) -> Dict[str, Any]:
         "max_attempts": max_attempts,
         "mage_recruitment_chance": mage_recruitment_chance,
         "strictness": strictness,
-        "expedition_difficulty": expedition_difficulty,
         "setting_wave": setting_wave,
         "setting_variant": setting_variant,
     }
 
     if game == "aeons_end":
         return select_expedition(**common_kwargs, **AEONS_END_PATHS)
-    return select_expedition(**common_kwargs, **ASTRO_KNIGHTS_PATHS)
+
+    if game == "astro_knights":
+        return select_expedition(
+            **common_kwargs,
+            expedition_difficulty=expedition_difficulty,
+            **ASTRO_KNIGHTS_PATHS,
+        )
+
+    raise ApiError(f"selectExpeditionPacket is not implemented for '{game}'", status="501 Not Implemented")
 
 
 def _handle_select_replacement_mage(data: Dict[str, Any]) -> Dict[str, Any]:

@@ -54,6 +54,7 @@ paths:
         - name: length
           in: query
           required: false
+          description: Expedition length. Aeon's End supports `short`, `standard`, or `long`. Astro Knights currently supports only `standard`, so omit this field for Astro Knights unless you are explicitly passing `standard`.
           schema:
             type: string
             enum: [short, standard, long]
@@ -89,6 +90,7 @@ paths:
         - name: expedition_difficulty
           in: query
           required: false
+          description: Mission difficulty selector. Currently used by Astro Knights. Do not ask for or send this field for Aeon's End. Invincible may use this field when that game is implemented.
           schema:
             type: string
             enum: [standard, advanced, legendary]
@@ -226,6 +228,7 @@ components:
           type: integer
           minimum: 1
         length:
+          description: Expedition length. Aeon's End supports `short`, `standard`, or `long`. Astro Knights currently supports only `standard`, so omit this field for Astro Knights unless you are explicitly passing `standard`.
           type: string
           enum: [short, standard, long]
         content_waves:
@@ -250,6 +253,7 @@ components:
           minimum: 0
           maximum: 100
         expedition_difficulty:
+          description: Mission difficulty selector. Currently used by Astro Knights. Do not ask for or send this field for Aeon's End. Invincible may use this field when that game is implemented.
           type: string
           enum: [standard, advanced, legendary]
         strictness:

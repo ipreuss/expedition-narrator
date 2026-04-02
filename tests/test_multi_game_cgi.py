@@ -63,3 +63,17 @@ def test_multi_game_routes_astro_knights_available_settings():
         "Mystery of Solarus",
         "Savage Skies",
     }
+
+
+def test_multi_game_routes_aeons_end_without_expedition_difficulty():
+    packet = multi_cgi._handle_select_expedition(
+        {
+            "game": "aeons_end",
+            "mage_count": 2,
+            "seed": 123,
+            "expedition_difficulty": "legendary",
+        }
+    )
+
+    assert packet["meta"]["inputs"]["mage_count"] == 2
+    assert packet["meta"]["inputs"]["length"] == "standard"
