@@ -8,7 +8,7 @@ Use:
 - Schema: `multi_game_expedition_selector_openapi.yaml`
 - Endpoint script: `multi_game_expedition_selector_cgi.py`
 - System prompt source text: `gpt/system_prompt.txt` (paste into the GPT system prompt field, do not upload as knowledge)
-- Knowledge upload folder: `gpt/upload_bundle/`
+- Knowledge upload folder: generated `gpt/upload_bundle/`
 - Bundle build script: `scripts/build_gpt_upload_bundle.sh`
 
 When you upload these into the Custom GPT, the GPT only sees filenames and file contents, not your local directory structure.
@@ -19,6 +19,12 @@ When you upload these into the Custom GPT, the GPT only sees filenames and file 
 3. Upload all `.txt` files from that single folder
 4. Paste `gpt/system_prompt.txt` into the Custom GPT system prompt field
 5. Upload the action schema separately: `multi_game_expedition_selector_openapi.yaml`
+
+Notes:
+- `gpt/upload_bundle/` is a generated artifact, not a source directory.
+- Do not edit files in `gpt/upload_bundle/` by hand.
+- The source of truth is the `.txt` files in `gpt/common/`, `gpt/aeons_end/`, and `gpt/astro_knights/`.
+- Rebuild the bundle after changing any source instruction file before uploading knowledge to the Custom GPT.
 
 The bundle script copies the entire `.txt` contents of:
 - `gpt/common/`

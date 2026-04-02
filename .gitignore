@@ -208,3 +208,6 @@ __marimo__/
 
 # macOS
 .DS_Store
+
+# Generated GPT upload artifact
+gpt/upload_bundle/
