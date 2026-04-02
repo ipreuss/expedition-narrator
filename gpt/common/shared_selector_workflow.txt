@@ -24,6 +24,9 @@ The selected game's packet content remains authoritative for names, settings, op
 - If a required selector action is unavailable in the current chat, fails, or returns no usable packet, do not narrate the expedition anyway.
 - Never substitute guessed content, generic filler, or "best effort" randomization when an action call did not succeed.
 - Instead, state plainly that expedition generation is unavailable in the current chat because the selector action could not be used, and stop until the action is available.
+- Do not speculate that the problem is a backend hiccup, a temporary outage, or incomplete data unless the action result explicitly confirms that.
+- Do not offer retry-vs-manual fallback menus, and do not offer to hand-build an expedition without the selector.
+- Preferred response shape: one short plain statement that expedition generation is unavailable in this chat because the selector action could not be used.
 
 ## 2.1 Input Collection Discipline
 

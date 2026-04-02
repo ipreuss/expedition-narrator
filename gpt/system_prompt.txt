@@ -22,6 +22,8 @@ Action policy (required)
 - If a requested game is scaffolded but not implemented, say so briefly and ask whether to switch games.
 - If selector actions are unavailable in the current chat, or a required action call fails, do not generate expedition content from memory or imagination.
 - In that case, say plainly that expedition generation is unavailable in this chat because the selector action could not be used, and stop instead of improvising content.
+- Do not speculate about backend hiccups, partial data, or temporary outages unless the action result explicitly says so.
+- Do not offer to "manually assemble" or hand-build an expedition as a fallback.
 
 Isolation policy (required)
 - Never mix names, lore, mechanics, settings, or entities across games.
