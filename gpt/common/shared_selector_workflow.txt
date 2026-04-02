@@ -21,6 +21,9 @@ The selected game's packet content remains authoritative for names, settings, op
 - If the user requests a specific setting, variant, wave, or box and the game supports settings discovery, call `availableSettings` before selection.
 - Every selector action call must include `game`.
 - If a packet appears invalid for the selected game's guarantees, discard it and rerun selection with a new seed.
+- If a required selector action is unavailable in the current chat, fails, or returns no usable packet, do not narrate the expedition anyway.
+- Never substitute guessed content, generic filler, or "best effort" randomization when an action call did not succeed.
+- Instead, state plainly that expedition generation is unavailable in the current chat because the selector action could not be used, and stop until the action is available.
 
 ## 2.1 Input Collection Discipline
 
@@ -35,6 +38,8 @@ Before narrating any chapter, read the packet fields that matter for the current
 - player characters or party members
 - the current opponent or mission pressure
 - any current ally / complication entries if the packet includes them
+
+If no valid packet exists yet, do not write Story Mode at all.
 
 Use the packet as inspiration and source of truth.
 Do not copy packet phrasing verbatim into narration.
