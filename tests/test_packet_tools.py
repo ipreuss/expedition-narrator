@@ -1,9 +1,12 @@
 import json
+import sys
 from pathlib import Path
 
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 import yaml  # type: ignore
 
@@ -167,3 +170,64 @@ def test_extract_story_inputs_keeps_astro_knights_battle_homeworlds(tmp_path: Pa
     assert story["battle_plan"][0]["homeworld"]["name"] == packet["battle_plan"][0]["homeworld"]["name"]
     assert story["battle_plan"][0]["protect_target"] == packet["battle_plan"][0]["protect_target"]
     assert len({step["homeworld"]["name"] for step in story["battle_plan"]}) == 4
+
+
+def test_validate_packet_astro_knights_rejects_missing_protect_target(tmp_path: Path):
+    from core import astro_knights_expedition_selector as astro_selector
+
+    waves = {"boxes": {"Astro Knights - Eternity": "2nd Wave"}}
+    settings = {"wave_settings": {"2nd Wave": {"setting": "The Astro Knights frontier"}}}
+    knights = {
+        "knights": [
+            {"name": "Caleb", "variants": [{"name": "Caleb", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"}]},
+            {"name": "Pan", "variants": [{"name": "Pan", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"}]},
+        ]
+    }
+    bosses = {
+        "bosses": [
+            {"name": "Dirathian Behemoth", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave", "battle_difficulties": {"1": "normal"}},
+            {"name": "Volt Fusion", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave", "battle_difficulties": {"2": "normal"}},
+            {"name": "Solar Collision", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave", "battle_difficulties": {"3": "expert"}},
+            {"name": "Eternity", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave", "battle_difficulties": {"4": "expert"}},
+        ]
+    }
+    homeworlds = {
+        "homeworlds": [
+            {"name": "The Galactic Bazaar", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+            {"name": "Dirath", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+            {"name": "Felis", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+            {"name": "The Bobcat", "box": "Astro Knights - Eternity", "wave_name": "2nd Wave"},
+        ]
+    }
+
+    paths = {
+        "waves": tmp_path / "astro_waves.yaml",
+        "settings": tmp_path / "astro_settings.yaml",
+        "knights": tmp_path / "astro_knights.yaml",
+        "bosses": tmp_path / "astro_bosses.yaml",
+        "homeworlds": tmp_path / "astro_homeworlds.yaml",
+    }
+    write_yaml(paths["waves"], waves)
+    write_yaml(paths["settings"], settings)
+    write_yaml(paths["knights"], knights)
+    write_yaml(paths["bosses"], bosses)
+    write_yaml(paths["homeworlds"], homeworlds)
+
+    packet = astro_selector.select_expedition(
+        seed=123,
+        mage_count=2,
+        length="standard",
+        content_waves=[],
+        content_boxes=["Astro Knights - Eternity"],
+        knights_yaml_path=str(paths["knights"]),
+        settings_yaml_path=str(paths["settings"]),
+        waves_yaml_path=str(paths["waves"]),
+        bosses_yaml_path=str(paths["bosses"]),
+        homeworlds_yaml_path=str(paths["homeworlds"]),
+        expedition_difficulty="advanced",
+    )
+
+    del packet["protect_target"]
+
+    with pytest.raises(ValueError, match="protect_target"):
+        tools.validate_packet(packet, expected_mage_count=2, expected_battles=4)
