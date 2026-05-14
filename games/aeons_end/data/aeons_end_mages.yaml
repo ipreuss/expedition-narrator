@@ -15,11 +15,7 @@ mages:
   story_notes: Adelheim advised an expedition on unusual tracks and stayed behind to
     reinforce Gravehold’s defenses.
   variants:
-  - variant_id: aeon_s_end_core_set
-    variant_name: Aeon's End (Core Set)
-    wave_id: aeon_s_end_core_set
-    wave_name: Aeon's End (Core Set)
-    box: Aeon's End (Core Set)
+  - box: Aeon's End (Core Set)
 - id: brama
   name: Brama
   background: Brama is the elder of Gravehold, the last survivor of her conclave of
@@ -52,16 +48,8 @@ mages:
     The campaign ends with Brama holding Janti's staff, watching the signal fire
     burn above reclaimed Karek, knowing there is much work to be done.
   variants:
-  - variant_id: aeon_s_end_core_set
-    variant_name: Aeon's End (Core Set)
-    wave_id: aeon_s_end_core_set
-    wave_name: Aeon's End (Core Set)
-    box: Aeon's End (Core Set)
-  - variant_id: the_descent
-    variant_name: The Descent
-    wave_id: the_descent
-    wave_name: The Descent
-    box: The Descent
+  - box: Aeon's End (Core Set)
+  - box: The Descent
     background: In The Descent, Brama is a guardian of ancient texts who dreams of
       lost civilizations.  She says, "The world wasn't always broken. I've read about
       it in the ancient texts we guard," and hopes safe places still exist where
@@ -85,11 +73,7 @@ mages:
   strengths: Jian can manipulate breaches and use visions to prepare for future turns
   weaknesses: Her introspective nature may cause hesitation
   variants:
-  - variant_id: aeon_s_end_core_set
-    variant_name: Aeon's End (Core Set)
-    wave_id: aeon_s_end_core_set
-    wave_name: Aeon's End (Core Set)
-    box: Aeon's End (Core Set)
+  - box: Aeon's End (Core Set)
 - id: kadir
   name: Kadir
   background: Kadir is a seasoned cavern scout who explores deep underground caves
@@ -106,16 +90,8 @@ mages:
     identifying underworld creatures.  She later advocated broader exploration when
     new paths beyond the caves emerged.
   variants:
-  - variant_id: aeon_s_end_core_set
-    variant_name: Aeon's End (Core Set)
-    wave_id: aeon_s_end_core_set
-    wave_name: Aeon's End (Core Set)
-    box: Aeon's End (Core Set)
-  - variant_id: legacy_of_gravehold
-    variant_name: Legacy of Gravehold
-    wave_id: legacy_of_gravehold
-    wave_name: Legacy of Gravehold
-    box: Legacy of Gravehold
+  - box: Aeon's End (Core Set)
+  - box: Legacy of Gravehold
     background: In Legacy of Gravehold, Kadir is an experienced mage with scientific
       inclinations who was once a teacher.  He trusts Z'hana but regrets her curiosity,
       saying "Z'hana has always wanted more than she needed" and blaming her for
@@ -141,11 +117,7 @@ mages:
   story_notes: During early expeditions, Lash kept morale high by charging ahead,
     joking, and naming strange creatures while the group pushed through the dark.
   variants:
-  - variant_id: aeon_s_end_core_set
-    variant_name: Aeon's End (Core Set)
-    wave_id: aeon_s_end_core_set
-    wave_name: Aeon's End (Core Set)
-    box: Aeon's End (Core Set)
+  - box: Aeon's End (Core Set)
 - id: mist
   name: Mist
   background: Mist is a vigilant scout and Dagger Captain who masks fear with discipline.
@@ -165,11 +137,7 @@ mages:
     memory‑eating Nameless.  She witnessed the corrupted ally’s final fall into the
     Void during the war’s end.
   variants:
-  - variant_id: aeon_s_end_core_set
-    variant_name: Aeon's End (Core Set)
-    wave_id: aeon_s_end_core_set
-    wave_name: Aeon's End (Core Set)
-    box: Aeon's End (Core Set)
+  - box: Aeon's End (Core Set)
 - id: phaedraxa
   name: Phaedraxa
   background: Phaedraxa is a seeress with temporal abilities who was born before the
@@ -185,11 +153,7 @@ mages:
   story_notes: Phaedraxa’s sermons during the war emphasized cyclical time and warned
     that the Gate Witch bends that flow.
   variants:
-  - variant_id: aeon_s_end_core_set
-    variant_name: Aeon's End (Core Set)
-    wave_id: aeon_s_end_core_set
-    wave_name: Aeon's End (Core Set)
-    box: Aeon's End (Core Set)
+  - box: Aeon's End (Core Set)
 - id: xaxos
   name: Xaxos
   character_id: xaxos
@@ -211,16 +175,8 @@ mages:
     foe in the final war.  After his defeat, a tendril dragged him back into the
     Void, leaving his fate uncertain.
   variants:
-  - variant_id: aeon_s_end_core_set
-    variant_name: Aeon's End (Core Set)
-    wave_id: aeon_s_end_core_set
-    wave_name: Aeon's End (Core Set)
-    box: Aeon's End (Core Set)
-  - variant_id: the_void
-    variant_name: The Void
-    wave_id: the_void
-    wave_name: The Void
-    box: The Void
+  - box: Aeon's End (Core Set)
+  - box: The Void
     background: An alternate version of Xaxos included in The Void.  Specific narrative
       details were not found.
     appearance: Depicted as a robed void‑bringer with dark energy swirling around
@@ -231,11 +187,7 @@ mages:
     story_notes: In exile Xaxos journals his travels through the Void, questioning
       the nature of the Nameless after encountering the Herald of the End.  His notes
       dwell on guilt, grief, and whether his obsession makes him the monster he fears.
-  - variant_id: the_abyss
-    variant_name: The Abyss
-    wave_id: the_abyss
-    wave_name: The Abyss
-    box: The Abyss
+  - box: The Abyss
     background: In this timeline, Xaxos is a determined scholar shaped by his
       mother’s rescued knowledge.  He refuses to hide and believes knowledge has
       value only when used to fight back.
@@ -261,11 +213,7 @@ mages:
     memory‑eating threats.  In the final battle he tried to stop the corrupted ally
     from seizing breach power before the Void claimed him.
   variants:
-  - variant_id: the_nameless
-    variant_name: The Nameless
-    wave_id: the_nameless
-    wave_name: The Nameless
-    box: The Nameless
+  - box: The Nameless
 - id: nym
   name: Nym
   background: Nym is a fierce breach mage apprentice who rejects Malastar's philosophy
@@ -279,11 +227,7 @@ mages:
   weaknesses: Nym inflicts no direct harm and relies entirely on his ability to mill
     the nemesis deck
   variants:
-  - variant_id: the_depths
-    variant_name: The Depths
-    wave_id: the_depths
-    wave_name: The Depths
-    box: The Depths
+  - box: The Depths
 - id: reeve
   name: Reeve
   background: Reeve is a warrior who lost an arm to tainted jade and amputated it
@@ -298,11 +242,7 @@ mages:
   weaknesses: Reeve’s strength lies in killing lesser foes; she has less impact when
     the nemesis deck contains few lesser foes
   variants:
-  - variant_id: the_depths
-    variant_name: The Depths
-    wave_id: the_depths
-    wave_name: The Depths
-    box: The Depths
+  - box: The Depths
 - id: z-hana
   name: Z'hana
   background: Z’hana is a renegade healer who draws on sanctified glyphs to restore
@@ -314,11 +254,7 @@ mages:
   weaknesses: She begins the game with no breaches open, which slows her early spell
     casting
   variants:
-  - variant_id: outcasts
-    variant_name: Outcasts
-    wave_id: outcasts
-    wave_name: Outcasts
-    box: Outcasts
+  - box: Outcasts
     background: In Outcasts, Z’hana is a hardened healer in exile who leads a southern
       community and pushes for reform.  She is resolute, stubborn, and guided by a
       fierce desire to protect her people.
@@ -348,11 +284,7 @@ mages:
     while civilians escaped, then buried it and herself in a final blast.  Her sacrifice
     became a defining legend for the survivors.
   variants:
-  - variant_id: outcasts
-    variant_name: Outcasts
-    wave_id: outcasts
-    wave_name: Outcasts
-    box: Outcasts
+  - box: Outcasts
     background: Dezmodia returns in Outcasts as a more experienced mage of the void.  No
       specific narrative was provided.
     appearance: A pale mage with flowing silver hair and piercing eyes, wrapped in
@@ -379,16 +311,8 @@ mages:
   story_notes: Garu traveled with Yan Magda’s outcasts through the Void, acting as the
     group’s shield in its warped landscapes.
   variants:
-  - variant_id: war_eternal
-    variant_name: War Eternal
-    wave_id: war_eternal
-    wave_name: War Eternal
-    box: War Eternal
-  - variant_id: the_returned
-    variant_name: The Returned
-    wave_id: the_returned
-    wave_name: The Returned
-    box: The Returned
+  - box: War Eternal
+  - box: The Returned
     background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
     appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
     strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
@@ -407,16 +331,8 @@ mages:
     up to two 0‑requires cards from her set aside pile
   weaknesses: Gex depends on card destruction and cooperation
   variants:
-  - variant_id: war_eternal
-    variant_name: War Eternal
-    wave_id: war_eternal
-    wave_name: War Eternal
-    box: War Eternal
-  - variant_id: the_returned
-    variant_name: The Returned
-    wave_id: the_returned
-    wave_name: The Returned
-    box: The Returned
+  - box: War Eternal
+  - box: The Returned
     background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
     appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
     strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
@@ -434,26 +350,14 @@ mages:
   story_notes: Mazahaedron traveled through the warped Void, communing with living
     stone and interpreting visions of past cataclysms for his allies.
   variants:
-  - variant_id: war_eternal
-    variant_name: War Eternal
-    wave_id: war_eternal
-    wave_name: War Eternal
-    box: War Eternal
-  - variant_id: the_returned
-    variant_name: The Returned
-    wave_id: the_returned
-    wave_name: The Returned
-    box: The Returned
+  - box: War Eternal
+  - box: The Returned
     background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
     appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
     strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
     weaknesses: Her plan blooms late; if pressure peaks early, she can struggle before her Intoned engine is established.
     story_notes: She emerges from the Void carrying old grudges and an almost-military vision for her rescued children—Garu, Dezmodia, and Kain—then abandons vengeance after meeting Indira and witnessing fragile trust firsthand. In The Returned era, her arc centers on earning that trust daily and teaching younger mages without repeating the cruelties that shaped her exile.
-  - variant_id: the_descent
-    variant_name: The Descent
-    wave_id: the_descent
-    wave_name: The Descent
-    box: The Descent
+  - box: The Descent
     background: In The Descent, Mazahaedron is known as The Monk.  He feels vibrations
       through the earth of fleeing humanity and their pursuers.  He finds comfort
       in nature's heartbeat—in trees and mountains—and sees humanity as small but
@@ -482,16 +386,8 @@ mages:
   story_notes: Quilius fought with the War Eternal band, collecting trophies from
     lesser foes as proof of her worth.
   variants:
-  - variant_id: war_eternal
-    variant_name: War Eternal
-    wave_id: war_eternal
-    wave_name: War Eternal
-    box: War Eternal
-  - variant_id: the_returned
-    variant_name: The Returned
-    wave_id: the_returned
-    wave_name: The Returned
-    box: The Returned
+  - box: War Eternal
+  - box: The Returned
     background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
     appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
     strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
@@ -510,11 +406,7 @@ mages:
     starting gem but causes him to lose life
   weaknesses: Coal Shard’s life loss can rapidly deplete Ulgimor’s health if overused
   variants:
-  - variant_id: war_eternal
-    variant_name: War Eternal
-    wave_id: war_eternal
-    wave_name: War Eternal
-    box: War Eternal
+  - box: War Eternal
 - id: yan-magda
   name: Yan Magda
   background: Yan Magda is an enlightened exile turned leader.  She is calm under
@@ -531,16 +423,8 @@ mages:
     searching for lost comrades.  She glimpsed the Gate Witch and warned that time
     bends to its will.
   variants:
-  - variant_id: war_eternal
-    variant_name: War Eternal
-    wave_id: war_eternal
-    wave_name: War Eternal
-    box: War Eternal
-  - variant_id: the_returned
-    variant_name: The Returned
-    wave_id: the_returned
-    wave_name: The Returned
-    box: The Returned
+  - box: War Eternal
+  - box: The Returned
     background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
     appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
     strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
@@ -562,11 +446,7 @@ mages:
   weaknesses: Requires careful coordination with teammates; her aggressive nature
     may lead to overextension
   variants:
-  - variant_id: the_void
-    variant_name: The Void
-    wave_id: the_void
-    wave_name: The Void
-    box: The Void
+  - box: The Void
 - id: claudia
   name: Claudia
   background: Claudia is a prodigy obsessed with aether and gemstones.  As a child
@@ -580,11 +460,7 @@ mages:
     for a single purchase
   weaknesses: Claudia relies on allies buying cards to maximize her Aeplosion
   variants:
-  - variant_id: the_new_age
-    variant_name: The New Age
-    wave_id: the_new_age
-    wave_name: The New Age
-    box: The New Age
+  - box: The New Age
 - id: gygar
   name: Gygar
   background: Gygar is an explorer who joined the New Age expedition after plumbing
@@ -603,11 +479,7 @@ mages:
     encountered the aquatic Nameless Fortress.  After its defeat he vowed to study
     how Nameless adapt to human environments.
   variants:
-  - variant_id: the_new_age
-    variant_name: The New Age
-    wave_id: the_new_age
-    wave_name: The New Age
-    box: The New Age
+  - box: The New Age
 - id: lost
   name: Lost
   background: Lost is an enigmatic forgemaster sealed in a massive suit of armor.
@@ -625,11 +497,7 @@ mages:
   story_notes: Lost was discovered sealed in a hidden forge and aided the New Age
     expedition by sharing its artifacts before returning to isolation.
   variants:
-  - variant_id: the_new_age
-    variant_name: The New Age
-    wave_id: the_new_age
-    wave_name: The New Age
-    box: The New Age
+  - box: The New Age
 - id: rhia
   name: Rhia
   background: Rhia is a direct, pragmatic relic expert whose crystal‑touched hair
@@ -643,11 +511,7 @@ mages:
   story_notes: Rhia joined the New Age expedition to recover relics, burn Nameless
     remains, and confront cultists threatening New Gravehold.
   variants:
-  - variant_id: the_new_age
-    variant_name: The New Age
-    wave_id: the_new_age
-    wave_name: The New Age
-    box: The New Age
+  - box: The New Age
 - id: sahala
   name: Sahala
   background: Sahala grew up hearing her father’s tales of Xaxos saving him.  She
@@ -658,11 +522,7 @@ mages:
   weaknesses: Relies on drawing spells from the top of her deck; unlucky draws can
     slow her down
   variants:
-  - variant_id: the_new_age
-    variant_name: The New Age
-    wave_id: the_new_age
-    wave_name: The New Age
-    box: The New Age
+  - box: The New Age
 - id: soskel
   name: Soskel
   background: Soskel is a hardened expedition commander marked by captivity and void
@@ -680,11 +540,7 @@ mages:
     honoring fallen allies and carrying scars from Arachnos’s captivity.  He guided
     survivors back to New Gravehold and continued to lead the city’s defenses.
   variants:
-  - variant_id: the_new_age
-    variant_name: The New Age
-    wave_id: the_new_age
-    wave_name: The New Age
-    box: The New Age
+  - box: The New Age
 - id: talix
   name: Talix
   background: Talix is an exuberant scout who protects Inco and the people of New Gravehold
@@ -700,11 +556,7 @@ mages:
   story_notes: Talix reunited with his comrades, recovered buried treasures from fallen
     allies, and later suffered premature aging from a Void‑tainted nemesis.
   variants:
-  - variant_id: the_new_age
-    variant_name: The New Age
-    wave_id: the_new_age
-    wave_name: The New Age
-    box: The New Age
+  - box: The New Age
 - id: taqren
   name: Taqren
   background: Taqren is the son of Z’hana.  As a child he was rescued from collapsing
@@ -715,11 +567,7 @@ mages:
   weaknesses: Limited offensive tools; requires good spells from the supply to contribute
     harm
   variants:
-  - variant_id: outcasts
-    variant_name: Outcasts
-    wave_id: outcasts
-    wave_name: Outcasts
-    box: Outcasts
+  - box: Outcasts
     background: Taqren is Z’hana’s son, marked by his father’s death in the Fall.
       He believes in protection above all else and followed his mother south to
       bring her back and keep others safe.
@@ -746,11 +594,7 @@ mages:
     for his single breach
   weaknesses: Starts with only one breach and struggles to prep spells
   variants:
-  - variant_id: shattered_dreams
-    variant_name: Shattered Dreams
-    wave_id: shattered_dreams
-    wave_name: Shattered Dreams
-    box: Shattered Dreams
+  - box: Shattered Dreams
 - id: mazra
   name: Mazra
   background: Mazra is Razra’s studious sister.  From an early age she petitioned
@@ -764,11 +608,7 @@ mages:
   weaknesses: Her power is tied to her personal deck; if she cannot upgrade her cards
     effectively she falls behind
   variants:
-  - variant_id: legacy_of_gravehold
-    variant_name: Legacy of Gravehold
-    wave_id: legacy_of_gravehold
-    wave_name: Legacy of Gravehold
-    box: Legacy of Gravehold
+  - box: Legacy of Gravehold
     background: In Legacy of Gravehold, Mazra is a brilliant scholar forced to face
       messy politics and betrayal.  Assigned to the Northern Outpost, she begins
       questioning the council and learns hard lessons about leadership.
@@ -787,11 +627,7 @@ mages:
   strengths: Qu switches between Builder and Destroyer forms
   weaknesses: Flipping forms at inopportune moments can hinder coordination
   variants:
-  - variant_id: outcasts
-    variant_name: Outcasts
-    wave_id: outcasts
-    wave_name: Outcasts
-    box: Outcasts
+  - box: Outcasts
     background: After time in New Gravehold, Qu returns to the Void, uneasy with
       comfort and drawn to the fight.  She follows Xaxos’s call, hoping to earn
       acceptance for her divided nature.
@@ -803,11 +639,7 @@ mages:
     story_notes: Qu rejoined Xaxos in the Void, guiding a group of mages through its
       hazards.  At the fountain of souls she helped destroy the source once its
       corruption was revealed.
-  - variant_id: the_surface
-    variant_name: The Surface
-    wave_id: the_surface
-    wave_name: The Surface
-    box: The Surface
+  - box: The Surface
     background: In The Surface era, Qu lives between forms and loyalties, carrying both childlike wonder and predator instincts. She names Xaxos as the one who saved her and calls him family in her own way, even as the Void still unsettles her sleep.
     appearance: Qu appears half-human and half-monster, with one side soft and playful and the other scaled and fanged, embodying her split identity.
     strengths: Qu begins with her Form card on the Giver side and can weaponize transformation, shifting posture and pressure as battles evolve.
@@ -832,16 +664,8 @@ mages:
     he was raised by a plant‑based Nameless and vowed to expose those who turned his
     kin against him while healing the land.
   variants:
-  - variant_id: into_the_wild
-    variant_name: Into the Wild
-    wave_id: into_the_wild
-    wave_name: Into the Wild
-    box: Into the Wild
-  - variant_id: the_surface
-    variant_name: The Surface
-    wave_id: the_surface
-    wave_name: The Surface
-    box: The Surface
+  - box: Into the Wild
+  - box: The Surface
     background: In The Surface, Inco carries the memory of Necroswarm as both wound and inheritance. He leaves New Gravehold on a solitary pilgrimage, replanting his caretaker's last sapling and seeking where that strange bond truly belongs.
     appearance: A green-haired youth wrapped in living vines and bright fungal growths, dressed in weathered field clothes and standing with wary tenderness.
     strengths: Inco can spend aether to cultivate the Firethorn deck, turning rare growth into adaptable tools and sustained pressure.
@@ -868,11 +692,7 @@ mages:
     uncovered evidence of a traitor smuggling relics and chased the saboteur with Rip
     before reporting the betrayal to the council.
   variants:
-  - variant_id: legacy_of_gravehold
-    variant_name: Legacy of Gravehold
-    wave_id: legacy_of_gravehold
-    wave_name: Legacy of Gravehold
-    box: Legacy of Gravehold
+  - box: Legacy of Gravehold
     background: In Legacy of Gravehold, Razra embraces adventure and rough‑and‑ready
       alliances in the southern wilds.  She is blunt, forgiving but not forgetful,
       and driven to protect new friends.
@@ -893,11 +713,7 @@ mages:
   weaknesses: Cairna relies on other players’ opened breaches to make use of the spells
     she provides
   variants:
-  - variant_id: return_to_gravehold
-    variant_name: Return to Gravehold
-    wave_id: return_to_gravehold
-    wave_name: Return to Gravehold
-    box: Return to Gravehold
+  - box: Return to Gravehold
 - id: ohat-and-ulgimor
   name: Ohat and Ulgimor
   background: Ohat was a cowardly merchant when the tunnels collapsed, but he was
@@ -910,11 +726,7 @@ mages:
   weaknesses: Switching between forms requires careful management of their life total
     and board state
   variants:
-  - variant_id: return_to_gravehold
-    variant_name: Return to Gravehold
-    wave_id: return_to_gravehold
-    wave_name: Return to Gravehold
-    box: Return to Gravehold
+  - box: Return to Gravehold
 - id: lucien
   name: Lucien
   background: Lucien hails from Azer, a Southern village where each mage has a bond
@@ -927,11 +739,7 @@ mages:
     aether, destroy cards or add harm when spells are cast
   weaknesses: Lucien’s power grows slowly until he opens all three special breaches
   variants:
-  - variant_id: southern_village
-    variant_name: Southern Village
-    wave_id: southern_village
-    wave_name: Southern Village
-    box: Southern Village
+  - box: Southern Village
 - id: reth
   name: Reth
   background: Reth is another mage from Azer who lost her Tether.  Unlike Lucien,
@@ -946,11 +754,7 @@ mages:
   weaknesses: Reth depends on drawing multiple copies of the same spell; without duplicates
     her turns are weaker
   variants:
-  - variant_id: southern_village
-    variant_name: Southern Village
-    wave_id: southern_village
-    wave_name: Southern Village
-    box: Southern Village
+  - box: Southern Village
 - id: ilya
   name: Ilya
   background: 'Ilya is a breach mage from Azer who reads the flow of aether like a
@@ -965,11 +769,7 @@ mages:
     that allowed the group to breathe in the Void and warned of a dream‑eater before
     skeletal armies attacked.
   variants:
-  - variant_id: outcasts
-    variant_name: Outcasts
-    wave_id: outcasts
-    wave_name: Outcasts
-    box: Outcasts
+  - box: Outcasts
 - id: kel
   name: Kel
   background: Kel is an Azerian Tether who masks a tender core with a tough exterior.
@@ -985,11 +785,7 @@ mages:
     through the Void with Ilya, sustaining the shared portal that kept the group
     alive.
   variants:
-  - variant_id: outcasts
-    variant_name: Outcasts
-    wave_id: outcasts
-    wave_name: Outcasts
-    box: Outcasts
+  - box: Outcasts
 - id: thraxir
   name: Thraxir
   background: Thraxir is a former human twisted by the Void who fights to reclaim
@@ -1011,16 +807,8 @@ mages:
     The monster's claws slice through him, cutting him in two as easily as ripping
     paper.  Brama memorizes the empty gray of his eyes before turning away.
   variants:
-  - variant_id: outcasts
-    variant_name: Outcasts
-    wave_id: outcasts
-    wave_name: Outcasts
-    box: Outcasts
-  - variant_id: the_descent
-    variant_name: The Descent
-    wave_id: the_descent
-    wave_name: The Descent
-    box: The Descent
+  - box: Outcasts
+  - box: The Descent
     background: In The Descent, Thraxir is known as The Commander.  He is one of the
       Followers—a group of mages outside the elite Sisterhood—who discovered his
       magical abilities when he opened a breach during battle with a Nameless.
@@ -1034,11 +822,7 @@ mages:
 - id: arachnos
   name: Arachnos
   variants:
-  - variant_id: outcasts
-    variant_name: Outcasts
-    wave_id: outcasts
-    wave_name: Outcasts
-    box: Outcasts
+  - box: Outcasts
     background: A version of Arachnos appears as a playable mage in the Outcasts expansion,
       but the official wiki provides no story or description for this character.
     appearance: A gaunt figure whose limbs are laced with web‑like scars; faint chitinous
@@ -1055,11 +839,7 @@ mages:
 - id: indira
   name: Indira
   variants:
-  - variant_id: legacy_of_gravehold
-    variant_name: Legacy of Gravehold
-    wave_id: legacy_of_gravehold
-    wave_name: Legacy of Gravehold
-    box: Legacy of Gravehold
+  - box: Legacy of Gravehold
     background: Indira’s story in Legacy of Gravehold reveals her deep regret for
       past cowardice.  She admits that when Brama grew paranoid and banished Arachnos
       and Karak she celebrated their exile, but she remained silent when her own teacher
@@ -1090,11 +870,7 @@ mages:
     exhausting them, enabling repeated spell use
   weaknesses: Auren's strategy requires building relics and may be slow to start
   variants:
-  - variant_id: past_and_future
-    variant_name: Past and Future
-    wave_id: past_and_future
-    wave_name: Past and Future
-    box: Past and Future
+  - box: Past and Future
 - id: willow
   name: Willow
   background: Willow loves the thrill of using magic, even though the elders warn
@@ -1109,11 +885,7 @@ mages:
   weaknesses: Willow’s high‑risk spells consume her life; her deck can be fragile
     if she overextends
   variants:
-  - variant_id: past_and_future
-    variant_name: Past and Future
-    wave_id: past_and_future
-    wave_name: Past and Future
-    box: Past and Future
+  - box: Past and Future
 - id: ona
   name: Ona
   background: Ona is a Wraithtouched elder whose body has sprouted tendrils of corruption.  Each
@@ -1131,11 +903,7 @@ mages:
     zone
   weaknesses: She requires careful management of her swap zone and ability zone
   variants:
-  - variant_id: past_and_future
-    variant_name: Past and Future
-    wave_id: past_and_future
-    wave_name: Past and Future
-    box: Past and Future
+  - box: Past and Future
 - id: nadea
   name: Nadea
   background: Serving as a town guard in Port Hanon under Captain Talie, Nadea believes it is
@@ -1151,11 +919,7 @@ mages:
     cards in her set aside pile, grants an ally a spell into their hand
   weaknesses: Focuses on defensive play; her offensive potential is limited
   variants:
-  - variant_id: past_and_future
-    variant_name: Past and Future
-    wave_id: past_and_future
-    wave_name: Past and Future
-    box: Past and Future
+  - box: Past and Future
 - id: kiri-and-phoenix
   name: Kiri and Phoenix
   background: Kiri, a field naturalist, observes a flock of phoenixes and mimics their
@@ -1168,11 +932,7 @@ mages:
   weaknesses: She relies on maintaining her Phoenix companion; losing it reduces her
     effectiveness
   variants:
-  - variant_id: origins
-    variant_name: Origins
-    wave_id: origins
-    wave_name: Origins
-    box: Origins
+  - box: Origins
 - id: dorian
   name: Dorian
   background: Dorian is arrogant and sees magic as easy.  He manipulates aether across
@@ -1185,11 +945,7 @@ mages:
   weaknesses: His arrogance leads him to risky plays; mishandling time effects can
     backfire
   variants:
-  - variant_id: evolution
-    variant_name: Evolution
-    wave_id: evolution
-    wave_name: Evolution
-    box: Evolution
+  - box: Evolution
 - id: janti
   name: Janti
   background: Janti defied the elders by learning the sister-words despite being born
@@ -1215,11 +971,7 @@ mages:
     one in play to inflicts harm
   weaknesses: She depends on drawing useful Infusions; random draws may not synergise
   variants:
-  - variant_id: the_descent
-    variant_name: The Descent
-    wave_id: the_descent
-    wave_name: The Descent
-    box: The Descent
+  - box: The Descent
 - id: alcheia
   name: Alcheia
   background: Alcheia loves the gemstones lining the underground tunnels and is frustrated
@@ -1231,11 +983,7 @@ mages:
   strengths: Alcheia uses a unique facet deck
   weaknesses: Managing the facet deck and balancing card requires requires planning
   variants:
-  - variant_id: the_caverns
-    variant_name: The Caverns
-    wave_id: the_caverns
-    wave_name: The Caverns
-    box: The Caverns
+  - box: The Caverns
 - id: bayli
   name: Bayli
   background: Bayli comes from the city of Souston and is an ambitious, talented mage
@@ -1253,11 +1001,7 @@ mages:
     powerful aggressive mage with high cycling potential.
   weaknesses: Her aggressive playstyle may leave her vulnerable if she overextends.
   variants:
-  - variant_id: past_and_future
-    variant_name: Past and Future
-    wave_id: past_and_future
-    wave_name: Past and Future
-    box: Past and Future
+  - box: Past and Future
 - id: leisan
   name: Leisan
   background: Leisan is a huntress who confronts the Nameless and collects trophies
@@ -1278,11 +1022,7 @@ mages:
   weaknesses: Requires building up charges before transformation; vulnerable until
     she manifests.
   variants:
-  - variant_id: the_descent
-    variant_name: The Descent
-    wave_id: the_descent
-    wave_name: The Descent
-    box: The Descent
+  - box: The Descent
 - id: raven
   name: Raven
   background: Raven is the last survivor of the First Tribe, a group of archivists
@@ -1314,11 +1054,7 @@ mages:
     for safekeeping before joining the fight.  In the final speech about who they
     are fighting for, Brama names "Raven's baby girl" among those who matter most.
   variants:
-  - variant_id: the_descent
-    variant_name: The Descent
-    wave_id: the_descent
-    wave_name: The Descent
-    box: The Descent
+  - box: The Descent
 - id: remnant
   name: Remnant
   background: Remnant is an ethereal entity—a supernatural being that may have once
@@ -1333,11 +1069,7 @@ mages:
   weaknesses: Her ethereal nature makes her fragile and dependent on allies for
     protection.
   variants:
-  - variant_id: the_outer_dark
-    variant_name: The Outer Dark
-    wave_id: the_outer_dark
-    wave_name: The Outer Dark
-    box: The Outer Dark
+  - box: The Outer Dark
 - id: kavoc
   name: Kavoc
   background: Kavoc is an ambitious scholar devoted to researching aether and breach
@@ -1358,11 +1090,7 @@ mages:
     are stronger versions of his starters.
   weaknesses: Relies on knowledge marker accumulation; requires careful deck management.
   variants:
-  - variant_id: past_and_future
-    variant_name: Past and Future
-    wave_id: past_and_future
-    wave_name: Past and Future
-    box: Past and Future
+  - box: Past and Future
 - id: lilly
   name: Lilly
   background: Lilly is the daughter of Inco and Razra.  Raised with Void creatures
@@ -1382,11 +1110,7 @@ mages:
     spells dealing damage based on nemesis tier (3/6/9).
   weaknesses: Dependent on minion cards; struggles without her creature companions.
   variants:
-  - variant_id: past_and_future
-    variant_name: Past and Future
-    wave_id: past_and_future
-    wave_name: Past and Future
-    box: Past and Future
+  - box: Past and Future
 - id: naftir
   name: Naftir
   background: Naftir is a descendant of Xaxos, a man corrupted by the Void.  He says,
@@ -1406,11 +1130,7 @@ mages:
     spells and deals 3 bonus damage after the third.
   weaknesses: Complexity 5 requires careful token and breach management.
   variants:
-  - variant_id: past_and_future
-    variant_name: Past and Future
-    wave_id: past_and_future
-    wave_name: Past and Future
-    box: Past and Future
+  - box: Past and Future
 - id: rhys
   name: Rhys
   background: Rhys is a mage whose mother wished for a daughter with natural magical
@@ -1432,11 +1152,7 @@ mages:
   weaknesses: Complex breach management with up to 6 artificial breaches requires
     significant aether investment.
   variants:
-  - variant_id: past_and_future
-    variant_name: Past and Future
-    wave_id: past_and_future
-    wave_name: Past and Future
-    box: Past and Future
+  - box: Past and Future
 - id: shoshana
   name: Shoshana
   background: Shoshana comes from a family of Tethers from the swamp village Faen.
@@ -1457,11 +1173,7 @@ mages:
     token and replaces a starter card with Soul Facet.
   weaknesses: Dependent on her tethered ally; if they struggle, so does she.
   variants:
-  - variant_id: past_and_future
-    variant_name: Past and Future
-    wave_id: past_and_future
-    wave_name: Past and Future
-    box: Past and Future
+  - box: Past and Future
 - id: kain
   name: Kain
   background: Kain is a character who sees beauty in the Void where others see only
@@ -1474,11 +1186,7 @@ mages:
     Her Spirit Breach adds +1 damage and grants an ally an aether token.
   weaknesses: Requires Gravehold to have high health to access her offensive mode.
   variants:
-  - variant_id: tales_of_old_gravehold
-    variant_name: Tales of Old Gravehold
-    wave_id: tales_of_old_gravehold
-    wave_name: Tales of Old Gravehold
-    box: Tales of Old Gravehold
+  - box: Tales of Old Gravehold
 - id: xae
   name: Xae
   background: Xae is the Captain of the Mage's Faction from the world of One Deck
@@ -1492,11 +1200,7 @@ mages:
     adds +1 damage per cast.
   weaknesses: Once spells from her Vortex Deck are destroyed, they cannot be recovered.
   variants:
-  - variant_id: promo_pack_1_digital
-    variant_name: Promo Pack 1 (Digital)
-    wave_id: promo_pack_1_digital
-    wave_name: Promo Pack 1 (Digital)
-    box: Promo Pack 1 (Digital)
+  - box: Promo Pack 1 (Digital)
 - id: tressa
   name: Tressa
   background: Tressa is a treasure hunter who learned breach magic more for survival than prestige. She deflects lectures about duty with jokes and bravado, but beneath the swagger she cares fiercely for her city and the people she loves.
@@ -1505,8 +1209,4 @@ mages:
   weaknesses: High-complexity setup can punish rushed decisions; if her vault plan misaligns with the fight, she loses tempo and impact.
   story_notes: In The Returned era, Tressa reframes herself from opportunistic scavenger to committed defender after becoming a parent. She still chases "new shinies," but now treats each find as a way to protect New Gravehold rather than merely prove herself.
   variants:
-  - variant_id: the_returned
-    variant_name: The Returned
-    wave_id: the_returned
-    wave_name: The Returned
-    box: The Returned
+  - box: The Returned

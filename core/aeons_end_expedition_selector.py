@@ -196,7 +196,13 @@ def load_mages(path: str) -> List[Dict[str, Any]]:
     data = load_yaml(path)
     if not isinstance(data, dict) or "mages" not in data or not isinstance(data["mages"], list):
         raise ValueError("mages YAML must be a dict with key 'mages' containing a list")
-    return data["mages"]
+    mages = data["mages"]
+    for mage in mages:
+        for variant in mage.get("variants") or []:
+            if not _safe_get(variant, "box"):
+                mage_name = mage.get("name", "<unknown>")
+                raise ValueError(f"mage variant for '{mage_name}' is missing required field 'box'")
+    return mages
 
 def load_list_root(path: str, root_key: str) -> List[Dict[str, Any]]:
     data = load_yaml(path)
@@ -265,10 +271,9 @@ def eligible_mages_with_variants(
         in_scope_variants: List[Dict[str, Any]] = []
         for v in variants:
             v_box = _safe_get(v, "box")
-            v_wave = _safe_get(v, "wave_name", "wave_id")
             if in_scope_by_box_or_wave(
                 entity_box=str(v_box) if v_box else None,
-                entity_wave=str(v_wave) if v_wave else None,
+                entity_wave=None,
                 allowed_waves=allowed_waves,
                 allowed_boxes=allowed_boxes,
                 box_to_wave=box_to_wave,
