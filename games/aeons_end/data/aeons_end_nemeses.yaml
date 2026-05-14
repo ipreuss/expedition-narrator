@@ -75,17 +75,32 @@ nemeses:
   background: |
     Elders whisper that Crooked Mask is a god of corruption whose weapon is
     temptation.  This Nameless feeds on desire, offering survivors what they
-    most crave in exchange for their souls.  People murmur that behind its grin
-    lies a desolate laugh and that a terrible sound lurks beneath its chiming
-    bells.  Those who confront Crooked Mask report vivid dreams and intrusive
-    thoughts that test their loyalty to one another.  Only strong bonds of trust
-    and self-control can resist its lure.
+    most crave in exchange for their souls.
+
+    The elders of Gravehold say there is a god for every force in existence,
+    and if that belief is true, then Crooked Mask's domain is corruption.
+    Survivors ask how anyone can slay such a being when, after years of siege
+    and scarcity, restraint itself becomes a battlefield.
+
+    Many in Gravehold murmur that behind its warped visage hides a cruel,
+    desolate grin.  In battle they hear a thin laugh beneath the bells and the
+    screams, while vivid dreams and intrusive thoughts spread through the ranks.
+    Only discipline, trust, and mutual vigilance keep a breach mage from being
+    quietly turned against their own allies.
   difficulty: 5
   life: 70
   appearance: |
-    A menacing entity with a crooked, distorted mask.  The design emphasizes
-    disease and decay through its twisted features and disturbing visage.
-    Something sinister hides behind the grinning mask.
+    A menacing entity with a crooked, distorted mask, now revealed in fuller
+    detail as a gaunt, regal horror draped in torn violet robes.  A jagged
+    golden crown frames a split visage stretched over a maw of sharp teeth,
+    while corpse-green limbs end in long hooked claws raised like a puppeteer
+    conducting the panic below.
+
+    Brass fittings and bell-like ornaments hang at its side, reinforcing the
+    impression of a ceremonial executioner.  The posture is theatrical rather
+    than bestial: one hand lifted high in invitation, the other curled as if
+    closing around an unseen bargain.  Every visual detail suggests decay,
+    seduction, and calculated cruelty rather than brute force.
   strengths: |
     Uses a secondary Corruption deck to place debilitating cards into player
     decks and hands.  Corruptions trigger at turn start and after drawing.
@@ -1021,12 +1036,32 @@ nemeses:
 - name: The Coven
   box: The Descent
   battle: 2
-  background: 'Brama recalls visiting a remote settlement and encountering elders
-    who mocked New Gravehold’s attempts to build a permanent community.  The settlers
-    sneered at the idea that mages could keep the Nameless at bay.  The Coven formed
-    in those desolate caves, seeking to harness the Nameless rather than fight them. '
-  appearance: A trio of witches chanting over a bubbling cauldron, their eyes glowing
-    with void power.
+  background: |
+    Brama recalls visiting a remote settlement and encountering elders who mocked
+    New Gravehold's attempts to build a permanent community.  In those desolate
+    caves, the Coven formed around a simple creed: do not resist the Nameless,
+    harness them.
+
+    Years later, Brama remembers Donnyton as one of those places where people had
+    tried to rebuild ordinary life beyond the city walls.  The Sisterhood elders
+    accepted shelter, food, and news from the settlers, then ridiculed their hope
+    in private and called permanence a dangerous illusion.
+
+    When Brama returns, that same road leads into silence and broken structures.
+    The women who once built hearths now offer survival through surrender, arguing
+    that resistance is vanity and submission is the only practical path left.  The
+    Coven's real danger is not only their void magic, but the certainty of that
+    argument in a world already exhausted by loss.
+  appearance: |
+    A trio of witches chanting over a bubbling cauldron, their eyes glowing with
+    void power, is the image most refugees repeat when they describe the Coven's
+    rites.
+
+    In battle, the leading pair is often seen up close: regal, predatory figures
+    with horned crowns, dark layered raiment, and controlled expressions that feel
+    more judgmental than feral.  Red light glows through fissures in armour and
+    cloth, while tendril-like forms coil behind them, turning each confrontation
+    into an intimate ritual of persuasion and threat.
   strengths: Uses hex tokens to curse players’ decks and supply piles
   weaknesses: Destroying hex tokens and familiars weakens their spells
 - name: The Infecter
@@ -1292,17 +1327,38 @@ nemeses:
 - name: Corruption's Core
   box: Past and Future
   battle: 4
-  background: 'In the Future expedition, Corruption''s Core dwells at the heart of Duskling
-    Tower—a structure taller than any castle, taller even than the legends of Old Gravehold,
-    rising in the center of a city that wanders through the True Void.  "You should not
-    have come here," it hisses.  "I have trapped it here."  The creature bears an unsettling
-    resemblance to Naftir; when the mages confront it, Naftir''s own eyes begin to glow
-    blue as the corruption recognizes something of itself in him.  This corrupted keeper
-    of the void hungers to reduce all life to dust, its glass bones and writhing form
-    a testament to what the void makes of those it claims.'
-  appearance: A corrupted creature with features resembling Naftir, surrounded by
-    pulsing black and violet energy.  Its glass bones show through corrupted flesh,
-    and tendrils of crackling void extend from its form.
+  background: |
+    In the Future expedition, Corruption's Core dwells at the heart of Duskling
+    Tower—a structure taller than any castle, taller even than the legends of
+    Old Gravehold, rising in the center of a city that wanders through the True
+    Void.  "You should not have come here," it hisses.  "I have trapped it
+    here."  The creature bears an unsettling resemblance to Naftir; when the
+    mages confront it, Naftir's own eyes begin to glow blue as the corruption
+    recognizes something of itself in him.
+
+    Xaxos describes the force behind it as Void essence: the opposite of aether,
+    a concentrated entropy that breaks living forms down and remakes them into
+    twisted reflections.  In his exile journals he writes that prolonged exposure
+    hardens flesh into scales and alters the mind as surely as the body.  The
+    city around Duskling Tower, with forests, roads, and even ancient ruins,
+    feels like a fragment of the world dragged across a breach and reshaped by
+    the same corruptive pressure.
+
+    Corruption's Core is not merely a guardian of that place but its animating
+    will: a keeper that seeks to reduce life to dust while proving that identity
+    itself can be rewritten by the Void.
+  appearance: |
+    A corrupted creature with features resembling Naftir, surrounded by pulsing
+    black and violet energy.  Its glass bones show through corrupted flesh, and
+    tendrils of crackling void extend from its form.
+
+    In card art, the figure appears almost avian and ceremonial: a narrow,
+    beak-like mask beneath luminous goggles, framed by white-violet fur and
+    streaming ribbons of dark energy.  Before it hovers a radiant sphere of
+    condensed void power, from which hooked shadow-spines arc outward like claws
+    reaching into the battlefield.  The composition suggests a cold researcher
+    turned executioner, channeling corruption as a precise instrument rather than
+    a wild storm.
   strengths: Uses void tokens placed on breaches; its connection to Naftir's bloodline
     gives it insight into the mages' weaknesses
   weaknesses: Players can remove void tokens or avoid casting from void-infested breaches
