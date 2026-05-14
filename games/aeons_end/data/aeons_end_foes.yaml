@@ -134,3 +134,19 @@ foes:
     the turn order can blunt his impact.'
 
   meta: 'This foe is actually another manifestation of Xaxos who has betrayed his comrades.'
+- name: The Mask
+  box: The Surface
+  background: '"After we defeat a Nameless, we know better than to assume it''s gone forever. But we never spare much thought for where it goes. This creature is so familiar to me, like something I met once in my childhood. Something in me already knows not to trust it." — Qu, the Changeling
+
+    '
+  appearance: A humanoid Nameless with green skin, a hooded cloak, and a mask-like face.
+  strengths: It weaponizes familiarity and mistrust, unsettling mages who feel they have seen it before.
+  weaknesses: Its threat appears tied to deception and proximity; coordinated focus may deny it the confusion it feeds on.
+- name: Jeweled Wrath
+  box: The Returned
+  background: '"When you''ve been a treasure hunter as long as I have, you learn the hard way that not everything that glitters is gold. Sometimes, what glitters is a jewel-encrusted monster just waiting to jump out and drag you home for dinner. Other times, it''s gold." — Tressa, the Collector
+
+    '
+  appearance: A jewel-encrusted humanoid figure seated on a crystalline throne, surrounded by red and blue crystal formations.
+  strengths: It lures the greedy and the desperate, turning glittering bait into sudden violence.
+  weaknesses: Predictable appetite for valuables can be exploited to draw it into prepared kill zones.

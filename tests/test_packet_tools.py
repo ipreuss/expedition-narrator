@@ -1,15 +1,11 @@
 import json
 from pathlib import Path
-from types import SimpleNamespace
 
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 
-try:
-    import yaml  # type: ignore
-except ModuleNotFoundError:  # pragma: no cover - fallback for environments without PyYAML
-    yaml = SimpleNamespace(safe_load=lambda stream: json.load(stream))  # type: ignore
+import yaml  # type: ignore
 
 from core import aeons_end_expedition_selector as selector
 import expedition_packet_tools as tools

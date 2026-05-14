@@ -86,3 +86,11 @@ Tests are in `tests/test_expedition_selector.py`. Run with:
 ```bash
 .venv/bin/pytest tests/
 ```
+
+## Diegetic Narration Data Quality
+- When writing or revising `background`, `story_notes`, `appearance`, `strengths`, or `weaknesses` fields in game data files, optimize for a diegetic narrator that will generate new in-world stories.
+- Prefer concrete, story-usable details (motivations, relationships, tensions, vows, fears, sensory cues, signature behaviors) over abstract summaries.
+- Keep mechanics references accurate but framed as narrative affordances (what this lets the character do in-scene).
+- Avoid out-of-world phrasing such as “placeholder”, “unknown”, or implementation-centric wording when enough card/lore context exists.
+- If details are genuinely unavailable, keep entries concise and explicitly uncertainty-aware without breaking immersion.
+
