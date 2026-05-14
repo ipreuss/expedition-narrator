@@ -2,6 +2,7 @@ import json
 import sys
 from pathlib import Path
 from types import SimpleNamespace
+import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -77,3 +78,21 @@ def test_multi_game_routes_aeons_end_without_expedition_difficulty():
 
     assert packet["meta"]["inputs"]["mage_count"] == 2
     assert packet["meta"]["inputs"]["length"] == "standard"
+
+
+def test_multi_game_rejects_invalid_game_key():
+    with pytest.raises(multi_cgi.ApiError, match="Unknown game"):
+        multi_cgi._handle_select_expedition({"game": "not_a_game", "mage_count": 2})
+
+
+def test_multi_game_astro_knights_rejects_invalid_expedition_difficulty():
+    with pytest.raises(ValueError, match="expedition_difficulty"):
+        multi_cgi._handle_select_expedition(
+            {
+                "game": "astro_knights",
+                "mage_count": 2,
+                "content_boxes": ["Astro Knights - Eternity"],
+                "expedition_difficulty": "mythic",
+                "seed": 123,
+            }
+        )
