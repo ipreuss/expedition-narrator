@@ -2,7 +2,6 @@ import json
 import sys
 from collections import Counter
 from pathlib import Path
-from types import SimpleNamespace
 
 import pytest
 
@@ -10,11 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-try:
-    import yaml  # type: ignore
-except ModuleNotFoundError:  # pragma: no cover - fallback for environments without PyYAML
-    yaml = SimpleNamespace(safe_load=lambda stream: json.load(stream))  # type: ignore
-    sys.modules["yaml"] = yaml  # type: ignore
+import yaml  # type: ignore
 
 from core import aeons_end_expedition_selector as selector
 from core import astro_knights_expedition_selector as astro_selector

@@ -384,6 +384,16 @@ mages:
     wave_id: war_eternal
     wave_name: War Eternal
     box: War Eternal
+  - variant_id: the_returned
+    variant_name: The Returned
+    wave_id: the_returned
+    wave_name: The Returned
+    box: The Returned
+    background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
+    appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
+    strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
+    weaknesses: Her plan blooms late; if pressure peaks early, she can struggle before her Intoned engine is established.
+    story_notes: She emerges from the Void carrying old grudges and an almost-military vision for her rescued children—Garu, Dezmodia, and Kain—then abandons vengeance after meeting Indira and witnessing fragile trust firsthand. In The Returned era, her arc centers on earning that trust daily and teaching younger mages without repeating the cruelties that shaped her exile.
 - id: gex
   name: Gex
   background: Gex is a thoughtful advisor who holds deep discussions with her ally
@@ -402,6 +412,16 @@ mages:
     wave_id: war_eternal
     wave_name: War Eternal
     box: War Eternal
+  - variant_id: the_returned
+    variant_name: The Returned
+    wave_id: the_returned
+    wave_name: The Returned
+    box: The Returned
+    background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
+    appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
+    strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
+    weaknesses: Her plan blooms late; if pressure peaks early, she can struggle before her Intoned engine is established.
+    story_notes: She emerges from the Void carrying old grudges and an almost-military vision for her rescued children—Garu, Dezmodia, and Kain—then abandons vengeance after meeting Indira and witnessing fragile trust firsthand. In The Returned era, her arc centers on earning that trust daily and teaching younger mages without repeating the cruelties that shaped her exile.
 - id: mazahaedron
   name: Mazahaedron
   background: Mazahaedron is the last henge mystic, a shaman who believes the world
@@ -419,6 +439,16 @@ mages:
     wave_id: war_eternal
     wave_name: War Eternal
     box: War Eternal
+  - variant_id: the_returned
+    variant_name: The Returned
+    wave_id: the_returned
+    wave_name: The Returned
+    box: The Returned
+    background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
+    appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
+    strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
+    weaknesses: Her plan blooms late; if pressure peaks early, she can struggle before her Intoned engine is established.
+    story_notes: She emerges from the Void carrying old grudges and an almost-military vision for her rescued children—Garu, Dezmodia, and Kain—then abandons vengeance after meeting Indira and witnessing fragile trust firsthand. In The Returned era, her arc centers on earning that trust daily and teaching younger mages without repeating the cruelties that shaped her exile.
   - variant_id: the_descent
     variant_name: The Descent
     wave_id: the_descent
@@ -457,6 +487,16 @@ mages:
     wave_id: war_eternal
     wave_name: War Eternal
     box: War Eternal
+  - variant_id: the_returned
+    variant_name: The Returned
+    wave_id: the_returned
+    wave_name: The Returned
+    box: The Returned
+    background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
+    appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
+    strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
+    weaknesses: Her plan blooms late; if pressure peaks early, she can struggle before her Intoned engine is established.
+    story_notes: She emerges from the Void carrying old grudges and an almost-military vision for her rescued children—Garu, Dezmodia, and Kain—then abandons vengeance after meeting Indira and witnessing fragile trust firsthand. In The Returned era, her arc centers on earning that trust daily and teaching younger mages without repeating the cruelties that shaped her exile.
 - id: ulgimor
   name: Ulgimor
   background: Ulgimor is a shadowkin beast attached to Ohat, a former dirt merchant
@@ -496,6 +536,16 @@ mages:
     wave_id: war_eternal
     wave_name: War Eternal
     box: War Eternal
+  - variant_id: the_returned
+    variant_name: The Returned
+    wave_id: the_returned
+    wave_name: The Returned
+    box: The Returned
+    background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
+    appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
+    strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
+    weaknesses: Her plan blooms late; if pressure peaks early, she can struggle before her Intoned engine is established.
+    story_notes: She emerges from the Void carrying old grudges and an almost-military vision for her rescued children—Garu, Dezmodia, and Kain—then abandons vengeance after meeting Indira and witnessing fragile trust firsthand. In The Returned era, her arc centers on earning that trust daily and teaching younger mages without repeating the cruelties that shaped her exile.
 - id: sparrow
   name: Sparrow
   background: Sparrow is a breach‑mage soldier from The Void expansion.  She is impatient
@@ -753,6 +803,16 @@ mages:
     story_notes: Qu rejoined Xaxos in the Void, guiding a group of mages through its
       hazards.  At the fountain of souls she helped destroy the source once its
       corruption was revealed.
+  - variant_id: the_surface
+    variant_name: The Surface
+    wave_id: the_surface
+    wave_name: The Surface
+    box: The Surface
+    background: In The Surface era, Qu lives between forms and loyalties, carrying both childlike wonder and predator instincts. She names Xaxos as the one who saved her and calls him family in her own way, even as the Void still unsettles her sleep.
+    appearance: Qu appears half-human and half-monster, with one side soft and playful and the other scaled and fanged, embodying her split identity.
+    strengths: Qu begins with her Form card on the Giver side and can weaponize transformation, shifting posture and pressure as battles evolve.
+    weaknesses: Her instability leaves her emotionally exposed; fear, isolation, and sensory overwhelm can disrupt her focus.
+    story_notes: Qu wanders the shifting sands outside Xaxos's cave, learning when to hide, when to bite back, and when to trust. She hears distant screams, dreams of the cocoon she left behind, and senses that Xaxos carries grief of his own—threads a narrator can use for stories about belonging, care, and inherited trauma.
 - id: inco
   name: Inco
   background: Inco is a young breach mage attuned to the natural world, raised by
@@ -777,6 +837,16 @@ mages:
     wave_id: into_the_wild
     wave_name: Into the Wild
     box: Into the Wild
+  - variant_id: the_surface
+    variant_name: The Surface
+    wave_id: the_surface
+    wave_name: The Surface
+    box: The Surface
+    background: In The Surface, Inco carries the memory of Necroswarm as both wound and inheritance. He leaves New Gravehold on a solitary pilgrimage, replanting his caretaker's last sapling and seeking where that strange bond truly belongs.
+    appearance: A green-haired youth wrapped in living vines and bright fungal growths, dressed in weathered field clothes and standing with wary tenderness.
+    strengths: Inco can spend aether to cultivate the Firethorn deck, turning rare growth into adaptable tools and sustained pressure.
+    weaknesses: His power curve depends on setup and access to Firethorn cards; without time or resources, he can feel underdeveloped in early turns.
+    story_notes: At Southpost he replants what remained of Necroswarm, then follows signs into a blooming grove deep in the Void. There he finds children with glassy, hauntingly familiar eyes—an omen that his past, the land, and the war's aftermath are still entangled.
 - id: razra
   name: Razra
   background: Razra is Mazra’s younger sister, fiercely independent and bonded to
@@ -1427,3 +1497,16 @@ mages:
     wave_id: promo_pack_1_digital
     wave_name: Promo Pack 1 (Digital)
     box: Promo Pack 1 (Digital)
+- id: tressa
+  name: Tressa
+  background: Tressa is a treasure hunter who learned breach magic more for survival than prestige. She deflects lectures about duty with jokes and bravado, but beneath the swagger she cares fiercely for her city and the people she loves.
+  appearance: A wiry mage with teal hair and tattooed arms, dressed in scavenger gear with satchel straps and tools for cracking relic vaults.
+  strengths: Tressa's Vault gives her access to level 3 treasures and lets her open with tailored relic power, making her exceptionally flexible in long, technical battles.
+  weaknesses: High-complexity setup can punish rushed decisions; if her vault plan misaligns with the fight, she loses tempo and impact.
+  story_notes: In The Returned era, Tressa reframes herself from opportunistic scavenger to committed defender after becoming a parent. She still chases "new shinies," but now treats each find as a way to protect New Gravehold rather than merely prove herself.
+  variants:
+  - variant_id: the_returned
+    variant_name: The Returned
+    wave_id: the_returned
+    wave_name: The Returned
+    box: The Returned

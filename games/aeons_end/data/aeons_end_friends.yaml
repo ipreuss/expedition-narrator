@@ -121,3 +121,19 @@ friends:
     direct ways to damage the nemesis or heal allies.
 
     '
+- name: Grimoire, the Archive
+  box: The Returned
+  background: '"I found this book in the Council archives. It''d been rescued from the Fall and carried with the survivors all these years. Within it, I found an incredibly detailed record of all the spells known and invented in our time. One day, I''ll add my own." — Mazra, the Reader
+
+    '
+  appearance: A sentient, flame-wreathed book with a screaming face rising from its pages, bound in chains.
+  strengths: The Archive preserves and recalls hard-won spellcraft, making it a living bridge between past mages and present crises.
+  weaknesses: Its value depends on others interpreting and applying what it reveals under pressure.
+- name: Sahala, the Apprentice
+  box: The Surface
+  background: '"It was odd to meet Xaxos''s new daughter. She reminds me so much of him. I did not expect to gain a sister this late in my life, but I do love her like one. She needs a guide through this world that is so new to her. I will be that for her."
+
+    '
+  appearance: A young woman in flowing white robes, reaching toward the stars while standing within a radiant golden ring.
+  strengths: Her presence lends guidance to uncertain allies and reinforces bonds of trust in tense moments.
+  weaknesses: Still inexperienced, she depends on mentors and can be shaken when responsibility falls on her alone.
