@@ -46,7 +46,12 @@ python core/aeons_end_expedition_selector.py \
 3. Tag multi-game milestones (example: `v2-multigame-foundation`)
 
 ## Testing
-Run when dependencies are available:
+Install test dependencies first (includes `PyYAML`, required by data-integrity tests):
+```bash
+python -m pip install -r requirements-dev.txt
+```
+
+Then run:
 ```bash
 pytest tests/
 ```

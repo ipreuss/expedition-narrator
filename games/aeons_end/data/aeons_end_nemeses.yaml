@@ -32,19 +32,24 @@ nemeses:
   box: Aeon's End (Core Set)
   battle: 1
   background: |
-    Also called the Mother-of-Husks or Swarm Daughter, the Carapace Queen has
-    brought more ruin upon Gravehold than any other single Nameless.  Chroniclers
-    describe her armies as endless, with husks spilling like metallic swarms from
-    cracks in the earth.  Her forces seem more clockwork than beast, and survivors
-    tell of weeks spent shoveling twitching husk remains after each siege.  Even
-    when one husk is destroyed, many more crawl from beneath her carapace.
+    The Carapace Queen—also called the Mother-of-Husks and the Swarm Daughter—is one
+    of the most ruinous Nameless to ever strike Gravehold.  Chroniclers describe the
+    titles as "dread names," each a failed attempt to make sense of a threat that
+    behaves less like a beast and more like an engine of replication.
+
+    Her armies are vast and lethal, a marching ecology of metallic husks that overrun
+    defenders through attrition.  Veterans say that killing one husk is often the
+    prelude to many more, and that true relief comes only when the Queen herself
+    retreats through the Void.
   difficulty: 3
   life: 60
   appearance: |
-    An insectoid creature with chitinous armour and beetle-like design.
-    Its body resembles a queen-insect form: darkly coloured, covered in
-    metallic shimmering plates and equipped with many segmented limbs.
-    Beneath its carapace swarm countless small husks.
+    A towering, arachnid queen with white-chitin armor plates shaped like blades and
+    shields, supported by long, bone-thin scythe limbs.
+    Her face is crowned by clustered crimson eyes beneath a skull-like crest, while
+    segmented forelimbs fold and spread like ceremonial weapons.
+    At her feet churn dense carpets of small husks, each with dim red eye-glow,
+    giving the impression that the battlefield itself is hatching.
   strengths: |
     Massive husk production quickly creates overwhelming numbers.  Swarm
     effects punish players based on husk count with escalating consequences
@@ -56,11 +61,13 @@ nemeses:
   story_notes: |
     Gravehold veterans recite a bitter proverb before every assault: "To kill one
     is to breed six."  The saying comes from hard experience with Carapace Queen
-    broods that multiply faster than defenders can burn them down.  Each skirmish
-    leaves corridors carpeted in metallic fragments and pale ichor, and cleanup
-    crews report that many husk bodies keep twitching long after the battle ends.
+    broods that multiply faster than defenders can burn them down.
 
-    When the Queen withdraws through the void, her swarm finally slows and the
+    Field reports add a grim aftermath detail: after each siege, crews spend weeks
+    shoveling metallic husk scraps into deep cave pits, where the dead keep the same
+    rigid countenances and dim red eyes they had in life.
+
+    When the Queen withdraws through the Void, her swarm finally slows and the
     surviving husks collapse where they stand.  Breach mages use that narrow window
     to regroup, triage the wounded, and destroy dormant brood-clusters before they
     reactivate.  Any delay risks another wave spilling from deep caverns and
@@ -336,13 +343,12 @@ nemeses:
     the old world, and its arrival marked the beginning of a catastrophe still
     treated as sacred warning.  Chronicles describe the fall of Karek in a single,
     deliberate gesture: streets, towers, and fleeing crowds sealed inside a mountain
-    of green glass.  The harbor cities of M'hlark followed soon after, their warm
-    shores transformed into jagged fields of frozen crystal.
+    of green glass.  The harbor towns of M'blark were next to fall, their warm waters lapping against
+    jagged, frozen shapes of those caught unaware.
 
-    Some among the First Tribe mistook the creature for a divine herald and offered
-    tribute.  None were spared.  That betrayal of hope is why survivors gave it the
-    name "Blight Lord"—not for disease of the body alone, but for the ruin that
-    follows wherever faith, stone, and flesh are vitrified into lifeless glass.
+    The elder of the First Tribe once urged tribute, mistaking it for a divine messenger.
+    None who knelt were spared.  That betrayal of hope is why survivors named it
+    "Blight Lord"—for the merciless ruin that trails behind it like a plague.
   appearance: |
     The Blight Lord resembles a colossal, many-limbed predator crawling low to the
     ground, its frame wrapped in bladed crystalline protrusions like a living crown
@@ -683,15 +689,24 @@ nemeses:
 - name: Burrower
   box: Return to Gravehold
   battle: 4
-  background: 'Cairna says she felt the Burrower long before she saw it: a deep vibration
-    moving through tunnel stone and a sense that the ground itself was becoming
-    unstable underfoot.  The Burrower is a massive Nameless that swims through solid
-    rock like water, collapsing seemingly safe passages into sudden pits and quicksand.
-    When it rises, clawed tendrils taller than a person tear through stone and scatter
-    defenders before diving below again.  It devours supply piles by destroying top
-    cards, threatening to starve mages of the tools they need to fight back.'
-  appearance: A gigantic worm-like Nameless plated with stone and crystal growths,
-    crowned by a maw of clawed tendrils that can rip through bedrock.
+  background: |
+    Cairna says she felt the Burrower long before she saw it: vibrations traveling
+    through tunnel stone and a constant warning underfoot that stable ground could
+    become a pit in a single breath.  In her account, living below Gravehold means
+    learning to mistrust silence, because this Nameless turns careful routes into
+    sudden collapses and stone into quicksand.
+
+    She glimpsed it only once—a huge body with claws as tall as she is—gliding through
+    rock as if swimming water and ripping bedrock like paper.  The Burrower attacks
+    both footing and logistics, shredding supply tops while forcing mages to navigate
+    a battlefield that keeps changing beneath them.
+  appearance: |
+    A colossal burrowing Nameless with a pale, muscular bulk and a crown of red,
+    tentacle-like feeding tendrils surrounding a vertical maw.
+    Small clustered eyes and scarred hide suggest a creature evolved for darkness,
+    while foreclaws the height of a person anchor it as it tears through tunnel walls.
+    In battle scenes it appears half-emerged from collapsed masonry, making every
+    broken floor or cracked arch feel like the start of another ambush.
   strengths: Destroys the top card of supply piles and seeds hidden trap pressure in
     the market, turning routine purchases into sudden hazards while battlefield footing
     keeps collapsing around the mages
@@ -735,17 +750,15 @@ nemeses:
   box: Southern Village
   battle: 4
   background: |
-    New Gravehold's expansion on the surface has displaced dangerous Portalborn into
-    territories that once felt comparatively sheltered.  Kel reports that Azer now
-    faces one of the worst outcomes of that pressure: the arrival of the Burning Kor,
-    a roaming inferno that burns forests into corridors of ash simply by passing
-    through.  Villages that rely on woodland cover for food and protection lose both
-    within hours, and panic spreads faster than the flames.
+    Kel's field account frames the Burning Kor as a consequence of surface expansion
+    gone wrong.  Since New Gravehold spread farms, patrols, and outposts across open
+    land, Azer's sigil-bound communities have seen Portalborn routes bend south into
+    their forests.  The Kor is the most catastrophic result: a humanoid Nameless made
+    entirely of flame that turns woodland shelter into an advancing burn zone.
 
-    The Kor is not just destructive; it actively reshapes the battlefield.  Every
-    flare it leaves behind becomes a new hazard that drives defenders out of position
-    and threatens to turn rescue efforts into mass casualties.  If the mages cannot
-    contain its firefront quickly, Azer's surrounding settlements will be consumed.
+    To Azer, the threat is existential on two fronts.  The creature itself is lethal,
+    but the inferno in its wake can be just as deadly, erasing food cover, evacuation
+    paths, and defensive terrain faster than scouts can redraw maps.
   appearance: |
     The Burning Kor appears as a towering humanoid silhouette made entirely of
     incandescent fire, as if a giant figure were sculpted from molten sunlight.
@@ -768,13 +781,14 @@ nemeses:
     their damage bursts can blunt the Kor's momentum and prevent the largest fire
     eruptions from ever triggering.
   story_notes: |
-    Kel describes the Burning Kor as a disaster that walks like a person but behaves
-    like a wildfire front.  The terror it creates comes from simultaneity: while
-    mages try to confront the Nemesis itself, the inferno in its wake keeps expanding
-    into homes, farms, and evacuation routes.
+    Kel contrasts Azer's restraint with New Gravehold's expansionist habits: her people
+    minimize open breaches and avoid conspicuous magic, while surface settlements
+    unintentionally push threats into neighboring biomes.  This perspective adds
+    political tension to Burning Kor narratives without reducing the immediate urgency.
 
-    Narratively, the battle should feel like triage under apocalyptic heat.  The
-    mages are not only slaying a monster, they are racing to keep Azer habitable.
+    In scene terms, the battle should feel like triage under apocalyptic heat.  Mages
+    must split focus between engaging a walking inferno and preserving the living
+    forest systems that keep Azer viable after the fight.
 - name: Experiment 153
   box: Outcasts
   battle: 1
@@ -1026,13 +1040,43 @@ nemeses:
 - name: Clouded Mesmer
   box: Evolution
   battle: 4
-  background: 'Dorian warns that the Clouded Mesmer is a smoke-like creature that
-    invades minds.  It compels victims to crave things they never wanted, making them
-    puppets to its will. '
-  appearance: A shapeless cloud of dark smoke with hypnotic eyes drifting within.
-  strengths: Places mesmerised tokens on players; mesmerised players must follow its
-    commands, forcing them to play or discard cards in harmful ways
-  weaknesses: Removing mesmerised tokens and resisting its commands diminish its power
+  background: |
+    Dorian, Magic Theorist, argues that Clouded Mesmer is proof the Nameless can
+    study human magic rather than merely rage against it.  In his field account,
+    the creature's smoke enters a victim's mind and manufactures urgent desires for
+    things they never wanted, then exploits those desires with surgical precision.
+
+    He describes the resulting compulsion as a bodily tyranny: even mages who hate
+    obedience feel an internal weight dragging them forward like puppets, with
+    disobedience punished by agonizing pressure "from the inside out."  Dorian's
+    conclusion is blunt—no one should face this Nameless alone.
+  appearance: |
+    A towering void-figure composed of layered black and blue smoke, with ember-orange
+    eyes burning above a torso cinched by self-binding tendrils.
+    At its center hangs a bright amber core wrapped in threadlike strands, as though
+    a stolen heart has been stitched into place.
+    Its silhouette constantly unravels into drifting vapor-arms that reach outward,
+    reinforcing the sense that its true body is the influence spreading through the air.
+  strengths: |
+    Places mesmerized tokens on players and weaponizes social positioning by assigning
+    the target to whichever mage is easiest to compromise.
+    Excels at coercion loops: compelled plays, forced discards, and hand disruption
+    make victims advance the Mesmer's agenda while starving team coordination.
+    Psychologically, it turns scarcity and private cravings into tactical liabilities.
+  weaknesses: |
+    Its control weakens when mages act as a disciplined unit instead of isolated heroes.
+    Rapid token removal, cleansing effects, and explicit table coordination deny it time
+    to escalate compulsions.
+    Narratively, characters who externalize shame and name their cravings are harder for
+    the Mesmer to steer through secrecy.
+  story_notes: |
+    Dorian's warning reframes Clouded Mesmer as an interrogator of motive, not only a
+    battlefield threat.  It does not simply force actions; it surfaces hidden wants and
+    offers the quickest path to satisfy them, even when that path destroys trust.
+
+    Expedition chroniclers use this encounter to test bonds between mages: who admits
+    fear, who hides compromise, and who volunteers to hold the target token when others
+    begin to slip.
 - name: The Coven
   box: The Descent
   battle: 2
@@ -1223,11 +1267,15 @@ nemeses:
     in crystal so that every battlefield becomes a monument to the moment people
     realized they could not run fast enough.
 
-    Raven's warning defines the tone of this encounter.  Survivors do not speak of
-    "defeating" the Blight so much as surviving passage through its territory long
-    enough to protect those still evacuating.  The Nemesis advances like a natural
-    disaster—slow, immense, and indifferent—while the horizon itself seems to turn
-    green and harden.
+    Raven, the Lone Survivor, frames this encounter as a fight against a
+    blighted god rather than an ordinary beast.  She describes battlefields littered
+    with familiar faces preserved like trophies in crystal and warns that the creature
+    grows each day until it obscures the horizon.
+
+    Survivors do not speak of "defeating" the Blight so much as surviving passage
+    through its territory long enough to protect those still evacuating.  The Nemesis
+    advances like a natural disaster—slow, immense, and indifferent—while the
+    horizon itself seems to turn green and harden.
   appearance: |
     In the illustration, The Blight appears as a colossal, low-slung predator of
     stone-like flesh and emerald crystal plating.  Jagged green growths crown its
@@ -1298,32 +1346,51 @@ nemeses:
 - name: The Changeling Nest
   box: Past and Future
   battle: 3
-  background: 'The Changeling Nest is not merely a place but a sentient hive hidden
-    in choking green swamps of the Void, where distended cocoons glow with an eerie
-    warmth.  Explorers who approach too closely report seeing human silhouettes moving
-    inside the silk, and many who try to cut the cocoons open never return.  Villagers
-    whisper that children taken by the Nest "warp up to become" something else
-    entirely.  Lily, a strange girl with too many teeth in her smile, was one such
-    collected child who somehow escaped—or was deliberately released.'
-  appearance: A sprawling nest of living vines and pulsing cocoons, with branch-like
-    antlers and newly opened eyes emerging from the swamp canopy as the hive awakens.
-    Children''s belongings lie scattered at its base.
-  strengths: Starts with multiple cocoons in play; its unleash triggers cause damage
-    based on the number of cocoons and hatch new minions
-  weaknesses: Destroying cocoons reduces the nest's damage and prevents new minions
-    from spawning
-  story_notes: |
-    In Xaxos's exile journal, he recalls stumbling upon the Changeling Nest and
-    mistaking it for an ordinary swamp hollow.  The cocoons seemed almost natural in
-    the warped landscape until he laid a hand on the silk and felt unmistakable warmth
-    in the Void.  Drawn by a human shape inside one cocoon, he tore it open and found
-    a silent girl who appeared changed yet recognizably human.
+  background: |
+    In Xaxos's exile journal, the Changeling Nest first appears as a location rather
+    than an enemy: a choking green swamp threaded with distended cocoons that glow
+    dimly among vines and muck.  Nothing seems overtly unnatural by Void standards
+    until touch breaks the illusion—its silk is warm.
 
-    As he cradled the child, the swamp stirred to life.  Branches twisted into antlers,
-    new eyes opened in the foliage, and the entire marsh revealed itself as one
-    coordinated organism.  Xaxos fled with the girl before the nest could fully close
-    around them, and his account became one of the first warnings that the Changeling
-    Nest hunts by curiosity as much as by force.
+    That warmth is the lure.  Xaxos writes that after long isolation he was entranced,
+    stepped closer, and discovered a human silhouette floating inside one cocoon.
+    Knowing it could be a trap, he tore the sticky skin open anyway and caught a little
+    girl as she fell into his arms.  She was unmistakably human, yet altered.
+
+    The rescue triggered the reveal: silence collapsed, branches bent into antlers,
+    and eyes opened through the swamp canopy.  What seemed to be terrain proved to be
+    one coordinated organism.  The Changeling Nest preys on compassion as efficiently
+    as on fear.
+  appearance: |
+    A deer-faced humanoid torso with bark-dark skin and spiraling amber eyes rises from
+    a mass of living swamp-growth, crowned by antlers that merge into branch networks.
+    Around it hang blue-white cocoons suspended like lanterns, each wrapped in slick
+    silk and shadowed by child-sized silhouettes.
+    Vines loop across the frame like tendons, suggesting the "creature" and the marsh
+    are one body with many limbs.
+  strengths: |
+    Starts with multiple cocoon cards in play and scales damage based on unresolved
+    cocoons, turning delay into a direct clock against players and Gravehold.
+    Excels at pressure through rescue dilemmas: every cocoon implies a captive, forcing
+    defenders to spend tempo on triage while the Nest hatches further threats.
+    Its psychological edge comes from appearing hospitable—warm, quiet, almost safe—
+    until the battlefield is already inside its body.
+  weaknesses: |
+    Destroying cocoons early sharply reduces its damage ceiling and interrupts hatch
+    chains before they snowball.
+    Coordinated focus fire on cocoon infrastructure prevents the Nest from converting
+    compassion-driven hesitation into board collapse.
+    Narratively, parties that establish extraction protocols before contact are less
+    vulnerable to its bait-and-reveal ambush pattern.
+  story_notes: |
+    Xaxos records details that narrators can reuse scene by scene: sticky silk warm to
+    the palm, the unnaturally silent swamp, claw-like nails from prolonged Void
+    exposure, and the instant a "place" starts looking back.
+
+    His account also links the Nest to wider continuity.  The rescued child can be read
+    as one of the "collected" children who later surface in altered forms, supporting
+    storylines around Lily, Qu, and other survivors whose humanity persists through
+    change.
 - name: Corruption's Core
   box: Past and Future
   battle: 4
