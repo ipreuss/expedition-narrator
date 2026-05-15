@@ -1507,3 +1507,61 @@ nemeses:
   weaknesses: Players can reset the Rage track with certain card effects or by destroying
     its minions; it does not seem very smart and can be kept off-balance by multiple
     attackers alternating strikes
+- name: The Timeless
+  box: The Surface
+  difficulty: 8
+  life: 60
+  battle: 3
+  battle_5_setup: |
+    During setup, swap one of the nemesis turn order cards for the Unleash turn
+    order card. Play using increased difficulty.
+  background: |
+    Scouts describe The Timeless as a Nameless tied to temporal distortion in the
+    Void.  Testimony from Qu, the Changeling, frames the creature as paradoxical:
+    ancient and too young at once, with its presence linked to memory loss,
+    age-disorientation, and the terror of time slipping out of order.
+  appearance: |
+    The card art depicts a skeletal, horned Nameless with elongated limbs rising
+    over a red breach line.
+  strengths: |
+    Its known battle-5 modifier increases Unleash cadence by changing turn-order
+    composition and pairing that change with increased-difficulty rules.  Reports
+    also emphasize psychological pressure: it destabilizes a mage's sense of age,
+    history, and continuity.
+  weaknesses: |
+    Reliable tactical counters are not yet well documented in this source set.
+    Commanders prioritize disciplined turn planning, memory anchors, and calm
+    coordination when confronting it.
+  story_notes: |
+    Qu's account links The Timeless to life in the Void where sunrise and sunset
+    lose meaning, memory becomes unreliable, and survivors struggle to measure
+    their own aging.  Narration should treat this nemesis as a threat to temporal
+    identity as much as to bodily survival.
+- name: Rampaging Vin
+  box: The Returned
+  difficulty: 8
+  life: 60
+  battle: 4
+  battle_5_setup: |
+    During setup, swap one of the nemesis turn order cards for the Unleash turn
+    order card. Setup: Gravehold suffers 8 damage.
+  background: |
+    Tressa's field account describes Rampaging Vin as an aggressive Nameless that
+    repeatedly charges in cramped cave terrain, leaving little room to maneuver.
+    Her testimony frames the encounter as brutally direct and unusually personal
+    in pressure.
+  appearance: |
+    Card art depicts a massive serpent-like Nameless with multiple limbs and
+    clusters of yellow, eye-like growths across a green carapace.
+  strengths: |
+    It applies immediate pressure through setup damage to Gravehold and a
+    turn-order swap that increases Unleash cadence, forcing defenders to stabilize
+    under tempo disadvantage.
+  weaknesses: |
+    Confirmed tactical counters are limited in this source set; survival planning
+    prioritizes positioning discipline, early mitigation, and coordinated response
+    to repeated frontal pressure.
+  story_notes: |
+    Tressa's narration emphasizes claustrophobic cave fighting, repeated charges,
+    and the emotional weight of risking her treasure-gathered resources for her
+    son's future.

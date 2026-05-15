@@ -310,15 +310,36 @@ def choose_mages_no_repeat(
     return result
 
 
-def tiers_for_length(length: str, rng: random.Random, available_tiers: Sequence[int]) -> List[int]:
+def tiers_for_length(
+    length: str,
+    rng: random.Random,
+    available_tiers: Sequence[int],
+    *,
+    uses_wave_9_content: bool = False,
+) -> List[int]:
     length = _norm_key(length)
     if length == "standard":
+        if uses_wave_9_content:
+            return [1, 2, 3, 4, 5]
         return [1, 2, 3, 4]
     if length == "long":
+        if uses_wave_9_content:
+            return [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
         return [1, 1, 2, 2, 3, 3, 4, 4]
     if length == "short":
         has1 = 1 in available_tiers
         has2 = 2 in available_tiers
+        if uses_wave_9_content:
+            # When Beyond the Breach content is enabled, short mode continues to
+            # skip the first battle of the expanded standard structure, ending on
+            # battle 5.
+            if has2:
+                first = 2
+            elif has1:
+                first = 1
+            else:
+                raise ValueError("No Tier 1 or Tier 2 nemeses available for short expedition")
+            return [first, 3, 4, 5]
         if has1 and has2:
             first = rng.choice([1, 2])
         elif has1:
@@ -332,7 +353,7 @@ def tiers_for_length(length: str, rng: random.Random, available_tiers: Sequence[
 
 
 def group_nemeses_by_tier(nemeses: List[Dict[str, Any]]) -> Dict[int, List[Dict[str, Any]]]:
-    out: Dict[int, List[Dict[str, Any]]] = {1: [], 2: [], 3: [], 4: []}
+    out: Dict[int, List[Dict[str, Any]]] = {1: [], 2: [], 3: [], 4: [], 5: []}
     for n in nemeses:
         t = _safe_get(n, "battle")
         if t is None:
@@ -343,6 +364,8 @@ def group_nemeses_by_tier(nemeses: List[Dict[str, Any]]) -> Dict[int, List[Dict[
             continue
         if tier in out:
             out[tier].append(n)
+        if _safe_get(n, "battle_5_special_rules", "battle_5_setup", "battle_5"):
+            out[5].append(n)
     return out
 
 def filter_by_scope_list(
@@ -629,7 +652,8 @@ def select_expedition(
             mage_names = {name_key(str(m.get("name") or "")) for m in chosen_mages}
 
 
-            tiers = tiers_for_length(length, rng, available_tiers)
+            uses_wave_9_content = any(name_key(box) == name_key("Beyond the Breach") for box in allowed_boxes)
+            tiers = tiers_for_length(length, rng, available_tiers, uses_wave_9_content=uses_wave_9_content)
 
 
             battle_plan, chosen_final = _pick_nemeses_for_tiers(rng, by_tier, tiers, mage_names)

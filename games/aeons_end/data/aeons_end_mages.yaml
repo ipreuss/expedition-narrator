@@ -640,11 +640,11 @@ mages:
       hazards.  At the fountain of souls she helped destroy the source once its
       corruption was revealed.
   - box: The Surface
-    background: In The Surface era, Qu lives between forms and loyalties, carrying both childlike wonder and predator instincts. She names Xaxos as the one who saved her and calls him family in her own way, even as the Void still unsettles her sleep.
+    background: In The Surface era, Qu lives between forms and loyalties, carrying both childlike wonder and predator instincts. She names Xaxos as the one who saved her and calls him family in her own way, even as the Void still unsettles her sleep. Qu openly questions her own age and timeline, describing memory gaps from her childhood, captivity, and cocoon years.
     appearance: Qu appears half-human and half-monster, with one side soft and playful and the other scaled and fanged, embodying her split identity.
     strengths: Qu begins with her Form card on the Giver side and can weaponize transformation, shifting posture and pressure as battles evolve.
     weaknesses: Her instability leaves her emotionally exposed; fear, isolation, and sensory overwhelm can disrupt her focus.
-    story_notes: Qu wanders the shifting sands outside Xaxos's cave, learning when to hide, when to bite back, and when to trust. She hears distant screams, dreams of the cocoon she left behind, and senses that Xaxos carries grief of his own—threads a narrator can use for stories about belonging, care, and inherited trauma.
+    story_notes: Qu wanders the shifting sands outside Xaxos's cave, learning when to hide, when to bite back, and when to trust. Her account of The Timeless links the Void to disrupted timekeeping—no clear sunrise or sunset, uncertain aging, and fear that years can be stolen or misplaced. She hears distant screams, dreams of the cocoon she left behind, and senses that Xaxos carries grief of his own—threads a narrator can use for stories about belonging, care, and inherited trauma.
 - id: inco
   name: Inco
   background: Inco is a young breach mage attuned to the natural world, raised by
@@ -1203,10 +1203,10 @@ mages:
   - box: Promo Pack 1 (Digital)
 - id: tressa
   name: Tressa
-  background: Tressa is a treasure hunter who learned breach magic more for survival than prestige. She deflects lectures about duty with jokes and bravado, but beneath the swagger she cares fiercely for her city and the people she loves.
+  background: Tressa is a treasure hunter who learned breach magic more for survival than prestige. She deflects lectures about duty with jokes and bravado, but beneath the swagger she cares fiercely for her city and the people she loves. In The Returned era she explicitly frames frontline risk through the lens of parenthood, measuring danger against the future she wants for her son, Nook.
   appearance: A wiry mage with teal hair and tattooed arms, dressed in scavenger gear with satchel straps and tools for cracking relic vaults.
   strengths: Tressa's Vault gives her access to level 3 treasures and lets her open with tailored relic power, making her exceptionally flexible in long, technical battles.
   weaknesses: High-complexity setup can punish rushed decisions; if her vault plan misaligns with the fight, she loses tempo and impact.
-  story_notes: In The Returned era, Tressa reframes herself from opportunistic scavenger to committed defender after becoming a parent. She still chases "new shinies," but now treats each find as a way to protect New Gravehold rather than merely prove herself.
+  story_notes: In The Returned era, Tressa reframes herself from opportunistic scavenger to committed defender after becoming a parent. Her own field account during the Rampaging Vin operation highlights claustrophobic cave fighting, her frustration at being pressed into direct Nameless combat, and her resolve to endure it for Nook's future. She still chases "new shinies," but now treats each find as a way to protect New Gravehold rather than merely prove herself.
   variants:
   - box: The Returned

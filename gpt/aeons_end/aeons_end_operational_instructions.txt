@@ -480,7 +480,9 @@ Rules
 - `Reinforcement:` is optional and appears only when present; never print "none", never print commented label lists.
 - **Expedition finale**: When the expedition ends (final battle won, or 3rd loss against the final nemesis), the Handoff block contains only `THE END` (no mages, no nemesis, no other fields).
 
-## 10) Appendix — Expedition structures (tiers and reward flow) — Expedition structures (tiers and reward flow)
+## 10) Appendix — Expedition structures (tiers and reward flow)
+Default structure (without 9th Wave content)
+
 Standard (4 battles)
 - 1: Tier 1 → personal Level 1 treasures (tagged later as allowed)
 - 2: Tier 2 → group Level 2 treasure
@@ -504,6 +506,35 @@ Long (8 battles)
 - 7: Tier 4
 - 8: Tier 4 → finale
 
+Beyond the Breach structure (when the box **Beyond the Breach** is included in selected content)
+
+Standard (5 battles)
+- 1: Tier 1 → personal Level 1 treasures (tagged later as allowed)
+- 2: Tier 2 → group Level 2 treasure
+- 3: Tier 3 → personal Level 3 treasures
+- 4: Tier 4 → Level 4 treasures, plus additional Level 1, Level 2, and Level 3 treasures
+- 5: Tier 5 → finale (nemesis-specific battle-5 setup/modifier, if provided in packet)
+
+Short (4 battles)
+- Mages start with personal Level 1 treasures (do not list them; implied only).
+- Battle 1 nemesis may be Tier 1 or Tier 2 (selector decides based on availability + random choice).
+- 1: Tier 1 or 2 → group Level 2 treasure
+- 2: Tier 3 → personal Level 3 treasures
+- 3: Tier 4 → Level 4 treasures, plus additional Level 1, Level 2, and Level 3 treasures
+- 4: Tier 5 → finale (nemesis-specific battle-5 setup/modifier, if provided in packet)
+
+Long (10 battles)
+- 1: Tier 1
+- 2: Tier 1 → personal Level 1 treasures
+- 3: Tier 2
+- 4: Tier 2 → group Level 2 treasure
+- 5: Tier 3
+- 6: Tier 3 → personal Level 3 treasures
+- 7: Tier 4
+- 8: Tier 4 → Level 4 treasures, plus additional Level 1, Level 2, and Level 3 treasures
+- 9: Tier 5
+- 10: Tier 5 → finale (nemesis-specific battle-5 setup/modifier, if provided in packet)
+
 Reward timing (all lengths)
 - Earn in aftermath; **tag appears only in next Handoff**.
 
@@ -511,3 +542,4 @@ Reward timing (all lengths)
 - **Level 1 treasures** are spells and gems. Each mage selects one individually. Once earned, the chosen spell or gem is available from the start of the next battle onward.
 - **Level 2 treasure** is a group ability that benefits the entire party.
 - **Level 3 treasures** are individual abilities. Each mage selects one personally, granting them a unique power for the remainder of the expedition.
+- **Level 4 treasures** represent late-expedition power spikes. Describe them as potent, hard-won boons that mark a major shift in what the party can attempt.
