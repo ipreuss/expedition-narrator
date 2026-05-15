@@ -169,11 +169,19 @@ mages:
     the sequence of actions
   weaknesses: He inflicts little harm himself and depends on allies to make use of
     extra opportunities
-  story_notes: Xaxos opened a catastrophic breach during the fall of Gravehold and
-    vanished into the Void.  He later returned multiple times urging the use of
-    Nameless power, clashing with other elders, and ultimately became a corrupted
-    foe in the final war.  After his defeat, a tendril dragged him back into the
-    Void, leaving his fate uncertain.
+  story_notes: |
+    Xaxos opened a catastrophic breach during the fall of Gravehold and vanished into
+    the Void.  He later returned multiple times urging the use of Nameless power,
+    clashing with other elders, and ultimately became a corrupted foe in the final war.
+    After his defeat, a tendril dragged him back into the Void, leaving his fate
+    uncertain.
+
+    Exile journals attributed to him add tactile field details used across later
+    expeditions: warmth where the Void should be cold, "silent" terrain that is actually
+    alive, and the moral trap of rescue under uncertain corruption.  His Changeling Nest
+    account—tearing open a cocoon to free a child despite suspecting an ambush—positions
+    him as both reckless and compassionate, a narrator-useful tension that complicates
+    his legacy.
   variants:
   - box: Aeon's End (Core Set)
   - box: The Void
@@ -781,9 +789,15 @@ mages:
     to two gems or relics she played this turn to her hand
   weaknesses: Kel requires a high‑value market of gems and relics to maximize her
     ability
-  story_notes: Kel defended Azer from a monstrous experiment and later traveled
-    through the Void with Ilya, sustaining the shared portal that kept the group
-    alive.
+  story_notes: |
+    Kel warns that Azer survives by strict discipline: few open breaches, minimal
+    visible magic, and constant attention to Portalborn movement patterns.  Her
+    Burning Kor account highlights her role as both protector and strategist,
+    reading regional pressure before it becomes open catastrophe.
+
+    She later traveled through the Void with Ilya, sustaining the shared portal that
+    kept the group alive while continuing to frame survival as a communal obligation,
+    not an individual triumph.
   variants:
   - box: Outcasts
 - id: thraxir
@@ -935,15 +949,34 @@ mages:
   - box: Origins
 - id: dorian
   name: Dorian
-  background: Dorian is arrogant and sees magic as easy.  He manipulates aether across
-    time and claims to write his own rules, breaking causality for trivial rewards
-    like a chunk of jade. He ignores his teachers and does whatever he wants, convinced
-    that time bends to his will.
-  appearance: A confident young man playing with glowing threads of time.
-  strengths: His ability to bend time grants extra aether and allows him to manipulate
-    the flow of battle or repurpose powerful spells
-  weaknesses: His arrogance leads him to risky plays; mishandling time effects can
-    backfire
+  background: |
+    Dorian presents himself as arrogant and irreverent, treating advanced aether theory
+    as a game he has already solved.  He boasts that he can write his own rules,
+    bending causality for petty proofs of control—such as rewinding moments just to
+    win a wager over a piece of jade.
+
+    Yet his Clouded Mesmer testimony reveals a second layer: when he speaks as "Dorian,
+    Magic Theorist," he is precise, observant, and willing to admit fear.  After being
+    exposed to the Mesmer's smoke, he records firsthand how compulsion feels in flesh
+    and thought, then warns other mages never to engage that Nameless alone.
+  appearance: |
+    A confident young theorist threading glowing strands of temporal aether between his
+    hands, posture relaxed to the point of provocation.
+    In field scenes he is often marked by restless focus—eyes tracking probabilities,
+    voice sharp with analysis even while under pressure.
+  strengths: |
+    Time-bending techniques grant extra aether, turn-sequencing leverage, and the ability
+    to repurpose major spells at critical moments.
+    Under stress, his theoretical rigor helps him identify enemy patterns quickly,
+    especially against control-oriented Nameless.
+  weaknesses: |
+    His ego invites unnecessary risk and can erode trust before a battle stabilizes.
+    He may overestimate his ability to "outplay" mental manipulation effects, making him
+    vulnerable to adversaries that punish isolation or pride.
+  story_notes: |
+    Dorian works well in narratives where bravado collides with accountability.  He is
+    compelling when forced to translate abstract theory into mentorship: naming dangers,
+    sharing hard-earned caution, and choosing collaboration over showing off.
   variants:
   - box: Evolution
 - id: janti
@@ -1045,14 +1078,23 @@ mages:
     marker per spell cast.
   weaknesses: High complexity (8) requires careful planning and knowledge token
     management.
-  story_notes: Raven is the mother of Xaxos in The Abyss timeline.  In The Descent,
-    she joins Brama's expedition after being rescued from the ruins of Karek, becoming
-    their guide through the Caverns beneath the city.  Her knowledge of the First
-    Tribe's archives proves essential, and she finally has companions after years
-    of solitude among green-glass statues of her frozen kin.  The bundle she clutches
-    so protectively is her daughter—when battle comes, Raven hands the child to Myrna
-    for safekeeping before joining the fight.  In the final speech about who they
-    are fighting for, Brama names "Raven's baby girl" among those who matter most.
+  story_notes: |
+    Raven is the mother of Xaxos in The Abyss timeline.  In The Descent, she joins
+    Brama's expedition after being rescued from the ruins of Karek, becoming their
+    guide through the Caverns beneath the city.  Her knowledge of the First Tribe's
+    archives proves essential, and she finally has companions after years of solitude
+    among green-glass statues of her frozen kin.
+
+    Her testimony during the Blight campaign is among the bleakest in the archive:
+    she describes seeing her father and uncle petrified on the field and calls the
+    creature a force beyond control or comprehension.  Even so, she chooses action
+    over surrender, insisting they fight through to protect the living and carry
+    her daughter to safety.
+
+    The bundle she clutches so protectively is her daughter—when battle comes, Raven
+    hands the child to Myrna for safekeeping before joining the fight.  In the final
+    speech about who they are fighting for, Brama names "Raven's baby girl" among
+    those who matter most.
   variants:
   - box: The Descent
 - id: remnant
