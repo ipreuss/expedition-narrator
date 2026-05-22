@@ -837,19 +837,26 @@ mages:
   name: Arachnos
   variants:
   - box: Outcasts
-    background: A version of Arachnos appears as a playable mage in the Outcasts expansion,
-      but the official wiki provides no story or description for this character.
-    appearance: A gaunt figure whose limbs are laced with web‑like scars; faint chitinous
-      protrusions on his shoulders hint at the creature he once tried to become.
+    background: In Outcasts-era records, Arachnos survives as a scarred, half-transformed
+      mage shaped by exile and failed transcendence.  He was once a trusted ally aligned
+      with Xaxos, but after council censure he helped lead a breakaway faction and continued
+      dangerous Void-adaptation experiments outside New Gravehold's protection.
+    appearance: A gaunt, long-limbed mage in worn scholar vestments, with pale web-like
+      scar tissue banding his arms and neck.  Chitinous protrusions rise from his shoulders
+      and upper back like incomplete spider limbs, and his eyes are often described as
+      carrying a cold, faceted sheen under certain light—subtle signs that the
+      transformation never fully released him.
     strengths: His Convergence ability allows him to cast any player’s prepared spell
       and give it +3 harm (from Outcasts overview table)
     weaknesses: After his fusion with a spider Nameless, he is physically fragile
       and suffers pain when drawing on the Void; if he pushes too far his body threatens
       to unravel.
-    story_notes: Arachnos, a former student of Xaxos, was exiled for forbidden experiments
-      and attempted to fuse himself with a spider Nameless.  He emerged from the
-      shattered fountain of souls half‑transformed and now warns others against
-      the same hubris, as revealed in his exile journals.
+    story_notes: Arachnos, a former student of Xaxos, was exiled after forbidden
+      experiments and rebellion against New Gravehold's authority.  He attempted to fuse
+      himself with spiderlike Nameless adaptations and emerged half-transformed.  In later
+      journals he frames himself as both cautionary example and necessary extremist—warning
+      others about hubris while still insisting his original goal, protecting humanity by
+      mastering enemy power, was not entirely wrong.
 - id: indira
   name: Indira
   variants:

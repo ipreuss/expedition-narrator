@@ -182,10 +182,22 @@ nemeses:
     Thrice-Dead Prophet and threatened to drag the city into darkness.  Indira describes
     it as a manic and feral beast with little recognizable intelligence.  It is worshipped
     by dark creatures and threatens Gravehold through its burrowing and rampaging.
+
+    Indira's account stresses the shock of witnessing a Nameless "born" rather than
+    slain: the Titan spears out of the Prophet's carcass like foul offspring, first
+    mistaken for another grotesque minion before proving itself an equal-scale threat.
+    Its emergence reframes the war as an ecosystem event, where even defeated horrors
+    may become breeding grounds for new catastrophes.
   appearance: |
-    A large, worm-like titan with dark, predominantly black colouring.  The
-    creature appears primitive and menacing, with a massive silhouette that
-    emphasizes its destructive power.  Darkness envelops its enormous body.
+    In the card art, Umbra Titan appears as a burrowing macro-predator with a
+    segmented black carapace and broad, shield-like side plates etched in pale
+    chevron patterns.  At its center, a flower-like maw glows amber-yellow, as if
+    a furnace were embedded in living armor.
+
+    Blue crystal-like protrusions stud its head and flanks, while red membrane fins
+    frame the crown behind a jagged, tooth-lined snout.  The body coils through ash
+    and broken stone, giving the impression of something that tunnels by force and
+    heat, then erupts upward without warning.
   strengths: |
     High life points and aggressive minions.  The token-loss mechanic creates
     pressure.  Minions are optimized for token loss.
@@ -197,6 +209,16 @@ nemeses:
     zero tokens, players lose.  Unleash effect: Depending on Nemesis card pile,
     a player or Gravehold suffers 2 damage, OR the Titan loses a token.  At
     increased difficulty, it starts with only 5 tokens.
+  story_notes: |
+    Narrate Umbra Titan as feral inevitability.  The dread starts before contact:
+    tremors underfoot, collapsing routes, and civilians freezing in place because
+    they cannot tell where it will surface.
+
+    Keep Indira's distinction explicit: this is not a cunning mastermind, nor a god
+    despite cult reverence—just predatory instinct at colossal scale.  That framing
+    helps stories emphasize panic management, shelter discipline, and the emotional
+    strain of fighting an adversary that feels more like a natural disaster than a
+    military opponent.
 - name: Hollow Crown
   box: War Eternal
   difficulty: 5
@@ -264,9 +286,15 @@ nemeses:
     pragmatic reformers, but desperation and ambition pushed the work toward increasingly
     unstable rituals.
 
+    Brama's Envelope 2a account clarifies the fracture: when the Council condemned his
+    work, Arachnos organized like-minded followers into open rebellion, was outnumbered,
+    and banished from New Gravehold.  Exile did not cool his conviction.  He and his
+    circle kept refining Xaxos-inspired designs in the wild, increasingly willing to cut
+    safety checks and human limits in the name of speed.
+
     The result was self-transformation.  Arachnos fused human and arachnid forms, then
     extended the same logic to living test subjects, claiming every violation was a
-    necessary step toward "protecting" humanity.  Brama's account makes the political
+    necessary step toward "protecting" humanity.  Brama's warning makes the political
     danger explicit: this is not only a Nameless threat, but proof that human zeal can
     produce horrors as devastating as the Void itself.
   appearance: |
@@ -276,8 +304,13 @@ nemeses:
     moving cage that can stride over roots and stone while enclosing prey.
 
     Pale web strands connect limb to limb and drape across surrounding trees, turning the
-    entire clearing into a ritual snare.  His upper body retains hints of mage attire,
-    but the silhouette is dominated by predatory spider anatomy and surgical precision.
+    entire clearing into a ritual snare.  The scene reads less like an ambush predator's
+    nest and more like a mobile laboratory built from living anatomy.
+
+    His upper body still carries formal mage vestments in deep blue and red, but the
+    face is obscured by clustered, cold-blue ocular growths where human features should
+    be.  That clash—scholar's robes over an engineered spider chassis—makes him look
+    like a researcher who physically merged with his own thesis.
   strengths: |
     Arachnos pressures both tempo and positioning through his Ritual Track system.
     Unleash advances the track, escalating world-devourer effects unless players spend
@@ -303,8 +336,11 @@ nemeses:
     Narrate Arachnos as a fallen intellectual, not a mindless beast.  He should sound
     convinced he is still right—calmly justifying atrocities as necessary iteration.
 
-    The emotional core is betrayal: the party is fighting someone who once shared their
-    language, methods, and hopes, and who weaponized that shared culture into predation.
+    The emotional core is betrayal with civic fallout: the party is fighting someone who
+    once shared their language, methods, and hopes, and who turned those shared ideals
+    into predation.  Fold in rumors that citizens still imagine him as merely "reduced"
+    in the wild; the truth of what he became is destabilizing enough to fracture public
+    trust if handled poorly.
 - name: Horde-Crone
   box: The Depths
   difficulty: 6
@@ -389,16 +425,26 @@ nemeses:
   life: 60
   battle: 3
   background: |
-    The Wayward One is a creature trapped between worlds, flickering and phasing
-    in and out of existence through the breaches, never truly in one place.  Like
-    the breach mages, it is lost—trapped in a place neither here nor there.  The
-    narrative suggests the entity appears almost tormented by its existence, and
-    the breach mages show it compassion through their efforts to defeat it.
+    The Wayward One is recorded as an oddity even among the Nameless: a being
+    trapped between states, neither fully here nor fully elsewhere.  Scouts first
+    spotted it flickering against the cavern vault, then watched it drift through
+    Gravehold's defenses like a broken ghost.
+
+    Early witness accounts describe contact as catastrophic.  In one market report,
+    a merchant brushed the wisps of its floating form and began fading almost
+    immediately, as if her body were being unmade into dust.  Yet the same records
+    describe the creature as tormented rather than triumphant—lost, wandering, and
+    seemingly driven by compulsion rather than malice.
   appearance: |
-    An ethereal, spectral creature with translucent, ghostly form.  Its shape
-    appears in pale, flickering tones suggesting a constant shifting between
-    states.  The design conveys a being that is neither fully present nor
-    absent—with a disturbing, otherworldly quality.
+    In the card art, Wayward One rises as a vertical mass of shadow-black vapor
+    veined with violet currents, like smoke trying to remember a body.  A narrow,
+    jagged face with red eyes and needle teeth flashes out of the haze, then seems
+    to dissolve back into it.
+
+    Tendril-like wisps peel away from the main form and curl into the air around
+    it, reinforcing a constant state of partial unraveling.  The silhouette feels
+    unstable at every edge—half apparition, half predator, and never completely in
+    one place for long.
   strengths: |
     The shifting positions of the Wayward One cause misaligned spells to deal
     reduced damage.  Some minions also have breach alignments.
@@ -410,6 +456,14 @@ nemeses:
     spells in matching breaches deal full damage; misaligned spells deal half
     damage (rounded up).  At increased difficulty, misaligned spells deal only
     1 damage instead of half.
+  story_notes: |
+    Narrate Wayward One with tragic ambiguity.  Defenders fear it, but many also
+    read it as a creature suffering the same "between-worlds" fracture that haunts
+    breach travel itself.
+
+    Scene tone should blend pity and urgency: flickering outlines on cave walls,
+    sudden disappearances, dust where a person stood moments before, and mages
+    convincing themselves that killing it may be the only compassion left to offer.
 - name: Knight of Shackles
   box: The Void
   difficulty: 4
@@ -472,26 +526,32 @@ nemeses:
   box: Aeon's End Legacy
   battle: 1
   background: |
-    Bladius is recorded as a purpose-bred lieutenant of Maelstrom: a Nameless shaped
-    for close-quarters slaughter, with every adaptation tuned for tunnel warfare.
-    Scouts describe it as a hunter that does not roam aimlessly; it patrols ruined
-    corridors and collapsed excavation routes with deliberate intent, as though it is
-    searching for something hidden beneath New Gravehold.
+    Bladius is recorded as a purpose-bred lieutenant of Maelstrom, engineered for
+    battle rather than born to it.  Field notes describe a creature whose body is
+    one continuous weapon system: blades where other beings would have hands, cutting
+    ridges along limbs and armor, and movement patterns optimized for hand-to-hand
+    execution in narrow tunnels.
 
-    That uncertainty makes Bladius especially dangerous.  Survivors cannot tell whether
-    it seeks the last human enclaves to finish Maelstrom's campaign, or whether the
-    deeper ruins contain some relic, breach-site, or passage the Nameless still covet.
-    Every encounter therefore feels like both an ambush and a reconnaissance failure.
+    It does not behave like a random prowler.  Scouts repeatedly report deliberate
+    search patterns through ruined shafts and old transit corridors beneath New
+    Gravehold.  Why it hunts these routes remains unknown.  Some believe it is trying
+    to locate and exterminate the last human pockets under Maelstrom's old command.
+    Others fear Bladius is searching for something older in the deep ruins: a breach
+    anchor, relic cache, or hidden passage the Nameless still need.
   appearance: |
-    In the illustration, Bladius has the silhouette of a towering armored duelist,
-    forged from slate-blue metal plates and blade-like growths.  Its head is crowned
-    with angular horns, its eyes glow red, and each forearm ends in elongated stabbing
-    edges rather than natural hands.
+    In the chapter art, Bladius stands amid a vortex of ochre dust and tunnel-light,
+    posed like a duelist stepping into an execution.  Its frame is plated in
+    slate-steel armor with razor seams at every joint, giving the impression that even
+    a glancing grapple would open flesh.
+
+    A crown of angular horns sweeps back from a helm-like skull, while narrow red eyes
+    burn through the haze.  Each arm terminates in elongated stabbing blades rather
+    than hands, and the fingers are shaped more like hooked puncture tools than digits.
 
     Its lower body is asymmetrical and massive, with one leg-like structure extending
-    into a heavy, segmented blade-limb that appears built to brace, sweep, and impale.
-    Floating knife-shaped shards orbit around it in attack formation, reinforcing the
-    impression that even the space near Bladius is weaponized.
+    into a heavy segmented blade-limb built to brace, sweep, and impale in confined
+    passages.  Knife-like shards hover around it in attack formation, as if the air
+    itself has been turned into a rotating kill zone.
   strengths: |
     Bladius applies immediate frontline pressure through high direct damage and persistent
     threat at melee range.  Its kit rewards tempo denial: early hits, punishing attack
@@ -505,7 +565,9 @@ nemeses:
   story_notes: |
     When narrating Bladius, emphasize claustrophobia and metallic violence: sparks in
     narrow tunnels, blade-edges scraping stone, and evacuees trapped between cave-ins
-    and a predator built for corridor kills.
+    and a predator built for corridor kills.  Make its close-combat behavior feel
+    intentional and drilled, as if it is carrying out lieutenant doctrine rather than
+    acting on instinct.
 
     The emotional beat is uncertainty.  Defeating Bladius is a victory, but also a
     warning that Maelstrom's remnants are still operating with purpose beneath the
@@ -565,6 +627,11 @@ nemeses:
   weaknesses: Slow to ramp up; if players manage early minions and focus damage they
     can defeat it before it gains momentum
   story_notes: |
+    Legacy records indicate Maelstrom did not rely on brute mass alone.  It deployed
+    specialized lieutenants such as Bladius into tunnel networks, using them as
+    precision hunters to clear corridors, isolate mage teams, and pursue objectives
+    too confined for Maelstrom's main body.
+
     Maelstrom manifests as a colossal orb of whirling blades ejected from the
     largest breach ever seen.  Its arrival sets the sky ablaze and hurls waves
     of minions into burning streets.  Breach mages realise they cannot slay it
@@ -592,19 +659,45 @@ nemeses:
 - name: Spawning Horror
   box: Aeon's End Legacy
   battle: 1
-  background: 'An ancient Nameless that spawns monstrous pods from its own body.  These
-    pods fall from a breach in the sky, feeding it and increasing its strength. '
-  appearance: A towering creature with pulsating sacks that burst into smaller minions.
+  background: |
+    Chapter 3 ("In Search of New Power") identifies this Nameless as an ancient surface predator that has lain undisturbed so long it is treated as part of the landscape itself.  Scouts describe sinked mounds, ruptured stone, and a feeding basin that appears less like a lair than a malformed ecosystem grown around one sleeping will.
+
+    Unlike most Nameless threats, Spawning Horror does not rely only on summoned allies from distant breaches.  It buds living pods from its own mass—spawn-things raised as attendants, feeders, and first-line defenders that keep the parent creature nourished while it consolidates territory.
+
+    The chapter account warns that pod broods are only one layer of defense.  Once disturbed, Spawning Horror can still call reinforcements through the great breach above it, escalating from local infestation into a full breach-incursion if strike teams fail to contain the site quickly.
+  appearance: |
+    The creature is depicted as a heavy, amphibious-looking Nameless crouched in a basin of translucent green eggs or pods, its broad shoulders and long forelimbs suggesting brute leverage rather than speed.
+    Its skin carries cold blue-violet iridescence, with a skull-like face, bulbous reflective eyes, and frilled cheek ridges that make it look half deep-sea carrion feeder, half cavern predator.
+    One thick tail arcs behind it like a hooked scythe while one clawed hand cradles a glowing orb-pod at its chest, reinforcing the impression of a brood-guardian that both spawns and tends its own young.
+  story_notes: |
+    Frame Spawning Horror as an entrenched reproductive siege point.  The tactical objective is not just "kill the boss" but break the brood cycle before pod generation outpaces what defenders can clear.
+
+    Keep scene language ecological and bodily: nest heat, membrane sheen, rupturing pods, and the constant handoff between parent and spawn.  This makes the threat feel like a living occupation of territory, not a single duel.
+
+    In pacing, escalate in layers: first pod pressure, then mounting fear about ammunition and stamina, then the looming breach overhead as a countdown to catastrophic reinforcement.  Narration should emphasize that delay is what truly empowers this nemesis.
   strengths: Summons pods that hatch into additional minions, overwhelming the players
   weaknesses: If players kill the pods quickly the Spawning Horror remains weak
 - name: 'Xaxos: Ascended'
   box: Aeon's End Legacy
   battle: 4
-  background: 'Xaxos’s lust for power overcame him, and he turned his back on New Gravehold.  Amplified
-    by years in the Void, his breach magic now threatens to obliterate his former
-    allies. '
-  appearance: Xaxos wreathed in darkness, levitating with multiple breaches swirling
-    around him.
+  background: |
+    Chapter 8 records the moment New Gravehold finally names what many feared:
+    Xaxos's hunger for power has overtaken him.  The mage once called friend and ally
+    turns his back on the city, fixating on Nameless strength and breach manipulation
+    as the only path worth pursuing.
+
+    Time in the Void amplifies everything dangerous in that obsession.  Xaxos returns
+    convinced that no living mage can match what he has learned, and that stopping him
+    now is the last chance before his breachcraft becomes unanswerable.
+  appearance: |
+    In the card portrait, Xaxos appears as a regal but corrupted duelist in dark
+    navy-and-crimson formal attire, cloak flaring as if caught in a breach-wind.
+    His eyes burn red, and his expression carries both contempt and certainty.
+
+    One arm has transformed into a black, root-like Void limb that coils into a
+    clawed mass, threaded with tendril filaments and rimmed by crimson glow.  The
+    contrast between courtly silhouette and living corruption reinforces the central
+    horror: a brilliant human mage visibly merging with the force he sought to master.
   strengths: Can use breaches like no other, casting multiple spells per turn and
     manipulating the turn order
   weaknesses: His arrogance may be exploited; players can disrupt his breach management
@@ -613,23 +706,64 @@ nemeses:
     each tier. Use this variant to fight Xaxos: Ascended as the final nemesis of Aeon’s
     End: Legacy.'
   story_notes: |
-    After Maelstrom is brought down and the survivors move to seal the last breach, Xaxos returns transformed by years in the Void.  Wreathed in darkness with multiple breaches swirling around him, he reveals that he lured the giant Nameless to New Gravehold to siphon its power.  He boasts of drinking from the same well that feeds the Nameless and swears that he will die before he lets the breach be closed.  Xaxos hurls bolts of shadow that dissolve everything they touch and opens swirling portals to summon hordes of minions.  His mind, once inquisitive and compassionate, is now consumed by ambition and void energy.  Reasoning and pleas fail; the mages must decide whether to destroy the man they once called friend or risk losing their home and humanity to his insatiable lust for forbidden power.
+    After Maelstrom is brought down and the survivors move to seal the last breach,
+    Xaxos returns transformed by years in the Void.  Chapter framing emphasizes the
+    emotional wound first: this is a former friend, and stepping into battle against
+    him feels like choosing necessity over loyalty.  He reveals that he lured the giant
+    Nameless to New Gravehold to siphon its power, boasting that no living mage can use
+    breaches as he now can.
+
+    Xaxos hurls bolts of shadow that dissolve everything they touch and opens swirling portals to summon hordes of minions.  His mind, once inquisitive and compassionate, is now consumed by ambition and void energy.  Reasoning and pleas fail; the mages must decide whether to destroy the man they once called friend or risk losing their home and humanity to his insatiable lust for forbidden power.
 
     In the climactic confrontation the mages bring him to his knees, but he refuses to yield.  As they channel their magic to close the breach he staggers forward, scorched and crackling with electricity, and attempts to draw power from the swirling void.  Brama’s voice rings out, begging him to renounce the Void and return to them, while Malastar lunges to stop him.  Xaxos snarls that he will not be helpless ever again.  A bolt of energy strikes him and a long, black tendril emerges from the breach, wrapping around his mouth and lifting him into the air.  His eyes widen with terror as the tendril drags him into the darkness and the breach seals behind him.  Sunlight shines where the abyss once hung, but the survivors are left with questions: what happened to Xaxos in the Void, and will his ambition one day bring him back?  The answers remain unknown, lingering over New Gravehold like a whisper of returning storm.
 - name: Ageless Walker
   box: The New Age
   battle: 3
   background: |
-    The Ageless Walker was once Karak, a devoted follower of Xaxos and close companion to Arachnos.  Hungry for power, he volunteered for a Void ritual meant to infuse him with Nameless strength.  Instead, the ritual consumed his life in moments.  Karak aged rapidly until only bones remained, but the flow of Void energy did not stop at death.  It twisted what remained of him into an unnatural thing that decays and grows at the same time.
+    The Ageless Walker was once Karak, a devoted follower of Xaxos and close companion
+    to Arachnos.  Envelope 3a records that he willingly submitted to a ritual meant to
+    infuse him with Nameless strength.  He sought power to protect humanity, convinced
+    the Void could be harnessed through disciplined research and stronger ritual design.
 
-    Now this skeletal horror drifts through the wilds in the torn cloak of his former faction, strings of void residue hanging from bone and talon.  Every step leaves withered plants and dead soil behind.  The Ageless Walker no longer distinguishes friend from enemy; it slaughters indiscriminately, as though the last trace of Karak’s humanity was stripped away when the ritual failed.
-  appearance: A skeletal figure wrapped in tattered cloaks, void essence oozing from cracks in its bones and fingers elongated into talons.
+    The transformation failed catastrophically.  As Void energy flooded his body, Karak
+    did not ascend—he aged in moments until only bone remained.  Arachnos heard him
+    screaming but refused to halt the process, trusting his calculations over the evidence
+    of collapse.  The ritual continued past death, warping the remains into a creature
+    that decays and grows at once.
+
+    Now this skeletal horror drifts through the wilds in the torn cloak of its former
+    faction, strings of void residue hanging from bone and talon.  It no longer
+    distinguishes friend from enemy; it kills indiscriminately, as if the last trace
+    of Karak’s identity was consumed when the ritual crossed its final threshold.
+  appearance: |
+    In the card art, Ageless Walker looms as a bone-white humanoid carcass threaded
+    together with black, tendon-like void cords.  A hollow skull mask with empty
+    sockets dominates the upper body, while jagged antler-like bone spurs arc from
+    its shoulders and back like a collapsing crown.
+
+    Multiple elongated arms radiate around the torso, each ending in hooked, skeletal
+    claws posed as if grasping for prey on all sides at once.  The figure appears
+    both assembled and unraveling: limbs cinched by dark bindings, joints pulled out
+    of human proportion, and robes hanging in strips beneath a frame that looks more
+    like a ritual marionette than a living creature.
   strengths: Drains life and ages everything around it, causing vegetation and flesh to wither.  Its touch can kill followers and enemies alike, and its presence brings decay and despair.
   weaknesses: The ritual that sustains it leaves it brittle; severing its connection to the Void or confronting it with memories of its past life may weaken its resolve and slow its relentless decay.
   story_notes: |
-    Humans were never meant to wield the raw magic of the Void.  Karak believed otherwise, trusting Xaxos’s followers and Arachnos’s calculations when they promised transcendence through ritual.  As Void energy poured into him, his body failed catastrophically: flesh withered, years passed in breaths, and bones cracked under impossible age.  Arachnos heard the screaming but refused to intervene, convinced the process was still under control.
+    Narrate Ageless Walker as a cautionary tragedy before it is framed as a monster.
+    Karak volunteered, trusted his mentors, and believed he was sacrificing for a future
+    where humanity could survive by mastering enemy power.  That belief makes the fall
+    more painful than a simple accident.
 
-    The result was not ascension but metamorphosis.  Karak’s death became a threshold, not an ending.  By the time the ritual collapsed, a new creature stood in his place—something neither human nor fully Nameless.  The Ageless Walker now roams without memory or mercy, bringing death, rot, and accelerated decay wherever it wanders.
+    Keep the moral wound visible: Arachnos heard the screams and chose not to stop the
+    ritual.  In scenes tied to exile-era politics, this detail should sharpen distrust
+    toward "necessary" experiments and expose the cost of treating people as test
+    thresholds.
+
+    The encounter atmosphere should feel like accelerated ruin—plants blackening at the
+    edges, tools rusting in hand, skin tightening with sudden age, and a creature that
+    moves like a body pulled by conflicting timelines.  Survivors should leave with
+    victory and dread in equal measure: if one willing volunteer became this, what other
+    failures were left in the wild.
 - name: Fenrix
   box: The New Age
   battle: 4
@@ -655,26 +789,71 @@ nemeses:
 - name: The Wailing
   box: Shattered Dreams
   battle: 3
-  background: 'In a forest where jade statues memorialize battles against the Blight Lord,
-    scouts have recently found trees encased in blue onyx.  Those who hear the Wailing’s
-    scream are infected by onyx that bursts through their skin and freezes them into
-    statues.  The onyx infection is spreading toward New Gravehold. '
-  appearance: A ghostly figure surrounded by shards of blue onyx, its mouth open in
-    an eternal scream.
+  background: |
+    Sahala's field account places The Wailing within a longer arc of collapse and
+    recurrence.  Deep in the forest, patrols still find jade-preserved victims from
+    ancient wars against the Blight Lord—faces locked in agony, bodies turned into
+    monuments of failed defense.  Those ruins are not relics alone; they are warnings.
+
+    New reports describe a second wave of petrification through blue onyx: trees
+    encased in dark-veined crystal and victims infected by the Wailing's scream.
+    The onyx incubates in living veins, then erupts through skin and slows movement
+    until life stops entirely.  To Sahala, this is history repeating with a new
+    mineral mask, and New Gravehold may be standing at the start of another cycle.
+  appearance: |
+    In the card art, The Wailing descends as a winged, batlike Nameless with a lean
+    humanoid torso and an oversized jaw lined with needle teeth.  Its hide is red and
+    sinewed, but the head and shoulders are crusted with jagged blue crystal growths
+    that glow against ember-lit skies.
+
+    Wide membrane wings frame the figure while blue shards spray outward as if shed
+    mid-flight.  The combination of predatory anatomy and mineral overgrowth makes it
+    appear both creature and contagion—an airborne vector for the onyx plague.
   strengths: Inflicts Cracked Onyx cards on players; these clog their decks and cause
     them to gradually petrify
   weaknesses: If the onyx cards are managed and removed, the Wailing’s effect dwindles
+  story_notes: |
+    Narrate The Wailing as epidemic horror, not just a boss encounter.  The scream is
+    both weapon and transmission event, and every frozen victim should read as a
+    timeline marker in a spreading outbreak.
+
+    Keep Sahala's perspective active: grief tied to historical memory, fear that
+    civilizations repeat old errors, and urgency to contain the infection before blue
+    onyx reaches dense population routes around New Gravehold.
 - name: The Wanderer
   box: The Ancients
   battle: 3
-  background: 'According to Brama, history repeats itself: the new home may fall just
-    as the old did.  Ancient records link the Wanderer to the Wayward One; it flickers
-    between forms and may be the same creature. '
-  appearance: A shimmering figure that shifts between shapes, sometimes human, sometimes
-    monstrous.
+  background: |
+    Brama frames The Wanderer through the long cycle of loss: the World That Was fell,
+    Gravehold fell, and any honest defender knows New Gravehold may someday face the same
+    fate.  Her concern is not only survival in the present, but whether memory can carry
+    enough truth forward to change the pattern.
+
+    After scouts reported a wavering Nameless, Brama and Mazra searched surviving
+    archives and found a likely connection to an older foe, the Wayward One.  The records
+    suggest recurring traits across eras: inconsistent physical form, unstable presence,
+    and unusual resistance to direct force.  Brama's conclusion is cautious but resolute:
+    if this is a recurrence, then past victories are precedent—not guarantee.
+  appearance: |
+    In the card art, The Wanderer appears as an airy, storm-charged figure suspended
+    above jagged mountains, its body formed from pale liquid-white currents and violet
+    haze rather than solid flesh.
+
+    Dark orb-like nodes orbit around the torso and link through crackling arcs, while
+    elongated, antler-like projections crown a narrow upper silhouette.  The lower form
+    trails into sweeping, wave-like ribbons that blur the boundary between creature,
+    weather, and breach phenomenon.
   strengths: Reduces all damage from player abilities and cards to 1; players must
     spend aether to deal additional damage
   weaknesses: Spending aether can overcome its dampening pylons
+  story_notes: |
+    Narrate The Wanderer as a historical echo made present.  Brama's archive-work should
+    matter in-scene: elders cross-checking old records, scouts debating resemblance, and
+    mages trying to decide whether they are fighting a new threat or a recurring one.
+
+    Tone should balance fatalism and defiance.  The recurrence theme invites dread, but
+    the emotional payoff is collective continuity—people who remember, adapt, and refuse
+    to surrender history to repetition.
 - name: Necroswarm
   box: Into the Wild
   battle: 4
@@ -840,17 +1019,45 @@ nemeses:
 - name: Thief of Dreams
   box: Outcasts
   battle: 2
-  background: 'Deep in the Void, Ilya and Kel sensed a hole in reality that exudes
-    mist and distorts their perception.  The Thief of Dreams feels like a void itself;
-    its mist makes focusing on spells difficult and even clouds may be corrupted. '
-  appearance: A shadowy being shrouded in swirling mist, with eyes like endless voids.
+  background: |
+    In Envelope 2a accounts from Ilya and Kel, the Thief of Dreams is described as
+    less a beast than a wound in reality: a negative-space presence that seems to
+    pull focus, breath, and certainty out of the air around it.  Even seasoned
+    Portalborn trackers struggle to classify it, because the thing behaves like
+    atmosphere given hunger.
+
+    The expedition records a persistent cognitive effect around the creature.  Mist
+    from its body blurs landmarks, weakens spell concentration, and leaves mages
+    doubting sensory input they would normally trust.  Kel's warning is blunt—if
+    even stars feel unreliable in this region, then the Thief's battlefield is not
+    terrain but perception itself.
+  appearance: |
+    In the card art, Thief of Dreams appears as a horned, humanoid void-silhouette
+    standing against vivid rose-and-teal cavern light.  Its body is mostly shadow,
+    but pinpricks of starlike color glimmer through the torso as if night sky were
+    trapped beneath skin.
+
+    Curled ram-like horns crown a narrow head, and long, clawed hands extend from
+    ragged edges of smoke-dark form.  The outline constantly frays into vapor,
+    suggesting a creature that is never fully present and may be partly composed of
+    dream residue rather than flesh.
   strengths: Uses a dream deck that fills players’ hands with strange dreams and misfires
     spells
   weaknesses: Proper management of the dream cards can limit its impact
   story_notes: |
-    Crossing the Void requires constant concentration, and the Thief of Dreams attacks that discipline directly.  It drifts above the expedition like living fog, drawing out fears and fractured memories until even practiced mages hesitate over simple spellwork.
+    Crossing the Void requires constant concentration, and the Thief of Dreams attacks
+    that discipline directly.  It drifts above the expedition like living fog,
+    drawing out fears and fractured memories until even practiced mages hesitate over
+    simple spellwork.
 
-    Narratively, this fight should feel disorienting rather than explosive: whispered temptations, distorted landmarks, and moments where allies seem to vanish in mist.  The mages survive by anchoring each other and refusing to chase hallucinations.
+    Narratively, this fight should feel disorienting rather than explosive: whispered
+    temptations, distorted landmarks, and moments where allies seem to vanish in mist.
+    Use Ilya and Kel's testimony to keep tone grounded—curiosity curdling into dread
+    as focus becomes physically difficult.
+
+    Survival in these scenes should read as collective cognition management:
+    call-and-response checks, repeated spell mnemonics, and deliberate grounding
+    rituals so no one mage is left alone inside the Thief's haze.
 - name: Bishop of Scrolls
   box: Legacy of Gravehold
   difficulty: 2
@@ -862,6 +1069,11 @@ nemeses:
     grew secure behind stone, and eventually forgot the fear that once kept them alive.
     In his retelling, complacency and forbidden void experiments invited catastrophe,
     culminating in the summoning of a colossal Nameless into the heart of the city.
+
+    He tells this story like a parable with a lesson for every listener: patrol farther,
+    question less, and obey the custodians of doctrine.  The implication is always that
+    discontent, curiosity, and innovation are contagions that must be cut out before
+    they can fracture the city from within.
 
     The Bishop's warning is never neutral.  He weaponizes history to control the present,
     insisting that safety breeds weakness and that only strict doctrine can prevent a new
@@ -903,6 +1115,11 @@ nemeses:
     The emotional throughline should be uneasy familiarity: his robes, proclamations, and
     book-laden sorcery feel almost civilized—until players realize they are fighting a
     doctrine that turns people into footnotes.
+
+    Keep his claims about the Fall and the "largest Nameless" intentionally contested in
+    tone.  He speaks as if his version is objective truth, while other records (including
+    accounts tied to Xaxos and Maelstrom) suggest a more complicated chain of mistakes,
+    ambition, and shared responsibility.
 - name: Brama (Legacy of Gravehold)
   box: Legacy of Gravehold
   battle: 2
@@ -967,16 +1184,22 @@ nemeses:
 - name: Stonemonger
   box: Past and Future
   battle: 2
-  background: 'The Stonemonger emerges when corruption takes hold in mere seconds,
-    transforming an ordinary person into something monstrous.  In Port Hanon a merchant
-    was overtaken mid-transaction, his body twisting as he grabbed fistfuls of aether-filled
-    gems from his stall.  As each gem scattered across the ground, corruption spiraled
-    out in purple waves, twisting fleeing customers beyond recognition in a single second.
-    Brama recounts similar eruptions that corrupted everything they touched, turning
-    survivors into mindless enemies of their former friends.'
-  appearance: A grotesque mass of stone and flesh with limbs that stretch unnaturally
-    and skin that tears open in places.  It grasps greedily at gems and aether, spreading
-    corruption with every touch.
+  background: |
+    Brama's Past 2a testimony places the Stonemonger at the heart of the old Calamity's first wave: elders describe an "invisible eruption" that broke outward like a tsunami, and everything it touched changed in moments.
+
+    In one account, a market in Port Hanon became the proof point.  Merchants and patrons were overtaken mid-bargain, flesh and thought stripped away as corruption rolled through the stalls.  Survivors remembered blood on gem tables, teeth on stone, and familiar faces hollowed into ravenous masks before anyone could flee.
+
+    The Stonemonger is treated as one of those catalytic Nameless—an agent that does not merely kill, but converts social space into contagion terrain.  Where it roots itself, trade routes collapse, trust fractures, and communities begin to turn on one another out of panic before the creature ever reaches the walls.
+  appearance: |
+    The Stonemonger resembles a bulky, half-humanoid scavenger with bark-dark, mottled skin stretched over swollen muscle and long forelimbs that end in hooked, bony claws.
+    Its mouth glows ember-orange from within, as if heat or aether burns down its throat, while clustered nodules across its skull and shoulders give it a blighted, fungal silhouette.
+    In the card art it hunches around a nest of bright crystals, one clawed hand spread protectively over the cache as purple-black tendrils and rootlike strands drape around it like living snares.
+  story_notes: |
+    Use Stonemonger scenes to show corruption as a civic disaster, not only a combat threat.  Its arrival should read like a market, caravan lane, or minehead becoming unusable in minutes as fear spreads faster than orders.
+
+    Anchor narration in tactile details from Brama's memory-chain: gem dust in blood, shattered stalls, and witnesses struggling to reconcile the monster with the person they knew moments earlier.  This keeps the threat grounded in communal grief rather than abstract apocalypse.
+
+    Portray the creature as possessive and resource-driven.  It hoards crystal seams and supply stockpiles, lashes out at retrieval teams, and turns every attempted salvage operation into a moral choice between rescuing survivors and preserving scarce aether.
   strengths: Generates corruption tokens that spread across supply piles, making cards
     more expensive and painful to acquire
   weaknesses: Players can cleanse corruption by destroying certain cards
@@ -1128,15 +1351,32 @@ nemeses:
     Quilius leads an expedition into lightless caverns beneath New Gravehold, where every tunnel grows colder than the last and torchlight gives brightness without warmth.  Frost creeps across crystal walls, breath hangs in the air, and silence seems to pull explorers deeper into the dark.  There they encounter the Absorbing Wraith: a Nameless presence that feeds on heat itself.
 
     The creature does not merely freeze flesh; it steals motion and momentum, locking people and magic alike into stasis.  Supply lines become brittle, relics ice over, and even hardened mages feel their strength draining as the temperature drops.  By the time the Wraith is fully revealed, the expedition is already fighting in a battlefield turned to living winter.
-  appearance: A phantom of frost and darkness, trailing icy chains and leaving frozen
-    crystals in its wake.
+  appearance: |
+    In the card portrait, Absorbing Wraith appears almost human at first glance: a
+    gaunt blue-gray face with pale, lightless eyes and skin stretched tight by cold.
+    A skull-adorned golden crown-helm frames the brow and temples, suggesting an
+    aristocratic relic fused to something long dead.
+
+    Frosted vapor and blue-white glare bleed around the figure, while the expression
+    is fixed in predatory calm rather than rage.  The visual effect is intimate and
+    unnerving—less a distant ice spirit than a thinking hunger that studies living
+    warmth before taking it.
   strengths: Places stasis tokens on supply piles; frozen piles cannot be purchased
     until freed
   weaknesses: Removing stasis tokens and using fire-based relics thaws the piles
   story_notes: |
     "Cold, colder, coldest." Quilius records the descent as a march into unnatural winter: skin sticking to glittering stone, hands splitting from frost, and blue lips whispering prayers into the dark.  Alcheia’s ruby light offers a thin thread of life, but no true comfort.  At night the scouts chew snow to wet numb throats while the cavern breathes around them like a patient predator.
 
-    The Absorbing Wraith hunts by extinguishing warmth and hope together.  Trails of ice mark where it passed, and each encounter leaves more cards and tools trapped in stasis.  Quilius senses that the same black silence drawing them forward is also the Wraith’s lure, a call toward a fate buried in the deepest tunnels.  To survive, the mages must keep moving, keep fires burning, and break the frozen holds before Gravehold itself is left in permanent cold.
+    The Absorbing Wraith hunts by extinguishing warmth and hope together.  Trails of
+    ice mark where it passed, and each encounter leaves more cards and tools trapped
+    in stasis.  Quilius senses that the same black silence drawing them forward is
+    also the Wraith’s lure, a call toward a fate buried in the deepest tunnels.
+
+    In narration, keep the sensory loop from Quilius's account front and center:
+    visible breath, torchlight without heat, skin adhering to frozen stone, and the
+    dread of being drawn deeper by silence itself.  Survival should feel procedural
+    and fragile—keep moving, keep fires alive, and break frozen holds before
+    Gravehold's defenses are locked into permanent cold.
 - name: The Reliquary
   box: The Abyss
   battle: 3
@@ -1152,11 +1392,22 @@ nemeses:
 - name: Rust Superion
   box: Legacy of Gravehold
   battle: 2
-  background: 'Ilya (Force of Aether) confesses that mixing aether with the Void created
-    a mechanical horror: Rust Superion.  She regrets the catastrophic experiment and
-    warns that combining aether and Void led to devastation. '
-  appearance: A hulking construct of jagged metal and glowing aether, surrounded by
-    swirling syphon energy.
+  background: |
+    Envelope 2 records Ilya, Force of Aether, defending what once seemed like a harmless practice: using small aether glyphs to nudge weaker Void creatures away from villages and roads.  She insists those controlled patterns were never meant for domination or warfare.
+
+    The fracture came when aether was mixed directly with Void essence at larger scale.  Ilya argues she did not create the resulting monstrosity and points to New Gravehold's own reckless Void experimentation, but her testimony confirms the key danger: once those control patterns are amplified, they can bind behavior, energy flow, and predatory intent into a single engineered engine.
+
+    Rust Superion is the battlefield consequence of that doctrine.  It advances like a living conduit platform, using syphon channels to occupy breaches and convert mage momentum into structured attrition, forcing defenders to fight both the construct and the system of siphons it deploys.
+  appearance: |
+    Rust Superion appears as a copper-red industrial war construct built from layered armored plates, exposed rotary joints, and thick conduit tubing packed into a broad upper chassis.
+    Its silhouette is asymmetrical and tool-like: one arm ends in a heavy pincer claw while articulated secondary manipulators hang beneath the torso for fine adjustments and breach interfacing.
+    A segmented tail-cable curves behind it like a powered siphon line, and the entire frame reads as an engineered extractor—less a beast than a mobile machine designed to latch onto opened breaches and drain them methodically.
+  story_notes: |
+    Narrate Rust Superion as a doctrinal failure made manifest: "harmless guidance magic" scaled into coercive control architecture.  Ilya's testimony should remain morally conflicted—part warning, part self-justification, part accusation toward other Void practitioners.
+
+    In scene terms, emphasize systems pressure over sudden brutality.  Each new syphon in play should feel like the battlefield tightening: fewer safe breaches, fewer clean spell lines, and mounting panic as mages realize the machine is rewiring the flow of aether in real time.
+
+    Give the construct an operator's rhythm.  It does not rage; it calibrates, attaches, reroutes, and advances.  That clinical cadence helps distinguish it from feral Nameless and reinforces the horror of an enemy that behaves like a siege engineer.
   strengths: Draws syphon cards from its syphon deck and places them on breaches,
     making the nemesis board fill with powerful minions
   weaknesses: Limited by the number of syphon cards
@@ -1190,13 +1441,28 @@ nemeses:
   life: 40
   battle: 2
   background: |
-    The Thrice-Dead Prophet was defeated three times, yet returned stronger each time.
-    The first defeat seemed too easy; the second demanded sacrifices; the third led
-    to the emergence of the Umbra Titan.  The Prophet seems to use its victories as
-    "tests" and may become unstoppable in the fourth battle.
+    Indira's account describes the Thrice-Dead Prophet as a Nemesis that turns
+    victory itself into deception.  It has "died" three times already, each defeat
+    revealing too late that the battle was only a feint.  What looked like final
+    kills became staged thresholds that tested Gravehold's readiness and drew
+    defenders into overconfidence.
+
+    The first apparent death came quickly and bred false certainty.  The second
+    victory cost lives and city infrastructure.  The third collapse birthed a new
+    catastrophe: from the Prophet's ruined body emerged the Umbra Titan, which
+    claimed additional mages before being forced away.  Commanders now treat any
+    future fall of the Prophet as potentially incomplete unless the aftermath is
+    actively controlled.
   appearance: |
-    A skeletal figure wrapped in rags with glowing runes etched into its bones.
-    The depiction is dark and mysterious, with an aura of ancient dark power.
+    In the card art, Thrice-Dead Prophet appears as a hulking, stone-like idol body
+    studded with sculpted human faces frozen in grief, rage, and terror.  Curved
+    horn structures sweep from the crown, while dark crystalline outgrowths jut
+    from its shoulders and nearby ground like grave markers.
+
+    Rather than a nimble duelist silhouette, it reads as a walking mausoleum:
+    heavy, ceremonial, and wrongfully alive.  The fused faces imply accumulated
+    memory or stolen identity, reinforcing the theme that this Nemesis carries
+    prior deaths forward instead of ending with them.
   strengths: |
     Gains life points on each Unleash and can ascend to immortality.  At 99+
     life points, players lose immediately.  When the Nemesis deck is depleted,
@@ -1210,21 +1476,32 @@ nemeses:
     is empty.  At 4+ tokens, a Nemesis card is discarded and 4 tokens are lost.
     Unleash: Prophet gains 5 life points; at 60+ life points, it gains an
     additional Nemesis token.
+  story_notes: |
+    Narrate Thrice-Dead Prophet as a lesson in premature triumph.  Every apparent
+    turning point should feel suspect: cheers cut short, "dead" silence that lasts
+    too long, and commanders ordering containment before celebration.
+
+    Keep Indira's historical framing active in campaign scenes—named casualties,
+    breached walls, and the memory that Umbra Titan emerged from a prior "victory."
+    The emotional beat is disciplined dread: the fourth death must be final, not
+    another stage in the Prophet's ritual of attrition.
 - name: 'Bishop: Returned'
   box: Legacy of Gravehold
   difficulty: 7
   life: 60
   battle: 3
   background: |
-    Bishop: Returned is the ruin of a once-trusted leader—an old ally reshaped by
-    reckless Void magic into a figure the city can rally against.  Chronicles frame
-    his fall as politically convenient as much as tragic: a single villain to blame
-    for the collapse of old Gravehold and a symbol to unite survivors in New Gravehold.
+    Bishop: Returned is remembered as a former friend of Gravehold, twisted by his
+    own meddling with Void magic until he became the face of the city's grief and rage.
+    In survivor retellings, his first defeat was presented as a righteous cleansing:
+    a single monstrous culprit on whom the loss of old Gravehold could be pinned while
+    New Gravehold rose from the ruins.
 
-    But the card chronicle warns that this narrative never resolved the deeper fracture.
-    Even after his defeat, unrest kept growing beyond the new walls, and leadership could
-    not purge dissent as cleanly as it purged memory.  His return is therefore not only a
-    monster encounter; it is evidence that the conflict beneath the city was never ended.
+    Envelope-era accounts make that triumph sound less final.  New walls, new outposts,
+    and newly trained mages did not quiet the unrest outside the city; discontent kept
+    spreading faster than the council could cut it out.  Bishop's return is therefore
+    both literal and symbolic: the war did not end, it changed shape, and old narratives
+    of unity no longer hold.
   appearance: |
     In the illustration, Bishop: Returned appears as a robed hierophant in layered
     crimson and gold vestments over green-bronze armor, with a faceted relic-mask helm
@@ -1251,12 +1528,13 @@ nemeses:
     difficulty, when reinforcements are summoned, Bishop: Returned loses 3 tokens
     instead of 4.
   story_notes: |
-    Narrate Bishop: Returned with an undertone of revisionist history.  He is terrifying,
-    but he is also the embodiment of old decisions New Gravehold never fully confronted.
+    Narrate Bishop: Returned with the cadence of a dangerous storyteller: persuasive,
+    theatrical, and half-truthful.  He frames himself as proof that New Gravehold's
+    leaders needed a villain and chose a former ally to bear collective blame.
 
     The encounter should feel like a public reckoning in arcane form: pages in the air,
-    accusations made flesh, and a city discovering that burying a friend-turned-nemesis
-    did not bury the conditions that created him.
+    accusations made flesh, and a city discovering that defeating a friend-turned-nemesis
+    did not remove the fear, ambition, and factional fractures that created him.
 - name: The Blight
   box: The Descent
   battle: 3
@@ -1335,12 +1613,42 @@ nemeses:
 - name: Rust Amalgam
   box: Legacy of Gravehold
   battle: 3
-  background: 'Talix laments that meddling with the Nameless by allowing a tiny rust
-    creature to survive resulted in a giant monster; it now detaches metal buggers
-    that latch onto skin.  The Rust Amalgam is a fusion of twisted metal and void
-    energy, created when aether experiments went awry. '
-  appearance: An enormous amalgamation of corroded metal plates, sinew and glowing
-    veins, with smaller parasites crawling over its body.
+  background: |
+    Talix's Envelope 16 testimony frames Rust Amalgam as the cost of leniency during
+    Void experimentation: one tiny rust-creature escaped, survived, and returned as a
+    house-sized predator.  What once looked too small to matter became a multiplying
+    threat in a matter of days.
+
+    Her account blames two linked failures.  First, defenders underestimated remnants
+    shed from the Mother of Rust and treated them as harmless debris.  Second, Z'hana's
+    followers fed captured fragments with Void energy near active portals, accelerating
+    growth and forcing unstable adaptation.
+
+    Rust Amalgam now propagates by shedding metal parasites that detach from its own
+    body and latch onto skin, armor seams, and breach gear.  Each new wound it causes
+    is narrated by survivors as preventable—a living indictment of reckless research
+    and poor containment discipline.
+  appearance: |
+    Rust Amalgam appears as a low-slung, serpentine mass made from interlocked rusted
+    plates and cable-like coils, as though scrap-metal tendons were braided into one
+    predatory body.
+    Its skull is wedge-shaped with multiple elongated yellow eye-slits and a furnace
+    glow behind jagged teeth, giving it the look of a mobile smelter turned carnivore.
+    Looping tendrils and segmented tail-whips arc from its back and flanks while
+    smaller detachments cling to the chassis, reinforcing the sense that the creature
+    is both singular beast and parasite nursery.
+  story_notes: |
+    Use Rust Amalgam encounters to foreground consequence and accountability.  Talix's
+    voice should carry anger at procedural negligence: one overlooked fragment, one
+    careless experiment, and now entire teams pay the price.
+
+    Narrate battlefield pressure as contamination spread.  A scratch is never "minor";
+    it is the start of attachment, draining stamina, splitting formation focus, and
+    forcing triage decisions under fire.
+
+    Keep the creature's movement predatory but mechanical—coiling, lashing, shedding,
+    reattaching—so scenes emphasize that this Nemesis is a self-repairing infestation
+    engine, not a simple brute to out-damage.
   strengths: Uses a parasite deck
   weaknesses: Parasite cards can be destroyed or purged to thin the parasite deck
 - name: The Changeling Nest
@@ -1534,15 +1842,26 @@ nemeses:
   life: 70
   battle: 4
   background: |
-    Wraithmonger is an incorporeal creature that invades the minds of Gravehold's
-    people.  According to Indira: "It lurks within our minds, a shapeless horror
-    buried deep within us all."  The creature manifests physically only when
-    people dream, wrapping their heads with ghostly tendrils.  It moves from
-    victim to victim, feeding on fear.
+    Wraithmonger is described by Indira as a Nameless tied to sleep itself, a horror
+    that does not strike first through claws but through dreams.  Gravehold's people,
+    already starved for rest, face a cruel paradox: sleep is scarce, yet whenever it
+    comes the thing can manifest and feed.
+
+    Indira's account insists Wraithmonger is not "born of the Void like the others"
+    in any ordinary sense.  She frames it as a shapeless terror buried within human
+    minds that flickers into the waking world only when dreamers loosen their guard.
+    It rises above the city on tendrils of pale mist, leeching fear and carrying that
+    terror from sleeper to sleeper.
   appearance: |
-    An ethereal, misty being with ghostly tentacles.  The depiction appears
-    supernatural and menacing, with a blue and violet colour palette emphasizing
-    its otherworldly nature.
+    In the card art, Wraithmonger resembles a floating violet cephalopod crowned
+    with a skull-like dome.  Multiple eye sockets are hollowed into the head-shell,
+    each filled with dark red void-glow that makes the face look both dead and
+    watchful.
+
+    Long tentacles trail in all directions, lined with pale dotted seams and fine
+    threadlike filaments that read like dream-sutures.  The body hangs weightless in
+    blue-green haze, suggesting a creature that drifts through thought and air alike
+    rather than moving by ordinary muscle or bone.
   strengths: |
     Mental attacks progressively debilitate player abilities.  7 Terror tiles on
     a special Nemesis mat block player abilities until they are paid off.
@@ -1553,22 +1872,41 @@ nemeses:
     Terror tile and triggers its effect.  Terror tiles block player abilities.
     When tile 1 is claimed, all players lose immediately.  At increased difficulty,
     tile 7 is removed.
+  story_notes: |
+    Narrate Wraithmonger as intimate dread instead of battlefield spectacle.  The
+    threat begins before combat: heavy eyelids, fear of sleep, and exhausted citizens
+    bargaining with themselves for one more waking hour.
+
+    Use Indira's voice to anchor tone—dreaming as vulnerability, terror as a harvested
+    resource, and Yan Magda as a grim contrast because she no longer sleeps after the
+    Black Mausoleum years.  The central question for scenes around this nemesis is not
+    "Can we kill it?" but "Can a city survive when rest itself becomes a breach?"
 - name: The Wrath
   box: The Descent
   battle: 4
-  background: 'The Wrath is a towering monster that besieges Karek after Brama''s
-    expedition enters the city.  Humanoid but too tall, too thin, wearing a disfigured
-    mask, it moves faster than anyone can react and smells of singed flesh—not alive,
-    but something worse.  The creature slams into the gates hard enough to shower
-    stone dust on those inside.  Brama''s strategy is to surround it and keep
-    alternating who strikes to keep it off-balance, since a single blow from it is
-    devastating.  The battle costs Janti her life—she is mortally wounded in the
-    fighting and dies hours later in Brama''s arms.  When finally driven off, The
-    Wrath flees into the darkness, and Brama knows it will return someday—but the
-    people of Gravehold will be ready.'
-  appearance: A towering figure, humanoid but wrong—too tall, too thin, wearing a
-    disfigured mask.  It moves with unnatural speed and smells of singed flesh.
-    A signal fire on a tower drew it to the city.
+  background: |
+    The Wrath is the siege-beast that descends on Karek after Brama's expedition
+    enters the city.  Field testimony describes something humanoid but wrong—too fast,
+    too predatory, and too deliberate for panic to explain.  Its arrival at the gates
+    turns defense into triage within minutes, stone dust raining from impact points as
+    if the walls themselves are being tested for collapse.
+
+    Brama's surviving accounts emphasize method over heroics: surround, rotate strike
+    teams, never let it settle into a kill rhythm.  Even then, the cost is severe.
+    Janti is mortally wounded and dies hours later, becoming the emotional scar
+    attached to every later briefing on The Wrath.  The creature eventually withdraws
+    into darkness, but not in defeat that feels final—more like a predator deciding
+    when to return.
+  appearance: |
+    In the card art, The Wrath appears as a crimson, horned predator crouched low as if
+    about to spring.  Its musculature is heavy and asymmetrical, with elongated forearms
+    ending in black, hooked claws that read more like climbing talons than hands.
+
+    Curled ram-like horns frame a snarling face of needle teeth and ember-bright eyes.
+    Spined growths and shadowed tendrils arc behind the body, giving the silhouette a
+    jagged, multi-limbed profile even when it stands still.  The pose conveys explosive
+    momentum: this is not a lumbering brute but a fast breach-hunter built for sudden,
+    fatal engagement.
   strengths: Uses a Rage track that advances whenever it unleashes; single blows
     are devastating enough to kill veteran fighters
   weaknesses: Players can reset the Rage track with certain card effects or by destroying
@@ -1604,6 +1942,11 @@ nemeses:
     lose meaning, memory becomes unreliable, and survivors struggle to measure
     their own aging.  Narration should treat this nemesis as a threat to temporal
     identity as much as to bodily survival.
+
+    Dalana's "Journey's End" poem (Envelope 4) offers optional connective imagery for
+    related descent scenes: red light above, blood-dark earth below, and a thin line
+    between ending and beginning.  Use that cadence when campaigns want The Timeless
+    to feel like a threshold event rather than a single encounter.
 - name: Rampaging Vin
   box: The Returned
   difficulty: 8
