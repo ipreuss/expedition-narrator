@@ -5,25 +5,35 @@ nemeses:
   life: 70
   battle: 1
   background: |
-    Rageborne is one of the earliest Nameless encountered by Gravehold.  The long
-    war has hardened children into warriors and stripped joy from daily life, and
-    Rageborne embodies that relentless brutality.  It is described as the executioner
-    champion of the Nameless, a hulking beast with blades and horns that
-    demonstrates pure force rather than cunning.  Survivors speak of its roar
-    echoing across chasms and of battles where its body vanished into darkness
-    without a sound, leaving them uncertain if it was truly gone.
+    Rageborne is remembered as the Nameless executioner sent when Gravehold had already been worn thin by generations of war.  Veteran testimony says children learned weapons almost with their first words, and each generation carried less laughter and more instinct for survival.  In that atmosphere, Rageborne arrived as proof that the Nameless had been waiting for humanity to become "worthy foes" before unleashing a champion.
+
+    Malastar's field account frames it as more than a brute predator.  She describes a will of focused anger reflected in the dead eyes of the rabid beasts that run in its wake, with every breach opening answered by citywide cries that "the end is near."  Rageborne thus becomes both physical threat and psychological verdict: a living sign that Gravehold's long war has entered an execution phase.
   appearance: |
-    A massive, rage-distorted creature with archaic design.  Its body is
-    primitively brutal, dominated by immense musculature and aggressive
-    posture.  Horns protrude from its skull and bulky blades are attached
-    to its arms.
+    A crimson, horn-crowned predator built like a siege beast on four clawed limbs,
+    with corded musculature, a long spined tail, and a split maw lined with dense
+    recurved fangs.  Bone-like spikes jut from shoulders, elbows, and flanks, giving
+    every lunge the profile of a charging weapon rack.
+
+    Its forelimbs end in elongated talons suited for tearing armor and flesh at close
+    range, while its posture stays low and spring-loaded, as if always mid-pounce.
+    The overall silhouette reads as disciplined ferocity rather than feral chaos.
   strengths: |
     Focuses on direct, massive damage against mages and Gravehold.
     Accumulates Fury tokens and triggers devastating Strikes from a
     separate card deck.
   weaknesses: |
-    Lacks strategic complexity; beginner-friendly to defeat and does not
-    scale well against experienced players.
+    Its fury cycle is telegraphed through token thresholds; disciplined teams can
+    plan around upcoming Strike windows and force damage races before repeated
+    escalations overwhelm Gravehold.
+  story_notes: |
+    Narrate Rageborne as a campaign-shaping omen, not only a boss fight.  Malastar's
+    voice should carry weary certainty: this is the moment many survivors realize the
+    war was never about reclaiming peace, only delaying annihilation.
+
+    Keep battlefield texture immediate and bodily—stone vibrating under impact,
+    breath turning ragged in dust-choked corridors, and the shock of coordinated
+    beast packs attacking in the wake of each breach surge.  Rageborne's own attacks
+    should feel like execution strokes that punish hesitation.
   special_rules: |
     Rageborne starts with one Fury token.  Each Unleash grants an additional
     token.  At four or more tokens, a Strike is triggered and three tokens
@@ -125,23 +135,46 @@ nemeses:
   life: 70
   battle: 1
   background: |
-    Long ago, when the world was swallowed by darkness, survivors huddled in
-    Gravehold to preserve what little remained of their history.  The Prince of
-    Gluttons was among the Nameless that besieged them.  At first it seemed
-    harmless, but after its passing people realised they could not recall where
-    they had come from.  This creature devours memories, history and even the
-    words of ancestors, leaving its victims adrift in the present with no
-    connection to their past.  It slithers silently through tunnels, erasing
-    inscriptions and names wherever it goes.
+    The Prince of Gluttons is recorded as the fourth great Nameless to besiege
+    Gravehold, arriving during the long age when survivors already lived under
+    siege and scarcity.  Chroniclers say the first battle against it felt almost
+    too easy, as if the creature were testing the city rather than trying to win
+    by force.
+
+    Its true assault emerged afterward: names, places, vows, and lineage memories
+    began to rot from living minds.  Survivors forgot the World That Was, family
+    bonds thinned into suspicion, and the words of the First Tribe survived only
+    as dead symbols on brittle scrolls.  The Prince does not only eat flesh or
+    aether—it consumes continuity, leaving a people trapped in fear and in the
+    smallest possible present tense.
   appearance: |
-    A many-headed monstrosity with numerous maws that devour cards and
-    memories.  Its body winds serpent-like through the tunnels.
+    A hulking, many-eyed Nameless with a boar-broad torso, thick furred underbelly,
+    and multiple tentacular appendages that end in pale, suctioned curls.  Across
+    its body, red-lidded eyes stare in conflicting directions while secondary
+    mouths and feeding vents open along the face and flanks.
+
+    Its central maw is narrow, lipless, and lined with needle teeth around a red
+    probing tongue, giving the impression of a creature built to sample and strip
+    rather than simply bite.  The silhouette is heavy but invasive: a siege-beast
+    fused with scavenger anatomy, always reaching for something to ingest.
   strengths: |
-    Devours cards from supply piles, depriving players of resources.  The
-    devoured cards form a separate pile.
+    Devours cards from supply piles, depriving mages of planned tools and
+    battlefield options.  The consumed cards form a separate Devour pile that
+    constantly pressures economy and timing decisions.
   weaknesses: |
-    Players can purchase cards from the Devour pile.  With high damage
-    and a quick end to the game, the Prince can be starved out.
+    Mages can reclaim options by purchasing from the Devour pile; disciplined
+    teams that pressure the nemesis quickly can limit long-term memory-economy
+    collapse before too many supply gaps open.
+  story_notes: |
+    Narrate Prince of Gluttons as cultural predation, not merely hunger.  Every
+    devoured card should feel like a missing proverb, a forgotten route, or a name
+    scraped from stone.
+
+    Scene texture should emphasize cognitive aftermath: spouses searching one
+    another's faces without recognition, apprentices unable to recite their own
+    teacher-lines, and archive-keepers discovering intact parchment whose meaning
+    has vanished from memory.  The battle's urgency comes from this erosion—kill
+    speed matters because identity itself is being eaten in real time.
   special_rules: |
     On Unleash, it devours 2-3 cards from the cheapest pile.  Empty supply
     piles deal 2 damage per missing card.  Players lose if any supply pile
@@ -858,13 +891,39 @@ nemeses:
   box: Into the Wild
   battle: 4
   background: |
-    Necroswarm was once a peaceful creature that roamed far from human settlements, a living amalgam of vines and roots that nurtured the forest and even raised one young mage as its own.  Its corruption began when a traitorous breach mage used glowing glyphs to siphon its energy and drive it north.  Twisted by unstable Void pus and compelled by runes, Necroswarm’s family of brambles turned into an invading army.  To Inco it still feels like home; to New Gravehold it is a symbol of betrayal, showing how easily compassion can be weaponised.
+    Soskel's account places Necroswarm in the deep southern wilds, where tales of it were once rare and mostly benign: an ancient plant-wrought Nameless seemingly disinterested in human settlements.  Talix reportedly knew of it from earlier southern explorations, but gave few details—an omission that now reads like warning rather than mystery.
+
+    Something changed.  The same creature now advances north with an aura of rot that kills crops, blackens forage routes, and turns living wetlands into decay zones.  Soskel suspects outside coercion—possibly Xaxos's followers or the traitor mage manipulating breach energies—because Necroswarm's sudden aggression aligns too neatly with efforts to destabilize New Gravehold's food base.
   appearance: |
-    A colossal bull shaped from vines and thorny branches, covered in brambles that ooze sickly green pus.  Six luminous eyes stare out from a face woven of leaves and bark.  Around its hooves swarm living bramble minions—twisted shrubs infused with void energy—that detonate in explosions of green mist and decay.  Its hide rustles with insects and the scent of sap and rot.
+    A colossal antlered beast grown from knotted roots, peat-dark bark, and swollen
+    fungal growths that glow sickly green beneath split wood-grain skin.  Its face
+    resembles a rotting forest idol, with red ember eyes set in twisted ridges of
+    living timber and moss.
+
+    Around it move smaller bramble spawn—rock-and-vine forms carrying volatile green
+    nodules like toxin sacs.  The whole scene reads as a diseased ecosystem marching:
+    wet roots dragging through marsh water, spores hanging in the air, and decay
+    spreading in concentric rings from each footfall.
   strengths: |
     Necroswarm commands an ever-growing army of bramble creatures.  It marches toward settlements leaving scars of rot, and its bramble minions explode when struck, showering the battlefield with corrosive spores.  Glyph beacons allow it to siphon breach energy and regenerate its forces, and its massive size lets it trample defences while calling vines to bind its foes.
   weaknesses: |
-    The creature’s actions are controlled by glyphs and a traitor’s influence; destroying or cleansing these runes can weaken the bramble army and free Necroswarm from its compulsion.  It responds to Inco’s pleas, hinting at a memory of its peaceful life.  Bramble minions are vulnerable to fire and can be cleared before they reach vital structures, and the unstable green pus that infuses them can backfire when ignited.
+    Its offensive rhythm depends on bramble positioning and movement timing.  Teams
+    that intercept brambles early, burn volatile clusters before they converge, and
+    disrupt glyph-linked control points can prevent the largest rot cascades.
+
+    Testimony suggests remnants of the original creature persist beneath corruption;
+    sustained disruption and focused pressure may break compulsion cycles long enough
+    to collapse the swarm structure.
+  story_notes: |
+    Narrate Necroswarm as ecological siege warfare.  The immediate danger is combat,
+    but the strategic terror is famine: dead fields, spoiled harvest stores, and
+    settlement planners realizing one more week of spread could cripple winter supply.
+
+    Keep Soskel's uncertainty in frame—why a formerly distant, almost pacifist
+    organism now attacks with intent—and use that tension to seed political suspicion.
+    Inco/Talix references should add emotional friction: people who once knew the
+    creature grappling with whether it can be saved, while others demand immediate
+    eradication before New Gravehold starves.
 - name: Burrower
   box: Return to Gravehold
   battle: 4
@@ -1004,18 +1063,25 @@ nemeses:
 - name: Risen Thrall
   box: Outcasts
   battle: 3
-  background: 'While battling the Knight of Shackles, Z’hana (Outcasts) fought alongside
-    thralls.  Now she encounters a follower of the Knight leading its own army of
-    thralls.  Z’hana fears that even if a Nemesis is defeated its servants may return
-    and wonders whether thralls can become Nameless themselves. '
-  appearance: A skeletal soldier wearing tattered armor, surrounded by thrall minions.
-  strengths: Summons numerous thrall minions and gains bonuses when minions die
+  background: |
+    The Risen Thrall appears years after the first assault of the Knight of Shackles, proving the old commander’s doctrine survived the commander itself.  Z’hana recalls fighting those first skeletal hordes as a young mage and thought no later terror could eclipse that day.  Facing this lieutenant now, she names a harsher truth: some enemies do not end when their master falls, they mature in the dark and return with tactics of their own.
+
+    This nemesis leads not as a berserker but as a field captain, cycling expendable dead through disciplined formations to grind resistance down by attrition.  Its campaign raises a strategic dread across the expedition—whether prolonged Void exposure can elevate ordinary thralls into true Nameless entities.
+  appearance: |
+    A crowned skeletal knight in tarnished plate rides a gaunt, corpse-dark steed through fog-thick gravefields.  Its eye sockets burn with magenta voidlight, mirrored by the horse’s feral glow, while black pennants and shredded cloak tails stream behind it like smoke.
+
+    Around the rider, lesser dead advance in dense ranks: blank-jawed infantry with violet-lit skulls, pitted shields, and mismatched grave-gear.  The overall silhouette reads as a mobile execution column rather than a chaotic mob.
+  strengths: Summons numerous thrall minions, hardens them through aura-like battlefield
+    pressure, and converts their deaths into escalating punishment against mages and
+    Gravehold
   weaknesses: Minions have low health and can be cleared before they overwhelm the
     players
   story_notes: |
-    The Risen Thrall embodies a grim Outcasts lesson: defeating a master does not end the danger when devoted servants remain.  As the expedition advances, undead ranks rise to block every route and buy time for greater horrors.
+    The Risen Thrall embodies a grim Outcasts lesson: defeating a master does not end the danger when devoted servants remain.  Its ranks do not simply shamble; they execute inherited doctrine from the Knight of Shackles, testing supply lines, forcing split defenses, and exhausting healers before decisive strikes.
 
-    In the encounter, the Thrall's pressure comes from numbers and persistence.  The mages must carve through repeated waves without losing tempo, knowing that delay lets the wider host consolidate around them.
+    Z’hana’s field account frames the encounter with generational weight.  She remembers being young at Gravehold’s first skeletal siege, then asks whether age has made survivors numb—or merely better at hiding terror.  Seeing this follower command an army of its own renews that dread and turns the battle into a moral warning: if the dead can be drilled long enough, a minion host may eventually become a new species of nemesis.
+
+    In narration, emphasize rhythm: trumpet-like bone calls, hoofbeats in mud, shield-lines of lesser dead collapsing and reforming, and every cleared wave buying only moments.  Victory should feel earned through discipline under pressure, not catharsis.
 - name: Thief of Dreams
   box: Outcasts
   battle: 2
@@ -1380,15 +1446,21 @@ nemeses:
 - name: The Reliquary
   box: The Abyss
   battle: 3
-  background: 'In the Void, Xaxos watches his daughter age while he remains the same.  He
-    describes fighting a human-shaped Nameless and fears that he is repeating his
-    old mistakes.  The Reliquary, filled with obsessions and cataclysm cards, tempts
-    him to sacrifice his future for power. '
-  appearance: A humanoid entity clad in a patchwork of reliquaries and cages, its
-    heart replaced by a glowing gem.
+  background: |
+    The Reliquary enters the expedition through Xaxos's Void journals, where he describes time as increasingly unstable the longer one remains beyond ordinary reality.  In those accounts he watches his daughter grow older while he remains unchanged, then confronts a human-seeming Nameless whose portal-craft mirrors his own breach techniques with cruel precision.
+
+    He interprets that encounter as accusation as much as attack: the Void presenting a reflection of his methods stripped of mercy.  The Reliquary weaponizes obsession, offering power in exchange for escalating concessions until defenders can no longer tell sacrifice from compulsion.
+  appearance: |
+    In card art, The Reliquary appears as a robed, human-shaped figure standing at the center of ruptured green-and-cyan portal light.  Branch-like growths and rootlike bindings cinch across its torso and mask, as if a living cage has fused into both armor and body.
+
+    Its silhouette blends mage and Nameless traits: open-palmed casting posture, breach-like tears in space around it, and a faceless helm that reads as ritual mask rather than skull.  Fragments of debris and leaves spiral in its wake, reinforcing the sense of a battlefield being peeled open layer by layer.
   strengths: Uses obsession cards that lure players into gaining powerful but costly
-    relics
+    relics, then compounds pressure with cataclysm effects that punish delayed decisions
   weaknesses: Players can avoid taking obsessions and focus on direct damage
+  story_notes: |
+    Narrate The Reliquary as an ethical siege.  Every offer of strength should feel plausible, helpful, and justifiable in the moment, with consequences that arrive one step later when retreat is no longer simple.
+
+    Xaxos's testimony is the emotional spine: he recognizes the enemy's portal work as a distorted echo of his own and fears he is "walking in spirals," returning to the same failure in new forms.  Use that dread to frame scenes where sealing a breach also means rejecting easy power that might save lives now but corrupt the campaign later.
 - name: Rust Superion
   box: Legacy of Gravehold
   battle: 2
@@ -1417,19 +1489,40 @@ nemeses:
   life: 0
   battle: 2
   background: |
-    The Bishop of Scrolls explains that the Mother of Rust is made of countless
-    tiny rust creatures that share a single consciousness and gather to form a woman.
-    Talix recalls that letting one small piece of rust survive allowed a giant monster
-    to form, with metal buggers that attach to skin.  These creatures lack individual
-    leadership but share a single consciousness that guides them together like a swarm.
+    In his Envelope 10 account, the Bishop of Scrolls questions where "simple Void
+    creatures" end and true Nameless begins.  He first dismissed the tiny rustborn
+    as beneath notice—scuttling things in cracks and plain-stones of the Void—until
+    they began converging in impossible numbers.
+
+    Unlike the Carapace Queen's directed broods, these fragments appeared leaderless
+    yet moved with one shared will.  When enough gathered, they rose together into
+    the silhouette of a human woman.  The Bishop's final unease is personal: he
+    wonders whether the form imitates him, and whether crossing that same boundary
+    into "true Nameless" is a fate waiting for any mage who lingers too long in the
+    Void.
   appearance: |
-    A massive humanoid figure composed of rusty metal shards and writhing fragments.
-    She takes the form of a woman when united.
+    A towering feminine humanoid assembled from interlocking rustborn plates, with
+    segmented bronze-metal skin, bright dead-white eyes, and swarming beetle-like
+    fragments orbiting and crawling across the body.
+
+    Cable-thick tendrils coil around her forearms and torso like living conduits,
+    while gaps in the frame reveal constant internal movement—small units shifting
+    position to repair, reshape, or detach.  She appears less like one creature than
+    a collective choosing, moment by moment, to wear a human shape.
   strengths: |
     Summons Rustborn minions that attach to players and drain their life.  At 4+
     Nemesis tokens, all Rustborn activate their RUSH effects.
   weaknesses: |
     Has no life points of her own—players defeat her by eliminating all minions.
+  story_notes: |
+    Narrate Mother of Rust as threshold horror: the moment defenders realize nuisance
+    vermin have become a person-sized intelligence and then a battlefield-scale one.
+    The emotional rhythm should move from dismissal, to pattern-recognition, to dread.
+
+    Use the Bishop's identity anxiety as subtext.  His question—"is it me they are
+    mimicking?"—turns every encounter into more than a swarm fight; it becomes a
+    meditation on imitation, contamination, and how long a mage can study the Void
+    before the Void studies them back.
   special_rules: |
     This nemesis has no life pool.  Players must defeat all Rustborn minions from
     a special deck to win.  When no Rustborn is in play, one is immediately placed.
@@ -1599,17 +1692,31 @@ nemeses:
 - name: Paradox of Myth and Bone
   box: Legacy of Gravehold
   battle: 3
-  background: 'The Bishop of Scrolls recounts discovering an enchanted mask radiating
-    magical power and a huge beast called Bone drawn to the mask.  Together they form
-    a deadly pair: the beast provides raw strength while the mask controls and drains
-    its magic.  Joined by parasitic chains, they become an even greater threat than
-    they were apart. '
-  appearance: A hulking skeletal beast bound by glowing chains to a floating ornate
-    mask that hovers above its head.
-  strengths: Uses two separate nemesis decks (Myth and Bone) that must both be depleted
-    to win
-  weaknesses: Splitting focus can prolong the fight; players can choose to defeat
-    one deck quickly to limit the pair’s options
+  background: |
+    Envelope 18 testimony from the Bishop of Scrolls describes this nemesis as an accidental union born in the Void.  He found the mask first and sensed a strong magical aura around it—an aura that lured lesser followers in swarms and eventually drew a gigantic beast he later named Bone.
+
+    When Bone moved close, the trap embedded in the mask activated.  Chains lashed out, bound the creature, and began siphoning its magic.  What had been two separate threats became a parasitic partnership: Bone supplying raw mass and violence, Myth supplying control, timing, and predatory intent.  The Bishop calls the pair deadlier together than apart and questions whether either could still function without the relationship now feeding them both.
+  appearance: |
+    A towering horned beast with gaunt, corpse-green musculature and black spine ridges, its upper body yoked to a floating crow-crested mask by hanging chain arrays.
+
+    The mask resembles a ceremonial faceplate framed by feathered black wings and a single crimson eye-like gem.  Antler-like projections and hooked growths arc around the bonded frame, making the whole silhouette read as a ritual trophy fused to a war-beast.
+  strengths: |
+    Uses two separate nemesis decks (Myth and Bone) and pressure effects that scale
+    off their interaction.  Myth manipulates persistence and control states, while
+    Bone converts that control into direct battlefield punishment.
+  weaknesses: |
+    The pair can be disrupted by targeted focus and tempo control; forcing one side
+    of the paradox behind in life or board presence limits combined effects and
+    reduces the value of their parasitic synergy.
+  story_notes: |
+    Narrate this encounter as predatory symbiosis rather than simple dual-boss design.
+    Myth should feel calculating and extractive; Bone should feel like captured force
+    turned into a weapon by external control.
+
+    Reuse the Bishop's sensory framing in scenes: the "pull" of magic felt before
+    visual contact, scavenger-like followers circling the aura, then the sudden snap
+    of chains when the trap closes.  The emotional core is dread at watching power
+    itself become bait.
 - name: Rust Amalgam
   box: Legacy of Gravehold
   battle: 3
@@ -1801,34 +1908,78 @@ nemeses:
 - name: Paradox of Myth
   box: Legacy of Gravehold
   battle: 4
-  background: 'Little lore exists about the Paradox of Myth outside of its campaign
-    appearance.  This nemesis embodies the living memories of villagers and turns
-    their will against the mages. '
-  appearance: A shifting rift filled with ghostly villagers clutching relics and scrolls.
-  strengths: Uses a villager deck
-  weaknesses: Players must manage the villager deck by defeating villagers and spending
-    aether to remove power tokens
+  background: |
+    Envelope 6 testimony from Kel, Source of Aether, describes Paradox of Myth as a
+    Portalborn controller that feeds on aether and weaponizes living bonds.  Rather
+    than simply killing captives, it alternates between draining life and forcing
+    restorative surges to keep victims in a fugue state—never fully dead, never fully
+    free.
+
+    Kel identifies the deepest horror as desecration of fellowship.  Tethered mages
+    are wrapped in chains, forced to cast together in a mockery of their shared
+    tattoos and discipline, turning trusted allies into unwilling instruments against
+    their own people.
+  appearance: |
+    A floating ritual mask crowned by black ravenlike wings and hooked horn details,
+    with a crimson gem-eye set above a humanlike faceplate.  Hanging chain bundles
+    trail beneath it like puppet lines, swaying as if searching for hosts.
+
+    In battle depictions, the mask hovers over violet breach-scarred horizons,
+    maintaining distance while its chains do the intimate violence.  The silhouette
+    reads as priestly and predatory at once: ceremonial control apparatus masquerading
+    as a relic.
+  strengths: |
+    Uses a villager deck and chain-control effects to convert board presence into
+    sustained pressure.  Empowered villagers enter play sturdier, and control states
+    can redirect mage tempo into the nemesis plan.
+  weaknesses: |
+    Mages can break momentum by removing power from villager effects quickly and
+    prioritizing targets that maintain control loops.  Coordinated focus-fire and
+    rapid aether spending to strip key protections prevent prolonged puppet states.
+  story_notes: |
+    Narrate Paradox of Myth through violated trust.  The fear is not only incoming
+    damage but recognition—friends moving and casting with familiar rhythms while no
+    longer steering their own hands.
+
+    Kel's voice should remain central: revulsion, grief, and disciplined refusal.
+    Scene language can emphasize glowing tether tattoos under forced synchronization,
+    chain links tightening at the moment spells are mirrored, and the moral urgency
+    to free companions before victory counts as another form of loss.
 - name: Paradox of Bone
   box: Legacy of Gravehold
   difficulty: 8
   life: 80
   battle: 4
   background: |
-    The Paradox of Bone has no widely published lore; its origins and motives remain
-    shrouded in mystery.  In the campaign it emerges from the Void, bound to the
-    remnants of a massive skeletal beast.  Xaxos describes it as the "purest distillation"
-    of what the Void creates—a being driven to pure madness and destructive rage through
-    overwhelming forces.
+    In Envelope 3, Xaxos calls Paradox of Bone "the purest distillation of what the Void creates"—a creature shaped by poisoned air, madness-saturated stone, and endless pressure against sanity.  He describes it not as cunning evil but as pain without end: a force that runs, tramples, and destroys because it cannot stop fleeing an agony that never eases.
+
+    This framing makes the encounter morally complicated for narrators.  Bone is still catastrophic and must be stopped, yet Xaxos insists ending it is also an act of mercy.  The nemesis becomes a warning of what prolonged Void exposure can reduce any will to: rage stripped of purpose, motion without destination, violence without strategy.
   appearance: |
-    A bony, feral creature with chaotic and aggressive design.  It is a massive,
-    ossified creature bound in chains whose ribs glow with dark energy.  The design
-    focuses on organic, bone-like structures.
+    A hulking quadrupedal abomination with corpse-green musculature, black dorsal
+    spikes, and an oversized antler-crown that replaces a conventional head.  Iron
+    chain lengths hang from the branching horns like broken restraints, clattering as
+    it moves.
+
+    The chest and forelimbs are massively overbuilt for impact charges, while the
+    rear frame is leaner and whip-fast, giving the silhouette of a beast engineered
+    to crash through lines rather than hold territory.  Its faceless front and
+    dangling chains reinforce the impression of identity erased and pain externalized.
   strengths: |
-    Uses the Bone deck.  Two tokens (Gem/Relic and Spell) move on a track when
-    players acquire cards.
+    Uses the Bone deck and a split pressure track tied to player acquisitions.
+    The Gem/Relic and Spell tokens force mages to choose between slowing economy,
+    slowing spell growth, or accepting Gravehold damage spikes from track imbalance.
   weaknesses: |
-    Defeating Bone minions and depleting the Bone deck reveals the Paradox and
-    allows players to deal damage.
+    Defeating Bone minions and draining the Bone deck exposes openings for direct
+    damage.  Teams that deliberately balance acquisition types can blunt unleash
+    scaling and avoid feeding the worst track-difference punishments.
+  story_notes: |
+    Narrate Bone as momentum horror: pounding impacts, chain rattle, and abrupt
+    surges that punish indecision.  Each purchase choice should feel like triage
+    under pressure, with the city paying for every imbalance in mage priorities.
+
+    Xaxos's quote is the emotional anchor.  Use it to keep tone tragic rather than
+    triumphant—defeat is necessary, but the scene should carry the weight of putting
+    down a living terminal wound created by the Void.
   special_rules: |
     Bone Track system: Gem/Relic token advances when players acquire gems/relics;
     Spell token advances when players acquire spells.  Unleash: Gravehold suffers

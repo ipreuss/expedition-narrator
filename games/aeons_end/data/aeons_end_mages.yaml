@@ -185,16 +185,19 @@ mages:
   variants:
   - box: Aeon's End (Core Set)
   - box: The Void
-    background: An alternate version of Xaxos included in The Void.  Specific narrative
-      details were not found.
-    appearance: Depicted as a robed void‑bringer with dark energy swirling around
-      him; the dashboard art shows him standing amid fractured void stones.
+    background: |
+      In The Void era, Xaxos has already crossed the line from controversial theorist to exile field-commander.  Time distortion in the Void erodes his sense of sequence; he records watching his daughter age while he remains physically unchanged, a fracture that deepens both his guilt and his urgency.
+
+      He no longer speaks about "mastering" danger in abstract terms.  His journals fixate on triage choices—what to seal, what to sacrifice, and who can still be saved before another breach cascade begins.  He fears that every desperate tactic brings him closer to the same spiral of mistakes that once summoned catastrophe.
+    appearance: |
+      Depicted as a hooded void-bringer in dark layered robes, Xaxos stands amid fractured stone and breach-light that glows in sickly green and teal arcs.  His stance is defensive rather than triumphant, with one hand bracing a portal seam while the other channels volatile energy as if trying to hold a collapsing boundary closed by force of will.
     strengths: Xaxos (The Void) requires sacrifice from his allies to unlock his power
     weaknesses: Xaxos’s power hinges on forcing allies to set aside cards—either chosen
       by the ally for Pyre or at random for his ability
-    story_notes: In exile Xaxos journals his travels through the Void, questioning
-      the nature of the Nameless after encountering the Herald of the End.  His notes
-      dwell on guilt, grief, and whether his obsession makes him the monster he fears.
+    story_notes: |
+      In exile, Xaxos journals his travels through the Void and repeatedly questions whether he is documenting threats or creating them by pursuing understanding at any cost.  After encounters with entities such as the Herald of the End and the Reliquary, his notes frame the Void as a mirror that reflects intention back as consequence.
+
+      A recurring thread for narration is his paradoxical self-diagnosis: "too old and too young," both villain and hero in the same campaign.  Use this to anchor scenes where he mentors younger mages while privately fearing he is teaching them the first steps of his own downfall.
   - box: The Abyss
     background: In this timeline, Xaxos is a determined scholar shaped by his
       mother’s rescued knowledge.  He refuses to hide and believes knowledge has
@@ -253,19 +256,22 @@ mages:
   - box: The Depths
 - id: z-hana
   name: Z'hana
-  background: Z’hana is a renegade healer who draws on sanctified glyphs to restore
-    Gravehold and shield her allies.  She is resolute, maternal, and willing to
-    challenge tradition when it costs lives.
-  appearance: Shown wearing desert robes and carrying an ornate staff.
+  background: |
+    Z’hana is a renegade healer who binds restorative magic into sanctified glyphs etched across skin, stone, and steel.  She once stood on Gravehold’s front lines during the Knight of Shackles assault, fighting shoulder to shoulder with the city’s mages while skeletal cavalry tore through the deadfields.  Years later, that memory still governs her command style: she treats every quiet horizon as a warning and every victory as temporary unless the root corruption is purged.
+
+    Maternal but unsentimental, she protects communities first and argues with councils second.
+  appearance: |
+    A weathered elder mage wrapped in crimson-and-sand robes, with dense glyph tattoos along her forearms and hands.  She carries a carved staff and moves with deliberate calm, but when she invokes healing sigils her posture hardens into that of a battlefield commander.
   strengths: Z’hana’s Sanctum Glyph ability requires five charges and heals Gravehold
     for seven life—one of the largest single sources of healing in the game
   weaknesses: She begins the game with no breaches open, which slows her early spell
     casting
   variants:
   - box: Outcasts
-    background: In Outcasts, Z’hana is a hardened healer in exile who leads a southern
-      community and pushes for reform.  She is resolute, stubborn, and guided by a
-      fierce desire to protect her people.
+    background: |
+      In Outcasts, Z’hana is an aging healer in exile who leads a southern settlement and openly challenges New Gravehold’s old habits.  She has seen one generation survive by grit and lose another by complacency, so she demands reform even when it fractures alliances.
+
+      Her testimony about the Knight of Shackles and its followers reveals a private fear: cruelty can become ordinary if survivors stop naming it and resisting it.
     appearance: A weathered woman in crimson and brown robes, her hands and forearms
       marked with glyph tattoos; she carries a carved staff and exudes a commanding
       presence.
@@ -275,8 +281,11 @@ mages:
       resources in an effort to protect everyone.
     story_notes: Z’hana left New Gravehold, built a southern community, and later
       fought to defend Azer alongside her son and the Azerian Tethers.  She entered
-      the Void with Xaxos, discovered the fountain of souls corrupted the dead, and
-      helped destroy it before returning with a call for reform.
+      the Void with Xaxos, discovered the Fountain of Souls corrupted the dead, and
+      helped destroy it before returning with a call for reform.  During the Risen
+      Thrall crisis she confesses that age has not dulled fear so much as taught her
+      to function inside it, and that admission gives younger mages permission to
+      voice dread without surrendering to it.
 - id: dezmodia
   name: Dezmodia
   background: Dezmodia is a voidborn prodigy who reshapes allies’ breaches.  She is
