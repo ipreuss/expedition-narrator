@@ -84,7 +84,8 @@ The selector ensures (via retry mechanism):
 
 Tests are in `tests/test_expedition_selector.py`. Run with:
 ```bash
-.venv/bin/pytest tests/
+python -m pip install -r requirements-dev.txt
+pytest tests/
 ```
 
 ## Diegetic Narration Data Quality
@@ -93,4 +94,3 @@ Tests are in `tests/test_expedition_selector.py`. Run with:
 - Keep mechanics references accurate but framed as narrative affordances (what this lets the character do in-scene).
 - Avoid out-of-world phrasing such as “placeholder”, “unknown”, or implementation-centric wording when enough card/lore context exists.
 - If details are genuinely unavailable, keep entries concise and explicitly uncertainty-aware without breaking immersion.
-
