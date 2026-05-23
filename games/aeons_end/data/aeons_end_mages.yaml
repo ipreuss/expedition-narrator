@@ -1,21 +1,23 @@
 mages:
 - id: adelheim
   name: Adelheim
-  background: Adelheim is a Gravehold weaponsmith turned breach mage who crafts weapons
-    from breach ore.  Practical and protective, he treats his forge as a duty and
-    prefers preparation over heroics.  As he says, "It is folly what I do, to make
-    things in a place where everything is broken."  He believes survival depends
-    on discipline and dependable defense.
-  appearance: A rugged craftsman with a weathered face and calloused hands.  He wears
-    practical work clothes suited for the forge, with leather aprons and tool belts.
-    His posture reflects years of labor, and his eyes carry the weight of responsibility.
+  background: |
+    Adelheim is a forge-mage who treats weaponsmithing as both burden and vow: in a broken world, someone still has to make what others need to survive.
+    He rejects romanticism about war and calls his work folly, yet keeps striking the hammer because necessity outweighs pride.
+    For Adelheim, civilization is maintained through repetition—mending blades, reforging breach-touched ore, and showing up again when losses mount.
+  appearance: |
+    A bald, hard-faced smith in a reinforced forge harness with glowing aether conduits running across chest and arms.
+    He stands like an anvil under pressure, forearms lit with pale breach energy, carrying the visual imprint of someone who turned workshop labor into battlefield utility.
   strengths: As a support/utility mage Adelheim excels at protecting his companions
   weaknesses: Adelheim’s reliance on exhausting attacks means his power is reactive
     rather than offensive
-  story_notes: Adelheim advised an expedition on unusual tracks and stayed behind to
-    reinforce Gravehold’s defenses.
+  story_notes: |
+    Use Adelheim in scenes about duty without glamour: the person who repairs what breaks while others chase grand victories.
+    His voice is blunt, unsentimental, and morally steady—he will call the work foolish and still do it.
+    Strong hooks: triage after disasters, friction with idealists, and quiet leadership built through reliability rather than charisma.
   variants:
   - box: Aeon's End (Core Set)
+    nickname: Weaponsmith
 - id: brama
   name: Brama
   background: Brama is the elder of Gravehold, the last survivor of her conclave of
@@ -23,8 +25,10 @@ mages:
     nurturing core who advises the city to seal itself in the cave.  Despite her
     long years she maintains hope that Gravehold will return to the light.
   appearance: An aged, dignified woman with silver-streaked hair and wise, knowing eyes.
-    She wears flowing robes befitting her role as Elder, and her presence radiates
-    authority and maternal warmth.  Her hands bear the marks of decades of spell-casting.
+    She wears layered ceremonial robes in earth and teal tones, with necklaces, rings,
+    and a carved staff hung with small charms. Her presence radiates authority and
+    maternal warmth, and her bearing suggests someone who has carried leadership for
+    many lifetimes.
   strengths: Brama is a healing mage
   weaknesses: Low direct harm output; she is primarily a support character
   story_notes: Brama led survivors into the tunnels after the fall of Gravehold, training
@@ -49,16 +53,17 @@ mages:
     burn above reclaimed Karek, knowing there is much work to be done.
   variants:
   - box: Aeon's End (Core Set)
+    nickname: Elder
   - box: The Descent
+    nickname: The Leader
     background: |
-      In The Descent, Brama is a guardian of ancient texts who dreams of lost
-      civilizations.  Past 3 testimony captures her urgency: the Calamity warped
-      plants, animals, and even stone into ambush predators, making open settlements
-      feel indefensible.  She rejects nostalgia for sprawling pre-Fall cities and
-      searches instead for a true stronghold city that can survive sustained Nameless
-      assault.  She is inspired by Janti, who arrives from outside.
-    appearance: Brama appears as "The Leader" with a dignified, serious expression
-      that underscores her role as keeper of knowledge and leader of the survivors.
+      In The Descent, Brama becomes a reformer as much as a guardian: she studies
+      ancient city records and refuses to accept endless survival as humanity's final state.
+      She argues that civilization can be rebuilt at scale—defensible cities, shared
+      knowledge, and children raised for more than siege duty—and frames that hope as strategy, not naivete.
+      Janti's arrival from outside confirms Brama's conviction that the future will not be saved by isolation alone.
+    appearance: Brama is shown mid-cast, dark hair loose and cloak swept into motion,
+      with a focused fighter's stance that contrasts her elder regalia in other eras.
     strengths: Her Regenerate ability (5 charges) lets her gain 4 life, and optionally
       deal 2 damage to herself to heal Gravehold for 4 life.
     weaknesses: Focused on healing and self-sacrifice rather than offense.
@@ -123,28 +128,51 @@ mages:
   - box: Aeon's End (Core Set)
 - id: mist
   name: Mist
+  nickname: Dagger Captain
   background: |
-    Mist is a vigilant scout and Dagger Captain who masks fear with discipline.
-    She does not see herself as brave despite others viewing her as a hero, describing
-    breach work as traumatic—"Every time I have left splinters of myself behind."
-    In Envelope 19 testimony she crosses a darker threshold: she is willing to become
-    a villain in public memory if fear of her can weld fractured factions into one
-    fighting body.  Mist calls this gamble the path to a "Second Fall," accepting
-    hatred as the cost of forced unity.
-  appearance: A lean front-line commander in dark, battle-worn armor with ritual
-    markings and scout gear cut for speed.  In Mist Revealed depictions she wears
-    a gold-trimmed hood and presses a shard-like mask plate over one eye while glowing
-    script burns along her face and throat—part confession, part self-anointing as
-    the threat everyone must answer.
+    Mist is Gravehold’s Dagger Captain, a breach-trained scout who has learned to act
+    while afraid.  She is praised as fearless, but her own testimony says otherwise:
+    every descent into breach-fire tears something from her, and every battle leaves
+    another scar hidden behind discipline.
+
+    In her later account she embraces a harsher doctrine: if terror can force the
+    city’s rival factions into one war-body, she will accept being remembered as a
+    villain to prevent a second collapse.
+  appearance: |
+    A lean front-line commander in dark, practical combat leathers and skirted armor,
+    built for speed through broken streets and breach-lit tunnels.  Her right upper arm
+    carries angular ritual tattoos, and her wrappings and red-black uniform mark rank,
+    urgency, and constant deployment.
   strengths: Mist is a support mage
   weaknesses: Low innate harm and reliance on allies for full effectiveness
-  story_notes: Mist fought through the fall of Gravehold, confronting Xaxos and helping
-    shepherd survivors into the tunnels.  She later led surface scouting, helped rescue
-    Brama from the Fungal Mesh, and coordinated defenses against fog‑shrouded and
-    memory‑eating Nameless.  She witnessed the corrupted ally’s final fall into the
-    Void during the war’s end.
+  story_notes: |
+    Mist fought through the fall of Gravehold, confronted Xaxos, and helped shepherd
+    survivors below.  She later led surface scouting, helped recover Brama from the
+    Fungal Mesh, and coordinated responses to fog-shrouded, memory-hunting Nameless.
+
+    Story hook for narrators: Mist is a commander whose orders can sound ruthless even
+    when they are protective.  Scenes around her work best when trust, fear, and duty
+    are in tension at the same time.
   variants:
   - box: Aeon's End (Core Set)
+    nickname: Dagger Captain
+  - box: War Eternal
+    nickname: Voidwalker
+    background: |
+      In War Eternal-era testimony, Mist describes becoming "the vessel" after a
+      fourth breach crossing. She recounts a crystalline, insect-chorus hum that entered
+      her body, burned through her from within, and left her feeling like a successor
+      self carrying the memories of the one who entered.
+    appearance: |
+      A severe, disciplined fighter with a short dark bob, dark leathers, and a curved
+      blade held low for close work. Purple-red armor plates and forearm wrappings mark
+      her as a veteran breach operative; her posture is turned half-away, as if always
+      listening for danger behind her.
+    story_notes: |
+      Mist's "Voidwalker" voice is colder and more dissociated than her Dagger Captain
+      voice, speaking of her earlier self in the third person. Narratively, she works
+      well in scenes about identity fracture, sacrificial transformation, and the fear
+      that survival can come at the cost of the self.
 - id: phaedraxa
   name: Phaedraxa
   background: Phaedraxa is a seeress with temporal abilities who was born before the
@@ -300,53 +328,73 @@ mages:
       to condemn Mist’s method absolutely or salvage the unity Mist died trying to force.
 - id: dezmodia
   name: Dezmodia
-  background: Dezmodia is a voidborn prodigy who reshapes allies’ breaches.  She is
-    daring, generous, and fiercely protective of the outcast, often throwing herself
-    into danger to shield others.
-  appearance: Depicted as a young woman with bright white hair and void‑touched eyes.
+  background: |
+    Dezmodia was born in the place between worlds; Yan Magda held her as a newborn while her birth mother died.
+    She was raised as Magda's student and grew up with fractured time and unstable identity as constants, not exceptions.
+    She describes herself as living in the in-between like the Nameless do—caught between human life and void truth.
+  appearance: |
+    A pale young woman with windswept white hair, luminous void-bright eyes, and marbled corruption-like veining across part of her face.
+    She wears layered violet and white robes with a crimson scarf and belt, her posture poised between grace and strain, as if always listening to distant pressure in the dark.
   strengths: Dezmodia’s Tempest Sigil ability (six charges) destroys any player’s
     opened level I or II breach and replaces it with a sigil breach that adds +2 harm
     when casting spells
   weaknesses: She requires a large amount of aether to open her own breaches, and
     her ability has a high charge requires, making her slow to start
-  story_notes: During the fall of Gravehold, Dezmodia held back a massive Nameless
-    while civilians escaped, then buried it and herself in a final blast.  Her sacrifice
-    became a defining legend for the survivors.
+  story_notes: |
+    In her own account, time in the Void moves too quickly, too slowly, or not at all; she remembers both being born and what it feels like to die.
+    Her worldview creates sharp social conflict—she can sound contemptuous of Gravehold's politics even while defending it.
+    Use her for stories about divided belonging, prophetic dread, and the cost of seeing catastrophe before everyone else.
   variants:
+  - box: War Eternal
+    nickname: Voidborn Prodigy
+  - box: Legacy of Gravehold
+    nickname: Void Phantom
   - box: Outcasts
-    background: Dezmodia returns in Outcasts as a more experienced mage of the void.  No
-      specific narrative was provided.
-    appearance: A pale mage with flowing silver hair and piercing eyes, wrapped in
-      dark robes that seem to ripple like smoke; the air chills when she focuses her
-      power.
-    strengths: Her Swirling Darkness ability lets her draw cards and exchange cards
-      with an ally (from Outcasts overview table)
-    weaknesses: Her connection to the Void leaves her physically weak; misusing her
-      swirling magic can exhaust her and sow confusion among her allies.
+    nickname: Void Risen
+    background: |
+      In Outcasts, Dezmodia returns after death with her transformation complete: she describes herself as no longer merely touched by the Void, but remade by it.
+      She frames "the Fall" with bitter irony—aware of what she has become, yet still lucid about what threatens everyone else.
+      Her loyalty is no longer rooted in comfort or belonging; it is a deliberate choice to defend people she loves while standing half outside their world.
+    appearance: |
+      Dezmodia appears almost spectral: pale skin, white wind-blown hair, and luminous eyes set in a face marked by voidlike marbling.
+      Her crimson scarf and fitted tunic float amid torn, inky-white breach light, as though she is suspended between realities rather than standing on stone.
+    strengths: |
+      Her IV breach is a Void breach: any number of spells may be prepped to an opened Void breach, and when Dezmodia is exhausted she does not discard that Void breach.
+      This lets her bank explosive multi-spell turns and maintain threat continuity through exhaustion cycles.
+    weaknesses: |
+      Her power relies on maintaining breach stability at the seam between worlds; disruption at the wrong moment can collapse planned burst turns.
+      Dezmodia herself warns that she does not fully know what happens if those seams unravel.
+    story_notes: |
+      Use Outcasts Dezmodia for stories about posthuman identity, survivor's irony, and conscious self-sacrifice.
+      She speaks with unsettling calm about death, familiarity with pain, and the frisson between universes humming in her body.
+      Strong hooks: uneasy alliance with those who fear her, prophetic warnings others dismiss as arrogance, and hard choices made before catastrophe becomes visible to everyone else.
 - id: garu
   name: Garu
-  background: Garu is Yan Magda’s oathsworn protector, a hulking warrior with crystal
-    protrusions and a missing past.  He is loyal to a fault, blunt and decisive, and
-    uses brute strength and breach magic to shield his companions.
-  appearance: A massive, imposing warrior with crystalline structures protruding from
-    his shoulders and elbows.  His design appears wild and primal, with a commanding
-    physical presence.  He carries the relic Torch.
+  background: |
+    Garu is Yan Magda’s oathsworn protector, a void‑wanderer who arrived in Gravehold carrying more strength than memory.
+    He admits he cannot remember being anything other than what people first feared—a monster—yet he chooses, again and again, to stand between civilians and the dark.
+    His oath is practical and tender: be frightening to the enemy, gentle to the frightened, and never let a child face the Nameless alone.
+  appearance: Garu is a broad, heavily muscled man with dark skin, a short black
+    mohawk, and a hard, watchful stare. Jagged crystal growths jut from his shoulders
+    and limbs like old void‑scars. He wears work straps, reinforced bracers, and
+    battered knee guards—more guardian’s kit than ceremonial regalia—giving him the
+    silhouette of a living bulwark.
   strengths: His Colossal Force ability (5 charges) lets him discard up to four
     prepared spells to deal 2 damage plus 4 additional damage per spell discarded.
     Garu’s unique relic Torch allows him to focus any player’s breaches easily,
     accelerating the group’s setup
   weaknesses: Garu’s harm spike requires exhausting his prepared spells, which slows
-    future turns
-  story_notes: Garu traveled with Yan Magda’s outcasts through the Void, acting as the
-    group’s shield in its warped landscapes.
+    future turns. His unresolved memories can also leave him vulnerable to shame or
+    manipulation when enemies frame him as a beast instead of a person.
+  story_notes: |
+    In his first days in Gravehold, a child in the hovels called Garu a monster.
+    The wound lingered even after he laughed it off.
+    He remembers wandering the Void and hearing, beneath his own breath, the echo of a child’s voice he cannot fully name.
+    That ache drives his protective instinct: he kneels to calm the afraid, then rises to meet horrors head‑on.
+    Garu traveled with Yan Magda’s outcasts through the Void as their shield, and in Gravehold he turned that same oath into a promise that not every monster is cruel.
   variants:
   - box: War Eternal
-  - box: The Returned
-    background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
-    appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
-    strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
-    weaknesses: Her plan blooms late; if pressure peaks early, she can struggle before her Intoned engine is established.
-    story_notes: She emerges from the Void carrying old grudges and an almost-military vision for her rescued children—Garu, Dezmodia, and Kain—then abandons vengeance after meeting Indira and witnessing fragile trust firsthand. In The Returned era, her arc centers on earning that trust daily and teaching younger mages without repeating the cruelties that shaped her exile.
+    nickname: Oathsworn Protector
 - id: gex
   name: Gex
   background: Gex is a thoughtful advisor who holds deep discussions with her ally
@@ -361,12 +409,6 @@ mages:
   weaknesses: Gex depends on card destruction and cooperation
   variants:
   - box: War Eternal
-  - box: The Returned
-    background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
-    appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
-    strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
-    weaknesses: Her plan blooms late; if pressure peaks early, she can struggle before her Intoned engine is established.
-    story_notes: She emerges from the Void carrying old grudges and an almost-military vision for her rescued children—Garu, Dezmodia, and Kain—then abandons vengeance after meeting Indira and witnessing fragile trust firsthand. In The Returned era, her arc centers on earning that trust daily and teaching younger mages without repeating the cruelties that shaped her exile.
 - id: mazahaedron
   name: Mazahaedron
   background: Mazahaedron is the last henge mystic, a shaman who believes the world
@@ -380,12 +422,6 @@ mages:
     stone and interpreting visions of past cataclysms for his allies.
   variants:
   - box: War Eternal
-  - box: The Returned
-    background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
-    appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
-    strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
-    weaknesses: Her plan blooms late; if pressure peaks early, she can struggle before her Intoned engine is established.
-    story_notes: She emerges from the Void carrying old grudges and an almost-military vision for her rescued children—Garu, Dezmodia, and Kain—then abandons vengeance after meeting Indira and witnessing fragile trust firsthand. In The Returned era, her arc centers on earning that trust daily and teaching younger mages without repeating the cruelties that shaped her exile.
   - box: The Descent
     background: In The Descent, Mazahaedron is known as The Monk.  He feels vibrations
       through the earth of fleeing humanity and their pursuers.  He finds comfort
@@ -416,12 +452,6 @@ mages:
     lesser foes as proof of her worth.
   variants:
   - box: War Eternal
-  - box: The Returned
-    background: In The Returned, Yan Magda remakes her discipline around Intoned breaches (III and IV). When she casts from an opened Intoned breach, another mage can immediately focus a breach, and her intoned spells strike with additional force.
-    appearance: Yan Magda appears older, in pale robes, standing barefoot in ruined halls lit by dim firelight.
-    strengths: She turns precise timing into shared momentum, accelerating the whole team's breach development while amplifying key spell volleys.
-    weaknesses: Her plan blooms late; if pressure peaks early, she can struggle before her Intoned engine is established.
-    story_notes: She emerges from the Void carrying old grudges and an almost-military vision for her rescued children—Garu, Dezmodia, and Kain—then abandons vengeance after meeting Indira and witnessing fragile trust firsthand. In The Returned era, her arc centers on earning that trust daily and teaching younger mages without repeating the cruelties that shaped her exile.
 - id: ulgimor
   name: Ulgimor
   background: Ulgimor is a shadowkin beast attached to Ohat, a former dirt merchant
@@ -478,18 +508,44 @@ mages:
   - box: The Void
 - id: claudia
   name: Claudia
-  background: Claudia is a prodigy obsessed with aether and gemstones.  As a child
-    she snuck into her parents' workshop and discovered that aether suffuses all matter,
-    leading her to believe she herself is aether.  She joins the New Age expedition
-    to harness this power for New Gravehold.
-  appearance: A creative young woman depicted wearing goggles and covered in crystal
-    dust.  Her expression shows the intensity of a true inventor focused on her craft.
+  background: |
+    Claudia is a young aether-inventor raised in New Gravehold under Brama's long leadership, with a mind that jumps from jokes to social critique in a single breath.
+    She loves her city fiercely, but she cannot stop imagining what humanity might build in a world not defined by constant monster attacks and emergency repair.
+    Her outlook makes her both hopeful and restless: she admires the elders while quietly asking whether survival has made everyone forget how to imagine anything better.
+  appearance: |
+    A compact, energetic inventor with short tousled blond hair and oversized goggles pushed up on her head.
+    She wears practical green work clothes with tool pouches and knee guards, while crystalline shards and floating aether gears orbit her hands during experiments.
   strengths: Her Aeplosion ability (5 charges) can, during an ally’s main phase, either give that
     ally two aether and create a copy of the card they buy next, or provide five aether
     for a single purchase
-  weaknesses: Claudia relies on allies buying cards to maximize her Aeplosion
+  weaknesses: Claudia relies on allies buying cards to maximize her Aeplosion, and
+    her fast, tangent-prone thinking can make it hard to sell cautious plans to
+    more conservative teammates.
+  story_notes: |
+    Claudia speaks like someone brainstorming out loud in real time—funny, sincere, and suddenly profound.
+    Use her in stories about post-siege culture: a generation born into permanent crisis trying to recover the ability to imagine peace.
+    Strong hooks include mentor friction with long-standing leaders, bright ideas dismissed as naive, and inventions that begin as curiosity but become civic turning points.
   variants:
   - box: The New Age
+    nickname: Prospector
+    background: |
+      In The New Age, Claudia presents herself as a born inventor with relentless curiosity and a prankster's confidence.
+      She frames her childhood as a chain of workshop break-ins, lock puzzles, and deliberate "accidents" that taught her to push past every barrier adults set in front of her.
+      Her core belief is radical even by Gravehold standards: aether is not merely in gems but in everything, including people, and she intends to master it at unprecedented precision.
+    appearance: |
+      As "Prospector," Claudia appears younger and scrappier: short blond hair, oversized goggles clutched in both hands, fingerless gloves, and patched green utility overalls.
+      Colorful crystal shards line her belt and pockets like field samples, giving her the look of a miner, tinkerer, and theorist at once.
+    strengths: |
+      Claudia turns experimentation into explosive economy. She can inject large bursts of aether into allies' buying turns and multiply key market gains, accelerating team growth.
+      Her style rewards bold timing and table awareness: she sees resource lines quickly and loves turning one purchase into a cascade.
+    weaknesses: |
+      Her plans depend on cooperative buying windows; if teammates cannot convert her bursts immediately, part of her value is wasted.
+      Her confidence can also spill into overreach, tempting risky lines that assume ideal card flow.
+    story_notes: |
+      Use New Age Claudia for stories about gifted youth under siege: funny, chaotic, and startlingly sincere about wanting humanity to evolve beyond survival mode.
+      She idolizes her parents and mentors while also challenging their limits, making her a natural catalyst in scenes about authority, invention, and generational change.
+  - box: Legacy of Gravehold
+    nickname: Visionary
 - id: gygar
   name: Gygar
   background: Gygar is an explorer who joined the New Age expedition after plumbing
@@ -641,25 +697,48 @@ mages:
   - box: Shattered Dreams
 - id: mazra
   name: Mazra
-  background: Mazra is Razra’s studious sister.  From an early age she petitioned
-    Brama to access the archives, translated ancient breach magic by age eight, and
-    became the youngest breach mage at ten.  She joins the expedition hoping to become
-    head of the council of elders.
-  appearance: Shown as a young scholar with scrolls and an ornate staff.
+  nickname: The Learned
+  background: |
+    Mazra is Razra's younger sister and a prodigy of archival breach theory. Family
+    stories say she petitioned Brama for archive access at six, translated ancient
+    breach texts by eight, and passed her ordeal at ten—the youngest breach mage anyone
+    in Gravehold could remember.
+
+    She treats scholarship as a weapon for survival: every recovered fragment, every
+    translated glyph, every corrected ritual is another chance to keep Gravehold alive
+    through the next catastrophe.
+  appearance: |
+    A focused young scholar-mage with a short dark bob, pale training tunic, and purple
+    field wraps. She is often surrounded by hovering books, drifting ruby shards, and
+    glowing sister-word script that circles her like living annotation.
   strengths: Mazra’s Research ability lets her destroy one of her unique Mazra cards
     to gain a higher‑requires version or return all her Mazra cards from the set aside
     to her hand
   weaknesses: Her power is tied to her personal deck; if she cannot upgrade her cards
     effectively she falls behind
+  story_notes: |
+    Razra describes Mazra with a mix of teasing and awe: a child who asked for textbooks
+    instead of toys, followed Brama into council sessions, and announced early that she
+    would someday lead the elders.
+
+    Narrator hook: Mazra's scenes work best when intellect is emotional—curiosity,
+    ambition, family pressure, and civic duty all bound to the same page of notes.
   variants:
   - box: Legacy of Gravehold
-    background: In Legacy of Gravehold, Mazra is a brilliant scholar forced to face
-      messy politics and betrayal.  Assigned to the Northern Outpost, she begins
-      questioning the council and learns hard lessons about leadership.
-    appearance: No detailed physical description; often depicted studying ancient
-      tomes.
-    strengths: Mazra excels at research and planning
-    weaknesses: Her focus on long‑term upgrades can leave her weak early in the game
+    nickname: The Learned
+    background: |
+      In Legacy of Gravehold, Mazra's confidence is tested by crisis and betrayal. After
+      Razra's abduction and revelations of forbidden aether experimentation, she is
+      forced to confront how little pure scholarship prepared her for political rot and
+      moral compromise.
+    appearance: |
+      A composed young scholar in pale-and-violet robes, carrying a sealed tome close to
+      her chest. Her posture is more guarded than in earlier depictions, suggesting a
+      prodigy learning caution the hard way.
+    story_notes: |
+      Mazra speaks with precise discipline, but her narration carries new uncertainty:
+      she is brilliant enough to map magical systems, yet no longer certain she wants
+      the life of council power she once chased.
 - id: qu
   name: Qu
   background: Qu is the daughter of Xaxos and was raised in the Void.  She feels torn
@@ -775,18 +854,25 @@ mages:
     weaknesses: Her impulsive nature can lead her into dangerous situations
 - id: cairna
   name: Cairna
-  background: Cairna lost her legs when the tunnels leading to New Gravehold collapsed.  Trapped
-    alone in the ruins, she fashioned new legs from stone using breach magic and survived
-    by her own resilience and ingenuity.  She now ventures through the sunken city
-    seeking a way back, drawing strength from her will to endure.
-  appearance: A determined young woman with stone prosthetic legs created from cavern
-    rubble.
-  strengths: Cairna’s Energize ability requires three charges plus additional charges
-    spent voluntarily
-  weaknesses: Cairna relies on other players’ opened breaches to make use of the spells
-    she provides
+  background: |
+    Cairna was crushed in the cave collapse beneath Gravehold and lost both legs, then woke buried alive in the dark with no formal breach training.
+    In desperation, the stone answered her: she shaped legs from rubble and walked out of what should have been her tomb.
+    She survived alone in the ruins for years, turning pain, abandonment, and improvisation into a hard doctrine—if the world falls again, she will outlast it again.
+  appearance: |
+    A lean, battle-ready woman with fierce red hair and ember-bright eyes, moving on self-fashioned stone legs.
+    She fights low and forward like a tunnel predator, wrapped in worn green-brown scavenger leathers with banded forearms and flame-like breach energy curling around her blades.
+  strengths: |
+    Cairna's ability comes online at 3+ charges and spends 3 charges per use, giving her reliable mid-cycle activation instead of a single all-in peak.
+    She excels at resilient tempo play: converting survival pressure into repeatable action while staying dangerous in prolonged fights.
+  weaknesses: |
+    Her support lines depend on team breach states and charge timing; poor coordination can leave part of her turn value stranded.
+    She also tends to rely on endurance over retreat, which can become predictable against enemies that punish repeated patterns.
+  story_notes: |
+    Use Cairna for stories about self-remaking after catastrophe: a survivor who no longer waits for rescue, permission, or tradition.
+    Strong hooks include family grief and misunderstanding, hidden years beneath the city, and hard-won trust with mages whose training she never received.
   variants:
   - box: Return to Gravehold
+    nickname: Flame Walker
 - id: ohat-and-ulgimor
   name: Ohat and Ulgimor
   background: Ohat was a cowardly merchant when the tunnels collapsed, but he was
@@ -914,21 +1000,38 @@ mages:
 - id: arachnos
   name: Arachnos
   variants:
+  - box: Legacy of Gravehold
+    nickname: Void Weaver
+    background: |
+      In Legacy of Gravehold, Arachnos is a second-life survivor: once condemned by his own transgressions into Void magic, later pulled back from total ruin by Z'hana and Xaxos.
+      He acknowledges without excuse that he chose the path that made him the "World Devourer," yet refuses the simpler lie that all Void power is inherently evil.
+      His creed is uncomfortable but deliberate—power reveals character rather than replacing it, and redemption demands restraint, not denial.
+    appearance: |
+      A pale, crouched mage in a torn formal uniform with red-gold trim, wrapped in a shadow-dark cloak that moves like smoke.
+      His face and eyes are visibly transformed by Void grafting, giving him an unsettling multi-lensed gaze and the air of a hunter who has learned to fear himself.
+    strengths: |
+      Arachnos excels at predatory spell conversion: he can redirect or amplify allied prepared magic at decisive moments, turning one opening into a lethal burst.
+      In longer fights, his Void techniques reward precise timing and threat-priority discipline.
+    weaknesses: |
+      His kit is unforgiving—high complexity, volatile power scaling, and heavy dependence on sequencing errors punished immediately.
+      Narratively and tactically, he is vulnerable to obsession: overreliance on Void escalation can destabilize both plans and trust.
+    story_notes: |
+      Use Arachnos for arcs of culpability and earned second chances. He is most compelling when gratitude and self-loathing coexist in the same scene.
+      Strong hooks: debt to Z'hana, unresolved legacy with Xaxos's teachings, and hard choices where "necessary power" risks becoming familiar corruption again.
   - box: Outcasts
-    background: In Outcasts-era records, Arachnos survives as a scarred, half-transformed
-      mage shaped by exile and failed transcendence.  He was once a trusted ally aligned
-      with Xaxos, but after council censure he helped lead a breakaway faction and continued
-      dangerous Void-adaptation experiments outside New Gravehold's protection.
-    appearance: A gaunt, long-limbed mage in worn scholar vestments, with pale web-like
-      scar tissue banding his arms and neck.  Chitinous protrusions rise from his shoulders
-      and upper back like incomplete spider limbs, and his eyes are often described as
-      carrying a cold, faceted sheen under certain light—subtle signs that the
-      transformation never fully released him.
+    nickname: Redeemed Acolyte
+    background: |
+      In Outcasts, Arachnos frames his return as a deliberate second chance, not absolution.
+      He admits his own ambition and unsafe experimentation helped create the monster he became, and he refuses to blame the Void alone for those choices.
+      Now clearer-minded after rebirth, he commits to disciplined use of power, determined not to lose what remains of his humanity.
+    appearance: |
+      Arachnos appears upright and formal in restored uniform armor with red accents and a dark cloak, less feral than earlier depictions.
+      His altered eyes and pale, web-marked features still reveal lasting transformation, but his posture signals control rather than collapse.
     strengths: His Convergence ability allows him to cast any player’s prepared spell
       and give it +3 harm (from Outcasts overview table)
-    weaknesses: After his fusion with a spider Nameless, he is physically fragile
-      and suffers pain when drawing on the Void; if he pushes too far his body threatens
-      to unravel.
+    weaknesses: |
+      He remains vulnerable to the same obsession that once ruined him; overconfidence in "necessary" transgression can erode judgment quickly.
+      His high-complexity sequencing leaves little margin for error when pressure forces improvisation.
     story_notes: Arachnos, a former student of Xaxos, was exiled after forbidden
       experiments and rebellion against New Gravehold's authority.  He attempted to fuse
       himself with spiderlike Nameless adaptations and emerged half-transformed.  In later
@@ -959,20 +1062,23 @@ mages:
       is becoming a cage unless the cult is exposed.
 - id: auren
   name: Auren
-  background: Auren bears scales as a visible sign of corruption yet retains their humanity.  In
-    their introspective lore they speak of crafting devices and inventions so that future
-    generations will remember them when they have succumbed to the corruption.  Auren
-    knows their mortality lies not in their flesh but in their creations.  When an idea
-    takes hold, they become absorbed in tinkering with metallic bits and machinery parts,
-    hard to pull away until the device is complete.  They collaborate with the scholar
-    Kavoc, building machines that attach to breach aether and detect energy readings.
-  appearance: A person with patches of scales on their skin, carrying mechanical implements
-    and trinkets.
+  background: |
+    Auren is an engineer-mage marked by corruption, with scales spreading across their face as a constant reminder that time is finite.
+    Rather than retreat from that truth, they commit to legacy through invention: if they cannot live to see the future, they will help build it.
+    They work obsessively on practical technologies—energy routers, stabilizers, and aether systems—believing human progress can outlast any one life.
+  appearance: |
+    Auren is usually seen in a leather work apron over a plain shirt, sleeves rolled for shop labor, with tools at the belt and small rotor-like devices hovering nearby.
+    Their expression is warm and animated when discussing design problems, contrasting with the visible corruption scales at the edge of the face.
   strengths: Their ability allows them to cast spells prepped to relic breaches without
     exhausting them, enabling repeated spell use
   weaknesses: Auren's strategy requires building relics and may be slow to start
+  story_notes: |
+    Auren's monologues frame mortality as fuel, not tragedy: they imagine future generations using flying craft, stored lightning, and advanced prosthetics descended from today's prototypes.
+    Use Auren in stories about stewardship across time—someone who accepts they may not witness victory, yet chooses to lay groundwork others will inherit.
+    Strong hooks: collaboration with Kavoc, grief transmuted into craftsmanship, and ethical choices about technology under siege pressure.
   variants:
   - box: Past and Future
+    nickname: Mechanic
 - id: willow
   name: Willow
   background: Willow loves the thrill of using magic, even though the elders warn
@@ -1008,20 +1114,23 @@ mages:
   - box: Past and Future
 - id: nadea
   name: Nadea
-  background: Serving as a town guard in Port Hanon under Captain Talie, Nadea believes it is
-    inevitable that humans become Nameless.  She criticises those who cling to their names and
-    refuse to accept the natural progression of corruption.  Nadea vows to give up
-    her name and descend voluntarily when her time comes, preserving her dignity and
-    protecting her community.  She has worked the night shift at the city gate for decades,
-    preferring her own company after her superiors decided her demeanor "left something to
-    be desired."
-  appearance: A stern guard wearing practical armor with flowing ribbons on her uniform,
-    carrying a spear along with inscriptions and tourmaline stones.
+  background: |
+    Nadea is a long-serving guard from Port Hanon who treats corruption as inevitability, not myth.
+    She despises comforting lies and argues that the true duty of a protector is not to deny descent into monstrosity, but to contain its damage when it comes.
+    Her creed is severe but principled: when her own mind begins to go, she will surrender her name and descend to Gravehold by choice, making even her end an act of public service.
+  appearance: |
+    A broad-shouldered sentinel in polished silver-and-gold armor with a pale blue tabard, carrying a ceremonial spear and a jagged shield-like arm guard.
+    Her posture is formal and immovable, like a city gate given human form.
   strengths: Her ability, Wall Off, heals a player and, if she has five or more non‑starter
     cards in her set aside pile, grants an ally a spell into their hand
   weaknesses: Focuses on defensive play; her offensive potential is limited
+  story_notes: |
+    Nadea speaks with blunt fatalism that can sound cruel until the stakes rise; then her logic becomes grimly comforting.
+    Use her for stories about civic burden, unpopular truth-telling, and the ethics of end-of-life choice under corruption law.
+    Strong hooks: conflict with hopeful idealists, gate-watch testimony, and scenes where compassion must take procedural form.
   variants:
   - box: Past and Future
+    nickname: Town Guard
 - id: kiri-and-phoenix
   name: Kiri and Phoenix
   background: Kiri, a field naturalist, observes a flock of phoenixes and mimics their
@@ -1038,35 +1147,40 @@ mages:
 - id: dorian
   name: Dorian
   background: |
-    Dorian presents himself as arrogant and irreverent, treating advanced aether theory
-    as a game he has already solved.  He boasts that he can write his own rules,
-    bending causality for petty proofs of control—such as rewinding moments just to
-    win a wager over a piece of jade.
+    Dorian is a self-styled prodigy who treats aethercraft like an argument he has
+    already won. He dismisses conventional teaching as timid and insists most mages
+    fail because they only see the aether in front of them, not the currents across
+    distance, time, and possibility.
 
-    Yet his Clouded Mesmer testimony reveals a second layer: when he speaks as "Dorian,
-    Magic Theorist," he is precise, observant, and willing to admit fear.  After being
-    exposed to the Mesmer's smoke, he records firsthand how compulsion feels in flesh
-    and thought, then warns other mages never to engage that Nameless alone.
+    In his own telling, he is willing to "break the laws of causality" for results
+    others call reckless—even for something as trivial as proving a point in a wager.
+    He writes his own rules first and asks permission never, which makes him brilliant,
+    useful, and dangerous in equal measure.
   appearance: |
-    A confident young theorist threading glowing strands of temporal aether between his
-    hands, posture relaxed to the point of provocation.
-    In field scenes he is often marked by restless focus—eyes tracking probabilities,
-    voice sharp with analysis even while under pressure.
+    A slim young man with shoulder-length dark hair under a blue headscarf, usually
+    wearing a loose white lace-up shirt with blue-and-gold floral embroidery and
+    dark red trousers. He carries himself with an easy smile and a hand-on-hip
+    posture that reads as playful confidence bordering on smugness.
   strengths: |
-    Time-bending techniques grant extra aether, turn-sequencing leverage, and the ability
-    to repurpose major spells at critical moments.
-    Under stress, his theoretical rigor helps him identify enemy patterns quickly,
-    especially against control-oriented Nameless.
+    Dorian excels at high-complexity aether sequencing: spotting non-obvious lines,
+    chaining resources efficiently, and identifying future-turn advantages before
+    others see them. He turns abstract theory into sudden tempo swings when a battle
+    demands improvisation.
   weaknesses: |
-    His ego invites unnecessary risk and can erode trust before a battle stabilizes.
-    He may overestimate his ability to "outplay" mental manipulation effects, making him
-    vulnerable to adversaries that punish isolation or pride.
+    His arrogance pushes him toward unnecessary risk and showmanship. He underrates
+    guardrails, dismisses caution as slowness, and can fracture team trust when he
+    treats allies as students who need to catch up.
   story_notes: |
-    Dorian works well in narratives where bravado collides with accountability.  He is
-    compelling when forced to translate abstract theory into mentorship: naming dangers,
-    sharing hard-earned caution, and choosing collaboration over showing off.
+    Use Dorian in scenes where genius and hubris are inseparable. His voice is fast,
+    cutting, and theatrical ("a little of this, a sprinkle of aether, bing bang boom"),
+    but beneath the bravado is a mage trying to drag magical practice into a future
+    only he can fully picture.
+
+    Strong hooks: arguments with conservative mentors, causality-crossing experiments,
+    and moments where he must decide whether to prove he is right or keep everyone alive.
   variants:
   - box: Evolution
+    nickname: Magic Theorist
 - id: janti
   name: Janti
   background: Janti defied the elders by learning the sister-words despite being born
@@ -1095,34 +1209,41 @@ mages:
   - box: The Descent
 - id: alcheia
   name: Alcheia
-  background: Alcheia loves the gemstones lining the underground tunnels and is frustrated
-    by the monks’ dismissal of earthly beauty.  She listens to the echoes in the caverns
-    and volunteers to join Quilius on a hunt, excited for the opportunity to leave
-    her cloistered life behind. Her curiosity and rebellious streak make her eager
-    to explore the wider world.
-  appearance: A young woman carrying a glowing geode and surrounded by facets of crystal.
+  background: |
+    Alcheia was raised among cavern monks but never shared their contempt for earthly beauty.
+    She is fascinated by gemstones, echoes, and the living texture of the underground world, and openly challenges teachings that treat wonder as distraction.
+    Her rebellious curiosity pushes her toward expeditions and danger; where others seek stillness, she seeks contact, movement, and discovery.
+  appearance: |
+    A poised young stone-mage in layered desert-toned robes with a deep red scarf and wrapped forearms, often balancing a glowing blue geode at her fingertips.
+    Gem-cut ornaments and mineral pendants hang from her belt and cuffs, giving her the look of both artist and field researcher.
   strengths: Alcheia uses a unique facet deck
-  weaknesses: Managing the facet deck and balancing card requires requires planning
+  weaknesses: Managing the facet deck and balancing card timings requires careful planning.
+  story_notes: |
+    Alcheia narrates with dry humor and impatience for dogma. She listens to tunnel echoes as intelligence channels and treats mineral lore as practical magic.
+    Use her for stories about tradition versus curiosity, chosen exile from rigid institutions, and apprentices who reinterpret inherited doctrine.
   variants:
   - box: The Caverns
+    nickname: The Stonecarver
 - id: bayli
   name: Bayli
-  background: Bayli comes from the city of Souston and is an ambitious, talented mage
-    who feels unchallenged in her peaceful homeland.  She yearns to accomplish great
-    things and save the world like the heroes of Old Gravehold legends.  She is
-    frustrated that her city is safe from the Nameless but offers little room for
-    adventure and glory.  Quick-witted and optimistic, she counters her companions'
-    grumpiness with jokes and sees dangerous places as opportunities worth exploring.
-    "Maybe into a dangerous place if I have to spend a little extra time getting them
-    out.  They're worth it."
-  appearance: A powerful, determined young mage with an aggressive stance and a ready
-    smile.  Her design reflects her ambition and desire to prove herself as a hero.
+  background: |
+    Bayli is a gifted young mage from Souston, a town she sees as safe, stagnant, and suffocatingly content with "good enough."
+    She openly bristles at the small ambitions around her, insisting that people were meant for discovery, risk, and greatness—not endless routine.
+    Beneath the bravado is genuine purpose: Bayli does not crave war, she craves the chance to matter before the world narrows any further.
+  appearance: |
+    A sharp-eyed duelist with a bright red cropped mohawk, dark skin, and a confident half-smile that reads as challenge.
+    She wears a fitted black vest over rolled white sleeves, a red sash, weathered blue trousers, and carries a curved saber—equal parts street swagger and disciplined readiness.
   strengths: Her Fusion Reaction ability (5 charges) lets her retrieve up to two
     spells from her discard and cast up to three prepped spells, making her a
     powerful aggressive mage with high cycling potential.
   weaknesses: Her aggressive playstyle may leave her vulnerable if she overextends.
+  story_notes: |
+    Bayli's voice is fast, irreverent, and slightly theatrical: she complains loudly about complacency, then volunteers first when danger appears.
+    Use her in stories about frustrated potential, generational impatience, and the tension between "peaceful survival" and meaningful progress.
+    Strong hooks: clashes with cautious elders, proving herself outside Souston, and moments where her ego is tested by the true cost of heroism.
   variants:
   - box: Past and Future
+    nickname: Beacon
 - id: leisan
   name: Leisan
   background: Leisan is a huntress who confronts the Nameless and collects trophies
@@ -1243,24 +1364,24 @@ mages:
   - box: Past and Future
 - id: naftir
   name: Naftir
-  background: Naftir is a descendant of Xaxos, a man corrupted by the Void.  He says,
-    "Spending time in the Void changes a person. It twists them, deep down."  His
-    great-grandmother grew up in the Void, and Naftir is "still paying the price even
-    after all these years."  Though he has never entered the Void himself, he knows
-    its dangers intimately through family stories and lore.  Pragmatic and cautious,
-    he urges companions to think before rushing into the Void, even when someone they
-    love has been taken.  In the Duskling Tower, he confronts Corruption's Core—a creature
-    that bears his features, a dark reflection of his bloodline.  When they meet, Naftir's
-    eyes glow blue as the corruption recognizes something of itself in him.
-  appearance: Known as the Void Inheritor, his appearance hints at the corruption
-    lurking in his bloodline.  His eyes carry the weight of ancestral darkness, and
-    in moments of confrontation with void creatures, they glow an eerie blue.
+  background: |
+    Naftir carries Xaxos's bloodline like an inherited wound. Though he has never stepped into the Void, he describes its influence as something that settled into his family generation after generation.
+    He was born into relief and fear at once—hailed as "human again" by kin who hoped the corruption line had broken, while he himself feels the same buried hunger circling beneath the surface.
+    This makes him both wary and resolute: he studies the Void's pattern not as abstraction, but as a personal inheritance he refuses to pass on unchanged.
+  appearance: |
+    A young mage in dark blue-black field garb with bright cobalt straps and belt, standing with controlled posture beside a spectral wolf-like void echo.
+    His expression is guarded and analytical, and in charged moments his eyes harden with the same cold light that marks his ancestry.
   strengths: His Amplify ability (4 charges) places Link tokens on breaches or casts
     all prepped spells from a linked breach at once.  His Consuming Breach stacks
     spells and deals 3 bonus damage after the third.
   weaknesses: Complexity 5 requires careful token and breach management.
+  story_notes: |
+    Naftir's voice blends dread with discipline: he speaks as someone cataloging a family curse while trying to outthink it in real time.
+    Use him for stories about inherited corruption, fear of becoming what one hates, and tactical restraint under intimate moral pressure.
+    Strong hooks: confrontations with Xaxos's legacy, moments where power offers easy violence, and choices to remain human through method, not denial.
   variants:
   - box: Past and Future
+    nickname: Void Inheritor
 - id: rhys
   name: Rhys
   background: Rhys is a mage whose mother wished for a daughter with natural magical
