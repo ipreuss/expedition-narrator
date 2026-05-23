@@ -50,10 +50,13 @@ mages:
   variants:
   - box: Aeon's End (Core Set)
   - box: The Descent
-    background: In The Descent, Brama is a guardian of ancient texts who dreams of
-      lost civilizations.  She says, "The world wasn't always broken. I've read about
-      it in the ancient texts we guard," and hopes safe places still exist where
-      humanity can thrive.  She is inspired by Janti, who arrives from outside.
+    background: |
+      In The Descent, Brama is a guardian of ancient texts who dreams of lost
+      civilizations.  Past 3 testimony captures her urgency: the Calamity warped
+      plants, animals, and even stone into ambush predators, making open settlements
+      feel indefensible.  She rejects nostalgia for sprawling pre-Fall cities and
+      searches instead for a true stronghold city that can survive sustained Nameless
+      assault.  She is inspired by Janti, who arrives from outside.
     appearance: Brama appears as "The Leader" with a dignified, serious expression
       that underscores her role as keeper of knowledge and leader of the survivors.
     strengths: Her Regenerate ability (5 charges) lets her gain 4 life, and optionally
@@ -120,15 +123,19 @@ mages:
   - box: Aeon's End (Core Set)
 - id: mist
   name: Mist
-  background: Mist is a vigilant scout and Dagger Captain who masks fear with discipline.
+  background: |
+    Mist is a vigilant scout and Dagger Captain who masks fear with discipline.
     She does not see herself as brave despite others viewing her as a hero, describing
-    her experience at the breach as traumatic—"Every time I have left splinters of
-    myself behind."  She fights not from courage but from desperation and the hope
-    of leaving this place.
-  appearance: A warrior woman in dark, battle-worn armor suited to her role as Dagger
-    Captain.  Her posture is combat-ready, and her face shows both determination and
-    the weight of trauma.  She carries weapons befitting her station as a front-line
-    fighter.
+    breach work as traumatic—"Every time I have left splinters of myself behind."
+    In Envelope 19 testimony she crosses a darker threshold: she is willing to become
+    a villain in public memory if fear of her can weld fractured factions into one
+    fighting body.  Mist calls this gamble the path to a "Second Fall," accepting
+    hatred as the cost of forced unity.
+  appearance: A lean front-line commander in dark, battle-worn armor with ritual
+    markings and scout gear cut for speed.  In Mist Revealed depictions she wears
+    a gold-trimmed hood and presses a shard-like mask plate over one eye while glowing
+    script burns along her face and throat—part confession, part self-anointing as
+    the threat everyone must answer.
   strengths: Mist is a support mage
   weaknesses: Low innate harm and reliance on allies for full effectiveness
   story_notes: Mist fought through the fall of Gravehold, confronting Xaxos and helping
@@ -286,6 +293,11 @@ mages:
       Thrall crisis she confesses that age has not dulled fear so much as taught her
       to function inside it, and that admission gives younger mages permission to
       voice dread without surrendering to it.
+
+      Envelope 19 links her directly to Mist’s turning point—Mist addresses Z’hana
+      by name while unveiling the "Second Fall" plan, treating Z’hana as both witness
+      and moral judge.  This gives narrators a durable tension—Z’hana must decide whether
+      to condemn Mist’s method absolutely or salvage the unity Mist died trying to force.
 - id: dezmodia
   name: Dezmodia
   background: Dezmodia is a voidborn prodigy who reshapes allies’ breaches.  She is
@@ -876,8 +888,11 @@ mages:
       was sentenced to isolation.  Indira now recognises she was afraid to stand up
       for what she believed and vows that she will not let fear guide her again. Her
       magic has always been irregular, influenced by the void and Yan Magda’s teachings.
-    appearance: No specific physical description is provided; she is known for irregular,
-      void‑touched magic.
+    appearance: A young breach apprentice usually described at torchline watchposts,
+      ink-stained from constant journaling and late-night briefings.  Her features
+      are often lit by cavefire and belllight rather than sun, and witnesses note
+      a wary stillness in her posture—as if she is always listening for the next
+      shift in the dark.
     strengths: Indira wields unstable void magic that can produce bursts of power
       and manipulate breach effects
     weaknesses: Her magic is erratic and difficult to control, sometimes causing unintended
