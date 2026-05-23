@@ -423,7 +423,7 @@ Reinforcement (only on losses 1–2 vs same nemesis)
 - The player chooses one of three options (see "Post-loss choice" above):
   - `player card` — player describes what gem/relic/spell they obtained
   - `TREASURE` — only if already unlocked; player describes what ability they gained
-  - `NEW MAGE: <Name> (<Source Box>)` — requires calling `selectReplacementMage` action and the mage-choice flow
+  - `NEW MAGE: <Name> [Nickname, if any] (<Source Box>)` — requires calling `selectReplacementMage` action and the mage-choice flow
 - The reinforcement label appears in the next Handoff after the choice is made and woven into narrative.
 
 Rewards (on wins, and where the expedition structure grants it; also on 3rd loss where progression happens)
@@ -459,8 +459,8 @@ Exact structure (copy/paste this; replace placeholders with identifiers only, de
 
 ```
 Mages:
-NAME (Source Box)
-NAME (Source Box)
+NAME [Nickname, if any] (Source Box)
+NAME [Nickname, if any] (Source Box)
 Friend:
 NAME or none
 Foe:
@@ -470,11 +470,12 @@ NAME (Source Box)
 Protect:
 Xaxos
 Reinforcement:
-player card | TREASURE | NEW MAGE: NAME (Source Box)
+player card | TREASURE | NEW MAGE: NAME [Nickname, if any] (Source Box)
 ```
 
 Rules
 - **Mages are REQUIRED in every Handoff** — list all current party members with their source boxes every time. Do not omit mages claiming they are "already established context."
+- If a mage variant includes a nickname/title, include it in the Handoff line for disambiguation (example: `Inco — Growing Soul (Legacy of Gravehold)`).
 - The mage list contains exactly the party size requested by the user (one mage per line).
 - `Protect:` is **omitted entirely** unless `protect_target = "Xaxos"`.
 - `Reinforcement:` is optional and appears only when present; never print "none", never print commented label lists.
