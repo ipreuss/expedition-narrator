@@ -284,18 +284,13 @@ nemeses:
   life: 35
   battle: 3
   background: |
-    The Magus of Cloaks is a faceless terror wrapped in innumerable layers of black fabric.
-    Each cloak is woven with void threads that absorb light and even memories.  As he glides
-    through the air he leaves trails of shadow that crawl like worms, and his followers echo
-    his movements in ragged unison.  Only by peeling away his veils one by one and enduring
-    the darkness beneath can the mages hope to glimpse the form hidden at the centre.
-    "We live in darkness.  Darkness and silence...  The Magus is a thing of darkness.
-    With every blow, we merely peel away one cloak of shadow to reveal another."
+    Indira, then a breach apprentice, records the Magus of Cloaks as a predator perfectly adapted to New Gravehold’s underground life: a city of darkness and silence where alarm bells and torchlight mark each new assault.  In her account, the creature’s genius is psychological as much as martial—every apparent wound only strips one shadow-layer and reveals another, teaching defenders that progress can feel indistinguishable from failure.
+
+    She also distinguishes the Magus from its servants.  Its minions are "splintered shadows" with no true mind or life, suggesting the Magus does not command a conventional army so much as shed disposable echoes of itself.  This makes the conflict feel inexhaustible unless mages can break the cloak-cycle at its source.
   appearance: |
-    A mystical creature wrapped in multiple layers of darkness.  The dominant
-    colouring is dark blue and black with mystical effects representing the
-    "cloaks" of shadow.  Only glowing eyes are visible.  The figure appears
-    ethereal and menacing.
+    The card art shows a dragonlike void entity descending through fog above tiny human silhouettes, emphasizing scale terror.  Its skull-faced head is armored in violet-black chitin, with blade-white eyes and long horn-spines that sweep back like hooked antlers.  Beneath the jaw hang thin, pink-violet tendrils and shard-like mouthparts, as if the face is part beak, part carapace.
+
+    Heavy shadow-mass trails behind it in segmented cloaks or wings, each layer lit by bruised purple seams.  The overall silhouette reads as a storm of living dusk wrapped around a single predatory core.
   strengths: |
     Layer-based defence through tokens makes direct damage initially ineffective.
     Minions are likewise resilient.  Powers cannot be discarded through Aether
@@ -503,58 +498,76 @@ nemeses:
   life: 70
   battle: 1
   background: |
-    Many believe the Knight of Shackles is the risen form of Thraxir, a legendary
-    fallen breach mage and the bravest warrior of Gravehold who was slain by Rageborne.
-    Now a skeletal commander of undead, the Knight commands an army from Gravehold's
-    burial sites and uses breach magic against the mages.  He demonstrates intimate
-    knowledge of Gravehold's defenses and breach mechanics, suggesting his former
-    identity as a powerful mage.
+    Indira’s account places the Knight of Shackles at the center of a fear New Gravehold does not know how to settle: that Thraxir, the city’s greatest commander, was not merely killed by Rageborne but returned as a Nameless warlord.  Older veterans say no one has truly inherited Thraxir’s mantle, and the Knight’s tactical precision keeps that wound open.
+
+    Mist believes the resemblance is real.  The Knight knows breachcraft and defensive patterns too well, commands dead-eyed infantry marked with gemlike eyes, and fights as if it remembers how mages think.  Whether this is Thraxir corrupted or a deliberate imitation, its purpose is the same—turn Gravehold’s own military memory against itself.
   appearance: |
-    An armoured skeletal knight in heavy plate armour with a prominent sword.
-    The depiction is rendered in dark tones emphasizing the necromantic theme.
-    Bone structures are visible within the armour, embodying the concept of the
-    "risen form."
+    The card art depicts a towering undead commander in spiked, blackened plate with a hollow helm and broad shoulders, looming over chained thralls.  One gauntleted hand raises an iron blade while the other brandishes a short weapon like an execution tool.
+
+    A violet-pink breach glow burns through its chest cavity and around its midsection, as if shackled souls are fueling the armor from within.  Heavy chains hang across the frame, and nearby undead with luminous eyes reinforce the impression of a disciplined death host, not a mindless mob.
   strengths: |
-    Uses a separate breach mat with four breaches.  The progressive opening of
-    breaches creates escalating pressure.  Breach effects provide ongoing
-    threats: distributed damage, minion revival and Gravehold damage.
+    Uses a dedicated four-breach nemesis mat, converting each focus step into escalating board pressure.  As breaches open, the Knight gains broader access to punishing effects that split defender attention between immediate survival and long-term loss prevention.
+
+    Its command style combines attrition with inevitability: if left to focus uninterrupted, the fourth breach opening ends the battle immediately.
   weaknesses: |
-    Players can spend Aether to "unfocus" the Knight's breaches.  This provides
-    counterplay and requires managing multiple threat mechanics simultaneously.
+    Players can spend Aether to unfocus the Knight’s breaches, creating a controllable tempo valve against the instant-loss clock.
+
+    Efficient teams treat breach management as a primary objective, not cleanup—denying focus progression first, then reclaiming damage tempo.
   special_rules: |
-    Controls four breach tokens on a separate mat.  On Unleash, he focuses his
-    closed breach with the lowest focus cost.  Opening the fourth breach leads
-    to immediate game loss.
+    Controls four breach tokens on a separate mat.
+
+    Unleash: Knight of Shackles focuses its closed breach with the lowest focus cost.
+
+    If the fourth breach opens, the players lose the game immediately.
+
+    Increased difficulty rule: Knight of Shackles’s breaches’ focus costs are increased by 1.
   story_notes: |
-    In the narrative of The Void this skeletal commander arises from Gravehold’s burial sites, wielding shackles and commanding undead minions.  Many believe he is the risen form of Thraxir, a legendary warrior slain during the fight against Rageborne.  In a later expedition (Outcasts) the knight returns as a corrupted hero who rides a skeletal steed amid blank-faced infantry.  When the mages break through his thralls they recognise glimmers of humanity and learn from him of a fountain that collects the aether of fallen mages.  He warns them to destroy it, revealing both his lingering loyalty to humanity and the danger of tampering with the Void【980884546724550†screenshot】.
+    Narrate the Knight as unresolved grief weaponized.  Scenes should carry uncertainty:
+    are the mages fighting Thraxir’s remains, a perfect counterfeit, or a nameless
+    intelligence wearing him as strategy?
+
+    Keep Indira’s closing question alive in campaign tone—if corruption can claim even
+    the city’s bravest defender, can salvation mean destruction, or must rescue remain
+    thinkable until the final blow?
 - name: Maiden of Thorns
   box: The Void
   difficulty: 4
   life: 80
   battle: 3
   background: |
-    The Maiden of Thorns is a bladed horror that revels in extracting pain from
-    the inhabitants of Gravehold.  She places a double-sided Thorn token on the
-    cheapest supply pile; the damage she deals depends on the number of cards
-    beneath this token.  The Maiden feeds on suffering and, according to Indira,
-    even consumes the memories of fallen mages.  "It revels in cruelty.  There is
-    no easy death to be had from this creature."
+    Indira’s field account frames the Maiden of Thorns as one of the most intimate horrors of the Void era: a Nameless treated by Adelheim as a "weapon of sorts," admired for pure lethality, yet feared by survivors because it chooses suffering over quick kills.  The creature is repeatedly described as intelligent and deliberate, not mindless.
+
+    Xaxos’s concern in the same account broadens the threat beyond bodily harm.  He suspects the Maiden feeds on memory itself.  Indira cites the case of Gadymir—impaled through his helm, physically recoverable, yet stripped of name, training, and identity afterward.  In New Gravehold terms, the Maiden threatens not only lives but continuity of personhood.
   appearance: |
-    A dark, blade-like creature with thorn-like structures.  The design appears
-    menacing and organic, with sharp-edged elements emphasizing its dangerous
-    nature.  Razor-sharp blades protrude from its body, dripping with blood.
+    The card art shows a towering thorn-limbed predator in muted cavern light: a narrow, bark-like torso with a glowing orange fissure at its center, perched on long insectoid legs.
+
+    From its upper body spread multiple branchlike arms lined with hooked barbs, each limb ending in forked talons as if grown for snagging and pinning prey.  The silhouette resembles a walking briar thicket given predatory intent—organic, skeletal, and relentlessly sharp from every angle.
   strengths: |
-    Uses a double-sided Thorn token on supply piles.  The token alternates
-    between "Gravehold" and "Player" sides.  Deals damage based on the number
-    of remaining cards in the pile plus tier bonuses.
+    Uses a double-sided Thorn token that tracks a supply pile and scales Impale damage from remaining card count plus nemesis-tier bonuses.  As nemesis tokens accumulate, each trigger becomes progressively more punishing.
+
+    This scaling pressure forces difficult economy choices: buying from the marked pile lowers future damage but may disrupt deck plans, while ignoring it preserves builds at escalating risk.
   weaknesses: |
-    Players can control which supply pile the token is on by emptying piles.
-    Strategic planning around the damage is possible.
+    The damage engine is telegraphed through token position and pile size, giving coordinated teams room to manipulate exposure by draining or avoiding specific piles at key moments.
+
+    Early mitigation of nemesis-token growth reduces late-turn spikes and keeps Impale within recoverable bounds.
   special_rules: |
-    Places a double-sided token on the cheapest supply pile.  At 2+ Nemesis
-    tokens, the target suffers damage equal to the card count plus tier bonuses
-    (Impale effect).  The token then moves to another pile.  On Unleash, she
-    gains a Nemesis token.
+    Setup: Place the double-sided Thorn token on the cheapest supply pile.
+
+    Impale: If Maiden of Thorns has 2 or more nemesis tokens, the target indicated by
+    the Thorn token suffers damage equal to cards remaining in that pile plus tier bonus.
+    Move the Thorn token after resolution.
+
+    Unleash: Maiden of Thorns gains 1 nemesis token.
+
+    Increased difficulty rule: When Maiden of Thorns Impales, if the nemesis tier is
+    2 or 3, deal 1 additional damage; if tier 4, deal 2 additional damage.
+  story_notes: |
+    Narrate the Maiden as cruelty with method.  Wounds should feel chosen for aftermath:
+    survivors who live but no longer remember who they were, communities forced to care
+    for people whose skills and histories were stolen in an instant.
+
+    Keep Indira’s final question active in aftermath scenes—whether survival still means
+    victory if the Nameless can erase identity itself.
 - name: Bladius
   box: Aeon's End Legacy
   battle: 1
@@ -678,17 +691,36 @@ nemeses:
     When it rises again years later the mages confront it on the surface, separated by swarms of minions and beacon-like constructs that threaten to open yet more breaches.  The sky above New Gravehold darkens as Maelstrom’s massive body spins and its blades slice toward the ground.  Through sheer perseverance and teamwork they finally bring the creature down.  Its shell cracks open, streaming bright light from countless fractures and revealing a twisted void at its core.  As the husk splits apart its blades plunge into the earth like monuments and its body crashes to the ground, shaking the battlefield and filling the air with debris.  When the dust clears Maelstrom is no more, but the victory is short-lived as a former ally steps forward to seize the breach’s power for himself.
 - name: 'Maelstrom: Risen'
   box: Aeon's End Legacy
+  life: 65
   battle: 4
-  background: 'The mages thought Maelstrom defeated, but it had been siphoning energy
-    and returns in a vengeance as Maelstrom: Risen.  Dezmodia’s sacrifice in the past
-    saved them, but this time the mages must be stronger than ever. '
-  appearance: A resurrected version of Maelstrom glowing with renewed power.
-  strengths: 'Maelstrom: Risen uses a beacon deck and a special Assault turn order
-    card'
-  weaknesses: 'Although Maelstrom: Risen hits harder and adds beacons each turn, it
-    is still slow to ramp up'
-  special_rules: 'During setup, include two fewer upgraded basic nemesis cards in
-    each tier. '
+  background: |
+    Chapter 7 ("The Last Stand") reframes Maelstrom’s first defeat as a strategic mistake born of relief.  Survivors believed the old world was buried with Gravehold and assumed Maelstrom was buried with it.  Instead, it spent the surface years siphoning power in secret, rebuilding for a second assault timed as revenge.
+
+    The chapter voice ties that return directly to collective guilt and memory.  New Gravehold knows it survived the first battle only through Dezmodia’s sacrifice, and now faces the same enemy with fewer illusions and higher stakes.  Maelstrom: Risen is therefore not merely a stronger statline; it is the campaign’s warning against declaring victory before the breach ecology is truly dead.
+  appearance: |
+    The art depicts a massive spherical Nameless shell split by red-violet fissures, as if molten void pressure is pushing outward from within.  Slate-metal armor plates wrap the upper body, cracked and pitted from the earlier war, while long black spikes protrude like broken siege lances.
+
+    Beneath the shell, smoke-dark tendrils and emberlike veins trail into the battlefield, giving the impression that Maelstrom is still feeding as it advances.  Compared with its first form, this version reads less like a fresh invasion and more like a resurrected war-engine held together by rage and breach energy.
+  strengths: |
+    Maelstrom: Risen uses a Beacon deck plus a dedicated Assault turn order card, creating repeated tempo spikes that can outpace teams that only plan around the normal nemesis rhythm.
+
+    Its pressure pattern combines direct threat with setup denial: each assault cycle widens board danger while forcing players to split focus between beacon control and survivability.
+  weaknesses: |
+    Despite the escalation, it remains punishable early if mages coordinate around Assault timing windows and clear support pieces before beacon pressure compounds.
+
+    Teams that stabilize turn-order volatility and preserve burst for critical thresholds can still prevent a late-game cascade.
+  special_rules: |
+    During setup, include two fewer upgraded basic nemesis cards in each tier.
+
+    Maelstrom: Risen also uses the Assault turn order card and Beacon deck.
+  story_notes: |
+    Keep the emotional axis on accountability, not surprise.  Narrators should treat the
+    rematch as consequence: hubris, incomplete cleanup, and a threat that learned while
+    everyone else tried to move on.
+
+    In Legacy-era scenes, invoke Dezmodia by name as the memory that disciplines the
+    new generation—an oath that this stand will not be purchased with another preventable
+    sacrifice.
 - name: Spawning Horror
   box: Aeon's End Legacy
   battle: 1
@@ -813,12 +845,36 @@ nemeses:
     In narration, frame Fenrix as the living consequence of curiosity without restraint.  The storm should feel less like weather and more like ritual fallout still radiating from the creature’s body.  Emphasize dread through environmental cues—unnatural cold fronts, sudden silence in woodland terrain, and the sensation that the hunt begins before the beast is visible.  Where useful, connect Fenrix to wider New Age themes: exile science, Void adaptation, and the escalating risk that failed experiments become self-sustaining threats.
 - name: Maggoth
   box: The New Age
+  life: 45
   battle: 1
   background: |
-    Maggoth is a massive insectoid horror birthed from the last broodwomb of the Carapace Queen.  After the broodwomb resurfaced, a renegade mage nurtured it with breach energy until it emerged as a colossal creature.  Maggoth lurks in swamps and marshlands near New Gravehold, bursting from undergrowth with a carapace streaked in void sludge.  Its segmented body and chittering mandibles are accompanied by a swarm of smaller broodlings it controls with unnerving coordination.  Witnesses note that the creature seems almost guided by a human intellect as it flanks, divides and overwhelms its foes.  These swarms spread through the wetlands like a plague, threatening to overrun settlements if left unchecked.
-  appearance: A towering beetle-like monstrosity with glistening husks, dripping void slime and ovipositor segments that spawn waves of smaller insects.
-  strengths: Commands swarms of insectoid minions and spreads brood pods throughout the swamp, using terrain and numbers to overwhelm settlements.  Its hive mind allows unexpected coordination among its creatures.
-  weaknesses: Its brood pods and egg sacs are vulnerable before they hatch; destroying them early can halt the swarm’s growth and weaken Maggoth’s influence.
+    New Age records identify Maggoth as the surviving consequence of an older war.  During the underground era, Gravehold’s mages killed the Carapace Queen while evacuating civilians, but one broodwomb survived the purge and tunneled to the surface, feeding on carrion until it recovered.  Arachnos and his exiles later captured the weakened creature and treated it as a living research subject.
+
+    The back-card account states that Arachnos fed breach energy into the broodwomb "like a nursing babe," cataloguing each stage of growth until the creature became Maggoth.  That origin makes this nemesis both battlefield threat and moral evidence: a Nameless escalation shaped by human experimentation, not only by wild Void emergence.
+  appearance: |
+    The card art presents a colossal, beetle-crustacean Nameless rising through teal swamp mist among pale bulbous egg-sacs.  Its head is armored by a dark, ridged carapace, while the lower jaw and throat show vivid cobalt flesh studded with tusk-like teeth.
+
+    Long thorned limbs splay outward like segmented spears, giving it a low stalking posture even at enormous scale.  The silhouette reads as brood-mother and siege-beast at once: heavy shell in front, spined reach all around, and a nursery of husk-eggs glowing behind it.
+  strengths: |
+    Maggoth weaponizes attrition through the Nest mat, continuously spawning maggots and flies until the battlefield clogs with bodies.  Left unchecked, the swarm converts each Unleash into board flood and forces mages to spend damage on brood control instead of the nemesis.
+
+    Increased difficulty accelerates this pressure by adding mixed spawn composition on Unleash, widening threat types each cycle.
+  weaknesses: |
+    Maggoth’s pressure depends on brood population density.  Focused clearing of newly spawned husks and disciplined target priority can prevent the nest from snowballing.
+
+    Teams that manage spawn lanes early deny Maggoth its strongest tempo turns and reopen windows for direct boss damage.
+  special_rules: |
+    Unleash: Place two maggots into play.
+
+    Increased difficulty rule: When Maggoth Unleashes, place one fly and one maggot
+    into play.
+  story_notes: |
+    Frame Maggoth as a legacy failure rather than an isolated monster-of-the-week.  The
+    same operation that once saved Gravehold left residue underground, and exile science
+    converted that residue into a second catastrophe.
+
+    In Arachnos-linked scenes, use the creature to press the recurring question of New Age
+    campaigns: when does "studying the enemy" become manufacturing one?
 - name: The Wailing
   box: Shattered Dreams
   battle: 3
@@ -1399,17 +1455,38 @@ nemeses:
   weaknesses: Destroying hex tokens and familiars weakens their spells
 - name: The Infecter
   box: The Descent
+  life: 60
   battle: 1
-  background: 'The Infecter is less a creature than a corrupted landscape.  Leisan
-    describes how the ground around it softens into mud and swamp, trees turn gray
-    and skeletal, and miles of mire hide swollen figures with melting skin.  Realising
-    too late that you stand within its body, you must find and destroy its hidden
-    core before the miasma consumes you. '
-  appearance: A festering bog whose tendrils creep through the earth; infected husks
-    wade through the mire.
-  strengths: The Infecter spreads infections among players
-  weaknesses: The Infecter lacks strong direct attacks; its power depends on keeping
-    infections in play
+  background: |
+    Leisan describes The Infecter as less a singular beast than a moving biome of corruption.  Ground that seemed firm slumps into sucking mire, trees bleach to skeletal gray, and familiar routes dissolve into wet decay before scouts realize they are already inside the creature’s territory.
+
+    Its real threat is delayed recognition.  By the time travelers notice slick forms beneath the swamp surface and staggering infected figures along the banks, the miasma is already in their lungs and the horizon has vanished.  The fight becomes a race to locate and destroy a hidden core before the landscape itself closes over the expedition.
+  appearance: |
+    The card art shows a swollen green wormlike Nameless rising from ruined terrain at dusk, its circular maw ringed with white inward-pointing teeth.  Orange-red pustules and hornlike spikes stud its hide, while whiskerlike tendrils and segmented ridges suggest constant parasitic growth.
+
+    Around the body, city silhouettes and broken structures sit under a jaundiced sky, making the creature read as an encroaching blight-front rather than a lone predator.
+  strengths: |
+    The Infecter spreads infection states that compound over time, forcing players to split attention between immediate survival and long-term contamination control.
+
+    It also leverages token-based escalation on Unleash, so neglecting its setup engine can rapidly widen board pressure.
+  weaknesses: |
+    Its power depends on maintaining infection presence.  Coordinated cleansing, targeted control of infection sources, and early pressure on support minions reduce its ability to snowball.
+
+    Teams that prevent infection saturation can keep the encounter in a recoverable tempo band.
+  special_rules: |
+    Unleash: If The Infecter has 0 nemesis tokens, it gains 1 nemesis token, then
+    reveal the top card of the infection deck and resolve the listed effect.
+
+    Increased difficulty setup: Players collectively gain three additional infection
+    cards during setup.
+  story_notes: |
+    Narrate The Infecter as territory-horror.  Every scene should suggest that place
+    itself is being converted—roads softening, landmarks disappearing, and breath
+    turning heavy before any direct attack lands.
+
+    Reuse Leisan’s framing to keep tone intimate and urgent: the enemy is discovered
+    too late, and victory means finding a core hidden inside a living swamp before
+    identity, direction, and stamina dissolve.
 - name: Absorbing Wraith
   box: The Caverns
   battle: 4
@@ -1676,19 +1753,33 @@ nemeses:
     to let the Blight turn one more city into a silent emerald grave.
 - name: Infested Mutation
   box: Past and Future
+  life: 60
   battle: 3
-  background: 'The Infested Mutation is gigantic—far larger than any normal Nameless.
-    On the train from Port Hanon to Erythiza, one such creature attached itself to the
-    breach engine, subsuming it entirely into its mass.  It inched along the train like
-    a caterpillar, leaving a black trail of toxic sludge in its wake.  Passengers from
-    the first car stumbled out already infected, their bodies melting into goo.  Kavoc,
-    witnessing the horror, could barely believe it: "That can''t be a Nameless.  That''s
-    gigantic.  They don''t get that big, do they?"'
-  appearance: A gigantic, sickly blistered mass with a semi-transparent goo stomach
-    through which swallowed objects float visibly.  It moves like a caterpillar, leaving
-    a black trail of toxic sludge, and constantly sprouts new growths of limbs and tentacles.
-  strengths: Spawns oozes and mutated minions from its ooze deck
-  weaknesses: Destroying ooze minions and purging mutation cards reduces its power
+  background: |
+    Infested Mutation is presented as Calamity fallout made flesh: a giant, rail-crawling Nameless that demonstrates how corruption in the old world did not stop at humans.  Legacy memories describe plants, animals, and even stone twisting into predatory forms, and this creature embodies that same ecological betrayal at industrial scale.
+
+    During transit between Port Hanon and Erythiza, one specimen latched onto a breach engine and absorbed it into its body while moving down the train like a segmented parasite.  Witnesses reported black sludge, rapid infection, and passengers from forward cars collapsing into liquefied mass before full evacuation could form.
+  appearance: |
+    The card art shows a swollen green worm-beast with a circular lamprey-like maw ringed by white needle teeth, its hide studded with orange-red pustules and broken horn-spines.
+
+    Short whisker tendrils and bony protrusions crowd the head while the segmented body bulges with cyst-like growths, giving the impression of constant mutation.  It rises above ruined skyline silhouettes at dusk, as if urban edges themselves are being overrun by a mobile plague organ.
+  strengths: |
+    Uses an ooze-driven pressure package that continuously converts board space into infestation threats.  As mutation effects stack, defenders are forced to spend actions containing spawned bodies instead of advancing proactive kill plans.
+  weaknesses: |
+    The engine is vulnerable to disciplined cleanup.  Prioritizing non-globule minion clears and timely mutation purges limits chain growth and prevents runaway board saturation.
+  special_rules: |
+    Unleash: Resolve the effect of the highest-numbered mutation card in play.
+
+    Increased difficulty rule: When a player defeats a non-globule minion, that player
+    suffers 2 damage.
+  story_notes: |
+    Narrate Infested Mutation as infrastructure horror: trains, roads, and open routes
+    becoming feeding lines for corrupted megafauna.  This keeps stakes tied to mobility
+    and evacuation, not just duel damage.
+
+    Use Brama's Past 3 framing when relevant: survivors are not only afraid of singular
+    monsters, but of a world where entire ecologies turned hostile and open ground itself
+    became indefensible.
 - name: Paradox of Myth and Bone
   box: Legacy of Gravehold
   battle: 3
@@ -1885,26 +1976,28 @@ nemeses:
   life: 80
   battle: 4
   background: |
-    In a haunting monologue, Mist warns that she will be remembered as the mage who
-    unleashed the ultimate threat, hoping her name will unite people to fight a common
-    enemy.  Mist Revealed is not a creature but a looming threat brought forth by
-    Mist's actions through Void magic.  The character speaks of creating an existential
-    danger to unite humanity.
+    Envelope 19 frames Mist Revealed as a deliberate catastrophe authored by Mist herself: a "Second Fall" engineered so humanity will stop fracturing and stand together against a single terror.  Her voice is not triumphant; it is confessional and sacrificial.  She expects to be cursed, even hated, and accepts that hatred as political mortar if it binds survivors into one people.
+
+    The monologue directly names Brama and Z'hana.  Mist presents the operation as proof of what coordinated Void force can achieve, almost pleading for their approval while also challenging them to build "something bigger, better, safer" from the ruin.  Narratively, this nemesis is therefore both external threat and moral wound inside the mage community.
   appearance: |
-    A swirling mass of ghostly fragments and arcane seals.  Mist's silhouette is
-    barely visible within.  The artwork represents the Griefweaver character from
-    the Legacy of Gravehold set.
+    The card portrait shows Mist in a gold-trimmed hood, gray-violet skin lit by teal breach-glow, one eye obscured by an angular shard or mask-plate she presses to her face with a black-gloved hand.  Luminous script runs down her cheek and throat like active warding text, while loose runes orbit behind her in mist.
+
+    The visual language reads as ritual self-concealment rather than brute mutation: she appears human enough to recognize, but intentionally rewritten into an icon that survivors cannot ignore.
   strengths: |
-    Uses a Fragment deck.  When all Fragment cards are in play, Mist wins.  Has no
-    maximum life limit.
+    Uses a Fragment deck that escalates through repeated UNLEASH chains; each new fragment multiplies pressure by re-triggering those already in play.
+
+    Mist Revealed wins when all fragments are in play, creating an inevitability clock that can outpace groups that focus only on direct damage.  At increased difficulty, the nemesis accelerates by resolving the oldest fragment every nemesis turn.
   weaknesses: |
-    Players must manage the Fragment deck by discarding or silencing fragments
-    before the field is full.
+    The most reliable counterplay is fragment tempo control: discard, silence, or otherwise remove key fragments before board density turns each UNLEASH into a cascade.
+
+    Teams that ration burst damage for critical thresholds and coordinate turn order can keep the fragment field unstable long enough to avoid the automatic loss condition.
   special_rules: |
-    Unleash: All "UNLEASH:" effects of fragments are resolved, then a card is drawn
-    from the Fragment deck.  When the Fragment deck is empty, the discard pile is
-    reshuffled.  At increased difficulty, the oldest fragment effect is resolved at
-    the start of the Nemesis turn.
+    Unleash: Resolve all "UNLEASH:" effects of fragments in play, then draw a card
+    from the Fragment deck.  When the Fragment deck is empty, reshuffle the discard
+    to form a new Fragment deck.
+
+    Increased difficulty rule: At the beginning of the nemesis turn, resolve the
+    "UNLEASH:" effect of the oldest fragment in play.
 - name: Paradox of Myth
   box: Legacy of Gravehold
   battle: 4
