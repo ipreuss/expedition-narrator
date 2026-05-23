@@ -509,6 +509,21 @@ mages:
     how Nameless adapt to human environments.
   variants:
   - box: The New Age
+    nickname: Tide Master
+    background: In The New Age, Gygar is known as "Tide Master," a driven ruin-diver convinced that Old Gravehold's flooded depths still hold tools humanity needs. He clashes with elders who favor caution, arguing that delay is its own form of surrender while vital knowledge sinks out of reach.
+    appearance: Gygar is depicted seated on a throne of surging water and ice-blue current, dark hair tied back, wrapped forearms, layered bead-and-crystal necklaces, and a bright aether sphere hovering above his palm.
+    strengths: Gygar's Ancient Breach scales hard through Surge token accumulation, rewarding long planning lines and turning a single cast into a devastating, tide-like damage spike.
+    weaknesses: He depends on uninterrupted setup and token retention; early disruption or forced recasting can drain his momentum before his peak turn arrives.
+    story_notes: Gygar recruits Kadir and Claudia for deep expeditions beneath drowned tunnels, then returns with relic evidence that proves the depths are not empty history. Use him for stories about exploration ethics, impatience with bureaucracy, and discovery pursued under pressure.
+  - box: Legacy of Gravehold
+    nickname: Treasure Hunter
+    background: In Legacy of Gravehold, Gygar appears as "Treasure Hunter," an impatient field scholar who values direct exploration over council debate. He argues that while senior mages argue abstract policy, crucial answers remain buried beneath Old Gravehold where action—not permission slips—can still save lives.
+    appearance: A broad-shouldered mage in wrapped expedition gear and loose indigo trousers, standing with a glowing aether orb suspended between his hands. Blue currents coil around him like water under moonlight, and layered necklaces mark his role as a relic diver.
+    strengths: Gygar builds momentum by seeding storm tokens onto prepared spells, then converts that buildup into heavy burst damage when casting—rewarding careful sequencing across multiple turns.
+    weaknesses: His output depends on prep time and protected setup; if forced into constant disruption, he can spend turns rebuilding storm pressure instead of finishing threats.
+    story_notes: |
+      Gygar's testimony frames him as a friction point with conservative leadership: he sees delay as its own danger.
+      Use him in stories about sanctioned risk, buried history, and crews who choose to descend first and justify themselves later.
 - id: lost
   name: Lost
   background: Lost is an enigmatic forgemaster sealed in a massive suit of armor.
@@ -676,30 +691,59 @@ mages:
     story_notes: Qu wanders the shifting sands outside Xaxos's cave, learning when to hide, when to bite back, and when to trust. Her account of The Timeless links the Void to disrupted timekeeping—no clear sunrise or sunset, uncertain aging, and fear that years can be stolen or misplaced. She hears distant screams, dreams of the cocoon she left behind, and senses that Xaxos carries grief of his own—threads a narrator can use for stories about belonging, care, and inherited trauma.
 - id: inco
   name: Inco
-  background: Inco is a young breach mage attuned to the natural world, raised by
-    wild spirits and later adopted by Talix.  Gentle and earnest, he can coax life
-    from plants but loses control when fear or anger surges.  He believes the land’s
-    survival is inseparable from his own.
-  appearance: Portrayed as a lithe youth entwined with vines and budding flowers,
-    his skin mottled with green patterns and his hair crowned with leaves.
-  strengths: Inco’s connection to plants allows him to rapidly grow vines and blossoms,
-    rejuvenate dying vegetation and cause thorny growths that entangle foes.  He can
-    sense the health of the land and follows its guidance to track allies.
-  weaknesses: His control over growth is tied to his emotions—panic or anger may trigger
-    uncontrolled bursts that hinder allies.  In barren or corrupted environments his
-    power weakens, and his urgency to save plants can lead him into danger.
-  story_notes: During the Into the Wild expedition, Inco helped free Razra from a
-    living vine prison and uncovered signs of betrayal in the grove.  He later revealed
-    he was raised by a plant‑based Nameless and vowed to expose those who turned his
-    kin against him while healing the land.
+  background: Inco is a plant-touched breach mage who spent his first years in the
+    surface wilds among thorn-faced beings with emerald eyes before Talix brought
+    him to Gravehold.  He grew up believing vine and flesh were simply one body,
+    and still carries the ache of being treated as strange by people who do not understand
+    what he is.  His fiercest loyalties run toward Talix and Razra, whom he calls
+    his new sun.  Inco believes magic itself is neutral potential; ruin or renewal
+    depends on the will guiding it.
+  appearance: In early depictions, Inco is lean and feral, crouched low with pink
+    skin threaded by barklike vines, leaf-bright green hair, and thorny growths climbing
+    over his shoulders and hips.  Later art shows him more composed but still unmistakably
+    vegetal—golden bark-textured skin, petal-like pauldrons, and flower buds breaking
+    through his limbs as though he is always mid-bloom.
+  strengths: Inco can cultivate and weaponize living growth on demand—coiling vines,
+    thorn lash, and rose-thorn constructs that function as a private reserve of tools.
+    He can harvest parts of his own cultivated growth for power, then regrow what
+    he spent, making him strong in prolonged campaigns.  Narratively, he is effective
+    at tracking blight, sensing ecological imbalance, and reading subtle changes in
+    terrain that other mages miss.
+  weaknesses: Inco’s power is intimate and identity-laden; attacks on his belonging
+    or on the memory of his caretakers can destabilize him.  He is prone to overextending
+    himself to protect crops, groves, or vulnerable settlements, especially when he
+    believes no one else hears what the land is saying.  In sterile, ash-choked, or
+    void-stripped places, his growth magic can become costly, slower, or emotionally
+    volatile.
+  story_notes: Inco’s testimony frames him as a bridge between human and Nameless lineages.
+    He remembers being nurtured by strange surface creatures, later learning language
+    beside Talix in the ruins, and choosing Gravehold as home even while feeling foreign
+    inside it.  After Southpost’s devastation, he condemns misuse of Void magic but
+    refuses simplistic hatred, because Necroswarm was both destroyer and the being
+    who raised him.  This paradox makes him useful in stories about adoption, ecological
+    grief, divided inheritance, and the ethics of wielding dangerous power without
+    surrendering to it.
   variants:
   - box: Into the Wild
+    nickname: Child of Green
+    appearance: A feral, low-crouched youth with bright green hair, pale skin veined by vine-like markings, and rough leaf-and-bark wrappings that make him look half-grown from the forest floor.
+    strengths: Inco can cultivate the Rose Thorn deck through Verdant Emerald and direct aether spending, giving him repeatable access to living thorn tools that scale with planning.
+    weaknesses: His early tempo can stall if he fails to secure key Rose Thorn cards quickly, and his emotional volatility can turn protective instincts into reckless overcommitment.
+    story_notes: In this era, Inco is openly treated as an outsider by many elders, yet chooses to anchor himself to Talix and Razra as family. His testimony emphasizes wandering, belonging, and the moment he accepts Gravehold as home without denying his wild origins.
+  - box: Legacy of Gravehold
+    nickname: Growing Soul
+    background: In Legacy of Gravehold, Inco is introduced as "Growing Soul," a young plant-bound mage shaped by divided belonging—raised in the wilds, then adopted into human settlement by Talix.
+    appearance: A bark-skinned youth with yellow-green hair, leafed shoulders, and vine-like grain patterns wrapped across his limbs like living wood.
+    strengths: His Harvest-focused style converts starting floral cards into fuel, letting him transform early resources into sustained pressure and flexible growth effects.
+    weaknesses: Harvest requires sacrificing his own foundational cards; poor timing can hollow out his options before his engine fully blooms.
+    story_notes: Inco speaks from the aftermath of Southpost, naming Talix and Razra as anchors while wrestling with Necroswarm as both destroyer and caretaker. His testimony is ideal for scenes about grief, loyalty, and chosen family under strain.
   - box: The Surface
-    background: In The Surface, Inco carries the memory of Necroswarm as both wound and inheritance. He leaves New Gravehold on a solitary pilgrimage, replanting his caretaker's last sapling and seeking where that strange bond truly belongs.
-    appearance: A green-haired youth wrapped in living vines and bright fungal growths, dressed in weathered field clothes and standing with wary tenderness.
-    strengths: Inco can spend aether to cultivate the Firethorn deck, turning rare growth into adaptable tools and sustained pressure.
-    weaknesses: His power curve depends on setup and access to Firethorn cards; without time or resources, he can feel underdeveloped in early turns.
-    story_notes: At Southpost he replants what remained of Necroswarm, then follows signs into a blooming grove deep in the Void. There he finds children with glassy, hauntingly familiar eyes—an omen that his past, the land, and the war's aftermath are still entangled.
+    nickname: The Outsider
+    background: In The Surface, Inco carries Necroswarm as both wound and ancestry. He returns to Southpost to replant his caretaker's last living remnant, then leaves New Gravehold on a solitary pilgrimage to discover whether that bond can become stewardship instead of shame.
+    appearance: A green-haired youth in weathered field clothes, wrapped in thorn-vines and bright orange fungal blooms, with a guarded half-smile that never fully hides how foreign he still feels in settled places.
+    strengths: Inco can spend aether to cultivate the Firethorn deck, turning rare botanical growth into adaptive tools that scale across a long battle.
+    weaknesses: His engine depends on setup and deliberate harvesting choices; when rushed early, he can feel underdeveloped and resource-starved.
+    story_notes: At Southpost he replants what remained of Necroswarm, then follows signs into a blooming grove deep in the Void. There he finds children with glassy, familiar eyes—evidence that legacy, corruption, and care are still entangled in living soil.
 - id: razra
   name: Razra
   background: Razra is Mazra’s younger sister, fiercely independent and bonded to
@@ -799,6 +843,19 @@ mages:
     skeletal armies attacked.
   variants:
   - box: Outcasts
+    nickname: Right Hand
+    background: In Outcasts, Ilya is known as "Right Hand," a central Azerian mage whose bond with Kel defines both her magic and her moral compass. She experiences aether as a living current connecting people, animals, stone, and water, and treats that connectedness as something to protect rather than exploit.
+    appearance: Ilya appears in bright green-and-gold village attire with a flowing blue scarf, floral hair ornaments, and gold jewelry. She is often depicted with a small blossom cupped in her hand beside warm cavefire, reinforcing her calm, nurturing presence amid ruin.
+    strengths: Ilya excels at enabling allies through shared-flow magic, turning coordinated teams into force multipliers by helping others cast or chain effects at decisive moments.
+    weaknesses: Her strongest turns rely on trust and timing across the party; fragmented groups, poor communication, or isolated play patterns can blunt her value.
+    story_notes: Kel's testimony frames Ilya as the person who taught her to feel magic as connection rather than merely a weapon. This perspective gives narrators a clear emotional anchor for scenes about intimacy under siege, mutual reliance, and hope sustained through chosen bonds.
+  - box: Legacy of Gravehold
+    nickname: Force of Aether
+    background: In Legacy of Gravehold, Ilya emerges as "Force of Aether," a mediator from Azer who frames magic as relationship rather than domination. In her account, she invokes an old Tether parable—water, stone, and the bond between them—to challenge the feud between Brama and Z'hana and push both sides toward responsibility for those suffering now.
+    appearance: A poised young woman with a high natural crown, gold hoops, and small white blossoms in her hair, dressed in a bright green tunic with yellow trim and a flowing blue scarf. Her stance is open-handed and deliberate, as if shaping currents that cannot be seen.
+    strengths: Ilya specializes in connective aether effects that reward coordination, timing, and shared setup, making her exceptionally strong when the party plans around linked spell turns and support chains.
+    weaknesses: Her impact depends on group cohesion; when allies cannot synchronize or when panic fractures trust, her most powerful patterns lose efficiency.
+    story_notes: Ilya positions herself as a bridge voice between entrenched camps, arguing that the real crisis is not abstract doctrine but people being ground down by division. She is ideal for scenes about negotiation under pressure, principled disagreement, and leadership that protects community over pride.
 - id: kel
   name: Kel
   background: Kel is an Azerian Tether who masks a tender core with a tough exterior.
